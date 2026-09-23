@@ -2,7 +2,13 @@
 
 ## Status and intent
 
-This document specifies a logical architecture, not an implemented system. SafetyBox is intended to mediate every privileged external action of a protected agent. Its core enforcement does not trust the agent's stated intent and does not require an LLM.
+This document specifies a logical architecture, not an implemented system, except where explicitly marked **Implemented in M1**. SafetyBox is intended to mediate every privileged external action of a protected agent. Its core enforcement does not trust the agent's stated intent and does not require an LLM.
+
+## Implemented in M1: in-process reference-monitor kernel
+
+M1 implements only a framework-neutral, in-process `ReferenceMonitor` API. It receives an immutable `ActionRequest`, obtains a `PolicyDecision` from an `Authorizer`, and forwards the exact request to a `ProtectedTool` only for `ALLOW`. A `DENY` returns an `EnforcementResult` without tool invocation. Authorizer exceptions raise `AuthorizationFailure` and fail closed before tool invocation.
+
+This is not an implementation of the full logical architecture in the diagram. In particular, M1 has no agent adapter, interception deployment, capability registry, event bus, audit persistence, trajectory/risk engine, approval path, sandbox, or protection against callers that possess a direct reference to a tool. Its tests establish ordering and denial properties only inside this in-process abstraction.
 
 ```mermaid
 flowchart LR
