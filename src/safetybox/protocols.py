@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from typing import Protocol
 
+from safetybox.events import SafetyBoxEvent
 from safetybox.models import ActionRequest, PolicyDecision
 
 
@@ -19,3 +20,10 @@ class ProtectedTool(Protocol):
 
     def execute(self, request: ActionRequest) -> object:
         """Perform the protected operation for ``request``."""
+
+
+class AuditSink(Protocol):
+    """Receives one immutable event at a time."""
+
+    def record(self, event: SafetyBoxEvent) -> None:
+        """Persist or otherwise accept a committed event."""

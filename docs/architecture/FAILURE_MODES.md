@@ -7,7 +7,8 @@
 | Policy engine error/timeout | Missing authorization | Privileged action fails closed; administrative availability behavior is explicitly configured | Fault-injection tests |
 | Capability registry unavailable | Stale or unknown authority | Do not infer/grant capability; pause or deny | Recovery and partition tests |
 | Event ordering failure | Incorrect trajectory/state | Stop affected session authorization, preserve evidence, require reconciliation | Concurrency and corruption tests |
-| Audit sink unavailable | Unexplained execution | Apply a declared fail-safe mode; high-impact actions require durable decision record | Storage fault tests |
+| Audit sink unavailable before tool execution | Unexplained execution | M3 raises `AuditFailure` and fails closed before protected-tool invocation | M3 fault-injection unit test |
+| Terminal audit sink failure after tool invocation | Missing terminal evidence after a real side effect | M3 raises `AuditFailure`; it cannot undo or conclusively report the already-invoked action | M3 crash-point-style unit test |
 | Controller crash around execution | Duplicate or unknown side effect | Record indeterminate status; retry only with adapter idempotency guarantees | Crash-point tests |
 | Adapter mismatch/TOCTOU | Authorized request differs from executed action | Bind authorization to canonical arguments/resource; deny on mismatch | End-to-end adapter tests |
 | Approval replay or overbreadth | Unauthorized expansion | Bind approval to request, scope, approver, expiry, and nonce | Replay/scope tests |

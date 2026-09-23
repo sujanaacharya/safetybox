@@ -57,3 +57,4 @@ class EnforcementResult:
     policy_decision: PolicyDecision
     executed: bool
     tool_result: object | None = None
+    correlation_id: str | None = None

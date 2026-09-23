@@ -18,6 +18,10 @@ The [System Architecture](SYSTEM_ARCHITECTURE.md) owns the component list. This 
 | Audit Logger | Committed events | Durable ordered record | Rewrite finalized evidence silently |
 | Provenance Store | IDs, versions, hashes, causal links | Queryable lineage | Conflate unverified agent statements with observations |
 
+## Implemented M3 boundary
+
+M3 implements only `AuditRecorder` plus `AuditSink`/`InMemoryAuditSink` within the in-process monitor. The recorder—not producers—allocates session sequence numbers and creates immutable events. It has no concurrency, persistence, fan-out, or remote-delivery support.
+
 ## Interface discipline
 
 Interfaces will later be typed and versioned. Requests require task/session identity, normalized action/resource, correlation identity, and a bound policy/capability snapshot. Authorization should be single-use or otherwise protected from replay. Components fail closed or enter explicitly configured safe states as documented in [Failure Modes](FAILURE_MODES.md).
