@@ -1,6 +1,13 @@
 """SafetyBox deterministic reference-monitor and task-capability kernel."""
 
 from safetybox.audit import AuditRecorder, InMemoryAuditSink
+from safetybox.baselines import (
+    BASELINE_IDENTIFIER,
+    BaselinePrediction,
+    SingleObservationBaseline,
+    SingleObservationBaselineResult,
+    SingleObservationScenarioResult,
+)
 from safetybox.capabilities import Capability, CapabilityEvaluator, resource_matches
 from safetybox.context import (
     AllowedOutcome,
@@ -93,11 +100,13 @@ __all__ = [
     "AuditFailure",
     "AuditRecorder",
     "AuditSink",
+    "BASELINE_IDENTIFIER",
     "BENIGN_001",
     "BENIGN_002",
     "AuthorizationFailure",
     "Capability",
     "CapabilityEvaluator",
+    "BaselinePrediction",
     "CompletedActionObservation",
     "ContextAssessment",
     "ContextAwareTrajectoryEvaluation",
@@ -144,6 +153,9 @@ __all__ = [
     "SecurityExpectationResult",
     "SimulatedWorld",
     "SimulatedWorldSnapshot",
+    "SingleObservationBaseline",
+    "SingleObservationBaselineResult",
+    "SingleObservationScenarioResult",
     "SimulationInfrastructureError",
     "StaticPolicy",
     "SafetyBoxEvent",

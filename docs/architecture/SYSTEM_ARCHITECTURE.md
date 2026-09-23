@@ -112,3 +112,11 @@ that composes completed observations with M5.1-B evidence in bounded session/tas
 state. It emits immutable suspicious or insufficient-context findings under the
 `CTXTRJ-*` namespace. It is observational only and is not connected to authorization,
 execution, capability changes, or containment. Frozen M5 remains unchanged.
+
+## Single-observation baseline note
+
+The frozen executable [Single-Observation Context Baseline](SINGLE_OBSERVATION_BASELINE.md)
+is an observational experiment comparator layered directly on M5.1-B. It maps each
+`ContextEvaluation` independently and reduces scenario predictions with an order-free,
+duplicate-insensitive precedence rule. It retains no trajectory state, calls no M5.1-C
+rule, emits no finding, and has no connection to authorization or execution.

@@ -31,6 +31,9 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 - M5.1-C separate bounded `ContextAwareTrajectoryMonitor`, immutable context-aware
   findings/snapshots, `CTXTRJ-001` access-to-outbound interpretation, and `CTXTRJ-002`
   fallback-aware repeated-denial interpretation using M5.1-B evidence.
+- `B2-SINGLE-OBSERVATION@1`, a frozen stateless executable context baseline over
+  M5.1-B results, with immutable evidence, explicit abstention, and commutative,
+  duplicate-insensitive scenario aggregation.
 
 ### Notes
 
@@ -44,3 +47,5 @@ All notable changes will be documented here. The format follows [Keep a Changelo
   payloads, emit trajectory findings, alter authorization, or change M5 rules.
 - M5.1-C findings remain observational and do not establish payload lineage, safety,
   prevention, containment, or generalization beyond contaminated development cases.
+- The B2 baseline is history-free and observational: sequence numbers are provenance
+  only, incomplete context abstains, and it cannot emit findings or alter authorization.
