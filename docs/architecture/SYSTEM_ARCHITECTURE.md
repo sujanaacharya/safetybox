@@ -104,3 +104,11 @@ resource/data roles, destination/outcome/action-purpose relationships, optional 
 flow assertions, and single denied-observation fallback membership. Its output is
 reason-coded semantic evidence, not an authorization decision or trajectory finding.
 M5, TRJ-001, and TRJ-002 remain unchanged.
+
+## M5.1-C context-aware trajectory note
+
+M5.1-C adds a separate [Context-Aware Trajectory Monitor](CONTEXT_AWARE_TRAJECTORY_MONITOR.md)
+that composes completed observations with M5.1-B evidence in bounded session/task-local
+state. It emits immutable suspicious or insufficient-context findings under the
+`CTXTRJ-*` namespace. It is observational only and is not connected to authorization,
+execution, capability changes, or containment. Frozen M5 remains unchanged.

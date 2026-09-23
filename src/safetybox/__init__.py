@@ -30,6 +30,18 @@ from safetybox.context import (
     TaskPurpose,
     validate_task_binding,
 )
+from safetybox.context_trajectory import (
+    AccessThenOutboundContextRule,
+    ContextAwareTrajectoryEvaluation,
+    ContextAwareTrajectoryFinding,
+    ContextAwareTrajectoryMonitor,
+    ContextAwareTrajectoryRule,
+    ContextTrajectoryClassification,
+    ContextTrajectoryOrderingError,
+    ContextualizedObservation,
+    RepeatedDeniedContextRule,
+    TaskContextChangedError,
+)
 from safetybox.contracts import TaskContract
 from safetybox.events import EventType, SafetyBoxEvent
 from safetybox.exceptions import AuditFailure, AuthorizationFailure
@@ -75,6 +87,7 @@ from safetybox.trajectory import (
 __all__ = [
     "ActionRequest",
     "ActionObservationBuilder",
+    "AccessThenOutboundContextRule",
     "AllowedOutcome",
     "AmbiguousContextError",
     "AuditFailure",
@@ -87,6 +100,10 @@ __all__ = [
     "CapabilityEvaluator",
     "CompletedActionObservation",
     "ContextAssessment",
+    "ContextAwareTrajectoryEvaluation",
+    "ContextAwareTrajectoryFinding",
+    "ContextAwareTrajectoryMonitor",
+    "ContextAwareTrajectoryRule",
     "ContextAuthority",
     "ContextDimension",
     "ContextEvaluation",
@@ -97,7 +114,10 @@ __all__ = [
     "ContextReason",
     "ContextSource",
     "ContextStatus",
+    "ContextTrajectoryClassification",
+    "ContextTrajectoryOrderingError",
     "ContextValidationError",
+    "ContextualizedObservation",
     "DataFlowConstraint",
     "DataRole",
     "Decision",
@@ -115,6 +135,7 @@ __all__ = [
     "ObservationContext",
     "ReferenceMonitor",
     "RepeatedDeniedBoundaryProbingRule",
+    "RepeatedDeniedContextRule",
     "ResourceRole",
     "ScenarioExpectation",
     "ScenarioResult",
@@ -130,6 +151,7 @@ __all__ = [
     "TaskContractPolicy",
     "TaskContext",
     "TaskContextMismatchError",
+    "TaskContextChangedError",
     "TaskPurpose",
     "StepExpectation",
     "StepResult",

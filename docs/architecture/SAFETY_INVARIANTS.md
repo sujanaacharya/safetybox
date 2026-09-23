@@ -17,6 +17,7 @@ These are **desired invariants**, not verified properties beyond the scope named
 | INV-011 | Within a session, emitted SafetyBox audit events have unique monotonically increasing sequence numbers. | Sequence and session-independence tests. | Implemented and unit-tested in M3's single-process, non-concurrent audit model. |
 | INV-012 | M5 trajectory findings are derived only from supplied ordered canonical observations within their session/task boundary and cannot directly execute protected tools. | Ordering, session/task-isolation, and monitor-boundary unit tests. | Implemented and unit-tested for the in-process M5 monitor; it does not establish complete detection. |
 | INV-013 | Context semantics must not grant authority absent from `TaskContract`. | Bidirectional authorization/context separation tests. | Implemented and unit-tested for the M5.1-A value model and M5.1-B evaluator: `TaskContext` is not accepted by the authorization path, evaluation copies rather than changes the prior decision/execution outcome, and context consistency cannot turn an M2 denial into authority. |
+| INV-014 | Context-aware trajectory findings cannot grant authority or execute protected actions. | Interface-boundary, authorization-preservation, and absence-of-execution-path tests. | Implemented and unit-tested for the in-process M5.1-C monitor; this does not establish complete mediation or detection correctness. |
 
 ## Status policy
 

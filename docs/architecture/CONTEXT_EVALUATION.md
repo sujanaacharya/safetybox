@@ -23,7 +23,7 @@ The layers remain distinct:
 | `TaskContract` and M2 policy | Is this action authorized? |
 | `TaskContext` | What trusted semantic declarations exist? |
 | `ContextEvaluator` | How does this completed observation relate to those declarations? |
-| Future M5.1-C monitor | What does the ordered sequence mean? |
+| M5.1-C monitor | What does the ordered sequence mean? |
 
 `ContextEvaluator` never emits `ALLOW`, `DENY`, `QUARANTINE`, or another enforcement
 outcome. Its copied `policy_decision` and `executed` fields report what already happened.
@@ -126,3 +126,8 @@ language, use an LLM or embeddings, inspect files/rows/payloads/prompts/model ou
 infer actual lineage, recognize intent, count behavior, modify TRJ-001/TRJ-002, emit a
 finding, suppress an M5 finding, change capabilities, or grant authority. Those limits
 are part of the scientific boundary rather than implementation omissions to infer away.
+
+M5.1-C now consumes these immutable results through the separate
+[Context-Aware Trajectory Monitor](CONTEXT_AWARE_TRAJECTORY_MONITOR.md). Destination,
+resource, and fallback membership remain owned here; trajectory rules consume statuses,
+reason IDs, matched identifiers, and provenance rather than duplicating these checks.

@@ -17,6 +17,11 @@
 | Telemetry overload | Dropped evidence or delayed control | Backpressure or containment; never silently drop enforcement-critical events | Load tests |
 | False-positive trajectory signal | Benign task disruption | Explain, scope, and measure intervention; provide controlled approval/recovery | Benign benchmark trials |
 | Trajectory window truncation | A longer pattern is not observed or does not match | Retain the explicit configured bound and report the limitation; evaluate window size in later ablations | Boundary-window tests and registered ablation |
+| Missing or incomplete task context | A contextual interpretation cannot be made | Emit deterministic `INSUFFICIENT_CONTEXT`; do not convert it to benign or suspicious | Missing-dimension and abstention tests |
+| Incorrect trusted context | Behavior can appear consistent with a wrong declaration | Preserve declaration provenance and bound claims to consistency, not safety | Context review, provenance, and adversarial configuration tests |
+| Coarse semantic roles | Distinct data or resources can be conflated | Preserve exact role evidence and report the abstraction limit | Role-granularity development studies |
+| Absent runtime lineage | Ordered access and outbound action can be mistaken for proven transfer | Use conservative ordering language; never claim bytes or payloads flowed | Finding-wording and logical-lineage tests |
+| Context configuration burden | Incomplete declarations cause excessive abstention | Version, validate, and measure abstentions without guessing intent | Configuration and coverage studies |
 | Compromised host/administrator | Total control-plane compromise | Outside core guarantee; use defense in depth and disclose boundary | Deployment threat analysis |
 
 Safe behavior is operation-specific and must be configured explicitly. “Fail closed” must not itself create unexamined physical or availability hazards; deployment risk analysis may choose a safer paused state for a particular environment. No listed mitigation is implemented yet.

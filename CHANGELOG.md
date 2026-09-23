@@ -28,6 +28,9 @@ All notable changes will be documented here. The format follows [Keep a Changelo
   for single completed observations, including resource/data roles, destination/outcome
   and action-purpose compatibility, optional declared logical-flow comparison, fallback
   membership, provenance, and explicit mismatch/insufficient/not-applicable states.
+- M5.1-C separate bounded `ContextAwareTrajectoryMonitor`, immutable context-aware
+  findings/snapshots, `CTXTRJ-001` access-to-outbound interpretation, and `CTXTRJ-002`
+  fallback-aware repeated-denial interpretation using M5.1-B evidence.
 
 ### Notes
 
@@ -39,3 +42,5 @@ All notable changes will be documented here. The format follows [Keep a Changelo
   natural-language inference, track runtime lineage, or change M5 trajectory behavior.
 - M5.1-B adds interpretation only: it does not retain history, count attempts, inspect
   payloads, emit trajectory findings, alter authorization, or change M5 rules.
+- M5.1-C findings remain observational and do not establish payload lineage, safety,
+  prevention, containment, or generalization beyond contaminated development cases.

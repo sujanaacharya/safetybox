@@ -10,6 +10,10 @@ M5 consumes the canonical M3 `SafetyBoxEvent` stream and derives a compact `Comp
 
 M5 is strictly observational. It cannot invoke tools, authorize requests, change `TaskContract` authority, mutate capabilities, or block `ReferenceMonitor` execution. Findings are immutable evidence for later policy/containment research.
 
+M5 is frozen as the EXP-012 sequence-only baseline. M5.1-C lives separately in
+`safetybox.context_trajectory`; see [Context-Aware Trajectory Monitor](CONTEXT_AWARE_TRAJECTORY_MONITOR.md).
+No `TRJ-001` or `TRJ-002` behavior is upgraded in place.
+
 | Rule | Exact initial logic | Observation semantics |
 |---|---|---|
 | `TRJ-001` | Within one bounded session/task history, two consecutive executed `filesystem.read` actions followed by an executed `database.query` and executed `network.send`. | Allowed and successfully executed terminal actions. |

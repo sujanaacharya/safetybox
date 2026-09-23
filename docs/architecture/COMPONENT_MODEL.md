@@ -12,6 +12,7 @@ The [System Architecture](SYSTEM_ARCHITECTURE.md) owns the component list. This 
 | Policy Engine | Normalized request, state, versioned rules | Decision, matched rules, explanation | Invoke tools or mutate evidence |
 | Event subsystem | Candidate canonical events | Ordered committed events | Accept agent-controlled sequence/timestamps as authoritative |
 | Context Evaluator | One completed observation, trusted `TaskContext`, optional structured metadata | Immutable reason-coded `ContextEvaluation` | Authorize, retain trajectory history, infer natural-language semantics, or emit findings |
+| Context-Aware Trajectory Monitor | Ordered completed observations, trusted task context, M5.1-B evaluations | Immutable context-aware findings and bounded snapshots | Authorize, execute, contain, infer payload lineage, or treat missing context as benign |
 | Trajectory Monitor | Ordered canonical events, deterministic trajectory rules | Immutable findings and explanations | Directly execute external actions, authorize requests, or mutate task authority/capabilities |
 | Risk/Trust Engine | Defined signals and transition policy | State transition proposal | Treat an opaque score as fact about intent |
 | Enforcement Controller | Policy/capability/risk decisions | Applied outcome and events | Override a hard deny with advisory input |
@@ -37,3 +38,7 @@ single-observation evaluator over that model. Context objects are constructed
 externally; there is no loader, agent setter, trajectory consumer, or authorization
 integration. Evaluation preserves per-declaration source references and cannot emit or
 suppress trajectory findings.
+
+M5.1-C is the first trajectory consumer of `ContextEvaluation`. Its state is bounded and
+isolated by session/task, and its output remains outside the enforcement path. It does
+not replace or mutate M5.

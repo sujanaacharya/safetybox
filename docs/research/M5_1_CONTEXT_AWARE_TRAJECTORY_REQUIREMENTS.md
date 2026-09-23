@@ -102,3 +102,11 @@ action-purpose, optional logical-flow, and fallback evidence with explicit misma
 insufficient-context, and not-applicable semantics. It does not implement a context-aware
 trajectory rule, count observations, emit findings, modify M5, or change the frozen
 EXP-012 protocol. Stateful sequence meaning remains M5.1-C work.
+
+## M5.1-C implementation note
+
+M5.1-C implements a separate bounded deterministic monitor over ordered completed
+observations and M5.1-B results. Its `CTXTRJ-001` and `CTXTRJ-002` development rules
+preserve trusted provenance, emit explicit insufficient-context abstentions, and remain
+observational. Frozen M5 and the EXP-012 protocol are unchanged. Development tests are
+contaminated design evidence only; no held-out corpus or EXP-012 result is created.
