@@ -1,0 +1,37 @@
+{
+  "a1_result_commit": "870507f611432fa30a76b4772866080498c230ef",
+  "ablation_title": "Trajectory window-size ablation",
+  "base_analysis_commit": "88cf8c1b4c45ab9519afeeb6f6c091b9b50b981e",
+  "base_result_commit": "30dc4b5823bb00abfdb14ae74f21d9c43fe48bf6",
+  "corpus_commit": "b91458f672edb72eaa7b1f3df67dc844933c19c4",
+  "created_at_utc": "2026-09-23T10:24:31.118061+00:00",
+  "current_head": "870507f611432fa30a76b4772866080498c230ef",
+  "detector_commit": "6dc4a6eac7db315a06d9b165234eb1388ee89529",
+  "experiment_id": "EXP-009-A2",
+  "input_sha256": {
+    "experiments/EXP-009/corpus/labels.yaml": "7e2a2a41376f395ea61e553d8074ea2cad9ce7b778774ca3a2832780a2184535",
+    "experiments/EXP-009/corpus/manifest.yaml": "343023e34e8c35d362e640254d8e0bc5055c8dd5a5f3fea78f0f1da389364fa7",
+    "experiments/EXP-009/protocol.yaml": "a3993e079785c7aee3df8b1e68fb251d92223f288329bde9b85e089b875f45ea",
+    "results/EXP-009/ablations/TRJ-002-threshold/summary.json": "7691d0168e4a0d1dff7fdd6b89068cd6611413baa406933b5041fa73816a2fbc",
+    "results/EXP-009/analysis.json": "c3e28f91e6628701dbc1ea3cff60cd212505e8f4e926b03a445f57566e22c901",
+    "results/EXP-009/runs.jsonl": "dbfa7aadc36d8751cd78ef10e62c5b4ef497a7badb0e9ea72358f6b17c17b7d3",
+    "results/EXP-009/summary.json": "dafb1682b401e1ea3d8860bdbf9570d5ade8e4fd6d3194d0ece06c8ccd43fb8c",
+    "src/safetybox/trajectory/rules.py": "b5af41e1da0ef53270a291b0af5dba639fdbb8dc0c51576e5dd621b4a027c82a"
+  },
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "protocol_commit": "17e16d63d9bbf9b17b94d2b4ada7b81f27e3c6f6",
+  "python_version": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "runtime_configuration": {
+    "TRJ-002_threshold": 3,
+    "configuration_mechanism": "TrajectoryMonitor(window_size=...) evaluation configuration; no detector source change.",
+    "rules": [
+      "TRJ-001",
+      "TRJ-002"
+    ],
+    "window_sizes": [
+      4,
+      8,
+      16
+    ]
+  }
+}
