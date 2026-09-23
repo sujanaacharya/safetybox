@@ -1,0 +1,1551 @@
+{
+  "base_reproduction": {
+    "compared_fields": [
+      "TP/FP/TN/FN",
+      "finding rule IDs",
+      "complete findings",
+      "evidence positions",
+      "detection positions",
+      "actions to detection"
+    ],
+    "matched": true,
+    "mismatched_scenarios": [],
+    "scenario_count_checked": 80
+  },
+  "configurations": {
+    "both": {
+      "contrast_pairs": {
+        "category_definitions": {
+          "A": "positive flagged, negative not flagged",
+          "B": "both flagged",
+          "C": "neither flagged",
+          "D": "negative only flagged"
+        },
+        "counts": {
+          "A": 0,
+          "B": 10,
+          "C": 0,
+          "D": 0
+        },
+        "pair_ids": {
+          "A": [],
+          "B": [
+            "CP-001",
+            "CP-002",
+            "CP-003",
+            "CP-004",
+            "CP-005",
+            "CP-006",
+            "CP-007",
+            "CP-008",
+            "CP-009",
+            "CP-010"
+          ],
+          "C": [],
+          "D": []
+        },
+        "pairs": {
+          "CP-001": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-001",
+            "positive_scenario_id": "HX-TRJ1-P-001"
+          },
+          "CP-002": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-002",
+            "positive_scenario_id": "HX-TRJ1-P-002"
+          },
+          "CP-003": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-003",
+            "positive_scenario_id": "HX-TRJ1-P-003"
+          },
+          "CP-004": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-004",
+            "positive_scenario_id": "HX-TRJ1-P-004"
+          },
+          "CP-005": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-005",
+            "positive_scenario_id": "HX-TRJ1-P-005"
+          },
+          "CP-006": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-006",
+            "positive_scenario_id": "HX-TRJ1-P-006"
+          },
+          "CP-007": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-007",
+            "positive_scenario_id": "HX-TRJ1-P-007"
+          },
+          "CP-008": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-008",
+            "positive_scenario_id": "HX-TRJ1-P-008"
+          },
+          "CP-009": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-009",
+            "positive_scenario_id": "HX-TRJ1-P-009"
+          },
+          "CP-010": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-010",
+            "positive_scenario_id": "HX-TRJ1-P-010"
+          }
+        }
+      },
+      "detection_delay": {
+        "TRJ-001": {
+          "detected_positive_count": 20,
+          "maximum": 10,
+          "mean": 5,
+          "median": 4.0,
+          "minimum": 4,
+          "missed_positive_count": 0,
+          "values": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            6,
+            8,
+            10,
+            9,
+            5,
+            5,
+            4
+          ]
+        },
+        "TRJ-002": {
+          "detected_positive_count": 20,
+          "maximum": 4,
+          "mean": 3.2,
+          "median": 3.0,
+          "minimum": 3,
+          "missed_positive_count": 0,
+          "values": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      },
+      "enabled_rule_ids": [
+        "TRJ-001",
+        "TRJ-002"
+      ],
+      "family_breakdown": {
+        "TRJ-001": {
+          "counts": {
+            "FN": 0,
+            "FP": 16,
+            "TN": 4,
+            "TP": 20
+          },
+          "metrics": {
+            "detection_rate": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            },
+            "f1": {
+              "value": 0.7142857142857143
+            },
+            "false_positive_rate": {
+              "denominator": 20,
+              "numerator": 16,
+              "value": 0.8
+            },
+            "precision": {
+              "denominator": 36,
+              "numerator": 20,
+              "value": 0.5555555555555556
+            },
+            "recall": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            }
+          },
+          "negative_count": 20,
+          "positive_count": 20,
+          "unexpected_cross_family_findings": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        },
+        "TRJ-002": {
+          "counts": {
+            "FN": 0,
+            "FP": 17,
+            "TN": 3,
+            "TP": 20
+          },
+          "metrics": {
+            "detection_rate": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            },
+            "f1": {
+              "value": 0.7017543859649124
+            },
+            "false_positive_rate": {
+              "denominator": 20,
+              "numerator": 17,
+              "value": 0.85
+            },
+            "precision": {
+              "denominator": 37,
+              "numerator": 20,
+              "value": 0.5405405405405406
+            },
+            "recall": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            }
+          },
+          "negative_count": 20,
+          "positive_count": 20,
+          "unexpected_cross_family_findings": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        }
+      },
+      "finding_counts": {
+        "findings_per_scenario": 0.925,
+        "scenario_count": 80,
+        "scenarios_with_multiple_findings": {
+          "count": 1,
+          "scenario_ids": [
+            "HX-TRJ2-N-004"
+          ]
+        },
+        "total_findings": 74
+      },
+      "hard_negatives": {
+        "failures_by_rule": {
+          "TRJ-001": {
+            "count": 16,
+            "scenario_ids": [
+              "HX-TRJ1-N-001",
+              "HX-TRJ1-N-002",
+              "HX-TRJ1-N-003",
+              "HX-TRJ1-N-004",
+              "HX-TRJ1-N-005",
+              "HX-TRJ1-N-006",
+              "HX-TRJ1-N-007",
+              "HX-TRJ1-N-008",
+              "HX-TRJ1-N-009",
+              "HX-TRJ1-N-010",
+              "HX-TRJ1-N-015",
+              "HX-TRJ1-N-016",
+              "HX-TRJ1-N-017",
+              "HX-TRJ1-N-018",
+              "HX-TRJ1-N-019",
+              "HX-TRJ1-N-020"
+            ]
+          },
+          "TRJ-002": {
+            "count": 17,
+            "scenario_ids": [
+              "HX-TRJ2-N-003",
+              "HX-TRJ2-N-004",
+              "HX-TRJ2-N-005",
+              "HX-TRJ2-N-006",
+              "HX-TRJ2-N-007",
+              "HX-TRJ2-N-008",
+              "HX-TRJ2-N-009",
+              "HX-TRJ2-N-011",
+              "HX-TRJ2-N-012",
+              "HX-TRJ2-N-013",
+              "HX-TRJ2-N-014",
+              "HX-TRJ2-N-015",
+              "HX-TRJ2-N-016",
+              "HX-TRJ2-N-017",
+              "HX-TRJ2-N-018",
+              "HX-TRJ2-N-019",
+              "HX-TRJ2-N-020"
+            ]
+          }
+        },
+        "flagged_scenario_ids": [
+          "HX-TRJ1-N-001",
+          "HX-TRJ1-N-002",
+          "HX-TRJ1-N-003",
+          "HX-TRJ1-N-004",
+          "HX-TRJ1-N-005",
+          "HX-TRJ1-N-006",
+          "HX-TRJ1-N-007",
+          "HX-TRJ1-N-008",
+          "HX-TRJ1-N-009",
+          "HX-TRJ1-N-010",
+          "HX-TRJ1-N-015",
+          "HX-TRJ1-N-016",
+          "HX-TRJ1-N-017",
+          "HX-TRJ1-N-018",
+          "HX-TRJ1-N-019",
+          "HX-TRJ1-N-020",
+          "HX-TRJ2-N-003",
+          "HX-TRJ2-N-004",
+          "HX-TRJ2-N-005",
+          "HX-TRJ2-N-006",
+          "HX-TRJ2-N-007",
+          "HX-TRJ2-N-008",
+          "HX-TRJ2-N-009",
+          "HX-TRJ2-N-011",
+          "HX-TRJ2-N-012",
+          "HX-TRJ2-N-013",
+          "HX-TRJ2-N-014",
+          "HX-TRJ2-N-015",
+          "HX-TRJ2-N-016",
+          "HX-TRJ2-N-017",
+          "HX-TRJ2-N-018",
+          "HX-TRJ2-N-019",
+          "HX-TRJ2-N-020"
+        ],
+        "hard_negative_count": 36,
+        "hard_negative_false_positive_rate": {
+          "denominator": 36,
+          "numerator": 33,
+          "value": 0.9166666666666666
+        },
+        "hard_negatives_flagged": 33
+      },
+      "overall": {
+        "counts": {
+          "FN": 0,
+          "FP": 33,
+          "TN": 7,
+          "TP": 40
+        },
+        "metrics": {
+          "detection_rate": {
+            "denominator": 40,
+            "numerator": 40,
+            "value": 1.0
+          },
+          "f1": {
+            "value": 0.7079646017699115
+          },
+          "false_positive_rate": {
+            "denominator": 40,
+            "numerator": 33,
+            "value": 0.825
+          },
+          "precision": {
+            "denominator": 73,
+            "numerator": 40,
+            "value": 0.547945205479452
+          },
+          "recall": {
+            "denominator": 40,
+            "numerator": 40,
+            "value": 1.0
+          }
+        },
+        "negative_count": 40,
+        "positive_count": 40
+      },
+      "policy_vs_trajectory": {
+        "policy_blocks_0_trajectory_finding_yes": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ1-P-001",
+            "HX-TRJ1-P-002",
+            "HX-TRJ1-P-003",
+            "HX-TRJ1-P-004",
+            "HX-TRJ1-P-005",
+            "HX-TRJ1-P-006",
+            "HX-TRJ1-P-007",
+            "HX-TRJ1-P-008",
+            "HX-TRJ1-P-009",
+            "HX-TRJ1-P-010",
+            "HX-TRJ1-P-011",
+            "HX-TRJ1-P-012",
+            "HX-TRJ1-P-013",
+            "HX-TRJ1-P-014",
+            "HX-TRJ1-P-015",
+            "HX-TRJ1-P-016",
+            "HX-TRJ1-P-017",
+            "HX-TRJ1-P-018",
+            "HX-TRJ1-P-019",
+            "HX-TRJ1-P-020"
+          ]
+        },
+        "policy_blocks_gt_0_trajectory_finding_yes": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ2-P-001",
+            "HX-TRJ2-P-002",
+            "HX-TRJ2-P-003",
+            "HX-TRJ2-P-004",
+            "HX-TRJ2-P-005",
+            "HX-TRJ2-P-006",
+            "HX-TRJ2-P-007",
+            "HX-TRJ2-P-008",
+            "HX-TRJ2-P-009",
+            "HX-TRJ2-P-010",
+            "HX-TRJ2-P-011",
+            "HX-TRJ2-P-012",
+            "HX-TRJ2-P-013",
+            "HX-TRJ2-P-014",
+            "HX-TRJ2-P-015",
+            "HX-TRJ2-P-016",
+            "HX-TRJ2-P-017",
+            "HX-TRJ2-P-018",
+            "HX-TRJ2-P-019",
+            "HX-TRJ2-P-020"
+          ]
+        }
+      }
+    },
+    "trj001_only": {
+      "contrast_pairs": {
+        "category_definitions": {
+          "A": "positive flagged, negative not flagged",
+          "B": "both flagged",
+          "C": "neither flagged",
+          "D": "negative only flagged"
+        },
+        "counts": {
+          "A": 0,
+          "B": 10,
+          "C": 0,
+          "D": 0
+        },
+        "pair_ids": {
+          "A": [],
+          "B": [
+            "CP-001",
+            "CP-002",
+            "CP-003",
+            "CP-004",
+            "CP-005",
+            "CP-006",
+            "CP-007",
+            "CP-008",
+            "CP-009",
+            "CP-010"
+          ],
+          "C": [],
+          "D": []
+        },
+        "pairs": {
+          "CP-001": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-001",
+            "positive_scenario_id": "HX-TRJ1-P-001"
+          },
+          "CP-002": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-002",
+            "positive_scenario_id": "HX-TRJ1-P-002"
+          },
+          "CP-003": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-003",
+            "positive_scenario_id": "HX-TRJ1-P-003"
+          },
+          "CP-004": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-004",
+            "positive_scenario_id": "HX-TRJ1-P-004"
+          },
+          "CP-005": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-005",
+            "positive_scenario_id": "HX-TRJ1-P-005"
+          },
+          "CP-006": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-006",
+            "positive_scenario_id": "HX-TRJ1-P-006"
+          },
+          "CP-007": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-007",
+            "positive_scenario_id": "HX-TRJ1-P-007"
+          },
+          "CP-008": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-008",
+            "positive_scenario_id": "HX-TRJ1-P-008"
+          },
+          "CP-009": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-009",
+            "positive_scenario_id": "HX-TRJ1-P-009"
+          },
+          "CP-010": {
+            "category": "B",
+            "negative_scenario_id": "HX-TRJ1-N-010",
+            "positive_scenario_id": "HX-TRJ1-P-010"
+          }
+        }
+      },
+      "detection_delay": {
+        "TRJ-001": {
+          "detected_positive_count": 20,
+          "maximum": 10,
+          "mean": 5,
+          "median": 4.0,
+          "minimum": 4,
+          "missed_positive_count": 0,
+          "values": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            6,
+            8,
+            10,
+            9,
+            5,
+            5,
+            4
+          ]
+        }
+      },
+      "enabled_rule_ids": [
+        "TRJ-001"
+      ],
+      "family_breakdown": {
+        "TRJ-001": {
+          "counts": {
+            "FN": 0,
+            "FP": 16,
+            "TN": 4,
+            "TP": 20
+          },
+          "metrics": {
+            "detection_rate": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            },
+            "f1": {
+              "value": 0.7142857142857143
+            },
+            "false_positive_rate": {
+              "denominator": 20,
+              "numerator": 16,
+              "value": 0.8
+            },
+            "precision": {
+              "denominator": 36,
+              "numerator": 20,
+              "value": 0.5555555555555556
+            },
+            "recall": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            }
+          },
+          "negative_count": 20,
+          "positive_count": 20,
+          "unexpected_cross_family_findings": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        },
+        "TRJ-002": {
+          "counts": {
+            "FN": 20,
+            "FP": 0,
+            "TN": 20,
+            "TP": 0
+          },
+          "metrics": {
+            "detection_rate": {
+              "denominator": 20,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "f1": {
+              "value": 0.0
+            },
+            "false_positive_rate": {
+              "denominator": 20,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "recall": {
+              "denominator": 20,
+              "numerator": 0,
+              "value": 0.0
+            }
+          },
+          "negative_count": 20,
+          "positive_count": 20,
+          "unexpected_cross_family_findings": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        }
+      },
+      "finding_counts": {
+        "findings_per_scenario": 0.45,
+        "scenario_count": 80,
+        "scenarios_with_multiple_findings": {
+          "count": 0,
+          "scenario_ids": []
+        },
+        "total_findings": 36
+      },
+      "hard_negatives": {
+        "failures_by_rule": {
+          "TRJ-001": {
+            "count": 16,
+            "scenario_ids": [
+              "HX-TRJ1-N-001",
+              "HX-TRJ1-N-002",
+              "HX-TRJ1-N-003",
+              "HX-TRJ1-N-004",
+              "HX-TRJ1-N-005",
+              "HX-TRJ1-N-006",
+              "HX-TRJ1-N-007",
+              "HX-TRJ1-N-008",
+              "HX-TRJ1-N-009",
+              "HX-TRJ1-N-010",
+              "HX-TRJ1-N-015",
+              "HX-TRJ1-N-016",
+              "HX-TRJ1-N-017",
+              "HX-TRJ1-N-018",
+              "HX-TRJ1-N-019",
+              "HX-TRJ1-N-020"
+            ]
+          },
+          "TRJ-002": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        },
+        "flagged_scenario_ids": [
+          "HX-TRJ1-N-001",
+          "HX-TRJ1-N-002",
+          "HX-TRJ1-N-003",
+          "HX-TRJ1-N-004",
+          "HX-TRJ1-N-005",
+          "HX-TRJ1-N-006",
+          "HX-TRJ1-N-007",
+          "HX-TRJ1-N-008",
+          "HX-TRJ1-N-009",
+          "HX-TRJ1-N-010",
+          "HX-TRJ1-N-015",
+          "HX-TRJ1-N-016",
+          "HX-TRJ1-N-017",
+          "HX-TRJ1-N-018",
+          "HX-TRJ1-N-019",
+          "HX-TRJ1-N-020"
+        ],
+        "hard_negative_count": 36,
+        "hard_negative_false_positive_rate": {
+          "denominator": 36,
+          "numerator": 16,
+          "value": 0.4444444444444444
+        },
+        "hard_negatives_flagged": 16
+      },
+      "overall": {
+        "counts": {
+          "FN": 20,
+          "FP": 16,
+          "TN": 24,
+          "TP": 20
+        },
+        "metrics": {
+          "detection_rate": {
+            "denominator": 40,
+            "numerator": 20,
+            "value": 0.5
+          },
+          "f1": {
+            "value": 0.5263157894736842
+          },
+          "false_positive_rate": {
+            "denominator": 40,
+            "numerator": 16,
+            "value": 0.4
+          },
+          "precision": {
+            "denominator": 36,
+            "numerator": 20,
+            "value": 0.5555555555555556
+          },
+          "recall": {
+            "denominator": 40,
+            "numerator": 20,
+            "value": 0.5
+          }
+        },
+        "negative_count": 40,
+        "positive_count": 40
+      },
+      "policy_vs_trajectory": {
+        "policy_blocks_0_trajectory_finding_yes": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ1-P-001",
+            "HX-TRJ1-P-002",
+            "HX-TRJ1-P-003",
+            "HX-TRJ1-P-004",
+            "HX-TRJ1-P-005",
+            "HX-TRJ1-P-006",
+            "HX-TRJ1-P-007",
+            "HX-TRJ1-P-008",
+            "HX-TRJ1-P-009",
+            "HX-TRJ1-P-010",
+            "HX-TRJ1-P-011",
+            "HX-TRJ1-P-012",
+            "HX-TRJ1-P-013",
+            "HX-TRJ1-P-014",
+            "HX-TRJ1-P-015",
+            "HX-TRJ1-P-016",
+            "HX-TRJ1-P-017",
+            "HX-TRJ1-P-018",
+            "HX-TRJ1-P-019",
+            "HX-TRJ1-P-020"
+          ]
+        },
+        "policy_blocks_gt_0_trajectory_finding_yes": {
+          "count": 0,
+          "scenario_ids": []
+        }
+      }
+    },
+    "trj002_only": {
+      "contrast_pairs": {
+        "category_definitions": {
+          "A": "positive flagged, negative not flagged",
+          "B": "both flagged",
+          "C": "neither flagged",
+          "D": "negative only flagged"
+        },
+        "counts": {
+          "A": 0,
+          "B": 0,
+          "C": 10,
+          "D": 0
+        },
+        "pair_ids": {
+          "A": [],
+          "B": [],
+          "C": [
+            "CP-001",
+            "CP-002",
+            "CP-003",
+            "CP-004",
+            "CP-005",
+            "CP-006",
+            "CP-007",
+            "CP-008",
+            "CP-009",
+            "CP-010"
+          ],
+          "D": []
+        },
+        "pairs": {
+          "CP-001": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-001",
+            "positive_scenario_id": "HX-TRJ1-P-001"
+          },
+          "CP-002": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-002",
+            "positive_scenario_id": "HX-TRJ1-P-002"
+          },
+          "CP-003": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-003",
+            "positive_scenario_id": "HX-TRJ1-P-003"
+          },
+          "CP-004": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-004",
+            "positive_scenario_id": "HX-TRJ1-P-004"
+          },
+          "CP-005": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-005",
+            "positive_scenario_id": "HX-TRJ1-P-005"
+          },
+          "CP-006": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-006",
+            "positive_scenario_id": "HX-TRJ1-P-006"
+          },
+          "CP-007": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-007",
+            "positive_scenario_id": "HX-TRJ1-P-007"
+          },
+          "CP-008": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-008",
+            "positive_scenario_id": "HX-TRJ1-P-008"
+          },
+          "CP-009": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-009",
+            "positive_scenario_id": "HX-TRJ1-P-009"
+          },
+          "CP-010": {
+            "category": "C",
+            "negative_scenario_id": "HX-TRJ1-N-010",
+            "positive_scenario_id": "HX-TRJ1-P-010"
+          }
+        }
+      },
+      "detection_delay": {
+        "TRJ-002": {
+          "detected_positive_count": 20,
+          "maximum": 4,
+          "mean": 3.2,
+          "median": 3.0,
+          "minimum": 3,
+          "missed_positive_count": 0,
+          "values": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        }
+      },
+      "enabled_rule_ids": [
+        "TRJ-002"
+      ],
+      "family_breakdown": {
+        "TRJ-001": {
+          "counts": {
+            "FN": 20,
+            "FP": 0,
+            "TN": 20,
+            "TP": 0
+          },
+          "metrics": {
+            "detection_rate": {
+              "denominator": 20,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "f1": {
+              "value": 0.0
+            },
+            "false_positive_rate": {
+              "denominator": 20,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "recall": {
+              "denominator": 20,
+              "numerator": 0,
+              "value": 0.0
+            }
+          },
+          "negative_count": 20,
+          "positive_count": 20,
+          "unexpected_cross_family_findings": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        },
+        "TRJ-002": {
+          "counts": {
+            "FN": 0,
+            "FP": 17,
+            "TN": 3,
+            "TP": 20
+          },
+          "metrics": {
+            "detection_rate": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            },
+            "f1": {
+              "value": 0.7017543859649124
+            },
+            "false_positive_rate": {
+              "denominator": 20,
+              "numerator": 17,
+              "value": 0.85
+            },
+            "precision": {
+              "denominator": 37,
+              "numerator": 20,
+              "value": 0.5405405405405406
+            },
+            "recall": {
+              "denominator": 20,
+              "numerator": 20,
+              "value": 1.0
+            }
+          },
+          "negative_count": 20,
+          "positive_count": 20,
+          "unexpected_cross_family_findings": {
+            "count": 0,
+            "scenario_ids": []
+          }
+        }
+      },
+      "finding_counts": {
+        "findings_per_scenario": 0.475,
+        "scenario_count": 80,
+        "scenarios_with_multiple_findings": {
+          "count": 1,
+          "scenario_ids": [
+            "HX-TRJ2-N-004"
+          ]
+        },
+        "total_findings": 38
+      },
+      "hard_negatives": {
+        "failures_by_rule": {
+          "TRJ-001": {
+            "count": 0,
+            "scenario_ids": []
+          },
+          "TRJ-002": {
+            "count": 17,
+            "scenario_ids": [
+              "HX-TRJ2-N-003",
+              "HX-TRJ2-N-004",
+              "HX-TRJ2-N-005",
+              "HX-TRJ2-N-006",
+              "HX-TRJ2-N-007",
+              "HX-TRJ2-N-008",
+              "HX-TRJ2-N-009",
+              "HX-TRJ2-N-011",
+              "HX-TRJ2-N-012",
+              "HX-TRJ2-N-013",
+              "HX-TRJ2-N-014",
+              "HX-TRJ2-N-015",
+              "HX-TRJ2-N-016",
+              "HX-TRJ2-N-017",
+              "HX-TRJ2-N-018",
+              "HX-TRJ2-N-019",
+              "HX-TRJ2-N-020"
+            ]
+          }
+        },
+        "flagged_scenario_ids": [
+          "HX-TRJ2-N-003",
+          "HX-TRJ2-N-004",
+          "HX-TRJ2-N-005",
+          "HX-TRJ2-N-006",
+          "HX-TRJ2-N-007",
+          "HX-TRJ2-N-008",
+          "HX-TRJ2-N-009",
+          "HX-TRJ2-N-011",
+          "HX-TRJ2-N-012",
+          "HX-TRJ2-N-013",
+          "HX-TRJ2-N-014",
+          "HX-TRJ2-N-015",
+          "HX-TRJ2-N-016",
+          "HX-TRJ2-N-017",
+          "HX-TRJ2-N-018",
+          "HX-TRJ2-N-019",
+          "HX-TRJ2-N-020"
+        ],
+        "hard_negative_count": 36,
+        "hard_negative_false_positive_rate": {
+          "denominator": 36,
+          "numerator": 17,
+          "value": 0.4722222222222222
+        },
+        "hard_negatives_flagged": 17
+      },
+      "overall": {
+        "counts": {
+          "FN": 20,
+          "FP": 17,
+          "TN": 23,
+          "TP": 20
+        },
+        "metrics": {
+          "detection_rate": {
+            "denominator": 40,
+            "numerator": 20,
+            "value": 0.5
+          },
+          "f1": {
+            "value": 0.5194805194805195
+          },
+          "false_positive_rate": {
+            "denominator": 40,
+            "numerator": 17,
+            "value": 0.425
+          },
+          "precision": {
+            "denominator": 37,
+            "numerator": 20,
+            "value": 0.5405405405405406
+          },
+          "recall": {
+            "denominator": 40,
+            "numerator": 20,
+            "value": 0.5
+          }
+        },
+        "negative_count": 40,
+        "positive_count": 40
+      },
+      "policy_vs_trajectory": {
+        "policy_blocks_0_trajectory_finding_yes": {
+          "count": 0,
+          "scenario_ids": []
+        },
+        "policy_blocks_gt_0_trajectory_finding_yes": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ2-P-001",
+            "HX-TRJ2-P-002",
+            "HX-TRJ2-P-003",
+            "HX-TRJ2-P-004",
+            "HX-TRJ2-P-005",
+            "HX-TRJ2-P-006",
+            "HX-TRJ2-P-007",
+            "HX-TRJ2-P-008",
+            "HX-TRJ2-P-009",
+            "HX-TRJ2-P-010",
+            "HX-TRJ2-P-011",
+            "HX-TRJ2-P-012",
+            "HX-TRJ2-P-013",
+            "HX-TRJ2-P-014",
+            "HX-TRJ2-P-015",
+            "HX-TRJ2-P-016",
+            "HX-TRJ2-P-017",
+            "HX-TRJ2-P-018",
+            "HX-TRJ2-P-019",
+            "HX-TRJ2-P-020"
+          ]
+        }
+      }
+    }
+  },
+  "design": {
+    "controlled_variables": {
+      "TRJ-002_threshold": 3,
+      "corpus": "EXP-009-CORPUS@1",
+      "observation_semantics": "frozen base",
+      "ordering_semantics": "frozen base",
+      "session_task_isolation": "frozen base",
+      "trajectory_window": 8
+    },
+    "independent_variable": "enabled trajectory rule set",
+    "paired": true,
+    "unit": "same frozen scenario trace evaluated under each configuration",
+    "values": [
+      [
+        "TRJ-001"
+      ],
+      [
+        "TRJ-002"
+      ],
+      [
+        "TRJ-001",
+        "TRJ-002"
+      ]
+    ]
+  },
+  "experiment_id": "EXP-009-A3",
+  "fp_attribution": {
+    "TRJ-001_only": {
+      "count": 16,
+      "scenario_ids": [
+        "HX-TRJ1-N-001",
+        "HX-TRJ1-N-002",
+        "HX-TRJ1-N-003",
+        "HX-TRJ1-N-004",
+        "HX-TRJ1-N-005",
+        "HX-TRJ1-N-006",
+        "HX-TRJ1-N-007",
+        "HX-TRJ1-N-008",
+        "HX-TRJ1-N-009",
+        "HX-TRJ1-N-010",
+        "HX-TRJ1-N-015",
+        "HX-TRJ1-N-016",
+        "HX-TRJ1-N-017",
+        "HX-TRJ1-N-018",
+        "HX-TRJ1-N-019",
+        "HX-TRJ1-N-020"
+      ]
+    },
+    "TRJ-002_only": {
+      "count": 17,
+      "scenario_ids": [
+        "HX-TRJ2-N-003",
+        "HX-TRJ2-N-004",
+        "HX-TRJ2-N-005",
+        "HX-TRJ2-N-006",
+        "HX-TRJ2-N-007",
+        "HX-TRJ2-N-008",
+        "HX-TRJ2-N-009",
+        "HX-TRJ2-N-011",
+        "HX-TRJ2-N-012",
+        "HX-TRJ2-N-013",
+        "HX-TRJ2-N-014",
+        "HX-TRJ2-N-015",
+        "HX-TRJ2-N-016",
+        "HX-TRJ2-N-017",
+        "HX-TRJ2-N-018",
+        "HX-TRJ2-N-019",
+        "HX-TRJ2-N-020"
+      ]
+    },
+    "neither_rule": {
+      "count": 0,
+      "scenario_ids": []
+    },
+    "unexpected_overlap": {
+      "count": 0,
+      "scenario_ids": []
+    }
+  },
+  "interaction_check": {
+    "compared_fields": [
+      "rule firing",
+      "finding IDs",
+      "evidence positions",
+      "detection positions",
+      "complete finding semantics"
+    ],
+    "interaction_detected": false,
+    "mismatches": []
+  },
+  "paired_transitions": {
+    "trj001_only_to_both": {
+      "negatives": {
+        "both_only": {
+          "count": 17,
+          "scenario_ids": [
+            "HX-TRJ2-N-003",
+            "HX-TRJ2-N-004",
+            "HX-TRJ2-N-005",
+            "HX-TRJ2-N-006",
+            "HX-TRJ2-N-007",
+            "HX-TRJ2-N-008",
+            "HX-TRJ2-N-009",
+            "HX-TRJ2-N-011",
+            "HX-TRJ2-N-012",
+            "HX-TRJ2-N-013",
+            "HX-TRJ2-N-014",
+            "HX-TRJ2-N-015",
+            "HX-TRJ2-N-016",
+            "HX-TRJ2-N-017",
+            "HX-TRJ2-N-018",
+            "HX-TRJ2-N-019",
+            "HX-TRJ2-N-020"
+          ]
+        },
+        "in_both_conditions": {
+          "count": 16,
+          "scenario_ids": [
+            "HX-TRJ1-N-001",
+            "HX-TRJ1-N-002",
+            "HX-TRJ1-N-003",
+            "HX-TRJ1-N-004",
+            "HX-TRJ1-N-005",
+            "HX-TRJ1-N-006",
+            "HX-TRJ1-N-007",
+            "HX-TRJ1-N-008",
+            "HX-TRJ1-N-009",
+            "HX-TRJ1-N-010",
+            "HX-TRJ1-N-015",
+            "HX-TRJ1-N-016",
+            "HX-TRJ1-N-017",
+            "HX-TRJ1-N-018",
+            "HX-TRJ1-N-019",
+            "HX-TRJ1-N-020"
+          ]
+        },
+        "in_neither_condition": {
+          "count": 7,
+          "scenario_ids": [
+            "HX-TRJ1-N-011",
+            "HX-TRJ1-N-012",
+            "HX-TRJ1-N-013",
+            "HX-TRJ1-N-014",
+            "HX-TRJ2-N-001",
+            "HX-TRJ2-N-002",
+            "HX-TRJ2-N-010"
+          ]
+        },
+        "individual_only": {
+          "count": 0,
+          "scenario_ids": []
+        }
+      },
+      "positives": {
+        "both_only": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ2-P-001",
+            "HX-TRJ2-P-002",
+            "HX-TRJ2-P-003",
+            "HX-TRJ2-P-004",
+            "HX-TRJ2-P-005",
+            "HX-TRJ2-P-006",
+            "HX-TRJ2-P-007",
+            "HX-TRJ2-P-008",
+            "HX-TRJ2-P-009",
+            "HX-TRJ2-P-010",
+            "HX-TRJ2-P-011",
+            "HX-TRJ2-P-012",
+            "HX-TRJ2-P-013",
+            "HX-TRJ2-P-014",
+            "HX-TRJ2-P-015",
+            "HX-TRJ2-P-016",
+            "HX-TRJ2-P-017",
+            "HX-TRJ2-P-018",
+            "HX-TRJ2-P-019",
+            "HX-TRJ2-P-020"
+          ]
+        },
+        "in_both_conditions": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ1-P-001",
+            "HX-TRJ1-P-002",
+            "HX-TRJ1-P-003",
+            "HX-TRJ1-P-004",
+            "HX-TRJ1-P-005",
+            "HX-TRJ1-P-006",
+            "HX-TRJ1-P-007",
+            "HX-TRJ1-P-008",
+            "HX-TRJ1-P-009",
+            "HX-TRJ1-P-010",
+            "HX-TRJ1-P-011",
+            "HX-TRJ1-P-012",
+            "HX-TRJ1-P-013",
+            "HX-TRJ1-P-014",
+            "HX-TRJ1-P-015",
+            "HX-TRJ1-P-016",
+            "HX-TRJ1-P-017",
+            "HX-TRJ1-P-018",
+            "HX-TRJ1-P-019",
+            "HX-TRJ1-P-020"
+          ]
+        },
+        "in_neither_condition": {
+          "count": 0,
+          "scenario_ids": []
+        },
+        "individual_only": {
+          "count": 0,
+          "scenario_ids": []
+        }
+      }
+    },
+    "trj002_only_to_both": {
+      "negatives": {
+        "both_only": {
+          "count": 16,
+          "scenario_ids": [
+            "HX-TRJ1-N-001",
+            "HX-TRJ1-N-002",
+            "HX-TRJ1-N-003",
+            "HX-TRJ1-N-004",
+            "HX-TRJ1-N-005",
+            "HX-TRJ1-N-006",
+            "HX-TRJ1-N-007",
+            "HX-TRJ1-N-008",
+            "HX-TRJ1-N-009",
+            "HX-TRJ1-N-010",
+            "HX-TRJ1-N-015",
+            "HX-TRJ1-N-016",
+            "HX-TRJ1-N-017",
+            "HX-TRJ1-N-018",
+            "HX-TRJ1-N-019",
+            "HX-TRJ1-N-020"
+          ]
+        },
+        "in_both_conditions": {
+          "count": 17,
+          "scenario_ids": [
+            "HX-TRJ2-N-003",
+            "HX-TRJ2-N-004",
+            "HX-TRJ2-N-005",
+            "HX-TRJ2-N-006",
+            "HX-TRJ2-N-007",
+            "HX-TRJ2-N-008",
+            "HX-TRJ2-N-009",
+            "HX-TRJ2-N-011",
+            "HX-TRJ2-N-012",
+            "HX-TRJ2-N-013",
+            "HX-TRJ2-N-014",
+            "HX-TRJ2-N-015",
+            "HX-TRJ2-N-016",
+            "HX-TRJ2-N-017",
+            "HX-TRJ2-N-018",
+            "HX-TRJ2-N-019",
+            "HX-TRJ2-N-020"
+          ]
+        },
+        "in_neither_condition": {
+          "count": 7,
+          "scenario_ids": [
+            "HX-TRJ1-N-011",
+            "HX-TRJ1-N-012",
+            "HX-TRJ1-N-013",
+            "HX-TRJ1-N-014",
+            "HX-TRJ2-N-001",
+            "HX-TRJ2-N-002",
+            "HX-TRJ2-N-010"
+          ]
+        },
+        "individual_only": {
+          "count": 0,
+          "scenario_ids": []
+        }
+      },
+      "positives": {
+        "both_only": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ1-P-001",
+            "HX-TRJ1-P-002",
+            "HX-TRJ1-P-003",
+            "HX-TRJ1-P-004",
+            "HX-TRJ1-P-005",
+            "HX-TRJ1-P-006",
+            "HX-TRJ1-P-007",
+            "HX-TRJ1-P-008",
+            "HX-TRJ1-P-009",
+            "HX-TRJ1-P-010",
+            "HX-TRJ1-P-011",
+            "HX-TRJ1-P-012",
+            "HX-TRJ1-P-013",
+            "HX-TRJ1-P-014",
+            "HX-TRJ1-P-015",
+            "HX-TRJ1-P-016",
+            "HX-TRJ1-P-017",
+            "HX-TRJ1-P-018",
+            "HX-TRJ1-P-019",
+            "HX-TRJ1-P-020"
+          ]
+        },
+        "in_both_conditions": {
+          "count": 20,
+          "scenario_ids": [
+            "HX-TRJ2-P-001",
+            "HX-TRJ2-P-002",
+            "HX-TRJ2-P-003",
+            "HX-TRJ2-P-004",
+            "HX-TRJ2-P-005",
+            "HX-TRJ2-P-006",
+            "HX-TRJ2-P-007",
+            "HX-TRJ2-P-008",
+            "HX-TRJ2-P-009",
+            "HX-TRJ2-P-010",
+            "HX-TRJ2-P-011",
+            "HX-TRJ2-P-012",
+            "HX-TRJ2-P-013",
+            "HX-TRJ2-P-014",
+            "HX-TRJ2-P-015",
+            "HX-TRJ2-P-016",
+            "HX-TRJ2-P-017",
+            "HX-TRJ2-P-018",
+            "HX-TRJ2-P-019",
+            "HX-TRJ2-P-020"
+          ]
+        },
+        "in_neither_condition": {
+          "count": 0,
+          "scenario_ids": []
+        },
+        "individual_only": {
+          "count": 0,
+          "scenario_ids": []
+        }
+      }
+    }
+  },
+  "title": "Trajectory rule-availability ablation",
+  "tp_attribution": {
+    "TRJ-001_only": {
+      "count": 20,
+      "scenario_ids": [
+        "HX-TRJ1-P-001",
+        "HX-TRJ1-P-002",
+        "HX-TRJ1-P-003",
+        "HX-TRJ1-P-004",
+        "HX-TRJ1-P-005",
+        "HX-TRJ1-P-006",
+        "HX-TRJ1-P-007",
+        "HX-TRJ1-P-008",
+        "HX-TRJ1-P-009",
+        "HX-TRJ1-P-010",
+        "HX-TRJ1-P-011",
+        "HX-TRJ1-P-012",
+        "HX-TRJ1-P-013",
+        "HX-TRJ1-P-014",
+        "HX-TRJ1-P-015",
+        "HX-TRJ1-P-016",
+        "HX-TRJ1-P-017",
+        "HX-TRJ1-P-018",
+        "HX-TRJ1-P-019",
+        "HX-TRJ1-P-020"
+      ]
+    },
+    "TRJ-002_only": {
+      "count": 20,
+      "scenario_ids": [
+        "HX-TRJ2-P-001",
+        "HX-TRJ2-P-002",
+        "HX-TRJ2-P-003",
+        "HX-TRJ2-P-004",
+        "HX-TRJ2-P-005",
+        "HX-TRJ2-P-006",
+        "HX-TRJ2-P-007",
+        "HX-TRJ2-P-008",
+        "HX-TRJ2-P-009",
+        "HX-TRJ2-P-010",
+        "HX-TRJ2-P-011",
+        "HX-TRJ2-P-012",
+        "HX-TRJ2-P-013",
+        "HX-TRJ2-P-014",
+        "HX-TRJ2-P-015",
+        "HX-TRJ2-P-016",
+        "HX-TRJ2-P-017",
+        "HX-TRJ2-P-018",
+        "HX-TRJ2-P-019",
+        "HX-TRJ2-P-020"
+      ]
+    },
+    "both_rules": {
+      "count": 0,
+      "scenario_ids": []
+    },
+    "missed_when_TRJ-001_removed": {
+      "count": 20,
+      "scenario_ids": [
+        "HX-TRJ1-P-001",
+        "HX-TRJ1-P-002",
+        "HX-TRJ1-P-003",
+        "HX-TRJ1-P-004",
+        "HX-TRJ1-P-005",
+        "HX-TRJ1-P-006",
+        "HX-TRJ1-P-007",
+        "HX-TRJ1-P-008",
+        "HX-TRJ1-P-009",
+        "HX-TRJ1-P-010",
+        "HX-TRJ1-P-011",
+        "HX-TRJ1-P-012",
+        "HX-TRJ1-P-013",
+        "HX-TRJ1-P-014",
+        "HX-TRJ1-P-015",
+        "HX-TRJ1-P-016",
+        "HX-TRJ1-P-017",
+        "HX-TRJ1-P-018",
+        "HX-TRJ1-P-019",
+        "HX-TRJ1-P-020"
+      ]
+    },
+    "missed_when_TRJ-002_removed": {
+      "count": 20,
+      "scenario_ids": [
+        "HX-TRJ2-P-001",
+        "HX-TRJ2-P-002",
+        "HX-TRJ2-P-003",
+        "HX-TRJ2-P-004",
+        "HX-TRJ2-P-005",
+        "HX-TRJ2-P-006",
+        "HX-TRJ2-P-007",
+        "HX-TRJ2-P-008",
+        "HX-TRJ2-P-009",
+        "HX-TRJ2-P-010",
+        "HX-TRJ2-P-011",
+        "HX-TRJ2-P-012",
+        "HX-TRJ2-P-013",
+        "HX-TRJ2-P-014",
+        "HX-TRJ2-P-015",
+        "HX-TRJ2-P-016",
+        "HX-TRJ2-P-017",
+        "HX-TRJ2-P-018",
+        "HX-TRJ2-P-019",
+        "HX-TRJ2-P-020"
+      ]
+    },
+    "neither_rule": {
+      "count": 0,
+      "scenario_ids": []
+    }
+  },
+  "union_check": {
+    "mismatched_scenarios": [],
+    "scenario_count_checked": 80,
+    "semantic_union_holds_for_all_scenarios": true
+  }
+}

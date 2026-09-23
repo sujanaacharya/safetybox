@@ -1,0 +1,49 @@
+{
+  "a1_result_commit": "870507f611432fa30a76b4772866080498c230ef",
+  "a2_result_commit": "2e0e0f2dd8bec48daa4bc6a160876931355951d0",
+  "ablation_title": "Trajectory rule-availability ablation",
+  "base_analysis_commit": "88cf8c1b4c45ab9519afeeb6f6c091b9b50b981e",
+  "base_result_commit": "30dc4b5823bb00abfdb14ae74f21d9c43fe48bf6",
+  "corpus_commit": "b91458f672edb72eaa7b1f3df67dc844933c19c4",
+  "created_at_utc": "2026-09-23T10:53:32.257757+00:00",
+  "current_head": "2e0e0f2dd8bec48daa4bc6a160876931355951d0",
+  "detector_commit": "6dc4a6eac7db315a06d9b165234eb1388ee89529",
+  "experiment_id": "EXP-009-A3",
+  "input_sha256": {
+    "docs/experiments/EXP-009-A1-TRJ002-THRESHOLD-ABLATION.md": "cc2a8a072aedfccd4c1b1b8e99fd73a1f3e26635c4b54fd74c17e3e52fdbd531",
+    "docs/experiments/EXP-009-A2-TRAJECTORY-WINDOW-ABLATION.md": "5bca46d5324634aecba012b5b73e45fc475d413704584fa64e698c44dbbe54b6",
+    "docs/experiments/EXP-009-RESULTS.md": "3a45e3ba1e8c28e715af65b71c3ea07db52d749e263674ab946e61f459832a6a",
+    "docs/experiments/EXP-009-trajectory-monitor-evaluation.md": "42f16b342e60c78b9de78ad4780ea86b31baa099af3c771c33234cc028e79617",
+    "experiments/EXP-009/corpus/labels.yaml": "7e2a2a41376f395ea61e553d8074ea2cad9ce7b778774ca3a2832780a2184535",
+    "experiments/EXP-009/corpus/manifest.yaml": "343023e34e8c35d362e640254d8e0bc5055c8dd5a5f3fea78f0f1da389364fa7",
+    "experiments/EXP-009/protocol.yaml": "a3993e079785c7aee3df8b1e68fb251d92223f288329bde9b85e089b875f45ea",
+    "results/EXP-009/ablations/TRJ-002-threshold/summary.json": "7691d0168e4a0d1dff7fdd6b89068cd6611413baa406933b5041fa73816a2fbc",
+    "results/EXP-009/ablations/trajectory-window/summary.json": "dc10f93c0b8ca76ccd6348257e539c8ef5135a2bed2ada6ac850ed0322546826",
+    "results/EXP-009/analysis.json": "c3e28f91e6628701dbc1ea3cff60cd212505e8f4e926b03a445f57566e22c901",
+    "results/EXP-009/runs.jsonl": "dbfa7aadc36d8751cd78ef10e62c5b4ef497a7badb0e9ea72358f6b17c17b7d3",
+    "results/EXP-009/summary.json": "dafb1682b401e1ea3d8860bdbf9570d5ade8e4fd6d3194d0ece06c8ccd43fb8c",
+    "src/safetybox/trajectory/monitor.py": "f392d27a16b51e393910b319bdb440de581ff1801756fa484d83f77440001fbf",
+    "src/safetybox/trajectory/rules.py": "b5af41e1da0ef53270a291b0af5dba639fdbb8dc0c51576e5dd621b4a027c82a"
+  },
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "protocol_commit": "17e16d63d9bbf9b17b94d2b4ada7b81f27e3c6f6",
+  "python_version": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "runtime_configuration": {
+    "TRJ-002_threshold": 3,
+    "configuration_mechanism": "TrajectoryMonitor(rules=...) evaluation configuration; no detector source change.",
+    "event_source": "frozen results/EXP-009/runs.jsonl canonical event traces",
+    "rule_sets": [
+      [
+        "TRJ-001"
+      ],
+      [
+        "TRJ-002"
+      ],
+      [
+        "TRJ-001",
+        "TRJ-002"
+      ]
+    ],
+    "window_size": 8
+  }
+}
