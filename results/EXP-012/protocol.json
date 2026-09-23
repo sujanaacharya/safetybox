@@ -1,0 +1,20 @@
+{
+  "controls_in_primary_denominators": false,
+  "corpus_git_sha": "66ec339bfe69a6e7be06c43670dca293c117412b",
+  "corpus_id": "EXP-012-CORPUS@1",
+  "corpus_version": 1,
+  "evaluation_base_git_sha": "66ec339bfe69a6e7be06c43670dca293c117412b",
+  "execution": "one frozen paired B1/B2 held-out evaluation",
+  "experiment_id": "EXP-012",
+  "frozen_m5_1_a_git_sha": "7dd4de167e8b997479da051cc412ac70feed7702",
+  "frozen_m5_1_b_git_sha": "f75f29552681f5b471b4009992a2100610bdf18c",
+  "frozen_m5_1_c_detector_git_sha": "bd21c4cc6f0c5e5b176fc7cf471aa7d72bb76d71",
+  "frozen_m5_detector_git_sha": "6dc4a6eac7db315a06d9b165234eb1388ee89529",
+  "insufficient_context_is_suspicious": false,
+  "primary_prediction_semantics": "at least one SUSPICIOUS finding",
+  "protocol_file_sha256": "adef5fc281019ea10f77b815ecfc470ac38dd1738dbaaaf8df27a3cc24d09ea0",
+  "protocol_git_sha": "f74f77d2620c0c8d2900eb28d1e4242a8baeb9f1",
+  "protocol_path": "experiments/EXP-012/protocol.yaml",
+  "protocol_status": "PREREGISTERED",
+  "protocol_version": 1
+}

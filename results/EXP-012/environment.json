@@ -1,0 +1,136 @@
+{
+  "detector_configuration": {
+    "m5": {
+      "rule_ids": [
+        "TRJ-001",
+        "TRJ-002"
+      ],
+      "window_size": 8
+    },
+    "m5_1": {
+      "context_schema_version": "1",
+      "rule_ids": [
+        "CTXTRJ-001",
+        "CTXTRJ-002"
+      ],
+      "window_size": 8
+    }
+  },
+  "execution_command": "./.venv/bin/python results/EXP-012/evaluate.py",
+  "experiment_id": "EXP-012",
+  "git_head": "66ec339bfe69a6e7be06c43670dca293c117412b",
+  "machine": "x86_64",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "pre_run_freeze_verification": {
+    "checked_before_result_directory_creation": true,
+    "frozen_files_had_no_diffs": true,
+    "frozen_paths": [
+      "src/safetybox/trajectory",
+      "src/safetybox/context",
+      "src/safetybox/context_trajectory",
+      "experiments/EXP-012/protocol.yaml",
+      "experiments/EXP-012/corpus",
+      "docs/experiments/EXP-012-context-aware-trajectory-evaluation.md",
+      "experiments/EXP-009",
+      "results/EXP-009",
+      "docs/experiments/EXP-009-RESULTS.md",
+      "docs/experiments/EXP-009-FALSE-NEGATIVES.md",
+      "docs/experiments/EXP-009-FALSE-POSITIVES.md",
+      "docs/experiments/EXP-009-SYNTHESIS.md",
+      "docs/experiments/EXP-009-trajectory-monitor-evaluation.md"
+    ],
+    "protocol_file_sha256_matches_manifest": true,
+    "working_tree_clean": true
+  },
+  "provenance": {
+    "analysis_command": "integrated deterministic mechanical summarization in evaluate.py",
+    "context_schema_version": "1",
+    "corpus": {
+      "corpus_id": "EXP-012-CORPUS@1",
+      "git_sha": "66ec339bfe69a6e7be06c43670dca293c117412b",
+      "labels_sha256": "5e247fb3fba423f0d220dddc760823fef6a0a6a2b38570518031bdaa1551eada",
+      "manifest_sha256": "57b59b56d105e42ba8fa9cda92cf5e4246f810d17e38e2010e134952c10fdfa7",
+      "version": 1
+    },
+    "evaluation_base_git_sha": "66ec339bfe69a6e7be06c43670dca293c117412b",
+    "execution_command": "./.venv/bin/python results/EXP-012/evaluate.py",
+    "m5_1_a_git_sha": "7dd4de167e8b997479da051cc412ac70feed7702",
+    "m5_1_b_git_sha": "f75f29552681f5b471b4009992a2100610bdf18c",
+    "m5_1_c_detector_git_sha": "bd21c4cc6f0c5e5b176fc7cf471aa7d72bb76d71",
+    "m5_detector_git_sha": "6dc4a6eac7db315a06d9b165234eb1388ee89529",
+    "model_provider": "not_applicable",
+    "protocol": {
+      "git_sha": "f74f77d2620c0c8d2900eb28d1e4242a8baeb9f1",
+      "path": "experiments/EXP-012/protocol.yaml",
+      "sha256": "adef5fc281019ea10f77b815ecfc470ac38dd1738dbaaaf8df27a3cc24d09ea0"
+    },
+    "relevant_source_hashes": {
+      "m5": {
+        "files": {
+          "src/safetybox/trajectory/__init__.py": "ee4f4ba0cfe10b838ac1e28e0b039e593eae9a1db193dc9ac7f4133515d9332c",
+          "src/safetybox/trajectory/models.py": "ada301cc012cda0f895587a7641929092840d6fea856d8415c3ccccce95e503f",
+          "src/safetybox/trajectory/monitor.py": "f392d27a16b51e393910b319bdb440de581ff1801756fa484d83f77440001fbf",
+          "src/safetybox/trajectory/observations.py": "9675cf87122770c8e6fc14421113910462f70b1533b55b85d7403d630c0bbece",
+          "src/safetybox/trajectory/rules.py": "b5af41e1da0ef53270a291b0af5dba639fdbb8dc0c51576e5dd621b4a027c82a"
+        },
+        "sha256": "bfc446657eec8818cb95828a531bfb946d96875c0ae1529dd1909baa9d441197"
+      },
+      "m5_1_a_b": {
+        "files": {
+          "src/safetybox/context/__init__.py": "d985849782c4fdffd088399ec7a6090b0801c4ee1861aa7390c08273fe8d1e1a",
+          "src/safetybox/context/evaluation.py": "d76be789a9c86a96c5a2bba18df25b01df336bb89e9da7526c404ad7fb4efc4d",
+          "src/safetybox/context/models.py": "e8887f937a8974a90c6e0ebcddb3f67a387cb127d0fdc159bdc0638a216741e5",
+          "src/safetybox/context/validation.py": "c7402b41f93b8178216b7357df3572ce7a637d081b0f86ad2baf7d2688691ca0"
+        },
+        "sha256": "293d8202dac8ae6890d69bde78f6906b9492101b06c28b67110b2fc741950ace"
+      },
+      "m5_1_c": {
+        "files": {
+          "src/safetybox/context_trajectory/__init__.py": "7146808cec535ca9bde4bf5323de3feebc8212b416ce51e3955463180bccaf6e",
+          "src/safetybox/context_trajectory/models.py": "1fee307011c8493bb2adc9aa84aafa40ab3ec9a1f6475b48acb0a1ce04536262",
+          "src/safetybox/context_trajectory/monitor.py": "2f082df825e156fce0db419ca6d1bd9a63562d6b7e341598db33a79604ba19c7",
+          "src/safetybox/context_trajectory/rules.py": "7e020779a607e3d6824c145307886930bf94a331f8bea546362900e8f57e96d8"
+        },
+        "sha256": "fdf828cc76f5838e4b6c9a9c9ebe58fad5c6bbfe54c946b26f9827bd97e226bb"
+      },
+      "policy": {
+        "files": {
+          "src/safetybox/capabilities.py": "93d0bdd51f1b4e5e7f309c97714e34584808edfa75213dd27614e7075b8b0dde",
+          "src/safetybox/policy.py": "ac5a45ff007cb2e86827eec2abf9e69b16e561f575f67965912b6888c29df579"
+        },
+        "sha256": "c5bc318762558c884655e590dec3a5a4025f22fbeaac4a46d0634efd6dbb75d9"
+      },
+      "resource_registry": {
+        "files": {
+          "src/safetybox/context/models.py": "e8887f937a8974a90c6e0ebcddb3f67a387cb127d0fdc159bdc0638a216741e5",
+          "src/safetybox/experiments/exp012_corpus.py": "552da7730987b3eb35331c1796423b5314c52d49238e3ccfab00eaa0bd727813"
+        },
+        "sha256": "2389e6f430404465664b8c2f2d1f9aff9ed6d7c5bb1c94e236d647fead7cf870"
+      },
+      "task_contract": {
+        "files": {
+          "src/safetybox/contracts.py": "8c4f70a0b1b7f7899bae2e398bb79de3b31c3bd679e31f3f0a661a4f114527fd"
+        },
+        "sha256": "a9760c91f71d5319f401e6e015a271c3648582364eada4ab176d57ed08f9a64b"
+      },
+      "tool_adapter": {
+        "files": {
+          "results/EXP-012/evaluate.py": "95e7bd85edd79e9c6e1fdd5f602dc33bda7ac1809608a26d74479afc2b530b33"
+        },
+        "sha256": "95e7bd85edd79e9c6e1fdd5f602dc33bda7ac1809608a26d74479afc2b530b33"
+      }
+    }
+  },
+  "python_executable": "/home/sujana-personal/Desktop/safetybox/.venv/bin/python",
+  "python_implementation": "CPython",
+  "python_version": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "python_version_info": [
+    3,
+    11,
+    16
+  ],
+  "required_python": ">=3.11",
+  "required_python_satisfied": true,
+  "run_id": "EXP-012-RUN-001",
+  "safetybox_version": "0.0.0"
+}
