@@ -1,6 +1,6 @@
 # Hypotheses
 
-All hypotheses are **proposed and untested**. Operational thresholds, equivalence margins, sample sizes, and statistical tests must be fixed in the associated experiment registrations before data collection.
+Unless a finalized evidence assessment is recorded below, hypotheses are **proposed and untested**. Operational thresholds, equivalence margins, sample sizes, and statistical tests must be fixed in the associated experiment registrations before data collection.
 
 | ID | Hypothesis | RQs | Candidate experiments |
 |---|---|---|---|
@@ -16,3 +16,15 @@ All hypotheses are **proposed and untested**. Operational thresholds, equivalenc
 | H-10 | A deterministic-plus-LLM hybrid will improve detection for selected semantic scenarios over deterministic enforcement alone, but with higher latency, cost, and repeated-run variability. | RQ-06, RQ-07 | EXP-007, EXP-008 |
 
 Failure to support a hypothesis is a valid research outcome. The [Claims Ledger](CLAIMS_LEDGER.md) must not treat these statements as conclusions.
+
+## H-02 evidence assessment — EXP-009 Claim Synthesis v1
+
+**Status:** `PARTIALLY_SUPPORTED`
+
+**Hypothesis wording:** “Trajectory-aware deterministic monitoring will detect at least one preregistered class of suspicious behavior that independent single-action authorization does not detect.”
+
+**Evidence:** EXP-009, EXP-009-A1, EXP-009-A2, and EXP-009-A3. In the frozen base, trajectory monitoring produced findings for 20/20 TRJ-001 positive scenarios with `policy_blocked_steps = 0`. A3 independently attributed these findings to TRJ-001.
+
+**Scope:** synthetic held-out `EXP-009-CORPUS@1` and the frozen M5 deterministic observational rule architecture only.
+
+**Limitations:** 33/40 trajectory-negative scenarios and 33/36 hard negatives were flagged. All 10/10 TRJ-001 contrast pairs had both the positive and opposite-label benign scenario flagged. A1 did not resolve TRJ-002 purpose ambiguity at the three preregistered thresholds, A2 exposed no window sensitivity at 4, 8, or 16, and A3 showed that both rule families independently contribute a similar false-positive burden. M5 findings are observational and do not establish prevention, pre-execution detection, or real-world generalization.

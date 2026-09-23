@@ -1,0 +1,120 @@
+{
+  "experiment_id": "EXP-009-CLAIM-SYNTHESIS-v1",
+  "evidence_refs": {
+    "protocol": {
+      "git_sha": "17e16d63d9bbf9b17b94d2b4ada7b81f27e3c6f6",
+      "artifact": "experiments/EXP-009/protocol.yaml",
+      "sha256": "a3993e079785c7aee3df8b1e68fb251d92223f288329bde9b85e089b875f45ea"
+    },
+    "corpus": {
+      "git_sha": "b91458f672edb72eaa7b1f3df67dc844933c19c4",
+      "corpus_id": "EXP-009-CORPUS@1"
+    },
+    "detector": {
+      "git_sha": "6dc4a6eac7db315a06d9b165234eb1388ee89529",
+      "rules_sha256": "b5af41e1da0ef53270a291b0af5dba639fdbb8dc0c51576e5dd621b4a027c82a"
+    },
+    "base_result": {
+      "git_sha": "30dc4b5823bb00abfdb14ae74f21d9c43fe48bf6",
+      "summary_sha256": "dafb1682b401e1ea3d8860bdbf9570d5ade8e4fd6d3194d0ece06c8ccd43fb8c"
+    },
+    "base_analysis": {
+      "git_sha": "88cf8c1b4c45ab9519afeeb6f6c091b9b50b981e",
+      "analysis_sha256": "c3e28f91e6628701dbc1ea3cff60cd212505e8f4e926b03a445f57566e22c901"
+    },
+    "A1": {
+      "git_sha": "870507f611432fa30a76b4772866080498c230ef",
+      "summary_sha256": "7691d0168e4a0d1dff7fdd6b89068cd6611413baa406933b5041fa73816a2fbc"
+    },
+    "A2": {
+      "git_sha": "2e0e0f2dd8bec48daa4bc6a160876931355951d0",
+      "summary_sha256": "dc10f93c0b8ca76ccd6348257e539c8ef5135a2bed2ada6ac850ed0322546826"
+    },
+    "A3": {
+      "git_sha": "075df90588d3ef1f4be13201ce9aefe5567bd718",
+      "summary_sha256": "2f9d413cdb1974a06e29c4ceb6a576908e396fd524518c7ce10633aee4502160"
+    },
+    "synthesis_starting_head": "075df90588d3ef1f4be13201ce9aefe5567bd718"
+  },
+  "base_metrics": {
+    "scenario_count": 80,
+    "confusion_matrix": {
+      "TP": 40,
+      "FP": 33,
+      "TN": 7,
+      "FN": 0
+    },
+    "positive_detection": {"detected": 40, "total": 40},
+    "negative_false_positives": {"flagged": 33, "total": 40},
+    "hard_negative_false_positives": {"flagged": 33, "total": 36},
+    "contrast_pairs_both_flagged": {"pairs": 10, "total": 10},
+    "rule_breakdown": {
+      "TRJ-001": {"TP": 20, "FP": 16, "TN": 4, "FN": 0},
+      "TRJ-002": {"TP": 20, "FP": 17, "TN": 3, "FN": 0}
+    },
+    "incremental_observation": {
+      "rule_id": "TRJ-001",
+      "trajectory_positive_with_zero_policy_blocks_and_finding": 20,
+      "total_TRJ-001_positives": 20
+    }
+  },
+  "ablation_findings": {
+    "A1": {
+      "factor": "TRJ-002 distinct denied-resource threshold",
+      "values": {
+        "2": {"TRJ-002_TP": 20, "TRJ-002_FP": 18, "TRJ-002_TN": 2, "TRJ-002_FN": 0},
+        "3": {"TRJ-002_TP": 20, "TRJ-002_FP": 17, "TRJ-002_TN": 3, "TRJ-002_FN": 0},
+        "4": {"TRJ-002_TP": 0, "TRJ-002_FP": 1, "TRJ-002_TN": 19, "TRJ-002_FN": 20}
+      },
+      "interpretation": "Within the frozen corpus and preregistered values, threshold adjustment produced a sharp sensitivity-specificity tradeoff and did not resolve purpose ambiguity."
+    },
+    "A2": {
+      "factor": "trajectory window",
+      "values": [4, 8, 16],
+      "outcome_at_each_value": {"TP": 40, "FP": 33, "TN": 7, "FN": 0},
+      "interpretation": "The corpus exposed no scenario-level window sensitivity at the three tested bounds."
+    },
+    "A3": {
+      "factor": "rule availability",
+      "TRJ-001_only": {"TP": 20, "FP": 16, "TN": 24, "FN": 20},
+      "TRJ-002_only": {"TP": 20, "FP": 17, "TN": 23, "FN": 20},
+      "both": {"TP": 40, "FP": 33, "TN": 7, "FN": 0},
+      "interaction": "No interaction observed; both-rule findings were the exact union of individual-rule findings for all 80 scenarios."
+    }
+  },
+  "hypothesis_assessment": {
+    "hypothesis_id": "H-02",
+    "status": "PARTIALLY_SUPPORTED",
+    "scope": "EXP-009-CORPUS@1 synthetic held-out corpus and frozen M5 deterministic observational rule architecture only",
+    "support": "TRJ-001 produced findings for 20/20 trajectory-positive scenarios with zero action-level policy blocks.",
+    "counterevidence": "The base detector flagged 33/40 trajectory-negative scenarios, including 33/36 hard negatives, and both members of all 10/10 TRJ-001 contrast pairs."
+  },
+  "claim_recommendations": [
+    {
+      "claim_id": "CL-002",
+      "recommended_status": "PARTIALLY_SUPPORTED",
+      "scope": "synthetic held-out EXP-009 corpus only",
+      "limitations": [
+        "33/40 trajectory-negative scenarios flagged",
+        "33/36 hard negatives flagged",
+        "observational rather than preventive",
+        "two deterministic rule families",
+        "no real-agent or OS-effect evaluation"
+      ]
+    },
+    {
+      "claim_id": "EXP-009-DERIVED-EMPIRICAL-STATEMENT",
+      "recommended_status": "SUPPORTED_AS_BOUNDED_RESULT",
+      "statement": "On EXP-009-CORPUS@1, deterministic trajectory monitoring identified all 40/40 preregistered trajectory-positive scenarios, including 20 TRJ-001 cases with no action-level policy block, but produced 33 false positives among 40 negatives."
+    }
+  ],
+  "observed_failure_modes": [
+    {"id": "FM-01", "name": "task-purpose blindness", "status": "OBSERVED"},
+    {"id": "FM-02", "name": "destination-purpose blindness", "status": "OBSERVED_WITH_CONFOUNDED_TASK_AND_DESTINATION_CONTEXT"},
+    {"id": "FM-03", "name": "data-lineage blindness", "status": "HYPOTHESIZED_FROM_MISSING_REPRESENTATION"},
+    {"id": "FM-04", "name": "denial-purpose blindness", "status": "OBSERVED"},
+    {"id": "FM-05", "name": "exact sequence dependence", "status": "OBSERVED"},
+    {"id": "FM-06", "name": "bounded observational representation", "status": "HYPOTHESIZED_NOT_EXPOSED_BY_A2"}
+  ],
+  "next_research_question": "Can deterministic trajectory monitoring improve specificity by evaluating observed actions relative to explicit task-purpose, resource-purpose, and destination constraints without sacrificing the incremental detection observed in EXP-009?"
+}
