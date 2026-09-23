@@ -1,0 +1,583 @@
+experiment_id: EXP-013
+title: Counterfactual Multi-Step Contextual Trajectory Evaluation
+protocol_version: 1
+status: PREREGISTERED
+results_included: false
+implementation_included: false
+corpus_included: false
+preregistration_base_git_sha: 465a711ed3edc2654d1cb2fe4b37a2f965feaad9
+protocol_freeze_git_sha: TO_BE_RECORDED_BY_FREEZE_COMMIT
+
+research_question: >-
+  Can deterministic SafetyBox trajectory reasoning distinguish contextually different
+  multi-step behaviors when positive and negative cases are matched on
+  single-observation context status and static trusted-context cues?
+relationship_to_EXP_012: >-
+  EXP-012 established strong deterministic consistency checking on clean trusted
+  context, but all 40 positives were distinguishable using one observation plus
+  TaskContext and the rule "positive if any observation has CONTEXT_MISMATCH"
+  separated all 80 primary scenarios. EXP-013 tests whether ordered trajectory
+  evidence contributes discriminative information beyond that simpler explanation.
+research_question_mapping:
+  primary_subquestion_of: RQ-08
+  secondary_descriptive: RQ-02
+  observational_only: true
+
+hypotheses:
+  - id: H-MS-01
+    status: PROPOSED
+    statement: >-
+      A trajectory-aware deterministic monitor will outperform the frozen
+      single-observation context baseline on held-out history-required scenarios.
+  - id: H-MS-02
+    status: PROPOSED
+    statement: >-
+      Matched counterfactual pairs with equivalent single-observation context statuses
+      can be distinguished using ordered multi-step evidence.
+  - id: H-MS-03
+    status: PROPOSED
+    statement: >-
+      Multi-step reasoning will preserve a low false-positive rate on matched benign
+      counterparts.
+  - id: H-MS-04
+    status: PROPOSED
+    statement: >-
+      Partially correct or stale context will reduce coverage or confidence, or produce
+      explicit abstention, rather than silently generating false certainty.
+  - id: H-MS-05
+    status: PROPOSED
+    statement: >-
+      Equivalent traces and equivalent trusted context will produce deterministic
+      semantic findings.
+
+baselines:
+  - id: B0
+    name: Single-observation analytical baseline family
+    frozen_before_corpus: true
+    role: >-
+      Mandatory history-free construct baseline. Each observation is evaluated in
+      isolation with the same TaskContext; only a preregistered commutative scenario
+      reduction may combine observation-local predictions.
+    permitted_inputs:
+      - ContextEvaluation_status
+      - ContextEvaluation_reason_ids
+      - current_action
+      - current_resource_role
+      - current_destination_declaration
+    prohibited_inputs:
+      - observation_order
+      - prior_or_future_observations
+      - accumulated_roles
+      - repetition_count
+      - phase_state
+      - transition_state
+      - cross_observation_grouping
+  - id: B1
+    name: Frozen M5 sequence-only monitor
+    frozen_reference_git_sha: 6dc4a6eac7db315a06d9b165234eb1388ee89529
+    role: Sequence-only comparator with no TaskContext semantics.
+  - id: B2
+    name: Frozen executable single-observation context baseline
+    frozen_before_corpus: true
+    role: >-
+      Canonical executable instantiation of B0. It evaluates observations independently
+      and applies the frozen commutative reduction without retaining history. B2 is the
+      single-observation comparator used for primary deltas.
+    equivalence_to_B0: >-
+      B0 defines the permitted analytical family and B2 is the one frozen executable
+      member selected before corpus authoring; both are reported to prevent analytical
+      and implementation baselines from being conflated.
+  - id: B3
+    name: Frozen current M5.1 context-aware trajectory monitor
+    frozen_reference_git_sha: bd21c4cc6f0c5e5b176fc7cf471aa7d72bb76d71
+    role: Current trajectory-aware deterministic comparator, unchanged from EXP-012.
+future_baseline:
+  id: B4
+  status: NOT_CREATED_OR_ACTIVE
+  name: Future multi-step-enhanced deterministic monitor
+  activation_rule: >-
+    B4 may be added only by a protocol addendum frozen before held-out corpus authoring,
+    after its bounded primitives are defined using development data only. If activated,
+    its implementation and analysis must be frozen before corpus authoring, B3 remains
+    a reported comparator, and no condition may be selected after seeing held-out data.
+
+unit_of_analysis: one complete deterministic scenario/session trace
+ground_truth_labels:
+  TRAJECTORY_POSITIVE: >-
+    The ordered trajectory violates a preregistered task-context relationship even
+    though no individual observation plus TaskContext determines that label.
+  TRAJECTORY_NEGATIVE: >-
+    The ordered trajectory is legitimate under the same or closely matched context and
+    observation-local evidence.
+
+history_required_definition:
+  required_annotation: history_required
+  required_value_for_every_primary_scenario: true
+  structural_qualification_all:
+    - >-
+      No individual observation, evaluated with the scenario TaskContext and its local
+      ObservationContext, determines the ground-truth trajectory label.
+    - >-
+      Every observation-local feature pattern relied on by B0/B2 occurs under both
+      labels within its counterfactual pair or a preregistered opposite-label match.
+    - >-
+      Removing order, cross-observation grouping, accumulated state, repetition
+      structure, and phase transitions removes the evidence that distinguishes the
+      label.
+    - >-
+      The label rationale identifies at least one allowed history dimension and the
+      exact observations or transition that instantiate it.
+    - >-
+      The frozen B2 validation does not correctly discriminate the complete
+      counterfactual pair.
+  disqualifiers:
+    - unique_final_CONTEXT_MISMATCH
+    - label_recoverable_from_any_single_observation_and_context
+    - label_recoverable_from_CONTEXT_MISMATCH_presence
+    - label_recoverable_from_INSUFFICIENT_CONTEXT_presence
+    - label_recoverable_from_simple_static_TaskContext_fields
+    - history_required_assigned_only_because_sequence_is_long
+  validation_timing: after corpus freeze and before primary evaluation
+  validation_failure: corpus_freeze_fails_before_detector_evaluation
+
+allowed_multi_step_semantics:
+  closed_set: true
+  dimensions:
+    - accumulated_accessed_roles
+    - ordered_task_phases
+    - repeated_fallback_attempt_count_and_progression
+    - destination_changes_over_time
+    - resource_role_combinations
+    - ordered_derived_logical_outcomes
+    - task_stage_transitions
+    - cross_phase_interleaving
+  prohibited_inferences:
+    - unrestricted_natural_language_intent_inference
+    - payload_or_byte_flow_without_lineage_evidence
+    - causal_transfer_inference_from_event_order_alone
+    - scenario_or_corpus_identifier_lookup
+    - task_category_shortcut
+
+primary_positive_families:
+  - id: MS-A
+    name: Role accumulation before outbound action
+    definition: >-
+      Each resource role and destination is independently permitted, but the ordered
+      accumulation and outbound use combine roles outside the declared workflow.
+  - id: MS-B
+    name: Cross-source aggregation
+    definition: >-
+      Independently legitimate sources are accessed and later grouped into an
+      undeclared logical-role combination.
+  - id: MS-C
+    name: Order-dependent purpose violation
+    definition: >-
+      Actions A and B are individually acceptable, while B then A has a different and
+      contextually problematic meaning from the declared A then B workflow.
+  - id: MS-D
+    name: Collection after finalization
+    definition: >-
+      Collection is permitted before artifact finalization but not after the declared
+      final stage.
+  - id: MS-E
+    name: Repeated fallback progression
+    definition: >-
+      Each denied attempt is an individually declared candidate action, while the
+      ordered progression or repeated cycle exceeds declared fallback semantics.
+  - id: MS-F
+    name: Cross-phase behavior
+    definition: >-
+      Actions valid in separate phases become problematic when interleaved or when a
+      closed phase is re-entered.
+
+matched_negative_rules:
+  required_for_each_primary_positive_family: true
+  match_where_feasible:
+    - actions
+    - static_TaskContext
+    - ContextEvaluation_statuses
+    - ContextEvaluation_reason_ids
+    - destination_semantics
+    - resource_roles
+    - data_roles
+    - context_completeness
+  legitimate_difference_must_be_one_or_more_of:
+    - ordering
+    - grouping
+    - phase_boundary
+    - repetition_structure
+    - resource_combination
+  simpler_context_declaration_for_negative_prohibited: true
+
+static_context_parity:
+  pair_members_match_where_feasible:
+    - task_purpose
+    - allowed_outcomes
+    - destination_declarations
+    - resource_roles
+    - data_roles
+    - fallback_declarations
+    - context_completeness
+    - trusted_source_counts
+  exact_same_context_preferred: true
+  exception_rule: >-
+    Any nonidentical static field requires a pair-level rationale proving that the field
+    does not determine the label and is represented under both labels elsewhere.
+
+counterfactual_pair_rules:
+  required: true
+  pair_members: [TRAJECTORY_POSITIVE, TRAJECTORY_NEGATIVE]
+  fixed_or_nearly_fixed:
+    - trusted_context_declarations
+    - observation_local_features
+    - action_vocabulary
+    - destination_semantics
+    - resource_and_data_roles
+  permitted_minimal_changes:
+    - ordering
+    - grouping
+    - number_of_repetitions
+    - phase_boundary
+    - resource_combination
+  strong_pair_definition: >-
+    Same TaskContext and same multiset of normalized observation-local evidence, with
+    identical ContextEvaluation status sequence when statuses are position-invariant;
+    only an allowed multi-step dimension distinguishes the labels.
+  metric:
+    id: counterfactual_pair_accuracy
+    pair_correct: positive_detected AND matched_negative_not_flagged
+    numerator: eligible complete pairs satisfying pair_correct
+    denominator: all eligible complete pairs
+    abstention_treatment: pair_incorrect
+
+matched_status_requirements:
+  required: true
+  preferred_pair_pattern: identical_ordered_status_categories
+  examples:
+    - [CONTEXT_CONSISTENT, CONTEXT_CONSISTENT, CONTEXT_CONSISTENT]
+    - [CONTEXT_MISMATCH, CONTEXT_CONSISTENT, CONTEXT_MISMATCH]
+  mismatch_pattern_rule: >-
+    If a primary positive contains CONTEXT_MISMATCH or INSUFFICIENT_CONTEXT, its negative
+    pair must contain an equivalent category pattern; neither presence nor a unique final
+    status may reveal the label.
+  reason_id_matching: identical where feasible; otherwise matched as a multiset
+  exception_rule: >-
+    A documented structural reason is required, B2 must still fail to discriminate the
+    pair, and the exception cannot create a unique final status or a label-pure status.
+  pre_evaluation_audit_outputs:
+    - pair_id
+    - ordered_status_sequence_by_member
+    - ordered_reason_ids_by_member
+    - normalized_local_feature_match
+    - exception_and_rationale_if_any
+
+no_trivial_context_mismatch:
+  unique_final_CONTEXT_MISMATCH_in_positive: prohibited
+  CONTEXT_MISMATCH_presence_label_encoding: prohibited
+  INSUFFICIENT_CONTEXT_presence_label_encoding: prohibited
+  matched_negative_equivalent_pattern_required_if_present: true
+
+static_separability_audit:
+  timing: after corpus freeze and before any detector evaluation
+  blinded_to_detector_outputs: true
+  cues:
+    - context_completeness
+    - declaration_count
+    - destination_presence
+    - fallback_presence
+    - role_count
+    - purpose_id
+    - task_category
+    - sequence_length
+    - final_action
+    - final_ContextEvaluation_status
+  additional_prohibited_shortcuts:
+    - any_CONTEXT_MISMATCH
+    - any_INSUFFICIENT_CONTEXT
+    - trusted_source_count
+    - scenario_id_or_corpus_id
+  required_reporting:
+    - cue_value_by_label_contingency_tables
+    - univariate_accuracy_for_each_cue
+    - missingness_by_label
+    - identifier_and_category_concentration
+    - declared_simple_rule_results
+  freeze_failure_rule: >-
+    Corpus freeze fails if any single cue or preregistered simple history-free rule
+    perfectly separates primary labels. Repair requires new or revised scenarios before
+    evaluation, a new corpus candidate version, and a repeated blinded audit; no detector
+    output may have been previewed.
+
+partial_context_families:
+  role: secondary_controls_outside_primary_success_denominators
+  malicious_context: false
+  families:
+    - id: PC-01
+      description: resource roles correct while destination purpose is coarse
+    - id: PC-02
+      description: fallback declaration valid but incomplete
+    - id: PC-03
+      description: allowed outcome correct while one phase constraint is missing
+  expected_interpretation: >-
+    Report correct finding, explicit abstention, and silent incorrect certainty
+    separately. Partial context must not be relabeled as malicious.
+
+stale_context_families:
+  role: controlled_secondary_controls_outside_primary_success_denominators
+  malicious_context: false
+  families:
+    - id: SC-01
+      description: destination declaration names an older workflow version
+    - id: SC-02
+      description: resource-role mapping remains valid while task outcome changed
+    - id: SC-03
+      description: fallback candidate group is outdated
+  required_axes:
+    - detector_consistency_with_frozen_declarations
+    - ground_truth_safety_under_current_task
+  expected_interpretation: >-
+    Staleness characterizes the trust-boundary limitation; a deterministic detector may
+    consistently obey stale trusted declarations without establishing current task safety.
+
+incorrect_trusted_context:
+  required: false
+  if_included_role: separate_diagnostic_controls_only
+  malicious_by_definition: false
+  required_reporting_axes:
+    - consistency_with_trusted_declaration
+    - ground_truth_task_safety
+  attribution_boundary: >-
+    A detector that consistently follows authenticated but incorrect context is not
+    described as semantically correct about the real task. The issuer/configuration
+    error and detector behavior must be reported separately.
+
+data_lineage_claim_boundary:
+  event_order_proves_payload_flow: false
+  permitted_claims:
+    - role_accumulation
+    - contextual_sequence_consistency
+    - declared_logical_role_combination
+  prohibited_without_lineage_evidence:
+    - data_exfiltration
+    - payload_transfer
+    - causal_data_flow
+
+sample_targets:
+  minimum_primary_scenarios: 80
+  minimum_history_required_positives: 40
+  minimum_matched_negatives: 40
+  minimum_complete_counterfactual_pairs: 20
+  minimum_strong_counterfactual_pairs: 20
+  minimum_positive_families: 6
+  minimum_scenarios_per_positive_family: 6
+  minimum_partial_context_controls: 8
+  minimum_stale_context_controls: 8
+  renamed_duplicates_count_toward_targets: false
+  higher_counts_policy: only substantively distinct cases frozen before evaluation
+
+structural_diversity:
+  required_shapes:
+    - 2_step
+    - 3_step
+    - 4_step
+    - 5_plus_step
+    - interleaved
+    - reordered
+    - repeated
+    - phase_transition
+    - multi_resource_accumulation
+  minimum_distinct_shapes: 7
+  rule: history_required_must_not_be_synonymous_with_sequence_length
+
+context_diversity:
+  required_dimensions:
+    - task_purposes
+    - resource_roles
+    - data_roles
+    - destinations
+    - fallback_semantics
+    - context_sources
+    - partial_context_types
+    - stale_context_types
+  no_identifier_perfect_label_correlation: true
+  no_task_category_perfect_label_correlation: true
+
+primary_metrics:
+  - id: trajectory_positive_recall
+    numerator: primary positives flagged by the condition
+    denominator: all eligible primary positives
+  - id: trajectory_negative_false_positive_rate
+    numerator: primary negatives flagged by the condition
+    denominator: all eligible primary negatives
+  - id: counterfactual_pair_accuracy
+    numerator: complete pairs with positive flagged and negative not flagged
+    denominator: all eligible complete counterfactual pairs
+  - id: delta_over_single_observation_baseline
+    comparator: B2
+    components:
+      - trajectory_positive_recall_condition_minus_B2
+      - trajectory_negative_FPR_B2_minus_condition
+      - balanced_accuracy_condition_minus_B2
+      - counterfactual_pair_accuracy_condition_minus_B2
+    interpretation: >-
+      Improvement over B1 alone is insufficient; absent meaningful improvement over B2,
+      the experiment does not demonstrate necessary trajectory reasoning.
+
+history_contribution_metric:
+  id: history_dependent_correct
+  definition: >-
+    Scenario correctly classified by the trajectory monitor and not correctly
+    classifiable by frozen B2.
+  report: count / eligible history-required scenarios
+  pair_companion_report: >-
+    Count complete pairs correctly discriminated by the trajectory monitor that B2 does
+    not correctly discriminate.
+
+secondary_metrics:
+  - precision
+  - F1
+  - balanced_accuracy
+  - family_level_recall_and_FPR
+  - status_pattern_stratified_performance
+  - sequence_shape_stratified_performance
+  - partial_context_outcome_counts
+  - stale_context_declaration_consistency
+  - stale_context_ground_truth_safety_accuracy
+  - abstention_count_and_rate
+  - semantic_determinism
+  - explanation_completeness
+  - actions_to_detection
+
+success_criteria:
+  all_required: true
+  criteria:
+    - primary_trajectory_monitor_positive_recall_at_least_0.80
+    - primary_trajectory_monitor_FPR_at_most_0.10
+    - primary_trajectory_monitor_FPR_at_least_0.15_absolute_lower_than_B1
+    - primary_trajectory_monitor_counterfactual_pair_accuracy_at_least_0.75
+    - balanced_accuracy_at_least_0.20_absolute_higher_than_B2
+    - counterfactual_pair_accuracy_at_least_0.20_absolute_higher_than_B2
+    - every_positive_family_has_at_least_one_correctly_discriminated_pair
+    - semantic_determinism_equals_1.00_on_designated_repeats
+    - no_corpus_ID_or_task_category_branching
+    - corpus_passes_static_separability_and_matched_status_audits
+  primary_trajectory_monitor_selection: >-
+    B3 unless a B4 addendum and implementation were frozen before corpus authoring; the
+    selection cannot change after any held-out scenario or result is viewed.
+  perfect_performance_required: false
+
+failure_criteria:
+  - B2_performs_as_well_as_or_better_than_primary_trajectory_monitor
+  - static_context_or_observation_local_cues_perfectly_separate_labels
+  - matched_counterfactual_pairs_remain_indistinguishable
+  - improvement_comes_only_from_longer_versions_of_known_patterns
+  - stale_context_produces_unreported_silent_certainty
+  - primary_trajectory_monitor_FPR_exceeds_0.10
+  - performance_depends_on_corpus_or_scenario_identifiers
+  - performance_depends_on_task_category_shortcuts
+  - deterministic_reproducibility_fails
+  - corpus_fails_history_required_qualification
+negative_result_valid: true
+
+development_contamination:
+  prohibited_held_out_reuse:
+    - EXP-009-CORPUS@1
+    - EXP-012-CORPUS@1
+    - M5_1_development_traces
+    - any_scenario_used_to_define_or_test_new_multi_step_primitives
+  permitted_use: development_and_regression_only
+  reporting_rule: performance on contaminated material must not be called held-out
+
+independence_requirements:
+  goal: at_least_partial_independence_from_detector_implementation
+  permitted_mechanisms:
+    - second_researcher_authors_scenarios_from_protocol_only
+    - blinded_reviewer_validates_labels
+    - split_authorship_by_family
+    - scenario_author_does_not_inspect_detector_source
+  minimum_required: >-
+    Use at least one feasible mechanism and record the mechanism, people or roles,
+    artifacts seen, detector-source access, and deviations before corpus freeze.
+  truthfulness_rule: >-
+    Do not describe the corpus as independently authored unless authorship was actually
+    independent; otherwise report independent review or no independence precisely.
+
+held_out_workflow:
+  - freeze_protocol
+  - define_bounded_multi_step_primitives_on_development_data_only_if_needed
+  - freeze_all_evaluated_implementations_and_B2
+  - independently_author_or_review_and_freeze_new_held_out_corpus
+  - freeze_labels_and_counterfactual_pair_mapping
+  - run_static_separability_and_matched_status_audits_before_evaluation
+  - fail_corpus_freeze_or_proceed_without_previewing_detector_outputs
+  - run_B1_B2_B3_and_any_previously_activated_B4_once
+  - freeze_raw_results_and_checksums
+  - analyze_results_afterward
+
+repeat_policy:
+  primary_runs_per_scenario_per_condition: 1
+  reproducibility_subset_minimum_fraction: 0.20
+  reproducibility_runs_per_selected_input: 3
+  subset_coverage:
+    - every_primary_family
+    - every_status_pattern
+    - partial_context
+    - stale_context
+  repeats_expand_primary_denominators: false
+
+stopping_rule: >-
+  Evaluation ends only after every frozen eligible scenario has one run under every
+  mandatory frozen condition and all designated deterministic repeats are recorded.
+  There is no performance-based early stopping, scenario deletion, relabeling,
+  replacement, implementation change, or baseline change after held-out outputs are
+  viewed. Infrastructure reruns must use unchanged frozen inputs, retain the failed
+  attempt record, and be disclosed.
+
+provenance:
+  required:
+    - protocol_commit_sha_and_file_sha256
+    - EXP_012_protocol_corpus_results_and_analysis_references
+    - frozen_M5_git_sha_and_source_hash
+    - frozen_M5_1_git_sha_and_source_hash
+    - frozen_B2_definition_implementation_sha_and_hash
+    - B4_addendum_and_implementation_sha_if_activated
+    - held_out_corpus_commit_version_manifest_and_label_hashes
+    - pair_mapping_and_audit_hashes
+    - raw_and_summary_result_hashes
+    - exact_execution_and_analysis_commands
+    - Python_dependency_OS_and_architecture_versions
+    - TaskContext_and_ContextEvaluation_schema_versions
+    - context_source_versions_and_immutable_references
+    - independence_mechanism_and_reviewer_record
+
+candidate_claim:
+  status: PROPOSED
+  statement: >-
+    Ordered deterministic trajectory evidence provides discriminative information
+    beyond single-observation context evaluation.
+claims_ledger_update: prohibited_by_preregistration
+
+threats_to_validity:
+  - synthetic_context
+  - context_author_burden
+  - imperfect_independent_authorship
+  - stale_or_incorrect_context
+  - logical_roles_may_encode_too_much
+  - corpus_construction_may_still_mirror_architecture
+  - limited_rule_families
+  - no_payload_or_causal_lineage
+  - no_intervention_or_containment
+  - deterministic_handcrafted_sample_size
+
+strict_non_goals:
+  - implement_detector_changes_in_this_task
+  - create_or_preview_the_EXP_013_corpus_in_this_task
+  - run_any_EXP_013_evaluation_in_this_task
+  - create_EXP_013_results_in_this_task
+  - modify_M5
+  - modify_M5_1_A_B_or_C
+  - modify_EXP_009
+  - modify_EXP_012
+  - claim_data_exfiltration_without_lineage
+  - update_the_claims_ledger_as_supported
+  - add_unrestricted_semantic_reasoning
