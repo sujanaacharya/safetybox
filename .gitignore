@@ -50,3 +50,5 @@ experiments/tmp/
 # Large local data; version small manifests and approved fixtures explicitly
 datasets/local/
 datasets/cache/
+
+.venv-exp009/
