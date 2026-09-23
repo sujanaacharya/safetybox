@@ -87,3 +87,11 @@ M4 adds a deterministic, in-memory scenario runner around the existing `TaskCont
 ## M5 trajectory-monitor note
 
 M5 implements the trajectory-monitor node as a separate, pull-style observational evaluation over committed M3 events. It neither participates in the `ReferenceMonitor` authorization path nor changes M4 scenario outcomes. Its bounded state is scoped to a session and task, and its findings are evidence rather than controller inputs.
+
+## M5.1-A task-context note
+
+M5.1-A adds an immutable, versioned [Task Context](TASK_CONTEXT.md) representation for
+future semantic interpretation. `TaskContract` remains authorization authority for the
+`ReferenceMonitor`; `TaskContext` is not an authorizer and cannot add capabilities.
+The two objects may be bound by the same `task_id`. No context-aware trajectory rule or
+monitor integration is implemented in M5.1-A.

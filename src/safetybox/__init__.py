@@ -2,6 +2,25 @@
 
 from safetybox.audit import AuditRecorder, InMemoryAuditSink
 from safetybox.capabilities import Capability, CapabilityEvaluator, resource_matches
+from safetybox.context import (
+    AllowedOutcome,
+    AmbiguousContextError,
+    ContextAssessment,
+    ContextAuthority,
+    ContextField,
+    ContextSource,
+    ContextStatus,
+    ContextValidationError,
+    DataFlowConstraint,
+    DataRole,
+    DestinationConstraint,
+    ExpectedActionPurpose,
+    FallbackPattern,
+    ResourceRole,
+    TaskContext,
+    TaskPurpose,
+    validate_task_binding,
+)
 from safetybox.contracts import TaskContract
 from safetybox.events import EventType, SafetyBoxEvent
 from safetybox.exceptions import AuditFailure, AuthorizationFailure
@@ -47,6 +66,8 @@ from safetybox.trajectory import (
 __all__ = [
     "ActionRequest",
     "ActionObservationBuilder",
+    "AllowedOutcome",
+    "AmbiguousContextError",
     "AuditFailure",
     "AuditRecorder",
     "AuditSink",
@@ -56,16 +77,28 @@ __all__ = [
     "Capability",
     "CapabilityEvaluator",
     "CompletedActionObservation",
+    "ContextAssessment",
+    "ContextAuthority",
+    "ContextField",
+    "ContextSource",
+    "ContextStatus",
+    "ContextValidationError",
+    "DataFlowConstraint",
+    "DataRole",
     "Decision",
+    "DestinationConstraint",
     "EnforcementResult",
+    "ExpectedActionPurpose",
     "ExecutionExpectation",
     "EventType",
     "FindingClassification",
+    "FallbackPattern",
     "InMemoryAuditSink",
     "INITIAL_SCENARIOS",
     "PolicyDecision",
     "ReferenceMonitor",
     "RepeatedDeniedBoundaryProbingRule",
+    "ResourceRole",
     "ScenarioExpectation",
     "ScenarioResult",
     "ScenarioRunner",
@@ -78,6 +111,8 @@ __all__ = [
     "SafetyBoxEvent",
     "TaskContract",
     "TaskContractPolicy",
+    "TaskContext",
+    "TaskPurpose",
     "StepExpectation",
     "StepResult",
     "StagedCollectionToEgressRule",
@@ -93,4 +128,5 @@ __all__ = [
     "TS_009",
     "TS_010",
     "resource_matches",
+    "validate_task_binding",
 ]

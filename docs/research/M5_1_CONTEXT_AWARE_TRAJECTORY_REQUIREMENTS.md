@@ -85,3 +85,11 @@ This document does not select a schema, algorithm, threshold, window, language m
 ## Evaluation gate
 
 Implementation should not begin until a successor protocol defines the context schema, threat model, matched baseline, held-out authorship procedure, raw metrics, failure criteria, and freeze sequence. The scientific question precedes detector construction.
+
+## M5.1-A implementation note
+
+The frozen EXP-012 protocol satisfied this gate for context representation. M5.1-A now
+implements only the immutable trusted context schema and validation described in
+[Task Context](../architecture/TASK_CONTEXT.md). It does not implement the M5.1
+detector, create held-out scenarios, or run EXP-012. These requirements and the frozen
+protocol remain unchanged as evaluation constraints.

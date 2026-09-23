@@ -20,6 +20,10 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 - M4 deterministic, immutable threat-scenario simulator with harmless in-memory filesystem, network, shell, and database effect records.
 - M4 starter corpus for TS-001, TS-006, TS-008, TS-009, TS-010, and BENIGN-001/BENIGN-002 controls, including M3 audit correlation and repeatability evidence.
 - M5 bounded deterministic observational trajectory monitor, canonical terminal-action observation builder, immutable explainable findings, and `TRJ-001`/`TRJ-002` rules.
+- M5.1-A immutable versioned `TaskContext` model with structured purpose, outcomes,
+  resource/data roles, destination and logical-flow constraints, bounded fallback
+  declarations, per-declaration trusted provenance, deterministic validation/lookups,
+  and explicit sufficient/insufficient context representation.
 
 ### Notes
 
@@ -27,3 +31,5 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 - M2 capability evidence is limited to logical in-process request strings; it does not provide filesystem or OS-level confinement.
 - M3 has no durable storage, cross-process ordering, distributed tracing, tamper evidence, cryptographic integrity, automatic experiment provenance, or secret-redaction guarantee.
 - M5 does not contain, block, authorize, execute, or mutate task authority; TS-009 remains individually allowed even when `TRJ-001` is observed.
+- M5.1-A adds representation only: context does not grant capabilities, perform
+  natural-language inference, track runtime lineage, or change M5 trajectory behavior.

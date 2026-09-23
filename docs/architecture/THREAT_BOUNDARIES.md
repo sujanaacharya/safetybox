@@ -13,6 +13,8 @@ flowchart TB
     Policy[Policy + capability evaluation]
     Controller[Controller]
     Audit[Integrity-critical audit path]
+    Context[Externally supplied TaskContext]
+    FutureMonitor[Future M5.1 monitor]
   end
   subgraph P[Privileged environment]
     Adapters[Sandbox/tool adapters]
@@ -22,6 +24,7 @@ flowchart TB
   Content --> Agent
   Intercept --> Policy --> Controller --> Adapters --> Resources
   Controller --> Audit
+  Context -. semantic input only .-> FutureMonitor
 ```
 
 ## Boundary assumptions
@@ -31,5 +34,12 @@ flowchart TB
 - The host and isolation mechanisms enforce separation from policy, audit, and controller state.
 - Adapters correctly bind authorization to actual operations and accurately report outcomes.
 - External tools and their outputs may be compromised; their internal effects may be only partly observable.
+- Trusted context authorities and immutable references are assumed authentic outside
+  the current in-process model. Agent self-report is explicitly untrusted and cannot
+  construct accepted semantic declarations.
+
+`TaskContext` is outside the authorization path. Even valid trusted semantic context
+cannot grant authority absent from `TaskContract`; compromised or incorrect context
+can mislead future interpretation but cannot expand M2 capabilities through M5.1-A.
 
 Violating these assumptions can invalidate prevention claims. They must be tested where feasible and disclosed otherwise. SafetyBox does not replace host hardening or cryptographic identity systems.

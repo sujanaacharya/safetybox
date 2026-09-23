@@ -25,7 +25,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 
 - [System Architecture](architecture/SYSTEM_ARCHITECTURE.md) and [Component Model](architecture/COMPONENT_MODEL.md)
 - [Deterministic Engine](architecture/DETERMINISTIC_ENGINE.md), [Policy Engine](architecture/POLICY_ENGINE.md), and [Controller](architecture/CONTROLLER.md)
-- [Task Contract](architecture/TASK_CONTRACT.md) and [Capability Model](architecture/CAPABILITY_MODEL.md)
+- [Task Contract](architecture/TASK_CONTRACT.md), [Task Context](architecture/TASK_CONTEXT.md), and [Capability Model](architecture/CAPABILITY_MODEL.md)
 - [Event Model](architecture/EVENT_MODEL.md), [Trajectory Monitor](architecture/TRAJECTORY_MONITOR.md), and [Trust Model](architecture/TRUST_MODEL.md)
 - [Audit and Provenance](architecture/AUDIT_AND_PROVENANCE.md)
 - [Threat Boundaries](architecture/THREAT_BOUNDARIES.md), [Failure Modes](architecture/FAILURE_MODES.md), and [Safety Invariants](architecture/SAFETY_INVARIANTS.md)

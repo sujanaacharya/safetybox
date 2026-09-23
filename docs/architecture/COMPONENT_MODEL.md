@@ -5,6 +5,7 @@ The [System Architecture](SYSTEM_ARCHITECTURE.md) owns the component list. This 
 | Component | Accepts | Produces | Must not do |
 |---|---|---|---|
 | Task Contract loader | Authenticated, versioned contract | Validated canonical contract | Infer undeclared authority from agent text |
+| Task Context loader (future) | Authenticated versioned semantic declarations | Immutable validated `TaskContext` | Grant capabilities, infer roles from text, or trust agent self-report |
 | Agent Adapter | Framework request/response | Canonical request/events | Execute tools or weaken scope |
 | Interception Layer | Canonical request and session identity | Mediation transaction | Permit bypass or pre-authorization side effects |
 | Capability Registry | Contract grants, revocations, time/state | Effective capabilities | Expand authority without authorized grant event |
@@ -29,3 +30,8 @@ Interfaces will later be typed and versioned. Requests require task/session iden
 The trusted computing base is intended to include the interception boundary, policy/capability evaluation, controller, adapters enforcing authorization, and integrity-critical audit path. The protected agent and arbitrary tool outputs remain untrusted.
 
 M5 implements only an observational trajectory consumer, separate from the event recorder and enforcement path. It derives bounded session-and-task-local state from ordered canonical events and returns findings; there is no event fan-out, containment, or controller integration.
+
+M5.1-A implements the context value model and validation only. Context objects are
+constructed externally; there is no loader, agent setter, trajectory consumer, or
+authorization integration yet. Per-declaration source references are preserved so a
+future consumer can attribute its interpretation.

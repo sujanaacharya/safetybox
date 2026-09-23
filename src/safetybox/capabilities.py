@@ -19,6 +19,17 @@ def _is_canonical_absolute_path(value: str) -> bool:
     return all(segment not in {"", ".", ".."} for segment in segments)
 
 
+def is_valid_resource_scope(scope: str) -> bool:
+    """Return whether ``scope`` is a valid M2 exact or path-subtree scope."""
+    if not scope:
+        return False
+    if scope.endswith("/**"):
+        return _is_canonical_absolute_path(scope.removesuffix("/**"))
+    if scope.startswith("/"):
+        return _is_canonical_absolute_path(scope)
+    return True
+
+
 def resource_matches(scope: str, resource: str) -> bool:
     """Match an exact logical resource or a canonical absolute-path subtree.
 
@@ -48,14 +59,8 @@ class Capability:
             raise ValueError("Capability action must not be empty.")
         if not self.resource:
             raise ValueError("Capability resource must not be empty.")
-        is_path = self.resource.startswith("/")
-        is_subtree = self.resource.endswith("/**")
-        if is_path and not is_subtree and not _is_canonical_absolute_path(self.resource):
-            raise ValueError("Path capability must use a canonical absolute resource.")
-        if self.resource.endswith("/**") and not _is_canonical_absolute_path(
-            self.resource.removesuffix("/**")
-        ):
-            raise ValueError("Path subtree capability must use a canonical absolute root.")
+        if not is_valid_resource_scope(self.resource):
+            raise ValueError("Capability must use a valid exact or path-subtree resource scope.")
 
     def matches(self, request: ActionRequest) -> bool:
         """Return whether this capability authorizes the request action/resource."""
