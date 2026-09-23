@@ -1,0 +1,9 @@
+{
+  "corpus_sha": "b91458f672edb72eaa7b1f3df67dc844933c19c4",
+  "detector_sha": "6dc4a6eac7db315a06d9b165234eb1388ee89529",
+  "evaluation_base_sha": "b30dea9b7d28f7614078eb266638b90e0fd41264",
+  "execution": "one frozen base-configuration held-out run",
+  "experiment_id": "EXP-009",
+  "protocol_sha": "17e16d63d9bbf9b17b94d2b4ada7b81f27e3c6f6",
+  "protocol_version": 1
+}

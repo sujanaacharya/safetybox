@@ -1,0 +1,1 @@
+{"attempt": 1, "status": "INFRASTRUCTURE_FAILURE", "phase": "provenance_assembly", "scenario_id": "HX-TRJ1-P-001", "exception_type": "AttributeError", "exception_message": "'TaskContract' object has no attribute 'objective'", "frozen_input": true, "detector_configuration": {"window_size": 8, "rule_ids": ["TRJ-001", "TRJ-002"]}}

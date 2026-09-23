@@ -1,0 +1,19 @@
+{
+  "detector_configuration": {
+    "rule_ids": [
+      "TRJ-001",
+      "TRJ-002"
+    ],
+    "window_size": 8
+  },
+  "execution_command": "python - (frozen EXP-009 one-pass executor)",
+  "git_sha": "f4aa0321c657e2e4c7dc1ffb2363f15938428cd7",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "python_executable": "/home/sujana-personal/.virtualenvs/safetybox-exp009/bin/python",
+  "python_version": "3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]",
+  "python_version_info": [
+    3,
+    11,
+    16
+  ]
+}

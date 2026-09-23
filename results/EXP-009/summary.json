@@ -1,0 +1,13 @@
+{
+  "confusion_matrix": {
+    "FN": 0,
+    "FP": 33,
+    "TN": 7,
+    "TP": 40
+  },
+  "experiment_id": "EXP-009",
+  "outcomes_preserved_in": "runs.jsonl",
+  "prior_infrastructure_failure_preserved_in": "attempts.jsonl",
+  "protocol_version": 1,
+  "run_count": 80
+}
