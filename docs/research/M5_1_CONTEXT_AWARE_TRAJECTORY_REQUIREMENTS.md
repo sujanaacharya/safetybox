@@ -93,3 +93,12 @@ implements only the immutable trusted context schema and validation described in
 [Task Context](../architecture/TASK_CONTEXT.md). It does not implement the M5.1
 detector, create held-out scenarios, or run EXP-012. These requirements and the frozen
 protocol remain unchanged as evaluation constraints.
+
+## M5.1-B implementation note
+
+M5.1-B implements only deterministic evaluation of one completed observation against
+the M5.1-A declarations. It exposes reason-coded resource, destination, outcome,
+action-purpose, optional logical-flow, and fallback evidence with explicit mismatch,
+insufficient-context, and not-applicable semantics. It does not implement a context-aware
+trajectory rule, count observations, emit findings, modify M5, or change the frozen
+EXP-012 protocol. Stateful sequence meaning remains M5.1-C work.

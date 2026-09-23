@@ -95,3 +95,12 @@ future semantic interpretation. `TaskContract` remains authorization authority f
 `ReferenceMonitor`; `TaskContext` is not an authorizer and cannot add capabilities.
 The two objects may be bound by the same `task_id`. No context-aware trajectory rule or
 monitor integration is implemented in M5.1-A.
+
+## M5.1-B context-evaluation note
+
+M5.1-B adds the stateless [Context Evaluator](CONTEXT_EVALUATION.md) between canonical
+completed observations and a future M5.1-C trajectory monitor. It resolves declared
+resource/data roles, destination/outcome/action-purpose relationships, optional logical
+flow assertions, and single denied-observation fallback membership. Its output is
+reason-coded semantic evidence, not an authorization decision or trajectory finding.
+M5, TRJ-001, and TRJ-002 remain unchanged.

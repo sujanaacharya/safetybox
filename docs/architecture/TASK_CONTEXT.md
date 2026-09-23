@@ -16,8 +16,10 @@ flowchart LR
     TX -. must never expand authority .-> TC
 ```
 
-M5.1-A does not connect `TaskContext` to authorization or to `TrajectoryMonitor`. It
-adds no finding, rule, block, containment action, or capability change.
+M5.1-B now connects `TaskContext` only to the stateless observational
+[`ContextEvaluator`](CONTEXT_EVALUATION.md). It does not connect context to
+authorization or to `TrajectoryMonitor`, and adds no finding, rule, block, containment
+action, or capability change.
 
 ## Canonical terminology
 
@@ -66,8 +68,8 @@ immutable_reference)`. Trusted authorities are `TASK_CONTRACT`, `SYSTEM_POLICY`,
 construct any declaration. This represents the trust boundary in-process; it does not
 authenticate issuers or provide cryptographic integrity.
 
-Future findings must preserve the context schema version and the exact sources of all
-declarations used in interpretation. Finding integration is intentionally deferred.
+`ContextEvaluation` preserves the exact sources of declarations used in its
+single-observation interpretation. Future finding integration remains deferred.
 
 ## Validation and lookup semantics
 
@@ -100,7 +102,9 @@ does not encode or alter a trajectory-rule threshold and does not suppress findi
 
 Development examples in `examples/context_examples.py` show local analysis versus
 report delivery, and declared compatibility fallback versus undeclared probing. They
-construct context only; they do not implement detection.
+construct context only; they do not implement detection. M5.1-B development tests add
+the same-observation/different-context interpretation primitive without producing a
+trajectory finding.
 
 ## Serialization and limitations
 

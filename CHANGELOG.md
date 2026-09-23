@@ -24,6 +24,10 @@ All notable changes will be documented here. The format follows [Keep a Changelo
   resource/data roles, destination and logical-flow constraints, bounded fallback
   declarations, per-declaration trusted provenance, deterministic validation/lookups,
   and explicit sufficient/insufficient context representation.
+- M5.1-B immutable reason-coded `ContextEvaluation` and stateless `ContextEvaluator`
+  for single completed observations, including resource/data roles, destination/outcome
+  and action-purpose compatibility, optional declared logical-flow comparison, fallback
+  membership, provenance, and explicit mismatch/insufficient/not-applicable states.
 
 ### Notes
 
@@ -33,3 +37,5 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 - M5 does not contain, block, authorize, execute, or mutate task authority; TS-009 remains individually allowed even when `TRJ-001` is observed.
 - M5.1-A adds representation only: context does not grant capabilities, perform
   natural-language inference, track runtime lineage, or change M5 trajectory behavior.
+- M5.1-B adds interpretation only: it does not retain history, count attempts, inspect
+  payloads, emit trajectory findings, alter authorization, or change M5 rules.

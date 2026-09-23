@@ -1,5 +1,17 @@
 """Public API for immutable trusted task context."""
 
+from safetybox.context.evaluation import (
+    ConstraintEvaluation,
+    ContextDimension,
+    ContextEvaluation,
+    ContextEvaluationError,
+    ContextEvaluationStatus,
+    ContextEvaluator,
+    ContextReason,
+    LogicalDataFlow,
+    ObservationContext,
+    TaskContextMismatchError,
+)
 from safetybox.context.models import (
     AllowedOutcome,
     AmbiguousContextError,
@@ -25,7 +37,13 @@ __all__ = [
     "AmbiguousContextError",
     "ContextAssessment",
     "ContextAuthority",
+    "ContextDimension",
+    "ContextEvaluation",
+    "ContextEvaluationError",
+    "ContextEvaluationStatus",
+    "ContextEvaluator",
     "ContextField",
+    "ContextReason",
     "ContextSource",
     "ContextStatus",
     "ContextValidationError",
@@ -34,8 +52,12 @@ __all__ = [
     "DestinationConstraint",
     "ExpectedActionPurpose",
     "FallbackPattern",
+    "LogicalDataFlow",
+    "ObservationContext",
     "ResourceRole",
     "TaskContext",
     "TaskPurpose",
+    "TaskContextMismatchError",
+    "ConstraintEvaluation",
     "validate_task_binding",
 ]
