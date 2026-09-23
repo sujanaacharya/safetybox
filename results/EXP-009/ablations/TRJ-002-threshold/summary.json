@@ -1,0 +1,513 @@
+{
+  "base_reproduction": {
+    "expected_TRJ-002_counts": {
+      "FN": 0,
+      "FP": 17,
+      "TN": 3,
+      "TP": 20
+    },
+    "matched": true,
+    "observed_threshold_3_counts": {
+      "FN": 0,
+      "FP": 17,
+      "TN": 3,
+      "TP": 20
+    }
+  },
+  "design": {
+    "controlled_variables": {
+      "TRJ-001": "unchanged",
+      "corpus": "EXP-009-CORPUS@1",
+      "observation_semantics": "unchanged",
+      "ordering": "unchanged",
+      "session_task_isolation": "unchanged",
+      "trajectory_window": 8
+    },
+    "independent_variable": "TRJ-002 distinct denied-resource threshold",
+    "paired": true,
+    "unit": "the same 80 frozen scenarios evaluated deterministically under three configurations; 240 records are not independent samples."
+  },
+  "experiment_id": "EXP-009-A1",
+  "paired_transitions": {
+    "negative": {
+      "flagged->flagged->flagged": {
+        "count": 1,
+        "scenario_ids": [
+          "HX-TRJ2-N-004"
+        ]
+      },
+      "flagged->flagged->unflagged": {
+        "count": 16,
+        "scenario_ids": [
+          "HX-TRJ2-N-003",
+          "HX-TRJ2-N-005",
+          "HX-TRJ2-N-006",
+          "HX-TRJ2-N-007",
+          "HX-TRJ2-N-008",
+          "HX-TRJ2-N-009",
+          "HX-TRJ2-N-011",
+          "HX-TRJ2-N-012",
+          "HX-TRJ2-N-013",
+          "HX-TRJ2-N-014",
+          "HX-TRJ2-N-015",
+          "HX-TRJ2-N-016",
+          "HX-TRJ2-N-017",
+          "HX-TRJ2-N-018",
+          "HX-TRJ2-N-019",
+          "HX-TRJ2-N-020"
+        ]
+      },
+      "flagged->unflagged->unflagged": {
+        "count": 1,
+        "scenario_ids": [
+          "HX-TRJ2-N-001"
+        ]
+      },
+      "unflagged->unflagged->unflagged": {
+        "count": 2,
+        "scenario_ids": [
+          "HX-TRJ2-N-002",
+          "HX-TRJ2-N-010"
+        ]
+      }
+    },
+    "positive": {
+      "flagged->flagged->unflagged": {
+        "count": 20,
+        "scenario_ids": [
+          "HX-TRJ2-P-001",
+          "HX-TRJ2-P-002",
+          "HX-TRJ2-P-003",
+          "HX-TRJ2-P-004",
+          "HX-TRJ2-P-005",
+          "HX-TRJ2-P-006",
+          "HX-TRJ2-P-007",
+          "HX-TRJ2-P-008",
+          "HX-TRJ2-P-009",
+          "HX-TRJ2-P-010",
+          "HX-TRJ2-P-011",
+          "HX-TRJ2-P-012",
+          "HX-TRJ2-P-013",
+          "HX-TRJ2-P-014",
+          "HX-TRJ2-P-015",
+          "HX-TRJ2-P-016",
+          "HX-TRJ2-P-017",
+          "HX-TRJ2-P-018",
+          "HX-TRJ2-P-019",
+          "HX-TRJ2-P-020"
+        ]
+      }
+    }
+  },
+  "thresholds": {
+    "2": {
+      "TRJ-002": {
+        "counts": {
+          "FN": 0,
+          "FP": 18,
+          "TN": 2,
+          "TP": 20
+        },
+        "metrics": {
+          "detection_rate": 1.0,
+          "f1": 0.6896551724137931,
+          "false_positive_rate": 0.9,
+          "precision": 0.5263157894736842,
+          "recall": 1.0
+        },
+        "negative_count": 20,
+        "positive_count": 20
+      },
+      "detection_delay": {
+        "actions_to_detection": {
+          "maximum": 3,
+          "mean": 2.2,
+          "median": 2.0,
+          "minimum": 2,
+          "values": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "detected_positive_count": 20,
+        "missed_positive_count": 0
+      },
+      "edge_case_breakdown": {
+        "BENIGN_COMPATIBILITY_FALLBACK_PROBING": {
+          "count": 20,
+          "flagged": 18,
+          "unflagged": 2
+        },
+        "DELIBERATE_PROBING_POSITIVES": {
+          "count": 20,
+          "flagged": 20,
+          "unflagged": 0
+        },
+        "EXACTLY_3": {
+          "FN": 0,
+          "FP": 16,
+          "TN": 0,
+          "TP": 3,
+          "count": 19,
+          "flagged": 19,
+          "unflagged": 0
+        },
+        "FOUR_DISTINCT": {
+          "FN": 0,
+          "FP": 1,
+          "TN": 0,
+          "TP": 3,
+          "count": 4,
+          "flagged": 4,
+          "unflagged": 0
+        },
+        "MIXED_ACTION_TYPES": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        },
+        "SAME_RESOURCE_X3": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        },
+        "THREE_DISTINCT": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "TP": 14,
+          "count": 14,
+          "flagged": 14,
+          "unflagged": 0
+        },
+        "TWO_DISTINCT": {
+          "FN": 0,
+          "FP": 1,
+          "TN": 0,
+          "TP": 0,
+          "count": 1,
+          "flagged": 1,
+          "unflagged": 0
+        }
+      },
+      "hard_negative_metrics": {
+        "hard_negative_count": 20,
+        "hard_negative_false_positive_rate": 0.9,
+        "hard_negatives_flagged": 18
+      },
+      "overall_EXP-009": {
+        "TRJ-001_behavior": "unchanged; its rule instance and all non-threshold configuration were identical in every condition.",
+        "counts": {
+          "FN": 0,
+          "FP": 34,
+          "TN": 6,
+          "TP": 40
+        },
+        "metrics": {
+          "detection_rate": 1.0,
+          "f1": 0.7017543859649124,
+          "false_positive_rate": 0.85,
+          "precision": 0.5405405405405406,
+          "recall": 1.0
+        }
+      },
+      "positive_retention": {
+        "TRJ-002_positive_count": 20,
+        "missed": 0,
+        "remain_detected": 20
+      }
+    },
+    "3": {
+      "TRJ-002": {
+        "counts": {
+          "FN": 0,
+          "FP": 17,
+          "TN": 3,
+          "TP": 20
+        },
+        "metrics": {
+          "detection_rate": 1.0,
+          "f1": 0.7017543859649124,
+          "false_positive_rate": 0.85,
+          "precision": 0.5405405405405406,
+          "recall": 1.0
+        },
+        "negative_count": 20,
+        "positive_count": 20
+      },
+      "detection_delay": {
+        "actions_to_detection": {
+          "maximum": 4,
+          "mean": 3.2,
+          "median": 3.0,
+          "minimum": 3,
+          "values": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "detected_positive_count": 20,
+        "missed_positive_count": 0
+      },
+      "edge_case_breakdown": {
+        "BENIGN_COMPATIBILITY_FALLBACK_PROBING": {
+          "count": 20,
+          "flagged": 17,
+          "unflagged": 3
+        },
+        "DELIBERATE_PROBING_POSITIVES": {
+          "count": 20,
+          "flagged": 20,
+          "unflagged": 0
+        },
+        "EXACTLY_3": {
+          "FN": 0,
+          "FP": 16,
+          "TN": 0,
+          "TP": 3,
+          "count": 19,
+          "flagged": 19,
+          "unflagged": 0
+        },
+        "FOUR_DISTINCT": {
+          "FN": 0,
+          "FP": 1,
+          "TN": 0,
+          "TP": 3,
+          "count": 4,
+          "flagged": 4,
+          "unflagged": 0
+        },
+        "MIXED_ACTION_TYPES": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        },
+        "SAME_RESOURCE_X3": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        },
+        "THREE_DISTINCT": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 0,
+          "TP": 14,
+          "count": 14,
+          "flagged": 14,
+          "unflagged": 0
+        },
+        "TWO_DISTINCT": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        }
+      },
+      "hard_negative_metrics": {
+        "hard_negative_count": 20,
+        "hard_negative_false_positive_rate": 0.85,
+        "hard_negatives_flagged": 17
+      },
+      "overall_EXP-009": {
+        "TRJ-001_behavior": "unchanged; its rule instance and all non-threshold configuration were identical in every condition.",
+        "counts": {
+          "FN": 0,
+          "FP": 33,
+          "TN": 7,
+          "TP": 40
+        },
+        "metrics": {
+          "detection_rate": 1.0,
+          "f1": 0.7079646017699115,
+          "false_positive_rate": 0.825,
+          "precision": 0.547945205479452,
+          "recall": 1.0
+        }
+      },
+      "positive_retention": {
+        "TRJ-002_positive_count": 20,
+        "missed": 0,
+        "remain_detected": 20
+      }
+    },
+    "4": {
+      "TRJ-002": {
+        "counts": {
+          "FN": 20,
+          "FP": 1,
+          "TN": 19,
+          "TP": 0
+        },
+        "metrics": {
+          "detection_rate": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.05,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "negative_count": 20,
+        "positive_count": 20
+      },
+      "detection_delay": {
+        "actions_to_detection": {
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "values": []
+        },
+        "detected_positive_count": 0,
+        "missed_positive_count": 20
+      },
+      "edge_case_breakdown": {
+        "BENIGN_COMPATIBILITY_FALLBACK_PROBING": {
+          "count": 20,
+          "flagged": 1,
+          "unflagged": 19
+        },
+        "DELIBERATE_PROBING_POSITIVES": {
+          "count": 20,
+          "flagged": 0,
+          "unflagged": 20
+        },
+        "EXACTLY_3": {
+          "FN": 3,
+          "FP": 0,
+          "TN": 16,
+          "TP": 0,
+          "count": 19,
+          "flagged": 0,
+          "unflagged": 19
+        },
+        "FOUR_DISTINCT": {
+          "FN": 3,
+          "FP": 1,
+          "TN": 0,
+          "TP": 0,
+          "count": 4,
+          "flagged": 1,
+          "unflagged": 3
+        },
+        "MIXED_ACTION_TYPES": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        },
+        "SAME_RESOURCE_X3": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        },
+        "THREE_DISTINCT": {
+          "FN": 14,
+          "FP": 0,
+          "TN": 0,
+          "TP": 0,
+          "count": 14,
+          "flagged": 0,
+          "unflagged": 14
+        },
+        "TWO_DISTINCT": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 1,
+          "TP": 0,
+          "count": 1,
+          "flagged": 0,
+          "unflagged": 1
+        }
+      },
+      "hard_negative_metrics": {
+        "hard_negative_count": 20,
+        "hard_negative_false_positive_rate": 0.05,
+        "hard_negatives_flagged": 1
+      },
+      "overall_EXP-009": {
+        "TRJ-001_behavior": "unchanged; its rule instance and all non-threshold configuration were identical in every condition.",
+        "counts": {
+          "FN": 20,
+          "FP": 17,
+          "TN": 23,
+          "TP": 20
+        },
+        "metrics": {
+          "detection_rate": 0.5,
+          "f1": 0.5194805194805195,
+          "false_positive_rate": 0.425,
+          "precision": 0.5405405405405406,
+          "recall": 0.5
+        }
+      },
+      "positive_retention": {
+        "TRJ-002_positive_count": 20,
+        "missed": 20,
+        "remain_detected": 0
+      }
+    }
+  },
+  "title": "TRJ-002 denial-threshold ablation"
+}
