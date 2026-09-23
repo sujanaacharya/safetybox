@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use SafetyBox, cite this software artifact. Publication details will be added when available."
+title: "SafetyBox: External Deterministic Runtime Safety for Autonomous AI Agents"
+type: software
+authors:
+  - name: "SafetyBox contributors"
+version: 0.0.0
+date-released: 2026-09-23
+license: MIT
+abstract: >-
+  A pre-implementation research artifact specifying an external,
+  deterministic runtime safety and control architecture for autonomous AI
+  agents. No effectiveness claims have yet been experimentally validated.

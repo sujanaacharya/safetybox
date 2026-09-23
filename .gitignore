@@ -1,0 +1,52 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*
+secrets*
+
+# Python caches and build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Temporary experiment and benchmark outputs
+results/raw/
+results/tmp/
+results/**/scratch/
+benchmarks/tmp/
+experiments/tmp/
+*.prof
+*.trace
+
+# Large local data; version small manifests and approved fixtures explicitly
+datasets/local/
+datasets/cache/

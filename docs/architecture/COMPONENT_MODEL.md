@@ -1,0 +1,25 @@
+# Component Model
+
+The [System Architecture](SYSTEM_ARCHITECTURE.md) owns the component list. This document specifies responsibility and trust separation.
+
+| Component | Accepts | Produces | Must not do |
+|---|---|---|---|
+| Task Contract loader | Authenticated, versioned contract | Validated canonical contract | Infer undeclared authority from agent text |
+| Agent Adapter | Framework request/response | Canonical request/events | Execute tools or weaken scope |
+| Interception Layer | Canonical request and session identity | Mediation transaction | Permit bypass or pre-authorization side effects |
+| Capability Registry | Contract grants, revocations, time/state | Effective capabilities | Expand authority without authorized grant event |
+| Policy Engine | Normalized request, state, versioned rules | Decision, matched rules, explanation | Invoke tools or mutate evidence |
+| Event subsystem | Candidate canonical events | Ordered committed events | Accept agent-controlled sequence/timestamps as authoritative |
+| Trajectory Monitor | Ordered events, trajectory policies | Signals and explanations | Directly execute external actions |
+| Risk/Trust Engine | Defined signals and transition policy | State transition proposal | Treat an opaque score as fact about intent |
+| Enforcement Controller | Policy/capability/risk decisions | Applied outcome and events | Override a hard deny with advisory input |
+| Approval mechanism | Pending request, bounded context | Signed/attributable decision | Grant authority beyond approver scope |
+| Tool adapter/sandbox | Authorized normalized invocation | Result or execution failure event | Accept an unbound/stale authorization |
+| Audit Logger | Committed events | Durable ordered record | Rewrite finalized evidence silently |
+| Provenance Store | IDs, versions, hashes, causal links | Queryable lineage | Conflate unverified agent statements with observations |
+
+## Interface discipline
+
+Interfaces will later be typed and versioned. Requests require task/session identity, normalized action/resource, correlation identity, and a bound policy/capability snapshot. Authorization should be single-use or otherwise protected from replay. Components fail closed or enter explicitly configured safe states as documented in [Failure Modes](FAILURE_MODES.md).
+
+The trusted computing base is intended to include the interception boundary, policy/capability evaluation, controller, adapters enforcing authorization, and integrity-critical audit path. The protected agent and arbitrary tool outputs remain untrusted.
