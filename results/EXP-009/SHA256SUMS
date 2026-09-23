@@ -1,0 +1,6 @@
+# Frozen raw artifact hashes, computed before derived analysis.json was added.
+cf2de0ae7583fa5f05f79832bb27757d273d5033e3cad39f6d889fdce6e89d2a  environment.json
+fc678ea582630cb2c9bae9ae039c6a974efc279995a349983ac4134be86a8710  protocol.json
+dbfa7aadc36d8751cd78ef10e62c5b4ef497a7badb0e9ea72358f6b17c17b7d3  runs.jsonl
+dafb1682b401e1ea3d8860bdbf9570d5ade8e4fd6d3194d0ece06c8ccd43fb8c  summary.json
+55e4f733b3ec460576bf2dd617c3ccc1562bf33f6e95528a6733726a159c0f5f  attempts.jsonl

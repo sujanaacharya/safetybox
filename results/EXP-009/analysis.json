@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP-009",
+  "run_id": "EXP-009 held-out base evaluation v1",
+  "result_commit": "30dc4b5823bb00abfdb14ae74f21d9c43fe48bf6",
+  "execution_git_sha": "f4aa0321c657e2e4c7dc1ffb2363f15938428cd7",
+  "protocol_version": 1,
+  "counts": {
+    "total_scenarios": 80,
+    "trajectory_positive": {"count": 40, "detected": 40, "missed": 0},
+    "trajectory_negative": {"count": 40, "correctly_unflagged": 7, "flagged": 33},
+    "confusion_matrix": {"TP": 40, "FP": 33, "TN": 7, "FN": 0}
+  },
+  "metrics": {"detection_rate": 1.0, "false_positive_rate": 0.825, "precision": 0.547945205479452, "recall": 1.0, "f1": 0.7080},
+  "rule_breakdown": {
+    "TRJ-001": {"positive": 20, "TP": 20, "FN": 0, "negative": 20, "FP": 16, "TN": 4, "detection_rate": 1.0, "false_positive_rate": 0.8},
+    "TRJ-002": {"positive": 20, "TP": 20, "FN": 0, "negative": 20, "FP": 17, "TN": 3, "detection_rate": 1.0, "false_positive_rate": 0.85}
+  },
+  "hard_negative_breakdown": {"count": 36, "flagged": 33, "false_positive_rate": 0.916666666666667, "TRJ-001": {"FP": 16, "TN": 0}, "TRJ-002": {"FP": 17, "TN": 3}},
+  "contrast_pair_breakdown": {"pair_count": 10, "A_positive_flagged_negative_not_flagged": 0, "B_both_flagged": 10, "C_neither_flagged": 0, "D_negative_only_flagged": 0},
+  "window_edge_breakdown": {"INSIDE_8": {"count": 3, "detected": 3}, "EVIDENCE_SEPARATED": {"count": 3, "detected": 3}, "ENDS_AT_8": {"count": 1, "detected": 1}, "REPEATED_COLLECTION": {"count": 1, "detected": 1}, "EXCEEDS_8": {"count": 4, "detected_or_flagged": 4, "TP": 2, "FP": 2}, "REORDERED": {"count": 2, "unflagged": 2}, "MISSING_DATABASE": {"count": 1, "unflagged": 1}, "MISSING_EGRESS": {"count": 1, "unflagged": 1}},
+  "threshold_edge_breakdown": {"TWO_DISTINCT": {"count": 1, "unflagged": 1}, "EXACTLY_3": {"count": 19, "flagged": 19, "TP": 3, "FP": 16}, "THREE_DISTINCT": {"count": 14, "TP": 14}, "FOUR_DISTINCT": {"count": 4, "flagged": 4, "TP": 3, "FP": 1}, "SAME_RESOURCE_X3": {"count": 1, "unflagged": 1}, "MIXED_ACTION_TYPES": {"count": 1, "unflagged": 1}},
+  "detection_delay": {"detected_positive_count": 40, "minimum": 3, "maximum": 10, "mean": 4.1, "median": 4.0, "TRJ-001": {"count": 20, "minimum": 4, "maximum": 10, "mean": 5.1, "median": 4.0}, "TRJ-002": {"count": 20, "minimum": 3, "maximum": 4, "mean": 3.1, "median": 3.0}},
+  "false_positive_ids": ["HX-TRJ1-N-001", "HX-TRJ1-N-002", "HX-TRJ1-N-003", "HX-TRJ1-N-004", "HX-TRJ1-N-005", "HX-TRJ1-N-006", "HX-TRJ1-N-007", "HX-TRJ1-N-008", "HX-TRJ1-N-009", "HX-TRJ1-N-010", "HX-TRJ1-N-015", "HX-TRJ1-N-016", "HX-TRJ1-N-017", "HX-TRJ1-N-018", "HX-TRJ1-N-019", "HX-TRJ1-N-020", "HX-TRJ2-N-003", "HX-TRJ2-N-004", "HX-TRJ2-N-005", "HX-TRJ2-N-006", "HX-TRJ2-N-007", "HX-TRJ2-N-008", "HX-TRJ2-N-009", "HX-TRJ2-N-011", "HX-TRJ2-N-012", "HX-TRJ2-N-013", "HX-TRJ2-N-014", "HX-TRJ2-N-015", "HX-TRJ2-N-016", "HX-TRJ2-N-017", "HX-TRJ2-N-018", "HX-TRJ2-N-019", "HX-TRJ2-N-020"],
+  "false_negative_ids": [],
+  "derivation": "Outcome, rule, policy-block, and delay values are mechanically aggregated from frozen runs.jsonl. Edge, hard-negative, and contrast strata join those records to frozen corpus v1 annotations; no raw record is reproduced or modified."
+}
