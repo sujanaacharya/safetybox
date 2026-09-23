@@ -1,0 +1,263 @@
+audit_version: EXP-013-M5_1-CAPABILITY-AUDIT@1
+audit_type: DEVELOPMENT_ONLY_ARCHITECTURAL_AUDIT
+held_out_corpus_data_included: false
+experiment_run: false
+
+frozen_refs:
+  exp_013_protocol_v1_git_sha: 632a4f82ab7c6487d82a166bca2e3354c7b9b763
+  exp_013_preregistration_base_git_sha: 465a711ed3edc2654d1cb2fe4b37a2f965feaad9
+  b2_git_sha: 3f8794e8b134b534365e0e26f48dd1886a50f662
+  b2_identifier: B2-SINGLE-OBSERVATION@1
+  m5_git_sha: 6dc4a6eac7db315a06d9b165234eb1388ee89529
+  m5_1_a_git_sha: 7dd4de167e8b997479da051cc412ac70feed7702
+  m5_1_b_git_sha: f75f29552681f5b471b4009992a2100610bdf18c
+  m5_1_c_git_sha: bd21c4cc6f0c5e5b176fc7cf471aa7d72bb76d71
+  audit_starting_head_git_sha: 3f8794e8b134b534365e0e26f48dd1886a50f662
+
+b2_boundary:
+  observation_mapping:
+    CONTEXT_MISMATCH: POSITIVE
+    INSUFFICIENT_CONTEXT: ABSTAIN
+    CONTEXT_CONSISTENT: NEGATIVE
+    NOT_APPLICABLE: NEGATIVE
+  scenario_reduction: POSITIVE_IF_ANY_POSITIVE_ELSE_ABSTAIN_IF_ANY_ABSTAIN_ELSE_NEGATIVE
+  commutative: true
+  idempotent_for_exact_duplicate_results: true
+  retained_history: false
+  forbidden_or_unused_dimensions:
+    - observation_order
+    - accumulated_roles
+    - repetition_count
+    - phase_state
+    - transition_state
+    - cross_observation_grouping
+
+state_features:
+  - name: current_observation
+    scope: observation_local
+    historical: false
+    count_based: false
+    order_sensitive: false
+    role_accumulating: false
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: false
+    rule_use: action_decision_execution_resource_and_current_position
+  - name: current_context_evaluation
+    scope: observation_local
+    historical: false
+    count_based: false
+    order_sensitive: false
+    role_accumulating: false
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: false
+    rule_use: aggregate_status_destination_applicability_and_fallback_membership
+  - name: bounded_contextualized_observation_history
+    scope: session_task
+    historical: true
+    bound: 8
+    count_based: indirectly
+    order_sensitive: true
+    role_accumulating: retained_but_not_used_as_trigger
+    phase_sensitive: false
+    destination_transition_sensitive: retained_but_not_compared
+    grouping_sensitive: false
+    rule_use: passed_to_stateless_rules
+  - name: last_sequence_by_session
+    scope: session
+    historical: true
+    count_based: false
+    order_sensitive: validation_only
+    role_accumulating: false
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: false
+    rule_use: rejects_non_increasing_sequence_numbers
+  - name: matched_resource_roles
+    scope: bounded_history
+    historical: true
+    count_based: existence_only_for_CTXTRJ_001
+    order_sensitive: earlier_versus_current_only
+    role_accumulating: evidence_only
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: false
+    rule_use: one_prior_match_gates_CTXTRJ_001
+  - name: fallback_match_state
+    scope: bounded_history_computed_on_demand
+    historical: true
+    count_based: true
+    order_sensitive: last_three_selected_but_no_progression_semantics
+    role_accumulating: false
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: same_action_and_behavior_id_only
+    rule_use: CTXTRJ_002_threshold_common_behavior_and_numeric_bound
+  - name: processed_observation_count
+    scope: session_task
+    historical: true
+    count_based: true
+    order_sensitive: false
+    role_accumulating: false
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: false
+    rule_use: snapshot_metadata_only
+  - name: findings_and_deduplication_keys
+    scope: session_task
+    historical: true
+    count_based: output_retention
+    order_sensitive: exact_evidence_tuple_for_identity
+    role_accumulating: evidence_only
+    phase_sensitive: false
+    destination_transition_sensitive: false
+    grouping_sensitive: exact_request_tuple_only
+    rule_use: output_storage_and_duplicate_suppression
+
+rule_dependencies:
+  CTXTRJ-001:
+    trigger_observation: newest_observation_with_applicable_destination_dimension
+    historical_prerequisites:
+      - at_least_one_earlier_executed_observation
+      - earlier_observation_has_matched_resource_role
+    context_prerequisites:
+      - fixed_TaskContext_for_session_task
+      - current_destination_dimension_evaluated_by_M5_1_B
+    current_observation_contains_label_signal: true
+    label_signal: current_aggregate_CONTEXT_MISMATCH_or_INSUFFICIENT_CONTEXT
+    history_only_gates_emission: true
+    history_changes_semantic_classification: false
+    b2_can_classify_same_local_signal: true
+    matched_order_discrimination_reachable: true
+    limitation: no_finding_for_any_current_CONTEXT_CONSISTENT_outbound
+  CTXTRJ-002:
+    trigger_observation: newest_observation_is_DENY
+    historical_prerequisites:
+      - at_least_three_same_action_denials_in_bounded_history
+      - last_three_denials_use_three_distinct_resources
+    context_prerequisites:
+      - per_attempt_fallback_evaluation
+      - common_matched_behavior_resolves_in_TaskContext_for_no_finding_or_bound_check
+    current_observation_contains_label_signal: false_for_numeric_bound_case
+    history_only_gates_emission: false_for_numeric_bound_case
+    history_changes_semantic_classification: true_for_numeric_bound_case
+    b2_can_classify_same_scenario_from_independent_observations: false_for_numeric_bound_case
+    expressible_history:
+      - threshold
+      - distinct_resource_count_for_selected_three
+      - common_fallback_behavior_membership
+      - bounded_window_matching_attempt_count_vs_maximum_attempts
+    not_expressible:
+      - ordered_candidate_progression
+      - cycle_or_reentry_policy
+      - termination_condition_state
+      - total_count_beyond_history_window
+
+family_matrix:
+  - family_id: MS-A
+    family: role_accumulation_before_outbound
+    classification: NOT_EXPRESSIBLE
+    evidence: prior_matched_role_is_only_an_existence_gate_and_role_tuple_is_output_evidence
+  - family_id: MS-B
+    family: cross_source_aggregation
+    classification: NOT_EXPRESSIBLE
+    evidence: no_grouping_state_and_no_rule_compares_accumulated_roles_with_flow_declarations
+  - family_id: MS-C
+    family: order_dependent_purpose_violation
+    classification: NOT_EXPRESSIBLE
+    evidence: consistent_current_observation_never_emits_and_no_ordered_purpose_declaration_exists
+  - family_id: MS-D
+    family: collection_after_finalization
+    classification: NOT_EXPRESSIBLE
+    evidence: no_finalization_or_closed_phase_state_exists
+  - family_id: MS-E
+    family: repeated_fallback_progression
+    classification: PARTIALLY_SUPPORTED
+    evidence: numeric_bound_and_common_behavior_supported_but_ordered_progression_is_absent
+  - family_id: MS-F
+    family: cross_phase_behavior
+    classification: NOT_EXPRESSIBLE
+    evidence: no_phase_state_transition_table_or_interleaving_rule_exists
+
+development_probe_results:
+  evidence_class: DEVELOPMENT_ONLY_NOT_EXPERIMENT_RESULTS
+  pair_count: 4
+  b2_parity_valid_pair_count: 4
+  m5_1_c_discriminated_pair_count: 2
+  all_consistent_history_semantic_discrimination_pair_count: 1
+  pairs:
+    - probe_id: DEV-MS-A
+      probe_type: order_reversal
+      independent_variable: order
+      local_evidence_match: identical_normalized_multiset
+      positive_statuses: [CONTEXT_CONSISTENT, CONTEXT_MISMATCH, CONTEXT_CONSISTENT]
+      negative_statuses: [CONTEXT_MISMATCH, CONTEXT_CONSISTENT, CONTEXT_CONSISTENT]
+      mismatch_presence_matched: true
+      b2_positive_member: POSITIVE
+      b2_negative_member: POSITIVE
+      b2_parity: true
+      m5_1_c_positive_member: SUSPICIOUS
+      m5_1_c_negative_member: NO_FINDING
+      m5_1_c_discriminates: true
+      interpretation: order_sensitive_emission_gate_around_observation_local_mismatch
+    - probe_id: DEV-MS-B
+      probe_type: role_accumulation
+      independent_variable: whether_both_roles_precede_outbound
+      local_evidence_match: identical_normalized_multiset
+      statuses: [CONTEXT_CONSISTENT, CONTEXT_CONSISTENT, CONTEXT_CONSISTENT]
+      b2_positive_member: NEGATIVE
+      b2_negative_member: NEGATIVE
+      b2_parity: true
+      m5_1_c_positive_member: NO_FINDING
+      m5_1_c_negative_member: NO_FINDING
+      m5_1_c_discriminates: false
+      interpretation: accumulated_role_combinations_are_not_rule_inputs
+    - probe_id: DEV-MS-C
+      probe_type: fallback_count_progression
+      independent_variable: fourth_equivalent_attempt_exceeds_bound_three
+      local_evidence_match: same_status_and_reason_type_with_intentional_multiplicity_difference
+      per_attempt_status: CONTEXT_CONSISTENT
+      per_attempt_reason_ids:
+        - CTX-RESOURCE-MATCH
+        - CTX-ACTION-PURPOSE-MATCH
+        - CTX-FALLBACK-MATCH
+      b2_positive_member: NEGATIVE
+      b2_negative_member: NEGATIVE
+      b2_parity: true
+      m5_1_c_positive_member: SUSPICIOUS
+      m5_1_c_negative_member: NO_FINDING
+      m5_1_c_discriminates: true
+      interpretation: genuine_numeric_bound_history
+    - probe_id: DEV-MS-D
+      probe_type: phase_ordering
+      independent_variable: ordering_of_phase_named_resources
+      local_evidence_match: identical_normalized_multiset
+      statuses: [CONTEXT_CONSISTENT, CONTEXT_CONSISTENT, CONTEXT_CONSISTENT]
+      b2_positive_member: NEGATIVE
+      b2_negative_member: NEGATIVE
+      b2_parity: true
+      m5_1_c_positive_member: NO_FINDING
+      m5_1_c_negative_member: NO_FINDING
+      m5_1_c_discriminates: false
+      interpretation: no_machine_readable_phase_state
+
+b4_required: true
+rationale:
+  - CTXTRJ_001_history_only_gates_an_observation_local_mismatch_or_abstention
+  - only_numeric_fallback_bound_supplies_genuine_all_consistent_history_discrimination
+  - five_of_six_preregistered_primary_families_are_not_expressible_as_defined
+  - role_accumulation_grouping_ordered_purpose_finalization_and_phase_state_are_absent
+  - meaningful_EXP_013_coverage_requires_multiple_nontrivial_history_dimensions
+
+minimal_b4_primitives:
+  - trusted_accumulated_role_combination_constraints
+  - explicit_group_or_stage_scoping_for_accumulation
+  - finite_phase_state_machine_with_close_reentry_and_interleaving_rules
+  - declared_ordered_action_purpose_or_logical_outcome_transitions
+  - destination_transition_constraints
+  - structured_fallback_candidate_progression_cycle_and_termination_state
+
+recommended_next_step: >-
+  Create and freeze the pre-corpus EXP-013 B4 protocol addendum and bounded deterministic
+  B4 implementation using development-only probes before independent corpus authorship.
