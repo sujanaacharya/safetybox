@@ -10,6 +10,10 @@ Audit answers what was requested, what was decided, why, which state and version
 
 M3 fails closed when a required audit event cannot be recorded before tool execution: `AuditFailure` is raised and the tool is not invoked. A failure while attempting a terminal event after an invoked tool cannot undo that side effect; it raises `AuditFailure` with an indeterminate execution-status boundary. This research-prototype choice is not a universal deployment policy.
 
+## M4 scenario linkage
+
+M4 creates one `ActionRequest` per ordered scenario step. Its deterministic request ID is `<scenario_id>:<step_id>` and is also the M3 correlation ID. `ScenarioResult` returns the existing M3 events rather than a duplicate event stream; event UUIDs and timestamps remain M3 observational metadata.
+
 ## Future minimum decision record
 
 - event/session/task/correlation identifiers and sequence number;

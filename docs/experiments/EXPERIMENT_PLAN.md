@@ -33,6 +33,10 @@ These IDs reserve candidate studies; registration files will define executable p
 - Include confidence intervals or suitable uncertainty and disclose multiple comparisons.
 - Freeze analysis rules before primary evaluation; exploratory results are labeled.
 
+## M4 simulator relationship
+
+M4 supplies deterministic, harmless scenario execution and raw M3-linked evidence; it does not execute registered experiments or produce benchmark results. The initial corpus and its status are documented in [Threat Simulator](THREAT_SIMULATOR.md). Future protocols may select and freeze a versioned subset only after defining denominators, baselines, sampling, and analysis.
+
 ## Lifecycle
 
 1. Draft registration and threat/benchmark mapping.

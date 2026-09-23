@@ -23,6 +23,10 @@ Secrets are referenced by variable name or credential class, never captured. Sen
 2. **Harness replay:** local scenarios should reproduce within declared system-performance tolerances.
 3. **Model-assisted replay:** stochastic or externally versioned models are repeated and reported distributionally; unavailable snapshots are a limitation.
 
+## M4 simulation replay
+
+The M4 scenario runner creates fresh in-memory policy, monitor, audit, tool, and world objects for every run. Equivalent runs should match semantic step outcomes (decision, rule ID, execution flag, logical effect), world snapshots, and ordered event types. M3 event UUIDs and UTC timestamps intentionally remain observational nondeterministic metadata and are excluded from equality checks.
+
 ## Artifact lifecycle
 
 Draft outputs remain clearly marked and may be regenerated. Finalization validates required metadata, freezes the manifest, computes checksums, and marks result files immutable under governance. Corrections add a successor artifact and explanation without rewriting the original. Large files use durable external storage with content-addressed manifests.

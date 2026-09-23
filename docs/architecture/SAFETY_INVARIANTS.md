@@ -19,3 +19,5 @@ These are **desired invariants**, not verified properties beyond the scope named
 ## Status policy
 
 Future statuses and evidence criteria require an ADR or verification plan. Unit tests alone cannot establish invariants that depend on OS isolation, deployment topology, or complete mediation. M1/M2 evidence does not establish complete mediation or capability confinement for operating systems, subprocesses, agent frameworks, malicious Python code, direct tool references, or alternate resource paths. Any claimed verification must name the version, environment, assumptions, and evidence artifact.
+
+M4 supplies deterministic regression scenarios that exercise the existing in-process evidence for INV-001, INV-002, INV-004, INV-005, and INV-011. It does not strengthen their stated status or establish any deployment-wide property.

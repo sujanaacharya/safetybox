@@ -17,9 +17,12 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 - M2 unit tests for task binding, action and resource scope, path-boundary handling, immutable capability collections, and preserved monitor ordering/non-forwarding.
 - M3 immutable canonical events, typed ReferenceMonitor lifecycle events, per-session in-memory sequencing, correlation, policy-rule provenance, and `AuditSink`/`InMemoryAuditSink` abstractions.
 - M3 tests for allow, denial, authorization failure, execution failure, audit failure, correlation, ordering, and immutability.
+- M4 deterministic, immutable threat-scenario simulator with harmless in-memory filesystem, network, shell, and database effect records.
+- M4 starter corpus for TS-001, TS-006, TS-008, TS-009, TS-010, and BENIGN-001/BENIGN-002 controls, including M3 audit correlation and repeatability evidence.
 
 ### Notes
 
 - M1 evidence is limited to the supplied in-process `ReferenceMonitor` abstraction; it does not establish deployment-wide complete mediation.
 - M2 capability evidence is limited to logical in-process request strings; it does not provide filesystem or OS-level confinement.
 - M3 has no durable storage, cross-process ordering, distributed tracing, tamper evidence, cryptographic integrity, automatic experiment provenance, or secret-redaction guarantee.
+- M4 performs no trajectory detection or containment; TS-009 intentionally remains individually allowed and `CURRENTLY_UNDETECTABLE`.
