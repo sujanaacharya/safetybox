@@ -1,0 +1,191 @@
+{
+  "analysis_id": "EXP-012-ANALYSIS-001",
+  "artifact_status": "DERIVED_POST_FREEZE",
+  "claim_recommendations": [
+    {
+      "claim_id": "CL-CTX-01",
+      "recommendation": "SUPPORTED_WITHIN_EXP_012_WITH_CONSTRUCT_VALIDITY_QUALIFIER",
+      "recommended_empirical_statement": "On EXP-012-CORPUS@1, M5.1 classified all 80 primary held-out synthetic scenarios correctly while frozen M5 classified 39 of 80 correctly.",
+      "required_qualifier": "All 40 positives and all 40 negatives were separable by the presence versus absence of at least one single-observation context mismatch; the result does not establish that multi-step history was necessary."
+    }
+  ],
+  "contrast_pairs": {
+    "m5_correct": 0,
+    "m5_1_correct": 28,
+    "per_pair": [
+      {"family": "A", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-OUTCOME-UNDECLARED"], "negative_scenario_id": "CX-012-007", "pair_id": "CP-012-001", "positive_scenario_id": "CX-012-001"},
+      {"family": "A", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-OUTCOME-UNDECLARED"], "negative_scenario_id": "CX-012-008", "pair_id": "CP-012-002", "positive_scenario_id": "CX-012-002"},
+      {"family": "A", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-OUTCOME-UNDECLARED"], "negative_scenario_id": "CX-012-009", "pair_id": "CP-012-003", "positive_scenario_id": "CX-012-003"},
+      {"family": "A", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-OUTCOME-UNDECLARED"], "negative_scenario_id": "CX-012-010", "pair_id": "CP-012-004", "positive_scenario_id": "CX-012-004"},
+      {"family": "A", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-OUTCOME-UNDECLARED"], "negative_scenario_id": "CX-012-011", "pair_id": "CP-012-005", "positive_scenario_id": "CX-012-005"},
+      {"family": "A", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-OUTCOME-UNDECLARED"], "negative_scenario_id": "CX-012-012", "pair_id": "CP-012-006", "positive_scenario_id": "CX-012-006"},
+      {"family": "B", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-UNDECLARED"], "negative_scenario_id": "CX-012-019", "pair_id": "CP-012-007", "positive_scenario_id": "CX-012-013"},
+      {"family": "B", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-UNDECLARED"], "negative_scenario_id": "CX-012-020", "pair_id": "CP-012-008", "positive_scenario_id": "CX-012-014"},
+      {"family": "B", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-UNDECLARED"], "negative_scenario_id": "CX-012-021", "pair_id": "CP-012-009", "positive_scenario_id": "CX-012-015"},
+      {"family": "B", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-UNDECLARED"], "negative_scenario_id": "CX-012-022", "pair_id": "CP-012-010", "positive_scenario_id": "CX-012-016"},
+      {"family": "B", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-UNDECLARED"], "negative_scenario_id": "CX-012-023", "pair_id": "CP-012-011", "positive_scenario_id": "CX-012-017"},
+      {"family": "B", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-UNDECLARED"], "negative_scenario_id": "CX-012-024", "pair_id": "CP-012-012", "positive_scenario_id": "CX-012-018"},
+      {"family": "C", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-FLOW-MISMATCH", "CTX-DATA-ROLE-MISMATCH"], "negative_scenario_id": "CX-012-031", "pair_id": "CP-012-013", "positive_scenario_id": "CX-012-025"},
+      {"family": "C", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-FLOW-MISMATCH", "CTX-DATA-ROLE-MISMATCH"], "negative_scenario_id": "CX-012-032", "pair_id": "CP-012-014", "positive_scenario_id": "CX-012-026"},
+      {"family": "C", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-FLOW-MISMATCH", "CTX-DATA-ROLE-MISMATCH"], "negative_scenario_id": "CX-012-033", "pair_id": "CP-012-015", "positive_scenario_id": "CX-012-027"},
+      {"family": "C", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-FLOW-MISMATCH", "CTX-DATA-ROLE-MISMATCH"], "negative_scenario_id": "CX-012-034", "pair_id": "CP-012-016", "positive_scenario_id": "CX-012-028"},
+      {"family": "C", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-FLOW-MISMATCH", "CTX-DATA-ROLE-MISMATCH"], "negative_scenario_id": "CX-012-035", "pair_id": "CP-012-017", "positive_scenario_id": "CX-012-029"},
+      {"family": "C", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-DATA-FLOW-MISMATCH", "CTX-DATA-ROLE-MISMATCH"], "negative_scenario_id": "CX-012-036", "pair_id": "CP-012-018", "positive_scenario_id": "CX-012-030"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-037", "pair_id": "CP-012-019", "positive_scenario_id": "CX-012-047"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-038", "pair_id": "CP-012-020", "positive_scenario_id": "CX-012-048"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-039", "pair_id": "CP-012-021", "positive_scenario_id": "CX-012-049"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-040", "pair_id": "CP-012-022", "positive_scenario_id": "CX-012-050"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-041", "pair_id": "CP-012-023", "positive_scenario_id": "CX-012-051"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-042", "pair_id": "CP-012-024", "positive_scenario_id": "CX-012-052"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-043", "pair_id": "CP-012-025", "positive_scenario_id": "CX-012-053"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-044", "pair_id": "CP-012-026", "positive_scenario_id": "CX-012-054"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-045", "pair_id": "CP-012-027", "positive_scenario_id": "CX-012-055"},
+      {"family": "D_E", "m5_correct": false, "m5_1_correct": true, "m5_1_positive_reason_ids": ["CTX-FALLBACK-UNDECLARED"], "negative_scenario_id": "CX-012-046", "pair_id": "CP-012-028", "positive_scenario_id": "CX-012-056"}
+    ],
+    "total": 28
+  },
+  "controls": {
+    "count": 4,
+    "m5_1_abstention_count": 3,
+    "m5_1_no_finding_count": 1,
+    "outcomes": [
+      {"outcome": "INSUFFICIENT_CONTEXT", "reason_ids": ["CTX-DATA-ROLE-CONTEXT-MISSING", "CTX-DESTINATION-CONTEXT-MISSING"], "scenario_id": "CX-012-081"},
+      {"outcome": "INSUFFICIENT_CONTEXT", "reason_ids": ["CTX-FALLBACK-CONTEXT-MISSING"], "scenario_id": "CX-012-082"},
+      {"outcome": "INSUFFICIENT_CONTEXT", "reason_ids": ["CTX-DATA-FLOW-CONTEXT-MISSING"], "scenario_id": "CX-012-083"},
+      {"analysis_issue": "The missing resource role prevents CTXTRJ-001's earlier-access prerequisite from matching, so no abstention finding is emitted.", "outcome": "NO_FINDING", "reason_ids": [], "scenario_id": "CX-012-084"}
+    ]
+  },
+  "detection_delay": {
+    "m5": {"count": 10, "maximum": 3, "mean": 3.0, "median": 3.0, "minimum": 3, "undetected_positive_count": 30},
+    "m5_1": {"count": 40, "maximum": 4, "mean": 2.625, "median": 3.0, "minimum": 2, "undetected_positive_count": 0},
+    "unit": "completed_actions_to_first_suspicious_finding"
+  },
+  "event_contribution_categories": {
+    "detector_firing_mechanics": {
+      "A_context_only": 0,
+      "B_current_observation_plus_context": 0,
+      "C_multi_step_history_gate": 30,
+      "D_repetition_history_gate": 10
+    },
+    "minimum_semantic_evidence": {
+      "A_context_only": 0,
+      "B_current_observation_plus_context": 40,
+      "C_multi_step_history_required": 0,
+      "D_repetition_required_to_reveal_mismatch": 0
+    },
+    "ctxtrj_001": {
+      "current_outbound_mismatch_semantically_sufficient": 30,
+      "detections": 30,
+      "family_f_unfamiliar_structure": 12,
+      "more_than_one_preceding_access_role": 14,
+      "preceding_access_role_required_to_emit": 30
+    },
+    "ctxtrj_002": {
+      "detections": 10,
+      "first_denied_observation_already_mismatch": 10,
+      "finding_emission_requires_three_distinct_denials": 10,
+      "positive_scenarios_with_no_fallback_declaration": 0,
+      "positive_scenarios_with_disjoint_fallback_declaration": 10,
+      "suspicious_finding_count": 13
+    }
+  },
+  "experiment": "EXP-012",
+  "family_breakdown": {
+    "A": {"m5": {"FN": 6, "FP": 0, "TN": 6, "TP": 0}, "m5_1": {"FN": 0, "FP": 0, "TN": 6, "TP": 6}},
+    "B": {"m5": {"FN": 6, "FP": 0, "TN": 6, "TP": 0}, "m5_1": {"FN": 0, "FP": 0, "TN": 6, "TP": 6}},
+    "C": {"m5": {"FN": 6, "FP": 0, "TN": 6, "TP": 0}, "m5_1": {"FN": 0, "FP": 0, "TN": 6, "TP": 6}},
+    "D": {"m5": {"FN": 0, "FP": 10, "TN": 0, "TP": 0}, "m5_1": {"FN": 0, "FP": 0, "TN": 10, "TP": 0}},
+    "E": {"m5": {"FN": 0, "FP": 0, "TN": 0, "TP": 10}, "m5_1": {"FN": 0, "FP": 0, "TN": 0, "TP": 10}},
+    "F": {"m5": {"FN": 12, "FP": 0, "TN": 0, "TP": 0}, "m5_1": {"FN": 0, "FP": 0, "TN": 0, "TP": 12}},
+    "G": {"m5": {"FN": 0, "FP": 1, "TN": 11, "TP": 0}, "m5_1": {"FN": 0, "FP": 0, "TN": 12, "TP": 0}}
+  },
+  "ground_truth_isolation": {
+    "context_creation_branches_on_label": false,
+    "detector_facing_ground_truth_field": false,
+    "labels_loaded_after_predictions_for_scoring": true,
+    "labels_read_before_predictions_for_integrity_validation": true,
+    "result": "PASS_WITH_RUNNER_CAVEAT",
+    "runner_caveat": "The evaluator docstring overstates isolation: pre-run corpus reconciliation reads label values and aggregate counts, but its returned mapping is discarded and never passed to prediction logic."
+  },
+  "hard_negatives": {
+    "denominator": 40,
+    "m5_false_positive_count": 11,
+    "m5_false_positive_ids": ["CX-012-037", "CX-012-038", "CX-012-039", "CX-012-040", "CX-012-041", "CX-012-042", "CX-012-043", "CX-012-044", "CX-012-045", "CX-012-046", "CX-012-078"],
+    "m5_false_positive_rate": 0.275,
+    "m5_1_false_positive_count": 0,
+    "m5_1_false_positive_rate": 0.0
+  },
+  "hypothesis_assessments": [
+    {"hypothesis_id": "H-CTX-01", "scope_limitation": "Clean synthetic declarations and perfect single-observation separability.", "status": "SUPPORTED_WITHIN_EXP_012", "supporting_evidence": "M5 false positives 11 to M5.1 false positives 0; contrast-pair discrimination 0/28 to 28/28; no harmful paired transitions."},
+    {"hypothesis_id": "H-CTX-02", "scope_limitation": "Final outbound mismatch alone suffices in all 30; no causal byte-flow proof.", "status": "SUPPORTED_WITHIN_EXP_012", "supporting_evidence": "M5.1 detected 30/30 individually authorized A/B/C/F collection-to-egress positives and retained all 10 M5-detected E positives."},
+    {"hypothesis_id": "H-CTX-03", "scope_limitation": "Pairs vary multiple structured relationship fields; task purpose alone is isolated only in family A.", "status": "SUPPORTED_WITHIN_EXP_012", "supporting_evidence": "M5.1 discriminated 28/28 structurally paired cases versus M5 0/28; family A was 6/6."},
+    {"hypothesis_id": "H-CTX-04", "scope_limitation": "D/E purpose IDs are the same; candidate membership and bounds rather than purpose alone drive the result.", "status": "PARTIALLY_SUPPORTED", "supporting_evidence": "D false positives fell 10 to 0 while E detection remained 10/10 without an LLM."},
+    {"hypothesis_id": "H-CTX-05", "scope_limitation": "Only an 18-scenario subset was repeated, not all 84 scenarios.", "status": "SUPPORTED_WITHIN_EXP_012", "supporting_evidence": "36/36 normalized repeat comparisons matched across 18 selected scenarios and all families/outcomes."}
+  ],
+  "integrity": {
+    "contrast_pair_reconciliation": true,
+    "corpus_hashes_verified": true,
+    "counts_recomputed_from_runs": true,
+    "detection_delays_recomputed": true,
+    "duplicate_scenario_ids": 0,
+    "family_counts_reconciled": true,
+    "frozen_paths_diff_free_before_analysis": true,
+    "hard_negative_flags_reconciled": true,
+    "label_reconciliation": true,
+    "metric_values_recomputed": true,
+    "paired_transitions_recomputed": true,
+    "raw_sha256sums_verified": true,
+    "record_count": 84,
+    "scenario_versions_reconciled": true,
+    "status": "PASS"
+  },
+  "label_leakage_audit": {
+    "all_negative_context_evaluations_consistent": 111,
+    "context_completeness_alone_perfect": false,
+    "context_only_structural_markers": [
+      {"marker": "empty_destination_allowed_outcome_relation", "negative": 0, "positive": 9},
+      {"marker": "fallback_resource_role_count_exceeds_candidate_count", "negative": 0, "positive": 10}
+    ],
+    "destination_declaration_presence": {"absent_negative": 10, "absent_positive": 10, "present_negative": 30, "present_positive": 30},
+    "destination_purpose_values_all_mixed": true,
+    "fallback_declaration_presence": {"absent_negative": 30, "absent_positive": 30, "present_negative": 10, "present_positive": 10},
+    "family_metadata_detector_facing": false,
+    "negative_scenarios_with_any_single_observation_mismatch": 0,
+    "positive_scenarios_with_any_single_observation_mismatch": 40,
+    "scenario_id_embedded_in_task_and_provenance_identifiers": true,
+    "single_observation_mismatch_rule_accuracy": {"correct": 80, "total": 80},
+    "single_simple_context_field_perfectly_separates_labels": false,
+    "task_purpose_distinct_values": 58,
+    "task_purpose_label_pure_single_use_values": 36,
+    "task_purpose_mixed_values": 22
+  },
+  "paired_transitions": {
+    "FN -> FN": 0,
+    "FN -> TP": 30,
+    "FP -> FP": 0,
+    "FP -> TN": 11,
+    "TN -> FP": 0,
+    "TN -> TN": 29,
+    "TP -> FN": 0,
+    "TP -> TP": 10
+  },
+  "primary_metrics": {
+    "m5": {"F1": 0.32786885245901637, "FN": 30, "FP": 11, "TN": 29, "TP": 10, "false_positive_rate": 0.275, "precision": 0.47619047619047616, "recall": 0.25},
+    "m5_1": {"F1": 1.0, "FN": 0, "FP": 0, "TN": 40, "TP": 40, "false_positive_rate": 0.0, "precision": 1.0, "recall": 1.0},
+    "primary_negative_count": 40,
+    "primary_positive_count": 40,
+    "primary_total": 80
+  },
+  "result_commit": "8b5dcec270bd6474d1aa2a5e66ca8cb9250892d0",
+  "run_id": "EXP-012-RUN-001",
+  "validity_findings": [
+    {"id": "VF-012-01", "severity": "MATERIAL", "finding": "Every primary label is perfectly separable by whether any single completed observation has CONTEXT_MISMATCH."},
+    {"id": "VF-012-02", "severity": "MATERIAL", "finding": "M5.1 trajectory history gates emission, but minimum semantic evidence is one observation plus context for all 40 positives."},
+    {"id": "VF-012-03", "severity": "MATERIAL", "finding": "The protocol, architecture, and later held-out corpus were designed in the same research environment; this is not independent external authorship."},
+    {"id": "VF-012-04", "severity": "MODERATE", "finding": "TaskContext declarations are unusually complete, exact, and clean relative to likely deployment configuration."},
+    {"id": "VF-012-05", "severity": "MODERATE", "finding": "CX-012-084 yields NO_FINDING instead of the expected insufficient-context abstention because a matched prior role is a CTXTRJ-001 prerequisite."},
+    {"id": "VF-012-06", "severity": "MODERATE", "finding": "Pre-run evaluator reconciliation reads ground-truth labels, though they are not passed into prediction logic."},
+    {"id": "VF-012-07", "severity": "LOW", "finding": "Nine destination mismatches also report data-role context missing, which is traceable but may obscure that the missing match is derivative of destination mismatch."},
+    {"id": "VF-012-08", "severity": "POSITIVE", "finding": "No detector-corpus identifier overlap, scenario/family branch, provenance defect, checksum failure, or metric mismatch was found."}
+  ]
+}
