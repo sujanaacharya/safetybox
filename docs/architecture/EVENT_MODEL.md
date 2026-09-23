@@ -36,6 +36,10 @@ For M3, all events for one `ActionRequest` use its `request_id` as their `correl
 
 Cross-session order is partial unless a trusted coordinator defines it. Distributed producers require an ingestion/commit protocol; producer-supplied numbers or timestamps are not authoritative. Gaps, duplicates, late events, and correlation mismatches must generate explicit integrity failures rather than silent repair.
 
+## M5 trajectory consumption
+
+M5 consumes these same events rather than emitting a telemetry format. Its initial observation builder treats `EXECUTION_SUCCEEDED` as a completed allowed/executed action and `AUTHORIZATION_DENIED` as a completed denied/unexecuted attempt. Other lifecycle events remain canonical evidence but do not produce initial rule inputs. The monitor trusts `sequence_number`, never timestamp, rejects duplicate/decreasing delivery per session, and does not silently reorder; it permits gaps as visible incomplete delivery.
+
 ## Data handling
 
 Events do not automatically copy arbitrary request arguments, tool results, or prompts. Metadata is recursively immutable but is not a general payload store. Secret-redaction guarantees, schema versioning, durable storage, and governed payload references are not implemented in M3.

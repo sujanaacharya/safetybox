@@ -10,7 +10,7 @@ The [System Architecture](SYSTEM_ARCHITECTURE.md) owns the component list. This 
 | Capability Registry | Contract grants, revocations, time/state | Effective capabilities | Expand authority without authorized grant event |
 | Policy Engine | Normalized request, state, versioned rules | Decision, matched rules, explanation | Invoke tools or mutate evidence |
 | Event subsystem | Candidate canonical events | Ordered committed events | Accept agent-controlled sequence/timestamps as authoritative |
-| Trajectory Monitor | Ordered events, trajectory policies | Signals and explanations | Directly execute external actions |
+| Trajectory Monitor | Ordered canonical events, deterministic trajectory rules | Immutable findings and explanations | Directly execute external actions, authorize requests, or mutate task authority/capabilities |
 | Risk/Trust Engine | Defined signals and transition policy | State transition proposal | Treat an opaque score as fact about intent |
 | Enforcement Controller | Policy/capability/risk decisions | Applied outcome and events | Override a hard deny with advisory input |
 | Approval mechanism | Pending request, bounded context | Signed/attributable decision | Grant authority beyond approver scope |
@@ -27,3 +27,5 @@ M3 implements only `AuditRecorder` plus `AuditSink`/`InMemoryAuditSink` within t
 Interfaces will later be typed and versioned. Requests require task/session identity, normalized action/resource, correlation identity, and a bound policy/capability snapshot. Authorization should be single-use or otherwise protected from replay. Components fail closed or enter explicitly configured safe states as documented in [Failure Modes](FAILURE_MODES.md).
 
 The trusted computing base is intended to include the interception boundary, policy/capability evaluation, controller, adapters enforcing authorization, and integrity-critical audit path. The protected agent and arbitrary tool outputs remain untrusted.
+
+M5 implements only an observational trajectory consumer, separate from the event recorder and enforcement path. It derives bounded session-and-task-local state from ordered canonical events and returns findings; there is no event fan-out, containment, or controller integration.

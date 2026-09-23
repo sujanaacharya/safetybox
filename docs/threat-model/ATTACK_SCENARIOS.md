@@ -96,7 +96,7 @@ All scenarios are initial specifications. `SPECIFIED` does not mean implemented,
 - **Current detection feasibility:** moderate using trajectory patterns; benign exploration can look similar.
 - **False-positive concerns:** debugging path errors or adapting to ordinary tool failures.
 - **Candidate experiment:** EXP-009, EXP-011.
-- **Status:** SIMULATED as a fixed logical path-boundary sequence in M4; repeated probing is recorded but no trajectory signal, degradation, rate-limit, or approval behavior is implemented.
+- **Status:** SIMULATED as a fixed logical path-boundary sequence in M4. M5 separately observes the unchanged trace and emits `TRJ-002`; it adds no degradation, rate-limit, approval, or blocking behavior.
 
 ## TS-009 — Multi-step exfiltration trajectory
 
@@ -108,7 +108,7 @@ All scenarios are initial specifications. `SPECIFIED` does not mean implemented,
 - **Current detection feasibility:** moderate where data lineage and destination are observable; semantic encoding remains difficult.
 - **False-positive concerns:** legitimate reporting or backup workflows.
 - **Candidate experiment:** EXP-009.
-- **Status:** SIMULATED and CURRENTLY_UNDETECTABLE in M4: all individual actions are intentionally allowed under the contract and captured for future trajectory analysis. No trajectory detection or containment is implemented.
+- **Status:** SIMULATED and individually allowed in M4: all actions remain intentionally allowed under the contract. M5 separately observes the unchanged trace and emits `TRJ-001`; it does not contain or reinterpret the original policy/execution outcome.
 
 ## TS-010 — Agent attempts to disable monitoring
 

@@ -6,7 +6,7 @@
 | Malformed/ambiguous request | Policy mismatch or argument confusion | Reject before execution; record validation reason | Parser/canonicalization tests |
 | Policy engine error/timeout | Missing authorization | Privileged action fails closed; administrative availability behavior is explicitly configured | Fault-injection tests |
 | Capability registry unavailable | Stale or unknown authority | Do not infer/grant capability; pause or deny | Recovery and partition tests |
-| Event ordering failure | Incorrect trajectory/state | Stop affected session authorization, preserve evidence, require reconciliation | Concurrency and corruption tests |
+| Event ordering failure | Incorrect trajectory/state | M5 rejects duplicate/decreasing delivered sequence numbers without reordering; controller behavior remains future work | Ordering and corruption tests |
 | Audit sink unavailable before tool execution | Unexplained execution | M3 raises `AuditFailure` and fails closed before protected-tool invocation | M3 fault-injection unit test |
 | Terminal audit sink failure after tool invocation | Missing terminal evidence after a real side effect | M3 raises `AuditFailure`; it cannot undo or conclusively report the already-invoked action | M3 crash-point-style unit test |
 | Controller crash around execution | Duplicate or unknown side effect | Record indeterminate status; retry only with adapter idempotency guarantees | Crash-point tests |
@@ -16,6 +16,7 @@
 | Resource aliasing | Scope escape by symlink, DNS, path, or identifier | Resolve identity under adapter-specific rules before authorization/execution | Alias/rebinding tests |
 | Telemetry overload | Dropped evidence or delayed control | Backpressure or containment; never silently drop enforcement-critical events | Load tests |
 | False-positive trajectory signal | Benign task disruption | Explain, scope, and measure intervention; provide controlled approval/recovery | Benign benchmark trials |
+| Trajectory window truncation | A longer pattern is not observed or does not match | Retain the explicit configured bound and report the limitation; evaluate window size in later ablations | Boundary-window tests and registered ablation |
 | Compromised host/administrator | Total control-plane compromise | Outside core guarantee; use defense in depth and disclose boundary | Deployment threat analysis |
 
 Safe behavior is operation-specific and must be configured explicitly. “Fail closed” must not itself create unexamined physical or availability hazards; deployment risk analysis may choose a safer paused state for a particular environment. No listed mitigation is implemented yet.

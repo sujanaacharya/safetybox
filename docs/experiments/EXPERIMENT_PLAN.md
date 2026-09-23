@@ -37,6 +37,8 @@ These IDs reserve candidate studies; registration files will define executable p
 
 M4 supplies deterministic, harmless scenario execution and raw M3-linked evidence; it does not execute registered experiments or produce benchmark results. The initial corpus and its status are documented in [Threat Simulator](THREAT_SIMULATOR.md). Future protocols may select and freeze a versioned subset only after defining denominators, baselines, sampling, and analysis.
 
+M5 supplies a separate deterministic trajectory-evaluation seam: scenario evidence may be evaluated with no trajectory monitor or with configured bounded rules without modifying the scenario runner. Its finding sequence ranges and detection sequence numbers prepare EXP-009 measurements; no registered experiment has yet run.
+
 ## Lifecycle
 
 1. Draft registration and threat/benchmark mapping.

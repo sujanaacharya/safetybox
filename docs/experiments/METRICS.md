@@ -16,6 +16,8 @@ Metrics are computed at an explicitly declared unit—action, trajectory, task t
 
 Prevention, detection, and containment are different. A detected action may execute; an undetected action may be blocked by capability scope. Where multiple unsafe actions occur in one trial, action- and trial-level rates must both be labeled.
 
+M5 findings preserve both first evidence and detection `sequence_number`; later protocols can compute actions-to-detection without treating wall-clock timestamp as causal order. M5 does not yet aggregate these metrics.
+
 ## Utility metrics
 
 | Metric | Numerator | Denominator |

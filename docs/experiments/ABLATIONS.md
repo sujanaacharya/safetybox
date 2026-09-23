@@ -14,5 +14,6 @@ Ablations test which components or signals account for an observed effect. They 
 | A8 | Selected provenance/causal links withheld from monitoring | How does observability affect detection? |
 | A9 | Optional LLM signal removed from B4 | What incremental semantic value and cost does it add? |
 | A10 | Adapter/framework varied with normalized policy fixed | Are effects caused by integration differences? |
+| A11 | Trajectory observation-window size varied | How do explicit bounded-state choices affect misses and incidental matches? |
 
 Each ablation changes one declared factor where feasible, uses the same registered trial set, and reports both beneficial and adverse movement across safety, utility, and overhead. Interactions require factorial designs or explicit caveats; post-hoc ablations are labeled exploratory.

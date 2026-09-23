@@ -83,3 +83,7 @@ See [Safety Invariants](SAFETY_INVARIANTS.md) for desired properties and verific
 ## M4 simulator note
 
 M4 adds a deterministic, in-memory scenario runner around the existing `TaskContractPolicy`, `ReferenceMonitor`, and M3 audit seam. It is an experimental harness, not a new enforcement or detection component; see [Threat Simulator](../experiments/THREAT_SIMULATOR.md).
+
+## M5 trajectory-monitor note
+
+M5 implements the trajectory-monitor node as a separate, pull-style observational evaluation over committed M3 events. It neither participates in the `ReferenceMonitor` authorization path nor changes M4 scenario outcomes. Its bounded state is scoped to a session and task, and its findings are evidence rather than controller inputs.

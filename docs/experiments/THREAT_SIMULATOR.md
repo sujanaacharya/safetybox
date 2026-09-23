@@ -28,6 +28,10 @@ Policy outcomes and scenario-security outcomes are different. `ALLOW` only means
 
 `CURRENTLY_UNDETECTABLE` is descriptive rather than a passing verdict. TS-009 is retained in this status because every action is individually authorized and M4 deliberately has no trajectory analysis.
 
+## M5 evaluation boundary
+
+M5 evaluates a completed `ScenarioResult.audit_events` tuple separately through `TrajectoryMonitor`; `ScenarioRunner` remains neutral and has no detector dependency. Under the initial rules, the unchanged TS-009 trace yields `TRJ-001`, TS-008 yields `TRJ-002`, and the two initial benign controls yield no suspicious finding. These are implementation regression observations, not a benchmark or general detection claim.
+
 ## Simulated effects and limits
 
 Filesystem, network, shell, and database actions are represented by `Simulated*Tool` classes. They append only logical identifiers to a fresh in-memory world (`files_read`, `network_requests`, `shell_commands`, `database_queries`). They do not import or invoke filesystem access, subprocesses, network clients, or database drivers.
