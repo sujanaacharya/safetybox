@@ -1,0 +1,500 @@
+addendum_id: EXP-013-B4-ADDENDUM
+version: 1
+status: PRE_CORPUS_DESIGN_UNFROZEN_UNTIL_COMMITTED
+parent_experiment: EXP-013
+parent_protocol_version: 1
+activated_condition: B4
+candidate_implementation_id: B4-BOUNDED-CONTEXT-TRAJECTORY@1
+candidate_configuration_id: B4-CONFIG@1
+primary_analysis_condition_after_implementation_freeze: B4
+results: none
+
+canonical_freeze: >-
+  The commit that first contains this file and
+  docs/experiments/EXP-013-B4-ADDENDUM.md.
+
+frozen_references:
+  exp_013_protocol_v1_git_sha: 632a4f82ab7c6487d82a166bca2e3354c7b9b763
+  b2_identifier: B2-SINGLE-OBSERVATION@1
+  b2_git_sha: 3f8794e8b134b534365e0e26f48dd1886a50f662
+  m5_git_sha: 6dc4a6eac7db315a06d9b165234eb1388ee89529
+  m5_1_a_git_sha: 7dd4de167e8b997479da051cc412ac70feed7702
+  m5_1_b_git_sha: f75f29552681f5b471b4009992a2100610bdf18c
+  m5_1_c_git_sha: bd21c4cc6f0c5e5b176fc7cf471aa7d72bb76d71
+  capability_audit_id: EXP-013-M5_1-CAPABILITY-AUDIT@1
+  capability_audit_git_sha: b8f026d71ec1a08e64b09b62398d75da7ed11d64
+  addendum_starting_head: b8f026d71ec1a08e64b09b62398d75da7ed11d64
+  clean_worktree_required: true
+
+rationale:
+  b4_required: true
+  m5_1_c_sufficient_for_exp_013: false
+  not_expressible_family_count: 5
+  partially_supported_family:
+    id: MS-E
+    boundary: bounded numeric fallback count only
+  ctxtrj_001_boundary: observation-local mismatch with an earlier-access emission gate
+  purpose: >-
+    Test whether bounded ordered trajectory state adds discriminative information
+    beyond frozen B2.
+
+role:
+  definition: bounded deterministic multi-step contextual trajectory monitor
+  observational_only: true
+  may_emit_immutable_findings: true
+  not:
+    - LLM
+    - intent_classifier
+    - taint_engine
+    - containment_mechanism
+    - unrestricted_rule_engine
+    - TaskContract_authorization_replacement
+  may_not:
+    - grant_capability_authority
+    - authorize_or_deny_execution
+    - terminate_sessions
+    - quarantine
+    - mutate_TaskContract
+    - mutate_TaskContext
+    - alter_tool_execution
+  preserves_invariants:
+    - INV-013
+    - INV-014
+
+inputs:
+  allowed:
+    - CompletedActionObservation
+    - ContextEvaluation
+    - TaskContext
+    - B4HistoricalConstraints@B4-HISTORY-CONTEXT@1
+    - canonical_provenance_from_allowed_values
+  forbidden:
+    - labels
+    - pair_membership
+    - scenario_metadata
+    - family_metadata
+    - experiment_metadata
+    - corpus_metadata
+    - future_observations
+    - evaluator_outputs
+  ObservationContext_policy: >-
+    It may affect B4 only through frozen ContextEvaluation and cannot define or
+    override trusted historical declarations.
+
+trusted_history_context:
+  identifier: B4-HISTORY-CONTEXT@1
+  representation: separate_immutable_companion_to_TaskContext
+  modifies_TaskContext_v1: false
+  authorization_meaning: none
+  binding:
+    - task_id
+    - immutable_TaskContext_reference
+  required_top_level_fields:
+    - schema_version
+    - constraints_id
+    - task_id
+    - task_context_reference
+    - dimension_applicability
+    - role_groups
+    - aggregation_scopes
+    - role_combination_constraints
+    - semantic_event_bindings
+    - phase_definitions
+    - permitted_phase_transitions
+    - finalization_constraints
+    - fallback_progression_constraints
+  dimension_applicability:
+    required_entries:
+      - ROLE_COMBINATION
+      - PHASE_TRANSITION
+      - FINALIZATION
+      - FALLBACK_PROGRESSION
+    allowed_values:
+      - REQUIRED
+      - NOT_APPLICABLE
+    omission: invalid
+    required_but_missing_or_incomplete: INSUFFICIENT_CONTEXT
+  accepted_authorities:
+    - TASK_CONTRACT
+    - SYSTEM_POLICY
+    - RESOURCE_REGISTRY
+    - TOOL_ADAPTER
+    - DEPLOYMENT_CONFIGURATION
+  rejected_authority: AGENT_SELF_REPORT
+  agent_self_report_cannot_create_or_override:
+    - phase_definitions
+    - role_combination_constraints
+    - aggregation_scopes
+    - fallback_progression
+    - finalization_semantics
+  identifiers_are_opaque_data: true
+  ambiguous_semantic_event_binding: invalid
+
+allowed_state_dimensions:
+  - id: accumulated_resource_role_sets
+    bound: declared aggregation scope inside fixed raw window
+    families: [MS-A, MS-B]
+  - id: accumulated_data_role_sets
+    bound: declared aggregation scope inside fixed raw window
+    families: [MS-A, MS-B]
+  - id: cross_source_role_grouping
+    bound: declared role groups inside fixed raw window
+    families: [MS-B]
+  - id: ordered_phase_transitions
+    bound: current phase and transitions witnessed inside fixed raw window
+    families: [MS-C, MS-F]
+  - id: outcome_and_finalization_state
+    bound: finalization and closed phases witnessed inside fixed raw window
+    families: [MS-D, MS-F]
+  - id: fallback_progression
+    bound: candidate, episode, termination, restart, and cycle state inside fixed raw window
+    families: [MS-E]
+  - id: bounded_repetition_count
+    bound: current declared episode inside fixed raw window
+    families: [MS-E]
+
+destination_transition_history:
+  considered: true
+  included: false
+  rationale: >-
+    No registered primary family requires a standalone destination-transition
+    predicate. Destination IDs may be event-binding evidence, but adding transition
+    history would expand B4 beyond the audited design gap.
+  future_activation_requires_new_precorpus_addendum_version: true
+
+role_accumulation:
+  contributing_observations:
+    executed: true
+    roles_must_be_matched_by_trusted_M5_1_B_evaluation: true
+  denied_or_unexecuted_accumulate_collection_roles: false
+  infer_roles_from_names_descriptions_or_payloads: false
+  scope_open_and_close_are_declared: true
+  state_reset: declared_scope_close
+  actual_byte_flow_implied: false
+  permitted_claim: roles_A_and_B_were_observed_in_scope_before_outcome_C
+  prohibited_without_lineage: data_from_A_and_B_was_transferred_through_C
+
+role_combination_constraints:
+  detector_hard_coded_combinations: false
+  required_fields:
+    - declaration_id
+    - aggregation_scope_id
+    - outcome_semantic_event_id
+    - tracked_resource_role_ids
+    - tracked_data_role_ids
+    - tracked_role_group_ids
+    - allowed_exact_projected_combinations
+    - trusted_source
+  comparison: exact_membership_after_projection_to_declared_tracked_universe
+  empty_allow_list: invalid
+  absent_when_required: INSUFFICIENT_CONTEXT
+
+phase_model:
+  phase_identifiers_hard_coded_in_rule_logic: false
+  phase_definition_fields:
+    - phase_id
+    - initial
+    - terminal
+    - semantic_event_ids
+    - trusted_source
+  permitted_transitions: finite_directed_pairs
+  same_phase_behavior: continuation_without_self_edge
+  first_mapped_event: must_match_declared_initial_phase
+  reverse_transition_inferred: false
+  undeclared_reentry_skip_or_interleaving: violation
+  generic_temporal_logic_language: false
+  missing_or_ambiguous_required_phase: INSUFFICIENT_CONTEXT
+
+finalization:
+  inferred_from_filename_action_name_or_last_position: false
+  required_fields:
+    - finalization_id
+    - outcome_id
+    - finalization_semantic_event_id
+    - closed_phase_ids
+    - permitted_post_finalization_semantic_event_ids
+    - trusted_source
+  observed_effect:
+    - record_declared_outcome_finalized
+    - record_declared_phases_closed
+  later_closed_phase_reentry_without_exception: violation
+  potentially_evicted_finalization_state: INSUFFICIENT_CONTEXT
+
+cross_source_aggregation:
+  representation: declared role history inside a declared aggregation scope
+  source_group_identity: trusted_role_group_id
+  evaluated_at: declared_outcome_semantic_event
+  full_data_lineage_graph: false
+  order_proves_causal_flow: false
+  LogicalDataFlow_inferred_from_history: false
+
+fallback_progression:
+  extends_existing_M5_1_A_FallbackPattern: true
+  mutates_M5_1_A_or_M5_1_C: false
+  required_fields:
+    - linked_fallback_behavior_id
+    - ordered_candidate_ids
+    - candidate_scope_and_role_bindings
+    - allowed_directed_candidate_transitions
+    - maximum_attempts
+    - optional_termination_condition_id
+    - termination_semantic_event_binding
+    - restart_policy
+    - cycle_policy
+    - trusted_source
+  restart_policy_values:
+    - FORBIDDEN
+    - AFTER_DECLARED_TERMINATION
+  cycle_policy_values:
+    - FORBIDDEN
+    - DECLARED_TRANSITIONS_ONLY
+  candidate_order_modes:
+    - ORDERED
+    - EXPLICIT_TRANSITIONS
+  eligible_attempt: denied_unexecuted_observation_matched_to_linked_fallback
+  violations:
+    - maximum_attempts_exceeded
+    - undeclared_candidate_transition
+    - forbidden_cycle
+    - continuation_after_termination
+    - restart_without_required_termination
+  missing_candidate_or_episode_prefix: INSUFFICIENT_CONTEXT
+
+rule_families:
+  - id: B4TRJ-001
+    name: declared_outcome_role_combination
+    predicate: >-
+      Accumulated projected resource/data/role-group combination at a declared outcome
+      is absent from the trusted allow-list.
+    exp_013_families: [MS-A, MS-B]
+    b2_gap: prior_role_group_sets_and_outcome_scoped_combination
+    m5_1_c_relationship: entirely_new_semantic_predicate
+    generality: arbitrary_opaque_role_group_scope_and_outcome_identifiers
+  - id: B4TRJ-002
+    name: undeclared_phase_transition
+    predicate: >-
+      An observed change between declared phases is not a permitted directed
+      transition, including undeclared re-entry or interleaving.
+    exp_013_families: [MS-C, MS-F]
+    b2_gap: order_current_phase_and_transition_history
+    m5_1_c_relationship: entirely_new
+    generality: finite_transition_relation_over_arbitrary_opaque_phase_identifiers
+  - id: B4TRJ-003
+    name: closed_phase_reentry_after_finalization
+    predicate: >-
+      After a trusted finalization event, an observation re-enters a closed phase
+      without a declared post-finalization exception.
+    exp_013_families: [MS-D, MS-F]
+    b2_gap: prior_finalization_and_closed_phase_state
+    m5_1_c_relationship: entirely_new
+    generality: terminal_state_semantics_independent_of_action_or_filename
+  - id: B4TRJ-004
+    name: invalid_fallback_progression
+    predicate: >-
+      Fallback attempts violate a declared candidate transition, episode bound,
+      termination, restart, or cycle policy.
+    exp_013_families: [MS-E]
+    b2_gap: multiplicity_order_count_episode_termination_restart_and_cycle_state
+    m5_1_c_relationship: >-
+      Extends narrow bounded numeric fallback counting in a separate implementation;
+      progression, termination, restart, and cycle semantics are new.
+    generality: finite_progression_relation_over_arbitrary_declared_candidates
+
+one_rule_per_corpus_family: false
+family_id_is_detector_input: false
+
+context_behavior:
+  classifications:
+    - SUSPICIOUS
+    - INSUFFICIENT_CONTEXT
+  no_finding_requires:
+    - dimension_explicitly_NOT_APPLICABLE
+    - or_sufficient_declarations_and_witnessed_state_without_violation
+  insufficient_context_causes:
+    - missing_dimension_applicability
+    - missing_incomplete_ambiguous_or_untrusted_declaration
+    - incomplete_phase_definitions_or_transitions
+    - absent_required_role_combination_or_aggregation_scope
+    - missing_or_incompatible_fallback_progression
+    - TaskContext_reference_mismatch
+    - evicted_required_prefix_or_boundary
+  insufficient_is_benign_evidence: false
+  stale_context:
+    detectable_revision_or_reference_mismatch: INSUFFICIENT_CONTEXT
+    internally_consistent_but_real_world_stale: evaluate_against_declaration
+    required_reporting_axes:
+      - consistency_with_trusted_declaration
+      - current_ground_truth_task_safety
+    declaration_consistency_proves_freshness_or_safety: false
+
+finding_schema:
+  immutable: true
+  required_fields:
+    - deterministic_finding_id
+    - implementation_and_config_version
+    - rule_id
+    - finding_type
+    - classification
+    - session_id
+    - task_id
+    - first_evidence_sequence
+    - detection_sequence
+    - ordered_request_ids
+    - ordered_canonical_event_ids
+    - relevant_bounded_historical_state
+    - expected_trusted_relation
+    - observed_relation
+    - declaration_ids
+    - ordered_trusted_provenance
+    - context_sufficiency_status
+    - missing_dimensions
+    - logical_lineage_availability
+    - deterministic_conservative_explanation
+  opaque_score: false
+  probability: false
+  maliciousness_or_safety_verdict: false
+
+determinism:
+  requirement: >-
+    Equivalent ordered traces, TaskContext values, and B4HistoricalConstraints values
+    produce equivalent normalized semantic findings.
+  forbidden_sources:
+    - semantic_timestamps
+    - randomness
+    - learned_models
+    - external_mutable_cache
+    - iteration_order_dependence
+    - nondeterministic_explanation_text
+  canonical_ordering:
+    duplicate_or_decreasing_sequence: integrity_error
+    gaps: accepted_without_reordering_or_classification
+    future_observation_use: false
+  active_context_replacement: explicit_error
+
+fixed_configuration:
+  id: B4-CONFIG@1
+  state_key: [session_id, task_id]
+  raw_completed_observation_window: 16
+  enabled_rule_ids:
+    - B4TRJ-001
+    - B4TRJ-002
+    - B4TRJ-003
+    - B4TRJ-004
+  role_accumulation: executed_trusted_roles_with_declaration_scoped_exact_projection
+  phase_state: declared_initial_same_phase_continuation_explicit_directed_edges
+  finalization_state: trusted_event_closes_declared_phases
+  fallback_state: declared_edges_episode_maximum_termination_restart_and_cycle_policy
+  missing_context_policy: emit_and_deduplicate_INSUFFICIENT_CONTEXT
+  ordering: strictly_increasing_session_sequence_gaps_accepted_no_reorder
+  destination_transition_rule: disabled_and_not_implemented
+  internal_finding_retention_per_active_key: 32
+  maximum_active_keys: 128
+  capacity_policy: explicit_error_never_silent_eviction
+  lifecycle: explicit_session_or_task_close_removes_key
+  semantic_summary_beyond_raw_window: none
+  eviction_policy: abstain_if_required_prefix_becomes_unknowable
+  tunable_after_corpus_authorship_begins: false
+
+forbidden_features:
+  - scenario_IDs
+  - experiment_IDs
+  - family_IDs
+  - corpus_or_pair_metadata
+  - ground_truth_labels
+  - task_category_specific_branches
+  - natural_language_keyword_inference
+  - regular_expressions_over_descriptions
+  - LLM_output
+  - embeddings
+  - corpus_specific_purpose_IDs
+  - static_label_shortcuts
+  - future_observations
+  - unbounded_history_or_counters
+  - arbitrary_history_predicates
+  - generic_workflow_or_temporal_logic_language
+  - payload_inspection_or_inferred_byte_lineage
+  - authority_or_execution_changes
+
+development_data_policy:
+  permitted:
+    - EXP-013-M5_1-CAPABILITY-AUDIT@1_probes
+    - new_DEV-MS_probes_authored_before_held_out_corpus
+    - contaminated_EXP-009_material_for_regression
+    - contaminated_EXP-012_material_for_regression
+  prohibited:
+    - future_EXP-013_held_out_scenarios
+    - preview_predictions_on_future_held_out_scenarios
+    - labels_or_minimally_renamed_held_out_templates
+  every_development_probe_is_contaminated: true
+  development_performance_is_held_out_evidence: false
+
+pre_corpus_freeze_workflow:
+  - freeze_both_B4_addendum_representations
+  - implement_only_registered_B4_schema_monitor_rules_and_tests_on_development_data
+  - freeze_B4_source_schema_configuration_tests_and_implementation_SHA
+  - author_or_independently_review_EXP_013_held_out_corpus_only_after_B4_freeze
+  - run_static_separability_B2_history_required_and_matched_status_audits
+  - freeze_passing_corpus_and_labels_without_detector_output_preview
+  - run_B1_B2_B3_and_B4_once_under_original_stopping_and_repeat_rules
+  - freeze_raw_results_and_checksums
+  - analyze_after_raw_result_freeze
+
+unchanged_parent_protocol:
+  hypotheses_unchanged:
+    - H-MS-01
+    - H-MS-02
+    - H-MS-03
+    - H-MS-04
+    - H-MS-05
+  success_criteria_unchanged: true
+  recall_target: 0.80
+  FPR_target: 0.10
+  FPR_absolute_improvement_over_B1: 0.15
+  counterfactual_pair_accuracy_target: 0.75
+  balanced_accuracy_absolute_delta_over_B2: 0.20
+  pair_accuracy_absolute_delta_over_B2: 0.20
+  deterministic_repeat_agreement: 1.00
+  every_positive_family_requires_correctly_discriminated_pair: true
+  corpus_audits_unchanged:
+    - static_separability
+    - matched_status
+    - B2_parity
+    - history_required_qualification
+
+future_run_provenance:
+  required:
+    - EXP_013_protocol_commit_SHA_and_file_hashes
+    - B4_addendum_commit_SHA_and_both_file_hashes
+    - B2_commit_and_source_hashes
+    - B4_implementation_commit_and_source_hashes
+    - frozen_M5_and_M5_1_A_B_C_references
+    - TaskContext_schema_version
+    - ContextEvaluation_schema_version
+    - B4_HISTORY_CONTEXT_schema_version
+    - corpus_commit_version_manifest_label_pair_map_and_audit_hashes
+    - raw_result_summary_and_analysis_hashes
+    - enabled_B4_rule_IDs_and_versions
+    - B4_CONFIG_serialized_hash
+    - exact_commands_environment_context_sources_and_independence_record
+
+threats_to_validity:
+  - history_schema_or_role_groups_may_encode_intended_answer_too_directly
+  - phase_and_finalization_declarations_may_be_unrealistically_clean
+  - role_combination_authoring_may_be_burdensome
+  - bounded_state_may_miss_long_dependencies
+  - no_causal_payload_lineage
+  - development_probes_may_shape_rule_design
+  - corpus_authors_may_understand_public_protocol_structure
+  - NOT_APPLICABLE_misconfiguration_may_hide_relevant_dimension
+  - stale_but_internally_consistent_context_may_be_wrong_about_current_task
+
+strict_non_goals:
+  - implement_B4_or_its_schema_in_this_task
+  - author_or_preview_EXP_013_corpus_in_this_task
+  - run_EXP_013_or_any_detector_in_this_task
+  - create_results_in_this_task
+  - modify_B2
+  - modify_M5_or_M5_1_A_B_C
+  - modify_EXP_012
+  - change_hypotheses_metrics_or_success_criteria
+  - update_supported_claims
