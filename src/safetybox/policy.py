@@ -1,10 +1,12 @@
-"""Deterministic M1 policy implementations."""
+"""Deterministic M1 and M2 policy implementations."""
 
 from __future__ import annotations
 
 from collections.abc import Iterable
 from dataclasses import dataclass, field
 
+from safetybox.capabilities import CapabilityEvaluator
+from safetybox.contracts import TaskContract
 from safetybox.models import ActionRequest, Decision, PolicyDecision
 
 ActionResource = tuple[str, str]
@@ -32,3 +34,15 @@ class StaticPolicy:
             rule_id="POL-M1-DEFAULT-DENY",
             reason="No M1 static-policy allow rule matches this action and resource.",
         )
+
+
+@dataclass(frozen=True, slots=True)
+class TaskContractPolicy:
+    """Authorize requests solely from the supplied immutable task contract."""
+
+    contract: TaskContract
+    evaluator: CapabilityEvaluator = field(default_factory=CapabilityEvaluator)
+
+    def authorize(self, request: ActionRequest) -> PolicyDecision:
+        """Delegate deterministic task-capability evaluation."""
+        return self.evaluator.evaluate(self.contract, request)

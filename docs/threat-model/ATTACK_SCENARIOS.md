@@ -12,7 +12,7 @@ All scenarios are initial specifications. `SPECIFIED` does not mean implemented,
 - **Current detection feasibility:** high for canonical mediated paths; weaker with aliases or adapter bypass.
 - **False-positive concerns:** legitimate dependency/config reads omitted from a narrow contract.
 - **Candidate experiment:** EXP-001.
-- **Status:** SPECIFIED.
+- **Status:** Partially addressed within the in-process logical capability model in M2 for explicitly scoped, mediated request strings; aliases, symlinks, and adapter bypass remain unresolved.
 
 ## TS-002 — Credential discovery attempt
 
@@ -72,7 +72,7 @@ All scenarios are initial specifications. `SPECIFIED` does not mean implemented,
 - **Current detection feasibility:** high if identity and resource namespaces are correctly bound.
 - **False-positive concerns:** explicitly shared resources or incorrectly labeled reusable caches.
 - **Candidate experiment:** EXP-002.
-- **Status:** SPECIFIED.
+- **Status:** Partially addressed within the in-process logical capability model in M2 when the request task ID differs from the bound contract; authenticated identities, shared-resource semantics, replay, and concurrent sessions remain unresolved.
 
 ## TS-007 — Excessive tool invocation
 

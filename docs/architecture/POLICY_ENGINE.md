@@ -29,3 +29,14 @@ The exact composition algorithm requires an ADR before implementation. At minimu
 ## Explainability
 
 An explanation must identify which normalized facts and versioned rules controlled the result. It should not expose secrets or depend on post-hoc natural-language rationalization. A replay tool should eventually be able to re-evaluate stored inputs and compare the outcome.
+
+## Implemented and tested in M2
+
+`TaskContractPolicy` implements the existing `Authorizer` interface and delegates to `CapabilityEvaluator`; `ReferenceMonitor` remains unaware of contract internals. Evaluation is deterministic and fail-closed:
+
+1. A differing task ID returns `DENY` / `POL-M2-TASK-MISMATCH`.
+2. No capability for the requested action returns `DENY` / `POL-M2-CAPABILITY-MISSING`.
+3. Matching action capabilities with no matching resource return `DENY` / `POL-M2-RESOURCE-OUT-OF-SCOPE`.
+4. An explicit action/resource match returns `ALLOW` / `POL-M2-CAPABILITY-ALLOW`.
+
+M2 does not implement policy composition, priorities, constraints, approvals, or stateful rules.

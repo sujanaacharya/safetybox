@@ -2,7 +2,13 @@
 
 ## Purpose and status
 
-A `TaskContract` is the conceptual, versioned source of task-specific authority and constraints. It is subject to refinement and has no implemented schema in M0. Descriptive text informs policy but never grants capabilities by itself.
+A `TaskContract` is the conceptual, versioned source of task-specific authority and constraints. Descriptive text informs policy but never grants capabilities by itself.
+
+## Implemented and tested in M2
+
+M2 implements the smallest in-process form: an immutable `TaskContract` with a non-empty `task_id`, a human-readable `description`, and a `frozenset` of explicit `Capability` values. Construction copies the supplied iterable into that `frozenset`; there is no contract-mutation or capability-addition API. Future attenuation, revocation, delegation, versions, and richer fields remain designed only and must create a new authority object rather than mutate an existing contract.
+
+M2's `TaskContractPolicy` rejects a request whose `task_id` differs from its bound contract before evaluating action or resource authority. This is logical task binding within the in-process abstraction, not authenticated task identity or cross-process isolation.
 
 ## Conceptual fields
 

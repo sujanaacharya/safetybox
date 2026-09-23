@@ -58,3 +58,12 @@ Pattern checks are defense-in-depth, not a complete shell security model; struct
 - **Expansion:** requires an external authorized amendment and approval; never occurs silently.
 
 Open design issues include canonical resource identity, TOCTOU resistance, symbolic-link and DNS rebinding behavior, capability token replay, and authority composition.
+
+## Implemented and tested in M2
+
+M2 implements immutable `Capability(action, resource)` values without constraints, duration, actor binding, delegation, attenuation, or revocation. A capability authorizes exactly one action and one of two resource forms:
+
+- An exact string resource, such as `db:analytics`, matches only the identical request resource.
+- A path subtree scope ending in `/**`, such as `/workspace/project/**`, matches only canonical absolute-path descendants such as `/workspace/project/src/a.py`. It does not match the root itself, `/workspace/project-secret/a.py`, or non-canonical paths containing empty, `.` or `..` segments.
+
+The matcher performs no filesystem access or path resolution. It does not address symlinks, hard links, real-filesystem traversal, mount aliases, case-folding differences, TOCTOU/races, open file descriptors, OS-level direct access, or adapter bypass. Those protections require later adapter and deployment work.
