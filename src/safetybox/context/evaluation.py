@@ -73,6 +73,7 @@ class ContextReason(StrEnum):
     DATA_FLOW_CONTEXT_MISSING = "CTX-DATA-FLOW-CONTEXT-MISSING"
     FALLBACK_MATCH = "CTX-FALLBACK-MATCH"
     FALLBACK_UNDECLARED = "CTX-FALLBACK-UNDECLARED"
+    FALLBACK_PURPOSE_MISMATCH = "CTX-FALLBACK-PURPOSE-MISMATCH"
     FALLBACK_CONTEXT_MISSING = "CTX-FALLBACK-CONTEXT-MISSING"
     NOT_APPLICABLE = "CTX-NOT-APPLICABLE"
 
@@ -204,10 +205,10 @@ class ContextEvaluator:
                 (
                     self._not_applicable(ContextDimension.DESTINATION),
                     self._not_applicable(ContextDimension.OUTCOME),
-                    self._not_applicable(ContextDimension.DATA_ROLE),
                     self._not_applicable(ContextDimension.DATA_FLOW),
                 )
             )
+            self._evaluate_resource_data_role(resource_role, task_context, results)
 
         self._evaluate_action_purpose(
             observation, task_context, supplied, destination, results
@@ -217,7 +218,7 @@ class ContextEvaluator:
 
         if observation.policy_decision is Decision.DENY:
             fallback = self._evaluate_fallback(
-                observation, task_context, resource_role, results
+                observation, task_context, supplied, resource_role, results
             )
         else:
             results.append(self._not_applicable(ContextDimension.FALLBACK))
@@ -299,6 +300,7 @@ class ContextEvaluator:
                     ContextEvaluationStatus.CONTEXT_MISMATCH,
                     ContextReason.RESOURCE_UNDECLARED,
                     observation.resource,
+                    source=context.resource_roles[0].source,
                 )
             )
             return None
@@ -315,26 +317,51 @@ class ContextEvaluator:
         return role
 
     @staticmethod
+    def _evaluate_resource_data_role(
+        resource_role: ResourceRole | None,
+        context: TaskContext,
+        results: list[ConstraintEvaluation],
+    ) -> None:
+        if resource_role is None or resource_role.data_role_id is None:
+            results.append(ContextEvaluator._not_applicable(ContextDimension.DATA_ROLE))
+            return
+        data_role = next(
+            role for role in context.data_roles if role.role_id == resource_role.data_role_id
+        )
+        results.append(
+            ConstraintEvaluation(
+                ContextDimension.DATA_ROLE,
+                ContextEvaluationStatus.CONTEXT_CONSISTENT,
+                ContextReason.DATA_ROLE_MATCH,
+                data_role.role_id,
+                f"data-role:{data_role.role_id}",
+                data_role.source,
+            )
+        )
+
+    @staticmethod
     def _evaluate_destination(
         observation: CompletedActionObservation,
         context: TaskContext,
         results: list[ConstraintEvaluation],
     ) -> DestinationConstraint | None:
         if not context.destination_constraints:
-            results.extend(
-                (
-                    ConstraintEvaluation(
-                        ContextDimension.DESTINATION,
-                        ContextEvaluationStatus.INSUFFICIENT_CONTEXT,
-                        ContextReason.DESTINATION_CONTEXT_MISSING,
-                        observation.resource,
-                    ),
-                    ConstraintEvaluation(
-                        ContextDimension.OUTCOME,
-                        ContextEvaluationStatus.INSUFFICIENT_CONTEXT,
-                        ContextReason.OUTCOME_CONTEXT_MISSING,
-                    ),
+            results.append(
+                ConstraintEvaluation(
+                    ContextDimension.DESTINATION,
+                    ContextEvaluationStatus.INSUFFICIENT_CONTEXT,
+                    ContextReason.DESTINATION_CONTEXT_MISSING,
+                    observation.resource,
                 )
+            )
+            results.append(
+                ConstraintEvaluation(
+                    ContextDimension.OUTCOME,
+                    ContextEvaluationStatus.INSUFFICIENT_CONTEXT,
+                    ContextReason.OUTCOME_CONTEXT_MISSING,
+                )
+                if not context.allowed_outcomes
+                else ContextEvaluator._not_applicable(ContextDimension.OUTCOME)
             )
             return None
         destination = context.destination_policy_for(
@@ -357,6 +384,7 @@ class ContextEvaluator:
                         ContextEvaluationStatus.CONTEXT_MISMATCH,
                         reason,
                         observation.resource,
+                        source=context.destination_constraints[0].source,
                     ),
                     ContextEvaluator._not_applicable(ContextDimension.OUTCOME),
                 )
@@ -437,6 +465,21 @@ class ContextEvaluator:
                 )
             )
             return
+        if destination is not None and not permitted:
+            results.append(
+                ConstraintEvaluation(
+                    ContextDimension.ACTION_PURPOSE,
+                    ContextEvaluationStatus.CONTEXT_MISMATCH,
+                    ContextReason.ACTION_PURPOSE_MISMATCH,
+                    supplied.action_purpose_id,
+                    (
+                        f"destination:{destination.action}:"
+                        f"{destination.destination_id}"
+                    ),
+                    destination.source,
+                )
+            )
+            return
         if supplied.action_purpose_id is not None and supplied.action_purpose_id not in permitted:
             results.append(
                 ConstraintEvaluation(
@@ -444,6 +487,8 @@ class ContextEvaluator:
                     ContextEvaluationStatus.CONTEXT_MISMATCH,
                     ContextReason.ACTION_PURPOSE_MISMATCH,
                     supplied.action_purpose_id,
+                    f"action-purpose:{observation.action}",
+                    source=declarations[0].source,
                 )
             )
             return
@@ -524,6 +569,7 @@ class ContextEvaluator:
                         ContextDimension.DATA_FLOW,
                         ContextEvaluationStatus.CONTEXT_MISMATCH,
                         ContextReason.DATA_FLOW_MISMATCH,
+                        source=context.data_flow_constraints[0].source,
                     )
                 )
             else:
@@ -560,6 +606,7 @@ class ContextEvaluator:
     def _evaluate_fallback(
         observation: CompletedActionObservation,
         context: TaskContext,
+        supplied: ObservationContext,
         resource_role: ResourceRole | None,
         results: list[ConstraintEvaluation],
     ) -> FallbackPattern | None:
@@ -582,13 +629,30 @@ class ContextEvaluator:
                 and resource_role.role_id in fallback.candidate_resource_role_ids
             )
         )
-        if fallback is None or not role_compatible:
+        purpose_compatible = (
+            fallback is not None
+            and (
+                supplied.action_purpose_id is None
+                or supplied.action_purpose_id == fallback.purpose_id
+            )
+        )
+        if fallback is None or not role_compatible or not purpose_compatible:
+            reason = (
+                ContextReason.FALLBACK_PURPOSE_MISMATCH
+                if fallback is not None and role_compatible and not purpose_compatible
+                else ContextReason.FALLBACK_UNDECLARED
+            )
             results.append(
                 ConstraintEvaluation(
                     ContextDimension.FALLBACK,
                     ContextEvaluationStatus.CONTEXT_MISMATCH,
-                    ContextReason.FALLBACK_UNDECLARED,
+                    reason,
                     observation.resource,
+                    source=(
+                        fallback.source
+                        if fallback is not None
+                        else context.fallback_patterns[0].source
+                    ),
                 )
             )
             return None
