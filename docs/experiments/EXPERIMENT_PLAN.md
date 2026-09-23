@@ -19,6 +19,7 @@ Experiments test registered questions and hypotheses; they do not exist to confi
 | EXP-009 | Trajectory-level detection | RQ-08 | H-02, H-09 | Action-only vs stateful deterministic rules |
 | EXP-010 | Prompt-injection blast-radius reduction | RQ-09 | H-08 | Broad/static/task-scoped authority |
 | EXP-011 | Adaptive monitoring evasion | RQ-10 | H-09 | Static and stateful policies under evasion |
+| EXP-012 | Context-aware deterministic trajectory monitoring | RQ-08 | H-02; H-CTX-01 through H-CTX-05 (operational) | Action authorization vs frozen M5 vs M5.1 on paired contextual scenarios |
 
 These IDs reserve candidate studies; registration files will define executable protocols later.
 
