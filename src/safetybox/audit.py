@@ -38,6 +38,10 @@ class AuditRecorder:
     sink: AuditSink
     _last_sequence_by_session: dict[str, int] = field(default_factory=dict, init=False)
 
+    def last_sequence_number(self, session_id: str) -> int:
+        """Return the last committed sequence for one session, or zero."""
+        return self._last_sequence_by_session.get(session_id, 0)
+
     def emit(
         self,
         request: ActionRequest,

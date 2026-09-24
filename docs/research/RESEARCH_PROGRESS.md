@@ -16,8 +16,8 @@ protocols, results, analyses, or the [claims ledger](CLAIMS_LEDGER.md).
 | EXP-012 | No new production runtime; frozen context-aware protocol, corpus, evaluator, and results. | Held-out synthetic evidence: 40/40 positives and 40/40 negatives classified. | Every positive was recoverable from single-observation mismatch, so history necessity was not established. |
 | B2/B4 | Frozen history-free B2 comparator and bounded historical B4 candidate. | Unit/development evidence plus a frozen capability audit before EXP-013 authorship. | Structured synthetic semantics; B4 remains observational. |
 | EXP-013 | No new production runtime; frozen 40-pair history-required corpus/evaluation. | B4 discriminated 38/40 pairs B2 could not and had 0/40 matched-negative false positives. | Level 3 handcrafted, declaration-dependent synthetic evidence; two misses and no real effects, bypass, or agent integration. |
-| EXP-014 transition | Protocol/design only for isolated filesystem mediation at FMED-L1/target RTM-1. | Preregistered questions, requirements, threat analysis, metrics, and failure gates; no empirical evidence. | Current state remains RTM-0: no adapter, unit tests, corpus, run, result, real-system evidence, or supported claim. |
+| EXP-014 transition | Protocol/design freeze plus a frozen pre-corpus `FS-ADAPTER@1` implementation for isolated filesystem mediation at FMED-L1/target RTM-1. | Contaminated development tests exercise real temporary-filesystem primitives, ordering, alias rejection, denial state/nondisclosure, and failure semantics. | Current state remains RTM-0: no held-out corpus, run, result, supported claim, race-safe confinement, or production evidence. |
 
-The planned evidence sequence is protocol freeze, adapter implementation, adapter freeze,
-held-out real-tool corpus, then evaluation. Filesystem is first; subprocess/shell,
+The remaining evidence sequence is held-out real-tool corpus authorship/freeze, then
+evaluation. Filesystem is first; subprocess/shell,
 HTTP/network, MCP, database, browser, and a multi-tool agent harness remain later work.

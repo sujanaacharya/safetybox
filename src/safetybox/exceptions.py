@@ -8,4 +8,15 @@ class AuthorizationFailure(RuntimeError):
 
 
 class AuditFailure(RuntimeError):
-    """Raised when required M3 audit recording cannot complete."""
+    """Raised when required M3-compatible audit recording cannot complete."""
+
+    def __init__(
+        self,
+        message: str,
+        *,
+        execution_may_have_started: bool = False,
+        failed_event_type: str | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.execution_may_have_started = execution_may_have_started
+        self.failed_event_type = failed_event_type

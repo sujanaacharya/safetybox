@@ -6,6 +6,14 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 
 ### Added
 
+- Development-only `FS-ADAPTER@1` pre-corpus implementation freeze for EXP-014 with pure lexical
+  logical-path canonicalization, existing M1/M2 authorization, compound rename
+  authorization, post-allow link/type validation, real temporary-filesystem primitives,
+  deterministic state digests, and an additive M3-compatible audit envelope.
+- Contaminated filesystem development validation, REQ-001–REQ-032 and
+  INV-016–INV-019 traceability, and self-critical technical diligence notes. No held-out
+  EXP-014 corpus, run, result, RTM-1 claim, production claim, or FMED-L2/3/4 claim is
+  included.
 - Research and engineering governance foundation.
 - Initial research questions, hypotheses, claims ledger, and paper plan.
 - Conceptual architecture, threat model, safety invariants, and ADRs.

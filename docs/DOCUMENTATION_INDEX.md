@@ -22,6 +22,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Research Progress](research/RESEARCH_PROGRESS.md)
 - [Evidence Matrix](research/EVIDENCE_MATRIX.md)
 - [Real Filesystem Mediation Requirements](research/REAL_FILESYSTEM_MEDIATION_REQUIREMENTS.md)
+- [EXP-014 Requirement Traceability](research/EXP-014_REQUIREMENT_TRACEABILITY.md)
 - [Paper Outline](research/PAPER_OUTLINE.md)
 
 ## Architecture
@@ -43,6 +44,12 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Baselines](experiments/BASELINES.md), [Ablations](experiments/ABLATIONS.md), and [Reproducibility](experiments/REPRODUCIBILITY.md)
 - [EXP-013 Results](experiments/EXP-013-RESULTS.md), [Synthesis](experiments/EXP-013-SYNTHESIS.md), [Counterfactual-Pair Audit](experiments/EXP-013-COUNTERFACTUAL-PAIR-AUDIT.md), [False-Negative Audit](experiments/EXP-013-FALSE-NEGATIVE-AUDIT.md), and [Label-Isolation Audit](experiments/EXP-013-LABEL-ISOLATION-AUDIT.md)
 - [EXP-014 Real Filesystem Mediation Protocol](experiments/EXP-014-real-filesystem-mediation.md)
+- [EXP-014 Adapter Development Validation](experiments/EXP-014-ADAPTER-DEVELOPMENT-VALIDATION.md)
+
+## Engineering
+
+- [EXP-014 Filesystem Diligence Notes](engineering/EXP-014_FILESYSTEM_DILIGENCE_NOTES.md)
+- [EXP-014 Pre-Corpus Freeze Audit](engineering/EXP-014_PRE_CORPUS_FREEZE_AUDIT.md)
 
 ## Strategy
 

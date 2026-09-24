@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from typing import Protocol
 
 from safetybox.events import SafetyBoxEvent
@@ -20,6 +21,29 @@ class ProtectedTool(Protocol):
 
     def execute(self, request: ActionRequest) -> object:
         """Perform the protected operation for ``request``."""
+
+
+class ExecutionLifecycleHook(Protocol):
+    """Optional generic bridge around the monitor's protected execution branch."""
+
+    def before_execution(
+        self,
+        request: ActionRequest,
+        *,
+        correlation_id: str,
+        parent_event_id: str,
+    ) -> str:
+        """Run post-allow checks and return the latest committed parent event ID."""
+
+    def after_execution_success(
+        self, request: ActionRequest, result: object
+    ) -> Mapping[str, object]:
+        """Return minimized metadata for a successful terminal event."""
+
+    def after_execution_failure(
+        self, request: ActionRequest, error: Exception
+    ) -> Mapping[str, object]:
+        """Return minimized metadata for a failed terminal event."""
 
 
 class AuditSink(Protocol):

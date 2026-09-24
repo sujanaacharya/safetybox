@@ -14,6 +14,10 @@ SafetyBox does not currently claim coverage of an OWASP category. EXP-009, EXP-0
 EXP-013 are synthetic held-out evaluations of bounded deterministic primitives, not
 real-system OWASP evaluations.
 
+A development-only real-filesystem mediation primitive now exists for the future
+EXP-014 evaluation. This does not raise an OWASP evidence level: it is contaminated
+pre-corpus implementation evidence, not a held-out result or deployment control.
+
 Allowed roadmap statuses in this document are:
 
 - `SUPPORTED_BY_CURRENT_EVIDENCE`: only a precisely named sub-property has repository

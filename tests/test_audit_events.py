@@ -231,3 +231,93 @@ def test_events_and_sink_snapshots_are_immutable() -> None:
         event.metadata["new"] = "value"  # type: ignore[index]
     with pytest.raises(AttributeError):
         sink.events().append(event)  # type: ignore[attr-defined]
+
+
+def test_default_monitor_events_remain_semantically_m3_compatible() -> None:
+    sink = InMemoryAuditSink()
+    action_request = request()
+    result = monitor(
+        Authorizer(PolicyDecision(Decision.ALLOW, "POL-ALLOW", "allowed")),
+        Tool(),
+        sink,
+    ).execute(action_request)
+
+    normalized = [
+        (
+            event.event_type.value,
+            event.session_id,
+            event.task_id,
+            event.request_id,
+            event.action,
+            event.resource,
+            event.rule_id,
+            None if event.decision is None else event.decision.value,
+            event.executed,
+            dict(event.metadata),
+        )
+        for event in sink.events()
+    ]
+    assert normalized == [
+        (
+            "ACTION_REQUESTED",
+            "session-1",
+            "task-1",
+            "request-1",
+            "document.read",
+            "report.txt",
+            None,
+            None,
+            None,
+            {},
+        ),
+        (
+            "AUTHORIZATION_STARTED",
+            "session-1",
+            "task-1",
+            "request-1",
+            "document.read",
+            "report.txt",
+            None,
+            None,
+            None,
+            {},
+        ),
+        (
+            "AUTHORIZATION_ALLOWED",
+            "session-1",
+            "task-1",
+            "request-1",
+            "document.read",
+            "report.txt",
+            "POL-ALLOW",
+            "ALLOW",
+            False,
+            {},
+        ),
+        (
+            "EXECUTION_STARTED",
+            "session-1",
+            "task-1",
+            "request-1",
+            "document.read",
+            "report.txt",
+            "POL-ALLOW",
+            "ALLOW",
+            None,
+            {},
+        ),
+        (
+            "EXECUTION_SUCCEEDED",
+            "session-1",
+            "task-1",
+            "request-1",
+            "document.read",
+            "report.txt",
+            "POL-ALLOW",
+            "ALLOW",
+            True,
+            {},
+        ),
+    ]
+    assert result.executed is True
+    assert result.tool_result == "tool-result"
