@@ -22,6 +22,9 @@
 | Coarse semantic roles | Distinct data or resources can be conflated | Preserve exact role evidence and report the abstraction limit | Role-granularity development studies |
 | Absent runtime lineage | Ordered access and outbound action can be mistaken for proven transfer | Use conservative ordering language; never claim bytes or payloads flowed | Finding-wording and logical-lineage tests |
 | Context configuration burden | Incomplete declarations cause excessive abstention | Version, validate, and measure abstentions without guessing intent | Configuration and coverage studies |
+| B4 raw-window eviction | Required role, phase, finalization, or fallback prefix becomes unknowable | Remove all evicted semantic contribution and emit `INSUFFICIENT_CONTEXT` when the prefix is required | Window-boundary and abstention tests |
+| B4 active-key exhaustion | A new session/task cannot obtain bounded monitor state | Raise an explicit capacity error; never evict another task silently | 128-key capacity test |
+| B4 history-context replacement | One active trajectory is interpreted under changing semantics | Reject replacement explicitly without resetting or merging state | Context-identity tests |
 | Compromised host/administrator | Total control-plane compromise | Outside core guarantee; use defense in depth and disclose boundary | Deployment threat analysis |
 
 Safe behavior is operation-specific and must be configured explicitly. “Fail closed” must not itself create unexamined physical or availability hazards; deployment risk analysis may choose a safer paused state for a particular environment. No listed mitigation is implemented yet.

@@ -120,3 +120,11 @@ is an observational experiment comparator layered directly on M5.1-B. It maps ea
 `ContextEvaluation` independently and reduces scenario predictions with an order-free,
 duplicate-insensitive precedence rule. It retains no trajectory state, calls no M5.1-C
 rule, emits no finding, and has no connection to authorization or execution.
+
+## B4 bounded contextual trajectory note
+
+The [B4 monitor](B4_BOUNDED_CONTEXT_TRAJECTORY.md) is a separate post-execution,
+pull-style observational layer. Its trusted [history context](B4_HISTORY_CONTEXT.md)
+binds to, but never extends the authority of, `TaskContext` or `TaskContract`. B4 state
+and findings have no edge into the `ReferenceMonitor`, controller, adapters, protected
+tools, or capability evaluator.

@@ -14,6 +14,7 @@ The [System Architecture](SYSTEM_ARCHITECTURE.md) owns the component list. This 
 | Context Evaluator | One completed observation, trusted `TaskContext`, optional structured metadata | Immutable reason-coded `ContextEvaluation` | Authorize, retain trajectory history, infer natural-language semantics, or emit findings |
 | Single-Observation Context Baseline | One completed observation and its M5.1-B evaluation | Immutable neutral prediction and order-free scenario reduction | Retain history, count repetitions, use sequence position for prediction, emit trajectory findings, or authorize |
 | Context-Aware Trajectory Monitor | Ordered completed observations, trusted task context, M5.1-B evaluations | Immutable context-aware findings and bounded snapshots | Authorize, execute, contain, infer payload lineage, or treat missing context as benign |
+| B4 Bounded Context Trajectory Monitor | Ordered completed observations, M5.1-B evaluations, immutable task and B4 history context | Immutable B4 findings and raw-window-bounded snapshots | Authorize, execute, contain, preserve evicted semantics, infer payload lineage, or alter M5.1-C |
 | Trajectory Monitor | Ordered canonical events, deterministic trajectory rules | Immutable findings and explanations | Directly execute external actions, authorize requests, or mutate task authority/capabilities |
 | Risk/Trust Engine | Defined signals and transition policy | State transition proposal | Treat an opaque score as fact about intent |
 | Enforcement Controller | Policy/capability/risk decisions | Applied outcome and events | Override a hard deny with advisory input |
@@ -47,3 +48,8 @@ not replace or mutate M5.
 The [Single-Observation Context Baseline](SINGLE_OBSERVATION_BASELINE.md) is a separate
 stateless experimental comparator over M5.1-B output. Its scenario reduction is
 commutative and idempotent, and it has no dependency on M5.1-C.
+
+`B4-BOUNDED-CONTEXT-TRAJECTORY@1` is a separate observational consumer of M5.1-B and
+the immutable `B4-HISTORY-CONTEXT@1` companion. It recomputes role, phase,
+finalization, and fallback state from at most 16 raw observations. Its `B4TRJ-*`
+findings remain outside authorization, execution, capability, and containment paths.

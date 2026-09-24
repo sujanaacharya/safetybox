@@ -16,6 +16,9 @@
 | Event | Canonical, ordered record of an observed request, decision, state transition, or external result. |
 | External action | An operation with effects outside the agent's internal computation, including tool, file, shell, network, API, or database operations. |
 | Fallback pattern | Bounded trusted declaration of expected repeated-access, compatibility, migration, or diagnostic behavior. |
+| B4 history context | Immutable trusted companion to `TaskContext` declaring bounded role combinations, semantic phases, finalization, and fallback progression without granting authority. |
+| Semantic event binding | Trusted exact-field conjunction mapping one completed observation and its M5.1-B interpretation to an opaque B4 event identifier. |
+| Aggregation scope | Declared semantic-event boundary inside which B4 accumulates trusted matched roles from retained executed observations. |
 | Policy | Versioned deterministic rules mapping normalized context to a decision and explanation. |
 | Provenance | Lineage connecting actions and evidence to task, session, policy, software, inputs, and causal events. |
 | Reference monitor | Mediation boundary intended to observe and authorize every privileged external action before execution. |

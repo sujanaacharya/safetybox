@@ -34,6 +34,10 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 - `B2-SINGLE-OBSERVATION@1`, a frozen stateless executable context baseline over
   M5.1-B results, with immutable evidence, explicit abstention, and commutative,
   duplicate-insensitive scenario aggregation.
+- `B4-BOUNDED-CONTEXT-TRAJECTORY@1` with immutable `B4-HISTORY-CONTEXT@1`, fixed
+  `B4-CONFIG@1`, 16-observation recomputed state, four declaration-driven history
+  rules, bounded finding/key capacity, development-only B2 parity probes, and
+  machine-readable capability/version provenance.
 
 ### Notes
 
@@ -49,3 +53,6 @@ All notable changes will be documented here. The format follows [Keep a Changelo
   prevention, containment, or generalization beyond contaminated development cases.
 - The B2 baseline is history-free and observational: sequence numbers are provenance
   only, incomplete context abstains, and it cannot emit findings or alter authorization.
+- B4 development probes are contaminated expressivity checks, not held-out EXP-013
+  evidence. B4 does not infer payload lineage, recover evicted semantics, or detect
+  internally consistent but real-world-stale declarations.

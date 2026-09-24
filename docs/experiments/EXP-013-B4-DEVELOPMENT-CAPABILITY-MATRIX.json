@@ -1,0 +1,13 @@
+{
+  "evidence_class": "DEVELOPMENT_ONLY_CONTAMINATED_NOT_HELD_OUT",
+  "monitor": "B4-BOUNDED-CONTEXT-TRAJECTORY@1",
+  "config": "B4-CONFIG@1",
+  "rows": [
+    {"family": "MS-A", "b2_parity": true, "b4_distinguishes": true, "primitive": "exact accumulated role combination"},
+    {"family": "MS-B", "b2_parity": true, "b4_distinguishes": true, "primitive": "declared cross-source role groups"},
+    {"family": "MS-C", "b2_parity": true, "b4_distinguishes": true, "primitive": "directed semantic phase transition"},
+    {"family": "MS-D", "b2_parity": true, "b4_distinguishes": true, "primitive": "finalization and closed-phase re-entry"},
+    {"family": "MS-E", "b2_parity": true, "b4_distinguishes": true, "primitive": "candidate progression, termination, restart, cycle, and count"},
+    {"family": "MS-F", "b2_parity": true, "b4_distinguishes": true, "primitive": "phase transition and closed-phase semantics"}
+  ]
+}
