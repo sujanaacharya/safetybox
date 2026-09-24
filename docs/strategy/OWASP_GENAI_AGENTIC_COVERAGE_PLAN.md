@@ -10,13 +10,10 @@ as the current taxonomies at the time of writing. OWASP describes the agentic li
 starting framework for risks in systems that plan, act, and make decisions across complex
 workflows; it is not a product certification.
 
-SafetyBox does not currently claim coverage of an OWASP category. EXP-009, EXP-012, and
-EXP-013 are synthetic held-out evaluations of bounded deterministic primitives, not
-real-system OWASP evaluations.
-
-A development-only real-filesystem mediation primitive now exists for the future
-EXP-014 evaluation. This does not raise an OWASP evidence level: it is contaminated
-pre-corpus implementation evidence, not a held-out result or deployment control.
+SafetyBox does not claim coverage of an OWASP category. EXP-009, EXP-012, and EXP-013
+are synthetic held-out evaluations of bounded deterministic primitives. EXP-014 adds
+Level 4 held-out real-tool evidence only for named adapter-routed filesystem sub-properties
+at FMED-L1; it is not a whole-category or deployment-wide OWASP evaluation.
 
 Allowed roadmap statuses in this document are:
 
@@ -55,14 +52,15 @@ discovery and absent at runtime. “Covered” must never collapse these distinc
 
 | SafetyBox component | Security property | Evidence boundary |
 |---|---|---|
-| `ReferenceMonitor` | execution-side authorization / complete-mediation research primitive | unit-tested simulator architecture; no real-tool mediation evidence |
+| `ReferenceMonitor` | execution-side authorization / complete-mediation research primitive | Level 2 unit evidence alone; reused by `FS-ADAPTER@1` in EXP-014 Level 4 named filesystem sub-properties, without complete-mediation evidence |
 | `TaskContract` | task-scoped authority declaration | deterministic policy model, not an intent oracle |
-| `Capability` | action/resource privilege scoping | implemented and unit tested; real deployment/bypass evidence absent |
+| `Capability` | action/resource privilege scoping | implemented and unit tested; EXP-014 supplies named FMED-L1 real-tool evidence, while real deployment and bypass resistance remain absent |
 | M3 audit/provenance | reconstructable decisions and events | repository tests; not a SIEM or forensic completeness claim |
 | M5 | bounded sequence monitoring | EXP-009 Level 3 synthetic evidence with high FP |
 | `TaskContext` / M5.1 | trusted semantic context | EXP-012 Level 3 clean synthetic evidence; incorrect/stale context remains a boundary |
 | B2 | history-free context comparator | frozen analytical/executable baseline |
 | B4 | bounded role/order/phase/fallback reasoning | EXP-013 Level 3 synthetic evidence: 38/40 pairs, 0/40 matched-negative FP |
+| `FS-ADAPTER@1` | adapter-routed task/action/path authorization, real filesystem effect gating, and in-process audit | EXP-014 Level 4 for named FMED-L1 sub-properties: 94/94 adapter scenarios; direct routes, races, real agents, and production remain outside scope |
 
 These components expose potentially useful controls for OWASP risks; they do not solve a
 category directly.
@@ -76,8 +74,8 @@ specified SafetyBox behavior, not the entire OWASP risk.
 | Risk | Strategic status | SD | SDet | RO | RDet | P | IM | A | E | Boundary / next primitive |
 |---|---|---|---|---|---|---|---|---|---|---|
 | LLM01 Prompt Injection | `ARCHITECTURALLY_RELEVANT`, `REQUIRES_AI_ANALYSIS`, `FUTURE_RESEARCH` | candidate | none | simulator | none | partial authority only | partial blast-radius candidate | partial | L0 | SafetyBox may constrain consequences, but does not detect injected language or prove attack origin. |
-| LLM02 Sensitive Information Disclosure | `REQUIRES_STATIC_SCANNER`, `REQUIRES_RUNTIME_EXTENSION`, `REQUIRES_DATA_LINEAGE` | candidate | none | role-only simulator | none | capability scoping candidate | partial | partial | L0 | Resource/order observation is not causal sensitive-data lineage. |
-| LLM03 Excessive Agency | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | simulator | evaluated sub-properties | authorization primitive | task-scope candidate | strong synthetic | L3 sub-property | Capability/TaskContract limit represented authority; B4 adds behavior evidence. No real-agent evaluation. |
+| LLM02 Sensitive Information Disclosure | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_STATIC_SCANNER`, `REQUIRES_RUNTIME_EXTENSION`, `REQUIRES_DATA_LINEAGE` | candidate | none | adapter for one filesystem boundary | none | evaluated denied-retrieval gate | partial measured-channel mitigation | partial | L4 named sub-property | EXP-014 found no protected value/call in 9/9 denied filesystem retrievals across evaluated channels. No causal lineage, broad disclosure detection, process/debug-channel completeness, or real-agent evidence. |
+| LLM03 Excessive Agency | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | adapter for one filesystem boundary | evaluated represented authorization | evaluated FMED-L1 filesystem prevention | task-scope mitigation | strong within tested audit | L4 named sub-property | EXP-014 adds held-out real-tool evidence for represented filesystem action/resource limits. Direct routes bypass and no real-agent or whole-risk claim follows. |
 | LLM04 Supply Chain | `REQUIRES_STATIC_SCANNER`, `OUT_OF_CORE_SCOPE` | none | none | none | none | none | none | none | L0 | Needs SBOM/AIBOM, dependency/config provenance, signature and vulnerability tooling. |
 | LLM05 Data and Model Poisoning | `REQUIRES_STATIC_SCANNER`, `REQUIRES_AI_ANALYSIS`, `OUT_OF_CORE_SCOPE` | none | none | none | none | none | none | none | L0 | Training/data governance and model assurance are outside the current runtime core. |
 | LLM06 Unbounded Consumption | `ARCHITECTURALLY_RELEVANT`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | partial | candidate | none | budget/circuit-breaker candidate | partial | L0 | Requires cost/token/tool-call/time budgets and containment evaluation. |
@@ -91,8 +89,8 @@ specified SafetyBox behavior, not the entire OWASP risk.
 | Risk | Strategic status | SD | SDet | RO | RDet | P | IM | A | E | Boundary / next primitive |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ASI01 Agent Goal Hijack | `ARCHITECTURALLY_RELEVANT`, `REQUIRES_AI_ANALYSIS`, `FUTURE_RESEARCH` | candidate | none | simulator actions | none | authority boundary only | partial | partial | L0 | No prompt/goal manipulation detector; runtime policy may limit consequences. |
-| ASI02 Tool Misuse & Exploitation | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | simulator | evaluated registered patterns | authorization primitive | partial | strong synthetic | L3 sub-property | Strongest alignment, but real adapters, exploit semantics, and prevention trials are absent. |
-| ASI03 Identity & Privilege Abuse | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | simulator | policy decisions | capability enforcement primitive | scope reduction candidate | strong synthetic | L2/L3 sub-properties | No real identity provider, credential broker, delegation, or NHI lifecycle integration. |
+| ASI02 Tool Misuse & Exploitation | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | adapter for one filesystem boundary | evaluated registered filesystem misuse | evaluated FMED-L1 filesystem prevention | partial | strong within tested audit | L4 named sub-property | EXP-014 covers registered adapter-routed filesystem misuse/alias cases only. Shell, network, MCP, direct APIs, races, exploit breadth, and real agents remain absent. |
+| ASI03 Identity & Privilege Abuse | `PARTIALLY_ADDRESSED`, `SUPPORTED_BY_CURRENT_EVIDENCE`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | adapter task binding | policy decisions | evaluated represented task/capability gate | scope reduction candidate | strong within tested audit | L4 named filesystem sub-property; L2/L3 elsewhere | EXP-014 includes task mismatch and scoped capabilities, but no real identity provider, authentication, credential broker, delegation, or NHI lifecycle integration. |
 | ASI04 Agentic Supply Chain Vulnerabilities | `REQUIRES_STATIC_SCANNER`, `OUT_OF_CORE_SCOPE` | none | none | none | none | none | none | none | L0 | Requires component/tool/MCP inventory, provenance, signatures, and dependency intelligence. |
 | ASI05 Unexpected Code Execution (RCE) | `ARCHITECTURALLY_RELEVANT`, `REQUIRES_STATIC_SCANNER`, `REQUIRES_RUNTIME_EXTENSION` | candidate | none | simulator only | none | action-policy primitive | none | partial | L0 | Needs subprocess/shell mediation, argument policy, sandbox boundaries, and real exploit tests. |
 | ASI06 Memory & Context Poisoning | `REQUIRES_AI_ANALYSIS`, `REQUIRES_RUNTIME_EXTENSION`, `FUTURE_RESEARCH` | candidate | none | none | none | none | none | partial | L0 | TaskContext is trusted input, not a detector for poisoned memory or context. |

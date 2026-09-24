@@ -19,10 +19,10 @@ These are **desired invariants**, not verified properties beyond the scope named
 | INV-013 | Context semantics must not grant authority absent from `TaskContract`. | Bidirectional authorization/context separation tests. | Implemented and unit-tested for the M5.1-A value model and M5.1-B evaluator: `TaskContext` is not accepted by the authorization path, evaluation copies rather than changes the prior decision/execution outcome, and context consistency cannot turn an M2 denial into authority. |
 | INV-014 | Context-aware trajectory findings cannot grant authority or execute protected actions. | Interface-boundary, authorization-preservation, and absence-of-execution-path tests. | Implemented and unit-tested for the in-process M5.1-C monitor; this does not establish complete mediation or detection correctness. |
 | INV-015 | B4 historical semantic state and findings cannot grant authorization or execute protected actions. | Interface-boundary, authority-preservation, immutable-context, and absence-of-execution-path tests. | Implemented and unit-tested for `B4-BOUNDED-CONTEXT-TRAJECTORY@1`; this does not establish complete mediation, declaration correctness, or detection accuracy. |
-| INV-016 | A denied adapter-routed real filesystem mutation must neither invoke the protected mutation primitive nor change protected filesystem state. | Primitive-spy evidence plus operation-appropriate before/after state digests on the frozen real-tool corpus. | DESIRED for EXP-014; no real filesystem adapter or evidence exists. |
-| INV-017 | A denied adapter-routed filesystem read, list, or stat must not invoke the protected retrieval primitive or return protected bytes, names, or metadata. | Primitive-spy and caller-result nondisclosure tests on the frozen real-tool corpus. | DESIRED for EXP-014; no real filesystem adapter or evidence exists. |
-| INV-018 | Filesystem canonicalization must not expand capability scope, and the canonical resource authorized must identify the exact path supplied to the protected primitive. | Traversal, prefix, Unicode, symlink, hard-link, rename, and argument-binding tests. | DESIRED for EXP-014; TOCTOU is explicitly `NOT_SOLVED` before implementation. |
-| INV-019 | A required control or audit failure before filesystem execution must prevent the protected operation; a failure after primitive start must not be reported as denial or proven rollback. | Fault injection at every lifecycle boundary with invocation and post-state evidence. | DESIRED for EXP-014; M3 supplies only the in-process logical precursor semantics. |
+| INV-016 | A denied adapter-routed real filesystem mutation must neither invoke the protected mutation primitive nor change protected filesystem state. | Primitive-spy evidence plus operation-appropriate before/after state digests on the frozen real-tool corpus. | DESIRED repository-wide; scoped EXP-014 evidence is attached below. |
+| INV-017 | A denied adapter-routed filesystem read, list, or stat must not invoke the protected retrieval primitive or return protected bytes, names, or metadata. | Primitive-spy and caller-result nondisclosure tests on the frozen real-tool corpus. | DESIRED repository-wide; scoped EXP-014 evidence is attached below. |
+| INV-018 | Filesystem canonicalization must not expand capability scope, and the canonical resource authorized must identify the exact path supplied to the protected primitive. | Traversal, prefix, Unicode, symlink, hard-link, rename, and argument-binding tests. | DESIRED repository-wide; scoped static-path evidence is attached below and TOCTOU remains not established. |
+| INV-019 | A required control or audit failure before filesystem execution must prevent the protected operation; a failure after primitive start must not be reported as denial or proven rollback. | Fault injection at every lifecycle boundary with invocation and post-state evidence. | DESIRED repository-wide; scoped EXP-014 failure-semantics evidence is attached below. |
 
 ## Status policy
 
@@ -34,3 +34,22 @@ Direct filesystem access outside the future adapter is not assigned an invariant
 it is an explicit FMED-L1 exclusion. An agent with `os.*`, `pathlib`, shell, native code,
 or another unwrapped route can bypass adapter-level mediation. EXP-014 requires this
 boundary to be demonstrated and reported.
+
+## EXP-014 scoped evidence attachment
+
+Repository-wide status remains `DESIRED` for INV-016 through INV-019 because the current
+status vocabulary has no evidence-qualified scoped state and none of these properties is
+established across deployment routes. `EXP-014-ANALYSIS-001` attaches the following
+bounded evidence without changing those global statuses:
+
+| Invariant | Scoped evidence | Interpretation |
+|---|---|---|
+| INV-016 | 19/19 policy-denied adapter-routed mutations had no wrapped primitive invocation and no independently observed state change. | `SUPPORTED_WITHIN_EXP_014_FMED_L1`; strong within the tested sequential temporary-filesystem scope. |
+| INV-017 | 9/9 policy-denied read/list/stat cases had no protected primitive call or protected result in evaluated channels. | `SUPPORTED_WITHIN_EXP_014_FMED_L1`; process/debug channels were not captured. |
+| INV-018 | A separate protocol-derived canonicalizer matched 70/70 registered cases; static symlink/hard-link and compound-rename outcomes matched. | `SUPPORTED_WITHIN_EXP_014_FMED_L1_STATIC_PATH_STATE_ONLY`; TOCTOU remains not established. |
+| INV-019 | 5/5 registered pre-effect fail-closed cases and 2/2 registered indeterminate cases had the expected outcome. | `SUPPORTED_WITHIN_EXP_014_FMED_L1`; small denominators and mostly injected failures limit strength. |
+
+The evidence source is the frozen `EXP-014-RUN-001` plus
+[`EXP-014-VALIDITY-AUDIT.md`](../experiments/EXP-014-VALIDITY-AUDIT.md). It does not extend
+to direct routes, races, concurrency, durable audit, non-Linux filesystems, or production
+deployment.

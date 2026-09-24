@@ -13,6 +13,7 @@ Allowed statuses are `PROPOSED`, `TESTING`, `SUPPORTED`, `PARTIALLY_SUPPORTED`, 
 | CL-007 | Task-scoped capabilities reduce reachable resources under prompt injection relative to broad authority. | Blast-radius definition and matched compromised-agent trials. | EXP-010 | PROPOSED |
 | CL-008 | Stateful policies improve resistance to registered monitoring-evasion trajectories over static allow/deny lists. | Adaptive scenario trials and ablations with false-positive reporting. | EXP-009, EXP-011 | PROPOSED |
 | CL-009 | Ordered deterministic trajectory evidence provides discriminative information beyond single-observation context evaluation. | Frozen history-free baseline; held-out matched history-required pairs; hard negatives; leakage, coupling, and label-isolation audits. | EXP-013 | PARTIALLY_SUPPORTED |
+| CL-010 | SafetyBox can correctly mediate real filesystem operations at the explicitly bounded FMED-L1 adapter route. | Frozen held-out real-tool outcomes; independent authorization/canonicalization/state checks; bypass, failure, audit, and validity analysis. | EXP-014 | PARTIALLY_SUPPORTED |
 
 M5 provides implementation readiness for controlled trajectory experiments only. It does not change any claim status.
 
@@ -60,3 +61,29 @@ semantic staleness, and does not prove payload or causal data flow. No real-agen
 real-tool, containment, window-ablation, or production evaluation exists.
 
 The status is not a claim that SafetyBox detects unsafe agent behavior generally.
+
+## CL-010 evidence review — EXP-014 Claim Synthesis v1
+
+**Status:** `PARTIALLY_SUPPORTED` in the repository-wide ledger; the bounded empirical
+claim is `SUPPORTED_WITHIN_EXP_014_FMED_L1` under `EXP-014-ANALYSIS-001`.
+
+**Evidence:** `EXP-014-RUN-001`, `EXP-014-CORPUS@1`, and frozen `FS-ADAPTER@1`.
+All 94 adapter-routed scenarios produced the registered terminal outcome; independent
+policy derivation matched 91/91 authorization labels and decisions; 19/19 policy-denied
+mutations had neither a wrapped primitive call nor independently observed state change;
+and 9/9 policy-denied retrievals had no protected primitive call or protected result in
+the evaluated caller, safe-error, and serialized audit/event channels. Tested ordering,
+audit reconstruction fields, and audit truthfulness passed 94/94.
+
+**Bounded empirical statement:** on `EXP-014-CORPUS@1`, frozen `FS-ADAPTER@1` correctly
+mediated all 94 adapter-routed held-out scenarios in an isolated temporary Linux
+filesystem at FMED-L1 under the registered outcome and observation rules.
+
+**Limitations:** FMED-L1 assumes calls enter the adapter. Direct OS/pathlib, shell, native
+code, inherited descriptors, races, concurrency, process compromise, and kernel bypass
+remain outside the boundary. Nondisclosure did not instrument every process/debug
+channel; reconstruction is partly schema-coupled; failure injections are conformance
+tests; the corpus is same-team authored; audit is in-process and non-durable; and no real
+agent, customer deployment, external replication, cross-platform, or production evidence
+exists. The result must not be restated as complete filesystem security or whole-category
+OWASP coverage.

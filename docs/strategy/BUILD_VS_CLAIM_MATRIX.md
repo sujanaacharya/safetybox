@@ -12,7 +12,7 @@ means production-ready unless the production-ready column independently says yes
 | Sequence monitoring | Yes | Yes, M5 | Yes | Yes, EXP-009 | No | No | Registered synthetic patterns; high false positives in EXP-009 and no prevention. |
 | Single-observation context | Yes | Yes, M5.1-B/B2 | Yes | Yes, EXP-012/013 | No | No | Exact structured declaration comparison; not semantic truth or real context quality. |
 | History-aware B4 | Yes | Yes, frozen B4 | Yes | Yes, EXP-013 | No | No | 38/40 frozen synthetic pairs with 0/40 matched-negative FP; bounded, observational, declaration-dependent. |
-| Real filesystem mediation | Yes, EXP-014 v1 | Yes, frozen pre-corpus implementation | Yes, contaminated development suite | No | Development-only real filesystem primitives; no held-out evaluation | No | FMED-L1 adapter-routed implementation only; RTM-1 and the candidate claim remain pending frozen evaluation. |
+| Real filesystem mediation | Yes, EXP-014 v1 | Yes, frozen `FS-ADAPTER@1` | Yes | No; this is a real-tool study | Yes, held-out `EXP-014-RUN-001` in isolated Linux temporary filesystems | No | FMED-L1 adapter-routed sub-properties only; RTM-1. Direct routes, TOCTOU, concurrency, durable audit, real-agent deployment, and production readiness remain absent. |
 | Real shell mediation | Concept only | No | No | No | No | No | No shell/interpreter/process-control claim. |
 | Network mediation | Concept only | No | No | No | No | No | No socket, DNS, HTTP, rebinding, or remote-effect claim. |
 | MCP mediation | Concept only | No | No | No | No | No | No MCP identity, permission, protocol, or server claim. |

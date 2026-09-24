@@ -45,6 +45,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-013 Results](experiments/EXP-013-RESULTS.md), [Synthesis](experiments/EXP-013-SYNTHESIS.md), [Counterfactual-Pair Audit](experiments/EXP-013-COUNTERFACTUAL-PAIR-AUDIT.md), [False-Negative Audit](experiments/EXP-013-FALSE-NEGATIVE-AUDIT.md), and [Label-Isolation Audit](experiments/EXP-013-LABEL-ISOLATION-AUDIT.md)
 - [EXP-014 Real Filesystem Mediation Protocol](experiments/EXP-014-real-filesystem-mediation.md)
 - [EXP-014 Adapter Development Validation](experiments/EXP-014-ADAPTER-DEVELOPMENT-VALIDATION.md)
+- [EXP-014 Results](experiments/EXP-014-RESULTS.md), [Synthesis](experiments/EXP-014-SYNTHESIS.md), [Validity Audit](experiments/EXP-014-VALIDITY-AUDIT.md), and [Post-Run Gate Disposition](experiments/EXP-014-POST-RUN-GATE-DISPOSITION.md)
 
 ## Engineering
 

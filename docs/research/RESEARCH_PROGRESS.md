@@ -16,8 +16,9 @@ protocols, results, analyses, or the [claims ledger](CLAIMS_LEDGER.md).
 | EXP-012 | No new production runtime; frozen context-aware protocol, corpus, evaluator, and results. | Held-out synthetic evidence: 40/40 positives and 40/40 negatives classified. | Every positive was recoverable from single-observation mismatch, so history necessity was not established. |
 | B2/B4 | Frozen history-free B2 comparator and bounded historical B4 candidate. | Unit/development evidence plus a frozen capability audit before EXP-013 authorship. | Structured synthetic semantics; B4 remains observational. |
 | EXP-013 | No new production runtime; frozen 40-pair history-required corpus/evaluation. | B4 discriminated 38/40 pairs B2 could not and had 0/40 matched-negative false positives. | Level 3 handcrafted, declaration-dependent synthetic evidence; two misses and no real effects, bypass, or agent integration. |
-| EXP-014 transition | Protocol/design freeze plus a frozen pre-corpus `FS-ADAPTER@1` implementation for isolated filesystem mediation at FMED-L1/target RTM-1. | Contaminated development tests exercise real temporary-filesystem primitives, ordering, alias rejection, denial state/nondisclosure, and failure semantics. | Current state remains RTM-0: no held-out corpus, run, result, supported claim, race-safe confinement, or production evidence. |
+| EXP-014 | Frozen `FS-ADAPTER@1`, held-out `EXP-014-CORPUS@1`, one-shot `EXP-014-RUN-001`, and adversarial post-run analysis for isolated filesystem mediation. | Level 4 evidence for named FMED-L1 sub-properties: 94/94 adapter-routed terminal outcomes, 91/91 independently derived authorization decisions, 19/19 denied mutations without wrapped call or independently observed state change, and tested audit/order evidence; RTM-1 recommended. | Real filesystem tool evidence, not real-agent deployment: direct routes bypass, TOCTOU/concurrency are untested, audit is non-durable, failure evidence is partly injected, and no production/external claim follows. |
 
-The remaining evidence sequence is held-out real-tool corpus authorship/freeze, then
-evaluation. Filesystem is first; subprocess/shell,
-HTTP/network, MCP, database, browser, and a multi-tool agent harness remain later work.
+Filesystem held-out real-tool evaluation is complete at FMED-L1. The recommended next
+implementation milestone is subprocess/shell mediation, followed by HTTP/network and MCP
+mediation. A real agent harness, stronger interception, concurrency, durable audit, and
+external deployment evidence remain later stages.

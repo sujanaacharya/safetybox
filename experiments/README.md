@@ -18,7 +18,7 @@ study in that range. Later registered studies are listed below.
 | EXP-010–EXP-011 | Reserved candidate experiments in the research plan | Not executed |
 | EXP-012 | Context-aware trajectory evaluation | Completed and frozen |
 | EXP-013 | Counterfactual multi-step context evaluation | Completed and frozen |
-| EXP-014 | Real filesystem mediation and complete-path evaluation | `PREREGISTERED`; design only |
+| EXP-014 | Real filesystem mediation and complete-path evaluation | Completed and frozen; post-run validity analysis added |
 
 The next ID decision must search the repository and extend this registry; it must not
 infer availability from missing directories alone.
