@@ -4,6 +4,20 @@
 
 The policy engine maps a normalized request and explicit state to a decision. It does not execute tools, infer authority from agent prose, or mutate audit history. Policy language and implementation remain undecided; this document fixes behavioral requirements first.
 
+## Authority and behavior separation
+
+Hard authorization answers whether authority exists in a trusted contract/capability
+source. Behavior analysis answers whether an observation or trajectory appears
+suspicious. They are separate decision planes. Context evaluation, trajectory findings,
+risk/anomaly scores, or AI output cannot silently grant authority, expand a task
+contract, override a hard denial, or become an unexplained hard denial.
+
+A future containment policy may consume behavior findings through a separately specified,
+versioned, and audited transition that attenuates authority. Such intervention must not be
+misreported as the original capability decision. AI may propose authority for trusted
+review, but only a trusted issuer/approval path may create a new authority object: AI for
+understanding; determinism for authority.
+
 ## Inputs and outputs
 
 Inputs include task/actor/session identity, canonical action and resource, normalized arguments, task contract version, effective capability snapshot, policy set/version, trajectory state, risk state, approval facts, limit counters, and a captured evaluation time.

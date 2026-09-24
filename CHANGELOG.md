@@ -6,6 +6,11 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 
 ### Added
 
+- EXP-015 Level 0 preregistration for PMED-L1 direct subprocess mediation, including
+  `REQ-033`–`REQ-062`, `INV-020`–`INV-023`, ADR-007, architecture and threat boundaries,
+  human/machine-readable protocols, and a pre-freeze authorization-quality audit. No
+  process adapter, helper, held-out corpus, subprocess run, maturity upgrade, or supported
+  claim is included.
 - Development-only `FS-ADAPTER@1` pre-corpus implementation freeze for EXP-014 with pure lexical
   logical-path canonicalization, existing M1/M2 authorization, compound rename
   authorization, post-allow link/type validation, real temporary-filesystem primitives,

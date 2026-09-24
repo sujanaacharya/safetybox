@@ -23,6 +23,10 @@ These are **desired invariants**, not verified properties beyond the scope named
 | INV-017 | A denied adapter-routed filesystem read, list, or stat must not invoke the protected retrieval primitive or return protected bytes, names, or metadata. | Primitive-spy and caller-result nondisclosure tests on the frozen real-tool corpus. | DESIRED repository-wide; scoped EXP-014 evidence is attached below. |
 | INV-018 | Filesystem canonicalization must not expand capability scope, and the canonical resource authorized must identify the exact path supplied to the protected primitive. | Traversal, prefix, Unicode, symlink, hard-link, rename, and argument-binding tests. | DESIRED repository-wide; scoped static-path evidence is attached below and TOCTOU remains not established. |
 | INV-019 | A required control or audit failure before filesystem execution must prevent the protected operation; a failure after primitive start must not be reported as denial or proven rollback. | Fault injection at every lifecycle boundary with invocation and post-state evidence. | DESIRED repository-wide; scoped EXP-014 failure-semantics evidence is attached below. |
+| INV-020 | A denied adapter-routed subprocess request must not invoke the protected process-spawn primitive or create an adapter child. | Primitive-spy count, child-created state, and absence of PID/output/terminal child fields for every denied case. | DESIRED; EXP-015 Level 0 design only. |
+| INV-021 | Complete executable and cwd authorization, required validation, and committed pre-spawn audit must precede process-spawn primitive invocation. | Canonical sequence evidence plus primitive-boundary ordering and fault injection. | DESIRED; EXP-015 Level 0 design only. |
+| INV-022 | On the shell-false route, each declared argv element must reach the direct child as exactly one element without shell reinterpretation. | Controlled-helper tuple comparison over registered metacharacter, whitespace, quote, wildcard, empty, and Unicode cases. | DESIRED; EXP-015 Level 0 design only. |
+| INV-023 | A required audit failure before spawn must prevent process creation; an audit failure after spawn must not be reported as denial, not executed, or rolled back. | Pre/post-spawn audit fault injection with primitive invocation, child-created state, and terminal truthfulness checks. | DESIRED; EXP-015 Level 0 design only. |
 
 ## Status policy
 
@@ -34,6 +38,12 @@ Direct filesystem access outside the future adapter is not assigned an invariant
 it is an explicit FMED-L1 exclusion. An agent with `os.*`, `pathlib`, shell, native code,
 or another unwrapped route can bypass adapter-level mediation. EXP-014 requires this
 boundary to be demonstrated and reported.
+
+Direct process execution outside a future subprocess adapter is likewise not assigned a
+universal prevention invariant. `INV-020` through `INV-023` apply only to the proposed
+PMED-L1 adapter route. Direct `subprocess`, `os.system`, shell, native process APIs,
+allowed-child descendants, and allowed-child filesystem/network activity remain explicit
+boundaries. No implementation or evidence is attached to these proposed invariants.
 
 ## EXP-014 scoped evidence attachment
 

@@ -14,6 +14,7 @@ Allowed statuses are `PROPOSED`, `TESTING`, `SUPPORTED`, `PARTIALLY_SUPPORTED`, 
 | CL-008 | Stateful policies improve resistance to registered monitoring-evasion trajectories over static allow/deny lists. | Adaptive scenario trials and ablations with false-positive reporting. | EXP-009, EXP-011 | PROPOSED |
 | CL-009 | Ordered deterministic trajectory evidence provides discriminative information beyond single-observation context evaluation. | Frozen history-free baseline; held-out matched history-required pairs; hard negatives; leakage, coupling, and label-isolation audits. | EXP-013 | PARTIALLY_SUPPORTED |
 | CL-010 | SafetyBox can correctly mediate real filesystem operations at the explicitly bounded FMED-L1 adapter route. | Frozen held-out real-tool outcomes; independent authorization/canonicalization/state checks; bypass, failure, audit, and validity analysis. | EXP-014 | PARTIALLY_SUPPORTED |
+| CL-011 | SafetyBox can mediate adapter-routed subprocess execution with deterministic authorize-before-spawn ordering and prevent denied child-process creation within the tested PMED-L1 boundary. | Frozen process adapter; held-out real-tool outcomes; denied-spawn, argv, executable/cwd, environment, ordering, failure, audit, bypass, and validity analysis. | EXP-015 | PROPOSED |
 
 M5 provides implementation readiness for controlled trajectory experiments only. It does not change any claim status.
 

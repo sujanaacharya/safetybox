@@ -21,6 +21,8 @@ Experiments test registered questions and hypotheses; they do not exist to confi
 | EXP-011 | Adaptive monitoring evasion | RQ-10 | H-09 | Static and stateful policies under evasion |
 | EXP-012 | Context-aware deterministic trajectory monitoring | RQ-08 | H-02; H-CTX-01 through H-CTX-05 (operational) | Action authorization vs frozen M5 vs M5.1 on paired contextual scenarios |
 | EXP-013 | Counterfactual multi-step contextual trajectory evaluation | RQ-08 | H-MS-01 through H-MS-05 (operational) | Frozen M5 and M5.1 vs a frozen single-observation context baseline on history-required counterfactual pairs |
+| EXP-014 | Real filesystem mediation and complete-path evaluation | RQ-01, RQ-04, RQ-10 | Preregistered protocol questions | Adapter-routed real filesystem behavior and direct-route boundary at FMED-L1 |
+| EXP-015 | Real subprocess mediation and command execution control | RQ-01, RQ-04, RQ-10 | Preregistered protocol questions | Adapter-routed direct executable/argv behavior and direct-route boundary at PMED-L1 |
 
 These IDs reserve candidate studies; registration files will define executable protocols later.
 

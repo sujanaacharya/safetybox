@@ -1,0 +1,1056 @@
+experiment_id: EXP-015
+title: Real Subprocess Mediation and Command Execution Control
+version: 1
+status: PREREGISTERED
+evidence_level: LEVEL_0_DESIGN_ONLY
+results_included: false
+implementation_included: false
+corpus_included: false
+helper_included: false
+preregistration_date: 2026-09-24
+preregistration_base_git_sha: d1053c26cdfad781894f57ecedefb07a39d84ca7
+protocol_freeze_git_sha: TO_BE_RECORDED_BY_FREEZE_COMMIT
+safetybox_version: 0.0.0
+
+frozen_starting_state:
+  clean_worktree_verified: true
+  current_head: d1053c26cdfad781894f57ecedefb07a39d84ca7
+  current_rtm_status: RTM-1
+  exp_014:
+    protocol_git_sha: 7baf20293caa83d3fff6a200174c4f8840918607
+    implementation_git_sha: b49a5cd0ff28a38eb8314291f51c106d2df9bd7c
+    corpus_git_sha: 5ac7311bb8f086cca97f474069d068067ac73142
+    raw_result_git_sha: 17a0f6b6409ac85a2ee1a2d49f36a5748e3ab310
+    analysis_and_synthesis_git_sha: d1053c26cdfad781894f57ecedefb07a39d84ca7
+    frozen_paths_diff_verified_none: true
+    limitation: >-
+      EXP-014 established named FMED-L1 filesystem sub-properties only; it did not
+      establish complete mediation, process control, concurrency or TOCTOU safety,
+      real-agent deployment, or production readiness.
+
+id_allocation:
+  experiment_search_range_found: EXP-001_THROUGH_EXP-014
+  allocated_experiment: EXP-015
+  requirement_range: REQ-033_THROUGH_REQ-062
+  invariant_range: INV-020_THROUGH_INV-023
+  adr: ADR-007
+  candidate_claim: CL-011
+
+research_question: >-
+  Can SafetyBox mediate real subprocess execution so that authorized commands execute,
+  denied commands create no child process or side effect, argument boundaries are
+  preserved without shell reinterpretation, execution ordering is authorize-before-spawn,
+  and audit evidence truthfully reconstructs process attempts and outcomes?
+research_question_mapping:
+  - RQ-01
+  - RQ-04
+  - RQ-10
+hypotheses: []
+secondary_questions:
+  - Can command and argument canonicalization avoid shell-token confusion?
+  - Can environment-variable scope be controlled without secret inheritance?
+  - Can cwd be represented and scoped safely?
+  - Can executable paths be canonicalized without ambient PATH ambiguity?
+  - Can denied requests be shown to create zero child process?
+  - Can timeout, exit, signal, spawn, audit, and partial-effect failures be classified truthfully?
+  - What are the bypass limits of an in-process subprocess adapter?
+  - What changes when shell=True or explicit shell syntax enters the model?
+
+mediation_scope:
+  target_level: PMED-L1
+  current_level: PMED-L0
+  guarantee: adapter-routed direct-child subprocess execution only
+  levels:
+    PMED-L0: simulated process tool
+    PMED-L1: adapter-routed real subprocess execution
+    PMED-L2: tested framework or process-API interception coverage
+    PMED-L3: process-level route enforcement with tested bypass resistance
+    PMED-L4: OS, container, or sandbox enforcement
+  in_scope:
+    - one direct native executable
+    - shell-false-equivalent ordered argv
+    - canonical logical cwd
+    - fixed minimal child environment
+    - bounded stdout and stderr capture
+    - bounded direct-child timeout and termination
+    - Linux exit and signal outcome
+    - adapter lifecycle audit
+  excluded:
+    - shell_true
+    - command_strings
+    - explicit_shell_c
+    - pipes_and_redirection
+    - command_substitution_and_subshells
+    - globbing_and_variable_expansion
+    - shell_operators_and_builtins
+    - background_processes_and_daemonization
+    - process_groups_and_descendant_control
+    - interactive_tty_or_pty
+    - caller_stdin
+    - caller_environment
+    - inherited_descriptors
+    - concurrency_and_toctou_resistance
+    - real_agent_integration
+    - production_readiness
+    - privilege_escalation
+    - dangerous_resource_exhaustion
+  forbidden_claims:
+    - complete_process_mediation
+    - universal_process_confinement
+    - descendant_confinement
+    - shell_mediation
+    - safe_authorized_child_behavior
+    - automatic_rtm_2_promotion
+
+real_tool_maturity:
+  current: RTM-1
+  possible_future_contribution: RTM-2
+  automatic_promotion_preregistered: false
+
+execution_model:
+  action: process.exec
+  mode: DIRECT_EXECUTABLE_ARGV
+  shell_equivalent: false
+  request_fields:
+    - request_id
+    - session_id
+    - task_id
+    - actor
+    - executable
+    - argv
+    - cwd
+    - timeout_ms
+  executable_in_argv: false
+  stdin: CLOSED_EMPTY
+  environment: FIXED_MINIMAL_NON_INHERITED
+  direct_child_only: true
+
+shell_boundary:
+  direct_invocation:
+    representation: absolute executable plus ordered argv tuple
+    parsing: no shell parsing or reconstruction
+  shell_interpretation:
+    representation: command language string
+    status: EXCLUDED_REQUIRES_SEPARATE_EXPERIMENT
+    future_coverage:
+      - tokenization
+      - pipes
+      - redirections
+      - command_substitution
+      - subshells
+      - globbing
+      - variable_expansion
+      - operators
+      - builtins
+      - background_jobs
+  rationale: >-
+    Shell interpretation can select multiple commands and effects and therefore cannot be
+    inferred from direct executable and argv mediation.
+
+trusted_base:
+  trusted:
+    - SafetyBox authorizer
+    - future subprocess adapter
+    - executable canonicalizer and validator
+    - cwd canonicalizer and mapper
+    - narrow process primitive
+    - canonical audit recorder
+    - deterministic test harness
+  untrusted:
+    - executable request string
+    - argv values
+    - cwd request
+    - timeout request
+    - agent command description
+    - subprocess stdout and stderr
+    - child behavior
+  authority_rule: command text and subprocess output are data, never authority
+
+request_limits:
+  argv_max_count: 64
+  argv_element_max_utf8_bytes: 4096
+  argv_total_max_utf8_bytes: 16384
+  nul_allowed: false
+  timeout_ms_min: 50
+  timeout_ms_max: 2000
+  stdout_return_max_bytes: 65536
+  stderr_return_max_bytes: 65536
+
+executable_canonicalization:
+  input_type: Unicode string
+  required_form: absolute POSIX path
+  lexical_rules:
+    duplicate_separators: collapse
+    dot_segments: remove
+    dot_dot_segments: resolve lexically while preserving absolute result
+    nul: reject
+    empty: reject
+    relative_or_bare: reject
+  authorization_resource: canonical absolute executable path
+  frozen_contract_scope: exact process.exec resource only; no executable subtree or raw prefix
+  path_lookup:
+    ambient_path_search: false
+    which_lookup: false
+    current_directory_search: false
+  post_allow_validation:
+    component_symlinks: reject
+    terminal_symlink: reject
+    missing: reject
+    directory: reject
+    non_regular: reject
+    non_executable_for_test_user: reject
+    shebang_or_wrapper_script: reject
+    accepted: controlled native executable
+  primitive_binding: canonical authorized executable equals primitive executable argument
+  pre_authorization_information_boundary:
+    mode: pure lexical processing only
+    prohibited_target_dependent_calls:
+      - stat
+      - lstat
+      - exists
+      - filesystem_resolving_realpath_or_resolve
+      - readlink
+      - access
+      - which
+      - PATH_search
+      - open
+  toctou_status: NOT_SOLVED
+  cases:
+    absolute_native: ELIGIBLE_AFTER_ALLOW_AND_VALIDATION
+    relative: FAIL_CLOSED_NOT_SPAWNED
+    bare_name: FAIL_CLOSED_NOT_SPAWNED
+    path_search: PROHIBITED
+    symlinked: VALIDATION_REJECT_NOT_SPAWNED
+    missing: VALIDATION_REJECT_NOT_SPAWNED
+    non_executable: VALIDATION_REJECT_NOT_SPAWNED
+    directory: VALIDATION_REJECT_NOT_SPAWNED
+    wrapper_or_shebang: VALIDATION_REJECT_NOT_SPAWNED
+
+argv_semantics:
+  representation: ordered immutable tuple
+  element_preservation: exact
+  forbidden_transforms:
+    - concatenation_into_command_string
+    - shell_quoting
+    - token_splitting
+    - interpolation
+    - expansion
+    - globbing
+  registered_literal_classes:
+    - empty_argument
+    - spaces
+    - single_and_double_quotes
+    - semicolon
+    - ampersand_ampersand
+    - pipe
+    - greater_than
+    - dollar_parentheses
+    - backticks
+    - wildcards
+  authorization_basis: executable identity and tuple commitments, not pretty-printed command
+  authority_role: operation data only; argv text does not grant or deny authority
+  dangerous_looking_literal: remains one literal argument and is not an automatic denial
+  experiment_claim: boundary preservation, not malicious shell-injection detection
+  limitation: executable-specific flag or code semantics are not authorized
+
+environment_policy:
+  agent_controlled_authority_dimension: false
+  caller_environment_allowed: false
+  parent_environment_inherited: false
+  exact_child_environment:
+    LANG: C.UTF-8
+    LC_ALL: C.UTF-8
+  path_present: false
+  secret_like_parent_variables_present: false
+  future_resource_classes_not_allocated:
+    - ENV_SECRET
+    - ENV_RUNTIME
+    - ENV_PATH
+  future_arbitrary_values: may require a reviewed capability/resource model
+
+cwd_policy:
+  required: true
+  representation: canonical SafetyBox logical filesystem resource
+  logical_root: /workspace
+  canonicalization_dependency: EXP-014 lexical cwd semantics
+  mapping: fresh temporary host root
+  authorization_action: process.cwd
+  validation_timing: after complete compound allow
+  pre_authorization_host_probe: prohibited
+  scope_matching: component-aware; no raw prefix or alternate-representation widening
+  rejects:
+    - relative_cwd
+    - host_cwd
+    - outside_logical_workspace
+    - missing_cwd
+    - non_directory_cwd
+    - symlinked_cwd_or_ancestor
+
+authorization_model:
+  reused:
+    - TaskContract
+    - Capability
+    - TaskContractPolicy
+    - ReferenceMonitor
+  independent_process_allowlist: prohibited
+  authoritative_system_count: 1
+  compound: true
+  subdecisions:
+    - order: 1
+      action: process.exec
+      resource: canonical absolute executable
+    - order: 2
+      action: process.cwd
+      resource: canonical logical cwd
+  evaluate_both_when_one_denies: true
+  combinations:
+    ALLOW_ALLOW: may proceed to validation
+    ALLOW_DENY: no validation and no spawn
+    DENY_ALLOW: no validation and no spawn
+    DENY_DENY: no validation and no spawn
+  existing_compound_authorizer_gap: >-
+    The current generic CompoundAuthorizer composes multiple resources under one
+    unchanged action; it cannot yet compose process.exec and process.cwd.
+  required_generic_extension_before_adapter: >-
+    Extend the shared authorization layer to compose ordered ordinary ActionRequest
+    components with distinct actions, delegate every component to TaskContractPolicy,
+    preserve every subdecision, and avoid denial short-circuiting.
+  process_specific_permission_logic: prohibited
+  any_deny_or_exception: no validation and no spawn
+  task_binding:
+    contract_task_id_match: required
+    session_id_preserved_across_components_and_audit: true
+    trusted_contract_to_session_binding_required_before_implementation_freeze: true
+    current_m2_authenticated_session_binding: absent schema/deployment gap
+  unauthorized_dimensions:
+    - argv meaning
+    - child filesystem effects
+    - child network effects
+    - descendants
+
+authorization_behavior_boundary:
+  hard_authorization_question: Does explicit authority exist?
+  behavior_analysis_question: Does observed behavior appear suspicious?
+  authorization_inputs:
+    - trusted TaskContract
+    - canonical action
+    - canonical resource
+    - explicit Capability
+    - deterministic policy rule
+  cannot_silently_become_authority_or_deny:
+    - B4 finding
+    - context inconsistency
+    - trajectory finding
+    - risk or anomaly score
+    - AI output
+  future_behavior_intervention: separately governed and audited attenuation or containment decision
+  ai_boundary:
+    may_propose:
+      - capabilities
+      - task scopes
+      - executable roles
+      - cwd roles
+    may_not:
+      - grant capability
+      - expand TaskContract
+      - override DENY
+      - silently become trusted authority
+      - convert anomaly score into hard authorization
+    principle: AI_FOR_UNDERSTANDING_DETERMINISM_FOR_AUTHORITY
+  future_approval:
+    status: NOT_PART_OF_EXP_015
+    REQUIRE_APPROVAL: trusted external actor may later issue new versioned authority
+    DENY: current authority is absent
+    self_approval_by_agent_or_ai: prohibited
+  attenuation:
+    current_compatibility: strict-subset action/resource capability set in a new contract
+    delegation_implemented: false
+    schema_gaps:
+      - authenticated_parent_child_binding
+      - actor_and_session_binding
+      - issuer_and_derivation_provenance
+      - constraint_subset_proof
+      - revocation_and_expiry
+      - confused_deputy_protection
+
+ordering:
+  allowed_sequence:
+    - ADAPTER_REQUEST_RECEIVED
+    - COMMAND_CANONICALIZATION_STARTED
+    - COMMAND_CANONICALIZATION_SUCCEEDED
+    - ACTION_REQUESTED
+    - EXECUTABLE_AUTHORIZATION_STARTED
+    - EXECUTABLE_AUTHORIZATION_ALLOWED
+    - CWD_AUTHORIZATION_STARTED
+    - CWD_AUTHORIZATION_ALLOWED
+    - EXECUTABLE_VALIDATION_STARTED
+    - EXECUTABLE_VALIDATION_SUCCEEDED
+    - CWD_VALIDATION_STARTED
+    - CWD_VALIDATION_SUCCEEDED
+    - EXECUTION_START_COMMITTED_TO_REQUIRED_AUDIT
+    - PROCESS_SPAWN_PRIMITIVE_INVOKED
+    - DIRECT_CHILD_CREATED
+    - PROCESS_TERMINAL_OBSERVED
+    - TERMINAL_AUDIT_COMMITTED
+  denied_sequence:
+    - ADAPTER_REQUEST_RECEIVED
+    - COMMAND_CANONICALIZATION_SUCCEEDED
+    - ACTION_REQUESTED
+    - EXECUTABLE_AUTHORIZATION_DECISION
+    - CWD_AUTHORIZATION_DECISION
+    - POLICY_DENY_NOT_SPAWNED
+  critical_relation: BOTH_ALLOW_BEFORE_VALIDATION_BEFORE_PREAUDIT_COMMIT_BEFORE_SPAWN
+  ordering_authority: session-local canonical sequence numbers
+  timestamp_authority: false
+
+proposed_invariants:
+  INV-020: denied adapter-routed process requests do not invoke the spawn primitive
+  INV-021: complete authorization and required pre-spawn audit precede spawn
+  INV-022: shell-false argv elements reach the direct child exactly as declared
+  INV-023: pre-spawn audit failure prevents spawn and post-spawn failure remains truthful
+  status: DESIRED
+
+process_primitive:
+  future_concept: ProcessPrimitive
+  implementation_included: false
+  centralizes:
+    - Popen-equivalent spawn
+    - posix_spawn-equivalent route if used
+    - direct-child wait
+    - direct-child timeout termination
+  scattered_process_calls: prohibited
+  required_observations:
+    - invocation_count
+    - invocation_order
+    - executable_and_argv_snapshot
+    - cwd_and_environment_snapshot
+    - child_created_state
+    - ephemeral_pid_if_created
+    - wait_and_termination_outcome
+  supports_failure_injection: true
+
+side_effect_definition:
+  immediate:
+    - spawn_primitive_invoked
+    - direct_child_created
+    - executable_invoked
+    - stdout_or_stderr_emitted
+    - exit_or_signal_outcome_produced
+  downstream:
+    - child_filesystem_change
+    - child_network_activity
+    - child_descendant_creation
+  denied_core_measurement: zero primitive invocation and zero adapter-created direct child
+  downstream_observation: selected controlled marker fixtures only
+
+terminal_taxonomy:
+  POLICY_DENY_NOT_SPAWNED:
+    outcome_family: DENY
+    primitive_invoked: false
+    child_created: false
+    effect_state: NOT_STARTED
+  FAIL_CLOSED_NOT_SPAWNED:
+    outcome_family: FAIL_CLOSED
+    primitive_invoked: false
+    child_created: false
+    effect_state: NOT_STARTED
+  VALIDATION_REJECT_NOT_SPAWNED:
+    outcome_family: TOOL_ERROR
+    primitive_invoked: false
+    child_created: false
+    effect_state: NOT_STARTED
+  SPAWN_ERROR_NOT_CREATED:
+    outcome_family: TOOL_ERROR
+    primitive_invoked: true
+    child_created: false
+    effect_state: NO_CHILD_CONFIRMED
+  PROCESS_EXIT_0:
+    outcome_family: ALLOW_SUCCESS
+    child_created: true
+    effect_state: EFFECT_POSSIBLE_OR_OBSERVED
+  PROCESS_EXIT_NONZERO_EFFECT_POSSIBLE:
+    outcome_family: TOOL_ERROR
+    child_created: true
+    effect_state: EFFECT_POSSIBLE_OR_OBSERVED
+  PROCESS_TIMEOUT_EFFECT_POSSIBLE:
+    outcome_family: TOOL_ERROR
+    child_created: true
+    effect_state: EFFECT_POSSIBLE_OR_OBSERVED
+  PROCESS_SIGNALED_EFFECT_POSSIBLE:
+    outcome_family: TOOL_ERROR
+    child_created: true
+    effect_state: EFFECT_POSSIBLE_OR_OBSERVED
+  FAIL_INDETERMINATE_EXECUTION_POSSIBLE:
+    outcome_family: FAIL_INDETERMINATE
+    child_created: UNKNOWN_OR_TRUE
+    effect_state: INDETERMINATE
+
+failure_semantics:
+  authorization_exception: FAIL_CLOSED_NOT_SPAWNED
+  canonicalization_error: FAIL_CLOSED_NOT_SPAWNED
+  invalid_request: FAIL_CLOSED_NOT_SPAWNED
+  executable_validation_failure: VALIDATION_REJECT_NOT_SPAWNED
+  cwd_validation_failure: VALIDATION_REJECT_NOT_SPAWNED
+  required_pre_execution_audit_failure: FAIL_CLOSED_NOT_SPAWNED
+  unexpected_before_primitive: FAIL_CLOSED_NOT_SPAWNED
+  spawn_failure_confirmed_no_child: SPAWN_ERROR_NOT_CREATED
+  spawn_failure_child_state_unknown: FAIL_INDETERMINATE_EXECUTION_POSSIBLE
+  child_exit_zero: PROCESS_EXIT_0
+  child_exit_nonzero: PROCESS_EXIT_NONZERO_EFFECT_POSSIBLE
+  timeout: PROCESS_TIMEOUT_EFFECT_POSSIBLE
+  signal_termination: PROCESS_SIGNALED_EFFECT_POSSIBLE
+  capture_failure_after_spawn: FAIL_INDETERMINATE_EXECUTION_POSSIBLE
+  post_spawn_audit_failure: FAIL_INDETERMINATE_EXECUTION_POSSIBLE
+  post_completion_audit_failure: FAIL_INDETERMINATE_EXECUTION_POSSIBLE
+  rollback_claim: prohibited
+
+timeout_semantics:
+  starts: after confirmed direct-child creation
+  request_range_ms: [50, 2000]
+  initial_signal: SIGTERM
+  grace_ms: 250
+  escalation_signal: SIGKILL
+  reap_direct_child_when_possible: true
+  descendant_termination_claim: none
+  rollback_claim: none
+
+signal_semantics:
+  platform: Linux
+  record_signal_number: true
+  self_signal_helper_permitted: true
+  cross_platform_equivalence_claim: none
+
+output_semantics:
+  stdout_mode: bytes
+  stderr_mode: bytes
+  caller_return:
+    max_retained_bytes_per_stream: 65536
+    total_byte_count: true
+    complete_stream_sha256_when_available: true
+    truncation_flag: true
+  canonical_audit:
+    raw_output: false
+    byte_count: true
+    sha256_when_available: true
+    truncation: true
+    capture_status: true
+  denied_output: none because no child exists
+
+stdin_semantics:
+  caller_input: excluded
+  child_stdin: closed or empty
+  interactive_tty: excluded
+  pipes_between_commands: excluded
+  inherited_descriptors: excluded
+
+audit_model:
+  canonical_lifecycle: M3-compatible additive envelope required before implementation
+  parallel_authorization_log: prohibited
+  required_fields:
+    - session_id
+    - task_id
+    - actor
+    - request_id
+    - correlation_id
+    - action
+    - requested_executable
+    - canonical_executable
+    - argv_count
+    - ordered_argv_index_length_sha256_commitments
+    - argv_tuple_digest
+    - requested_cwd
+    - canonical_cwd
+    - environment_profile
+    - timeout_ms
+    - executable_and_cwd_normalized_action_and_resource
+    - executable_and_cwd_matched_or_absent_capability
+    - executable_and_cwd_authorization_rule_decision_and_reason
+    - authority_source_TaskContract_reference_version_or_hash
+    - compound_component_identity
+    - executable_and_cwd_validation_outcomes
+    - spawn_attempted
+    - primitive_invoked
+    - child_created_state
+    - stable_child_identity_token
+    - optional_ephemeral_pid
+    - exit_status
+    - signal
+    - timeout_and_termination_path
+    - stdout_and_stderr_handling
+    - terminal_class
+    - effect_uncertainty
+    - error_category
+    - adapter_primitive_policy_and_contract_versions
+    - sequence_numbers
+  runner_private_state_may_fill_gaps: false
+  vague_not_permitted_only_explanation: prohibited
+  risk_score_sufficient_for_hard_authorization_explanation: false
+  minimization:
+    raw_argv: false
+    raw_parent_environment: false
+    raw_stdout_stderr: false
+    per_argument_sha256_and_length: true
+    pid_is_stable_identity: false
+    child_token_required: true
+
+process_tree_boundary:
+  observation: direct child only
+  descendants_confined: false
+  allowed_child_may_spawn_descendants: true
+  future_mechanisms:
+    - process_groups
+    - cgroups
+    - seccomp
+    - namespaces
+    - container_sandbox
+    - ptrace_or_ebpf_or_lsm
+    - non_linux_job_objects
+
+filesystem_interaction:
+  fs_adapter_intercepts_child_syscalls: false
+  process_authorization_confines_child_filesystem_access: false
+  authorized_child_may_modify_files_directly: true
+  implication: subprocess and filesystem mediation are separate control surfaces
+  future_need:
+    - filesystem_confinement
+    - network_confinement
+    - sandboxing
+    - namespaces
+    - seccomp
+    - containers
+    - mandatory_access_control
+
+network_interaction:
+  network_mediator_intercepts_child_activity: false
+  process_authorization_confines_child_network_access: false
+  authorized_child_may_use_network_directly: true
+  future_need:
+    - network_namespace_or_sandbox
+    - firewall_or_proxy_mediation
+    - explicit_network_capabilities
+
+bypass_matrix:
+  direct_subprocess_popen:
+    category: EXPECTED_PMED_L1_BYPASS
+    future_control: safe isolated helper launch outside adapter
+  direct_os_system:
+    category: EXPECTED_PMED_L1_BYPASS
+    execution_in_v1: false
+  subprocess_shell_true:
+    category: EXPECTED_PMED_L1_BYPASS
+    execution_in_v1: false
+  explicit_shell_c:
+    category: OUTSIDE_SHELL_FALSE_SCOPE
+    execution_in_v1: false
+  native_execution_api:
+    category: EXPECTED_PMED_L1_BYPASS
+  descendant_process:
+    category: OUTSIDE_DIRECT_CHILD_GUARANTEE
+
+development_scenario_plan:
+  helpers:
+    status: NOT_IMPLEMENTED
+    form: bounded repository-controlled native executable
+    capabilities:
+      - report_argv
+      - report_selected_environment
+      - report_cwd
+      - write_marker_inside_temp_root
+      - choose_exit_code
+      - sleep_briefly
+      - emit_stdout_and_stderr
+      - emit_non_utf8_bytes
+      - self_terminate_by_signal
+      - partial_effect_then_fail
+    contamination: exact development helper cases excluded from future held-out corpus
+  authorized:
+    - exact executable and cwd
+    - stdout_only
+    - stderr_only
+    - both_streams
+    - bounded_large_output
+    - completes_before_timeout
+    - exit_zero
+    - exit_nonzero
+  unauthorized:
+    - missing_process_exec_capability
+    - wrong_executable_resource
+    - wrong_task
+    - unauthorized_cwd
+    - executable_allow_cwd_deny
+    - executable_deny_cwd_allow
+  argument_boundary:
+    - semicolon
+    - ampersand_ampersand
+    - pipe
+    - redirection_token
+    - dollar_parentheses
+    - backticks
+    - wildcards
+    - spaces
+    - quotes
+    - empty_argument
+  executable_resolution:
+    - absolute_native_executable
+    - relative_executable
+    - path_lookup_prohibited
+    - path_poisoning_irrelevant
+    - symlinked_executable
+    - missing_executable
+    - non_executable_file
+    - directory
+    - interpreter_script_rejected
+  environment:
+    - exact_fixed_variables
+    - parent_secret_absent
+    - path_absent
+    - locale_fixed
+    - caller_variable_rejected
+  cwd:
+    - authorized
+    - unauthorized
+    - missing
+    - symlinked
+    - relative
+    - outside_logical_workspace
+  failures:
+    - authorization_exception
+    - canonicalization_error
+    - executable_validation_failure
+    - cwd_validation_failure
+    - pre_execution_audit_failure
+    - confirmed_no_child_spawn_failure
+    - unknown_child_state_spawn_failure
+    - child_exit_nonzero
+    - capture_failure_after_spawn
+    - post_spawn_audit_failure
+    - post_completion_audit_failure
+  timeout_and_signal:
+    - completes_before_timeout
+    - times_out_and_term_succeeds
+    - times_out_and_kill_escalates
+    - helper_self_terminates_by_signal
+  boundary:
+    - direct_popen_expected_bypass
+
+test_safety:
+  isolation: fresh temporary workspace per case
+  user: normal unprivileged user
+  prohibited:
+    - real_home
+    - ssh_material
+    - repository_mutation
+    - production_resources
+    - system_configuration
+    - external_network
+    - sudo
+    - setuid_exploitation
+    - privilege_escalation
+    - fork_bomb
+    - uncontrolled_process_count
+    - uncontrolled_cpu_or_memory
+    - unbounded_output
+    - long_wall_clock_wait
+    - background_or_daemon_process
+
+threat_model:
+  evaluated_in_v1_after_future_freezes:
+    - shell_metacharacter_literal_preservation
+    - path_lookup_prohibition
+    - executable_symlink_rejection
+    - cwd_authorization_and_validation
+    - parent_environment_noninheritance
+    - denied_direct_child_prevention
+    - timeout_and_signal_truthfulness
+    - pre_and_post_spawn_audit_failure
+    - direct_subprocess_bypass_boundary
+  explicit_limitations:
+    - executable_validation_to_spawn_toctou
+    - executable_specific_argument_semantics
+    - descendant_process_spawning
+    - shell_route_bypass
+    - native_execution_bypass
+    - allowed_child_filesystem_and_network_behavior
+    - concurrency
+    - durable_audit
+  prohibited_dangerous_tests:
+    - fork_bomb
+    - uncontrolled_resource_exhaustion
+    - privilege_escalation
+    - external_network_attack
+
+resource_exhaustion_boundary:
+  process_count: future bounded governance
+  cpu: future bounded governance
+  memory: future bounded governance
+  output: bounded capture only, no stress claim
+  timeout_abuse: bounded direct-child timeout only
+  owasp_relevance: possible future Unbounded Consumption sub-property
+
+platform_assumptions:
+  operating_system: Linux
+  path_semantics: POSIX
+  user: normal unprivileged experiment user
+  execution: sequential and non-concurrent
+  signal_model: POSIX direct-child signals
+  filesystem: isolated local temporary root for cwd and marker fixtures
+  portability_claims: none for Windows, macOS, containers, remote systems, or job objects
+
+held_out_workflow:
+  order:
+    - protocol_and_design_freeze
+    - process_adapter_and_primitive_implementation
+    - implementation_freeze
+    - held_out_subprocess_corpus_authorship
+    - corpus_freeze
+    - one_shot_evaluation
+    - adversarial_validity_analysis
+    - bounded_claim_synthesis
+  corpus_before_implementation_freeze: prohibited
+  adapter_tuning_after_corpus_view: prohibited
+  current_stage: protocol_and_design_only
+
+future_corpus_constraints:
+  authored_now: false
+  minimum_adapter_routed_attempts: 80
+  minimum_direct_popen_boundary_controls: 1
+  tags_may_overlap: true
+  minimum_coverage:
+    authorized_spawned: 20
+    policy_denied: 20
+    argument_boundary: 16
+    executable_resolution: 12
+    cwd: 10
+    environment_containment: 4
+    terminal_and_failure_including_timeout_and_signal: 16
+    designated_semantic_repeat_cases: 6
+  repeats_per_designated_case: 3
+  final_denominators_freeze_with_corpus: true
+  authorization_quality:
+    hard_benign_authorized:
+      - unusual_literal_argv
+      - unicode_argv
+      - empty_argv_element
+      - spaces_and_quotes
+      - shell_looking_metacharacters_as_literals
+      - authorized_cwd_near_denied_boundary
+      - authorized_executable_near_denied_boundary
+      - multiple_capabilities
+      - compound_executable_and_cwd_authority
+      - similar_resources_across_different_tasks
+    matched_authority_counterfactuals:
+      fixed:
+        - executable
+        - argv
+        - cwd
+        - fixture_state
+      changed_one_at_a_time:
+        - process_exec_capability
+        - process_cwd_capability
+        - task_binding
+    compound_combinations:
+      - ALLOW_ALLOW
+      - ALLOW_DENY
+      - DENY_ALLOW
+      - DENY_DENY
+    required_separations:
+      - authorization_vs_validation
+      - authorization_vs_tool_outcome
+      - correct_task_vs_wrong_task
+    purpose: punish authorization over-denial without authoring cases before implementation freeze
+
+metrics:
+  authorization_correctness:
+    formula: correct compound authorization outcomes / registered authorization cases
+    target: 1.0
+  authorization_false_allow_rate:
+    formula: authority-negative cases receiving compound ALLOW / authority-negative cases
+    target: 0
+  authorization_false_deny_rate:
+    formula: authority-positive cases receiving compound DENY / authority-positive cases
+    target: 0
+    exclusions:
+      - validation_rejection
+      - missing_or_changed_host_object
+      - nonzero_exit
+      - timeout
+      - signal
+      - other_post_authorization_tool_outcome
+  realized_false_allow_count:
+    formula: authority-negative cases invoking spawn
+    target: 0
+  denied_spawn_prevention_rate:
+    formula: denied requests with zero spawn primitive invocation / all denied requests
+    target: 1.0
+  authorize_before_spawn_ordering:
+    formula: cases satisfying both allow before validation before audit before spawn / spawned cases
+    target: 1.0
+  argument_boundary_preservation:
+    formula: arguments received exactly as declared / registered shell-false argument cases
+    target: 1.0
+  audit_reconstruction_completeness:
+    formula: reconstructable process attempts / adapter process attempts
+    target: 1.0
+    hidden_runner_state_allowed: false
+  terminal_semantic_correctness:
+    formula: correctly classified registered terminal cases / registered terminal cases
+    target: 1.0
+  executable_canonicalization_correctness:
+    formula: correct registered executable outcomes / executable-resolution cases
+    target: 1.0
+  cwd_policy_correctness:
+    formula: correct cwd authorization and validation outcomes / cwd cases
+    target: 1.0
+  environment_containment:
+    formula: exact fixed profile and absent forbidden variables / environment cases
+    target: 1.0
+  adapter_routed_policy_escapes:
+    target: 0
+  expected_direct_route_bypass:
+    target: DEMONSTRATED
+  determinism:
+    formula: semantically equal registered repeats / registered repeats
+    target: 1.0
+  performance:
+    status: SECONDARY_NO_ACCEPTANCE_THRESHOLD
+    candidates:
+      - authorization_latency
+      - canonicalization_and_validation_latency
+      - spawn_overhead
+      - audit_overhead
+      - total_adapter_latency
+
+success_criteria:
+  gates:
+    - 100_percent_authorization_correctness
+    - 100_percent_denied_spawn_prevention
+    - 100_percent_authorize_before_spawn_ordering
+    - 100_percent_registered_argument_boundary_preservation
+    - 100_percent_audit_reconstruction_completeness
+    - 100_percent_registered_executable_and_cwd_correctness
+    - 100_percent_environment_containment
+    - 100_percent_frozen_terminal_semantic_correctness
+    - zero_adapter_routed_policy_escapes
+    - expected_direct_route_bypass_demonstrated
+    - deterministic_repeats
+    - no_frozen_regression
+    - zero_authorization_false_allows
+    - zero_authorization_false_denies
+  post_run_relaxation: prohibited
+
+critical_failure_criteria:
+  - authorization_false_allow_or_false_deny_in_evaluable_case
+  - denied_request_invokes_spawn_or_creates_child
+  - spawn_precedes_complete_allow
+  - spawn_precedes_required_validation
+  - spawn_precedes_committed_required_audit
+  - shell_metacharacter_interpreted_on_shell_false_route
+  - unauthorized_cwd_accepted
+  - executable_canonicalization_expands_scope
+  - audit_claims_denied_or_not_executed_after_known_spawn
+  - unreconstructable_process_attempt
+  - corpus_specific_runtime_branch
+  - nondeterministic_authorization
+  - frozen_predecessor_regression
+
+candidate_claim:
+  id: CL-011
+  status: PROPOSED
+  text: >-
+    SafetyBox can mediate adapter-routed subprocess execution with deterministic
+    authorize-before-spawn ordering and prevent denied child-process creation within the
+    tested PMED-L1 boundary.
+  supported_by_current_artifact: false
+
+future_authorization_benchmark_hook:
+  benchmark_created: false
+  dataset_created: false
+  possible_future_dimensions:
+    - false_allow
+    - false_deny
+    - compound_authorization
+    - task_binding
+    - resource_boundary
+    - delegation_and_attenuation
+    - approval_escalation
+    - hard_benign_cases
+  governance: requires a separate future benchmark registration
+
+owasp_relevance:
+  evidence_level: LEVEL_0
+  whole_category_claim: false
+  narrow_future_subproperties:
+    - Excessive Agency
+    - Agentic Tool Misuse
+    - Unexpected Code Execution
+    - Improper Output Handling at command-execution sinks
+    - Unbounded Consumption only after future bounded-resource work
+
+freeze_readiness:
+  research_question_precise: true
+  pmed_l1_boundary_explicit: true
+  shell_false_vs_shell_true_explicit: true
+  subprocess_scope_bounded: true
+  path_semantics_explicit: true
+  cwd_semantics_explicit: true
+  environment_semantics_explicit: true
+  singular_authorization_core_explicit: true
+  false_allow_and_false_deny_defined: true
+  authorization_vs_validation_explicit: true
+  authorization_vs_behavior_explicit: true
+  compound_distinct_action_extension_gate_explicit: true
+  task_and_session_binding_gap_explicit: true
+  argv_is_data_not_authority: true
+  pre_authorization_host_inspection_prohibited: true
+  spawn_ordering_explicit: true
+  denied_spawn_invariant_defined: true
+  failure_truthfulness_defined: true
+  timeout_and_partial_effects_defined: true
+  direct_bypass_documented: true
+  process_tree_limitation_documented: true
+  filesystem_interaction_documented: true
+  network_interaction_documented: true
+  success_and_failure_criteria_fixed: true
+  held_out_workflow_fixed: true
+  implementation_absent: true
+  corpus_absent: true
+
+analysis_plan:
+  primary_unit: one frozen adapter-routed process request
+  boundary_control_unit: one direct route classified outside the adapter guarantee
+  join_timing: labels and expected terminal classes join only after raw attempt persistence
+  independent_checks:
+    - derive executable and cwd authorization from frozen contracts
+    - compute false-allow and false-deny rates only from authorization-evaluable labels
+    - verify all four compound authorization combinations retain both subdecisions
+    - verify validation and tool outcomes do not rewrite authorization labels
+    - compare primitive invocation counts to denied decisions
+    - compare helper-observed argv to declared argv
+    - verify canonical event ordering without timestamps
+    - verify fixed child environment and forbidden-variable absence
+    - recompute required audit-field completeness from canonical records
+    - compare observed terminal facts to frozen taxonomy
+  uncertainty: report exact numerators and denominators; no generic process-security score
+  performance: descriptive secondary summaries only
+  critical_violations: retained in denominators and reported individually
+
+stopping_rule:
+  development: freeze implementation before any held-out corpus authorship
+  evaluation: execute every valid frozen case and every preregistered repeat under the frozen procedure
+  early_stopping_for_favorable_results: prohibited
+  critical_failure: preserve the violation and continue only when safe to collect remaining cases
+  threshold_changes_after_run: prohibited
+  exclusions: >-
+    Only predeclared malformed-fixture or harness-integrity failures may be excluded;
+    every exclusion retains its identifier, raw record, reason, and denominator impact.
+
+provenance:
+  protocol_document: docs/experiments/EXP-015-real-subprocess-mediation.md
+  requirements: docs/research/REAL_SUBPROCESS_MEDIATION_REQUIREMENTS.md
+  architecture: docs/architecture/REAL_SUBPROCESS_MEDIATION.md
+  architecture_decision: docs/decisions/ADR-007-argv-native-subprocess-before-shell.md
+  threat_extension: docs/threat-model/REAL_SUBPROCESS_THREATS.md
+  requirements_version: 1
+  architecture_version: 1
+  authoring_stage: preregistration_before_implementation
+  no_results: true

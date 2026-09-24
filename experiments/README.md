@@ -19,6 +19,7 @@ study in that range. Later registered studies are listed below.
 | EXP-012 | Context-aware trajectory evaluation | Completed and frozen |
 | EXP-013 | Counterfactual multi-step context evaluation | Completed and frozen |
 | EXP-014 | Real filesystem mediation and complete-path evaluation | Completed and frozen; post-run validity analysis added |
+| EXP-015 | Real subprocess mediation and command execution control | PREREGISTERED; design only, no implementation/corpus/results |
 
 The next ID decision must search the repository and extend this registry; it must not
 infer availability from missing directories alone.
