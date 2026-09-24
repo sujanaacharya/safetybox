@@ -1,8 +1,11 @@
 # EXP-014 Post-Run Regression-Gate Disposition
 
-**Disposition ID:** `EXP-014-POST-RUN-GATE-DISPOSITION@1`  
-**Date:** 2026-09-24  
-**Classification:** `PRE_RUN_GATE`  
+**Disposition ID:** `EXP-014-POST-RUN-GATE-DISPOSITION@1`
+
+**Date:** 2026-09-24
+
+**Classification:** `PRE_RUN_GATE`
+
 **Canonical run:** `EXP-014-RUN-001`
 
 ## Assertion identity and original intent
