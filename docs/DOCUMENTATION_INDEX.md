@@ -36,6 +36,11 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Assets](threat-model/ASSETS.md), [Trust Boundaries](threat-model/TRUST_BOUNDARIES.md), [Attacker Models](threat-model/ATTACKER_MODELS.md), and [Out of Scope](threat-model/OUT_OF_SCOPE.md)
 - [Experiment Plan](experiments/EXPERIMENT_PLAN.md), [Schema](experiments/EXPERIMENT_SCHEMA.md), and [Metrics](experiments/METRICS.md)
 - [Baselines](experiments/BASELINES.md), [Ablations](experiments/ABLATIONS.md), and [Reproducibility](experiments/REPRODUCIBILITY.md)
+- [EXP-013 Results](experiments/EXP-013-RESULTS.md), [Synthesis](experiments/EXP-013-SYNTHESIS.md), [Counterfactual-Pair Audit](experiments/EXP-013-COUNTERFACTUAL-PAIR-AUDIT.md), [False-Negative Audit](experiments/EXP-013-FALSE-NEGATIVE-AUDIT.md), and [Label-Isolation Audit](experiments/EXP-013-LABEL-ISOLATION-AUDIT.md)
+
+## Strategy
+
+- [OWASP GenAI and Agentic Coverage Plan](strategy/OWASP_GENAI_AGENTIC_COVERAGE_PLAN.md)
 
 ## Architecture decisions
 

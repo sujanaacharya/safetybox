@@ -17,6 +17,79 @@ Unless a finalized evidence assessment is recorded below, hypotheses are **propo
 
 Failure to support a hypothesis is a valid research outcome. The [Claims Ledger](CLAIMS_LEDGER.md) must not treat these statements as conclusions.
 
+## EXP-013 frozen hypothesis assessment
+
+The following hypothesis wording is copied unchanged from frozen EXP-013 protocol v1.
+Statuses are experiment-scoped evidence assessments, not rewrites of the hypotheses.
+
+### H-MS-01
+
+**Status:** `SUPPORTED_WITHIN_EXP_013`
+
+**Hypothesis wording:** “A trajectory-aware deterministic monitor will outperform the
+frozen single-observation context baseline on held-out history-required scenarios.”
+
+**Evidence:** B4 recall, balanced accuracy, and pair accuracy were 0.95, 0.975, and 0.95;
+B2 values were 0, 0.5, and 0. B4 corrected 38 B2 false negatives without adding a false
+positive.
+
+**Scope and limitations:** `EXP-013-CORPUS@1`, frozen B2/B4, synthetic clean context.
+Two fallback restart-start cases remain false negatives; no real-system generalization.
+
+### H-MS-02
+
+**Status:** `SUPPORTED_WITHIN_EXP_013`
+
+**Hypothesis wording:** “Matched counterfactual pairs with equivalent single-observation
+context statuses can be distinguished using ordered multi-step evidence.”
+
+**Evidence:** all 40 pairs had matching all-consistent local statuses and B2 outcomes;
+B4 discriminated 38/40 while B2 discriminated 0/40. Every successful scenario had a
+cross-observation finding, and its matched negative removed the relationship and finding.
+
+**Counterevidence and limitation:** pairs 033 and 034 remained indistinguishable. Five
+scenarios were first flagged by an initial-phase check before later historical findings.
+
+### H-MS-03
+
+**Status:** `SUPPORTED_WITHIN_EXP_013`
+
+**Hypothesis wording:** “Multi-step reasoning will preserve a low false-positive rate on
+matched benign counterparts.”
+
+**Evidence:** B4 false-positive rate was 0/40 on matched hard negatives, below the frozen
+0.10 criterion.
+
+**Scope and limitation:** specificity is established only for 40 synthetic matched
+negatives and cannot be generalized to deployment prevalence or unseen workflows.
+
+### H-MS-04
+
+**Status:** `PARTIALLY_SUPPORTED`
+
+**Hypothesis wording:** “Partially correct or stale context will reduce confidence/coverage
+or produce explicit abstention rather than silently generating false certainty.”
+
+**Evidence:** all 8 partial-context controls and all 4 detectable revision-mismatch stale
+controls produced the intended explicit insufficient-context outcome.
+
+**Counterevidence and limitation:** all 4 internally consistent semantic-staleness
+controls produced declaration-relative `NO_FINDING`. B4 cannot observe unrepresented
+real-world freshness, so the broad stale-context portion is not fully supported.
+
+### H-MS-05
+
+**Status:** `SUPPORTED_WITHIN_EXP_013`
+
+**Hypothesis wording:** “Equivalent traces and equivalent trusted context will produce
+deterministic semantic findings.”
+
+**Evidence:** 60/60 normalized semantic comparisons agreed across 20 designated inputs
+and three repeats each.
+
+**Scope and limitation:** this is a deterministic subset check, not multiple complete
+96-scenario reruns or evidence about nondeterministic external tools.
+
 ## H-02 evidence assessment — EXP-009 Claim Synthesis v1
 
 **Status:** `PARTIALLY_SUPPORTED`

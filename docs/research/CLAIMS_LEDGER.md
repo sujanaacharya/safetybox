@@ -12,6 +12,7 @@ Allowed statuses are `PROPOSED`, `TESTING`, `SUPPORTED`, `PARTIALLY_SUPPORTED`, 
 | CL-006 | Deterministic telemetry alone has identifiable blind spots for semantic misuse through authorized channels. | Categorized negative results and observability analysis. | EXP-008 | PROPOSED |
 | CL-007 | Task-scoped capabilities reduce reachable resources under prompt injection relative to broad authority. | Blast-radius definition and matched compromised-agent trials. | EXP-010 | PROPOSED |
 | CL-008 | Stateful policies improve resistance to registered monitoring-evasion trajectories over static allow/deny lists. | Adaptive scenario trials and ablations with false-positive reporting. | EXP-009, EXP-011 | PROPOSED |
+| CL-009 | Ordered deterministic trajectory evidence provides discriminative information beyond single-observation context evaluation. | Frozen history-free baseline; held-out matched history-required pairs; hard negatives; leakage, coupling, and label-isolation audits. | EXP-013 | PARTIALLY_SUPPORTED |
 
 M5 provides implementation readiness for controlled trajectory experiments only. It does not change any claim status.
 
@@ -28,3 +29,34 @@ M5 provides implementation readiness for controlled trajectory experiments only.
 The broad candidate wording is retained, but it must be cited with this scope. A bounded empirical result is: on `EXP-009-CORPUS@1`, deterministic trajectory monitoring identified all 40/40 preregistered trajectory-positive scenarios, including 20 TRJ-001 cases with no action-level policy block, but produced 33 false positives among 40 negatives.
 
 Candidate claims must be narrowed if evidence covers only particular tools, scenarios, models, or deployment assumptions. No claim may be promoted on intuition, demonstrations alone, or non-finalized results.
+
+## CL-009 evidence review — EXP-013 Claim Synthesis v1
+
+**Status:** `PARTIALLY_SUPPORTED` in the repository-wide ledger; the candidate is
+`SUPPORTED_WITHIN_EXP_013` under the experiment-specific assessment.
+
+**Evidence:** `EXP-013-RUN-001`, `EXP-013-CORPUS@1`,
+`B2-SINGLE-OBSERVATION@1`, and `B4-BOUNDED-CONTEXT-TRAJECTORY@1`. All 80 primary
+observations were locally `CONTEXT_CONSISTENT`. B2 detected 0/40 positives, produced
+0/40 matched-negative false positives, and discriminated 0/40 pairs. B4 detected 38/40
+positives, produced 0/40 matched-negative false positives, and discriminated 38/40
+pairs. B4 corrected 38 B2 false negatives without changing any B2 true negative. All
+ten frozen success criteria passed and 60/60 normalized semantic repeat comparisons
+agreed.
+
+**Scope:** synthetic held-out `EXP-013-CORPUS@1` only, using frozen structured
+declarations and the frozen bounded deterministic B4 architecture. A bounded empirical
+statement is: on `EXP-013-CORPUS@1`, B4 correctly discriminated 38 of 40
+history-required counterfactual pairs that B2 could not distinguish, with no false
+positives among 40 matched hard negatives.
+
+**Limitations:** the corpus is handcrafted and had protocol/schema-only separation from
+detector source, without independent authorship or label review. Two allowed-restart
+cases were missed because the frozen context/rule contract lacks an allowed episode-start
+relation. Five earliest detections use an initial-phase declaration at action 1, although
+those scenarios later produce cross-observation findings. B4 is observational, uses
+synthetic events and clean trusted declarations, cannot detect internally consistent
+semantic staleness, and does not prove payload or causal data flow. No real-agent,
+real-tool, containment, window-ablation, or production evaluation exists.
+
+The status is not a claim that SafetyBox detects unsafe agent behavior generally.
