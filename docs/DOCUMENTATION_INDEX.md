@@ -19,6 +19,9 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Contributions](research/CONTRIBUTIONS.md)
 - [Scope and Non-Goals](research/SCOPE_AND_NON_GOALS.md)
 - [Claims Ledger](research/CLAIMS_LEDGER.md)
+- [Research Progress](research/RESEARCH_PROGRESS.md)
+- [Evidence Matrix](research/EVIDENCE_MATRIX.md)
+- [Real Filesystem Mediation Requirements](research/REAL_FILESYSTEM_MEDIATION_REQUIREMENTS.md)
 - [Paper Outline](research/PAPER_OUTLINE.md)
 
 ## Architecture
@@ -28,21 +31,27 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Task Contract](architecture/TASK_CONTRACT.md), [Task Context](architecture/TASK_CONTEXT.md), [Context Evaluation](architecture/CONTEXT_EVALUATION.md), and [Capability Model](architecture/CAPABILITY_MODEL.md)
 - [Event Model](architecture/EVENT_MODEL.md), [Trajectory Monitor](architecture/TRAJECTORY_MONITOR.md), [Single-Observation Context Baseline](architecture/SINGLE_OBSERVATION_BASELINE.md), [Context-Aware Trajectory Monitor](architecture/CONTEXT_AWARE_TRAJECTORY_MONITOR.md), [B4 Bounded Context Trajectory Monitor](architecture/B4_BOUNDED_CONTEXT_TRAJECTORY.md), [B4 History Context](architecture/B4_HISTORY_CONTEXT.md), and [Trust Model](architecture/TRUST_MODEL.md)
 - [Audit and Provenance](architecture/AUDIT_AND_PROVENANCE.md)
+- [Real Filesystem Mediation](architecture/REAL_FILESYSTEM_MEDIATION.md)
 - [Threat Boundaries](architecture/THREAT_BOUNDARIES.md), [Failure Modes](architecture/FAILURE_MODES.md), and [Safety Invariants](architecture/SAFETY_INVARIANTS.md)
 
 ## Threat model and experiments
 
 - [Threat Model](threat-model/THREAT_MODEL.md) and [Attack Scenarios](threat-model/ATTACK_SCENARIOS.md)
+- [Real Filesystem Threat Extension](threat-model/REAL_FILESYSTEM_THREATS.md)
 - [Assets](threat-model/ASSETS.md), [Trust Boundaries](threat-model/TRUST_BOUNDARIES.md), [Attacker Models](threat-model/ATTACKER_MODELS.md), and [Out of Scope](threat-model/OUT_OF_SCOPE.md)
 - [Experiment Plan](experiments/EXPERIMENT_PLAN.md), [Schema](experiments/EXPERIMENT_SCHEMA.md), and [Metrics](experiments/METRICS.md)
 - [Baselines](experiments/BASELINES.md), [Ablations](experiments/ABLATIONS.md), and [Reproducibility](experiments/REPRODUCIBILITY.md)
 - [EXP-013 Results](experiments/EXP-013-RESULTS.md), [Synthesis](experiments/EXP-013-SYNTHESIS.md), [Counterfactual-Pair Audit](experiments/EXP-013-COUNTERFACTUAL-PAIR-AUDIT.md), [False-Negative Audit](experiments/EXP-013-FALSE-NEGATIVE-AUDIT.md), and [Label-Isolation Audit](experiments/EXP-013-LABEL-ISOLATION-AUDIT.md)
+- [EXP-014 Real Filesystem Mediation Protocol](experiments/EXP-014-real-filesystem-mediation.md)
 
 ## Strategy
 
 - [OWASP GenAI and Agentic Coverage Plan](strategy/OWASP_GENAI_AGENTIC_COVERAGE_PLAN.md)
+- [Build vs Claim Matrix](strategy/BUILD_VS_CLAIM_MATRIX.md)
 
 ## Architecture decisions
+
+- [ADR-006 Real Filesystem Mediation Boundary](decisions/ADR-006-real-filesystem-mediation-boundary.md)
 
 See [`docs/decisions/`](decisions/) for numbered ADRs. Architecture changes require a new record rather than silent edits to prior decisions.
 
