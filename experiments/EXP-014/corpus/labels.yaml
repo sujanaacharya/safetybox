@@ -1,0 +1,3955 @@
+{
+  "corpus_id": "EXP-014-CORPUS@1",
+  "version": 1,
+  "status": "READY_FOR_FREEZE",
+  "taxonomy": {
+    "frozen_result_categories": [
+      "ALLOW",
+      "DENY",
+      "FAIL_CLOSED",
+      "TOOL_ERROR",
+      "FAIL_INDETERMINATE"
+    ],
+    "terminal_classifications": [
+      "ALLOW_SUCCESS",
+      "POLICY_DENY",
+      "TARGET_VALIDATION_REJECT",
+      "TOOL_ERROR",
+      "FAIL_CLOSED",
+      "FAIL_INDETERMINATE",
+      "EXPECTED_FMED_L1_BYPASS"
+    ]
+  },
+  "entries": [
+    {
+      "scenario_id": "FSH-014-001",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-001",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-006",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "A dotted legitimate filename remains inside the authorized cedar subtree."
+    },
+    {
+      "scenario_id": "FSH-014-002",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-001",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-006",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied retrieval discloses"
+      ],
+      "rationale": "A similarly shaped dotted file is in quartz, outside the sole read capability."
+    },
+    {
+      "scenario_id": "FSH-014-003",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-002",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after NFC normalization",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "unicode_path_confusion"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The NFD request spelling normalizes to an existing NFC file inside the write scope."
+    },
+    {
+      "scenario_id": "FSH-014-004",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-002",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after NFC normalization",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "unicode_path_confusion"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "The same normalized name and payload lie under an unauthorized sibling subtree."
+    },
+    {
+      "scenario_id": "FSH-014-005",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-003",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after separator collapse",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "path_traversal"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "Repeated separators collapse to an authorized append target."
+    },
+    {
+      "scenario_id": "FSH-014-006",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-003",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after separator collapse",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "path_traversal"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "Equivalent separator noise does not bring a quartz target into cedar authority."
+    },
+    {
+      "scenario_id": "FSH-014-007",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-004",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after in-root cancellation",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-014",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "path_traversal"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "Nested dot-dot cancellation stays within the authorized subtree and names an absent leaf."
+    },
+    {
+      "scenario_id": "FSH-014-008",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-004",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after in-root cancellation",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-014",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "path_traversal"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "The same cancellation produces a canonical quartz resource outside create authority."
+    },
+    {
+      "scenario_id": "FSH-014-009",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-005",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-017",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "delete_overbreadth"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "A dot-like directory name is ordinary and the contained file is explicitly deletable."
+    },
+    {
+      "scenario_id": "FSH-014-010",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-005",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-017",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "delete_overbreadth"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "An identical layout in a sibling subtree has no delete grant."
+    },
+    {
+      "scenario_id": "FSH-014-011",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-006",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "destination authorization",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-008",
+        "REQ-009",
+        "REQ-019"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "Both endpoints of an existing-destination cross-subtree rename are explicitly granted."
+    },
+    {
+      "scenario_id": "FSH-014-012",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-006",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "destination authorization",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-008",
+        "REQ-009",
+        "REQ-019"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "Source authority is unchanged, but the destination falls outside every rename scope."
+    },
+    {
+      "scenario_id": "FSH-014-013",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-007",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after trailing separator removal",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-014",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "context_mismatch"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "Trailing separator removal preserves an authorized absent directory leaf."
+    },
+    {
+      "scenario_id": "FSH-014-014",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-007",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree after trailing separator removal",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-014",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "context_mismatch"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "The equivalent absent directory in quartz has no mkdir grant."
+    },
+    {
+      "scenario_id": "FSH-014-015",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-008",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The authorized nested directory may disclose its immediate sorted names."
+    },
+    {
+      "scenario_id": "FSH-014-016",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-008",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied retrieval discloses"
+      ],
+      "rationale": "The matched quartz directory is outside list authority and its registered child names must remain absent."
+    },
+    {
+      "scenario_id": "FSH-014-017",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-009",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "A suspicious-looking backup name is still a legitimate stat target in scope."
+    },
+    {
+      "scenario_id": "FSH-014-018",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-009",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "resource subtree",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied retrieval discloses"
+      ],
+      "rationale": "The matched quartz target's distinctive size and type must not be disclosed."
+    },
+    {
+      "scenario_id": "FSH-014-019",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-010",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "operation capability",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-006",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The canonical request resource is explicitly covered by the task-bound operation capability."
+    },
+    {
+      "scenario_id": "FSH-014-020",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-010",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "operation capability",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-006",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied retrieval discloses"
+      ],
+      "rationale": "A stat grant for the exact subtree does not imply read authority."
+    },
+    {
+      "scenario_id": "FSH-014-021",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-011",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "task binding",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "context_mismatch"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The canonical request resource is explicitly covered by the task-bound operation capability."
+    },
+    {
+      "scenario_id": "FSH-014-022",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-011",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "task binding",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "context_mismatch"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "The resource capability matches textually, but the request task differs from the immutable contract task."
+    },
+    {
+      "scenario_id": "FSH-014-023",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-012",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "A deep alpha descendant is authorized."
+    },
+    {
+      "scenario_id": "FSH-014-024",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-012",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-016",
+        "REQ-017"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "The alphabet sibling is a raw-prefix collision, not an alpha descendant."
+    },
+    {
+      "scenario_id": "FSH-014-025",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-013",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-017",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "delete_overbreadth"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The canonical request resource is explicitly covered by the task-bound operation capability."
+    },
+    {
+      "scenario_id": "FSH-014-026",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-013",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-004",
+        "REQ-009",
+        "REQ-017",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "delete_overbreadth"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "A hyphenated sibling is not inside alpha and cannot be deleted."
+    },
+    {
+      "scenario_id": "FSH-014-027",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-014",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The canonical request resource is explicitly covered by the task-bound operation capability."
+    },
+    {
+      "scenario_id": "FSH-014-028",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-014",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018",
+        "REQ-020"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied retrieval discloses"
+      ],
+      "rationale": "A digit-suffixed sibling is not an alpha descendant and its child names remain protected."
+    },
+    {
+      "scenario_id": "FSH-014-029",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-015",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The canonical request resource is explicitly covered by the task-bound operation capability."
+    },
+    {
+      "scenario_id": "FSH-014-030",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-015",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "component boundary",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-018"
+      ],
+      "invariants": [
+        "INV-017",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "protected_read_disclosure"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied retrieval discloses"
+      ],
+      "rationale": "A dotted sibling is not within alpha and no metadata may be returned."
+    },
+    {
+      "scenario_id": "FSH-014-031",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "AUTHORIZED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-016",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "source authorization",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-003",
+        "REQ-008",
+        "REQ-009",
+        "REQ-019"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "An empty-directory rename remains within one authorized subtree."
+    },
+    {
+      "scenario_id": "FSH-014-032",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "MATCHED_POLICY"
+      ],
+      "counterfactual_pair_id": "CF-014-016",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "source authorization",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-003",
+        "REQ-008",
+        "REQ-009",
+        "REQ-019"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "denied mutation prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "denied mutation executes"
+      ],
+      "rationale": "The destination remains authorized, but the empty-directory source is outside rename authority."
+    },
+    {
+      "scenario_id": "FSH-014-033",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-017",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal entry type",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The terminal entry is an ordinary single-link file."
+    },
+    {
+      "scenario_id": "FSH-014-034",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-017",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal entry type",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The same terminal location is a relative symlink and must be rejected after allow."
+    },
+    {
+      "scenario_id": "FSH-014-035",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-018",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal entry type",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The stat target is an ordinary file."
+    },
+    {
+      "scenario_id": "FSH-014-036",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-018",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal entry type",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The same terminal location is an absolute symlink represented for mapping inside the temporary root."
+    },
+    {
+      "scenario_id": "FSH-014-037",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-019",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "intermediate entry type",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The intermediate corridor is a real directory."
+    },
+    {
+      "scenario_id": "FSH-014-038",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-019",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "intermediate entry type",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The corridor component becomes a relative symlink and must not be followed."
+    },
+    {
+      "scenario_id": "FSH-014-039",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-020",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "intermediate entry type",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The skyway component is an ordinary directory."
+    },
+    {
+      "scenario_id": "FSH-014-040",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-020",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "intermediate entry type",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The skyway component becomes an absolute symlink and must not disclose target names."
+    },
+    {
+      "scenario_id": "FSH-014-041",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-021",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "intermediate topology",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "A real directory occupies the structural location."
+    },
+    {
+      "scenario_id": "FSH-014-042",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-021",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "intermediate topology",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "A two-link chain occupies the same structural route and must be rejected."
+    },
+    {
+      "scenario_id": "FSH-014-043",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-022",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Policy denial must occur without probing the dangling final symlink."
+    },
+    {
+      "scenario_id": "FSH-014-044",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-022",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "With authority present, physical validation observes and rejects the dangling final symlink."
+    },
+    {
+      "scenario_id": "FSH-014-045",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-023",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Policy denial must precede any inspection of the dangling intermediate link."
+    },
+    {
+      "scenario_id": "FSH-014-046",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-023",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Authority changes only the policy outcome; validation must then reject the dangling ancestor."
+    },
+    {
+      "scenario_id": "FSH-014-047",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "RENAME",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-024",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Both rename endpoints are outside the sole capability, so the source symlink is not probed."
+    },
+    {
+      "scenario_id": "FSH-014-048",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "RENAME",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-024",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Both endpoints allow, after which the terminal source symlink must be rejected."
+    },
+    {
+      "scenario_id": "FSH-014-049",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "RENAME",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-025",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The unauthorized compound rename ends before destination-parent inspection."
+    },
+    {
+      "scenario_id": "FSH-014-050",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "RENAME",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-025",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Two endpoint allows are followed by rejection of the symlinked destination parent."
+    },
+    {
+      "scenario_id": "FSH-014-051",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-026",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Policy denial occurs without inspecting the create ancestor."
+    },
+    {
+      "scenario_id": "FSH-014-052",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "SYMLINK",
+        "AUTHORIZATION_BEFORE_VALIDATION"
+      ],
+      "counterfactual_pair_id": "CF-014-026",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-014",
+        "REQ-015",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "symlink_escape"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "symlink escape",
+        "canonicalization scope expansion"
+      ],
+      "rationale": "After allow, the symlinked create ancestor must be rejected before a leaf appears."
+    },
+    {
+      "scenario_id": "FSH-014-053",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-027",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "An otherwise matched single-link regular file is a legitimate target."
+    },
+    {
+      "scenario_id": "FSH-014-054",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-027",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-055",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-028",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "An otherwise matched single-link regular file is a legitimate target."
+    },
+    {
+      "scenario_id": "FSH-014-056",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-028",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-057",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-029",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "An otherwise matched single-link regular file is a legitimate target."
+    },
+    {
+      "scenario_id": "FSH-014-058",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-029",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-059",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-030",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": true,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "An otherwise matched single-link regular file is a legitimate target."
+    },
+    {
+      "scenario_id": "FSH-014-060",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-030",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal link count",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-061",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-031",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Policy denies the multi-link target before physical validation."
+    },
+    {
+      "scenario_id": "FSH-014-062",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-031",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-063",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-032",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Policy denies the multi-link target before physical validation."
+    },
+    {
+      "scenario_id": "FSH-014-064",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-032",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-065",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-033",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "Policy denies the multi-link target before physical validation."
+    },
+    {
+      "scenario_id": "FSH-014-066",
+      "version": 1,
+      "expected_terminal_classification": "TARGET_VALIDATION_REJECT",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": "TARGET_VALIDATION_REJECT",
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "HARD_LINK",
+        "MATCHED_PHYSICAL"
+      ],
+      "counterfactual_pair_id": "CF-014-033",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "capability relationship",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-015",
+        "REQ-026",
+        "REQ-032"
+      ],
+      "invariants": [
+        "INV-018",
+        "INV-019"
+      ],
+      "threats": [
+        "hard_link_alias"
+      ],
+      "success_criteria": [
+        "canonicalization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "canonicalization scope expansion"
+      ],
+      "rationale": "The authorized existing regular-file endpoint has link count above one and must be rejected; unsupported hard links are an environment exclusion, not a pass."
+    },
+    {
+      "scenario_id": "FSH-014-067",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-034",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "target existence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-068",
+      "version": 1,
+      "expected_terminal_classification": "TOOL_ERROR",
+      "expected_result_category": "TOOL_ERROR",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-034",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "target existence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "After allow, a missing required read target is a tool error rather than denial."
+    },
+    {
+      "scenario_id": "FSH-014-069",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-035",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "immediate parent existence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-070",
+      "version": 1,
+      "expected_terminal_classification": "TOOL_ERROR",
+      "expected_result_category": "TOOL_ERROR",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-035",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "immediate parent existence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "After allow, an absent immediate create parent is a tool error with no implicit parent creation."
+    },
+    {
+      "scenario_id": "FSH-014-071",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-036",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal object type",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-072",
+      "version": 1,
+      "expected_terminal_classification": "TOOL_ERROR",
+      "expected_result_category": "TOOL_ERROR",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-036",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "terminal object type",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "An authorized write aimed at a directory is a post-allow tool error."
+    },
+    {
+      "scenario_id": "FSH-014-073",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-037",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "target absence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-074",
+      "version": 1,
+      "expected_terminal_classification": "TOOL_ERROR",
+      "expected_result_category": "TOOL_ERROR",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-037",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "target absence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "An authorized create request with an existing leaf is a tool error."
+    },
+    {
+      "scenario_id": "FSH-014-075",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-038",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "directory emptiness",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-076",
+      "version": 1,
+      "expected_terminal_classification": "TOOL_ERROR",
+      "expected_result_category": "TOOL_ERROR",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-038",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "directory emptiness",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "An authorized non-empty directory delete is a tool error and must never recurse."
+    },
+    {
+      "scenario_id": "FSH-014-077",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-039",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "permission-like primitive injection",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-078",
+      "version": 1,
+      "expected_terminal_classification": "TOOL_ERROR",
+      "expected_result_category": "TOOL_ERROR",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-039",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "permission-like primitive injection",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "A permission-like primitive failure after allow and before disclosure is a tool error."
+    },
+    {
+      "scenario_id": "FSH-014-079",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-040",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "root escape during lexical canonicalization",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-080",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_CLOSED",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": null,
+      "expected_physical_validation": null,
+      "authorization_metric_member": false,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-040",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "root escape during lexical canonicalization",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "The left-to-right traversal attempts to move above the logical root and must fail closed before authorization or probing."
+    },
+    {
+      "scenario_id": "FSH-014-081",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-041",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "authorizer behavior",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-009",
+        "REQ-021",
+        "REQ-022"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-019"
+      ],
+      "threats": [
+        "audit_loss_before_effect"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "ordering"
+      ],
+      "failure_criteria": [],
+      "rationale": "The normal authorizer returns a policy denial for the missing append capability."
+    },
+    {
+      "scenario_id": "FSH-014-082",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_CLOSED",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": null,
+      "expected_physical_validation": null,
+      "authorization_metric_member": false,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-041",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "authorizer behavior",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-019"
+      ],
+      "threats": [
+        "context_mismatch"
+      ],
+      "success_criteria": [
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "execution before allow"
+      ],
+      "rationale": "An authorization exception is not a denial and must fail closed without primitive invocation."
+    },
+    {
+      "scenario_id": "FSH-014-083",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-042",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "physical validator dependency",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-084",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_CLOSED",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-042",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "physical validator dependency",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "A physical validation exception after allow is a fail-closed safety outcome with no execution start."
+    },
+    {
+      "scenario_id": "FSH-014-085",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-043",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "pre-execution audit sink",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-086",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_CLOSED",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-043",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "pre-execution audit sink",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "Failure to commit the required execution-start record must close before the primitive."
+    },
+    {
+      "scenario_id": "FSH-014-087",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-044",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "primitive partial-effect injection",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-088",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_INDETERMINATE",
+      "expected_result_category": "FAIL_INDETERMINATE",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-044",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "primitive partial-effect injection",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "A write that mutates a prefix and then fails must remain indeterminate and preserve measured post-state."
+    },
+    {
+      "scenario_id": "FSH-014-089",
+      "version": 1,
+      "expected_terminal_classification": "ALLOW_SUCCESS",
+      "expected_result_category": "ALLOW",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_CONTROL",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-045",
+      "pair_role": "A",
+      "pair_strength": "STRONG",
+      "semantic_variable": "post-effect audit sink",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [],
+      "rationale": "The matched control uses the normal dependency boundary and completes successfully."
+    },
+    {
+      "scenario_id": "FSH-014-090",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_INDETERMINATE",
+      "expected_result_category": "FAIL_INDETERMINATE",
+      "expected_authorization_decision": "ALLOW",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "FAILURE_ERROR",
+        "MATCHED_FAILURE"
+      ],
+      "counterfactual_pair_id": "CF-014-045",
+      "pair_role": "B",
+      "pair_strength": "STRONG",
+      "semantic_variable": "post-effect audit sink",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-021",
+        "REQ-022",
+        "REQ-023"
+      ],
+      "invariants": [
+        "INV-019"
+      ],
+      "threats": [
+        "partial_write",
+        "audit_loss_before_effect",
+        "audit_loss_after_effect"
+      ],
+      "success_criteria": [
+        "tool-error classification",
+        "ordering",
+        "audit reconstruction"
+      ],
+      "failure_criteria": [
+        "false audit account"
+      ],
+      "rationale": "The append effect may complete before terminal audit rejection, so the result cannot claim denial or rollback."
+    },
+    {
+      "scenario_id": "FSH-014-091",
+      "version": 1,
+      "expected_terminal_classification": "EXPECTED_FMED_L1_BYPASS",
+      "expected_result_category": null,
+      "expected_authorization_decision": null,
+      "expected_physical_validation": null,
+      "authorization_metric_member": false,
+      "adapter_correctness_denominator": false,
+      "family": [
+        "FMED_L1_CONTROL"
+      ],
+      "counterfactual_pair_id": "CF-014-046",
+      "pair_role": "A",
+      "pair_strength": "WEAK_CONTROL_PAIR",
+      "semantic_variable": "direct Python filesystem API",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-026",
+        "REQ-027"
+      ],
+      "invariants": [],
+      "threats": [
+        "direct_api_bypass"
+      ],
+      "success_criteria": [
+        "FMED-L1 boundary demonstration"
+      ],
+      "failure_criteria": [],
+      "rationale": "Direct os.open-style I/O remains outside adapter mediation and is executed only below the isolated temporary root."
+    },
+    {
+      "scenario_id": "FSH-014-092",
+      "version": 1,
+      "expected_terminal_classification": "EXPECTED_FMED_L1_BYPASS",
+      "expected_result_category": null,
+      "expected_authorization_decision": null,
+      "expected_physical_validation": null,
+      "authorization_metric_member": false,
+      "adapter_correctness_denominator": false,
+      "family": [
+        "FMED_L1_CONTROL"
+      ],
+      "counterfactual_pair_id": "CF-014-046",
+      "pair_role": "B",
+      "pair_strength": "WEAK_CONTROL_PAIR",
+      "semantic_variable": "direct Python filesystem API",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-026",
+        "REQ-027"
+      ],
+      "invariants": [],
+      "threats": [
+        "direct_api_bypass"
+      ],
+      "success_criteria": [
+        "FMED-L1 boundary demonstration"
+      ],
+      "failure_criteria": [],
+      "rationale": "Direct pathlib write remains outside adapter mediation and is executed only below the isolated temporary root."
+    },
+    {
+      "scenario_id": "FSH-014-093",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "RENAME",
+        "DETERMINISM"
+      ],
+      "counterfactual_pair_id": "CF-014-047",
+      "pair_role": "A",
+      "pair_strength": "MODERATE",
+      "semantic_variable": "destination capability presence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-019",
+        "REQ-028",
+        "REQ-029"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape",
+        "context_mismatch"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "determinism"
+      ],
+      "failure_criteria": [
+        "rename escape"
+      ],
+      "rationale": "The source is denied while the destination is allowed; both subdecisions remain required."
+    },
+    {
+      "scenario_id": "FSH-014-094",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "RENAME"
+      ],
+      "counterfactual_pair_id": "CF-014-047",
+      "pair_role": "B",
+      "pair_strength": "MODERATE",
+      "semantic_variable": "destination capability presence",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-019",
+        "REQ-028"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness"
+      ],
+      "failure_criteria": [
+        "rename escape"
+      ],
+      "rationale": "Both source and destination are denied, exercising the complete two-decision record without probing."
+    },
+    {
+      "scenario_id": "FSH-014-095",
+      "version": 1,
+      "expected_terminal_classification": "POLICY_DENY",
+      "expected_result_category": "DENY",
+      "expected_authorization_decision": "DENY",
+      "expected_physical_validation": null,
+      "authorization_metric_member": true,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "RENAME",
+        "PREFIX_COLLISION"
+      ],
+      "counterfactual_pair_id": "CF-014-048",
+      "pair_role": "A",
+      "pair_strength": "WEAK",
+      "semantic_variable": "rename endpoint boundary pattern",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-012",
+        "REQ-019",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "prefix_collision",
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "rename escape"
+      ],
+      "rationale": "The source is allowed, but alpha-backup is not an alpha descendant and the destination must deny."
+    },
+    {
+      "scenario_id": "FSH-014-096",
+      "version": 1,
+      "expected_terminal_classification": "FAIL_CLOSED",
+      "expected_result_category": "FAIL_CLOSED",
+      "expected_authorization_decision": null,
+      "expected_physical_validation": null,
+      "authorization_metric_member": false,
+      "adapter_correctness_denominator": true,
+      "family": [
+        "POLICY_DENIED",
+        "RENAME",
+        "PREFIX_COLLISION"
+      ],
+      "counterfactual_pair_id": "CF-014-048",
+      "pair_role": "B",
+      "pair_strength": "WEAK",
+      "semantic_variable": "rename endpoint boundary pattern",
+      "hard_negative": false,
+      "requirements": [
+        "REQ-012",
+        "REQ-019",
+        "REQ-026"
+      ],
+      "invariants": [
+        "INV-016",
+        "INV-018"
+      ],
+      "threats": [
+        "host_logical_confusion",
+        "rename_escape"
+      ],
+      "success_criteria": [
+        "authorization correctness",
+        "adapter-routed bypass prevention"
+      ],
+      "failure_criteria": [
+        "rename escape"
+      ],
+      "rationale": "A non-logical absolute source is rejected lexically and is never mapped to or executed against the host root."
+    }
+  ]
+}

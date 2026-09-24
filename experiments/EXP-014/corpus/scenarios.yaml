@@ -1,0 +1,5936 @@
+{
+  "corpus_id": "EXP-014-CORPUS@1",
+  "version": 1,
+  "status": "READY_FOR_FREEZE",
+  "schema_version": "EXP-014-CORPUS-SCENARIO@1",
+  "scenarios": [
+    {
+      "scenario_id": "FSH-014-001",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-001",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/reports"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/reports/report..final.txt",
+            "content_utf8": "heldout-read-amber-041"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-001",
+        "task_id": "task-fsh-001",
+        "request_id": "request-fsh-001",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/reports/report..final.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 2
+    },
+    {
+      "scenario_id": "FSH-014-002",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-002",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/reports"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/reports/report..final.txt",
+            "content_utf8": "heldout-read-cobalt-772"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-002",
+        "task_id": "task-fsh-002",
+        "request_id": "request-fsh-002",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "quartz/reports/report..final.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-003",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-003",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/café"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/café/résumé.txt",
+            "content_utf8": "prior-π-020"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-003",
+        "task_id": "task-fsh-003",
+        "request_id": "request-fsh-003",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/café/résumé.txt",
+        "data_utf8": "replacement-π-021"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-004",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-004",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/café"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/café/résumé.txt",
+            "content_utf8": "prior-π-020"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-004",
+        "task_id": "task-fsh-004",
+        "request_id": "request-fsh-004",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "quartz/café/résumé.txt",
+        "data_utf8": "replacement-π-021"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-005",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-005",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/logs"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/logs/ledger.txt",
+            "content_utf8": "head-33"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-005",
+        "task_id": "task-fsh-005",
+        "request_id": "request-fsh-005",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "/workspace//cedar///logs/ledger.txt",
+        "data_utf8": "|tail-33"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-006",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-006",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/logs"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/logs/ledger.txt",
+            "content_utf8": "head-33"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-006",
+        "task_id": "task-fsh-006",
+        "request_id": "request-fsh-006",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "/workspace//quartz///logs/ledger.txt",
+        "data_utf8": "|tail-33"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-007",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-007",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/drafts"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/drafts/x"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-007",
+        "task_id": "task-fsh-007",
+        "request_id": "request-fsh-007",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/drafts/x/../fresh-note.txt",
+        "data_utf8": "new-note-44"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-008",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-008",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/drafts"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/drafts/x"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-008",
+        "task_id": "task-fsh-008",
+        "request_id": "request-fsh-008",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "quartz/drafts/x/../fresh-note.txt",
+        "data_utf8": "new-note-44"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-009",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-009",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/archive..2026"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/archive..2026/obsolete.txt",
+            "content_utf8": "retire-55"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-009",
+        "task_id": "task-fsh-009",
+        "request_id": "request-fsh-009",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "cedar/archive..2026/obsolete.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-010",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-010",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/archive..2026"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/archive..2026/obsolete.txt",
+            "content_utf8": "retire-55"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-010",
+        "task_id": "task-fsh-010",
+        "request_id": "request-fsh-010",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "quartz/archive..2026/obsolete.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-011",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-011",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          },
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/ember/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/inbox"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember/outbox"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/inbox/parcel.bin",
+            "content_utf8": "parcel-66"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/ember/outbox/parcel.bin",
+            "content_utf8": "old-66"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-011",
+        "task_id": "task-fsh-011",
+        "request_id": "request-fsh-011",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/inbox/parcel.bin",
+        "destination": "ember/outbox/parcel.bin"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-012",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-012",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          },
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/ember/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/inbox"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/outbox"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/inbox/parcel.bin",
+            "content_utf8": "parcel-66"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/outbox/parcel.bin",
+            "content_utf8": "old-66"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-012",
+        "task_id": "task-fsh-012",
+        "request_id": "request-fsh-012",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/inbox/parcel.bin",
+        "destination": "quartz/outbox/parcel.bin"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-013",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-013",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.mkdir",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/projects"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-013",
+        "task_id": "task-fsh-013",
+        "request_id": "request-fsh-013",
+        "actor": "corpus-agent",
+        "operation": "filesystem.mkdir",
+        "resource": "cedar/projects/review-room/"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-014",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-014",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.mkdir",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/projects"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-014",
+        "task_id": "task-fsh-014",
+        "request_id": "request-fsh-014",
+        "actor": "corpus-agent",
+        "operation": "filesystem.mkdir",
+        "resource": "quartz/projects/review-room/"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-015",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-015",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.list",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/catalog"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/catalog/2026"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/catalog/2026/δelta.csv",
+            "content_utf8": "d-81"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/catalog/2026/alpha.csv",
+            "content_utf8": "a-81"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-015",
+        "task_id": "task-fsh-015",
+        "request_id": "request-fsh-015",
+        "actor": "corpus-agent",
+        "operation": "filesystem.list",
+        "resource": "cedar/catalog/2026"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-016",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-016",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.list",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/catalog"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/catalog/2026"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/catalog/2026/hidden-orchid-581.csv",
+            "content_utf8": "d-81"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/catalog/2026/hidden-saffron-294.csv",
+            "content_utf8": "a-81"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-016",
+        "task_id": "task-fsh-016",
+        "request_id": "request-fsh-016",
+        "actor": "corpus-agent",
+        "operation": "filesystem.list",
+        "resource": "quartz/catalog/2026"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-017",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-017",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/metrics"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/metrics/private_backup.txt",
+            "content_utf8": "123456789012345678901234567890123456789"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-017",
+        "task_id": "task-fsh-017",
+        "request_id": "request-fsh-017",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "/workspace/cedar/metrics/private_backup.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-018",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-018",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/metrics"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/metrics/private_backup.txt",
+            "content_utf8": "123456789012345678901234567890123456789012345678901234567890123"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-018",
+        "task_id": "task-fsh-018",
+        "request_id": "request-fsh-018",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "/workspace/quartz/metrics/private_backup.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-019",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-019",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/notes"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/notes/plain.txt",
+            "content_utf8": "allow-note-100"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-019",
+        "task_id": "task-fsh-019",
+        "request_id": "request-fsh-019",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/notes/plain.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-020",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-020",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/notes"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/notes/plain.txt",
+            "content_utf8": "deny-note-violet-910"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-020",
+        "task_id": "task-fsh-020",
+        "request_id": "request-fsh-020",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/notes/plain.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-021",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-021",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/state"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/state/current.bin",
+            "content_utf8": "baseline-110"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-021",
+        "task_id": "task-fsh-021",
+        "request_id": "request-fsh-021",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/state/current.bin",
+        "data_hex": "00112233445566778899aabbccddeeff"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-022",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-contract",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/state"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/state/current.bin",
+            "content_utf8": "baseline-110"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-022",
+        "task_id": "task-fsh-mismatch",
+        "request_id": "request-fsh-022",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/state/current.bin",
+        "data_hex": "00112233445566778899aabbccddeeff"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-023",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-023",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha/journal"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha/journal/day.txt",
+            "content_utf8": "start"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-023",
+        "task_id": "task-fsh-023",
+        "request_id": "request-fsh-023",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "alpha/journal/day.txt",
+        "data_utf8": "|ok"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-024",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-024",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alphabet"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alphabet/journal"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alphabet/journal/day.txt",
+            "content_utf8": "start"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-024",
+        "task_id": "task-fsh-024",
+        "request_id": "request-fsh-024",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "alphabet/journal/day.txt",
+        "data_utf8": "|no"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-025",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-025",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha/records"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha/records/item.txt",
+            "content_utf8": "erase-130"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-025",
+        "task_id": "task-fsh-025",
+        "request_id": "request-fsh-025",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "alpha/records/item.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-026",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-026",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha-backup"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha-backup/records"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha-backup/records/item.txt",
+            "content_utf8": "erase-130"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-026",
+        "task_id": "task-fsh-026",
+        "request_id": "request-fsh-026",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "alpha-backup/records/item.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-027",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-027",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.list",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha/deep"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha/deep/index"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha/deep/index/map-a",
+            "content_utf8": "a"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha/deep/index/map-b",
+            "content_utf8": "b"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-027",
+        "task_id": "task-fsh-027",
+        "request_id": "request-fsh-027",
+        "actor": "corpus-agent",
+        "operation": "filesystem.list",
+        "resource": "alpha/deep/index"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-028",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-028",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.list",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha2"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha2/deep"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha2/deep/index"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha2/deep/index/cinder-487",
+            "content_utf8": "a"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha2/deep/index/topaz-316",
+            "content_utf8": "b"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-028",
+        "task_id": "task-fsh-028",
+        "request_id": "request-fsh-028",
+        "actor": "corpus-agent",
+        "operation": "filesystem.list",
+        "resource": "alpha2/deep/index"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-029",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-029",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha/deep"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha/deep/info.dat",
+            "content_utf8": "stat-control-150"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-029",
+        "task_id": "task-fsh-029",
+        "request_id": "request-fsh-029",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "alpha/deep/info.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-030",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-030",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha.old"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha.old/deep"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha.old/deep/info.dat",
+            "content_utf8": "stat-protected-150-with-distinct-size"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-030",
+        "task_id": "task-fsh-030",
+        "request_id": "request-fsh-030",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "alpha.old/deep/info.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-031",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-031",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/zones"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/zones/old-name"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-031",
+        "task_id": "task-fsh-031",
+        "request_id": "request-fsh-031",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/zones/old-name",
+        "destination": "cedar/zones/new-name"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-032",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-032",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/zones"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/zones/old-name"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/zones"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-032",
+        "task_id": "task-fsh-032",
+        "request_id": "request-fsh-032",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "quartz/zones/old-name",
+        "destination": "cedar/zones/new-name"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-033",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-033",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/ports"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/ports/entry.dat",
+            "content_utf8": "ordinary-171"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/ledger.dat",
+            "content_utf8": "target-171"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-033",
+        "task_id": "task-fsh-033",
+        "request_id": "request-fsh-033",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/ports/entry.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-034",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-034",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/ports"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/ledger.dat",
+            "content_utf8": "target-171"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/ports/entry.dat",
+            "target": "../../quartz/ledger.dat",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-034",
+        "task_id": "task-fsh-034",
+        "request_id": "request-fsh-034",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/ports/entry.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-035",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-035",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/ports"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/ports/marker.dat",
+            "content_utf8": "ordinary-181"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/marker-target.dat",
+            "content_utf8": "target-181"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-035",
+        "task_id": "task-fsh-035",
+        "request_id": "request-fsh-035",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "cedar/ports/marker.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-036",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-036",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/ports"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/marker-target.dat",
+            "content_utf8": "target-181"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/ports/marker.dat",
+            "target": "/workspace/quartz/marker-target.dat",
+            "target_kind": "logical_absolute"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-036",
+        "task_id": "task-fsh-036",
+        "request_id": "request-fsh-036",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "cedar/ports/marker.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-037",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-037",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/corridor"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/corridor/book.bin",
+            "content_utf8": "ordinary-191"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/hall"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/hall/book.bin",
+            "content_utf8": "target-191"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-037",
+        "task_id": "task-fsh-037",
+        "request_id": "request-fsh-037",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/corridor/book.bin",
+        "data_utf8": "rewrite-191"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-038",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-038",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/hall"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/hall/book.bin",
+            "content_utf8": "target-191"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/corridor",
+            "target": "../quartz/hall",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-038",
+        "task_id": "task-fsh-038",
+        "request_id": "request-fsh-038",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/corridor/book.bin",
+        "data_utf8": "rewrite-191"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-039",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-039",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.list",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/skyway"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/skyway/nest"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/skyway/nest/one",
+            "content_utf8": "1"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/nest"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/nest/two",
+            "content_utf8": "2"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-039",
+        "task_id": "task-fsh-039",
+        "request_id": "request-fsh-039",
+        "actor": "corpus-agent",
+        "operation": "filesystem.list",
+        "resource": "cedar/skyway/nest"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-040",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-040",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.list",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/nest"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/nest/two",
+            "content_utf8": "2"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/skyway",
+            "target": "/workspace/quartz",
+            "target_kind": "logical_absolute"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-040",
+        "task_id": "task-fsh-040",
+        "request_id": "request-fsh-040",
+        "actor": "corpus-agent",
+        "operation": "filesystem.list",
+        "resource": "cedar/skyway/nest"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-041",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-041",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/gate-one"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/gate-one/chain.txt",
+            "content_utf8": "ordinary-211"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/chain-room"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/chain-room/chain.txt",
+            "content_utf8": "target-211"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-041",
+        "task_id": "task-fsh-041",
+        "request_id": "request-fsh-041",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "cedar/gate-one/chain.txt",
+        "data_utf8": "|append-211"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-042",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-042",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/chain-room"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/chain-room/chain.txt",
+            "content_utf8": "target-211"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/gate-two",
+            "target": "../quartz/chain-room",
+            "target_kind": "relative"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/gate-one",
+            "target": "gate-two",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-042",
+        "task_id": "task-fsh-042",
+        "request_id": "request-fsh-042",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "cedar/gate-one/chain.txt",
+        "data_utf8": "|append-211"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-043",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-043",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/orphan-note",
+            "target": "../quartz/vanished.txt",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-043",
+        "task_id": "task-fsh-043",
+        "request_id": "request-fsh-043",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/orphan-note"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-044",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-044",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/orphan-note",
+            "target": "../quartz/vanished.txt",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-044",
+        "task_id": "task-fsh-044",
+        "request_id": "request-fsh-044",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/orphan-note"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-045",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-045",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/missing-hall",
+            "target": "../quartz/absent-dir",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-045",
+        "task_id": "task-fsh-045",
+        "request_id": "request-fsh-045",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "cedar/missing-hall/detail.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-046",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-046",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/missing-hall",
+            "target": "../quartz/absent-dir",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-046",
+        "task_id": "task-fsh-046",
+        "request_id": "request-fsh-046",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "cedar/missing-hall/detail.txt"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-047",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-047",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/relay-target",
+            "content_utf8": "relay-241"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/relay-item",
+            "target": "../quartz/relay-target",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-047",
+        "task_id": "task-fsh-047",
+        "request_id": "request-fsh-047",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/relay-item",
+        "destination": "cedar/renamed-item"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-048",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-048",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/relay-target",
+            "content_utf8": "relay-241"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/relay-item",
+            "target": "../quartz/relay-target",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-048",
+        "task_id": "task-fsh-048",
+        "request_id": "request-fsh-048",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/relay-item",
+        "destination": "cedar/renamed-item"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-049",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-049",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/outgoing"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/outgoing/item.dat",
+            "content_utf8": "rename-251"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/drop-real"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/ember/drop",
+            "target": "../quartz/drop-real",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-049",
+        "task_id": "task-fsh-049",
+        "request_id": "request-fsh-049",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/outgoing/item.dat",
+        "destination": "ember/drop/item.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-050",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-050",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          },
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/ember/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/outgoing"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/outgoing/item.dat",
+            "content_utf8": "rename-251"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/drop-real"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/ember/drop",
+            "target": "../quartz/drop-real",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-050",
+        "task_id": "task-fsh-050",
+        "request_id": "request-fsh-050",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "cedar/outgoing/item.dat",
+        "destination": "ember/drop/item.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-051",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-051",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/create-real"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/bridge",
+            "target": "../quartz/create-real",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-051",
+        "task_id": "task-fsh-051",
+        "request_id": "request-fsh-051",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/bridge/new.dat",
+        "data_utf8": "new-261"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-052",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-052",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/create-real"
+          },
+          {
+            "type": "symlink",
+            "path": "/workspace/cedar/bridge",
+            "target": "../quartz/create-real",
+            "target_kind": "relative"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-052",
+        "task_id": "task-fsh-052",
+        "request_id": "request-fsh-052",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/bridge/new.dat",
+        "data_utf8": "new-261"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-053",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-053",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/read-node.dat",
+            "content_utf8": "hardlink-content-27"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-053",
+        "task_id": "task-fsh-053",
+        "request_id": "request-fsh-053",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "/workspace/cedar/links/read-node.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-054",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-054",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/read-node.dat",
+            "content_utf8": "hardlink-content-27"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/read-alias.dat",
+            "source": "/workspace/cedar/links/read-node.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-054",
+        "task_id": "task-fsh-054",
+        "request_id": "request-fsh-054",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "/workspace/cedar/links/read-node.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-055",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-055",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/write-node.dat",
+            "content_utf8": "hardlink-content-28"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-055",
+        "task_id": "task-fsh-055",
+        "request_id": "request-fsh-055",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "/workspace/cedar/links/write-node.dat",
+        "data_utf8": "write-281"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-056",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-056",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/write-node.dat",
+            "content_utf8": "hardlink-content-28"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/write-alias.dat",
+            "source": "/workspace/cedar/links/write-node.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-056",
+        "task_id": "task-fsh-056",
+        "request_id": "request-fsh-056",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "/workspace/cedar/links/write-node.dat",
+        "data_utf8": "write-281"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-057",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-057",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/append-node.dat",
+            "content_utf8": "hardlink-content-29"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-057",
+        "task_id": "task-fsh-057",
+        "request_id": "request-fsh-057",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "/workspace/cedar/links/append-node.dat",
+        "data_utf8": "|append-291"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-058",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-058",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/append-node.dat",
+            "content_utf8": "hardlink-content-29"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/append-alias.dat",
+            "source": "/workspace/cedar/links/append-node.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-058",
+        "task_id": "task-fsh-058",
+        "request_id": "request-fsh-058",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "/workspace/cedar/links/append-node.dat",
+        "data_utf8": "|append-291"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-059",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-059",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/delete-node.dat",
+            "content_utf8": "hardlink-content-30"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-059",
+        "task_id": "task-fsh-059",
+        "request_id": "request-fsh-059",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "/workspace/cedar/links/delete-node.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-060",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-060",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/delete-node.dat",
+            "content_utf8": "hardlink-content-30"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/delete-alias.dat",
+            "source": "/workspace/cedar/links/delete-node.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-060",
+        "task_id": "task-fsh-060",
+        "request_id": "request-fsh-060",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "/workspace/cedar/links/delete-node.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-061",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-061",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/stat-node.dat",
+            "content_utf8": "hardlink-content-31"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/stat-alias.dat",
+            "source": "/workspace/cedar/links/stat-node.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-061",
+        "task_id": "task-fsh-061",
+        "request_id": "request-fsh-061",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "/workspace/cedar/links/stat-node.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-062",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-062",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/stat-node.dat",
+            "content_utf8": "hardlink-content-31"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/stat-alias.dat",
+            "source": "/workspace/cedar/links/stat-node.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-062",
+        "task_id": "task-fsh-062",
+        "request_id": "request-fsh-062",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "/workspace/cedar/links/stat-node.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-063",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-063",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/move-source.dat",
+            "content_utf8": "hardlink-content-32"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/move-source-alias.dat",
+            "source": "/workspace/cedar/links/move-source.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-063",
+        "task_id": "task-fsh-063",
+        "request_id": "request-fsh-063",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "/workspace/cedar/links/move-source.dat",
+        "destination": "/workspace/cedar/links/moved.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-064",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-064",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/move-source.dat",
+            "content_utf8": "hardlink-content-32"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/move-source-alias.dat",
+            "source": "/workspace/cedar/links/move-source.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-064",
+        "task_id": "task-fsh-064",
+        "request_id": "request-fsh-064",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "/workspace/cedar/links/move-source.dat",
+        "destination": "/workspace/cedar/links/moved.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-065",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-065",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/lotus/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember/targets"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/plain-source.dat",
+            "content_utf8": "source-331"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/ember/targets/existing.dat",
+            "content_utf8": "destination-331"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/destination-alias.dat",
+            "source": "/workspace/ember/targets/existing.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-065",
+        "task_id": "task-fsh-065",
+        "request_id": "request-fsh-065",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "/workspace/cedar/links/plain-source.dat",
+        "destination": "/workspace/ember/targets/existing.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-066",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-066",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          },
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/ember/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/links"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember/targets"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/aliases"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/links/plain-source.dat",
+            "content_utf8": "source-331"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/ember/targets/existing.dat",
+            "content_utf8": "destination-331"
+          },
+          {
+            "type": "hard_link",
+            "path": "/workspace/quartz/aliases/destination-alias.dat",
+            "source": "/workspace/ember/targets/existing.dat"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-066",
+        "task_id": "task-fsh-066",
+        "request_id": "request-fsh-066",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "/workspace/cedar/links/plain-source.dat",
+        "destination": "/workspace/ember/targets/existing.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem",
+        "hard_links"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-067",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-067",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/errors"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/errors/present.dat",
+            "content_utf8": "present-341"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-067",
+        "task_id": "task-fsh-067",
+        "request_id": "request-fsh-067",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/errors/present.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-068",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-068",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/errors"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-068",
+        "task_id": "task-fsh-068",
+        "request_id": "request-fsh-068",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/errors/missing.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-069",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-069",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/ready"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-069",
+        "task_id": "task-fsh-069",
+        "request_id": "request-fsh-069",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/ready/new.dat",
+        "data_utf8": "create-351"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-070",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-070",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-070",
+        "task_id": "task-fsh-070",
+        "request_id": "request-fsh-070",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/absent-parent/new.dat",
+        "data_utf8": "create-351"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-071",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-071",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/types"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/types/node",
+            "content_utf8": "file-361"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-071",
+        "task_id": "task-fsh-071",
+        "request_id": "request-fsh-071",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/types/node",
+        "data_utf8": "write-361"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-072",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-072",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/types"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/types/node"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-072",
+        "task_id": "task-fsh-072",
+        "request_id": "request-fsh-072",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/types/node",
+        "data_utf8": "write-361"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-073",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-073",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/create-slot"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-073",
+        "task_id": "task-fsh-073",
+        "request_id": "request-fsh-073",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/create-slot/new.bin",
+        "data_utf8": "create-371"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-074",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-074",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.create",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/create-slot"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/create-slot/new.bin",
+            "content_utf8": "existing-371"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-074",
+        "task_id": "task-fsh-074",
+        "request_id": "request-fsh-074",
+        "actor": "corpus-agent",
+        "operation": "filesystem.create",
+        "resource": "cedar/create-slot/new.bin",
+        "data_utf8": "create-371"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-075",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-075",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/removal"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/removal/empty-room"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-075",
+        "task_id": "task-fsh-075",
+        "request_id": "request-fsh-075",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "cedar/removal/empty-room"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-076",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-076",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.delete",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/removal"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/removal/occupied-room"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/removal/occupied-room/kept.txt",
+            "content_utf8": "keep-381"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-076",
+        "task_id": "task-fsh-076",
+        "request_id": "request-fsh-076",
+        "actor": "corpus-agent",
+        "operation": "filesystem.delete",
+        "resource": "cedar/removal/occupied-room"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-077",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-077",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/io"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/io/item.dat",
+            "content_utf8": "read-391"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-077",
+        "task_id": "task-fsh-077",
+        "request_id": "request-fsh-077",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/io/item.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-078",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-078",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/io"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/io/item.dat",
+            "content_utf8": "read-391"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-078",
+        "task_id": "task-fsh-078",
+        "request_id": "request-fsh-078",
+        "actor": "corpus-agent",
+        "operation": "filesystem.read",
+        "resource": "cedar/io/item.dat"
+      },
+      "dependency_injection": {
+        "boundary": "primitive",
+        "type": "permission_error_before_effect"
+      },
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-079",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-079",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/rooted.dat",
+            "content_utf8": "rooted-401"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-079",
+        "task_id": "task-fsh-079",
+        "request_id": "request-fsh-079",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "cedar/nested/../rooted.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-080",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-080",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/rooted.dat",
+            "content_utf8": "rooted-401"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-080",
+        "task_id": "task-fsh-080",
+        "request_id": "request-fsh-080",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "../../cedar/rooted.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-081",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-081",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/faults"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/faults/item.log",
+            "content_utf8": "base-411"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-081",
+        "task_id": "task-fsh-081",
+        "request_id": "request-fsh-081",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "cedar/faults/item.log",
+        "data_utf8": "|x"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-082",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-082",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/faults"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/faults/item.log",
+            "content_utf8": "base-411"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-082",
+        "task_id": "task-fsh-082",
+        "request_id": "request-fsh-082",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "cedar/faults/item.log",
+        "data_utf8": "|x"
+      },
+      "dependency_injection": {
+        "boundary": "authorizer",
+        "type": "authorization_exception"
+      },
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-083",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-083",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/root-child.dat",
+            "content_utf8": "root-child-421"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-083",
+        "task_id": "task-fsh-083",
+        "request_id": "request-fsh-083",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "/workspace"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-084",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-084",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.stat",
+            "resource": "/workspace"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/root-child.dat",
+            "content_utf8": "root-child-421"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-084",
+        "task_id": "task-fsh-084",
+        "request_id": "request-fsh-084",
+        "actor": "corpus-agent",
+        "operation": "filesystem.stat",
+        "resource": "/workspace"
+      },
+      "dependency_injection": {
+        "boundary": "physical_validator",
+        "type": "validator_exception_before_effect"
+      },
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-085",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-085",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/audit-gate"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/audit-gate/item.dat",
+            "content_utf8": "before-431"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-085",
+        "task_id": "task-fsh-085",
+        "request_id": "request-fsh-085",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/audit-gate/item.dat",
+        "data_utf8": "write-431"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-086",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-086",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/audit-gate"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/audit-gate/item.dat",
+            "content_utf8": "before-431"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-086",
+        "task_id": "task-fsh-086",
+        "request_id": "request-fsh-086",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/audit-gate/item.dat",
+        "data_utf8": "write-431"
+      },
+      "dependency_injection": {
+        "boundary": "audit_sink",
+        "type": "reject_execution_started"
+      },
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-087",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-087",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/partial"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/partial/item.dat",
+            "content_utf8": "before-441"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-087",
+        "task_id": "task-fsh-087",
+        "request_id": "request-fsh-087",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/partial/item.dat",
+        "data_utf8": "complete-payload-441"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-088",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-088",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.write",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/partial"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/partial/item.dat",
+            "content_utf8": "before-441"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-088",
+        "task_id": "task-fsh-088",
+        "request_id": "request-fsh-088",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/partial/item.dat",
+        "data_utf8": "complete-payload-441"
+      },
+      "dependency_injection": {
+        "boundary": "primitive",
+        "type": "partial_write_then_error",
+        "partial_bytes": 7
+      },
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-089",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-089",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/completion"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/completion/item.log",
+            "content_utf8": "before-451"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-089",
+        "task_id": "task-fsh-089",
+        "request_id": "request-fsh-089",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "cedar/completion/item.log",
+        "data_utf8": "|done-451"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-090",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-090",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.append",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/completion"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/completion/item.log",
+            "content_utf8": "before-451"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-090",
+        "task_id": "task-fsh-090",
+        "request_id": "request-fsh-090",
+        "actor": "corpus-agent",
+        "operation": "filesystem.append",
+        "resource": "cedar/completion/item.log",
+        "data_utf8": "|done-451"
+      },
+      "dependency_injection": {
+        "boundary": "audit_sink",
+        "type": "reject_terminal_success"
+      },
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-091",
+      "version": 1,
+      "route": "direct_os_open",
+      "task_contract": {
+        "task_id": "task-fsh-091",
+        "description": "Bound held-out filesystem task",
+        "capabilities": []
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/direct"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/direct/os-route.dat",
+            "content_utf8": "before-461"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-091",
+        "task_id": "task-fsh-091",
+        "request_id": "request-fsh-091",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/direct/os-route.dat",
+        "data_utf8": "direct-os-461"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-092",
+      "version": 1,
+      "route": "direct_pathlib_write",
+      "task_contract": {
+        "task_id": "task-fsh-092",
+        "description": "Bound held-out filesystem task",
+        "capabilities": []
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/direct"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/cedar/direct/path-route.dat",
+            "content_utf8": "before-462"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-092",
+        "task_id": "task-fsh-092",
+        "request_id": "request-fsh-092",
+        "actor": "corpus-agent",
+        "operation": "filesystem.write",
+        "resource": "cedar/direct/path-route.dat",
+        "data_utf8": "direct-pathlib-462"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-093",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-093",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/transfer"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/cedar/transfer"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/transfer/source.dat",
+            "content_utf8": "move-471"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-093",
+        "task_id": "task-fsh-093",
+        "request_id": "request-fsh-093",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "quartz/transfer/source.dat",
+        "destination": "cedar/transfer/destination.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 2
+    },
+    {
+      "scenario_id": "FSH-014-094",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-094",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/cedar/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz/transfer"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus/transfer"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/quartz/transfer/source.dat",
+            "content_utf8": "move-471"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-094",
+        "task_id": "task-fsh-094",
+        "request_id": "request-fsh-094",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "quartz/transfer/source.dat",
+        "destination": "lotus/transfer/destination.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-095",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-095",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha/ship"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha-backup"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha-backup/ship"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha/ship/source.dat",
+            "content_utf8": "move-481"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-095",
+        "task_id": "task-fsh-095",
+        "request_id": "request-fsh-095",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "alpha/ship/source.dat",
+        "destination": "alpha-backup/ship/destination.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    },
+    {
+      "scenario_id": "FSH-014-096",
+      "version": 1,
+      "route": "adapter",
+      "task_contract": {
+        "task_id": "task-fsh-096",
+        "description": "Bound held-out filesystem task",
+        "capabilities": [
+          {
+            "action": "filesystem.rename",
+            "resource": "/workspace/alpha/**"
+          }
+        ]
+      },
+      "filesystem_fixture": {
+        "entries": [
+          {
+            "type": "directory",
+            "path": "/workspace/cedar"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/quartz"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/ember"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/lotus"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha.old"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha.old/ship"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha2"
+          },
+          {
+            "type": "directory",
+            "path": "/workspace/alpha2/ship"
+          },
+          {
+            "type": "file",
+            "path": "/workspace/alpha.old/ship/source.dat",
+            "content_utf8": "move-482"
+          }
+        ]
+      },
+      "request": {
+        "session_id": "session-fsh-096",
+        "task_id": "task-fsh-096",
+        "request_id": "request-fsh-096",
+        "actor": "corpus-agent",
+        "operation": "filesystem.rename",
+        "resource": "/var/tmp/corpus-shadow/source.dat",
+        "destination": "alpha2/ship/destination.dat"
+      },
+      "dependency_injection": null,
+      "environment_requirements": [
+        "linux",
+        "local_case_sensitive_filesystem"
+      ],
+      "repetitions": 1
+    }
+  ]
+}

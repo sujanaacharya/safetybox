@@ -1,0 +1,314 @@
+{
+  "corpus_id": "EXP-014-CORPUS@1",
+  "version": 1,
+  "status": "READY_FOR_FREEZE",
+  "protocol_freeze_sha": "7baf20293caa83d3fff6a200174c4f8840918607",
+  "implementation_freeze_sha": "b49a5cd0ff28a38eb8314291f51c106d2df9bd7c",
+  "authoring_base_sha": "b49a5cd0ff28a38eb8314291f51c106d2df9bd7c",
+  "implementation_identifiers": [
+    "FS-ADAPTER@1",
+    "FS-CANONICALIZATION@1",
+    "FS-AUDIT-ENVELOPE@1",
+    "EXP014-STATE-DIGEST@1"
+  ],
+  "authoring_method": "protocol/design-only corpus authorship after adapter freeze",
+  "independence_mechanism": "FROZEN_PROTOCOL_DESIGN_AND_CONTAMINATION_INVENTORY_ONLY_WITH_PUBLIC_SCHEMA_COMPATIBILITY_REVIEW",
+  "implementation_source_review": {
+    "private_adapter_logic_inspected": false,
+    "public_schema_files": [
+      "src/safetybox/filesystem/models.py",
+      "src/safetybox/filesystem/__init__.py",
+      "src/safetybox/contracts.py",
+      "src/safetybox/capabilities.py",
+      "src/safetybox/experiments/exp013_corpus.py",
+      "tests/test_exp013_corpus.py"
+    ],
+    "reason": "Confirm public exports, typed operation/request/result, TaskContract/Capability serialization and component-scope semantics, plus repository corpus-loader/testing conventions. Development fixture source was parsed only for contamination tuples."
+  },
+  "primary_evaluation_unit": "scenario_session",
+  "scenario_count": 96,
+  "terminal_classification_counts": {
+    "ALLOW_SUCCESS": 36,
+    "POLICY_DENY": 28,
+    "TARGET_VALIDATION_REJECT": 17,
+    "TOOL_ERROR": 6,
+    "FAIL_CLOSED": 5,
+    "FAIL_INDETERMINATE": 2,
+    "EXPECTED_FMED_L1_BYPASS": 2
+  },
+  "category_counts": {
+    "authorized": 36,
+    "policy_denied": 28,
+    "validation_rejected": 17,
+    "tool_error": 6,
+    "fail_closed_other": 5,
+    "fail_indeterminate": 2,
+    "expected_fmed_l1_bypass_controls": 2,
+    "failure_or_error_excluding_validation": 13,
+    "hard_negatives": 23
+  },
+  "pair_count": 48,
+  "pair_quality_counts": {
+    "strong": 45,
+    "moderate": 1,
+    "weak": 2
+  },
+  "operation_counts": {
+    "filesystem.append": 12,
+    "filesystem.create": 8,
+    "filesystem.delete": 8,
+    "filesystem.list": 6,
+    "filesystem.mkdir": 2,
+    "filesystem.read": 14,
+    "filesystem.rename": 16,
+    "filesystem.stat": 14,
+    "filesystem.write": 16
+  },
+  "operation_outcome_minimums": {
+    "every_operation_has_allow_success": true,
+    "every_operation_has_policy_deny": true
+  },
+  "family_counts": {
+    "symlink_scenarios": 20,
+    "symlink_validation_rejects": 10,
+    "hard_link_scenarios": 14,
+    "hard_link_validation_rejects": 7,
+    "matched_failure_scenarios": 24,
+    "nondisclosure_policy_denials": {
+      "read": 3,
+      "list": 2,
+      "stat": 4
+    },
+    "direct_route_controls": 2
+  },
+  "requirement_coverage": {
+    "REQ-001": [
+      "FSH-014-091",
+      "FSH-014-092"
+    ],
+    "REQ-002": "ALL_SCENARIOS_ISOLATED_TEMPORARY_ROOT",
+    "REQ-003": "ALL_NINE_OPERATION_GROUPS",
+    "REQ-004": [
+      "FSH-014-019",
+      "FSH-014-020",
+      "FSH-014-021",
+      "FSH-014-022"
+    ],
+    "REQ-005": "ALL_SCENARIOS_UNTRUSTED_RUNTIME_INPUTS",
+    "REQ-006": [
+      "FSH-014-002",
+      "FSH-014-016",
+      "FSH-014-018"
+    ],
+    "REQ-007": "ALL_ADAPTER_ROUTE_SCENARIOS",
+    "REQ-008": [
+      "FSH-014-011",
+      "FSH-014-012",
+      "FSH-014-047",
+      "FSH-014-048"
+    ],
+    "REQ-009": "ALL_AUTHORIZATION_METRIC_MEMBERS",
+    "REQ-010": [
+      "FSH-014-043",
+      "FSH-014-044",
+      "FSH-014-085",
+      "FSH-014-086"
+    ],
+    "REQ-011": [
+      "FSH-014-003",
+      "FSH-014-005",
+      "FSH-014-007",
+      "FSH-014-079"
+    ],
+    "REQ-012": [
+      "FSH-014-023",
+      "FSH-014-024",
+      "FSH-014-079",
+      "FSH-014-080"
+    ],
+    "REQ-013": "ALL_ADAPTER_ROUTE_SCENARIOS",
+    "REQ-014": [
+      "FSH-014-007",
+      "FSH-014-008",
+      "FSH-014-069",
+      "FSH-014-070"
+    ],
+    "REQ-015": "FSH-014-033_THROUGH_FSH-014-066",
+    "REQ-016": "ALL_MUTATING_OPERATION_SCENARIOS",
+    "REQ-017": "ALL_POLICY_DENIED_MUTATING_SCENARIOS",
+    "REQ-018": [
+      "FSH-014-002",
+      "FSH-014-016",
+      "FSH-014-018",
+      "FSH-014-020",
+      "FSH-014-028",
+      "FSH-014-030"
+    ],
+    "REQ-019": "ALL_16_RENAME_SCENARIOS",
+    "REQ-020": [
+      "FSH-014-009",
+      "FSH-014-010",
+      "FSH-014-013",
+      "FSH-014-014",
+      "FSH-014-075",
+      "FSH-014-076"
+    ],
+    "REQ-021": "ALL_SEVEN_TERMINAL_CLASSIFICATIONS",
+    "REQ-022": [
+      "FSH-014-080",
+      "FSH-014-082",
+      "FSH-014-084",
+      "FSH-014-086",
+      "FSH-014-096"
+    ],
+    "REQ-023": [
+      "FSH-014-078",
+      "FSH-014-087",
+      "FSH-014-088",
+      "FSH-014-089",
+      "FSH-014-090"
+    ],
+    "REQ-024": "ALL_ADAPTER_ROUTE_SCENARIOS",
+    "REQ-025": [
+      "FSH-014-002",
+      "FSH-014-016",
+      "FSH-014-018",
+      "FSH-014-020",
+      "FSH-014-028",
+      "FSH-014-030"
+    ],
+    "REQ-026": "CANONICALIZATION_SYMLINK_HARD_LINK_RENAME_AND_DIRECT_ROUTE_FAMILIES",
+    "REQ-027": [
+      "FSH-014-091",
+      "FSH-014-092"
+    ],
+    "REQ-028": [
+      "FSH-014-021",
+      "FSH-014-022",
+      "FSH-014-093",
+      "FSH-014-094"
+    ],
+    "REQ-029": [
+      "FSH-014-001",
+      "FSH-014-093",
+      "ALL_FIXTURE_HASHES"
+    ],
+    "REQ-030": "ALL_94_ADAPTER_ROUTES_TIMED_BY_FUTURE_ONE_SHOT_RUNNER",
+    "REQ-031": "CORPUS_FREEZE_PROVENANCE_AND_CONTAMINATION_AUDIT",
+    "REQ-032": "ALL_SCENARIOS_DECLARE_LINUX_LOCAL_FILESYSTEM_ASSUMPTIONS"
+  },
+  "invariant_coverage": {
+    "INV-016": "ALL_POLICY_DENIED_MUTATING_AND_PRE_EFFECT_FAILURE_SCENARIOS",
+    "INV-017": [
+      "FSH-014-002",
+      "FSH-014-016",
+      "FSH-014-018",
+      "FSH-014-020",
+      "FSH-014-028",
+      "FSH-014-030"
+    ],
+    "INV-018": "CANONICALIZATION_PREFIX_SYMLINK_HARD_LINK_AND_RENAME_FAMILIES",
+    "INV-019": [
+      "FSH-014-080",
+      "FSH-014-082",
+      "FSH-014-084",
+      "FSH-014-086",
+      "FSH-014-088",
+      "FSH-014-090"
+    ]
+  },
+  "threat_coverage": {
+    "path_traversal": [
+      "FSH-014-007",
+      "FSH-014-008",
+      "FSH-014-079",
+      "FSH-014-080"
+    ],
+    "prefix_collision": [
+      "FSH-014-023",
+      "FSH-014-024",
+      "FSH-014-025",
+      "FSH-014-026",
+      "FSH-014-027",
+      "FSH-014-028",
+      "FSH-014-029",
+      "FSH-014-030",
+      "FSH-014-095"
+    ],
+    "host_logical_confusion": [
+      "FSH-014-096"
+    ],
+    "unicode_path_confusion": [
+      "FSH-014-003",
+      "FSH-014-004"
+    ],
+    "symlink_escape": "FSH-014-033_THROUGH_FSH-014-052",
+    "symlink_swap_and_toctou": {
+      "status": "NOT_EVALUATED",
+      "reason": "Frozen protocol classifies pathname race resistance NOT_SOLVED; no race harness is preregistered."
+    },
+    "hard_link_alias": "FSH-014-053_THROUGH_FSH-014-066",
+    "rename_escape": "ALL_16_RENAME_SCENARIOS",
+    "delete_overbreadth": [
+      "FSH-014-009",
+      "FSH-014-010",
+      "FSH-014-075",
+      "FSH-014-076"
+    ],
+    "protected_read_disclosure": [
+      "FSH-014-002",
+      "FSH-014-016",
+      "FSH-014-018",
+      "FSH-014-020",
+      "FSH-014-028",
+      "FSH-014-030"
+    ],
+    "partial_write": [
+      "FSH-014-087",
+      "FSH-014-088"
+    ],
+    "audit_loss_before_effect": [
+      "FSH-014-085",
+      "FSH-014-086"
+    ],
+    "audit_loss_after_effect": [
+      "FSH-014-089",
+      "FSH-014-090"
+    ],
+    "context_mismatch": [
+      "FSH-014-021",
+      "FSH-014-022"
+    ],
+    "direct_api_bypass": [
+      "FSH-014-091",
+      "FSH-014-092"
+    ],
+    "inherited_file_descriptor_bypass": {
+      "status": "NOT_EVALUATED",
+      "reason": "No inherited descriptor fixture is supplied; the frozen protocol permits this platform fixture to be omitted."
+    },
+    "corpus_overfitting": {
+      "status": "AUDITED_STATICALLY",
+      "evidence": "Adapter freeze predates authorship; source isolation and no corpus identifiers are checked without prediction execution."
+    }
+  },
+  "development_exclusion_source": [
+    "docs/experiments/EXP-014-ADAPTER-DEVELOPMENT-VALIDATION.md",
+    "docs/engineering/EXP-014_PRE_CORPUS_FREEZE_AUDIT.md",
+    "tests/dev/test_exp014_filesystem_adapter.py"
+  ],
+  "files": [
+    "manifest.yaml",
+    "scenarios.yaml",
+    "labels.yaml",
+    "README.md",
+    "AUTHORING_NOTES.md",
+    "CONTAMINATION_AUDIT.md",
+    "STATIC_SEPARABILITY_AUDIT.md",
+    "COVERAGE_AUDIT.md",
+    "checksums.sha256"
+  ],
+  "checksums": {
+    "status": "RECORDED_IN_CHECKSUMS_SHA256"
+  }
+}
