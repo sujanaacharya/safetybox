@@ -1,0 +1,15 @@
+schema_id: EXP-015-RUNTIME-SCHEMA@1
+materializer_id: EXP-015-MATERIALIZER@1
+corpus_id: EXP-015-CORPUS@2
+status: SCHEMA_FROZEN
+runtime_scenario:
+  required: [scenario_id, request, task_contract, route, executable, cwd]
+  request: [session_id, task_id, request_id, actor, executable, argv, cwd, timeout_ms]
+  task_contract: [task_id, capabilities]
+  routes: [ADAPTER, DIRECT_CONTROL]
+  executable_kinds: [REGULAR_EXECUTABLE, NON_EXECUTABLE_REGULAR, DIRECTORY, SYMLINK, MISSING, UNSUPPORTED_SCRIPT_OR_WRAPPER]
+  cwd_kinds: [DIRECTORY, MISSING, SYMLINK, NON_DIRECTORY]
+  helper_behaviors: [RECORD_ARGV, RECORD_ENV, EMIT_STDOUT, EMIT_STDERR, EMIT_BOTH, WRITE_MARKER, EXIT_CODE, SLEEP, SELF_SIGNAL, WRITE_MARKER_THEN_EXIT, WRITE_MARKER_THEN_SLEEP]
+  fault_stages: [PRE_EXECUTION_AUDIT, SPAWN_BEFORE_CHILD_CONFIRMED, POST_SPAWN_AUDIT, POST_COMPLETION_AUDIT, OUTPUT_CAPTURE]
+  observations: [marker_paths, output_sentinels, environment_keys, channels]
+prohibited_runtime_fields: [allow, deny, expected, success, failure_result, should_spawn, hard_benign, hard_unauthorized, pair_id, requirement_ids, threat_labels]
