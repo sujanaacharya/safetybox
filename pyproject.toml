@@ -40,6 +40,12 @@ line-length = 100
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
 
+# EXP-015-FROZEN-CORPUS-RUFF-DISPOSITION@1: byte-immutable, checksum-covered
+# research artifacts. See docs/engineering/EXP-015_FROZEN_CORPUS_RUFF_DISPOSITION.md.
+[tool.ruff.lint.per-file-ignores]
+"experiments/EXP-015/corpus/build_corpus.py" = ["B007", "E401", "E501", "E701", "E702", "I001"]
+"experiments/EXP-015/corpus/integrity_check.py" = ["I001"]
+
 [tool.mypy]
 python_version = "3.11"
 strict = true

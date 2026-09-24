@@ -52,6 +52,17 @@ Each dataset requires provenance, version, license or usage authority, collectio
 
 Generated artifacts must state their generator, source inputs, tool version, and reproduction command. Commit generated files only when review or distribution requires them; otherwise ignore them. A generated file must not be hand-edited.
 
+## Frozen scientific artifacts and static analysis
+
+Frozen, checksum-covered scientific artifacts are byte-immutable. Artifact immutability
+outranks post-freeze stylistic cleanup: a static-analysis exception is permissible only
+when it is artifact-specific, rule-specific, documented, provenance-backed, and limited
+to non-production code. It must be established without changing frozen bytes. Before a
+future protocol, implementation, corpus, or result freeze, mutable artifacts expected to
+participate in repository static-analysis gates should pass those gates. A frozen-artifact
+baseline is an exceptional lifecycle disposition, not a normal workflow; EXP-015 is the
+motivating case.
+
 ## Notebooks and experimental scripts
 
 - Notebooks are for exploration and communication, not the sole implementation of a reported result. Clear outputs before commit unless outputs are intentionally reviewed evidence.
