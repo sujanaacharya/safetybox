@@ -82,6 +82,29 @@ def test_nested_resource_in_scope_is_allowed() -> None:
     assert len(tool.requests) == 1
 
 
+def test_overlapping_capability_evidence_is_deterministic_and_immutable() -> None:
+    contract = TaskContract(
+        "task-a",
+        "test task",
+        [
+            Capability("filesystem.read", "/workspace/project/file.txt"),
+            Capability("filesystem.read", "/workspace/project/**"),
+        ],
+    )
+    decision = TaskContractPolicy(contract).authorize(
+        request(action="filesystem.read", resource="/workspace/project/file.txt")
+    )
+
+    assert decision.decision is Decision.ALLOW
+    capability = decision.metadata["applicable_capability"]
+    assert capability == {
+        "action": "filesystem.read",
+        "resource": "/workspace/project/**",
+    }
+    with pytest.raises(TypeError):
+        capability["resource"] = "/changed"  # type: ignore[index]
+
+
 def test_prefix_confusion_is_denied_without_execution() -> None:
     monitor, tool = monitor_for(Capability("filesystem.read", "/workspace/project/**"))
 

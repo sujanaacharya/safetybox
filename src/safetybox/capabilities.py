@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from types import MappingProxyType
 from typing import TYPE_CHECKING
 
 from safetybox.models import ActionRequest, Decision, PolicyDecision
@@ -78,6 +79,11 @@ class CapabilityEvaluator:
                 Decision.DENY,
                 "POL-M2-TASK-MISMATCH",
                 "Request task does not match the task contract.",
+                {
+                    "authority_source": "TaskContract",
+                    "contract_task_id": contract.task_id,
+                    "applicable_capability": None,
+                },
             )
 
         action_capabilities = tuple(
@@ -90,17 +96,39 @@ class CapabilityEvaluator:
                 Decision.DENY,
                 "POL-M2-CAPABILITY-MISSING",
                 "No capability grants the requested action.",
+                {
+                    "authority_source": "TaskContract",
+                    "contract_task_id": contract.task_id,
+                    "applicable_capability": None,
+                },
             )
 
-        if any(capability.matches(request) for capability in action_capabilities):
+        matching = min(
+            (capability for capability in action_capabilities if capability.matches(request)),
+            key=lambda capability: capability.resource,
+            default=None,
+        )
+        if matching is not None:
             return PolicyDecision(
                 Decision.ALLOW,
                 "POL-M2-CAPABILITY-ALLOW",
                 "An explicit task capability matches the requested action and resource.",
+                {
+                    "authority_source": "TaskContract",
+                    "contract_task_id": contract.task_id,
+                    "applicable_capability": MappingProxyType(
+                        {"action": matching.action, "resource": matching.resource}
+                    ),
+                },
             )
 
         return PolicyDecision(
             Decision.DENY,
             "POL-M2-RESOURCE-OUT-OF-SCOPE",
             "The requested resource is outside every scope for the requested action.",
+            {
+                "authority_source": "TaskContract",
+                "contract_task_id": contract.task_id,
+                "applicable_capability": None,
+            },
         )

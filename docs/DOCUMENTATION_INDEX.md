@@ -24,6 +24,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Real Filesystem Mediation Requirements](research/REAL_FILESYSTEM_MEDIATION_REQUIREMENTS.md)
 - [Real Subprocess Mediation Requirements](research/REAL_SUBPROCESS_MEDIATION_REQUIREMENTS.md)
 - [EXP-014 Requirement Traceability](research/EXP-014_REQUIREMENT_TRACEABILITY.md)
+- [EXP-015 Requirement Traceability](research/EXP-015_REQUIREMENT_TRACEABILITY.md)
 - [Paper Outline](research/PAPER_OUTLINE.md)
 
 ## Architecture
@@ -50,12 +51,15 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-014 Adapter Development Validation](experiments/EXP-014-ADAPTER-DEVELOPMENT-VALIDATION.md)
 - [EXP-014 Results](experiments/EXP-014-RESULTS.md), [Synthesis](experiments/EXP-014-SYNTHESIS.md), [Validity Audit](experiments/EXP-014-VALIDITY-AUDIT.md), and [Post-Run Gate Disposition](experiments/EXP-014-POST-RUN-GATE-DISPOSITION.md)
 - [EXP-015 Real Subprocess Mediation Protocol](experiments/EXP-015-real-subprocess-mediation.md)
+- [EXP-015 Adapter Development Validation](experiments/EXP-015-ADAPTER-DEVELOPMENT-VALIDATION.md)
 
 ## Engineering
 
 - [EXP-014 Filesystem Diligence Notes](engineering/EXP-014_FILESYSTEM_DILIGENCE_NOTES.md)
 - [EXP-014 Pre-Corpus Freeze Audit](engineering/EXP-014_PRE_CORPUS_FREEZE_AUDIT.md)
 - [EXP-015 Pre-Freeze Protocol and Authorization Quality Audit](engineering/EXP-015_PRE_FREEZE_PROTOCOL_AUTHORIZATION_AUDIT.md)
+- [EXP-015 Process Adapter Diligence Notes](engineering/EXP-015_PROCESS_DILIGENCE_NOTES.md)
+- [EXP-015 Pre-Corpus Implementation Freeze Audit](engineering/EXP-015_PRE_CORPUS_IMPLEMENTATION_FREEZE_AUDIT.md)
 
 ## Strategy
 

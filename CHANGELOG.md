@@ -6,6 +6,16 @@ All notable changes will be documented here. The format follows [Keep a Changelo
 
 ### Added
 
+- Development-only `PROC-ADAPTER@1` PMED-L1 implementation for EXP-015 with exact
+  executable/cwd compound authorization through `TaskContractPolicy`, pure lexical
+  canonicalization, post-allow validation, fixed environment, shell-false argv-native
+  execution, bounded byte capture, direct-child timeout/signal observation, and an
+  additive M3 audit envelope. Contaminated native-helper tests and traceability/diligence
+  documents are included; no held-out corpus, EXP-015 result, RTM-2 promotion, or
+  supported claim is included.
+- Independent EXP-015 pre-corpus implementation freeze audit, including conservative
+  indeterminate classification for real `Popen` failures, deterministic immutable
+  authorization provenance, and bounded helper-fixture completion.
 - EXP-015 Level 0 preregistration for PMED-L1 direct subprocess mediation, including
   `REQ-033`–`REQ-062`, `INV-020`–`INV-023`, ADR-007, architecture and threat boundaries,
   human/machine-readable protocols, and a pre-freeze authorization-quality audit. No
