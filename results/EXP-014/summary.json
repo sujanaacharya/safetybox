@@ -1,0 +1,3725 @@
+{
+  "audit_reconstruction": {
+    "attempted_actions": 94,
+    "failure_ids": [],
+    "rate": 1.0,
+    "reconstructable": 94,
+    "runner_state_used_to_fill_fields": false
+  },
+  "audit_truthfulness": {
+    "applicable": 94,
+    "failure_ids": [],
+    "rate": 1.0,
+    "truthful": 94
+  },
+  "authorization_metrics": {
+    "correct": 91,
+    "evaluable": 91,
+    "failures": [],
+    "policy_separated_from_post_allow_validation": true,
+    "rate": 1.0
+  },
+  "canonicalization": {
+    "behavior_cases": {
+      "absolute_logical_path": [
+        {
+          "canonical": "/workspace/cedar/logs/ledger.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace//cedar///logs/ledger.txt",
+          "scenario_id": "FSH-014-005",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/logs/ledger.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "/workspace//quartz///logs/ledger.txt",
+          "scenario_id": "FSH-014-006",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/metrics/private_backup.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace/cedar/metrics/private_backup.txt",
+          "scenario_id": "FSH-014-017",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/metrics/private_backup.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "/workspace/quartz/metrics/private_backup.txt",
+          "scenario_id": "FSH-014-018",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/links/read-node.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace/cedar/links/read-node.dat",
+          "scenario_id": "FSH-014-053",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/links/read-node.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/read-node.dat",
+          "scenario_id": "FSH-014-054",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/links/write-node.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace/cedar/links/write-node.dat",
+          "scenario_id": "FSH-014-055",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/links/write-node.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/write-node.dat",
+          "scenario_id": "FSH-014-056",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/links/append-node.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace/cedar/links/append-node.dat",
+          "scenario_id": "FSH-014-057",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/links/append-node.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/append-node.dat",
+          "scenario_id": "FSH-014-058",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/links/delete-node.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace/cedar/links/delete-node.dat",
+          "scenario_id": "FSH-014-059",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/links/delete-node.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/delete-node.dat",
+          "scenario_id": "FSH-014-060",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/links/stat-node.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "/workspace/cedar/links/stat-node.dat",
+          "scenario_id": "FSH-014-061",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/links/stat-node.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/stat-node.dat",
+          "scenario_id": "FSH-014-062",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/links/move-source.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "/workspace/cedar/links/move-source.dat",
+          "scenario_id": "FSH-014-063",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/links/move-source.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/move-source.dat",
+          "scenario_id": "FSH-014-064",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/links/plain-source.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "/workspace/cedar/links/plain-source.dat",
+          "scenario_id": "FSH-014-065",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/links/plain-source.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "/workspace/cedar/links/plain-source.dat",
+          "scenario_id": "FSH-014-066",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace",
+          "scenario_id": "FSH-014-083",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace",
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "/workspace",
+          "scenario_id": "FSH-014-084",
+          "terminal": "FAIL_CLOSED"
+        }
+      ],
+      "dot_dot_segment": [
+        {
+          "canonical": "/workspace/cedar/drafts/fresh-note.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/drafts/x/../fresh-note.txt",
+          "scenario_id": "FSH-014-007",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/drafts/fresh-note.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/drafts/x/../fresh-note.txt",
+          "scenario_id": "FSH-014-008",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/rooted.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/nested/../rooted.dat",
+          "scenario_id": "FSH-014-079",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": null,
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "../../cedar/rooted.dat",
+          "scenario_id": "FSH-014-080",
+          "terminal": "FAIL_CLOSED"
+        }
+      ],
+      "host_namespace_rejection": [
+        {
+          "canonical": null,
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "/var/tmp/corpus-shadow/source.dat",
+          "scenario_id": "FSH-014-096",
+          "terminal": "FAIL_CLOSED"
+        }
+      ],
+      "nfc_normalization": [
+        {
+          "canonical": "/workspace/cedar/café/résumé.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/café/résumé.txt",
+          "scenario_id": "FSH-014-003",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/café/résumé.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/café/résumé.txt",
+          "scenario_id": "FSH-014-004",
+          "terminal": "POLICY_DENY"
+        }
+      ],
+      "prefix_collision": [
+        {
+          "canonical": "/workspace/alpha/journal/day.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/journal/day.txt",
+          "scenario_id": "FSH-014-023",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alphabet/journal/day.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alphabet/journal/day.txt",
+          "scenario_id": "FSH-014-024",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/records/item.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/records/item.txt",
+          "scenario_id": "FSH-014-025",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alpha-backup/records/item.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha-backup/records/item.txt",
+          "scenario_id": "FSH-014-026",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/deep/index",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/deep/index",
+          "scenario_id": "FSH-014-027",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alpha2/deep/index",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha2/deep/index",
+          "scenario_id": "FSH-014-028",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/deep/info.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/deep/info.dat",
+          "scenario_id": "FSH-014-029",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alpha.old/deep/info.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha.old/deep/info.dat",
+          "scenario_id": "FSH-014-030",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/ship/source.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha/ship/source.dat",
+          "scenario_id": "FSH-014-095",
+          "terminal": "POLICY_DENY"
+        }
+      ],
+      "relative_path": [
+        {
+          "canonical": "/workspace/cedar/reports/report..final.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/reports/report..final.txt",
+          "scenario_id": "FSH-014-001",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/reports/report..final.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/reports/report..final.txt",
+          "scenario_id": "FSH-014-002",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/café/résumé.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/café/résumé.txt",
+          "scenario_id": "FSH-014-003",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/café/résumé.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/café/résumé.txt",
+          "scenario_id": "FSH-014-004",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/drafts/fresh-note.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/drafts/x/../fresh-note.txt",
+          "scenario_id": "FSH-014-007",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/drafts/fresh-note.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/drafts/x/../fresh-note.txt",
+          "scenario_id": "FSH-014-008",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/archive..2026/obsolete.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/archive..2026/obsolete.txt",
+          "scenario_id": "FSH-014-009",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/archive..2026/obsolete.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/archive..2026/obsolete.txt",
+          "scenario_id": "FSH-014-010",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/inbox/parcel.bin",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/inbox/parcel.bin",
+          "scenario_id": "FSH-014-011",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/inbox/parcel.bin",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/inbox/parcel.bin",
+          "scenario_id": "FSH-014-012",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/projects/review-room",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/projects/review-room/",
+          "scenario_id": "FSH-014-013",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/projects/review-room",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/projects/review-room/",
+          "scenario_id": "FSH-014-014",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/catalog/2026",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/catalog/2026",
+          "scenario_id": "FSH-014-015",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/catalog/2026",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/catalog/2026",
+          "scenario_id": "FSH-014-016",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/notes/plain.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/notes/plain.txt",
+          "scenario_id": "FSH-014-019",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/notes/plain.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/notes/plain.txt",
+          "scenario_id": "FSH-014-020",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/state/current.bin",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/state/current.bin",
+          "scenario_id": "FSH-014-021",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/state/current.bin",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/state/current.bin",
+          "scenario_id": "FSH-014-022",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/journal/day.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/journal/day.txt",
+          "scenario_id": "FSH-014-023",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alphabet/journal/day.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alphabet/journal/day.txt",
+          "scenario_id": "FSH-014-024",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/records/item.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/records/item.txt",
+          "scenario_id": "FSH-014-025",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alpha-backup/records/item.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha-backup/records/item.txt",
+          "scenario_id": "FSH-014-026",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/deep/index",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/deep/index",
+          "scenario_id": "FSH-014-027",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alpha2/deep/index",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha2/deep/index",
+          "scenario_id": "FSH-014-028",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/deep/info.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "alpha/deep/info.dat",
+          "scenario_id": "FSH-014-029",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/alpha.old/deep/info.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha.old/deep/info.dat",
+          "scenario_id": "FSH-014-030",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/zones/old-name",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/zones/old-name",
+          "scenario_id": "FSH-014-031",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/zones/old-name",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/zones/old-name",
+          "scenario_id": "FSH-014-032",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/ports/entry.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/ports/entry.dat",
+          "scenario_id": "FSH-014-033",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/ports/entry.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/ports/entry.dat",
+          "scenario_id": "FSH-014-034",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/ports/marker.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/ports/marker.dat",
+          "scenario_id": "FSH-014-035",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/ports/marker.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/ports/marker.dat",
+          "scenario_id": "FSH-014-036",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/corridor/book.bin",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/corridor/book.bin",
+          "scenario_id": "FSH-014-037",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/corridor/book.bin",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/corridor/book.bin",
+          "scenario_id": "FSH-014-038",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/skyway/nest",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/skyway/nest",
+          "scenario_id": "FSH-014-039",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/skyway/nest",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/skyway/nest",
+          "scenario_id": "FSH-014-040",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/gate-one/chain.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/gate-one/chain.txt",
+          "scenario_id": "FSH-014-041",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/gate-one/chain.txt",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/gate-one/chain.txt",
+          "scenario_id": "FSH-014-042",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/orphan-note",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/orphan-note",
+          "scenario_id": "FSH-014-043",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/orphan-note",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/orphan-note",
+          "scenario_id": "FSH-014-044",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/missing-hall/detail.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/missing-hall/detail.txt",
+          "scenario_id": "FSH-014-045",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/missing-hall/detail.txt",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/missing-hall/detail.txt",
+          "scenario_id": "FSH-014-046",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/relay-item",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/relay-item",
+          "scenario_id": "FSH-014-047",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/relay-item",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/relay-item",
+          "scenario_id": "FSH-014-048",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/outgoing/item.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/outgoing/item.dat",
+          "scenario_id": "FSH-014-049",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/outgoing/item.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/outgoing/item.dat",
+          "scenario_id": "FSH-014-050",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/bridge/new.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/bridge/new.dat",
+          "scenario_id": "FSH-014-051",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/bridge/new.dat",
+          "correct": true,
+          "expected": "TARGET_VALIDATION_REJECT",
+          "requested": "cedar/bridge/new.dat",
+          "scenario_id": "FSH-014-052",
+          "terminal": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "canonical": "/workspace/cedar/errors/present.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/errors/present.dat",
+          "scenario_id": "FSH-014-067",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/errors/missing.dat",
+          "correct": true,
+          "expected": "TOOL_ERROR",
+          "requested": "cedar/errors/missing.dat",
+          "scenario_id": "FSH-014-068",
+          "terminal": "TOOL_ERROR"
+        },
+        {
+          "canonical": "/workspace/cedar/ready/new.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/ready/new.dat",
+          "scenario_id": "FSH-014-069",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/absent-parent/new.dat",
+          "correct": true,
+          "expected": "TOOL_ERROR",
+          "requested": "cedar/absent-parent/new.dat",
+          "scenario_id": "FSH-014-070",
+          "terminal": "TOOL_ERROR"
+        },
+        {
+          "canonical": "/workspace/cedar/types/node",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/types/node",
+          "scenario_id": "FSH-014-071",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/types/node",
+          "correct": true,
+          "expected": "TOOL_ERROR",
+          "requested": "cedar/types/node",
+          "scenario_id": "FSH-014-072",
+          "terminal": "TOOL_ERROR"
+        },
+        {
+          "canonical": "/workspace/cedar/create-slot/new.bin",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/create-slot/new.bin",
+          "scenario_id": "FSH-014-073",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/create-slot/new.bin",
+          "correct": true,
+          "expected": "TOOL_ERROR",
+          "requested": "cedar/create-slot/new.bin",
+          "scenario_id": "FSH-014-074",
+          "terminal": "TOOL_ERROR"
+        },
+        {
+          "canonical": "/workspace/cedar/removal/empty-room",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/removal/empty-room",
+          "scenario_id": "FSH-014-075",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/removal/occupied-room",
+          "correct": true,
+          "expected": "TOOL_ERROR",
+          "requested": "cedar/removal/occupied-room",
+          "scenario_id": "FSH-014-076",
+          "terminal": "TOOL_ERROR"
+        },
+        {
+          "canonical": "/workspace/cedar/io/item.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/io/item.dat",
+          "scenario_id": "FSH-014-077",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/io/item.dat",
+          "correct": true,
+          "expected": "TOOL_ERROR",
+          "requested": "cedar/io/item.dat",
+          "scenario_id": "FSH-014-078",
+          "terminal": "TOOL_ERROR"
+        },
+        {
+          "canonical": "/workspace/cedar/rooted.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/nested/../rooted.dat",
+          "scenario_id": "FSH-014-079",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": null,
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "../../cedar/rooted.dat",
+          "scenario_id": "FSH-014-080",
+          "terminal": "FAIL_CLOSED"
+        },
+        {
+          "canonical": "/workspace/cedar/faults/item.log",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "cedar/faults/item.log",
+          "scenario_id": "FSH-014-081",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/cedar/faults/item.log",
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "cedar/faults/item.log",
+          "scenario_id": "FSH-014-082",
+          "terminal": "FAIL_CLOSED"
+        },
+        {
+          "canonical": "/workspace/cedar/audit-gate/item.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/audit-gate/item.dat",
+          "scenario_id": "FSH-014-085",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/audit-gate/item.dat",
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "cedar/audit-gate/item.dat",
+          "scenario_id": "FSH-014-086",
+          "terminal": "FAIL_CLOSED"
+        },
+        {
+          "canonical": "/workspace/cedar/partial/item.dat",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/partial/item.dat",
+          "scenario_id": "FSH-014-087",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/partial/item.dat",
+          "correct": true,
+          "expected": "FAIL_INDETERMINATE",
+          "requested": "cedar/partial/item.dat",
+          "scenario_id": "FSH-014-088",
+          "terminal": "FAIL_INDETERMINATE"
+        },
+        {
+          "canonical": "/workspace/cedar/completion/item.log",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/completion/item.log",
+          "scenario_id": "FSH-014-089",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/cedar/completion/item.log",
+          "correct": true,
+          "expected": "FAIL_INDETERMINATE",
+          "requested": "cedar/completion/item.log",
+          "scenario_id": "FSH-014-090",
+          "terminal": "FAIL_INDETERMINATE"
+        },
+        {
+          "canonical": "/workspace/cedar/direct/os-route.dat",
+          "correct": true,
+          "expected": "EXPECTED_FMED_L1_BYPASS",
+          "requested": "cedar/direct/os-route.dat",
+          "scenario_id": "FSH-014-091",
+          "terminal": "EXPECTED_FMED_L1_BYPASS"
+        },
+        {
+          "canonical": "/workspace/cedar/direct/path-route.dat",
+          "correct": true,
+          "expected": "EXPECTED_FMED_L1_BYPASS",
+          "requested": "cedar/direct/path-route.dat",
+          "scenario_id": "FSH-014-092",
+          "terminal": "EXPECTED_FMED_L1_BYPASS"
+        },
+        {
+          "canonical": "/workspace/quartz/transfer/source.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/transfer/source.dat",
+          "scenario_id": "FSH-014-093",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/quartz/transfer/source.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/transfer/source.dat",
+          "scenario_id": "FSH-014-094",
+          "terminal": "POLICY_DENY"
+        },
+        {
+          "canonical": "/workspace/alpha/ship/source.dat",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "alpha/ship/source.dat",
+          "scenario_id": "FSH-014-095",
+          "terminal": "POLICY_DENY"
+        }
+      ],
+      "repeated_separator": [
+        {
+          "canonical": "/workspace/cedar/logs/ledger.txt",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace//cedar///logs/ledger.txt",
+          "scenario_id": "FSH-014-005",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/logs/ledger.txt",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "/workspace//quartz///logs/ledger.txt",
+          "scenario_id": "FSH-014-006",
+          "terminal": "POLICY_DENY"
+        }
+      ],
+      "root_boundary": [
+        {
+          "canonical": "/workspace",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "/workspace",
+          "scenario_id": "FSH-014-083",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace",
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "/workspace",
+          "scenario_id": "FSH-014-084",
+          "terminal": "FAIL_CLOSED"
+        }
+      ],
+      "root_escape": [
+        {
+          "canonical": null,
+          "correct": true,
+          "expected": "FAIL_CLOSED",
+          "requested": "../../cedar/rooted.dat",
+          "scenario_id": "FSH-014-080",
+          "terminal": "FAIL_CLOSED"
+        }
+      ],
+      "trailing_separator": [
+        {
+          "canonical": "/workspace/cedar/projects/review-room",
+          "correct": true,
+          "expected": "ALLOW_SUCCESS",
+          "requested": "cedar/projects/review-room/",
+          "scenario_id": "FSH-014-013",
+          "terminal": "ALLOW_SUCCESS"
+        },
+        {
+          "canonical": "/workspace/quartz/projects/review-room",
+          "correct": true,
+          "expected": "POLICY_DENY",
+          "requested": "quartz/projects/review-room/",
+          "scenario_id": "FSH-014-014",
+          "terminal": "POLICY_DENY"
+        }
+      ]
+    },
+    "distinguishes_canonicalization_failure_from_policy_denial": true,
+    "failure_ids": [],
+    "passes": 70,
+    "rate": 1.0,
+    "total": 70
+  },
+  "controls": {
+    "excluded_from_adapter_authorization_accuracy": true,
+    "fmed_l1": [
+      {
+        "scenario_id": "FSH-014-091",
+        "side_effect_observed": true,
+        "terminal": "EXPECTED_FMED_L1_BYPASS"
+      },
+      {
+        "scenario_id": "FSH-014-092",
+        "side_effect_observed": true,
+        "terminal": "EXPECTED_FMED_L1_BYPASS"
+      }
+    ]
+  },
+  "determinism": {
+    "all_equivalent": true,
+    "comparisons": [
+      {
+        "canonical_semantic_sha256": "a85787d375c763ef7ecde1d9c2ed48b2d7f23e9ccdfa4a55467c8bf6afed08f1",
+        "equivalent": true,
+        "repeat_execution_index": 2,
+        "repeat_semantic_sha256": "a85787d375c763ef7ecde1d9c2ed48b2d7f23e9ccdfa4a55467c8bf6afed08f1",
+        "scenario_id": "FSH-014-001"
+      },
+      {
+        "canonical_semantic_sha256": "3893b4274ea595b6cf1d5e57d1ca45d430d32b6eb3645b4e66ad6711f1cad604",
+        "equivalent": true,
+        "repeat_execution_index": 2,
+        "repeat_semantic_sha256": "3893b4274ea595b6cf1d5e57d1ca45d430d32b6eb3645b4e66ad6711f1cad604",
+        "scenario_id": "FSH-014-093"
+      }
+    ],
+    "passes": 2,
+    "total": 2
+  },
+  "failure_criteria": {
+    "audit_false_nonexecution": "NOT_TRIGGERED",
+    "canonicalization_expands_scope": "NOT_TRIGGERED",
+    "corpus_specific_authorization_branch": "NOT_TRIGGERED",
+    "denied_mutation_changes_state": "NOT_TRIGGERED",
+    "denied_read_list_stat_disclosure": "NOT_TRIGGERED",
+    "execution_before_allow": "NOT_TRIGGERED",
+    "execution_start_for_denial": "NOT_TRIGGERED",
+    "nondeterministic_equivalent_inputs": "NOT_TRIGGERED",
+    "rename_endpoint_escape": "NOT_TRIGGERED",
+    "symlink_or_traversal_escape": "NOT_TRIGGERED",
+    "unreconstructable_attempt": "NOT_TRIGGERED"
+  },
+  "failure_results": {
+    "fail_closed": {
+      "cases": 5,
+      "correct": 5,
+      "failure_ids": []
+    },
+    "fail_indeterminate": {
+      "cases": 2,
+      "correct": 2,
+      "failure_ids": []
+    },
+    "failure_class_breakdown": {
+      "audit_pre_effect_failures": [
+        "FSH-014-086"
+      ],
+      "authorization_failures": [
+        "FSH-014-082"
+      ],
+      "canonicalization_failures": [
+        "FSH-014-080",
+        "FSH-014-096"
+      ],
+      "partial_effect_failures": [
+        "FSH-014-088"
+      ],
+      "post_effect_audit_failures": [
+        "FSH-014-090"
+      ],
+      "target_validation_failures": [
+        "FSH-014-034",
+        "FSH-014-036",
+        "FSH-014-038",
+        "FSH-014-040",
+        "FSH-014-042",
+        "FSH-014-044",
+        "FSH-014-046",
+        "FSH-014-048",
+        "FSH-014-050",
+        "FSH-014-052",
+        "FSH-014-054",
+        "FSH-014-056",
+        "FSH-014-058",
+        "FSH-014-060",
+        "FSH-014-062",
+        "FSH-014-064",
+        "FSH-014-066"
+      ],
+      "tool_errors": [
+        "FSH-014-068",
+        "FSH-014-070",
+        "FSH-014-072",
+        "FSH-014-074",
+        "FSH-014-076",
+        "FSH-014-078"
+      ]
+    },
+    "tool_error": {
+      "cases": 6,
+      "correct": 6,
+      "failure_ids": []
+    }
+  },
+  "freeze_ready": false,
+  "frozen_shas": {
+    "corpus": "5ac7311bb8f086cca97f474069d068067ac73142",
+    "implementation": "b49a5cd0ff28a38eb8314291f51c106d2df9bd7c",
+    "protocol": "7baf20293caa83d3fff6a200174c4f8840918607"
+  },
+  "hard_negative_results": {
+    "correctly_allowed": 23,
+    "incorrect_ids": [],
+    "records": [
+      {
+        "correct": true,
+        "operation": "filesystem.read",
+        "scenario_id": "FSH-014-001",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.write",
+        "scenario_id": "FSH-014-003",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.append",
+        "scenario_id": "FSH-014-005",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.create",
+        "scenario_id": "FSH-014-007",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.delete",
+        "scenario_id": "FSH-014-009",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.rename",
+        "scenario_id": "FSH-014-011",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.mkdir",
+        "scenario_id": "FSH-014-013",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.list",
+        "scenario_id": "FSH-014-015",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.stat",
+        "scenario_id": "FSH-014-017",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.append",
+        "scenario_id": "FSH-014-023",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.delete",
+        "scenario_id": "FSH-014-025",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.list",
+        "scenario_id": "FSH-014-027",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.stat",
+        "scenario_id": "FSH-014-029",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.rename",
+        "scenario_id": "FSH-014-031",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.read",
+        "scenario_id": "FSH-014-033",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.stat",
+        "scenario_id": "FSH-014-035",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.write",
+        "scenario_id": "FSH-014-037",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.list",
+        "scenario_id": "FSH-014-039",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.append",
+        "scenario_id": "FSH-014-041",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.read",
+        "scenario_id": "FSH-014-053",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.write",
+        "scenario_id": "FSH-014-055",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.append",
+        "scenario_id": "FSH-014-057",
+        "terminal": "ALLOW_SUCCESS"
+      },
+      {
+        "correct": true,
+        "operation": "filesystem.delete",
+        "scenario_id": "FSH-014-059",
+        "terminal": "ALLOW_SUCCESS"
+      }
+    ],
+    "success_rate": 1.0,
+    "total": 23
+  },
+  "hardlink_results": {
+    "actual_rejections": 7,
+    "cases": 14,
+    "environment_supported": true,
+    "expected_rejections": 7,
+    "failure_ids": [],
+    "passes": 14,
+    "records": [
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-053",
+        "side_effect": false,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-054",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-055",
+        "side_effect": true,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-056",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-057",
+        "side_effect": true,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-058",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-059",
+        "side_effect": true,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-060",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-061",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-062",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-063",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-064",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-065",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-066",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      }
+    ],
+    "supported_cases": 14,
+    "unexpected_executions": []
+  },
+  "independent_basis": {
+    "authorization_correct": 91,
+    "authorization_total": 91,
+    "failure_criteria": {
+      "audit_false_nonexecution": "NOT_TRIGGERED",
+      "canonicalization_expands_scope": "NOT_TRIGGERED",
+      "corpus_specific_authorization_branch": "NOT_TRIGGERED",
+      "denied_mutation_changes_state": "NOT_TRIGGERED",
+      "denied_read_list_stat_disclosure": "NOT_TRIGGERED",
+      "execution_before_allow": "NOT_TRIGGERED",
+      "execution_start_for_denial": "NOT_TRIGGERED",
+      "nondeterministic_equivalent_inputs": "NOT_TRIGGERED",
+      "rename_endpoint_escape": "NOT_TRIGGERED",
+      "symlink_or_traversal_escape": "NOT_TRIGGERED",
+      "unreconstructable_attempt": "NOT_TRIGGERED"
+    },
+    "hard_negative_correct": 23,
+    "hard_negative_total": 23,
+    "mutation_prevention_correct": 19,
+    "mutation_prevention_total": 19,
+    "nondisclosure_correct": 9,
+    "nondisclosure_total": 9,
+    "operation_results": {
+      "append": {
+        "nondisclosure_applicable": 0,
+        "nondisclosure_correct": 0,
+        "policy_correct": 11,
+        "policy_evaluable": 11,
+        "side_effect_applicable": 11,
+        "side_effect_correct": 11,
+        "terminal_correct": 12,
+        "total": 12
+      },
+      "create": {
+        "nondisclosure_applicable": 0,
+        "nondisclosure_correct": 0,
+        "policy_correct": 8,
+        "policy_evaluable": 8,
+        "side_effect_applicable": 8,
+        "side_effect_correct": 8,
+        "terminal_correct": 8,
+        "total": 8
+      },
+      "delete": {
+        "nondisclosure_applicable": 0,
+        "nondisclosure_correct": 0,
+        "policy_correct": 8,
+        "policy_evaluable": 8,
+        "side_effect_applicable": 8,
+        "side_effect_correct": 8,
+        "terminal_correct": 8,
+        "total": 8
+      },
+      "list": {
+        "nondisclosure_applicable": 2,
+        "nondisclosure_correct": 2,
+        "policy_correct": 6,
+        "policy_evaluable": 6,
+        "side_effect_applicable": 0,
+        "side_effect_correct": 0,
+        "terminal_correct": 6,
+        "total": 6
+      },
+      "mkdir": {
+        "nondisclosure_applicable": 0,
+        "nondisclosure_correct": 0,
+        "policy_correct": 2,
+        "policy_evaluable": 2,
+        "side_effect_applicable": 2,
+        "side_effect_correct": 2,
+        "terminal_correct": 2,
+        "total": 2
+      },
+      "read": {
+        "nondisclosure_applicable": 3,
+        "nondisclosure_correct": 3,
+        "policy_correct": 14,
+        "policy_evaluable": 14,
+        "side_effect_applicable": 0,
+        "side_effect_correct": 0,
+        "terminal_correct": 14,
+        "total": 14
+      },
+      "rename": {
+        "nondisclosure_applicable": 0,
+        "nondisclosure_correct": 0,
+        "policy_correct": 15,
+        "policy_evaluable": 15,
+        "side_effect_applicable": 16,
+        "side_effect_correct": 16,
+        "terminal_correct": 16,
+        "total": 16
+      },
+      "stat": {
+        "nondisclosure_applicable": 4,
+        "nondisclosure_correct": 4,
+        "policy_correct": 13,
+        "policy_evaluable": 13,
+        "side_effect_applicable": 0,
+        "side_effect_correct": 0,
+        "terminal_correct": 14,
+        "total": 14
+      },
+      "write": {
+        "nondisclosure_applicable": 0,
+        "nondisclosure_correct": 0,
+        "policy_correct": 14,
+        "policy_evaluable": 14,
+        "side_effect_applicable": 15,
+        "side_effect_correct": 15,
+        "terminal_correct": 16,
+        "total": 16
+      }
+    },
+    "ordering_correct": 94,
+    "ordering_total": 94,
+    "pairs_correct": 48,
+    "pairs_total": 48,
+    "reconstruction_correct": 94,
+    "reconstruction_total": 94,
+    "scenario_count": 96,
+    "success_criteria": {
+      "audit_reconstruction_100_percent": "PASS",
+      "authorization_correctness_100_percent": "PASS",
+      "authorize_before_effect_ordering_100_percent": "PASS",
+      "denied_mutation_prevention_100_percent": "PASS",
+      "deterministic_repeats": "PASS",
+      "expected_direct_route_bypass_boundary": "PASS",
+      "no_frozen_regression": "FAIL",
+      "read_list_stat_nondisclosure_100_percent": "PASS",
+      "registered_canonicalization_100_percent": "PASS",
+      "tool_error_classification_100_percent": "PASS",
+      "zero_adapter_routed_policy_escapes": "PASS"
+    },
+    "terminal_correct": 96,
+    "terminal_total": 96,
+    "truthfulness_correct": 94,
+    "truthfulness_total": 94
+  },
+  "integrity": {
+    "canonical_records_sha256": "2584f54038c3f68d4c2b34382a699c542dbe070cc053e8f63b084e57d7012526",
+    "corpus_adapter_coupling_search": {
+      "corpus_specific_runtime_branch_found": false,
+      "generic_coincidences_reviewed": [
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/monitor.py",
+          "term": "FAIL_CLOSED"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/audit.py",
+          "term": "FAIL_CLOSED"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/audit.py",
+          "term": "FAIL_INDETERMINATE"
+        },
+        {
+          "kind": "family_id_or_generic_family_term",
+          "path": "src/safetybox/filesystem/audit.py",
+          "term": "RENAME"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/audit.py",
+          "term": "TOOL_ERROR"
+        },
+        {
+          "kind": "family_id_or_generic_family_term",
+          "path": "src/safetybox/filesystem/validation.py",
+          "term": "RENAME"
+        },
+        {
+          "kind": "family_id_or_generic_family_term",
+          "path": "src/safetybox/filesystem/validation.py",
+          "term": "SYMLINK"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/models.py",
+          "term": "FAIL_CLOSED"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/models.py",
+          "term": "FAIL_INDETERMINATE"
+        },
+        {
+          "kind": "family_id_or_generic_family_term",
+          "path": "src/safetybox/filesystem/models.py",
+          "term": "RENAME"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/models.py",
+          "term": "TARGET_VALIDATION_REJECT"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/models.py",
+          "term": "TOOL_ERROR"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/adapter.py",
+          "term": "FAIL_CLOSED"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/adapter.py",
+          "term": "FAIL_INDETERMINATE"
+        },
+        {
+          "kind": "expected_label_or_runtime_taxonomy",
+          "path": "src/safetybox/filesystem/adapter.py",
+          "term": "TOOL_ERROR"
+        },
+        {
+          "kind": "family_id_or_generic_family_term",
+          "path": "src/safetybox/filesystem/state_digest.py",
+          "term": "SYMLINK"
+        },
+        {
+          "kind": "family_id_or_generic_family_term",
+          "path": "src/safetybox/filesystem/primitives.py",
+          "term": "RENAME"
+        }
+      ],
+      "false_positive_matches_reviewed": [
+        {
+          "kind": "substring_coincidence",
+          "path": "src/safetybox/context/models.py",
+          "term": "source.dat",
+          "matched_source_text": "resource.data_role_id",
+          "review_disposition": "Generic substring coincidence; not a corpus-specific runtime branch."
+        }
+      ],
+      "high_confidence_matches": [],
+      "loader_excluded_as_nonproduction_corpus_boundary": true,
+      "manual_review_completed": true,
+      "review_rule": "Generic family/taxonomy strings and substring coincidences are recorded but do not establish corpus coupling.",
+      "searched_production_files": 50,
+      "searched_term_count": 263
+    },
+    "frozen_path_diffs_zero_post_run": true,
+    "frozen_path_diffs_zero_pre_run": true,
+    "independent_recomputation": "MATCH",
+    "independent_recomputation_details": {
+      "adapter_executed": false,
+      "all_sections_match": true,
+      "recomputed_basis": {
+        "authorization_correct": 91,
+        "authorization_total": 91,
+        "failure_criteria": {
+          "audit_false_nonexecution": "NOT_TRIGGERED",
+          "canonicalization_expands_scope": "NOT_TRIGGERED",
+          "corpus_specific_authorization_branch": "NOT_TRIGGERED",
+          "denied_mutation_changes_state": "NOT_TRIGGERED",
+          "denied_read_list_stat_disclosure": "NOT_TRIGGERED",
+          "execution_before_allow": "NOT_TRIGGERED",
+          "execution_start_for_denial": "NOT_TRIGGERED",
+          "nondeterministic_equivalent_inputs": "NOT_TRIGGERED",
+          "rename_endpoint_escape": "NOT_TRIGGERED",
+          "symlink_or_traversal_escape": "NOT_TRIGGERED",
+          "unreconstructable_attempt": "NOT_TRIGGERED"
+        },
+        "hard_negative_correct": 23,
+        "hard_negative_total": 23,
+        "mutation_prevention_correct": 19,
+        "mutation_prevention_total": 19,
+        "nondisclosure_correct": 9,
+        "nondisclosure_total": 9,
+        "operation_results": {
+          "append": {
+            "nondisclosure_applicable": 0,
+            "nondisclosure_correct": 0,
+            "policy_correct": 11,
+            "policy_evaluable": 11,
+            "side_effect_applicable": 11,
+            "side_effect_correct": 11,
+            "terminal_correct": 12,
+            "total": 12
+          },
+          "create": {
+            "nondisclosure_applicable": 0,
+            "nondisclosure_correct": 0,
+            "policy_correct": 8,
+            "policy_evaluable": 8,
+            "side_effect_applicable": 8,
+            "side_effect_correct": 8,
+            "terminal_correct": 8,
+            "total": 8
+          },
+          "delete": {
+            "nondisclosure_applicable": 0,
+            "nondisclosure_correct": 0,
+            "policy_correct": 8,
+            "policy_evaluable": 8,
+            "side_effect_applicable": 8,
+            "side_effect_correct": 8,
+            "terminal_correct": 8,
+            "total": 8
+          },
+          "list": {
+            "nondisclosure_applicable": 2,
+            "nondisclosure_correct": 2,
+            "policy_correct": 6,
+            "policy_evaluable": 6,
+            "side_effect_applicable": 0,
+            "side_effect_correct": 0,
+            "terminal_correct": 6,
+            "total": 6
+          },
+          "mkdir": {
+            "nondisclosure_applicable": 0,
+            "nondisclosure_correct": 0,
+            "policy_correct": 2,
+            "policy_evaluable": 2,
+            "side_effect_applicable": 2,
+            "side_effect_correct": 2,
+            "terminal_correct": 2,
+            "total": 2
+          },
+          "read": {
+            "nondisclosure_applicable": 3,
+            "nondisclosure_correct": 3,
+            "policy_correct": 14,
+            "policy_evaluable": 14,
+            "side_effect_applicable": 0,
+            "side_effect_correct": 0,
+            "terminal_correct": 14,
+            "total": 14
+          },
+          "rename": {
+            "nondisclosure_applicable": 0,
+            "nondisclosure_correct": 0,
+            "policy_correct": 15,
+            "policy_evaluable": 15,
+            "side_effect_applicable": 16,
+            "side_effect_correct": 16,
+            "terminal_correct": 16,
+            "total": 16
+          },
+          "stat": {
+            "nondisclosure_applicable": 4,
+            "nondisclosure_correct": 4,
+            "policy_correct": 13,
+            "policy_evaluable": 13,
+            "side_effect_applicable": 0,
+            "side_effect_correct": 0,
+            "terminal_correct": 14,
+            "total": 14
+          },
+          "write": {
+            "nondisclosure_applicable": 0,
+            "nondisclosure_correct": 0,
+            "policy_correct": 14,
+            "policy_evaluable": 14,
+            "side_effect_applicable": 15,
+            "side_effect_correct": 15,
+            "terminal_correct": 16,
+            "total": 16
+          }
+        },
+        "ordering_correct": 94,
+        "ordering_total": 94,
+        "pairs_correct": 48,
+        "pairs_total": 48,
+        "reconstruction_correct": 94,
+        "reconstruction_total": 94,
+        "scenario_count": 96,
+        "success_criteria": {
+          "audit_reconstruction_100_percent": "PASS",
+          "authorization_correctness_100_percent": "PASS",
+          "authorize_before_effect_ordering_100_percent": "PASS",
+          "denied_mutation_prevention_100_percent": "PASS",
+          "deterministic_repeats": "PASS",
+          "expected_direct_route_bypass_boundary": "PASS",
+        "no_frozen_regression": "FAIL",
+          "read_list_stat_nondisclosure_100_percent": "PASS",
+          "registered_canonicalization_100_percent": "PASS",
+          "tool_error_classification_100_percent": "PASS",
+          "zero_adapter_routed_policy_escapes": "PASS"
+        },
+        "terminal_correct": 96,
+        "terminal_total": 96,
+        "truthfulness_correct": 94,
+        "truthfulness_total": 94
+      },
+      "script": "recompute.py",
+      "sections_match": {
+        "authorization_correct": true,
+        "authorization_total": true,
+        "failure_criteria": true,
+        "hard_negative_correct": true,
+        "hard_negative_total": true,
+        "mutation_prevention_correct": true,
+        "mutation_prevention_total": true,
+        "nondisclosure_correct": true,
+        "nondisclosure_total": true,
+        "operation_results": true,
+        "ordering_correct": true,
+        "ordering_total": true,
+        "pairs_correct": true,
+        "pairs_total": true,
+        "reconstruction_correct": true,
+        "reconstruction_total": true,
+        "scenario_count": true,
+        "success_criteria": true,
+        "terminal_correct": true,
+        "terminal_total": true,
+        "truthfulness_correct": true,
+        "truthfulness_total": true
+      }
+    },
+    "raw_records_immutable_after_label_join": true,
+    "raw_records_persisted_at": "2026-09-24T17:36:58.572015+05:45"
+  },
+  "invariant_results": {
+    "INV-016": {
+      "applicable": 19,
+      "failures": [],
+      "passes": 19
+    },
+    "INV-017": {
+      "applicable": 9,
+      "by_operation": {
+        "list": {
+          "failure_ids": [],
+          "passes": 2,
+          "rate": 1.0,
+          "total": 2
+        },
+        "read": {
+          "failure_ids": [],
+          "passes": 3,
+          "rate": 1.0,
+          "total": 3
+        },
+        "stat": {
+          "failure_ids": [],
+          "passes": 4,
+          "rate": 1.0,
+          "total": 4
+        }
+      },
+      "failures": [],
+      "passes": 9
+    },
+    "INV-018": {
+      "applicable": 70,
+      "failures": [],
+      "passes": 70
+    },
+    "INV-019": {
+      "applicable": 5,
+      "failures": [],
+      "passes": 5
+    }
+  },
+  "label_isolation": {
+    "data_flow": "load runtime scenario -> materialize fixture -> execute frozen adapter -> normalize -> append/fsync canonical record; after runs/repeats close -> load labels -> join for scoring",
+    "excluded_from_execution": [
+      "labels",
+      "pair metadata",
+      "family metadata",
+      "hard-negative metadata",
+      "rationales"
+    ],
+    "execution_objects": "CorpusScenario and RequestSpec only",
+    "label_joined_at": "2026-09-24T17:36:58.572032+05:45",
+    "labels_loaded_after_raw_records_persisted": true
+  },
+  "mutation_prevention": {
+    "denominator": 19,
+    "failure_ids": [],
+    "numerator": 19,
+    "rate": 1.0
+  },
+  "nondisclosure": {
+    "combined": {
+      "passes": 9,
+      "rate": 1.0,
+      "total": 9
+    },
+    "sentinel_audit": {
+      "audit_raw_payload_hits": [],
+      "denied_scenario_ids": [
+        "FSH-014-002",
+        "FSH-014-016",
+        "FSH-014-018",
+        "FSH-014-020",
+        "FSH-014-028",
+        "FSH-014-030",
+        "FSH-014-043",
+        "FSH-014-045",
+        "FSH-014-061"
+      ],
+      "protected_sentinel_hits": [],
+      "runtime_channels_checked": [
+        "primitive_result",
+        "safe_error",
+        "audit_event_sequence"
+      ],
+      "stat_metadata_checked_structurally": true
+    },
+    "list": {
+      "failure_ids": [],
+      "passes": 2,
+      "rate": 1.0,
+      "total": 2
+    },
+    "read": {
+      "failure_ids": [],
+      "passes": 3,
+      "rate": 1.0,
+      "total": 3
+    },
+    "stat": {
+      "failure_ids": [],
+      "passes": 4,
+      "rate": 1.0,
+      "total": 4
+    }
+  },
+  "operation_results": {
+    "append": {
+      "nondisclosure_applicable": 0,
+      "nondisclosure_correct": 0,
+      "policy_correct": 11,
+      "policy_evaluable": 11,
+      "side_effect_applicable": 11,
+      "side_effect_correct": 11,
+      "terminal_correct": 12,
+      "total": 12
+    },
+    "create": {
+      "nondisclosure_applicable": 0,
+      "nondisclosure_correct": 0,
+      "policy_correct": 8,
+      "policy_evaluable": 8,
+      "side_effect_applicable": 8,
+      "side_effect_correct": 8,
+      "terminal_correct": 8,
+      "total": 8
+    },
+    "delete": {
+      "nondisclosure_applicable": 0,
+      "nondisclosure_correct": 0,
+      "policy_correct": 8,
+      "policy_evaluable": 8,
+      "side_effect_applicable": 8,
+      "side_effect_correct": 8,
+      "terminal_correct": 8,
+      "total": 8
+    },
+    "list": {
+      "nondisclosure_applicable": 2,
+      "nondisclosure_correct": 2,
+      "policy_correct": 6,
+      "policy_evaluable": 6,
+      "side_effect_applicable": 0,
+      "side_effect_correct": 0,
+      "terminal_correct": 6,
+      "total": 6
+    },
+    "mkdir": {
+      "nondisclosure_applicable": 0,
+      "nondisclosure_correct": 0,
+      "policy_correct": 2,
+      "policy_evaluable": 2,
+      "side_effect_applicable": 2,
+      "side_effect_correct": 2,
+      "terminal_correct": 2,
+      "total": 2
+    },
+    "read": {
+      "nondisclosure_applicable": 3,
+      "nondisclosure_correct": 3,
+      "policy_correct": 14,
+      "policy_evaluable": 14,
+      "side_effect_applicable": 0,
+      "side_effect_correct": 0,
+      "terminal_correct": 14,
+      "total": 14
+    },
+    "rename": {
+      "nondisclosure_applicable": 0,
+      "nondisclosure_correct": 0,
+      "policy_correct": 15,
+      "policy_evaluable": 15,
+      "side_effect_applicable": 16,
+      "side_effect_correct": 16,
+      "terminal_correct": 16,
+      "total": 16
+    },
+    "stat": {
+      "nondisclosure_applicable": 4,
+      "nondisclosure_correct": 4,
+      "policy_correct": 13,
+      "policy_evaluable": 13,
+      "side_effect_applicable": 0,
+      "side_effect_correct": 0,
+      "terminal_correct": 14,
+      "total": 14
+    },
+    "write": {
+      "nondisclosure_applicable": 0,
+      "nondisclosure_correct": 0,
+      "policy_correct": 14,
+      "policy_evaluable": 14,
+      "side_effect_applicable": 15,
+      "side_effect_correct": 15,
+      "terminal_correct": 16,
+      "total": 16
+    }
+  },
+  "ordering": {
+    "failure_ids": [],
+    "passes": 94,
+    "rate": 1.0,
+    "total": 94
+  },
+  "pair_results": {
+    "accuracy": 1.0,
+    "correct": 48,
+    "pairs": [
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-001",
+        "scenario_a": "FSH-014-001",
+        "scenario_b": "FSH-014-002",
+        "semantic_variable_changed": "resource subtree"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-002",
+        "scenario_a": "FSH-014-003",
+        "scenario_b": "FSH-014-004",
+        "semantic_variable_changed": "resource subtree after NFC normalization"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-003",
+        "scenario_a": "FSH-014-005",
+        "scenario_b": "FSH-014-006",
+        "semantic_variable_changed": "resource subtree after separator collapse"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-004",
+        "scenario_a": "FSH-014-007",
+        "scenario_b": "FSH-014-008",
+        "semantic_variable_changed": "resource subtree after in-root cancellation"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-005",
+        "scenario_a": "FSH-014-009",
+        "scenario_b": "FSH-014-010",
+        "semantic_variable_changed": "resource subtree"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-006",
+        "scenario_a": "FSH-014-011",
+        "scenario_b": "FSH-014-012",
+        "semantic_variable_changed": "destination authorization"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-007",
+        "scenario_a": "FSH-014-013",
+        "scenario_b": "FSH-014-014",
+        "semantic_variable_changed": "resource subtree after trailing separator removal"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-008",
+        "scenario_a": "FSH-014-015",
+        "scenario_b": "FSH-014-016",
+        "semantic_variable_changed": "resource subtree"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-009",
+        "scenario_a": "FSH-014-017",
+        "scenario_b": "FSH-014-018",
+        "semantic_variable_changed": "resource subtree"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-010",
+        "scenario_a": "FSH-014-019",
+        "scenario_b": "FSH-014-020",
+        "semantic_variable_changed": "operation capability"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-011",
+        "scenario_a": "FSH-014-021",
+        "scenario_b": "FSH-014-022",
+        "semantic_variable_changed": "task binding"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-012",
+        "scenario_a": "FSH-014-023",
+        "scenario_b": "FSH-014-024",
+        "semantic_variable_changed": "component boundary"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-013",
+        "scenario_a": "FSH-014-025",
+        "scenario_b": "FSH-014-026",
+        "semantic_variable_changed": "component boundary"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-014",
+        "scenario_a": "FSH-014-027",
+        "scenario_b": "FSH-014-028",
+        "semantic_variable_changed": "component boundary"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-015",
+        "scenario_a": "FSH-014-029",
+        "scenario_b": "FSH-014-030",
+        "semantic_variable_changed": "component boundary"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "AUTHORIZED",
+          "MATCHED_POLICY",
+          "POLICY_DENIED"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-016",
+        "scenario_a": "FSH-014-031",
+        "scenario_b": "FSH-014-032",
+        "semantic_variable_changed": "source authorization"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "MATCHED_PHYSICAL",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-017",
+        "scenario_a": "FSH-014-033",
+        "scenario_b": "FSH-014-034",
+        "semantic_variable_changed": "terminal entry type"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "MATCHED_PHYSICAL",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-018",
+        "scenario_a": "FSH-014-035",
+        "scenario_b": "FSH-014-036",
+        "semantic_variable_changed": "terminal entry type"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "MATCHED_PHYSICAL",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-019",
+        "scenario_a": "FSH-014-037",
+        "scenario_b": "FSH-014-038",
+        "semantic_variable_changed": "intermediate entry type"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "MATCHED_PHYSICAL",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-020",
+        "scenario_a": "FSH-014-039",
+        "scenario_b": "FSH-014-040",
+        "semantic_variable_changed": "intermediate entry type"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "MATCHED_PHYSICAL",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-021",
+        "scenario_a": "FSH-014-041",
+        "scenario_b": "FSH-014-042",
+        "semantic_variable_changed": "intermediate topology"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "AUTHORIZATION_BEFORE_VALIDATION",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-022",
+        "scenario_a": "FSH-014-043",
+        "scenario_b": "FSH-014-044",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "AUTHORIZATION_BEFORE_VALIDATION",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-023",
+        "scenario_a": "FSH-014-045",
+        "scenario_b": "FSH-014-046",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "AUTHORIZATION_BEFORE_VALIDATION",
+          "RENAME",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-024",
+        "scenario_a": "FSH-014-047",
+        "scenario_b": "FSH-014-048",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "AUTHORIZATION_BEFORE_VALIDATION",
+          "RENAME",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-025",
+        "scenario_a": "FSH-014-049",
+        "scenario_b": "FSH-014-050",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "AUTHORIZATION_BEFORE_VALIDATION",
+          "SYMLINK"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-026",
+        "scenario_a": "FSH-014-051",
+        "scenario_b": "FSH-014-052",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-027",
+        "scenario_a": "FSH-014-053",
+        "scenario_b": "FSH-014-054",
+        "semantic_variable_changed": "terminal link count"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-028",
+        "scenario_a": "FSH-014-055",
+        "scenario_b": "FSH-014-056",
+        "semantic_variable_changed": "terminal link count"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-029",
+        "scenario_a": "FSH-014-057",
+        "scenario_b": "FSH-014-058",
+        "semantic_variable_changed": "terminal link count"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-030",
+        "scenario_a": "FSH-014-059",
+        "scenario_b": "FSH-014-060",
+        "semantic_variable_changed": "terminal link count"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-031",
+        "scenario_a": "FSH-014-061",
+        "scenario_b": "FSH-014-062",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-032",
+        "scenario_a": "FSH-014-063",
+        "scenario_b": "FSH-014-064",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "TARGET_VALIDATION_REJECT"
+        ],
+        "family": [
+          "HARD_LINK",
+          "MATCHED_PHYSICAL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-033",
+        "scenario_a": "FSH-014-065",
+        "scenario_b": "FSH-014-066",
+        "semantic_variable_changed": "capability relationship"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-034",
+        "scenario_a": "FSH-014-067",
+        "scenario_b": "FSH-014-068",
+        "semantic_variable_changed": "target existence"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-035",
+        "scenario_a": "FSH-014-069",
+        "scenario_b": "FSH-014-070",
+        "semantic_variable_changed": "immediate parent existence"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-036",
+        "scenario_a": "FSH-014-071",
+        "scenario_b": "FSH-014-072",
+        "semantic_variable_changed": "terminal object type"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-037",
+        "scenario_a": "FSH-014-073",
+        "scenario_b": "FSH-014-074",
+        "semantic_variable_changed": "target absence"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-038",
+        "scenario_a": "FSH-014-075",
+        "scenario_b": "FSH-014-076",
+        "semantic_variable_changed": "directory emptiness"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "TOOL_ERROR"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-039",
+        "scenario_a": "FSH-014-077",
+        "scenario_b": "FSH-014-078",
+        "semantic_variable_changed": "permission-like primitive injection"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_CLOSED"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_CLOSED"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-040",
+        "scenario_a": "FSH-014-079",
+        "scenario_b": "FSH-014-080",
+        "semantic_variable_changed": "root escape during lexical canonicalization"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "FAIL_CLOSED"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "FAIL_CLOSED"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-041",
+        "scenario_a": "FSH-014-081",
+        "scenario_b": "FSH-014-082",
+        "semantic_variable_changed": "authorizer behavior"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_CLOSED"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_CLOSED"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-042",
+        "scenario_a": "FSH-014-083",
+        "scenario_b": "FSH-014-084",
+        "semantic_variable_changed": "physical validator dependency"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_CLOSED"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_CLOSED"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-043",
+        "scenario_a": "FSH-014-085",
+        "scenario_b": "FSH-014-086",
+        "semantic_variable_changed": "pre-execution audit sink"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_INDETERMINATE"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_INDETERMINATE"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-044",
+        "scenario_a": "FSH-014-087",
+        "scenario_b": "FSH-014-088",
+        "semantic_variable_changed": "primitive partial-effect injection"
+      },
+      {
+        "actual_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_INDETERMINATE"
+        ],
+        "expected_outcomes": [
+          "ALLOW_SUCCESS",
+          "FAIL_INDETERMINATE"
+        ],
+        "family": [
+          "FAILURE_CONTROL",
+          "FAILURE_ERROR",
+          "MATCHED_FAILURE"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-045",
+        "scenario_a": "FSH-014-089",
+        "scenario_b": "FSH-014-090",
+        "semantic_variable_changed": "post-effect audit sink"
+      },
+      {
+        "actual_outcomes": [
+          "EXPECTED_FMED_L1_BYPASS",
+          "EXPECTED_FMED_L1_BYPASS"
+        ],
+        "expected_outcomes": [
+          "EXPECTED_FMED_L1_BYPASS",
+          "EXPECTED_FMED_L1_BYPASS"
+        ],
+        "family": [
+          "FMED_L1_CONTROL"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-046",
+        "scenario_a": "FSH-014-091",
+        "scenario_b": "FSH-014-092",
+        "semantic_variable_changed": "direct Python filesystem API"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "POLICY_DENY"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "POLICY_DENY"
+        ],
+        "family": [
+          "DETERMINISM",
+          "POLICY_DENIED",
+          "RENAME"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-047",
+        "scenario_a": "FSH-014-093",
+        "scenario_b": "FSH-014-094",
+        "semantic_variable_changed": "destination capability presence"
+      },
+      {
+        "actual_outcomes": [
+          "POLICY_DENY",
+          "FAIL_CLOSED"
+        ],
+        "expected_outcomes": [
+          "POLICY_DENY",
+          "FAIL_CLOSED"
+        ],
+        "family": [
+          "POLICY_DENIED",
+          "PREFIX_COLLISION",
+          "RENAME"
+        ],
+        "pair_correct": true,
+        "pair_id": "CF-014-048",
+        "scenario_a": "FSH-014-095",
+        "scenario_b": "FSH-014-096",
+        "semantic_variable_changed": "rename endpoint boundary pattern"
+      }
+    ],
+    "total": 48
+  },
+  "performance": {
+    "adapter_total": {
+      "count": 94,
+      "mean_ns": 455513.1595744681,
+      "median_ns": 392644.0,
+      "minimum_ns": 112276,
+      "p95_ns": 916443,
+      "p99_ns": 1412479
+    },
+    "audit_calls": {
+      "count": 765,
+      "mean_ns": 265.9660130718954,
+      "median_ns": 225,
+      "minimum_ns": 74,
+      "p95_ns": 471,
+      "p99_ns": 1126
+    },
+    "authorization_calls": {
+      "count": 107,
+      "mean_ns": 12430.140186915887,
+      "median_ns": 10501,
+      "minimum_ns": 3595,
+      "p95_ns": 25922,
+      "p99_ns": 41118
+    },
+    "primitive_calls": {
+      "count": 40,
+      "mean_ns": 46500.475,
+      "median_ns": 36344.5,
+      "minimum_ns": 14523,
+      "p95_ns": 101602,
+      "p99_ns": 121764
+    },
+    "validation_probe_calls": {
+      "count": 253,
+      "mean_ns": 11050.707509881422,
+      "median_ns": 8781,
+      "minimum_ns": 5329,
+      "p95_ns": 23926,
+      "p99_ns": 33366
+    }
+  },
+  "raw_run_validity": "VALID_WITH_DOCUMENTED_INFRASTRUCTURE_CAVEAT",
+  "regression_gate": {
+    "coverage": {
+      "command": "/home/sujana-personal/Desktop/safetybox/.venv/bin/pytest --cov=safetybox",
+      "exit_code": 1,
+      "passed": false,
+      "stderr": "",
+      "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.11.16, pytest-9.1.1, pluggy-1.6.0\nrootdir: /home/sujana-personal/Desktop/safetybox\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: cov-7.1.0\ncollected 292 items\n\ntests/dev/test_exp013_m5_1_capability_audit.py ....                      [  1%]\ntests/dev/test_exp014_filesystem_adapter.py ............................ [ 10%]\n...............................................................          [ 32%]\ntests/test_audit_events.py ..........                                    [ 35%]\ntests/test_b4_monitor.py .......................                         [ 43%]\ntests/test_capabilities.py .......                                       [ 46%]\ntests/test_context_evaluation.py ....................                    [ 53%]\ntests/test_context_trajectory_monitor.py .................               [ 58%]\ntests/test_exp009_corpus.py .......                                      [ 61%]\ntests/test_exp012_corpus.py ...........                                  [ 65%]\ntests/test_exp013_corpus.py ........                                     [ 67%]\ntests/test_exp014_corpus.py .............F..                             [ 73%]\ntests/test_policy.py .                                                   [ 73%]\ntests/test_reference_monitor.py .......                                  [ 76%]\ntests/test_single_observation_baseline.py ...................            [ 82%]\ntests/test_task_context.py .................                             [ 88%]\ntests/test_task_contract_policy.py ...........                           [ 92%]\ntests/test_threat_simulator.py ............                              [ 96%]\ntests/test_trajectory_monitor.py ...........                             [100%]\n\n=================================== FAILURES ===================================\n_____ test_corpus_contains_no_predictions_results_or_adapter_run_artifacts _____\n\n    def test_corpus_contains_no_predictions_results_or_adapter_run_artifacts() -> None:\n>       assert not (ROOT / \"results\" / \"EXP-014\").exists()\nE       AssertionError: assert not True\nE        +  where True = exists()\nE        +    where exists = ((PosixPath('/home/sujana-personal/Desktop/safetybox') / 'results') / 'EXP-014').exists\n\ntests/test_exp014_corpus.py:445: AssertionError\n================================ tests coverage ================================\n_______________ coverage: platform linux, python 3.11.16-final-0 _______________\n\nName                                            Stmts   Miss  Cover\n-------------------------------------------------------------------\nsrc/safetybox/__init__.py                          16      0   100%\nsrc/safetybox/audit.py                             27      0   100%\nsrc/safetybox/authorization.py                     33      0   100%\nsrc/safetybox/b4/__init__.py                        4      0   100%\nsrc/safetybox/b4/models.py                        311      2    99%\nsrc/safetybox/b4/monitor.py                       103      5    95%\nsrc/safetybox/b4/rules.py                         251     13    95%\nsrc/safetybox/b4/validation.py                    157     34    78%\nsrc/safetybox/baselines/__init__.py                 2      0   100%\nsrc/safetybox/baselines/single_observation.py      82      0   100%\nsrc/safetybox/capabilities.py                      46      4    91%\nsrc/safetybox/context/__init__.py                   4      0   100%\nsrc/safetybox/context/evaluation.py               287     12    96%\nsrc/safetybox/context/models.py                   307     18    94%\nsrc/safetybox/context/validation.py                 6      0   100%\nsrc/safetybox/context_trajectory/__init__.py        4      0   100%\nsrc/safetybox/context_trajectory/models.py         48      2    96%\nsrc/safetybox/context_trajectory/monitor.py        64      3    95%\nsrc/safetybox/context_trajectory/rules.py          85      4    95%\nsrc/safetybox/contracts.py                         15      1    93%\nsrc/safetybox/controller.py                         0      0   100%\nsrc/safetybox/events.py                            56      3    95%\nsrc/safetybox/exceptions.py                         7      0   100%\nsrc/safetybox/experiments/__init__.py               0      0   100%\nsrc/safetybox/experiments/exp009_corpus.py         76      1    99%\nsrc/safetybox/experiments/exp012_corpus.py        180      1    99%\nsrc/safetybox/experiments/exp013_corpus.py        225      0   100%\nsrc/safetybox/experiments/exp014_corpus.py        377     78    79%\nsrc/safetybox/filesystem/__init__.py                9      0   100%\nsrc/safetybox/filesystem/adapter.py               147      4    97%\nsrc/safetybox/filesystem/audit.py                 137      1    99%\nsrc/safetybox/filesystem/canonicalization.py       31      0   100%\nsrc/safetybox/filesystem/errors.py                 18      0   100%\nsrc/safetybox/filesystem/mapping.py                26      0   100%\nsrc/safetybox/filesystem/models.py                109      2    98%\nsrc/safetybox/filesystem/primitives.py            110      1    99%\nsrc/safetybox/filesystem/state_digest.py           53      0   100%\nsrc/safetybox/filesystem/validation.py            121      3    98%\nsrc/safetybox/filesystem/versions.py                4      0   100%\nsrc/safetybox/models.py                            36      0   100%\nsrc/safetybox/monitor.py                           73      2    97%\nsrc/safetybox/policy.py                            23      0   100%\nsrc/safetybox/protocols.py                         15      0   100%\nsrc/safetybox/runtime.py                            0      0   100%\nsrc/safetybox/simulation/__init__.py                5      0   100%\nsrc/safetybox/simulation/models.py                116      5    96%\nsrc/safetybox/simulation/runner.py                 37      0   100%\nsrc/safetybox/simulation/scenarios.py              14      0   100%\nsrc/safetybox/simulation/tools.py                  63      3    95%\nsrc/safetybox/trajectory/__init__.py                5      0   100%\nsrc/safetybox/trajectory/models.py                 58      4    93%\nsrc/safetybox/trajectory/monitor.py                60      4    93%\nsrc/safetybox/trajectory/observations.py           14      1    93%\nsrc/safetybox/trajectory/rules.py                  42      3    93%\nsrc/safetybox/trust.py                              0      0   100%\n-------------------------------------------------------------------\nTOTAL                                            4099    214    95%\n=========================== short test summary info ============================\nFAILED tests/test_exp014_corpus.py::test_corpus_contains_no_predictions_results_or_adapter_run_artifacts\n======================== 1 failed, 291 passed in 3.35s =========================\n"
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": ""
+    },
+    "mypy": {
+      "command": "/home/sujana-personal/Desktop/safetybox/.venv/bin/mypy src",
+      "exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "Success: no issues found in 55 source files\n"
+    },
+    "pytest": {
+      "command": "/home/sujana-personal/Desktop/safetybox/.venv/bin/pytest",
+      "exit_code": 1,
+      "passed": false,
+      "stderr": "",
+      "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.11.16, pytest-9.1.1, pluggy-1.6.0\nrootdir: /home/sujana-personal/Desktop/safetybox\nconfigfile: pyproject.toml\ntestpaths: tests\nplugins: cov-7.1.0\ncollected 292 items\n\ntests/dev/test_exp013_m5_1_capability_audit.py ....                      [  1%]\ntests/dev/test_exp014_filesystem_adapter.py ............................ [ 10%]\n...............................................................          [ 32%]\ntests/test_audit_events.py ..........                                    [ 35%]\ntests/test_b4_monitor.py .......................                         [ 43%]\ntests/test_capabilities.py .......                                       [ 46%]\ntests/test_context_evaluation.py ....................                    [ 53%]\ntests/test_context_trajectory_monitor.py .................               [ 58%]\ntests/test_exp009_corpus.py .......                                      [ 61%]\ntests/test_exp012_corpus.py ...........                                  [ 65%]\ntests/test_exp013_corpus.py ........                                     [ 67%]\ntests/test_exp014_corpus.py .............F..                             [ 73%]\ntests/test_policy.py .                                                   [ 73%]\ntests/test_reference_monitor.py .......                                  [ 76%]\ntests/test_single_observation_baseline.py ...................            [ 82%]\ntests/test_task_context.py .................                             [ 88%]\ntests/test_task_contract_policy.py ...........                           [ 92%]\ntests/test_threat_simulator.py ............                              [ 96%]\ntests/test_trajectory_monitor.py ...........                             [100%]\n\n=================================== FAILURES ===================================\n_____ test_corpus_contains_no_predictions_results_or_adapter_run_artifacts _____\n\n    def test_corpus_contains_no_predictions_results_or_adapter_run_artifacts() -> None:\n>       assert not (ROOT / \"results\" / \"EXP-014\").exists()\nE       AssertionError: assert not True\nE        +  where True = exists()\nE        +    where exists = ((PosixPath('/home/sujana-personal/Desktop/safetybox') / 'results') / 'EXP-014').exists\n\ntests/test_exp014_corpus.py:445: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_exp014_corpus.py::test_corpus_contains_no_predictions_results_or_adapter_run_artifacts\n======================== 1 failed, 291 passed in 1.23s =========================\n"
+    },
+    "ruff": {
+      "command": "/home/sujana-personal/Desktop/safetybox/.venv/bin/ruff check .",
+      "exit_code": 0,
+      "passed": true,
+      "stderr": "",
+      "stdout": "All checks passed!\n"
+    }
+  },
+  "rename_results": {
+    "cases": 16,
+    "critical_denied_endpoint_side_effects": [],
+    "matrix": [
+      {
+        "actual_terminal": "ALLOW_SUCCESS",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "ALLOW",
+        "scenario_id": "FSH-014-011",
+        "side_effect": true,
+        "source_decision": "ALLOW",
+        "terminal_label": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-012",
+        "side_effect": false,
+        "source_decision": "ALLOW",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "ALLOW_SUCCESS",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "ALLOW",
+        "scenario_id": "FSH-014-031",
+        "side_effect": true,
+        "source_decision": "ALLOW",
+        "terminal_label": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-032",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-047",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "TARGET_VALIDATION_REJECT",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "FAIL_CLOSED",
+        "scenario_id": "FSH-014-048",
+        "side_effect": false,
+        "source_decision": "ALLOW",
+        "terminal_label": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-049",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "TARGET_VALIDATION_REJECT",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "FAIL_CLOSED",
+        "scenario_id": "FSH-014-050",
+        "side_effect": false,
+        "source_decision": "ALLOW",
+        "terminal_label": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-063",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "TARGET_VALIDATION_REJECT",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "FAIL_CLOSED",
+        "scenario_id": "FSH-014-064",
+        "side_effect": false,
+        "source_decision": "ALLOW",
+        "terminal_label": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-065",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "TARGET_VALIDATION_REJECT",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "FAIL_CLOSED",
+        "scenario_id": "FSH-014-066",
+        "side_effect": false,
+        "source_decision": "ALLOW",
+        "terminal_label": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "ALLOW",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-093",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-094",
+        "side_effect": false,
+        "source_decision": "DENY",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "POLICY_DENY",
+        "correct": true,
+        "destination_decision": "DENY",
+        "execution_result": "DENY",
+        "scenario_id": "FSH-014-095",
+        "side_effect": false,
+        "source_decision": "ALLOW",
+        "terminal_label": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "actual_terminal": "FAIL_CLOSED",
+        "correct": true,
+        "destination_decision": null,
+        "execution_result": "FAIL_CLOSED",
+        "scenario_id": "FSH-014-096",
+        "side_effect": false,
+        "source_decision": null,
+        "terminal_label": "FAIL_CLOSED",
+        "validation": "NOT_ATTEMPTED"
+      }
+    ]
+  },
+  "requirement_results": {
+    "REQ-001": {
+      "case_count": 2,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-002": {
+      "case_count": 2,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-003": {
+      "case_count": 32,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-004": {
+      "case_count": 16,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-005": {
+      "case_count": 0,
+      "failure_ids": [],
+      "status": "ARCHITECTURAL_ONLY"
+    },
+    "REQ-006": {
+      "case_count": 4,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-007": {
+      "case_count": 0,
+      "failure_ids": [],
+      "status": "ARCHITECTURAL_ONLY"
+    },
+    "REQ-008": {
+      "case_count": 24,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-009": {
+      "case_count": 53,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-010": {
+      "case_count": 20,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-011": {
+      "case_count": 70,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-012": {
+      "case_count": 2,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-013": {
+      "case_count": 94,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-014": {
+      "case_count": 24,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-015": {
+      "case_count": 34,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-016": {
+      "case_count": 10,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-017": {
+      "case_count": 14,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-018": {
+      "case_count": 12,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-019": {
+      "case_count": 16,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-020": {
+      "case_count": 10,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-021": {
+      "case_count": 24,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-022": {
+      "case_count": 24,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-023": {
+      "case_count": 22,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-024": {
+      "case_count": 94,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-025": {
+      "case_count": 94,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-026": {
+      "case_count": 38,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-027": {
+      "case_count": 2,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-028": {
+      "case_count": 2,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-029": {
+      "case_count": 1,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-030": {
+      "case_count": 94,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-031": {
+      "case_count": 0,
+      "failure_ids": [],
+      "status": "PASS"
+    },
+    "REQ-032": {
+      "case_count": 14,
+      "failure_ids": [],
+      "status": "PASS"
+    }
+  },
+  "run_id": "EXP-014-RUN-001",
+  "scenario_counts": {
+    "adapter": 94,
+    "canonical": 96,
+    "controls": 2,
+    "repeat_records": 2
+  },
+  "status": "COMPLETE",
+  "success_criteria": {
+    "audit_reconstruction_100_percent": "PASS",
+    "authorization_correctness_100_percent": "PASS",
+    "authorize_before_effect_ordering_100_percent": "PASS",
+    "denied_mutation_prevention_100_percent": "PASS",
+    "deterministic_repeats": "PASS",
+    "expected_direct_route_bypass_boundary": "PASS",
+    "no_frozen_regression": "FAIL",
+    "read_list_stat_nondisclosure_100_percent": "PASS",
+    "registered_canonicalization_100_percent": "PASS",
+    "tool_error_classification_100_percent": "PASS",
+    "zero_adapter_routed_policy_escapes": "PASS"
+  },
+  "symlink_results": {
+    "by_subtype": {
+      "absolute": {
+        "cases": 2,
+        "failure_ids": [],
+        "passes": 2
+      },
+      "chain": {
+        "cases": 1,
+        "failure_ids": [],
+        "passes": 1
+      },
+      "create_parent": {
+        "cases": 2,
+        "failure_ids": [],
+        "passes": 2
+      },
+      "dangling": {
+        "cases": 4,
+        "failure_ids": [],
+        "passes": 4
+      },
+      "intermediate": {
+        "cases": 7,
+        "failure_ids": [],
+        "passes": 7
+      },
+      "relative": {
+        "cases": 13,
+        "failure_ids": [],
+        "passes": 13
+      },
+      "rename": {
+        "cases": 4,
+        "failure_ids": [],
+        "passes": 4
+      },
+      "terminal": {
+        "cases": 6,
+        "failure_ids": [],
+        "passes": 6
+      }
+    },
+    "cases": 20,
+    "failure_ids": [],
+    "passes": 20,
+    "records": [
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-033",
+        "side_effect": false,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-034",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-035",
+        "side_effect": false,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-036",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-037",
+        "side_effect": true,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-038",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-039",
+        "side_effect": false,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-040",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": true,
+        "scenario_id": "FSH-014-041",
+        "side_effect": true,
+        "terminal": "ALLOW_SUCCESS",
+        "validation": "SUCCEEDED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-042",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-043",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-044",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-045",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-046",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-047",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-048",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-049",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-050",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-051",
+        "side_effect": false,
+        "terminal": "POLICY_DENY",
+        "validation": "NOT_ATTEMPTED"
+      },
+      {
+        "primitive_invoked": false,
+        "scenario_id": "FSH-014-052",
+        "side_effect": false,
+        "terminal": "TARGET_VALIDATION_REJECT",
+        "validation": "TARGET_VALIDATION_REJECT"
+      }
+    ]
+  },
+  "terminal_confusion": {
+    "accuracy": 1.0,
+    "actual_totals": {
+      "ALLOW_SUCCESS": 36,
+      "EXPECTED_FMED_L1_BYPASS": 2,
+      "FAIL_CLOSED": 5,
+      "FAIL_INDETERMINATE": 2,
+      "POLICY_DENY": 28,
+      "TARGET_VALIDATION_REJECT": 17,
+      "TOOL_ERROR": 6
+    },
+    "expected_totals": {
+      "ALLOW_SUCCESS": 36,
+      "EXPECTED_FMED_L1_BYPASS": 2,
+      "FAIL_CLOSED": 5,
+      "FAIL_INDETERMINATE": 2,
+      "POLICY_DENY": 28,
+      "TARGET_VALIDATION_REJECT": 17,
+      "TOOL_ERROR": 6
+    },
+    "matches": 96,
+    "mismatches": [],
+    "per_class": {
+      "ALLOW_SUCCESS": {
+        "accuracy": 1.0,
+        "correct": 36,
+        "total": 36
+      },
+      "EXPECTED_FMED_L1_BYPASS": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "total": 2
+      },
+      "FAIL_CLOSED": {
+        "accuracy": 1.0,
+        "correct": 5,
+        "total": 5
+      },
+      "FAIL_INDETERMINATE": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "total": 2
+      },
+      "POLICY_DENY": {
+        "accuracy": 1.0,
+        "correct": 28,
+        "total": 28
+      },
+      "TARGET_VALIDATION_REJECT": {
+        "accuracy": 1.0,
+        "correct": 17,
+        "total": 17
+      },
+      "TOOL_ERROR": {
+        "accuracy": 1.0,
+        "correct": 6,
+        "total": 6
+      }
+    },
+    "total": 96
+  },
+  "threat_results": {
+    "audit_loss_after_effect": {
+      "cases": 22,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "audit_loss_before_effect": {
+      "cases": 23,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "context_mismatch": {
+      "cases": 6,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "delete_overbreadth": {
+      "cases": 4,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "direct_api_bypass": {
+      "cases": 2,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "direct_api_bypass_boundary": {
+      "cases": 2,
+      "failure_ids": [],
+      "status": "EXPECTED_BOUNDARY"
+    },
+    "hard_link_alias": {
+      "cases": 14,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "host_logical_confusion": {
+      "cases": 1,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "inherited_file_descriptor_bypass": {
+      "cases": 0,
+      "reason": "Frozen corpus supplies no inherited descriptor fixture.",
+      "status": "NOT_EVALUATED"
+    },
+    "partial_write": {
+      "cases": 22,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "path_traversal": {
+      "cases": 4,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "prefix_collision": {
+      "cases": 9,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "protected_read_disclosure": {
+      "cases": 12,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "rename_escape": {
+      "cases": 12,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "symlink_escape": {
+      "cases": 16,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    },
+    "symlink_swap_and_toctou": {
+      "cases": 0,
+      "reason": "Frozen corpus has no race harness.",
+      "status": "NOT_EVALUATED"
+    },
+    "unicode_path_confusion": {
+      "cases": 2,
+      "failure_ids": [],
+      "status": "TESTED_PASS"
+    }
+  }
+}

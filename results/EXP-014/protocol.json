@@ -1,0 +1,42 @@
+{
+  "adapter_authorization_denominator_excludes_direct_controls": true,
+  "canonical_denominator": 96,
+  "execution_order": "frozen scenarios.yaml manifest order FSH-014-001 through FSH-014-096",
+  "experiment_id": "EXP-014",
+  "file_sha256": {
+    "experiments/EXP-014/corpus/labels.yaml": "88d9b7006b6a2adea1a81c8e54d0c587ce95ce537dc4dd7619fbd13efe833374",
+    "experiments/EXP-014/corpus/manifest.yaml": "3623b8d20f7d664cffe233a10f4c0307a6194f93eb35b5e19555fba0a9a3ab88",
+    "experiments/EXP-014/corpus/scenarios.yaml": "a259906ad9dee92edc8e1ab8743a1111aae614c757535b31ae72fe884030b116",
+    "experiments/EXP-014/protocol.yaml": "fd41816e6a3178e1d632f8f82ce10f7c70e488b06701b7be8f5615c5be333ade"
+  },
+  "fresh_state": "fresh temporary root, adapter, authorizer, recorder, sink, primitives per execution",
+  "frozen_shas": {
+    "corpus": "5ac7311bb8f086cca97f474069d068067ac73142",
+    "implementation": "b49a5cd0ff28a38eb8314291f51c106d2df9bd7c",
+    "protocol": "7baf20293caa83d3fff6a200174c4f8840918607"
+  },
+  "implementation_identifiers": [
+    "FS-ADAPTER@1",
+    "FS-CANONICALIZATION@1",
+    "FS-AUDIT-ENVELOPE@1",
+    "EXP014-STATE-DIGEST@1"
+  ],
+  "label_data_flow": "Runtime-only load and execution; runs.jsonl/repeats.jsonl closed and fsynced before load_labels().",
+  "normalization": {
+    "ALLOW": "ALLOW_SUCCESS",
+    "DENY": "POLICY_DENY",
+    "FAIL_CLOSED": "FAIL_CLOSED",
+    "FAIL_INDETERMINATE": "FAIL_INDETERMINATE",
+    "TOOL_ERROR": "TOOL_ERROR",
+    "frozen safety validation rejection codes": "TARGET_VALIDATION_REJECT",
+    "successful direct route": "EXPECTED_FMED_L1_BYPASS",
+    "validator exception or inspection failure": "FAIL_CLOSED"
+  },
+  "protocol_version": 1,
+  "repeat_set": {
+    "FSH-014-001": 2,
+    "FSH-014-093": 2,
+    "meaning": "total executions including canonical"
+  },
+  "run_id": "EXP-014-RUN-001"
+}
