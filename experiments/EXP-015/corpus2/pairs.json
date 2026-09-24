@@ -1,0 +1,256 @@
+{
+  "pairs": [
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-01",
+      "scenario_a": "C2-001",
+      "scenario_b": "C2-061",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-02",
+      "scenario_a": "C2-002",
+      "scenario_b": "C2-062",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-03",
+      "scenario_a": "C2-003",
+      "scenario_b": "C2-063",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-04",
+      "scenario_a": "C2-004",
+      "scenario_b": "C2-064",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-05",
+      "scenario_a": "C2-005",
+      "scenario_b": "C2-065",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-06",
+      "scenario_a": "C2-006",
+      "scenario_b": "C2-066",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-07",
+      "scenario_a": "C2-007",
+      "scenario_b": "C2-067",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-08",
+      "scenario_a": "C2-008",
+      "scenario_b": "C2-068",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-09",
+      "scenario_a": "C2-009",
+      "scenario_b": "C2-069",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-10",
+      "scenario_a": "C2-010",
+      "scenario_b": "C2-070",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-11",
+      "scenario_a": "C2-011",
+      "scenario_b": "C2-071",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "TASK_BINDING",
+      "pair_id": "P-TASK-12",
+      "scenario_a": "C2-012",
+      "scenario_b": "C2-072",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-01",
+      "scenario_a": "C2-013",
+      "scenario_b": "C2-073",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-02",
+      "scenario_a": "C2-014",
+      "scenario_b": "C2-074",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-03",
+      "scenario_a": "C2-015",
+      "scenario_b": "C2-075",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-04",
+      "scenario_a": "C2-016",
+      "scenario_b": "C2-076",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-05",
+      "scenario_a": "C2-017",
+      "scenario_b": "C2-077",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-06",
+      "scenario_a": "C2-018",
+      "scenario_b": "C2-078",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-07",
+      "scenario_a": "C2-019",
+      "scenario_b": "C2-079",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_CAPABILITY",
+      "pair_id": "P-EXEC-CAP-08",
+      "scenario_a": "C2-020",
+      "scenario_b": "C2-080",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-01",
+      "scenario_a": "C2-021",
+      "scenario_b": "C2-081",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-02",
+      "scenario_a": "C2-022",
+      "scenario_b": "C2-082",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-03",
+      "scenario_a": "C2-023",
+      "scenario_b": "C2-083",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-04",
+      "scenario_a": "C2-024",
+      "scenario_b": "C2-084",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-05",
+      "scenario_a": "C2-025",
+      "scenario_b": "C2-085",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-06",
+      "scenario_a": "C2-026",
+      "scenario_b": "C2-086",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-07",
+      "scenario_a": "C2-027",
+      "scenario_b": "C2-087",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_CAPABILITY",
+      "pair_id": "P-CWD-CAP-08",
+      "scenario_a": "C2-028",
+      "scenario_b": "C2-088",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_RESOURCE",
+      "pair_id": "P-EXEC-RES-01",
+      "scenario_a": "C2-029",
+      "scenario_b": "C2-089",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_RESOURCE",
+      "pair_id": "P-EXEC-RES-02",
+      "scenario_a": "C2-030",
+      "scenario_b": "C2-090",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_RESOURCE",
+      "pair_id": "P-EXEC-RES-03",
+      "scenario_a": "C2-031",
+      "scenario_b": "C2-091",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "EXEC_RESOURCE",
+      "pair_id": "P-EXEC-RES-04",
+      "scenario_a": "C2-032",
+      "scenario_b": "C2-092",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_RESOURCE",
+      "pair_id": "P-CWD-RES-01",
+      "scenario_a": "C2-033",
+      "scenario_b": "C2-093",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_RESOURCE",
+      "pair_id": "P-CWD-RES-02",
+      "scenario_a": "C2-034",
+      "scenario_b": "C2-094",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_RESOURCE",
+      "pair_id": "P-CWD-RES-03",
+      "scenario_a": "C2-035",
+      "scenario_b": "C2-095",
+      "strength": "STRONG"
+    },
+    {
+      "changed_dimension": "CWD_RESOURCE",
+      "pair_id": "P-CWD-RES-04",
+      "scenario_a": "C2-036",
+      "scenario_b": "C2-096",
+      "strength": "STRONG"
+    }
+  ]
+}

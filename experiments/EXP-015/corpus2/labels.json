@@ -1,0 +1,2201 @@
+{
+  "corpus_id": "EXP-015-CORPUS@2",
+  "labels": [
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-001",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-061",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-002",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-062",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-003",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-063",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-004",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-064",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-005",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-065",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-006",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-066",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-007",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-067",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-008",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-068",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-009",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-069",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-010",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-070",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-011",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-071",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-012",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-072",
+      "tags": [
+        "TASK_BINDING",
+        "SAME_ARGV"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-013",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-014",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-015",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-016",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-017",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-018",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-019",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-020",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-021",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-022",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-023",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-024",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-025",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-026",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-027",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-028",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-029",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-030",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-031",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-032",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-033",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-034",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "NONZERO_EXIT",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-035",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "TIMEOUT_TERM",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-036",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "SIGNALED_TERM",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-037",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "POST_SPAWN_AUDIT_FAIL",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-038",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "POST_COMPLETION_AUDIT_FAIL",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-039",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "HARD_BENIGN",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "OUTPUT_CAPTURE_FAIL",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-040",
+      "tags": [
+        "ARGV_BOUNDARY",
+        "SUSPICIOUS_BENIGN",
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-041",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-042",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-043",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-044",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-045",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-046",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-047",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "VALIDATION_REJECT",
+      "expected_validation": "REJECT",
+      "scenario_id": "C2-048",
+      "tags": [
+        "VALIDATION"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "NONZERO_EXIT",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-049",
+      "tags": [
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "TIMEOUT_TERM",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-050",
+      "tags": [
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "SIGNALED_TERM",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-051",
+      "tags": [
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "TIMEOUT_KILL_ESCALATION",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-052",
+      "tags": [
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "PRE_AUDIT_FAIL",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-053",
+      "tags": [
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "SPAWN_UNCERTAIN",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-054",
+      "tags": [
+        "FAILURE"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-055",
+      "tags": [
+        "OUTPUT",
+        "ENVIRONMENT",
+        "REALISM"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-056",
+      "tags": [
+        "OUTPUT",
+        "ENVIRONMENT",
+        "REALISM"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-057",
+      "tags": [
+        "OUTPUT",
+        "ENVIRONMENT",
+        "REALISM"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-058",
+      "tags": [
+        "OUTPUT",
+        "ENVIRONMENT",
+        "REALISM"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-073",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-074",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-075",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-076",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-077",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-078",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-079",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-080",
+      "tags": [
+        "EXEC_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-081",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-082",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-083",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-084",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-085",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-086",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-087",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-088",
+      "tags": [
+        "CWD_CAPABILITY",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-089",
+      "tags": [
+        "EXEC_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-090",
+      "tags": [
+        "EXEC_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-091",
+      "tags": [
+        "EXEC_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-092",
+      "tags": [
+        "EXEC_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-093",
+      "tags": [
+        "CWD_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-094",
+      "tags": [
+        "CWD_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-095",
+      "tags": [
+        "CWD_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-096",
+      "tags": [
+        "CWD_RESOURCE",
+        "EXACT_BOUNDARY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-097",
+      "tags": [
+        "COMPOUND_Q1",
+        "AA",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-098",
+      "tags": [
+        "COMPOUND_Q1",
+        "AD",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-099",
+      "tags": [
+        "COMPOUND_Q1",
+        "DA",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-100",
+      "tags": [
+        "COMPOUND_Q1",
+        "DD",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "ALLOW",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "YES",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-101",
+      "tags": [
+        "COMPOUND_Q2",
+        "AA",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-102",
+      "tags": [
+        "COMPOUND_Q2",
+        "AD",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-103",
+      "tags": [
+        "COMPOUND_Q2",
+        "DA",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-104",
+      "tags": [
+        "COMPOUND_Q2",
+        "DD",
+        "DISTRACTOR"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-105",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-106",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-107",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-108",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-109",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-110",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-111",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "HARD_UNAUTHORIZED",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-112",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-113",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-114",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-115",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-116",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-117",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-118",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-119",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-120",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "ALLOW",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "DENY",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-121",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    },
+    {
+      "difficulty": "EDGE_CASE",
+      "expected_argv_preservation": "LITERAL_TUPLE",
+      "expected_compound_authority": "DENY",
+      "expected_cwd_authority": "DENY",
+      "expected_environment": "FIXED_CHILD_PROFILE",
+      "expected_exec_authority": "ALLOW",
+      "expected_failure_semantics": "EXPLICIT",
+      "expected_output_metadata": "CAPTURED_OR_EMPTY",
+      "expected_spawn": "NO",
+      "expected_terminal": "EXIT_0",
+      "expected_validation": "SUCCEEDED",
+      "scenario_id": "C2-122",
+      "tags": [
+        "ZERO_RELEVANT",
+        "MULTI_CAPABILITY"
+      ]
+    }
+  ]
+}

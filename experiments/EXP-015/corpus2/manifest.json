@@ -1,0 +1,33 @@
+{
+  "adapter_freeze_sha": "12c585a9830436d8a88d356cfecbdff132b55487",
+  "authorization_negative": 60,
+  "authorization_positive": 60,
+  "compound_quartets": 2,
+  "corpus_id": "EXP-015-CORPUS@2",
+  "execution_failure_count": 12,
+  "hard_benign": 40,
+  "hard_unauthorized": 50,
+  "materializer_id": "EXP-015-MATERIALIZER@2",
+  "pair_count": 36,
+  "pmed_controls": [
+    "C2-055",
+    "C2-056",
+    "C2-057"
+  ],
+  "protocol_freeze_sha": "1b1d22eaded580e9b6f6311bf0e3a8145002e98d",
+  "repeat_set": [
+    "C2-001",
+    "C2-061",
+    "C2-041",
+    "C2-049",
+    "C2-097",
+    "C2-055"
+  ],
+  "scenario_count": 120,
+  "schema_id": "EXP-015-RUNTIME-SCHEMA@2",
+  "schema_materializer_freeze_sha": "37368667c438ccbf6a84819ef355590450617d73",
+  "strong_pair_count": 36,
+  "task_binding_scenarios": 24,
+  "task_binding_strong_pairs": 12,
+  "validation_case_count": 16
+}

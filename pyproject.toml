@@ -45,6 +45,8 @@ select = ["E", "F", "I", "UP", "B"]
 [tool.ruff.lint.per-file-ignores]
 "experiments/EXP-015/corpus/build_corpus.py" = ["B007", "E401", "E501", "E701", "E702", "I001"]
 "experiments/EXP-015/corpus/integrity_check.py" = ["I001"]
+"experiments/EXP-015/corpus2/build_corpus.py" = ["E501", "I001"]
+"experiments/EXP-015/corpus2/integrity_check.py" = ["E501", "I001"]
 
 [tool.mypy]
 python_version = "3.11"
