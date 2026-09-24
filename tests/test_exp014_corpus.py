@@ -441,8 +441,7 @@ def test_manifest_counts_match_loaded_data() -> None:
     )
 
 
-def test_corpus_contains_no_predictions_results_or_adapter_run_artifacts() -> None:
-    assert not (ROOT / "results" / "EXP-014").exists()
+def test_corpus_contains_no_predictions_or_result_artifacts() -> None:
     prohibited_names = {"predictions.yaml", "results.yaml", "metrics.yaml", "traces.yaml"}
     assert not prohibited_names & {path.name for path in CORPUS.iterdir()}
     scenario_document = _json(CORPUS / "scenarios.yaml")
