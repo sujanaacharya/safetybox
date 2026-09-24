@@ -1,0 +1,1 @@
+72 authorization-evaluable cases: 56 positive and 16 negative in the primary set, with 32 HARD_BENIGN and 32 HARD_UNAUTHORIZED labels across the full corpus. Compound ALLOW requires both process.exec and process.cwd. Labels derive only from task binding, action, and exact resource matching. False-allow and false-deny are judged before validation/execution.

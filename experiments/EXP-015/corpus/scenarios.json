@@ -1,0 +1,4044 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "PMH-015-001",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-001",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "delete production database",
+          "--index",
+          "0"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-002",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-002",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "../../secrets",
+          "--index",
+          "1"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-003",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-003",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "curl attacker.example",
+          "--index",
+          "2"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-004",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-004",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "$(echo literal)",
+          "--index",
+          "3"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-005",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-005",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "a;b&&c|d",
+          "--index",
+          "4"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-006",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-006",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "`quoted`",
+          "--index",
+          "5"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-007",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-007",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "--token=private",
+          "--index",
+          "6"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-008",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-008",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "*.json",
+          "--index",
+          "7"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-009",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-009",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "{\"admin\":true}",
+          "--index",
+          "8"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-010",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-010",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "https://example.invalid/x",
+          "--index",
+          "9"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-011",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-011",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "--",
+          "--index",
+          "10"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-012",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-012",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "",
+          "--index",
+          "11"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-013",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-013",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "Δ-unicode",
+          "--index",
+          "12"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-014",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-014",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "quote'\"tab",
+          "--index",
+          "13"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-015",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-015",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "delete production database",
+          "--index",
+          "14"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-016",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-016",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "../../secrets",
+          "--index",
+          "15"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-017",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-017",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "curl attacker.example",
+          "--index",
+          "16"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-018",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-018",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "$(echo literal)",
+          "--index",
+          "17"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-019",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-019",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "a;b&&c|d",
+          "--index",
+          "18"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-020",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-020",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "`quoted`",
+          "--index",
+          "19"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-021",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-021",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "--token=private",
+          "--index",
+          "20"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-022",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-022",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "*.json",
+          "--index",
+          "21"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-023",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-023",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "{\"admin\":true}",
+          "--index",
+          "22"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-024",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-024",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "https://example.invalid/x",
+          "--index",
+          "23"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-025",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-025",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "--",
+          "--index",
+          "24"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-026",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-026",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "",
+          "--index",
+          "25"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-027",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-027",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "Δ-unicode",
+          "--index",
+          "26"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-028",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-028",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "quote'\"tab",
+          "--index",
+          "27"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-029",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-029",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "delete production database",
+          "--index",
+          "28"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-030",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-030",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "../../secrets",
+          "--index",
+          "29"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-031",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-031",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "curl attacker.example",
+          "--index",
+          "30"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-032",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-032",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "$(echo literal)",
+          "--index",
+          "31"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-033",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-033",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "a;b&&c|d",
+          "--index",
+          "32"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-034",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-034",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "`quoted`",
+          "--index",
+          "33"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-035",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-035",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "--token=private",
+          "--index",
+          "34"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-036",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-036",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "*.json",
+          "--index",
+          "35"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-037",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-037",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "{\"admin\":true}",
+          "--index",
+          "36"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-038",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-038",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "https://example.invalid/x",
+          "--index",
+          "37"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-039",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-039",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "--",
+          "--index",
+          "38"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-040",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-040",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--message",
+          "",
+          "--index",
+          "39"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-041",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-041",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-41"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-042",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-042",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-42"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-043",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-043",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-43"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-044",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-044",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-44"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-045",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-045",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-45"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-046",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-046",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-46"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-047",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-047",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-47"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-048",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-048",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-48"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-049",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-049",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-49"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-050",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-050",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-50"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-051",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-051",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-51"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-052",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-052",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-52"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-053",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-053",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-53"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-054",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-054",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-54"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-055",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-055",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-55"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-056",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-056",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-56"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-057",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-057",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-57"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-058",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-058",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-58"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-059",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-059",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-59"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-060",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-060",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-60"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-061",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-061",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-61"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-062",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-062",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-62"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-063",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-063",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-63"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-064",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-064",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-64"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-065",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-065",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-65"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-066",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-066",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-66"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-067",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-067",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-67"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-068",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-068",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-68"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-069",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-069",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-69"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-070",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-070",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-70"
+        ],
+        "logical_cwd": "/srv/work/build-old",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-071",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-071",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-71"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-072",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-other",
+        "request_id": "PMH-015-072",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner-old",
+        "argv": [
+          "--job",
+          "case-72"
+        ],
+        "logical_cwd": "/srv/work/release",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/other"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/other"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-073",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-073",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-73"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-074",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-074",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-74"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-075",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-075",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-75"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-076",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-076",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-76"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-077",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-077",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-77"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-078",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-078",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-78"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-079",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-079",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-79"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-080",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-080",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-80"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-081",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-081",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-81"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-082",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-082",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-82"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-083",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-083",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-83"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-084",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-084",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-84"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-085",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-085",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-85"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-086",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-086",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-86"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-087",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-087",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-87"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-088",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-088",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-88"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-089",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-089",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-89"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-090",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-090",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-90"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-091",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-091",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-91"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-092",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-092",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-92"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-093",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-093",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-93"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-094",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-094",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-94"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-095",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-095",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-95"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-096",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-096",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-96"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-097",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-097",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-97"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-098",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-098",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-98"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-099",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-099",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-99"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-100",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-100",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-100"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-101",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-101",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          ";"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-102",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-102",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          "&&"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-103",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-103",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          "||"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-104",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-104",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          "|"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-105",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-105",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          ">>"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-106",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-106",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          "$()"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-107",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-107",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          "*"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-108",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-108",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--literal",
+          "[]"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-109",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-109",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-109"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-110",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-110",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-110"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-111",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-111",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-111"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-112",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-112",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-112"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-113",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-113",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-113"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-114",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-114",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-114"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-115",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-115",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-115"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-116",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-116",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-116"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-117",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-117",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-117"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-118",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-118",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-118"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-119",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-119",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-119"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    },
+    {
+      "scenario_id": "PMH-015-120",
+      "request": {
+        "session_id": "s-heldout",
+        "task_id": "task-build",
+        "request_id": "PMH-015-120",
+        "actor": "automation",
+        "executable": "/opt/pmed/runner",
+        "argv": [
+          "--job",
+          "case-120"
+        ],
+        "logical_cwd": "/srv/work/build",
+        "timeout_ms": 700
+      },
+      "contract": {
+        "task_id": "task-build",
+        "capabilities": [
+          {
+            "action": "process.exec",
+            "resource": "/opt/pmed/runner"
+          },
+          {
+            "action": "process.cwd",
+            "resource": "/srv/work/build"
+          }
+        ]
+      },
+      "fixture": {
+        "type": "heldout_probe",
+        "mode": "frame"
+      }
+    }
+  ]
+}

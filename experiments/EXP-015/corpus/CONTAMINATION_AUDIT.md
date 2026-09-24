@@ -1,0 +1,1 @@
+Development inventory was reviewed for helper modes, executable names, argv, cwd shapes, task/capability structures, timeout/signal fixtures, markers, output patterns, and failure combinations. Exact duplicates: 0. Structural near-duplicates: shared protocol primitives only; helper interface is distinct.

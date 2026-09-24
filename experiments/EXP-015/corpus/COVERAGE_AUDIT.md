@@ -1,0 +1,1 @@
+Coverage includes REQ-033–REQ-062 where empirically applicable, INV-020–INV-023, authorization matrix, validation and execution truthfulness, argv preservation, canonicalization, environment, output, timeout, signal, bypass, determinism, and frozen regression gates. Architectural-only boundaries are explicitly marked not evaluated.

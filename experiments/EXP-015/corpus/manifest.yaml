@@ -1,0 +1,16 @@
+corpus_id: "EXP-015-CORPUS@1"
+version: 1
+status: "READY_FOR_FREEZE"
+protocol_freeze_sha: "1b1d22eaded580e9b6f6311bf0e3a8145002e98d"
+implementation_freeze_sha: "12c585a9830436d8a88d356cfecbdff132b55487"
+authoring_base_sha: "12c585a9830436d8a88d356cfecbdff132b55487"
+authoring_method: "independent protocol-derived generator; no adapter execution"
+scenario_count: 120
+authorization_evaluable_count: 120
+authority_positive_count: 88
+authority_negative_count: 32
+hard_benign_count: 32
+hard_unauthorized_count: 32
+pair_count: 22
+strong_pair_count: 16
+files: ["manifest.yaml", "scenarios.json", "labels.json", "heldout_probe.c", "README.md", "AUTHORING_NOTES.md", "CONTAMINATION_AUDIT.md", "AUTHORIZATION_QUALITY_AUDIT.md", "STATIC_SEPARABILITY_AUDIT.md", "PAIR_AUDIT.md", "COVERAGE_AUDIT.md"]

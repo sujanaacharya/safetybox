@@ -1,0 +1,1 @@
+Pre-execution review separates authorization-label leakage from terminal-class separability. IDs are opaque; task and resource shapes are balanced; suspicious punctuation occurs in authorized cases as data. No classifier or adapter execution is used by authoring. Terminal failure branch cues are retained only as SEMANTIC_CONFORMANCE.

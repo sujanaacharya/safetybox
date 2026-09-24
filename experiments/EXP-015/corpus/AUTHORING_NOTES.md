@@ -1,0 +1,1 @@
+Authored from frozen protocol/design, requirements, architecture, threat model, public ProcessRequest schema, and contamination inventory. Private adapter branches were not read. Same-project authorship is a limitation; no claim of external independence is made.
