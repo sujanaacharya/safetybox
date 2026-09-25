@@ -1,0 +1,407 @@
+experiment_id: EXP-016
+protocol_id: EXP-016-PROTOCOL@1
+title: Native Direct-Child Process Mediation and Execution Semantics
+version: 1
+status: PREREGISTERED_PRE_CORPUS_INFRASTRUCTURE
+preregistration_date: 2026-09-25
+starting_git_sha: 71cb87b771978f3fc55edac7bf2a0f45809c9d55
+freeze_git_sha: RECORDED_BY_GIT_COMMIT_AND_FINAL_REPORT
+evidence_status: DEVELOPMENT_ONLY_NOT_HELD_OUT
+held_out_scenarios_authored: 0
+predictions_exposed: false
+
+frozen_predecessor:
+  experiment: EXP-015
+  raw_result_git_sha: 65d047de0fe3b484eaed64bd2adc8562a5835eea
+  adversarial_analysis_git_sha: 71cb87b771978f3fc55edac7bf2a0f45809c9d55
+  disposition: FROZEN_NEVER_RERUN_NEVER_REPAIR
+  execution_conclusion: NOT_DEMONSTRATED
+  root_cause: CORPUS_FIXTURE_DESIGN_FAILURE
+  lesson: MATERIALIZABILITY_IS_NOT_ENOUGH
+
+research_question: >-
+  Given an already-authorized process request with independently verified
+  native-executable fixtures, does SafetyBox correctly mediate real direct-child
+  process execution semantics?
+
+research_questions:
+  RQ-016-01: >-
+    Can an authorized, independently verified native executable pass validation
+    and produce a real direct child?
+  RQ-016-02: >-
+    Does the adapter preserve argv literally without shell reinterpretation?
+  RQ-016-03: Does the child receive only the frozen minimal environment?
+  RQ-016-04: >-
+    Are stdout/stderr capture, counts, hashes, and truncation truthful?
+  RQ-016-05: >-
+    Are nonzero exit, timeout, signal, and supported injected-failure semantics
+    classified truthfully?
+  RQ-016-06: Does audit ordering occur correctly around real child spawn?
+  RQ-016-07: >-
+    Are adapter-mediated direct-child semantics deterministic under preregistered
+    repeat cases?
+  RQ-016-08: >-
+    Can the PMED-L1 routing boundary be demonstrated with explicit
+    DIRECT_CONTROL controls?
+
+hypotheses:
+  H-016-01:
+    statement: >-
+      Every registered authorized intended-success case whose executable is
+      independently VALID_NATIVE_EXECUTABLE reaches real child creation.
+    measure: child_created among AUTHORIZED_EXPECTED_TO_EXECUTE
+  H-016-02:
+    statement: Requested argv equals length-framed child-observed argv byte-exactly.
+    measure: byte_exact_argv_matches / registered argv cases
+  H-016-03:
+    statement: Shell-looking argv remains literal and creates no shell-selected effects.
+    measure: literal_child_matches_and_absent_shell_effects / no-shell cases
+  H-016-04:
+    statement: >-
+      Child environment equals LANG=C.UTF-8 and LC_ALL=C.UTF-8, with PATH, HOME,
+      and EXP016_PARENT_SECRET absent.
+    measure: exact_environment_matches / environment cases
+  H-016-05:
+    statement: >-
+      Captured retained bytes, full byte counts, SHA-256 values, and truncation
+      flags equal independent expectations.
+    measure: truthful_stream_observations / output cases
+  H-016-06:
+    statement: >-
+      Registered nonzero exit, signal, TERM timeout, KILL escalation, and supported
+      injected failures receive their preregistered terminal classes.
+    measure: truthful_terminal_classifications / terminal-and-failure cases
+  H-016-07:
+    statement: Every registered policy-denied request invokes no protected spawn primitive.
+    measure: denied_cases_with_zero_primitive_invocations / denied cases
+  H-016-08:
+    statement: >-
+      DIRECT_CONTROL creates the safe native child without ProcessAdapter,
+      demonstrating the PMED-L1 routing limitation.
+    measure: truthful_direct_controls / DIRECT_CONTROL cases
+
+scope:
+  target: PMED-L1 adapter-routed direct native child
+  platform: Linux x86_64 development freeze; future corpus must match its frozen host gate
+  execution: sequential normal-user isolated temporary roots
+  primary_targets:
+    - successful native child execution
+    - physical executable and cwd validation
+    - argv fidelity and shell-false literal semantics
+    - exact minimal child environment
+    - stdout and stderr capture metadata
+    - nonzero exit timeout signal and supported injected failures
+    - audit ordering and audit truthfulness
+    - deterministic semantic repeats
+    - DIRECT_CONTROL PMED-L1 route boundary
+    - benign completion
+  explicit_exclusions:
+    - arbitrary process confinement
+    - descendant confinement or observation
+    - network confinement or observation
+    - child filesystem mediation beyond selected marker observation
+    - validation-to-exec TOCTOU safety
+    - authenticated identity session or actor binding
+    - shell command safety beyond literal shell-false argv delivery
+    - production readiness
+    - concurrency
+    - privilege transitions
+    - unbounded output or resource exhaustion
+
+rtm:
+  current: RTM-1
+  automatic_promotion: false
+  required_before_future_advancement_consideration:
+    - positive substantial adapter-routed child denominator
+    - real native children created and correctly completed
+    - all frozen execution-semantic gates pass
+  governance: separate post-result maturity decision required
+
+authorization:
+  role: CONTROLLED_PRECONDITION_NOT_PRIMARY_BENCHMARK
+  expected_shape: approximately_80_percent_authorization_positive
+  intended_success: known compound ALLOW under independently verified TaskContract
+  deny_controls: bounded reconfirmation set with zero protected spawn invocations
+  exact_case_counts: deferred_to_held_out_corpus_freeze
+
+fixture:
+  helper_id: EXP-016-NATIVE-HELPER@1
+  language: C11
+  source: fixture/native_helper.c
+  binary: fixture/native-helper
+  provenance: fixture/build_provenance.json
+  prohibited:
+    - Python_script
+    - shell_script
+    - shebang_wrapper
+    - interpreted_executable
+    - arbitrary_system_command
+  behaviors:
+    - argv_length_framing
+    - selected_environment_framing
+    - cwd_framing
+    - bounded_stdout
+    - bounded_stderr
+    - bounded_both_streams
+    - explicit_exit_code
+    - bounded_sleep
+    - ignore_TERM_bounded_sleep
+    - safe_self_signal
+    - basename_marker
+    - basename_marker_then_exit
+    - basename_marker_then_sleep
+  safety:
+    no_shell: true
+    no_arbitrary_exec: true
+    no_network: true
+    no_privilege_operations: true
+    no_descendants: true
+    no_writes_outside_cwd_basename: true
+    max_stream_bytes_per_requested_stream: 131072
+    max_sleep_ms: 1800
+
+reachability_gate:
+  contract: contracts/reachability_gate.json
+  implementation: safetybox.experiments.exp016_reachability
+  production_validator_import: PROHIBITED
+  process_adapter_use: PROHIBITED
+  future_expected_valid_state: VALID_NATIVE_EXECUTABLE
+  runs_before_corpus_freeze: true
+  blocks_freeze_on_mismatch: true
+
+cwd_reachability:
+  states: [VALID_DIRECTORY, MISSING, SYMLINK, NON_DIRECTORY]
+  structural_rule: >-
+    Every intended cwd-validation case must independently satisfy compound ALLOW
+    and executable validity so cwd validation is not masked.
+
+failure_seams:
+  source_of_truth: contracts/scoring_contract.json
+  supported:
+    - PRE_EXECUTION_AUDIT
+    - SPAWN_FAILURE_CONFIRMED_NO_CHILD
+    - CAPTURE_FAILURE_AFTER_CHILD
+    - POST_COMPLETION_AUDIT_SUCCESS
+    - POST_COMPLETION_AUDIT_FAILURE
+  unsupported:
+    POST_SPAWN_AUDIT: >-
+      no production audit event exists between synchronous child creation and
+      child completion; use in the held-out corpus is prohibited
+  multiple_injections_per_case: prohibited
+
+route_reachability:
+  route_is_machine_readable: true
+  ADAPTER: generic_ProcessAdapter_dispatch
+  DIRECT_CONTROL: independent_run_native_direct_dispatch
+  scorer_only_route_assumption: prohibited
+
+metrics:
+  scoring_contract: contracts/scoring_contract.json
+  family_registry: contracts/family_registry.json
+  validation_reachability_matrix: contracts/validation_reachability_matrix.json
+  requirement_mapping: contracts/requirement_mapping.json
+  threat_mapping: contracts/threat_mapping.json
+  candidate_claims: contracts/candidate_claims.json
+  zero_denominator_status: NOT_EXERCISED
+  benign_completion_denominator: AUTHORIZED_EXPECTED_TO_EXECUTE
+  primary:
+    - real_child_creation_rate
+    - benign_completion_rate
+    - argv_byte_exact_rate
+    - no_shell_literal_rate
+    - minimal_environment_exact_rate
+    - output_truthfulness_rate
+    - terminal_and_failure_semantics_rate
+    - audit_ordering_rate
+    - audit_semantic_truthfulness_rate
+    - repeat_determinism_rate
+    - direct_control_boundary_rate
+  secondary:
+    - bounded_authorization_false_allow_and_false_deny_controls
+    - executable_and_cwd_validation_truthfulness
+    - stage_funnel_counts
+    - audit_field_completeness
+    - observational_latency_without_acceptance_threshold
+  stage_funnel:
+    - AUTHORIZED
+    - EXEC_VALIDATION_REACHED
+    - EXEC_VALIDATION_PASSED
+    - CWD_VALIDATION_REACHED
+    - CWD_VALIDATION_PASSED
+    - PREAUDIT_COMMITTED
+    - SPAWN_ATTEMPTED
+    - CHILD_CREATED
+    - CHILD_COMPLETED
+    - TERMINAL_AUDIT_COMPLETED
+
+success_and_failure:
+  source: contracts/scoring_contract.json
+  success_requires:
+    - positive_substantial_child_denominator_frozen_before_run
+    - all_registered_intended_success_cases_spawn_and_complete_correctly
+    - every_headline_metric_has_positive_denominator_and_PASS
+    - every_denied_control_has_zero_protected_primitive_invocations
+    - every_repeat_projection_matches_under_only_frozen_normalization
+    - every_DIRECT_CONTROL_uses_direct_route_without_ProcessAdapter
+  failure_includes:
+    - zero_adapter_routed_real_children
+    - any_intended_success_child_missing_or_incorrect
+    - any_denied_spawn_primitive_invocation
+    - any_expected_valid_fixture_reachability_failure
+    - any_headline_zero_denominator
+    - any_literal_argv_reinterpretation
+    - any_label_or_prediction_exposure
+  machine_computation: >-
+    all criteria resolve from the scoring metadata schema and raw records; until
+    the corpus freezes an explicit substantial-child minimum, overall status is
+    NOT_EXERCISED
+
+argv:
+  child_protocol: E16A_magic_u32be_count_then_u32be_length_and_bytes
+  comparison: UTF8_BYTE_EXACT_ORDERED
+  shell: false
+  registered_literal_classes:
+    - semicolon_rm_text
+    - dollar_parentheses
+    - backticks
+    - ampersand_ampersand
+    - double_pipe
+    - pipe
+    - greater_than
+    - less_than
+    - empty_element
+    - Unicode
+
+environment:
+  exact_child:
+    LANG: C.UTF-8
+    LC_ALL: C.UTF-8
+  registered_absent_parent_sentinels:
+    - HOME
+    - PATH
+    - EXP016_PARENT_SECRET
+  runtime_data_role: parent_perturbation_only
+  expected_label_location: scoring_metadata_only
+
+output:
+  retained_limit_per_stream: 65536
+  registered_regions:
+    - empty
+    - just_below_65536
+    - exactly_65536
+    - just_above_65536
+    - comfortably_above_but_at_most_131072
+  exact_checks:
+    - retained_bytes
+    - total_byte_count
+    - retained_byte_count
+    - complete_stream_sha256
+    - truncation_flag
+
+terminal_cases:
+  nonzero_exit_codes: [1, 7, 23]
+  signal: safe_POSIX_self_signal
+  timeout:
+    scheduling_margin_required: true
+    term_completion: true
+    kill_escalation_for_ignore_TERM: true
+    bounded_runtime: true
+
+audit:
+  authoritative_order: session_local_sequence_number
+  independent_spawn_boundary_instrumentation: required
+  success_order:
+    - authorization
+    - validation
+    - preexecution_audit_commit
+    - spawn_primitive
+    - child_observation
+    - terminal_audit
+  field_completeness_separate_from_semantic_truthfulness: true
+  truth_comparators:
+    - PID
+    - spawn boundary observation
+    - exit
+    - signal
+    - timeout
+    - stdout count and hash
+    - stderr count and hash
+    - marker effects
+
+determinism:
+  projection: EXP-016-REPEAT-PROJECTION@1
+  source: contracts/scoring_contract.json
+  declared_before_corpus_freeze: true
+  semantic_output_normalization: prohibited
+  development_tested: true
+
+label_isolation:
+  execution_phase: raw_first
+  labels_hidden_from_runtime: true
+  join_after_raw_freeze: true
+  predictions_in_runtime_scenarios: prohibited
+
+statistical_interpretation:
+  design: deterministic_registered_case_evaluation
+  confidence_interval_claim: none
+  generalization: bounded_to_frozen_fixture_and_case_distribution
+  zero_failures_mean: no_observed_failure_not_universal_absence
+  authorization_evidence: control_only_unless_separately_analyzed
+
+limitations:
+  finite_case_scope: no universal process-semantics inference
+  platform_scope: frozen compatible Linux host only
+  route_scope: adapter-routed direct child plus explicit direct boundary control
+  process_tree_scope: direct child only
+  selected_effect_scope: marker observations do not establish child filesystem confinement
+  audit_clock_scope: sequence is authoritative; wall-clock bracket is corroborating only
+
+evidence_level_rules:
+  infrastructure_freeze: no_empirical_product_claim
+  future_execution_claim: requires_positive_spawned_denominator
+  candidate_claims: remain_PROPOSED_until_post_run_governance
+  direct_control: boundary_evidence_not_vulnerability_exploitation
+
+stop_conditions:
+  before_corpus_freeze:
+    - helper_not_genuine_host_compatible_ELF
+    - helper_source_or_binary_checksum_mismatch
+    - any_helper_smoke_mode_fails
+    - executable_or_cwd_oracle_mismatch
+    - any_registered_seam_not_representable_or_not_reached_in_development
+    - DIRECT_CONTROL_route_not_machine_checked
+    - repeat_projection_not_tested
+    - family_registry_not_exact
+    - requirement_or_threat_mapping_missing
+    - scorer_cannot_return_NOT_EXERCISED
+    - any_held_out_scenario_exists
+    - any_future_prediction_is_exposed
+    - validation_suite_failure
+  future_one_shot_run:
+    - fixture_checksum_mismatch
+    - host_architecture_or_loader_incompatible
+    - reachability_gate_failure
+    - label_isolation_failure
+    - unexpected_process_or_external_effect
+
+one_shot_governance:
+  current_task_authorizes_held_out_corpus: false
+  current_task_authorizes_one_shot_run: false
+  future_order:
+    - author_held_out_runtime_scenarios_under_frozen_contracts
+    - independently_gate_every_fixture
+    - freeze_labels_and scoring metadata separately
+    - audit contamination determinism counts requirements threats and reachability
+    - freeze_corpus
+    - execute_raw_once
+    - freeze_raw_results
+    - join_labels_and_score
+    - adversarial_analysis
+  criteria_relaxation_after_run: prohibited
+
+development_proofs:
+  registry: proofs/development_proof_registry.json
+  contaminated: true
+  exact_reuse_in_held_out_corpus: prohibited
+  ProcessAdapter_use: allowed_only_in_explicit_development_tests
+  future_held_out_data_used: false

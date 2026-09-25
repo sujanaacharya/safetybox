@@ -1,0 +1,250 @@
+{
+  "contract_id": "EXP-016-SCORING-CONTRACT@1",
+  "experiment_id": "EXP-016",
+  "family_registry_path": "experiments/EXP-016/contracts/family_registry.json",
+  "held_out_scenario_count": 0,
+  "label_isolation": {
+    "labels_available_during_execution": false,
+    "raw_first": true,
+    "runtime_input_may_contain_expected_outcome": false,
+    "runtime_input_may_contain_requirement_mapping": false,
+    "runtime_input_may_contain_scoring_family": false,
+    "scoring_metadata_separate_from_runtime_scenarios": true
+  },
+  "denominator_classes": [
+    "AUTHORIZED_EXPECTED_TO_EXECUTE",
+    "AUTHORIZED_EXPECTED_VALIDATION_REJECT",
+    "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC",
+    "AUTHORITY_NEGATIVE_CONTROL",
+    "DIRECT_CONTROL"
+  ],
+  "scoring_metadata_schema": {
+    "required_fields_per_future_instance": [
+      "scenario_id",
+      "canonical_family_id",
+      "edge_categories",
+      "hard_category",
+      "denominator_class",
+      "control_type",
+      "requirement_ids",
+      "threat_ids",
+      "repeat_group_id",
+      "route",
+      "expected_authority",
+      "expected_exec_validation",
+      "expected_cwd_validation",
+      "expected_spawn",
+      "expected_child",
+      "expected_terminal_class",
+      "expected_seam_reached",
+      "expected_stage_flags"
+    ],
+    "edge_category_representation": "array of registered non-exclusive strings",
+    "hard_category_values": ["STANDARD", "HARD_BENIGN", "HARD_BOUNDARY", "CONTROL"],
+    "control_type_values": ["NONE", "DENY_NO_SPAWN", "DIRECT_PMED_BOUNDARY"],
+    "repeat_group_nullable": true,
+    "runtime_input_fields": false
+  },
+  "zero_denominator_rule": {
+    "principle": "NO_POSITIVE_DENOMINATOR_NO_EMPIRICAL_PASS",
+    "status_when_zero": "NOT_EXERCISED",
+    "applies_to": [
+      "argv_fidelity",
+      "environment_containment",
+      "output_truthfulness",
+      "spawn_ordering",
+      "timeout_semantics",
+      "signal_semantics",
+      "child_audit_truthfulness",
+      "benign_completion_rate",
+      "failure_seam_semantics",
+      "direct_control_boundary",
+      "repeat_determinism"
+    ]
+  },
+  "benign_completion_rate": {
+    "formula": "count(authorized expected-to-execute benign cases with PROCESS_EXIT_0 and truthful observations) / count(AUTHORIZED_EXPECTED_TO_EXECUTE benign cases)",
+    "separate_from": [
+      "AUTHORIZED_EXPECTED_VALIDATION_REJECT",
+      "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC"
+    ],
+    "success_target": "1.0",
+    "zero_denominator_status": "NOT_EXERCISED"
+  },
+  "stage_funnel": [
+    "AUTHORIZED",
+    "EXEC_VALIDATION_REACHED",
+    "EXEC_VALIDATION_PASSED",
+    "CWD_VALIDATION_REACHED",
+    "CWD_VALIDATION_PASSED",
+    "PREAUDIT_COMMITTED",
+    "SPAWN_ATTEMPTED",
+    "CHILD_CREATED",
+    "CHILD_COMPLETED",
+    "TERMINAL_AUDIT_COMPLETED"
+  ],
+  "stage_definitions": {
+    "AUTHORIZED": "compound process.exec and process.cwd decision is ALLOW",
+    "EXEC_VALIDATION_REACHED": "first TARGET_VALIDATION_STARTED has component process.exec",
+    "EXEC_VALIDATION_PASSED": "TARGET_VALIDATION_SUCCEEDED has component process.exec",
+    "CWD_VALIDATION_REACHED": "TARGET_VALIDATION_STARTED has component process.cwd",
+    "CWD_VALIDATION_PASSED": "TARGET_VALIDATION_SUCCEEDED has component process.cwd",
+    "PREAUDIT_COMMITTED": "EXECUTION_STARTED event is accepted by required audit sink",
+    "SPAWN_ATTEMPTED": "ProcessAuditEnvelope.primitive_invoked is true",
+    "CHILD_CREATED": "independent primitive observation and envelope child_created are true",
+    "CHILD_COMPLETED": "direct child was reaped with an observed exit code or signal",
+    "TERMINAL_AUDIT_COMPLETED": "EXECUTION_SUCCEEDED or EXECUTION_FAILED is accepted by required audit sink"
+  },
+  "headline_metrics": [
+    "real_child_creation_rate",
+    "benign_completion_rate",
+    "argv_byte_exact_rate",
+    "no_shell_literal_rate",
+    "minimal_environment_exact_rate",
+    "output_truthfulness_rate",
+    "validation_truthfulness_rate",
+    "nonzero_exit_truthfulness_rate",
+    "timeout_truthfulness_rate",
+    "signal_truthfulness_rate",
+    "failure_seam_truthfulness_rate",
+    "audit_ordering_rate",
+    "audit_field_completeness_rate",
+    "audit_semantic_truthfulness_rate",
+    "denied_no_spawn_rate",
+    "repeat_determinism_rate",
+    "direct_control_boundary_rate"
+  ],
+  "overall_success": {
+    "authorization_only_can_satisfy": false,
+    "requirements": [
+      "every preregistered AUTHORIZED_EXPECTED_TO_EXECUTE case creates and completes a real child correctly",
+      "AUTHORIZED_EXPECTED_TO_EXECUTE denominator is positive and substantial",
+      "every registered headline metric has a positive denominator and PASS",
+      "every authority-negative control has zero protected primitive invocations",
+      "every repeat projection matches after only frozen ephemeral normalization",
+      "DIRECT_CONTROL cases traverse the direct route and never instantiate ProcessAdapter",
+      "all audit ordering and truthfulness comparisons agree with independent observations"
+    ],
+    "substantial_child_denominator_rule": "the held-out corpus protocol must freeze an explicit positive minimum before the one-shot run; absent that freeze, overall status is NOT_EXERCISED",
+    "rtm_rule": "no automatic RTM-2 promotion; evidence may support a separately governed maturity decision only after successful adapter-routed native children"
+  },
+  "overall_failure": [
+    "zero adapter-routed real children",
+    "any intended-success authorized case does not create or correctly complete a child",
+    "any denied case invokes the protected spawn primitive",
+    "any expected-valid executable fails the independent reachability gate",
+    "any headline denominator is zero",
+    "any shell-looking argument is reinterpreted rather than observed literally",
+    "any non-frozen field is normalized for repeat comparison",
+    "any runtime input exposes labels or predictions",
+    "any required audit claim lacks an independent observation"
+  ],
+  "repeat_normalization": {
+    "projection_id": "EXP-016-REPEAT-PROJECTION@1",
+    "normalized_ephemeral_fields": {
+      "child_token": "<CHILD_TOKEN>",
+      "duration_ns": "<DURATION>",
+      "event_id": "<EVENT_ID>",
+      "parent_event_id": "<EVENT_ID>",
+      "pid": "<PID>",
+      "timestamp": "<TIMESTAMP>",
+      "workspace_root": "<TEMP_ROOT>"
+    },
+    "semantic_fields_never_normalized": [
+      "argv_frames",
+      "canonical_executable_relative_identity",
+      "canonical_logical_cwd",
+      "decision",
+      "environment_frames",
+      "exit_code",
+      "marker_content",
+      "route",
+      "signal",
+      "stderr_byte_count",
+      "stderr_sha256",
+      "stderr_truncated",
+      "stdout_byte_count",
+      "stdout_sha256",
+      "stdout_truncated",
+      "terminal_class",
+      "timed_out"
+    ],
+    "undeclared_difference_result": "FAIL"
+  },
+  "repeat_set_policy": {
+    "declared_before_run": true,
+    "required_representatives": [
+      "SUCCESS_BASIC",
+      "ARGV_FIDELITY",
+      "ENVIRONMENT_MINIMAL",
+      "NONZERO_EXIT",
+      "TIMEOUT_TERM",
+      "EXEC_VALIDATION_REJECT",
+      "AUTHORIZATION_DENY",
+      "DIRECT_CONTROL"
+    ],
+    "same_exact_development_proof_case_prohibited": true
+  },
+  "route_contract": {
+    "ADAPTER": {
+      "dispatch": "generic ProcessAdapter path",
+      "must_instantiate_process_adapter": true,
+      "direct_control_runner_allowed": false
+    },
+    "DIRECT_CONTROL": {
+      "dispatch": "exp016 independent direct-control runner",
+      "must_instantiate_process_adapter": false,
+      "shell": false
+    }
+  },
+  "failure_seams": {
+    "PRE_EXECUTION_AUDIT": {
+      "representable": true,
+      "injection_point": "required audit sink rejects EXECUTION_STARTED",
+      "preceding_condition": "compound ALLOW and executable/cwd validation succeeded",
+      "expected_terminal_class": "FAIL_CLOSED_NOT_SPAWNED"
+    },
+    "SPAWN_FAILURE_CONFIRMED_NO_CHILD": {
+      "representable": true,
+      "injection_point": "injected ProcessPrimitive raises ProcessSpawnError with child_created=false",
+      "preceding_condition": "compound ALLOW, validation, and EXECUTION_STARTED audit succeeded",
+      "expected_terminal_class": "SPAWN_ERROR_NOT_CREATED"
+    },
+    "CAPTURE_FAILURE_AFTER_CHILD": {
+      "representable": true,
+      "injection_point": "injected ProcessPrimitive raises ProcessIndeterminateError with a real child observation",
+      "preceding_condition": "real child was created and reaped",
+      "expected_terminal_class": "FAIL_INDETERMINATE_EXECUTION_POSSIBLE"
+    },
+    "POST_COMPLETION_AUDIT_SUCCESS": {
+      "representable": true,
+      "injection_point": "required audit sink rejects EXECUTION_SUCCEEDED",
+      "preceding_condition": "real child exited zero",
+      "expected_terminal_class": "FAIL_INDETERMINATE_EXECUTION_POSSIBLE"
+    },
+    "POST_COMPLETION_AUDIT_FAILURE": {
+      "representable": true,
+      "injection_point": "required audit sink rejects EXECUTION_FAILED",
+      "preceding_condition": "real child completed with registered failure semantics",
+      "expected_terminal_class": "FAIL_INDETERMINATE_EXECUTION_POSSIBLE"
+    },
+    "POST_SPAWN_AUDIT": {
+      "representable": false,
+      "reason": "PROC-ADAPTER@1 has no audit emission between synchronous child creation and child completion",
+      "corpus_use": "PROHIBITED"
+    }
+  },
+  "audit_truthfulness": {
+    "field_completeness_is_distinct": true,
+    "semantic_truthfulness_is_distinct": true,
+    "independent_comparators": [
+      "instrumented primitive invocation snapshot",
+      "helper-observed argv/environment/cwd frames",
+      "operating-system PID and return code",
+      "runner-private wall-clock spawn-boundary and child-observed bracket",
+      "independently hashed captured output",
+      "marker existence and bytes",
+      "required sink event sequence"
+    ]
+  }
+}

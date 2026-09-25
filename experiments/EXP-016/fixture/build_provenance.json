@@ -1,0 +1,30 @@
+{
+  "artifact_id": "EXP-016-NATIVE-HELPER@1",
+  "binary_path": "experiments/EXP-016/fixture/native-helper",
+  "binary_sha256": "f9e3c8908cb7bd99e5e23f5844bdaddfc41efd5409d3c94d8807b7c8ab0f5503",
+  "compile_flags": [
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fno-ident",
+    "-Wl,--build-id=none"
+  ],
+  "compiler_path": "/usr/bin/cc",
+  "compiler_version": "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "elf": {
+    "architecture_compatible": true,
+    "byte_order": "little",
+    "class_bits": 64,
+    "host_architecture": "x86_64",
+    "machine": 62,
+    "machine_name": "EM_X86_64",
+    "object_type": 3
+  },
+  "linkage": "DYNAMIC",
+  "required_loader": "/lib64/ld-linux-x86-64.so.2",
+  "source_date_epoch": "0",
+  "source_path": "experiments/EXP-016/fixture/native_helper.c",
+  "source_sha256": "363992ed2834bd1aee2449cb49317730d80f5de50cd4e165e28f4742e3d4d41e"
+}

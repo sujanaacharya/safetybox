@@ -1,0 +1,26 @@
+{
+  "matrix_id": "EXP-016-VALIDATION-REACHABILITY-MATRIX@1",
+  "metadata_only_not_runtime_input": true,
+  "rows": [
+    {"family":"SUCCESS_BASIC","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"ARGV_FIDELITY","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"NO_SHELL_LITERALS","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"ENVIRONMENT_MINIMAL","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"CWD_OBSERVATION","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"MARKER_EFFECT","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"OUTPUT_EMPTY","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"OUTPUT_BOUNDARIES","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_0","seam":"NONE"},
+    {"family":"NONZERO_EXIT","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_EXIT_NONZERO_EFFECT_POSSIBLE","seam":"NONE"},
+    {"family":"SIGNAL_SELF","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_SIGNALED_EFFECT_POSSIBLE","seam":"NONE"},
+    {"family":"TIMEOUT_TERM","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_TIMEOUT_EFFECT_POSSIBLE","seam":"NONE"},
+    {"family":"TIMEOUT_KILL","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"PROCESS_TIMEOUT_EFFECT_POSSIBLE","seam":"NONE"},
+    {"family":"EXEC_VALIDATION_REJECT","authority":"ALLOW","exec_validation":"REJECT","cwd_validation":"NOT_REACHED","spawn":false,"child":false,"terminal":"VALIDATION_REJECT_NOT_SPAWNED","seam":"NONE"},
+    {"family":"CWD_VALIDATION_REJECT","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"REJECT","spawn":false,"child":false,"terminal":"VALIDATION_REJECT_NOT_SPAWNED","seam":"NONE"},
+    {"family":"PRE_EXECUTION_AUDIT_FAILURE","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":false,"child":false,"terminal":"FAIL_CLOSED_NOT_SPAWNED","seam":"PRE_EXECUTION_AUDIT"},
+    {"family":"SPAWN_FAILURE","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":false,"terminal":"SPAWN_ERROR_NOT_CREATED","seam":"SPAWN_FAILURE_CONFIRMED_NO_CHILD"},
+    {"family":"CAPTURE_FAILURE","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"FAIL_INDETERMINATE_EXECUTION_POSSIBLE","seam":"CAPTURE_FAILURE_AFTER_CHILD"},
+    {"family":"TERMINAL_AUDIT_FAILURE","authority":"ALLOW","exec_validation":"PASS","cwd_validation":"PASS","spawn":true,"child":true,"terminal":"FAIL_INDETERMINATE_EXECUTION_POSSIBLE","seam":"POST_COMPLETION_AUDIT_SUCCESS_OR_FAILURE"},
+    {"family":"AUTHORIZATION_DENY","authority":"DENY","exec_validation":"NOT_REACHED","cwd_validation":"NOT_REACHED","spawn":false,"child":false,"terminal":"POLICY_DENY_NOT_SPAWNED","seam":"NONE"},
+    {"family":"DIRECT_CONTROL","authority":"NOT_APPLICABLE","exec_validation":"INDEPENDENT_GATE_ONLY","cwd_validation":"INDEPENDENT_GATE_ONLY","spawn":true,"child":true,"terminal":"DIRECT_CONTROL_OBSERVED","seam":"DIRECT_CONTROL_ROUTE"}
+  ]
+}

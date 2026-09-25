@@ -1,0 +1,24 @@
+{
+  "registry_id": "EXP-016-CANDIDATE-CLAIMS@1",
+  "promotion_permitted_by_this_freeze": false,
+  "claims": [
+    {"id":"CL-016-01","status":"PROPOSED","text":"Within the frozen Linux fixture scope, authorized adapter-routed compatible native ELF helpers can create and complete a real direct child."},
+    {"id":"CL-016-02","status":"PROPOSED","text":"Within the frozen helper protocol, adapter-routed argv elements reach the direct child byte-exactly without shell reinterpretation."},
+    {"id":"CL-016-03","status":"PROPOSED","text":"Within the frozen helper protocol, the direct child observes exactly LANG and LC_ALL from the fixed minimal environment and not registered parent sentinels."},
+    {"id":"CL-016-04","status":"PROPOSED","text":"Within registered bounded streams, retained bytes, total counts, hashes, and truncation flags are truthful."},
+    {"id":"CL-016-05","status":"PROPOSED","text":"Within registered native cases, nonzero exit, signal, TERM timeout, and KILL escalation are classified truthfully."},
+    {"id":"CL-016-06","status":"PROPOSED","text":"Within supported injected seams, pre-spawn failures fail closed and post-child failures remain execution-possible."},
+    {"id":"CL-016-07","status":"PROPOSED","text":"For registered spawned cases, authorization, physical validation, required preexecution audit, spawn, child observation, and terminal audit occur in the preregistered order."},
+    {"id":"CL-016-08","status":"PROPOSED","text":"A safe direct native control bypasses ProcessAdapter, demonstrating the PMED-L1 route boundary."}
+  ],
+  "forbidden_claims": [
+    "arbitrary process confinement",
+    "descendant confinement",
+    "network confinement",
+    "child filesystem mediation",
+    "TOCTOU safety",
+    "authenticated identity binding",
+    "shell command safety beyond shell-false literal delivery",
+    "production readiness"
+  ]
+}

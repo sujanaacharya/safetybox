@@ -1,0 +1,38 @@
+{
+  "gate_id": "EXP-016-VALIDATION-REACHABILITY-GATE@1",
+  "principle": "MATERIALIZABILITY_IS_NOT_ENOUGH",
+  "production_validator_import_prohibited": true,
+  "process_adapter_use_prohibited": true,
+  "expected_valid_executable": {
+    "required_state": "VALID_NATIVE_EXECUTABLE",
+    "checks": [
+      "path and every component exist",
+      "no symlink component",
+      "terminal is a regular file",
+      "link count equals one",
+      "at least one executable mode bit and effective execute access",
+      "magic is 7f454c46",
+      "ELF class and byte order parse",
+      "ELF object type is ET_EXEC or ET_DYN",
+      "ELF e_machine matches host architecture",
+      "direct native loadability exits as declared",
+      "every helper behavior smoke test passes outside ProcessAdapter"
+    ]
+  },
+  "expected_invalid_executable_states": [
+    "MISSING",
+    "SYMLINK",
+    "DIRECTORY",
+    "NON_EXECUTABLE",
+    "WRAPPER_OR_SCRIPT"
+  ],
+  "cwd_states": [
+    "VALID_DIRECTORY",
+    "MISSING",
+    "SYMLINK",
+    "NON_DIRECTORY"
+  ],
+  "structural_cwd_reachability_rule": "an intended cwd case must use a known compound ALLOW and independently valid ELF so executable validation cannot mask cwd validation",
+  "future_fixture_rule": "every future fixture instance must carry an oracle record matching its declared state before corpus freeze",
+  "future_valid_fixture_script_prohibition": true
+}

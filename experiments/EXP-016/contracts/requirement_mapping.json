@@ -1,0 +1,39 @@
+{
+  "mapping_id": "EXP-016-REQUIREMENT-MAPPING@1",
+  "source": "docs/research/REAL_SUBPROCESS_MEDIATION_REQUIREMENTS.md",
+  "tested_requirements": {
+    "REQ-033": ["SUCCESS_BASIC", "DIRECT_CONTROL"],
+    "REQ-034": ["SUCCESS_BASIC", "ARGV_FIDELITY", "TIMEOUT_TERM"],
+    "REQ-036": ["EXEC_VALIDATION_REJECT", "SUCCESS_BASIC"],
+    "REQ-037": ["EXEC_VALIDATION_REJECT", "ENVIRONMENT_MINIMAL"],
+    "REQ-038": ["ARGV_FIDELITY", "NO_SHELL_LITERALS"],
+    "REQ-039": ["CWD_OBSERVATION", "CWD_VALIDATION_REJECT"],
+    "REQ-040": ["SUCCESS_BASIC", "AUTHORIZATION_DENY"],
+    "REQ-041": ["ENVIRONMENT_MINIMAL"],
+    "REQ-042": ["SUCCESS_BASIC", "PRE_EXECUTION_AUDIT_FAILURE"],
+    "REQ-043": ["AUTHORIZATION_DENY"],
+    "REQ-044": ["SUCCESS_BASIC", "SPAWN_FAILURE"],
+    "REQ-045": ["PRE_EXECUTION_AUDIT_FAILURE"],
+    "REQ-046": ["NO_SHELL_LITERALS"],
+    "REQ-048": ["MARKER_EFFECT", "NONZERO_EXIT", "TIMEOUT_TERM"],
+    "REQ-049": ["NONZERO_EXIT", "SIGNAL_SELF", "TIMEOUT_TERM", "SPAWN_FAILURE", "CAPTURE_FAILURE"],
+    "REQ-050": ["EXEC_VALIDATION_REJECT", "CWD_VALIDATION_REJECT", "PRE_EXECUTION_AUDIT_FAILURE", "SPAWN_FAILURE"],
+    "REQ-051": ["NONZERO_EXIT", "SIGNAL_SELF", "TIMEOUT_TERM", "CAPTURE_FAILURE", "TERMINAL_AUDIT_FAILURE"],
+    "REQ-052": ["TIMEOUT_TERM", "TIMEOUT_KILL"],
+    "REQ-053": ["NONZERO_EXIT", "SIGNAL_SELF"],
+    "REQ-054": ["OUTPUT_EMPTY", "OUTPUT_BOUNDARIES", "CAPTURE_FAILURE"],
+    "REQ-055": ["SUCCESS_BASIC"],
+    "REQ-056": ["SUCCESS_BASIC", "ARGV_FIDELITY", "ENVIRONMENT_MINIMAL", "OUTPUT_BOUNDARIES"],
+    "REQ-057": ["ARGV_FIDELITY", "OUTPUT_BOUNDARIES"],
+    "REQ-058": ["DIRECT_CONTROL", "MARKER_EFFECT"],
+    "REQ-059": ["ALL_FAMILIES"],
+    "REQ-060": ["ALL_FAMILIES"],
+    "REQ-062": ["ALL_FAMILIES"]
+  },
+  "not_mapped": {
+    "REQ-035": "trusted-base assignment is a design assumption, not an empirical outcome",
+    "REQ-047": "descendant behavior is an explicit boundary and is not exercised",
+    "REQ-061": "performance has no acceptance threshold and is not a primary EXP-016 claim"
+  },
+  "mapping_rule": "a mapping means the family directly measures at least one normative clause; it does not establish the whole requirement beyond the registered scope"
+}

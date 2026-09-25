@@ -1,0 +1,27 @@
+{
+  "registry_id": "EXP-016-DEVELOPMENT-PROOFS@1",
+  "evidence_use": "INFRASTRUCTURE_VALIDATION_ONLY",
+  "contaminated": true,
+  "reusable_as_held_out_case": false,
+  "proofs": [
+    {"id":"DEV016-ELF-001","target":"native ELF identity and direct loadability"},
+    {"id":"DEV016-CWD-001","target":"valid and invalid cwd oracle states"},
+    {"id":"DEV016-ARGV-001","target":"child-observed length-prefixed argv including literals and Unicode"},
+    {"id":"DEV016-ENV-001","target":"child-observed fixed environment and absent parent sentinels"},
+    {"id":"DEV016-OUTPUT-001","target":"stdout/stderr bytes counts hashes and truncation"},
+    {"id":"DEV016-EXIT-001","target":"real nonzero exit"},
+    {"id":"DEV016-TIMEOUT-001","target":"TERM timeout and KILL escalation"},
+    {"id":"DEV016-SIGNAL-001","target":"real self-signal"},
+    {"id":"DEV016-SEAM-PREAUDIT-001","target":"preexecution audit seam after validation"},
+    {"id":"DEV016-SEAM-SPAWN-001","target":"spawn failure seam after preaudit"},
+    {"id":"DEV016-SEAM-CAPTURE-001","target":"capture failure seam after real child"},
+    {"id":"DEV016-SEAM-TERMINAL-001","target":"terminal audit seams after child completion"},
+    {"id":"DEV016-ROUTE-001","target":"machine-checked DIRECT_CONTROL route"},
+    {"id":"DEV016-ORDER-001","target":"independent primitive-boundary ordering observation"},
+    {"id":"DEV016-NORMALIZE-001","target":"repeat projection normalizes declared ephemeral fields only"},
+    {"id":"DEV016-ZERO-DENOM-001","target":"zero denominator produces NOT_EXERCISED"}
+  ],
+  "held_out_scenarios_authored": 0,
+  "future_predictions_exposed": false,
+  "adapter_exposure_to_future_held_out_data": false
+}

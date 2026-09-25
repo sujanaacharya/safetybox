@@ -1,0 +1,35 @@
+{
+  "registry_id": "EXP-016-FAMILY-REGISTRY@1",
+  "counts_derived_only_from_this_registry": true,
+  "held_out_instances": [],
+  "held_out_instance_count": 0,
+  "families": [
+    {"id": "SUCCESS_BASIC", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "ARGV_FIDELITY", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "NO_SHELL_LITERALS", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "ENVIRONMENT_MINIMAL", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "CWD_OBSERVATION", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "MARKER_EFFECT", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "OUTPUT_EMPTY", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "OUTPUT_BOUNDARIES", "denominator": "AUTHORIZED_EXPECTED_TO_EXECUTE", "route": "ADAPTER"},
+    {"id": "NONZERO_EXIT", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "SIGNAL_SELF", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "TIMEOUT_TERM", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "TIMEOUT_KILL", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "EXEC_VALIDATION_REJECT", "denominator": "AUTHORIZED_EXPECTED_VALIDATION_REJECT", "route": "ADAPTER"},
+    {"id": "CWD_VALIDATION_REJECT", "denominator": "AUTHORIZED_EXPECTED_VALIDATION_REJECT", "route": "ADAPTER"},
+    {"id": "PRE_EXECUTION_AUDIT_FAILURE", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "SPAWN_FAILURE", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "CAPTURE_FAILURE", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "TERMINAL_AUDIT_FAILURE", "denominator": "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC", "route": "ADAPTER"},
+    {"id": "AUTHORIZATION_DENY", "denominator": "AUTHORITY_NEGATIVE_CONTROL", "route": "ADAPTER"},
+    {"id": "DIRECT_CONTROL", "denominator": "DIRECT_CONTROL", "route": "DIRECT_CONTROL"}
+  ],
+  "family_tag_rule": "each held-out instance has exactly one canonical family id; secondary coverage tags may overlap",
+  "count_rule": "all family and headline denominators are computed by joining held-out instance ids to exactly one family record",
+  "authorization_balance_policy": {
+    "target_shape": "approximately 80 percent authorization-positive execution/validation/failure cases and 20 percent deny/direct controls",
+    "exact_counts_deferred_to_corpus_freeze": true,
+    "authorization_is_controlled_precondition": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "mapping_id": "EXP-016-THREAT-MAPPING@1",
+  "source": "docs/threat-model/REAL_SUBPROCESS_THREATS.md",
+  "tested": {
+    "command_injection_through_shell_metacharacters": ["NO_SHELL_LITERALS", "ARGV_FIDELITY"],
+    "path_poisoning": ["ENVIRONMENT_MINIMAL", "EXEC_VALIDATION_REJECT"],
+    "working_directory_executable_shadowing": ["EXEC_VALIDATION_REJECT"],
+    "executable_substitution_static_fixture_state": ["EXEC_VALIDATION_REJECT"],
+    "symlinked_executable": ["EXEC_VALIDATION_REJECT"],
+    "missing_directory_non_executable_object": ["EXEC_VALIDATION_REJECT"],
+    "wrapper_shebang_interpreter_behavior": ["EXEC_VALIDATION_REJECT"],
+    "argument_boundary_loss": ["ARGV_FIDELITY", "NO_SHELL_LITERALS"],
+    "cwd_manipulation": ["CWD_OBSERVATION", "CWD_VALIDATION_REJECT"],
+    "environment_poisoning": ["ENVIRONMENT_MINIMAL"],
+    "secret_inheritance_environment_only": ["ENVIRONMENT_MINIMAL"],
+    "unauthorized_direct_child": ["AUTHORIZATION_DENY"],
+    "timeout_partial_effects": ["TIMEOUT_TERM", "TIMEOUT_KILL"],
+    "nonzero_exit_or_signal": ["NONZERO_EXIT", "SIGNAL_SELF"],
+    "audit_loss_before_spawn": ["PRE_EXECUTION_AUDIT_FAILURE"],
+    "audit_loss_after_completion": ["TERMINAL_AUDIT_FAILURE"],
+    "direct_subprocess_bypass": ["DIRECT_CONTROL"],
+    "filesystem_effects_by_child_selected_marker_only": ["MARKER_EFFECT"],
+    "signals_direct_child_only": ["SIGNAL_SELF", "TIMEOUT_TERM", "TIMEOUT_KILL"]
+  },
+  "boundaries": {
+    "network_activity_by_child": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "descendant_process_spawning": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "process_tree_escape_daemonization": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "validation_to_exec_toctou": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "shell_true_or_explicit_shell_routes": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "resource_exhaustion": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "privilege_transition_setuid": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "authenticated_identity_or_session_binding": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "inherited_file_descriptors_beyond_declared_stdin": "EXPECTED_BOUNDARY_NOT_EVALUATED"
+  }
+}
