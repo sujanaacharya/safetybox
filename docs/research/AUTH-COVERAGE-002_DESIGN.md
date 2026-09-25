@@ -2,8 +2,9 @@
 
 **Design identity:** `AUTH-COVERAGE-002-DESIGN@1`
 
-**Status:** preregistration design; no corpus, protocol, runner, or result is frozen by
-this document
+**Status:** superseded for execution semantics by
+`AUTH-COVERAGE-002-EXECUTION-PROTOCOL@1`; retained as pre-implementation design history.
+No corpus or result is frozen by this document.
 
 **Predecessor disposition:** `AUTH-COVERAGE-001-FINAL-PRE-RUN-GATE@1` returned
 `BLOCKED_BENCHMARK_LEAKAGE`
@@ -196,10 +197,11 @@ For each scenario in the frozen order, the runner MUST:
 6. append a cross-linked `RAW_PREDICTION_COMMITTED` ledger event; and
 7. advance durable run state only after both records are committed.
 
-Reservation happens before invocation. It conservatively counts a prediction as exposed
-even if the process crashes before the call. This prevents an evaluation from occurring in
-the gap between output creation and exposure accounting. A reservation cannot be canceled
-or reused.
+Reservation happens before invocation. The subsequently durable `STARTED` event is the
+frozen conservative prediction-exposure boundary. A reservation with no `STARTED` is
+`RESERVED_NOT_EXPOSED`; `STARTED` with an uncertain call outcome is exposed. This paragraph
+supersedes the earlier design proposal that counted reservation itself as exposure. A
+reservation remains visible and cannot be silently deleted or reused.
 
 Parallel HELD_OUT prediction is prohibited in version 1 of the runner. Serial frozen order
 simplifies exact exposure accounting, compound explanation capture, and crash disposition.

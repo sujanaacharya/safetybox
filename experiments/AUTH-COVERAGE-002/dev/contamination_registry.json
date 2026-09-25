@@ -1,0 +1,48 @@
+{
+  "registry_id": "AUTH-COVERAGE-002-DEV-CONTAMINATION-REGISTRY@1",
+  "status": "FROZEN_BEFORE_CORPUS_AUTHORING",
+  "held_out_scenarios_authored": 0,
+  "held_out_prediction_exposure": 0,
+  "signature_algorithm": "SHA-256 over AUTH-COVERAGE-002 canonical authorization input where applicable; scenario identifiers are separately prohibited",
+  "canonical_input_digests": [
+    "1ad468fd394a7143d830fa872a14da356a14fc1083c1a40315b822d5fc9b7e9e",
+    "53a6522b7f6348b02d202fd8e1385a6ca302ff8db3fc3721808071da3b2ef37e",
+    "8fec7a9099e0611d4066443cbe287efd073dbdb5fb73a3c76124f7de1fd8673b",
+    "905924730dfd59ab5dfa1a59b7b452c77c2eefb482f3a5f8533a247bfe3f653a",
+    "fcff42b4e91c8ee02a716586af8485b77ed4bb435ac2a5d226c214734b3f3f5b"
+  ],
+  "scenario_identifiers": [
+    "dev-opaque-7bd37f2b",
+    "dev-inconsistent",
+    "dev-missing",
+    "dev-only",
+    "dev-random-a1",
+    "dev-random-b2",
+    "dev-random-c3",
+    "dev-random-d4",
+    "dev-random-e5",
+    "dev-random-id-one",
+    "dev-random-id-two",
+    "dev-unknown",
+    "opaque",
+    "opaque-dev-0",
+    "opaque-dev-1",
+    "opaque-dev-id-498762b1",
+    "opaque-dev-id-a75cc70f",
+    "opaque-dev-id-other",
+    "opaque-dev-correlation-a",
+    "opaque-dev-correlation-z",
+    "opaque-dev-scoring-1",
+    "opaque-heldout-id-two"
+  ],
+  "fixture_sources": [
+    "tests/dev/test_auth_coverage_002_raw.py",
+    "tests/dev/test_exposure_ledger.py",
+    "tests/dev/test_auth_coverage_002_state.py",
+    "tests/dev/test_auth_coverage_002_isolation.py",
+    "tests/dev/test_auth_coverage_002_runner.py",
+    "tests/dev/test_auth_coverage_002_reconcile.py",
+    "tests/dev/test_auth_coverage_002_metrics.py",
+    "tests/dev/test_auth_coverage_002_scoring.py"
+  ]
+}

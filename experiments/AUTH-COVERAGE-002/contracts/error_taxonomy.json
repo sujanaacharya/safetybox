@@ -1,0 +1,74 @@
+{
+  "taxonomy_id": "AUTH-COVERAGE-002-ERROR-TAXONOMY@1",
+  "status": "FROZEN_BEFORE_CORPUS_AUTHORING",
+  "held_out_scenarios_authored": 0,
+  "held_out_prediction_exposure": 0,
+  "principle": "Scientific decision and explanation errors are disjoint from execution-infrastructure errors.",
+  "planes": {
+    "SCIENTIFIC_DECISION": [
+      "FALSE_ALLOW",
+      "FALSE_DENY",
+      "TASK_BINDING_ERROR",
+      "ACTION_BINDING_ERROR",
+      "RESOURCE_BINDING_ERROR",
+      "CAPABILITY_MATCH_ERROR",
+      "CAPABILITY_SYNTHESIS_ERROR",
+      "COMPOUND_AUTH_ERROR",
+      "CROSS_TASK_REUSE_ERROR"
+    ],
+    "SCIENTIFIC_EXPLANATION": [
+      "EXPLANATION_MISSING",
+      "EXPLANATION_INCONSISTENT"
+    ],
+    "INFRASTRUCTURE": [
+      "RUNNER_ERROR",
+      "RAW_PERSISTENCE_ERROR",
+      "LEDGER_ERROR",
+      "SCORING_ERROR",
+      "PRODUCTION_AUTHORIZATION_ERROR"
+    ]
+  },
+  "decision_outcomes": {
+    "FALSE_ALLOW": "expected DENY and observed ALLOW",
+    "FALSE_DENY": "expected ALLOW and observed DENY",
+    "DECISION_UNKNOWN": "no false-allow or false-deny outcome is invented; general decision accuracy records an error"
+  },
+  "causal_assignment": {
+    "source": "preregistered analysis metadata pressure_dimension only",
+    "prohibited_sources": [
+      "post-hoc production explanation inspection",
+      "scenario identifier",
+      "observed error convenience",
+      "runtime package"
+    ],
+    "mapping": {
+      "TASK_BINDING": "TASK_BINDING_ERROR",
+      "ACTION_BINDING": "ACTION_BINDING_ERROR",
+      "RESOURCE_BINDING": "RESOURCE_BINDING_ERROR",
+      "CAPABILITY_MATCH": "CAPABILITY_MATCH_ERROR",
+      "CAPABILITY_SYNTHESIS": "CAPABILITY_SYNTHESIS_ERROR",
+      "COMPOUND_AUTH": "COMPOUND_AUTH_ERROR",
+      "CROSS_TASK_REUSE": "CROSS_TASK_REUSE_ERROR"
+    },
+    "unknown_pressure_dimension": "SCORING_ERROR_FAIL_CLOSED"
+  },
+  "explanation_rules": {
+    "required_fields": [
+      "decision",
+      "rule",
+      "component",
+      "matched_capability",
+      "authority_source",
+      "task",
+      "action",
+      "resource",
+      "reason_code"
+    ],
+    "nullable_fields": [
+      "matched_capability when no capability matched or decision is DENY/DECISION_UNKNOWN"
+    ],
+    "EXPLANATION_MISSING": "structured explanation or any required field is absent; required fields other than conditionally nullable matched_capability must be non-null",
+    "EXPLANATION_INCONSISTENT": "structured explanation contradicts the raw final decision or reconstructable evaluated task/action/resource"
+  },
+  "aggregate_security_score_permitted": false
+}

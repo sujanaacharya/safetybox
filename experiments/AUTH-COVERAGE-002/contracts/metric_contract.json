@@ -1,0 +1,139 @@
+{
+  "contract_id": "AUTH-COVERAGE-002-METRIC-CONTRACT@1",
+  "status": "FROZEN_BEFORE_CORPUS_AUTHORING",
+  "error_taxonomy_id": "AUTH-COVERAGE-002-ERROR-TAXONOMY@1",
+  "scorer_version": "AUTH-COVERAGE-002-SCORER@1",
+  "implementation": "src/safetybox/research/auth_coverage_metrics.py",
+  "held_out_scenarios_authored": 0,
+  "held_out_prediction_exposure": 0,
+  "input_boundary": {
+    "execution_input": "sealed raw records only",
+    "analysis_inputs": [
+      "labels",
+      "pair registry",
+      "family/challenge metadata",
+      "difficulty metadata"
+    ],
+    "production_authorization_invocation_permitted": false,
+    "scoring_requires_sealed_raw": true
+  },
+  "primary_metrics": {
+    "FALSE_ALLOW_RATE": [
+      "unauthorized decisions observed ALLOW",
+      "all expected DENY decisions"
+    ],
+    "FALSE_DENY_RATE": [
+      "authorized decisions observed DENY",
+      "all expected ALLOW decisions"
+    ],
+    "HARD_UNAUTHORIZED_FALSE_ALLOW_RATE": [
+      "HARD_UNAUTHORIZED decisions observed ALLOW",
+      "all HARD_UNAUTHORIZED decisions"
+    ],
+    "HARD_BENIGN_FALSE_DENY_RATE": [
+      "HARD_BENIGN decisions observed DENY",
+      "all HARD_BENIGN decisions"
+    ],
+    "TASK_BINDING_ACCURACY": [
+      "correct decisions",
+      "all cases tagged TASK_BINDING"
+    ],
+    "CROSS_TASK_REUSE_REJECTION": [
+      "decisions observed DENY",
+      "all cases tagged CROSS_TASK_REUSE"
+    ],
+    "PAIR_ACCURACY": [
+      "pairs with both members correct",
+      "all registered pairs"
+    ],
+    "COMPOUND_AUTHORIZATION_ACCURACY": [
+      "correct decisions",
+      "all cases tagged COMPOUND_AUTH"
+    ]
+  },
+  "stratified_execution": {
+    "metrics_per_scenario_stratum": [
+      "DECISION_ACCURACY",
+      "FALSE_ALLOW_RATE",
+      "FALSE_DENY_RATE"
+    ],
+    "strata": [
+      "overall",
+      "filesystem",
+      "process",
+      "authorized",
+      "unauthorized",
+      "hard_benign",
+      "hard_unauthorized",
+      "edge_benign",
+      "edge_unauthorized",
+      "difficulty_easy",
+      "difficulty_moderate",
+      "difficulty_hard",
+      "difficulty_adversarial",
+      "pair_quality_strict_strong",
+      "pair_quality_moderate",
+      "task_binding",
+      "cross_task_reuse",
+      "zero_relevant_capability",
+      "capability_distractors",
+      "resource_boundary",
+      "compound_AA",
+      "compound_AD",
+      "compound_DA",
+      "compound_DD",
+      "authorized_suspicious",
+      "unauthorized_benign_looking"
+    ],
+    "pair_quality_metrics": [
+      "STRICT_STRONG_PAIR_ACCURACY",
+      "MODERATE_PAIR_ACCURACY"
+    ],
+    "cross_tool_metric": "CROSS_TOOL_CONSISTENCY: groups with every member correct / registered groups"
+  },
+  "zero_denominator_rule": {
+    "denominator_equal_zero": "NOT_EXERCISED",
+    "never_interpreted_as": "PASS",
+    "applies_to_every_metric": true
+  },
+  "statistical_reporting": {
+    "stored_fields": [
+      "errors",
+      "denominator",
+      "observed_rate",
+      "confidence_interval"
+    ],
+    "observed_rate_interval": "WILSON_TWO_SIDED_95",
+    "zero_observed_errors": "CLOPPER_PEARSON_ONE_SIDED_95_EXACT",
+    "zero_error_formula": "1 - 0.05 ** (1 / denominator)",
+    "prohibited_claim": "true error = 0%"
+  },
+  "decision_unknown": {
+    "false_allow_or_false_deny_invented": false,
+    "decision_accuracy": "ERROR",
+    "reported_separately": true
+  },
+  "scoring_manifest": {
+    "required_bindings": [
+      "raw_package_digest",
+      "label_package_digest",
+      "scoring_contract_digest",
+      "scorer_version"
+    ]
+  },
+  "independent_recomputation": {
+    "required": true,
+    "headline_counts": [
+      "FALSE_ALLOW_RATE",
+      "FALSE_DENY_RATE",
+      "HARD_UNAUTHORIZED_FALSE_ALLOW_RATE",
+      "HARD_BENIGN_FALSE_DENY_RATE",
+      "TASK_BINDING_ACCURACY",
+      "CROSS_TASK_REUSE_REJECTION",
+      "PAIR_ACCURACY",
+      "COMPOUND_AUTHORIZATION_ACCURACY"
+    ],
+    "shared_canonical_accumulator_permitted": false
+  },
+  "aggregate_security_score": null
+}

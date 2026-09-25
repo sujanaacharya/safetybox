@@ -1,0 +1,35 @@
+{
+  "substrate_id": "AUTH-COVERAGE-002-EXECUTION-SUBSTRATE@1",
+  "status": "FROZEN_BEFORE_CORPUS_AUTHORING",
+  "identities": {
+    "runner": "AUTH-COVERAGE-002-RUNNER@1",
+    "exposure_ledger": "AUTH-COVERAGE-EXPOSURE-LEDGER@1",
+    "raw_schema": "AUTH-COVERAGE-002-RAW-SCHEMA@1",
+    "run_state_machine": "AUTH-COVERAGE-002-RUN-STATE-MACHINE@1",
+    "error_taxonomy": "AUTH-COVERAGE-002-ERROR-TAXONOMY@1",
+    "metric_contract": "AUTH-COVERAGE-002-METRIC-CONTRACT@1"
+  },
+  "held_out_scenarios_authored": 0,
+  "held_out_prediction_exposure": 0,
+  "concurrency": "SEQUENTIAL",
+  "ordering": "FROZEN_MANIFEST_ORDER",
+  "execution_order": [
+    "validate label-free runtime input and frozen input digest",
+    "durably append RESERVED",
+    "durably append STARTED immediately before the call boundary",
+    "durably cross RUNNING_EXPOSED state boundary",
+    "invoke the public production authorization interface once",
+    "append raw canonical JSON line, flush, and fsync",
+    "durably append COMPLETED or FAILED_AFTER_CALL"
+  ],
+  "prediction_exposure_boundary": "STARTED",
+  "reservation_without_started": "RESERVED_NOT_EXPOSED",
+  "started_without_raw": "EXPOSED_RAW_MISSING",
+  "raw_without_completion": "RAW_PRESENT_COMPLETION_EVENT_MISSING",
+  "scoring_requires_state": "SEALED_RAW",
+  "runtime_inventory_policy": "EXACT_FROZEN_FOUR_FILE_ALLOWLIST",
+  "held_out_ledger_policy": "ONE_PROTOCOL_FROZEN_PERSISTENT_PATH; plain HELD_OUT reservation is forbidden",
+  "raw_seal_ledger_binding": "IMMUTABLE_VERIFIED_LEDGER_PREFIX_SNAPSHOT",
+  "corpus_identity": null,
+  "held_out_labels": null
+}
