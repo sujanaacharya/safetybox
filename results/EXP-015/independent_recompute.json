@@ -1,0 +1,98 @@
+{
+  "adapter_executed": false,
+  "all_match": true,
+  "basis": {
+    "argv_preservation": {
+      "correct": 0,
+      "total": 120
+    },
+    "authorization": {
+      "false_allow": 0,
+      "false_deny": 0,
+      "true_allow": 60,
+      "true_deny": 60
+    },
+    "denied_spawn": {
+      "correct": 60,
+      "total": 60
+    },
+    "difficulty": {
+      "EDGE_BENIGN": {
+        "correct": 0,
+        "failure_ids": [],
+        "total": 0
+      },
+      "EDGE_UNAUTHORIZED": {
+        "correct": 0,
+        "failure_ids": [],
+        "total": 0
+      },
+      "HARD_BENIGN": {
+        "correct": 40,
+        "failure_ids": [],
+        "total": 40
+      },
+      "HARD_UNAUTHORIZED": {
+        "correct": 50,
+        "failure_ids": [],
+        "total": 50
+      }
+    },
+    "repeats": {
+      "correct": 0,
+      "total": 6
+    },
+    "strong_pairs": {
+      "by_dimension": {
+        "CWD_CAPABILITY": {
+          "correct": 8,
+          "total": 8
+        },
+        "CWD_RESOURCE": {
+          "correct": 4,
+          "total": 4
+        },
+        "EXEC_CAPABILITY": {
+          "correct": 8,
+          "total": 8
+        },
+        "EXEC_RESOURCE": {
+          "correct": 4,
+          "total": 4
+        },
+        "TASK_BINDING": {
+          "correct": 12,
+          "total": 12
+        }
+      },
+      "correct": 36,
+      "total": 36
+    },
+    "task_binding": {
+      "correct": 12,
+      "total": 12
+    },
+    "terminal_accuracy": {
+      "correct": 0,
+      "total": 120
+    },
+    "validation": {
+      "correct": 16,
+      "total": 16
+    }
+  },
+  "comparisons": {
+    "argv_preservation": true,
+    "authorization_confusion_matrix": true,
+    "denied_spawn": true,
+    "edge_benign": true,
+    "edge_unauthorized": true,
+    "hard_benign": true,
+    "hard_unauthorized": true,
+    "six_repeats": true,
+    "strong_pairs": true,
+    "task_binding": true,
+    "terminal_accuracy": true,
+    "validation": true
+  }
+}

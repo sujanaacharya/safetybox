@@ -1,0 +1,10 @@
+{
+  "join_completeness": true,
+  "join_timestamp": "2026-09-25T10:22:58.085572+05:45",
+  "label_checksum_sha256": "11903cff5dcb72b6b7f57b70fcc73ce7392231353cd39c4d6adcf89328d0bb75",
+  "pair_registry_checksum_sha256": "b08fa6c4d080ef3be907d1db35760af0c42fe04bea3d233c3e668019657e2934",
+  "raw_checksum_sha256": "6e2d27f789595e6df83742c07866ca60c2b21c64d9738c21943d160ca036f2d8",
+  "run_id": "EXP-015-RUN-001",
+  "scenario_count": 120,
+  "scorer_version": "EXP-015-SCORER-1"
+}

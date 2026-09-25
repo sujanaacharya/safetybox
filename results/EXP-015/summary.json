@@ -1,0 +1,626 @@
+{
+  "anomalies": [
+    "Frozen runtime declares all 120 routes ADAPTER; the three manifest PMED controls are not DIRECT_CONTROL.",
+    "REGULAR_EXECUTABLE helper fixtures materialize as shebang scripts while the frozen adapter validation accepts only native ELF.",
+    "The frozen scorer used difficulty names EDGE_BENIGN and EDGE_UNAUTHORIZED, while labels encode a combined EDGE_CASE class; its separate edge rows are zero-denominator and must not be read as the frozen 20/10 denominators.",
+    "The frozen scorer did not recognize every registered tag-family denominator and did not normalize temporary-root audit resources for repeats; these post-exposure scoring limitations were preserved without repair."
+  ],
+  "argv_preservation": {
+    "correct": 0,
+    "rate": 0.0,
+    "total": 120
+  },
+  "audit_ordering": {
+    "classification": "MIXED",
+    "correct": 0,
+    "failure_ids": [],
+    "total": 0
+  },
+  "audit_reconstruction": {
+    "failure_ids": [],
+    "field_completeness": {
+      "correct": 120,
+      "rate": 1.0,
+      "total": 120
+    },
+    "semantic_reconstruction": "SCHEMA_COUPLED"
+  },
+  "audit_truthfulness": {
+    "correct": 120,
+    "failure_ids": [],
+    "rate": 1.0,
+    "total": 120
+  },
+  "authorization": {
+    "authority_negative": 60,
+    "authority_positive": 60,
+    "false_allow": 0,
+    "false_allow_rate": 0.0,
+    "false_deny": 0,
+    "false_deny_rate": 0.0,
+    "true_allow": 60,
+    "true_deny": 60
+  },
+  "boundaries": {
+    "child_filesystem": "not FS-adapter mediated",
+    "descendants": "not established",
+    "direct_non_adapter_bypass": "not mediated",
+    "network": "not established",
+    "pmed": "PMED-L1 adapter-routed direct child only",
+    "session_binding": "authenticated session-to-contract binding unresolved",
+    "toctou": "not established"
+  },
+  "canonical_raw_records": 120,
+  "canonicalization": {
+    "correct": 120,
+    "mismatches": [],
+    "oracle": "independent posixpath lexical normalization",
+    "total": 120
+  },
+  "compound_matrix": {
+    "actual": {
+      "AA": 60,
+      "AD": 20,
+      "DA": 20,
+      "DD": 20
+    },
+    "expected": {
+      "AA": 60,
+      "AD": 20,
+      "DA": 20,
+      "DD": 20
+    },
+    "non_aa_reached_validation_or_spawn": []
+  },
+  "cwd_authorization": {
+    "correct": 120,
+    "rate": 1.0,
+    "total": 120
+  },
+  "cwd_resource_boundaries": {
+    "correct": 4,
+    "failure_ids": [],
+    "rate": 1.0,
+    "total": 4
+  },
+  "denied_spawn_prevention": {
+    "correct": 60,
+    "failure_ids": [],
+    "rate": 1.0,
+    "total": 60
+  },
+  "determinism": {
+    "correct": 0,
+    "rate": 0.0,
+    "records": [
+      {
+        "equivalent": false,
+        "scenario_id": "C2-001"
+      },
+      {
+        "equivalent": false,
+        "scenario_id": "C2-061"
+      },
+      {
+        "equivalent": false,
+        "scenario_id": "C2-041"
+      },
+      {
+        "equivalent": false,
+        "scenario_id": "C2-049"
+      },
+      {
+        "equivalent": false,
+        "scenario_id": "C2-097"
+      },
+      {
+        "equivalent": false,
+        "scenario_id": "C2-055"
+      }
+    ],
+    "total": 6
+  },
+  "difficulty": {
+    "EDGE_BENIGN": {
+      "allow": 0,
+      "authorized_then_execution_failed": 0,
+      "authorized_then_validation_rejected": 0,
+      "correct": 0,
+      "deny": 0,
+      "failure_ids": [],
+      "rate": null,
+      "total": 0
+    },
+    "EDGE_UNAUTHORIZED": {
+      "allow": 0,
+      "authorized_then_execution_failed": 0,
+      "authorized_then_validation_rejected": 0,
+      "correct": 0,
+      "deny": 0,
+      "failure_ids": [],
+      "rate": null,
+      "total": 0
+    },
+    "HARD_BENIGN": {
+      "allow": 40,
+      "authorized_then_execution_failed": 0,
+      "authorized_then_validation_rejected": 40,
+      "correct": 40,
+      "deny": 0,
+      "failure_ids": [],
+      "rate": 1.0,
+      "total": 40
+    },
+    "HARD_UNAUTHORIZED": {
+      "allow": 0,
+      "authorized_then_execution_failed": 0,
+      "authorized_then_validation_rejected": 0,
+      "correct": 50,
+      "deny": 50,
+      "failure_ids": [],
+      "rate": 1.0,
+      "total": 50
+    }
+  },
+  "distractor_cases": {
+    "correct": 24,
+    "exact_match": {
+      "correct": 0,
+      "failure_ids": [],
+      "rate": null,
+      "total": 0
+    },
+    "failure_ids": [],
+    "no_exact_match": {
+      "correct": 0,
+      "failure_ids": [],
+      "rate": null,
+      "total": 0
+    },
+    "rate": 1.0,
+    "total": 24
+  },
+  "environment_containment": {
+    "correct": 0,
+    "rate": 0.0,
+    "total": 120
+  },
+  "exec_authorization": {
+    "correct": 120,
+    "rate": 1.0,
+    "total": 120
+  },
+  "exec_resource_boundaries": {
+    "correct": 4,
+    "failure_ids": [],
+    "rate": 1.0,
+    "total": 4
+  },
+  "execution_failure": {
+    "authorization": {
+      "correct": 12,
+      "failure_ids": [],
+      "rate": 1.0,
+      "total": 12
+    },
+    "semantics": {
+      "correct": 0,
+      "rate": 0.0,
+      "total": 12
+    }
+  },
+  "failure_criteria": {
+    "audit_claims_denied_or_not_executed_after_known_spawn": "NOT_TRIGGERED",
+    "authorization_false_allow_or_false_deny_in_evaluable_case": "NOT_TRIGGERED",
+    "corpus_specific_runtime_branch": "NOT_TRIGGERED",
+    "denied_request_invokes_spawn_or_creates_child": "NOT_TRIGGERED",
+    "executable_canonicalization_expands_scope": "NOT_TRIGGERED",
+    "frozen_predecessor_regression": "NOT_TRIGGERED",
+    "nondeterministic_authorization": "TRIGGERED",
+    "shell_metacharacter_interpreted_on_shell_false_route": "NOT_TRIGGERED",
+    "spawn_precedes_committed_required_audit": "NOT_TRIGGERED",
+    "spawn_precedes_complete_allow": "NOT_TRIGGERED",
+    "spawn_precedes_required_validation": "NOT_TRIGGERED",
+    "unauthorized_cwd_accepted": "NOT_TRIGGERED",
+    "unreconstructable_process_attempt": "NOT_TRIGGERED"
+  },
+  "independent_recomputation": {
+    "all_reported_sections_match": true,
+    "artifact": "independent_recompute.json",
+    "status": "MATCH_WITH_RETAINED_SCORER_COVERAGE_LIMITATIONS"
+  },
+  "invariants": {
+    "INV-020": "EMPIRICALLY_SUPPORTED",
+    "INV-021": "NOT_EVALUATED",
+    "INV-022": "NOT_EVALUATED",
+    "INV-023": "PARTIALLY_SUPPORTED"
+  },
+  "label_isolation": {
+    "loaded_modules_after_raw": [
+      "safetybox",
+      "safetybox.audit",
+      "safetybox.authorization",
+      "safetybox.b4",
+      "safetybox.b4.models",
+      "safetybox.b4.monitor",
+      "safetybox.b4.rules",
+      "safetybox.b4.validation",
+      "safetybox.baselines",
+      "safetybox.baselines.single_observation",
+      "safetybox.capabilities",
+      "safetybox.context",
+      "safetybox.context.evaluation",
+      "safetybox.context.models",
+      "safetybox.context.validation",
+      "safetybox.context_trajectory",
+      "safetybox.context_trajectory.models",
+      "safetybox.context_trajectory.monitor",
+      "safetybox.context_trajectory.rules",
+      "safetybox.contracts",
+      "safetybox.events",
+      "safetybox.exceptions",
+      "safetybox.experiments",
+      "safetybox.experiments.exp015_corpus2_schema_v2",
+      "safetybox.filesystem",
+      "safetybox.filesystem.adapter",
+      "safetybox.filesystem.audit",
+      "safetybox.filesystem.canonicalization",
+      "safetybox.filesystem.errors",
+      "safetybox.filesystem.mapping",
+      "safetybox.filesystem.models",
+      "safetybox.filesystem.primitives",
+      "safetybox.filesystem.state_digest",
+      "safetybox.filesystem.validation",
+      "safetybox.filesystem.versions",
+      "safetybox.models",
+      "safetybox.monitor",
+      "safetybox.policy",
+      "safetybox.process",
+      "safetybox.process.adapter",
+      "safetybox.process.audit",
+      "safetybox.process.canonicalization",
+      "safetybox.process.errors",
+      "safetybox.process.models",
+      "safetybox.process.primitive",
+      "safetybox.process.validation",
+      "safetybox.process.versions",
+      "safetybox.protocols",
+      "safetybox.simulation",
+      "safetybox.simulation.models",
+      "safetybox.simulation.runner",
+      "safetybox.simulation.scenarios",
+      "safetybox.simulation.tools",
+      "safetybox.trajectory",
+      "safetybox.trajectory.models",
+      "safetybox.trajectory.monitor",
+      "safetybox.trajectory.observations",
+      "safetybox.trajectory.rules"
+    ],
+    "loaded_modules_before": [
+      "safetybox",
+      "safetybox.audit",
+      "safetybox.authorization",
+      "safetybox.b4",
+      "safetybox.b4.models",
+      "safetybox.b4.monitor",
+      "safetybox.b4.rules",
+      "safetybox.b4.validation",
+      "safetybox.baselines",
+      "safetybox.baselines.single_observation",
+      "safetybox.capabilities",
+      "safetybox.context",
+      "safetybox.context.evaluation",
+      "safetybox.context.models",
+      "safetybox.context.validation",
+      "safetybox.context_trajectory",
+      "safetybox.context_trajectory.models",
+      "safetybox.context_trajectory.monitor",
+      "safetybox.context_trajectory.rules",
+      "safetybox.contracts",
+      "safetybox.events",
+      "safetybox.exceptions",
+      "safetybox.experiments",
+      "safetybox.experiments.exp015_corpus2_schema_v2",
+      "safetybox.filesystem",
+      "safetybox.filesystem.adapter",
+      "safetybox.filesystem.audit",
+      "safetybox.filesystem.canonicalization",
+      "safetybox.filesystem.errors",
+      "safetybox.filesystem.mapping",
+      "safetybox.filesystem.models",
+      "safetybox.filesystem.primitives",
+      "safetybox.filesystem.state_digest",
+      "safetybox.filesystem.validation",
+      "safetybox.filesystem.versions",
+      "safetybox.models",
+      "safetybox.monitor",
+      "safetybox.policy",
+      "safetybox.process",
+      "safetybox.process.adapter",
+      "safetybox.process.audit",
+      "safetybox.process.canonicalization",
+      "safetybox.process.errors",
+      "safetybox.process.models",
+      "safetybox.process.primitive",
+      "safetybox.process.validation",
+      "safetybox.process.versions",
+      "safetybox.protocols",
+      "safetybox.simulation",
+      "safetybox.simulation.models",
+      "safetybox.simulation.runner",
+      "safetybox.simulation.scenarios",
+      "safetybox.simulation.tools",
+      "safetybox.trajectory",
+      "safetybox.trajectory.models",
+      "safetybox.trajectory.monitor",
+      "safetybox.trajectory.observations",
+      "safetybox.trajectory.rules"
+    ],
+    "proved": true
+  },
+  "output_confidentiality": {
+    "allowed_process_result_payload_excluded": true,
+    "correct": 120,
+    "failures": [],
+    "total": 120
+  },
+  "output_correctness": {
+    "correct": 0,
+    "rate": 0.0,
+    "total": 120
+  },
+  "path_search_traps": {
+    "correct": 0,
+    "count": 0,
+    "failure_ids": [],
+    "rate": null,
+    "total": 0
+  },
+  "performance": {
+    "description": "canonical adapter elapsed time; not production overhead",
+    "mean_ns": 544400.85,
+    "median_ns": 509469.0,
+    "min_ns": 267511,
+    "n": 120,
+    "p95_ns": 842329,
+    "p99_ns": 992601
+  },
+  "pmed_controls": {
+    "direct_controls_executed": 0,
+    "registered_ids": [
+      "C2-055",
+      "C2-056",
+      "C2-057"
+    ],
+    "result": "FAIL_NO_FROZEN_DIRECT_CONTROL_ROUTES",
+    "runtime_routes": {
+      "C2-055": "ADAPTER",
+      "C2-056": "ADAPTER",
+      "C2-057": "ADAPTER"
+    }
+  },
+  "post_run_validation": {
+    "coverage": "97% (617 passed, 2 lifecycle nodes deselected)",
+    "full_pytest": "617 passed, 2 expected lifecycle failures",
+    "git_diff_check": "PASS",
+    "mypy_src": "PASS (67 source files)",
+    "ruff": "PASS"
+  },
+  "pre_allow_spawn": {
+    "count": 0,
+    "violations": []
+  },
+  "raw_before_label_barrier": {
+    "satisfied": true,
+    "timestamp": "2026-09-25T10:22:41.888364+05:45"
+  },
+  "raw_checksums": {
+    "labels.json": "11903cff5dcb72b6b7f57b70fcc73ce7392231353cd39c4d6adcf89328d0bb75",
+    "pairs.json": "b08fa6c4d080ef3be907d1db35760af0c42fe04bea3d233c3e668019657e2934",
+    "repeats.jsonl": "978a798f0e7ac1631cb9c41e38ebfbe5d33f9095537e2c8b36eabaab192d3100",
+    "runs.jsonl": "6e2d27f789595e6df83742c07866ca60c2b21c64d9738c21943d160ca036f2d8"
+  },
+  "repeat_records": 6,
+  "requirements": {
+    "REQ-033": "NOT_EVALUATED",
+    "REQ-034": "NOT_EVALUATED",
+    "REQ-035": "NOT_EVALUATED",
+    "REQ-036": "NOT_EVALUATED",
+    "REQ-037": "NOT_EVALUATED",
+    "REQ-038": "NOT_EVALUATED",
+    "REQ-039": "NOT_EVALUATED",
+    "REQ-040": "NOT_EVALUATED",
+    "REQ-041": "NOT_EVALUATED",
+    "REQ-042": "NOT_EVALUATED",
+    "REQ-043": "NOT_EVALUATED",
+    "REQ-044": "NOT_EVALUATED",
+    "REQ-045": "NOT_EVALUATED",
+    "REQ-046": "NOT_EVALUATED",
+    "REQ-047": "NOT_EVALUATED",
+    "REQ-048": "NOT_EVALUATED",
+    "REQ-049": "NOT_EVALUATED",
+    "REQ-050": "NOT_EVALUATED",
+    "REQ-051": "NOT_EVALUATED",
+    "REQ-052": "NOT_EVALUATED",
+    "REQ-053": "NOT_EVALUATED",
+    "REQ-054": "NOT_EVALUATED",
+    "REQ-055": "NOT_EVALUATED",
+    "REQ-056": "NOT_EVALUATED",
+    "REQ-057": "NOT_EVALUATED",
+    "REQ-058": "NOT_EVALUATED",
+    "REQ-059": "NOT_EVALUATED",
+    "REQ-060": "NOT_EVALUATED",
+    "REQ-061": "NOT_EVALUATED",
+    "REQ-062": "NOT_EVALUATED"
+  },
+  "run_id": "EXP-015-RUN-001",
+  "run_validity": "VALID_RAW_EXECUTION_WITH_RETAINED_SCORING_HARNESS_LIMITATIONS",
+  "scenario_count": 120,
+  "scorer_version": "EXP-015-SCORER-1",
+  "strong_pairs": {
+    "by_dimension": {
+      "CWD_CAPABILITY": {
+        "correct": 8,
+        "rate": 1.0,
+        "total": 8
+      },
+      "CWD_RESOURCE": {
+        "correct": 4,
+        "rate": 1.0,
+        "total": 4
+      },
+      "EXEC_CAPABILITY": {
+        "correct": 8,
+        "rate": 1.0,
+        "total": 8
+      },
+      "EXEC_RESOURCE": {
+        "correct": 4,
+        "rate": 1.0,
+        "total": 4
+      },
+      "TASK_BINDING": {
+        "correct": 12,
+        "rate": 1.0,
+        "total": 12
+      }
+    },
+    "correct": 36,
+    "failures": [],
+    "rate": 1.0,
+    "total": 36
+  },
+  "success_criteria": {
+    "100_percent_audit_reconstruction_completeness": "PASS",
+    "100_percent_authorization_correctness": "PASS",
+    "100_percent_authorize_before_spawn_ordering": "PASS",
+    "100_percent_denied_spawn_prevention": "PASS",
+    "100_percent_environment_containment": "FAIL",
+    "100_percent_frozen_terminal_semantic_correctness": "FAIL",
+    "100_percent_registered_argument_boundary_preservation": "FAIL",
+    "100_percent_registered_executable_and_cwd_correctness": "PASS",
+    "deterministic_repeats": "FAIL",
+    "expected_direct_route_bypass_demonstrated": "FAIL",
+    "no_frozen_regression": "PASS",
+    "zero_adapter_routed_policy_escapes": "PASS",
+    "zero_authorization_false_allows": "PASS",
+    "zero_authorization_false_denies": "PASS"
+  },
+  "suspicious_benign_authorization": {
+    "correct": 40,
+    "failure_ids": [],
+    "rate": 1.0,
+    "total": 40
+  },
+  "task_binding": {
+    "correct": 12,
+    "false_allow": 0,
+    "false_deny": 0,
+    "rate": 1.0,
+    "scenario_count": 24,
+    "total": 12
+  },
+  "terminal_accuracy": {
+    "correct": 0,
+    "rate": 0.0,
+    "total": 120
+  },
+  "terminal_groups": {
+    "failure_injection": {
+      "correct": 0,
+      "rate": null,
+      "scenario_ids": [],
+      "total": 0
+    },
+    "nonzero": {
+      "correct": 0,
+      "rate": 0.0,
+      "scenario_ids": [
+        "C2-035",
+        "C2-049"
+      ],
+      "total": 2
+    },
+    "signal": {
+      "correct": 0,
+      "rate": 0.0,
+      "scenario_ids": [
+        "C2-037",
+        "C2-051"
+      ],
+      "total": 2
+    },
+    "timeout": {
+      "correct": 0,
+      "rate": 0.0,
+      "scenario_ids": [
+        "C2-036",
+        "C2-050",
+        "C2-052"
+      ],
+      "total": 3
+    }
+  },
+  "threats": {},
+  "trivial_cases": {
+    "corpus_scope": "preregistered held-out authorization-heavy corpus; not a general random corpus",
+    "negative": 0,
+    "positive": 0
+  },
+  "validation": {
+    "authorization": {
+      "correct": 16,
+      "failure_ids": [],
+      "rate": 1.0,
+      "total": 16
+    },
+    "by_kind": {
+      "cwd": {
+        "DIRECTORY": {
+          "NOT_ATTEMPTED": 114
+        },
+        "MISSING": {
+          "NOT_ATTEMPTED": 2
+        },
+        "NON_DIRECTORY": {
+          "NOT_ATTEMPTED": 2
+        },
+        "SYMLINK": {
+          "NOT_ATTEMPTED": 2
+        }
+      },
+      "executable": {
+        "DIRECTORY": {
+          "REJECTED": 2
+        },
+        "MISSING": {
+          "REJECTED": 2
+        },
+        "NON_EXECUTABLE_REGULAR": {
+          "REJECTED": 2
+        },
+        "REGULAR_EXECUTABLE": {
+          "NOT_ATTEMPTED": 60,
+          "REJECTED": 50
+        },
+        "SYMLINK": {
+          "REJECTED": 2
+        },
+        "UNSUPPORTED_SCRIPT_OR_WRAPPER": {
+          "REJECTED": 2
+        }
+      }
+    },
+    "semantics": {
+      "correct": 16,
+      "rate": 1.0,
+      "total": 16
+    }
+  },
+  "zero_relevant_cases": {
+    "correct": 18,
+    "failure_ids": [],
+    "rate": 1.0,
+    "total": 18
+  }
+}

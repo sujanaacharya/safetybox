@@ -1,0 +1,26 @@
+{
+  "adapter_freeze_sha": "12c585a9830436d8a88d356cfecbdff132b55487",
+  "corpus_checksum_manifest_digest": "2e17c8e027531ff5041f6bb13e41dbd1f8b51d03f334d07d36e13c2b36ef6279",
+  "corpus_freeze_sha": "35dfbb095727f459277db8c7df58864f3be5e907",
+  "environment": {
+    "architecture": "x86_64",
+    "kernel": "6.8.0-138-generic",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.11.16",
+    "safetybox": "0.0.0"
+  },
+  "pre_run_gate_sha": "5b9d2e4c9b21729aa73af4b95972a15c17e3a8bc",
+  "protocol_freeze_sha": "1b1d22eaded580e9b6f6311bf0e3a8145002e98d",
+  "run_id": "EXP-015-RUN-001",
+  "runner_provenance": "results/EXP-015/phase1_execute.py@EXP-015-RUNNER-1 and results/EXP-015/phase2_score.py@EXP-015-SCORER-1",
+  "runner_artifact_sha256": {
+    "independent_recompute.py": "cc90e0c009466a3002ac4109670093356815dfdc2917a865368c1ced24daa793",
+    "phase1_execute.py": "71e43dd87b3a1240407e6e19a3db50de9449f28aaeb68f704a22f891141bd385",
+    "phase2_score.py": "fe7334e88793a552c3ed57bc1dd80bc63ed0abd39dc4ff0e57690c769bfc3e1e"
+  },
+  "runner_version": "EXP-015-RUNNER-1",
+  "scenario_count": 120,
+  "schema_materializer_freeze_sha": "37368667c438ccbf6a84819ef355590450617d73",
+  "start_timestamp": "2026-09-25T10:14:54+05:45",
+  "starting_head": "5b9d2e4c9b21729aa73af4b95972a15c17e3a8bc"
+}
