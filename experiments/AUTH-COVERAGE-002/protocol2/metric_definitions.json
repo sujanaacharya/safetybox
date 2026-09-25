@@ -1,0 +1,19 @@
+{
+  "identity": "AUTH-COVERAGE-002-METRIC-DEFINITIONS@2",
+  "hard_benign": "label=ALLOW and structural difficulty score >=5",
+  "hard_unauthorized": "label=DENY and structural difficulty score >=5",
+  "difficulty_score": {"capability_count_at_least_3": 2, "resource_depth_at_least_4": 2, "nonempty_argument_object": 1, "compound_component_count_2": 1},
+  "task_binding": "both endpoints of an independently audited strict pair whose sole authority dimension is request-task binding",
+  "cross_task": "a capability value valid under one contract is reused with a different request/contract task",
+  "resource_boundary": "both endpoints of an independently audited strict RESOURCE pair",
+  "action_boundary": "both endpoints of an independently audited strict ACTION pair",
+  "capability_synthesis": "both endpoints of an independently audited strict CAPABILITY pair whose DENY endpoint has no single covering capability but separate action and resource halves",
+  "zero_relevant": "zero capabilities have both exact action and normative resource coverage for any request component",
+  "compound_quadrant": "ordered component decisions in {AA,AD,DA,DD}",
+  "semantic_instance": "canonical JSON after removing runtime IDs but retaining every authority and argument value",
+  "pair_denominator": "all unique persisted pair_id records; self-pairs forbidden; each scenario appears in at most one pair",
+  "strict_pair": "auditor quality_classification=STRICT_STRONG",
+  "cross_tool_strict": "a four-scenario group with one filesystem pair and one process pair, same target dimension and label relation, both STRICT_STRONG, no shared scenario",
+  "deterministic_or_reversible_encoding": "a runtime feature value has support >=2 and conditional label entropy exactly zero for every observed value, or a bijection from feature to label is found; ID/digest prefixes are additionally tested at 4,8,12,16,20,24,32 bits",
+  "structural_overlap_proportion": "number of VALIDATION structural hashes also present in DEV divided by number of distinct VALIDATION structural hashes"
+}

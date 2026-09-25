@@ -1,0 +1,46 @@
+{
+  "identity": "AUTH-COVERAGE-002-PROTOCOL2-DEV-PROOF@1",
+  "evidence_class": "DEVELOPMENT_ONLY_NOT_RESULT_EVIDENCE",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@2",
+  "preregistration_table_sha256": "a311763dbe8dfa656daf3cc25d1c6d4cc850755d1a4af4691c74b756ddbc0204",
+  "new_validation_realizations": 0,
+  "new_held_out_realizations": 0,
+  "new_held_out_exposures": 0,
+  "machine_gate_dev_synthetic": "PASS",
+  "raw_to_scorer": {
+    "compatibility_rate": 1.0,
+    "filesystem_shapes": ["ALLOW", "DENY"],
+    "process_shapes": ["AA", "AD", "DA", "DD"],
+    "mismatch_shapes": ["TASK", "RESOURCE", "ACTION", "ZERO_RELEVANT", "SYNTHESIS"]
+  },
+  "explanation_mutations_caught": [
+    "WRONG_COMPONENT_ORDER",
+    "MISSING_COMPONENT",
+    "WRONG_MATCHED_CAPABILITY",
+    "WRONG_RESOURCE",
+    "WRONG_RULE",
+    "WRONG_REASON",
+    "WRONG_AUTHORITY_SOURCE"
+  ],
+  "raw_mutations_caught": [
+    "CAPABILITY_REORDER",
+    "COMPONENT_REORDER",
+    "MISSING_FIELD",
+    "DIGEST_MISMATCH",
+    "TASK_MISMATCH",
+    "RESOURCE_CORRUPTION"
+  ],
+  "oracle_mutations_detected_in_both_faulty_directions": [
+    "PREFIX_MATCH",
+    "PARENT_CHILD_REVERSAL",
+    "UNICODE_NORMALIZATION",
+    "ACTION_RESOURCE_SWAP",
+    "CWD_EXEC_CONFUSION"
+  ],
+  "oracle_a_sha256": "1cf1c20445617f3fa14dfa69fde90b88430adb9cc453640ae547f535fe6c156a",
+  "oracle_b_sha256": "7b1ec019288db4528f14914c027bae488f5d1be75c695456cde3d136306285c2",
+  "normative_protocol_sha256": "2f1103c8395b303c733f729386b269d3071ed26cf94086afe57b6752f93a2897",
+  "formal_exhaustive_states": 72660,
+  "independent_final_focused_tests": 66,
+  "independent_review_decision": "NO_BLOCKING_FINDINGS"
+}

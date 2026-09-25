@@ -1,0 +1,60 @@
+{
+  "identity": "AUTH-COVERAGE-002-LABEL-INFERENCE-ADVERSARY@2",
+  "training_split": "DEV",
+  "evaluation_split": "VALIDATION",
+  "primary_attacks": [
+    "id_only",
+    "position_order",
+    "serialization_size",
+    "capability_count",
+    "resource_depth",
+    "resource_length",
+    "keyword",
+    "digest_prefix",
+    "logistic",
+    "small_tree",
+    "linear",
+    "categorical"
+  ],
+  "runtime_serialization_features": [
+    "canonical_json_byte_length",
+    "recursive_field_count",
+    "received_key_order",
+    "resource_path_length",
+    "capability_count",
+    "capability_order_signature",
+    "input_digest_first_16_bits",
+    "manifest_position",
+    "runtime_id_first_16_bits"
+  ],
+  "attack_feature_mapping": {
+    "id_only": ["runtime_id_first_16_bits"],
+    "position_order": ["manifest_position_modulo_each_integer_2_through_32"],
+    "serialization_size": ["canonical_json_byte_length"],
+    "capability_count": ["capability_count"],
+    "resource_depth": ["resource_path_depth_sum"],
+    "resource_length": ["resource_path_length_sum"],
+    "keyword": ["frozen_keyword_indicator"],
+    "digest_prefix": ["input_digest_first_16_bits"],
+    "logistic": ["all_numeric_runtime_features"],
+    "small_tree": ["all_numeric_runtime_features"],
+    "linear": ["all_numeric_runtime_features"],
+    "categorical": ["tool", "ordered_actions", "resource_depth_shapes", "capability_count", "keyword"]
+  },
+  "numeric_preprocessing": "DEV mean and population standard deviation; zero-variance maps to zero",
+  "categorical_preprocessing": "DEV vocabulary; unseen maps to __UNKNOWN__",
+  "hyperparameters": {
+    "position_order": {"candidate_moduli_inclusive": [2, 32], "fit": "DEV residue-wise majority", "selection": "highest DEV accuracy then smallest modulus", "class_tie": "DENY"},
+    "logistic": {"l2_lambda": 1.0, "learning_rate": 0.05, "iterations": 500, "threshold": 0.5, "seed": 2002001},
+    "small_tree": {"criterion": "gini", "max_depth": 3, "min_samples_leaf": 40, "tie_break": "lexical_feature_then_threshold", "seed": 2002002},
+    "linear": {"method": "fixed_batch_gradient_ridge", "l2_lambda": 1.0, "learning_rate": 0.05, "iterations": 500, "intercept_penalized": false, "threshold": 0.5, "seed": 2002003},
+    "categorical": {"method": "DEV exact-category majority lookup", "unseen_category": "DENY", "class_tie": "DENY", "threshold": 0.5, "seed": 2002004}
+  },
+  "permutation": {"count": 10000, "seed": 2002099, "shuffle": "VALIDATION labels only", "statistic": "balanced_accuracy", "p_value": "(1 + count(permuted >= observed))/(10000 + 1)", "comparison": "block when p < 1/1200"},
+  "inferential_statistic": "plus-one permutation p-value for balanced accuracy; fixed accuracy and error-rate limits are non-inferential effect-size gates",
+  "tie_rules": {"class_probability": "DENY at exactly 0.5", "threshold_search": "lowest feature name then lowest numeric threshold then non-reversed", "tree": "lowest gini then feature name then threshold"},
+  "implementation": "experiments/AUTH-COVERAGE-002/protocol2/leakage_suite.py",
+  "secondary_targets": ["family", "difficulty", "pair_membership", "generator_branch"],
+  "secondary_rule": "predictability is reported; it blocks when a frozen branch/group label-rate deviation exceeds 0.05, branch-inference balanced accuracy exceeds 0.555, or a primary label attack fails",
+  "no_post_observation_tuning": true
+}

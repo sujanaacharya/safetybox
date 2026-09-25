@@ -1,0 +1,13 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR-BRANCH-REGISTRY@2",
+  "leaf_formula": "{tool}:{family}:{template_lane}",
+  "template_lane_values": [0, 1, 2, 3, 4, 5, 6],
+  "parent_formula": "{tool}:{family}",
+  "tools": ["FILESYSTEM", "PROCESS"],
+  "families": ["TASK_BINDING", "RESOURCE_BOUNDARY", "ACTION_BOUNDARY", "CAPABILITY_SYNTHESIS", "CAPABILITY_PRESENCE", "CAPABILITY_DISTRACTOR"],
+  "rare_leaf_rule": "every leaf with support <40 is evaluated at its frozen parent; leaves may not be omitted",
+  "global_label_rate": 0.5,
+  "label_rate_deviation_max": 0.05,
+  "branch_inference_balanced_accuracy_max": 0.555,
+  "one_sided_branches_allowed": false
+}

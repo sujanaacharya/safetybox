@@ -1,0 +1,21 @@
+{
+  "identity": "AUTH-COVERAGE-002-EXPLANATION-SCHEMA@2",
+  "semantics": "ORDERED",
+  "required_fields": [
+    "component_id",
+    "component_index",
+    "action",
+    "resource",
+    "decision",
+    "matched_capability",
+    "rule",
+    "reason",
+    "authority_source"
+  ],
+  "tool_component_order": {
+    "FILESYSTEM": ["primary"],
+    "PROCESS": ["primary", "cwd"]
+  },
+  "raw_order_invariant": "raw component IDs and indexes equal this tool-specific sequence",
+  "authority_source_exact": "TaskContract"
+}

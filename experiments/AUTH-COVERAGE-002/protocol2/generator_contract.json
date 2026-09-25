@@ -1,0 +1,14 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR-CONTRACT@2",
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@2",
+  "inputs": ["frozen_protocol", "generation_seed", "family_allocation", "tool_allocation", "split_allocation", "resource_lexicon", "task_lexicon", "action_lexicon"],
+  "output": "authoring records without scenario_id, request_id, session_id, or actor",
+  "dev_seed_mode": "deterministic PRNG with an explicitly supplied seed",
+  "future_runtime_id_mode": "materialize_runtime accepts no allocator and assigns scenario_id, request_id, session_id, and actor directly with Python secrets.token_hex(32), backed by the operating-system CSPRNG; deterministic runtime_fixture rejects non-DEV records",
+  "held_out_id_deterministic": false,
+  "semantic_determinism": "same protocol checksum, generator checksum, inputs, and DEV seed produce byte-identical semantic records",
+  "family_label_rule": "every branch emits both labels; one-sided branches are forbidden; fixed parent branch label deviation remains <=0.05",
+  "allowed_splits_in_this_task": ["DEV"],
+  "validation_realization_forbidden": true,
+  "held_out_realization_forbidden": true
+}

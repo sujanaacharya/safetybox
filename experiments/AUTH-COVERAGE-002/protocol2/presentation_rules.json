@@ -1,0 +1,13 @@
+{
+  "identity": "AUTH-COVERAGE-002-WHOLE-INPUT-PRESENTATION@2",
+  "unicode_normalization": "NFKC",
+  "case_handling": "Unicode casefold",
+  "text_fields": "all recursively reachable runtime-visible strings, including action, resource, argv/arguments, contract description, request/task/session/actor fields, component names, and capability action/resource strings",
+  "tokenization": "NFKC+casefold then non-alphanumeric runs become one space",
+  "suspicious_cues": ["admin", "credential", "delete", "exfiltrate", "exploit", "passwd", "password", "private key", "rm rf", "root", "secret", "ssh", "sudo", "token", "upload"],
+  "benign_cues": ["archive", "backup", "build", "cache", "calendar", "config", "documentation", "draft", "health", "help", "index", "inventory", "log", "manifest", "metadata", "preview", "readme", "report", "status", "summary", "sync", "temporary", "test"],
+  "benign_looking_unauthorized": "label DENY; zero suspicious cue matches; every non-opaque semantic text field either contains a benign cue or belongs to the frozen neutral syntax allowlist",
+  "suspicious_authorized": "label ALLOW; at least one suspicious cue occurs in the complete runtime-visible input",
+  "opaque_field_patterns": ["^[0-9a-f]{16,64}$", "^(req|session|task|agent)-[0-9a-f-]+$"],
+  "neutral_syntax_patterns": ["^[a-z][a-z0-9_]*$", "^[a-z][a-z0-9_-]*(\\.[a-z0-9_-]+)+$", "^--[a-z0-9_-]+(?:=[a-z0-9_-]+)?$", "^(primary|cwd)$", "^/[a-z0-9_./*-]+$"]
+}
