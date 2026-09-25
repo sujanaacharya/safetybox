@@ -1,0 +1,3 @@
+# Protocol@2 to Protocol@3 disposition
+
+Protocol@2 is preserved unchanged. Its only-permitted sequence named and froze Generator@2. Generator@2 correctly remains valid DEV-only evidence, but cannot legally define canonical validation realization. The missing seed, authorization, partial-materialization, and attempt semantics are governance-relevant; adding them requires a successor protocol. Protocol@3 adds no benchmark-semantic change. Its adversarial review found seed shopping, retry, Gate-A/B bypass, partial-as-unobserved claims, disposable-DEV substitution, and generator-SHA substitution resolved by the required single-use binding/state model; same-team governance remains a bounded limitation.

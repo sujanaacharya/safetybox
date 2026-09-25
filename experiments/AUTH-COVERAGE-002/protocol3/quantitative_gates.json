@@ -1,0 +1,76 @@
+{
+  "identity": "AUTH-COVERAGE-002-PREREGISTRATION-TABLE@2",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@2",
+  "corpus_id_reserved_not_created": "AUTH-COVERAGE-002-CORPUS@2",
+  "counts": {
+    "total_exact": 4000,
+    "split_exact": {"DEV": 800, "VALIDATION": 800, "HELD_OUT": 2400},
+    "split_label_exact": {"DEV_ALLOW": 400, "DEV_DENY": 400, "VALIDATION_ALLOW": 400, "VALIDATION_DENY": 400, "HELD_OUT_ALLOW": 1200, "HELD_OUT_DENY": 1200},
+    "authorized_min": 1900,
+    "unauthorized_min": 1900,
+    "hard_benign_min": 1500,
+    "hard_unauthorized_min": 1500,
+    "benign_looking_unauthorized_min": 500,
+    "benign_looking_unauthorized_planned": 650,
+    "suspicious_authorized_min": 500,
+    "suspicious_authorized_planned": 650,
+    "task_binding_min": 600,
+    "cross_task_min": 300,
+    "resource_boundary_min": 800,
+    "action_boundary_min": 600,
+    "capability_synthesis_min": 600,
+    "zero_relevant_min": 500,
+    "compound_quadrant_min_each": 250,
+    "strict_pair_min": 1500,
+    "strict_pair_proportion_min": 0.75,
+    "cross_tool_strict_min": 200
+  },
+  "diversity": {
+    "semantic_template_min": 3200,
+    "largest_structural_cluster_max": 4,
+    "exact_duplicate_max": 0,
+    "cross_split_exact_instance_reuse_max": 0,
+    "cross_split_structural_hash_overlap_proportion_max": 0.25
+  },
+  "leakage": {
+    "evaluation_n_exact": 800,
+    "familywise_alpha": 0.01,
+    "primary_attack_count": 12,
+    "per_attack_alpha": 0.0008333333333333334,
+    "accuracy_max": 0.555,
+    "balanced_accuracy_max": 0.555,
+    "permutation_count": 10000,
+    "permutation_p_min": 0.0008333333333333334,
+    "shortcut_low_error_max": 0.25,
+    "shortcut_other_error_max": 0.60,
+    "deterministic_or_reversible_encoding_max": 0,
+    "branch_label_rate_deviation_max": 0.05,
+    "branch_minimum_support": 40,
+    "branch_inference_balanced_accuracy_max": 0.555,
+    "secondary_target_label_rate_deviation_max": 0.05
+  },
+  "validity": {
+    "oracle_agreement_rate_exact": 1.0,
+    "explanation_compatibility_rate_exact": 1.0,
+    "pair_weak_max": 0,
+    "external_pack_oracle_agreement_rate_exact": 1.0,
+    "exhaustive_states_min": 50000,
+    "held_out_reserved_exact": 0,
+    "held_out_started_exact": 0,
+    "held_out_exposed_exact": 0,
+    "held_out_completed_exact": 0,
+    "held_out_raw_records_exact": 0
+  },
+  "phases": {
+    "DEV_PROOF": "DEV fixtures only; full-corpus quota values are construction targets, not realized observations",
+    "PRE_HELDOUT": "DEV and one VALIDATION realization exist; HELD_OUT realized scenario count and all exposure counters equal zero",
+    "POST_MATERIALIZATION": "the one HELD_OUT realization exists; full-corpus gates apply; exposure counters remain zero",
+    "PRE_EXECUTION": "POST_MATERIALIZATION gates plus separate Gate B decision"
+  },
+  "phase_realized_quota_scale": {
+    "DEV_PROOF": 0.2,
+    "PRE_HELDOUT": 0.4,
+    "POST_MATERIALIZATION": 1.0,
+    "PRE_EXECUTION": 1.0
+  }
+}
