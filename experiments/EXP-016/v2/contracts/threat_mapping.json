@@ -1,0 +1,19 @@
+{
+  "mapping_id": "EXP-016-THREAT-MAPPING@2",
+  "source": "docs/threat-model/REAL_SUBPROCESS_THREATS.md",
+  "join_source": "family_definitions.json threats arrays",
+  "mapping_kind": "DEFINITION_LEVEL_NO_INSTANCE_CLAIMS",
+  "current_empirical_instance_count": 0,
+  "boundaries": {
+    "network_activity_by_child": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "descendant_process_spawning": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "process_tree_escape_daemonization": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "validation_to_exec_toctou": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "shell_true_or_explicit_shell_routes": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "resource_exhaustion": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "privilege_transition_setuid": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "authenticated_identity_or_session_binding": "EXPECTED_BOUNDARY_NOT_EVALUATED",
+    "inherited_file_descriptors_beyond_declared_stdin": "EXPECTED_BOUNDARY_NOT_EVALUATED"
+  },
+  "claim_rule": "a future threat denominator is positive only after frozen corpus membership joins to a mapped family; definition presence alone is not empirical coverage"
+}

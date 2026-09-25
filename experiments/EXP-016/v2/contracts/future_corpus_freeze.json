@@ -1,0 +1,32 @@
+{
+  "contract_id": "EXP-016-FUTURE-CORPUS-FREEZE@2",
+  "current_status": "NOT_YET_FROZEN",
+  "artifacts_that_become_immutable_at_corpus_freeze": [
+    "runtime scenarios",
+    "isolated scoring labels",
+    "scenario-to-primary-family membership",
+    "secondary tags",
+    "exact family and denominator counts",
+    "repeat membership",
+    "requirement joins",
+    "threat joins",
+    "per-scenario reachability records",
+    "materialization equivalence records",
+    "contamination classifications",
+    "manifest and checksums"
+  ],
+  "separate_frozen_dependencies": [
+    "EXP-016-PROTOCOL@2",
+    "EXP-016-FAMILY-REGISTRY@2",
+    "EXP-016-SCORING-CONTRACT@2",
+    "EXP-016-REACHABILITY-MODEL@2",
+    "EXP-016-ROUTE-CONTRACT@2"
+  ],
+  "required_transition": "PLANNED -> MATERIALIZED -> FROZEN",
+  "forbidden": [
+    "claiming frozen_corpus_count=0 before authorship",
+    "mutating family definitions while adding instances",
+    "loading labels before the raw record barrier",
+    "running held-out ProcessAdapter cases before corpus freeze and pre-run authorization"
+  ]
+}

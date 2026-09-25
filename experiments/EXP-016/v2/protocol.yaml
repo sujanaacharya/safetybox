@@ -1,0 +1,205 @@
+experiment_id: EXP-016
+protocol_id: EXP-016-PROTOCOL@2
+title: Native Direct-Child Mediation Governance and Lifecycle Model
+version: 2
+status: PREREGISTERED_PRE_CORPUS_GOVERNANCE
+preregistration_date: 2026-09-25
+freeze_git_sha: RECORDED_BY_GIT_COMMIT_AND_FINAL_REPORT
+evidence_status: DEVELOPMENT_ONLY_NOT_HELD_OUT
+held_out_scenarios_authored: 0
+predictions_exposed: false
+held_out_process_adapter_executions: 0
+frozen_corpus_count: NOT_YET_FROZEN
+
+supersession:
+  historical_protocol: EXP-016-PROTOCOL@1
+  historical_git_sha: 97cf8bfc7bc196fc8c7704ba924ee7dae34efc9a
+  historical_status: VALID_BUT_INSUFFICIENT_FOR_CORPUS_AUTHORSHIP
+  historical_artifacts_immutable: true
+  v2_scope: future_EXP-016_corpus_authorship_and_scoring_only
+  reason:
+    - family definitions and nonexistent corpus membership were conflated
+    - a strict success-prefix funnel rejected truthful failure-terminal audit paths
+    - DIRECT_CONTROL lacked an independent route lifecycle
+  prediction_exposure_at_versioning: 0
+  held_out_exposure_at_versioning: 0
+
+identity_dependencies:
+  family_registry: EXP-016-FAMILY-REGISTRY@2
+  scoring_contract: EXP-016-SCORING-CONTRACT@2
+  lifecycle_model: EXP-016-REACHABILITY-MODEL@2
+  route_contract: EXP-016-ROUTE-CONTRACT@2
+  physical_reachability_gate: EXP-016-VALIDATION-REACHABILITY-GATE@1_UNCHANGED
+  population_model: EXP-016-CORPUS-POPULATION-MODEL@2
+  corpus_design: EXP-016-CORPUS-DESIGN@1
+  raw_record_model: EXP-016-RAW-LIFECYCLE-RECORD@2
+
+research_question: >-
+  Given an already-authorized process request with independently verified native
+  executable fixtures, does SafetyBox correctly mediate real direct-child process
+  execution semantics under route-aware lifecycle scoring?
+
+governance_correction:
+  production_implementation_defect_found: false
+  process_adapter_change: none
+  reference_monitor_change: none
+  derivation_layer: raw_observation_to_experiment_lifecycle_to_scoring
+  v1_result_reinterpretation: prohibited
+  EXP_015_reinterpretation: prohibited
+
+population:
+  current_state: PLANNED
+  planned_count_constraint: 120
+  materialized_count: 0
+  frozen_corpus_count: NOT_YET_FROZEN
+  state_order: [PLANNED, MATERIALIZED, FROZEN]
+  rule: >-
+    Zero materialized scenarios before authorship is a current-state observation,
+    not a frozen empty-corpus count. Exact scenario membership and count become
+    immutable only at corpus freeze.
+
+family_model:
+  definitions: contracts/family_definitions.json
+  definitions_contain_instances: false
+  future_instance_membership: separate_corpus_artifact
+  primary_family_cardinality: exactly_one
+  secondary_tags: separately_typed_nonexclusive
+  definition_mutation_during_population: prohibited
+
+lifecycle:
+  model: contracts/lifecycle_model.json
+  semantics: route_aware_partial_order
+  strict_prefix_funnel: retired_for_v2_future_corpus_scoring
+  dimensions:
+    - authorization
+    - exec_validation
+    - cwd_validation
+    - preaudit
+    - spawn
+    - child_creation
+    - child_observation
+    - capture
+    - child_outcome
+    - terminal_audit
+  uncertainty: INDETERMINATE_is_preserved
+  terminal_audit_rule: >-
+    Terminal audit records an applicable terminal adapter outcome and does not
+    imply spawn success, child creation, or child completion.
+
+routes:
+  ADAPTER:
+    adapter_used: true
+    applicable:
+      - authorization
+      - validation
+      - preaudit
+      - spawn
+      - capture
+      - terminal_audit
+  DIRECT_CONTROL:
+    adapter_used: false
+    applicable:
+      - direct_route_selection
+      - direct_spawn
+      - child_creation
+      - child_observation
+      - direct_capture
+    not_applicable:
+      - adapter_authorization
+      - adapter_validation
+      - adapter_preaudit
+      - ProcessAuditEnvelope
+      - adapter_terminal_audit
+    purpose: PMED_L1_routing_boundary_control
+
+registered_adapter_paths:
+  - ADAPTER_DENY
+  - ADAPTER_AUTHORIZATION_FAILURE
+  - ADAPTER_EXEC_VALIDATION_REJECT
+  - ADAPTER_CWD_VALIDATION_REJECT
+  - ADAPTER_PREAUDIT_FAILURE
+  - ADAPTER_SPAWN_FAILURE_CONFIRMED_NO_CHILD
+  - ADAPTER_SPAWN_INDETERMINATE
+  - ADAPTER_CHILD_EXIT_0
+  - ADAPTER_CHILD_EXIT_NONZERO
+  - ADAPTER_CHILD_SIGNAL
+  - ADAPTER_CHILD_TIMEOUT
+  - ADAPTER_CAPTURE_FAILURE
+  - ADAPTER_TERMINAL_AUDIT_FAILURE
+
+registered_direct_paths:
+  - DIRECT_CONTROL_SUCCESS
+
+scoring:
+  contract: contracts/scoring_contract.json
+  raw_first: true
+  labels_hidden_from_execution: true
+  zero_denominator: NOT_EXERCISED
+  negative_denominator: INVALID_INPUT
+  NOT_APPLICABLE_counts_as_pass: false
+  empty_corpus_overall_status: NOT_EXERCISED
+  route_specific_denominators: required
+  positive_adapter_child_required_for_spawn_ordering: true
+
+raw_records:
+  contract: contracts/raw_record_model.json
+  inputs: production_observations_and_independent_runner_observations
+  lifecycle_derivation: experiment_side_after_raw_completion
+  production_shape_changes_required: false
+
+corpus_design:
+  contract: contracts/corpus_design_target.json
+  state: PLANNED
+  planned_total: 120
+  exact_family_counts: deferred_to_pre_authorship_design_freeze
+  exact_scenario_membership: absent
+
+future_corpus_freeze:
+  contract: contracts/future_corpus_freeze.json
+  freezes:
+    - runtime scenarios
+    - isolated labels
+    - scenario-family membership
+    - exact counts
+    - repeat membership
+    - requirement and threat joins
+    - reachability and materialization records
+    - contamination audit
+    - manifest and checksums
+
+claims:
+  promoted: []
+  candidate_claims_status: PROPOSED
+  RTM: RTM-1
+  automatic_promotion: false
+
+boundaries_unchanged:
+  - network
+  - descendants
+  - process_tree_escape
+  - validation_to_exec_TOCTOU
+  - shell_true_routes
+  - privilege_transition
+  - authenticated_identity
+  - resource_exhaustion
+  - production_readiness
+
+stop_conditions:
+  - any_v1_artifact_changes
+  - any_held_out_scenario_is_authored
+  - any_prediction_is_exposed
+  - any_held_out_ProcessAdapter_execution
+  - truthful_spawn_failure_is_rejected
+  - DIRECT_CONTROL_requires_fabricated_adapter_state
+  - unknown_or_indeterminate_is_coerced
+  - NOT_APPLICABLE_scores_as_PASS
+  - empty_corpus_can_PASS
+  - family_definitions_mutate_during_instance_population
+  - any_validation_or_adversarial_gate_fails
+
+exactly_one_next_task_after_successful_freeze: >-
+  Author EXP-016-CORPUS@1 under the frozen Protocol@2 lifecycle, route,
+  family-population, reachability, and scoring contracts; independently verify
+  native-ELF, cwd, seam, route, denominator, contamination, requirement, threat,
+  repeat, and materialization integrity; freeze the corpus without executing it
+  through ProcessAdapter.

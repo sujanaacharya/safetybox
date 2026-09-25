@@ -1,0 +1,90 @@
+{
+  "model_id": "EXP-016-RAW-LIFECYCLE-RECORD@2",
+  "role": "execution-phase observations only; contains no expected outcome, family, requirement, threat, or prediction",
+  "derivation_implementation": "safetybox.experiments.exp016_lifecycle_v2.derive_lifecycle",
+  "common_required_fields": [
+    "scenario_id",
+    "attempt_id",
+    "route",
+    "adapter_used",
+    "request",
+    "materialized_fixture_identity",
+    "spawn_boundary_observation",
+    "child_created",
+    "child_completed",
+    "capture_status",
+    "child_outcome",
+    "terminal_class",
+    "effect_status",
+    "failure_seam",
+    "stdout",
+    "stderr",
+    "marker_observation",
+    "timings"
+  ],
+  "adapter_required_fields": [
+    "decision",
+    "authorization_subdecisions",
+    "exec_validation",
+    "cwd_validation",
+    "preaudit_attempted",
+    "preaudit_committed",
+    "spawn_attempted",
+    "primitive_invocation_count",
+    "primitive_invocation_snapshot",
+    "process_audit_envelope",
+    "audit_event_sequence",
+    "terminal_audit_attempted",
+    "terminal_audit_committed"
+  ],
+  "direct_control_required_fields": [
+    "direct_spawn_attempted",
+    "direct_dispatch_observation",
+    "direct_child_observation"
+  ],
+  "direct_control_fields_required_null": [
+    "decision",
+    "authorization_subdecisions",
+    "exec_validation",
+    "cwd_validation",
+    "preaudit_attempted",
+    "preaudit_committed",
+    "process_audit_envelope",
+    "terminal_audit_attempted",
+    "terminal_audit_committed"
+  ],
+  "stream_record_required_fields": [
+    "retained_bytes_base64",
+    "retained_byte_count",
+    "full_byte_count",
+    "full_sha256",
+    "truncated",
+    "capture_status"
+  ],
+  "truth_observation_fields": [
+    "pid",
+    "child_token",
+    "exit_code",
+    "signal",
+    "timed_out",
+    "term_sent",
+    "kill_sent",
+    "argv_frames",
+    "environment_frames",
+    "cwd_frame",
+    "marker existence and bytes",
+    "wall-clock spawn and child-observation bracket"
+  ],
+  "prohibited_runtime_fields": [
+    "canonical_family_id",
+    "denominator_class",
+    "expected_outcome",
+    "expected_lifecycle",
+    "metric_tags",
+    "prediction",
+    "repeat_group_id",
+    "requirement_ids",
+    "threat_ids"
+  ],
+  "derivation_rule": "raw route and observations are normalized into typed v2 lifecycle state only after record completion; expected labels are joined only after the raw barrier"
+}

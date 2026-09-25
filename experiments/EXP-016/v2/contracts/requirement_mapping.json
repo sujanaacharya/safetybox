@@ -1,0 +1,14 @@
+{
+  "mapping_id": "EXP-016-REQUIREMENT-MAPPING@2",
+  "source": "docs/research/REAL_SUBPROCESS_MEDIATION_REQUIREMENTS.md",
+  "join_source": "family_definitions.json requirements arrays",
+  "mapping_kind": "DEFINITION_LEVEL_NO_INSTANCE_CLAIMS",
+  "current_empirical_instance_count": 0,
+  "not_empirically_claimed": {
+    "REQ-035": "trusted-base assignment is a design assumption",
+    "REQ-047": "descendant behavior is an explicit boundary",
+    "REQ-061": "performance has no correctness acceptance threshold"
+  },
+  "claim_rule": "a future requirement denominator is positive only after frozen corpus membership joins to a mapped family; definition presence alone is not empirical coverage",
+  "all_family_requirements": ["REQ-059", "REQ-060", "REQ-062"]
+}

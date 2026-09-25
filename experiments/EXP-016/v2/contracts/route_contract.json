@@ -1,0 +1,39 @@
+{
+  "contract_id": "EXP-016-ROUTE-CONTRACT@2",
+  "routes": {
+    "ADAPTER": {
+      "dispatch": "generic ProcessAdapter path",
+      "adapter_used": true,
+      "lifecycle_dimensions": ["authorization", "exec_validation", "cwd_validation", "preaudit", "spawn", "child_creation", "child_observation", "capture", "child_outcome", "terminal_audit"],
+      "prohibited_not_applicable": ["authorization", "exec_validation", "cwd_validation", "preaudit", "terminal_audit"]
+    },
+    "DIRECT_CONTROL": {
+      "dispatch": "independent native direct-control runner with shell=false",
+      "adapter_used": false,
+      "lifecycle_dimensions": ["route selection", "direct spawn", "child_creation", "child_observation", "capture", "child_outcome"],
+      "required_not_applicable": ["authorization", "exec_validation", "cwd_validation", "preaudit", "terminal_audit"],
+      "must_not_fabricate": ["TaskContract authorization", "ProcessAdapter validation", "ProcessAuditEnvelope", "adapter terminal audit"]
+    }
+  },
+  "route_confusion_result": "FAIL",
+  "metric_applicability": {
+    "real_child_creation_rate": ["ADAPTER"],
+    "benign_completion_rate": ["ADAPTER"],
+    "argv_byte_exact_rate": ["ADAPTER", "DIRECT_CONTROL"],
+    "no_shell_literal_rate": ["ADAPTER", "DIRECT_CONTROL"],
+    "minimal_environment_exact_rate": ["ADAPTER", "DIRECT_CONTROL"],
+    "output_truthfulness_rate": ["ADAPTER", "DIRECT_CONTROL"],
+    "validation_truthfulness_rate": ["ADAPTER"],
+    "nonzero_exit_truthfulness_rate": ["ADAPTER"],
+    "timeout_truthfulness_rate": ["ADAPTER"],
+    "signal_truthfulness_rate": ["ADAPTER"],
+    "failure_seam_truthfulness_rate": ["ADAPTER"],
+    "adapter_audit_ordering_rate": ["ADAPTER"],
+    "adapter_audit_field_completeness_rate": ["ADAPTER"],
+    "adapter_audit_semantic_truthfulness_rate": ["ADAPTER"],
+    "denied_no_spawn_rate": ["ADAPTER"],
+    "repeat_determinism_rate": ["ADAPTER", "DIRECT_CONTROL"],
+    "direct_control_boundary_rate": ["DIRECT_CONTROL"]
+  },
+  "not_applicable_scoring_rule": "NOT_APPLICABLE is excluded from the denominator and can never count as PASS"
+}

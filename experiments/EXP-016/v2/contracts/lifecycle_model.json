@@ -1,0 +1,55 @@
+{
+  "model_id": "EXP-016-REACHABILITY-MODEL@2",
+  "supersedes_for_future_corpus_authorship": "EXP-016-PROTOCOL@1 strict-prefix stage_funnel",
+  "historical_v1_immutable": true,
+  "implementation": "safetybox.experiments.exp016_lifecycle_v2",
+  "principle": "LIFECYCLE_IS_A_ROUTE_AWARE_PARTIAL_ORDER_NOT_A_SUCCESS_PREFIX",
+  "typed_dimensions": {
+    "authorization": ["ALLOW", "DENY", "FAILED", "NOT_APPLICABLE"],
+    "validation": ["PASS", "REJECT", "NOT_REACHED", "INDETERMINATE", "NOT_APPLICABLE"],
+    "preaudit": ["COMMITTED", "ATTEMPTED_FAILED", "NOT_REACHED", "NOT_APPLICABLE"],
+    "spawn": ["SUCCEEDED", "ATTEMPTED_FAILED_CONFIRMED_NO_CHILD", "ATTEMPTED_INDETERMINATE", "NOT_REACHED"],
+    "child_creation": ["CREATED", "NOT_CREATED", "INDETERMINATE"],
+    "child_observation": ["COMPLETED", "NOT_AVAILABLE", "INDETERMINATE"],
+    "capture": ["COMPLETE", "FAILED", "NOT_REACHED", "INDETERMINATE"],
+    "child_outcome": ["EXIT_0", "EXIT_NONZERO", "SIGNAL", "TIMEOUT", "NOT_AVAILABLE", "INDETERMINATE"],
+    "terminal_audit": ["COMMITTED", "ATTEMPTED_FAILED", "NOT_EMITTED", "INDETERMINATE", "NOT_APPLICABLE"],
+    "effect": ["NONE", "CONFIRMED", "INDETERMINATE"]
+  },
+  "partial_order_dependencies": [
+    {"node": "ADAPTER_SPAWN_ATTEMPT", "requires": ["authorization=ALLOW", "exec_validation=PASS", "cwd_validation=PASS", "preaudit=COMMITTED"]},
+    {"node": "CHILD_CREATED", "requires": ["spawn=SUCCEEDED"]},
+    {"node": "CHILD_COMPLETED", "requires": ["child_creation=CREATED"]},
+    {"node": "TERMINAL_AUDIT", "requires": ["an adapter terminal outcome exists"], "does_not_require": ["spawn success", "child creation", "child completion"]},
+    {"node": "DIRECT_OBSERVATION", "requires": ["route=DIRECT_CONTROL", "direct spawn selected"], "does_not_require": ["adapter authorization", "adapter validation", "adapter audit"]}
+  ],
+  "registered_paths": {
+    "ADAPTER_DENY": {"route": "ADAPTER", "terminal_audit": "NOT_EMITTED", "child_creation": "NOT_CREATED"},
+    "ADAPTER_AUTHORIZATION_FAILURE": {"route": "ADAPTER", "terminal_audit": "NOT_EMITTED", "child_creation": "NOT_CREATED"},
+    "ADAPTER_EXEC_VALIDATION_REJECT": {"route": "ADAPTER", "terminal_audit": "NOT_EMITTED", "child_creation": "NOT_CREATED"},
+    "ADAPTER_CWD_VALIDATION_REJECT": {"route": "ADAPTER", "terminal_audit": "NOT_EMITTED", "child_creation": "NOT_CREATED"},
+    "ADAPTER_PREAUDIT_FAILURE": {"route": "ADAPTER", "preaudit": "ATTEMPTED_FAILED", "spawn": "NOT_REACHED", "child_creation": "NOT_CREATED"},
+    "ADAPTER_SPAWN_FAILURE_CONFIRMED_NO_CHILD": {"route": "ADAPTER", "spawn": "ATTEMPTED_FAILED_CONFIRMED_NO_CHILD", "child_creation": "NOT_CREATED", "terminal_audit": "COMMITTED"},
+    "ADAPTER_SPAWN_INDETERMINATE": {"route": "ADAPTER", "spawn": "ATTEMPTED_INDETERMINATE", "child_creation": "INDETERMINATE", "terminal_audit": "COMMITTED"},
+    "ADAPTER_CHILD_EXIT_0": {"route": "ADAPTER", "spawn": "SUCCEEDED", "child_creation": "CREATED", "child_observation": "COMPLETED", "child_outcome": "EXIT_0", "terminal_audit": "COMMITTED"},
+    "ADAPTER_CHILD_EXIT_NONZERO": {"route": "ADAPTER", "spawn": "SUCCEEDED", "child_creation": "CREATED", "child_observation": "COMPLETED", "child_outcome": "EXIT_NONZERO", "terminal_audit": "COMMITTED"},
+    "ADAPTER_CHILD_SIGNAL": {"route": "ADAPTER", "spawn": "SUCCEEDED", "child_creation": "CREATED", "child_observation": "COMPLETED", "child_outcome": "SIGNAL", "terminal_audit": "COMMITTED"},
+    "ADAPTER_CHILD_TIMEOUT": {"route": "ADAPTER", "spawn": "SUCCEEDED", "child_creation": "CREATED", "child_observation": "COMPLETED", "child_outcome": "TIMEOUT", "terminal_audit": "COMMITTED"},
+    "ADAPTER_CAPTURE_FAILURE": {"route": "ADAPTER", "spawn": "SUCCEEDED", "child_creation": "CREATED", "capture": "FAILED", "terminal_audit": "COMMITTED"},
+    "ADAPTER_TERMINAL_AUDIT_FAILURE": {"route": "ADAPTER", "spawn": "SUCCEEDED", "child_creation": "CREATED", "child_observation": "COMPLETED", "terminal_audit": "ATTEMPTED_FAILED"},
+    "DIRECT_CONTROL_SUCCESS": {"route": "DIRECT_CONTROL", "spawn": "SUCCEEDED", "child_creation": "CREATED", "child_observation": "COMPLETED", "terminal_audit": "NOT_APPLICABLE"}
+  },
+  "explicit_regression_state": {
+    "path": "ADAPTER_SPAWN_FAILURE_CONFIRMED_NO_CHILD",
+    "authorization": "ALLOW",
+    "exec_validation": "PASS",
+    "cwd_validation": "PASS",
+    "preaudit": "COMMITTED",
+    "spawn": "ATTEMPTED_FAILED_CONFIRMED_NO_CHILD",
+    "child_creation": "NOT_CREATED",
+    "child_observation": "NOT_AVAILABLE",
+    "terminal_audit": "COMMITTED",
+    "valid_v2": true
+  },
+  "uncertainty_rule": "UNKNOWN_OR_INDETERMINATE_MUST_NEVER_BE_COERCED_TO_FALSE_SUCCESS_OR_CONFIRMED_NO_EFFECT"
+}

@@ -1,0 +1,27 @@
+{
+  "registry_id": "EXP-016-V2-DEVELOPMENT-PROOFS@1",
+  "evidence_use": "GOVERNANCE_AND_INFRASTRUCTURE_VALIDATION_ONLY",
+  "contaminated": true,
+  "reusable_as_held_out_case": false,
+  "proofs": [
+    {"id": "DEV016-V2-LIFE-SUCCESS", "target": "adapter exit-zero lifecycle shape"},
+    {"id": "DEV016-V2-LIFE-EXEC-REJECT", "target": "executable validation rejection shape"},
+    {"id": "DEV016-V2-LIFE-CWD-REJECT", "target": "cwd validation rejection shape"},
+    {"id": "DEV016-V2-LIFE-PREAUDIT", "target": "preaudit attempted-failed shape"},
+    {"id": "DEV016-V2-LIFE-SPAWN", "target": "confirmed-no-child spawn failure with committed terminal audit"},
+    {"id": "DEV016-V2-LIFE-NONZERO", "target": "nonzero child lifecycle shape"},
+    {"id": "DEV016-V2-LIFE-SIGNAL", "target": "signaled child lifecycle shape"},
+    {"id": "DEV016-V2-LIFE-TIMEOUT", "target": "timed-out child lifecycle shape"},
+    {"id": "DEV016-V2-LIFE-CAPTURE", "target": "post-child capture failure shape"},
+    {"id": "DEV016-V2-LIFE-TERMINAL-AUDIT", "target": "terminal audit attempted-failed shape"},
+    {"id": "DEV016-V2-LIFE-DENY", "target": "authorization denial shape"},
+    {"id": "DEV016-V2-ROUTE-DIRECT", "target": "DIRECT_CONTROL success without fabricated adapter stages"},
+    {"id": "DEV016-V2-REGRESSION-SPAWN", "target": "v1 prefix rejection and v2 acceptance of truthful spawn failure"},
+    {"id": "DEV016-V2-REGRESSION-POPULATION", "target": "PLANNED zero-present-state and disposable positive membership join"},
+    {"id": "DEV016-V2-ZERO-DENOM", "target": "zero denominator is NOT_EXERCISED and negative is invalid"}
+  ],
+  "development_operands": "synthetic lifecycle dictionaries and disposable identifiers DEV-SYNTH-*; no native child or ProcessAdapter execution",
+  "held_out_scenarios_authored": 0,
+  "future_predictions_exposed": false,
+  "adapter_exposure_to_future_held_out_data": false
+}

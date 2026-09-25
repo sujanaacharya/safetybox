@@ -1,0 +1,31 @@
+{
+  "model_id": "EXP-016-CORPUS-POPULATION-MODEL@2",
+  "family_definitions_path": "experiments/EXP-016/v2/contracts/family_definitions.json",
+  "states": {
+    "PLANNED": {
+      "materialized_instance_ids": [],
+      "frozen_corpus_count": null,
+      "meaning": "constraints or an exact design target exist, but no corpus instances exist"
+    },
+    "MATERIALIZED": {
+      "frozen_corpus_count": null,
+      "meaning": "instances exist for pre-freeze audit, but membership and counts are not frozen"
+    },
+    "FROZEN": {
+      "meaning": "positive exact count equals immutable instance membership and checksum manifest"
+    }
+  },
+  "current_state": "PLANNED",
+  "planned_count_constraint": 120,
+  "materialized_instance_count": 0,
+  "frozen_corpus_count": null,
+  "zero_semantics": "zero materialized instances is a present-state observation, not an empty frozen corpus",
+  "membership_schema": {
+    "required": ["scenario_id", "primary_family", "secondary_tags", "route", "repeat_group_id"],
+    "primary_family_cardinality": 1,
+    "secondary_tags_nonexclusive": true,
+    "definition_mutation_when_populating": false
+  },
+  "freeze_transition": "PLANNED -> MATERIALIZED -> FROZEN",
+  "mechanical_implementation": "safetybox.experiments.exp016_lifecycle_v2.validate_population"
+}

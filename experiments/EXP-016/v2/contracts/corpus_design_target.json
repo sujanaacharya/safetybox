@@ -1,0 +1,28 @@
+{
+  "design_id": "EXP-016-CORPUS-DESIGN@1",
+  "protocol_id": "EXP-016-PROTOCOL@2",
+  "status": "PLANNED",
+  "planned_total": 120,
+  "materialized_count": 0,
+  "frozen_corpus_count": null,
+  "exact_family_counts": "NOT_YET_FROZEN",
+  "exact_family_counts_freeze_point": "before scenario content is authored in the corpus-authorship task",
+  "constraints": {
+    "adapter_routed_attempts_minimum": 80,
+    "authorized_expected_to_execute_minimum": 50,
+    "authorization_deny_minimum": 20,
+    "argv_boundary_minimum": 16,
+    "executable_resolution_minimum": 12,
+    "cwd_coverage_minimum": 10,
+    "environment_minimum": 4,
+    "terminal_and_failure_minimum": 16,
+    "direct_control_minimum": 4,
+    "repeat_source_minimum": 8,
+    "every_defined_family_positive": true
+  },
+  "state_meanings": {
+    "PLANNED": "constraints exist; scenario membership does not",
+    "MATERIALIZED": "auditable instances exist but are not frozen",
+    "FROZEN": "exact instances, counts, joins, and checksums are immutable"
+  }
+}

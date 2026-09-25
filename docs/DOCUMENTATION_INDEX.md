@@ -53,6 +53,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-015 Real Subprocess Mediation Protocol](experiments/EXP-015-real-subprocess-mediation.md)
 - [EXP-015 Adapter Development Validation](experiments/EXP-015-ADAPTER-DEVELOPMENT-VALIDATION.md)
 - [EXP-015 Adversarial Post-Run Analysis and Bounded Claim Synthesis](experiments/EXP-015-ANALYSIS.md)
+- [EXP-016 Protocol@2](experiments/EXP-016-PROTOCOL-V2.md)
 
 ## Engineering
 
@@ -67,6 +68,12 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-015 Pre-Run Gate Redisposition](engineering/EXP-015_PRE_RUN_GATE_REDISPOSITION.md)
 - [EXP-015 Raw Result](engineering/EXP-015_RUN_001_RAW_RESULT.md)
 - [EXP-015 Adversarial Validity Audit](engineering/EXP-015_ADVERSARIAL_VALIDITY_ANALYSIS.md)
+- [EXP-016 Corpus-Authorship Contract Disposition](engineering/EXP-016_CORPUS_AUTHORSHIP_CONTRACT_DISPOSITION.md)
+- [EXP-016 Lifecycle State Model v2](engineering/EXP-016_LIFECYCLE_STATE_MODEL_V2.md)
+- [EXP-016 Route Semantics v2](engineering/EXP-016_ROUTE_SEMANTICS_V2.md)
+- [EXP-016 Family Population Model v2](engineering/EXP-016_FAMILY_POPULATION_MODEL_V2.md)
+- [EXP-016 Protocol@1 to Protocol@2 Changelog](engineering/EXP-016_V1_TO_V2_CHANGELOG.md)
+- [EXP-016 v2 Pre-Freeze Audit](engineering/EXP-016_V2_PRE_FREEZE_AUDIT.md)
 
 ## Strategy
 

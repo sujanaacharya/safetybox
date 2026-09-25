@@ -1,0 +1,95 @@
+{
+  "contract_id": "EXP-016-SCORING-CONTRACT@2",
+  "protocol_id": "EXP-016-PROTOCOL@2",
+  "supersedes_for_future_corpus_authorship": "EXP-016-SCORING-CONTRACT@1",
+  "historical_v1_immutable": true,
+  "population_model": "experiments/EXP-016/v2/contracts/population_model.json",
+  "family_definitions": "experiments/EXP-016/v2/contracts/family_definitions.json",
+  "lifecycle_model": "experiments/EXP-016/v2/contracts/lifecycle_model.json",
+  "route_contract": "experiments/EXP-016/v2/contracts/route_contract.json",
+  "raw_record_model": "experiments/EXP-016/v2/contracts/raw_record_model.json",
+  "current_corpus_state": "PLANNED",
+  "frozen_corpus_count": null,
+  "scenario_membership": "NOT_YET_FROZEN",
+  "label_isolation": {
+    "labels_available_during_execution": false,
+    "raw_first": true,
+    "runtime_input_may_contain_expected_outcome": false,
+    "runtime_input_may_contain_requirement_mapping": false,
+    "runtime_input_may_contain_scoring_family": false,
+    "scoring_metadata_separate_from_runtime_scenarios": true
+  },
+  "denominator_classes": [
+    "AUTHORIZED_EXPECTED_TO_EXECUTE",
+    "AUTHORIZED_EXPECTED_VALIDATION_REJECT",
+    "AUTHORIZED_EXPECTED_FAILURE_SEMANTIC",
+    "AUTHORITY_NEGATIVE_CONTROL",
+    "DIRECT_CONTROL"
+  ],
+  "metric_registry": [
+    {"metric_id": "real_child_creation_rate", "routes": ["ADAPTER"], "eligibility": "label denominator_class=AUTHORIZED_EXPECTED_TO_EXECUTE", "pass_condition": "derived child_creation=CREATED", "positive_denominator_required": true},
+    {"metric_id": "benign_completion_rate", "routes": ["ADAPTER"], "eligibility": "label denominator_class=AUTHORIZED_EXPECTED_TO_EXECUTE", "pass_condition": "path=ADAPTER_CHILD_EXIT_0 and all registered observations truthful", "positive_denominator_required": true},
+    {"metric_id": "argv_byte_exact_rate", "routes": ["ADAPTER", "DIRECT_CONTROL"], "eligibility": "label metric_tags contains argv_fidelity", "pass_condition": "requested UTF-8 argv frames equal helper frames byte-exactly", "positive_denominator_required": true},
+    {"metric_id": "no_shell_literal_rate", "routes": ["ADAPTER", "DIRECT_CONTROL"], "eligibility": "label metric_tags contains no_shell_literal", "pass_condition": "literal frames match and registered shell-selected effects are absent", "positive_denominator_required": true},
+    {"metric_id": "minimal_environment_exact_rate", "routes": ["ADAPTER", "DIRECT_CONTROL"], "eligibility": "label metric_tags contains environment_containment", "pass_condition": "helper selected environment and invocation snapshot match frozen minimal environment", "positive_denominator_required": true},
+    {"metric_id": "output_truthfulness_rate", "routes": ["ADAPTER", "DIRECT_CONTROL"], "eligibility": "label metric_tags contains output_truthfulness", "pass_condition": "retained bytes, full counts, hashes, truncation, capture status, and stream separation match", "positive_denominator_required": true},
+    {"metric_id": "validation_truthfulness_rate", "routes": ["ADAPTER"], "eligibility": "label metric_tags contains validation_truthfulness", "pass_condition": "derived validation statuses match independent fixture oracle", "positive_denominator_required": true},
+    {"metric_id": "nonzero_exit_truthfulness_rate", "routes": ["ADAPTER"], "eligibility": "primary_family=NONZERO_EXIT", "pass_condition": "path=ADAPTER_CHILD_EXIT_NONZERO and exit value matches", "positive_denominator_required": true},
+    {"metric_id": "timeout_truthfulness_rate", "routes": ["ADAPTER"], "eligibility": "primary_family in TIMEOUT_TERM,TIMEOUT_KILL", "pass_condition": "path=ADAPTER_CHILD_TIMEOUT and TERM/KILL observations match", "positive_denominator_required": true},
+    {"metric_id": "signal_truthfulness_rate", "routes": ["ADAPTER"], "eligibility": "primary_family=SIGNAL_SELF", "pass_condition": "path=ADAPTER_CHILD_SIGNAL and signal matches", "positive_denominator_required": true},
+    {"metric_id": "failure_seam_truthfulness_rate", "routes": ["ADAPTER"], "eligibility": "label metric_tags contains failure_seam_semantics", "pass_condition": "seam reached after required prerequisites and derived lifecycle matches registered path", "positive_denominator_required": true},
+    {"metric_id": "adapter_audit_ordering_rate", "routes": ["ADAPTER"], "eligibility": "derived spawn=SUCCEEDED and child_creation=CREATED", "pass_condition": "applicable event dependencies and sequence ordering hold", "positive_denominator_required": true},
+    {"metric_id": "adapter_audit_field_completeness_rate", "routes": ["ADAPTER"], "eligibility": "all ADAPTER attempts", "pass_condition": "all path-applicable raw and envelope fields are present; NOT_APPLICABLE is not success", "positive_denominator_required": true},
+    {"metric_id": "adapter_audit_semantic_truthfulness_rate", "routes": ["ADAPTER"], "eligibility": "derived child_creation=CREATED", "pass_condition": "audit fields match independent child, primitive, stream, marker, and timing observations", "positive_denominator_required": true},
+    {"metric_id": "denied_no_spawn_rate", "routes": ["ADAPTER"], "eligibility": "primary_family=AUTHORIZATION_DENY", "pass_condition": "path=ADAPTER_DENY and primitive invocation count=0", "positive_denominator_required": true},
+    {"metric_id": "repeat_determinism_rate", "routes": ["ADAPTER", "DIRECT_CONTROL"], "eligibility": "non-null preregistered repeat_group_id with at least two members", "pass_condition": "semantic projections match after only frozen normalization", "positive_denominator_required": true},
+    {"metric_id": "direct_control_boundary_rate", "routes": ["DIRECT_CONTROL"], "eligibility": "primary_family=DIRECT_CONTROL", "pass_condition": "path=DIRECT_CONTROL_SUCCESS and adapter_used=false", "positive_denominator_required": true}
+  ],
+  "zero_denominator_rule": {
+    "principle": "NO_POSITIVE_APPLICABLE_DENOMINATOR_NO_EMPIRICAL_PASS",
+    "denominator_equal_zero": "NOT_EXERCISED",
+    "denominator_negative": "INVALID_INPUT",
+    "not_applicable_member": "EXCLUDED_NOT_PASS",
+    "applies_to_every_metric": true
+  },
+  "family_join": "future labels join each scenario_id to exactly one primary family defined by Family Registry@2; definitions never contain instances",
+  "requirement_join": "derived through immutable primary family definitions plus any separately typed corpus secondary tags",
+  "threat_join": "derived through immutable primary family definitions and preserves explicit non-evaluated boundaries",
+  "route_join": "runtime route observation, label route, family required route, and dispatcher observation must all agree",
+  "overall_success": {
+    "current_status": "NOT_EXERCISED",
+    "requires_frozen_positive_corpus": true,
+    "requirements": [
+      "every registered metric has a positive applicable denominator and PASS",
+      "at least one applicable real ADAPTER child exists for adapter spawn ordering",
+      "the frozen substantial benign-child minimum is met",
+      "every expected-success ADAPTER case derives ADAPTER_CHILD_EXIT_0",
+      "every denied ADAPTER case invokes no protected primitive",
+      "every DIRECT_CONTROL case proves adapter_used=false",
+      "every registered failure seam reaches its prerequisites and registered path",
+      "every repeat projection agrees under only the frozen normalization"
+    ],
+    "authorization_only_can_satisfy": false,
+    "empty_corpus_can_satisfy": false
+  },
+  "overall_failure": [
+    "expected-success child not created or not completed",
+    "denied adapter request invokes spawn primitive",
+    "DIRECT_CONTROL dispatches through ProcessAdapter",
+    "expected confirmed spawn failure creates a child or is recorded as NOT_REACHED",
+    "expected cwd rejection is blocked by executable validation",
+    "failure seam prerequisites are not reached",
+    "terminal audit status contradicts sink evidence",
+    "INDETERMINATE is coerced to false, success, or confirmed no effect",
+    "route-specific NOT_APPLICABLE is scored as PASS",
+    "any headline metric has zero denominator",
+    "any runtime input exposes scoring labels or predictions"
+  ],
+  "repeat_normalization": {
+    "projection_id": "EXP-016-REPEAT-PROJECTION@1",
+    "unchanged_from_v1": true,
+    "normalized_ephemeral_fields": ["child_token", "duration_ns", "event_id", "parent_event_id", "pid", "timestamp", "workspace_root"],
+    "semantic_fields_never_normalized": ["argv_frames", "canonical_executable_relative_identity", "canonical_logical_cwd", "decision", "environment_frames", "exit_code", "marker_content", "route", "signal", "stderr_byte_count", "stderr_sha256", "stderr_truncated", "stdout_byte_count", "stdout_sha256", "stdout_truncated", "terminal_class", "timed_out"],
+    "undeclared_difference_result": "FAIL"
+  }
+}
