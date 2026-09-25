@@ -1,0 +1,21 @@
+{
+  "authorization_spec_id": "AUTH-COVERAGE-002-AUTHORIZATION-SPEC@1",
+  "corpus_target": 4000,
+  "decision": "PREREGISTERED_NOT_RUN",
+  "execution_protocol_id": "AUTH-COVERAGE-002-EXECUTION-PROTOCOL@1",
+  "held_out_policy": "NO_PRODUCTION_EXECUTION_BEFORE_INDEPENDENT_FINAL_GATE",
+  "non_claims": [
+    "EXTERNAL_VALIDATION",
+    "ZERO_POPULATION_RISK",
+    "REAL_EFFECT_PREVENTION",
+    "MEDIATION_COMPLETENESS",
+    "AUTHENTICATED_IDENTITY",
+    "NETWORK_OR_MCP_OR_DELEGATION_EVIDENCE",
+    "PRODUCTION_READINESS",
+    "ROGUE_AGENT_CONTAINMENT",
+    "AI_SAFETY_PROOF"
+  ],
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@1",
+  "split_ratios": {"DEV": 0.2, "HELD_OUT": 0.6, "VALIDATION": 0.2},
+  "substrate_sha": "8e3ba29bbadcdc9c4de4c0d306e8eaaf013dab78"
+}
