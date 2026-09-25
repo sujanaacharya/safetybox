@@ -1,0 +1,16 @@
+{
+  "authoring_identifiers_in_runtime": false,
+  "corpus_id": "AUTH-COVERAGE-002-CORPUS@1",
+  "entropy_source": "Python secrets / OS CSPRNG",
+  "id_allocator_inputs": [
+    "count"
+  ],
+  "oracle_agreement": "4000/4000",
+  "pair_root_count": 2000,
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@1",
+  "random_state_recorded": false,
+  "receipt_id": "AUTH-COVERAGE-002-CONSTRUCTION@1",
+  "runtime_id_entropy_bits": 256,
+  "scenario_count": 4000,
+  "spec_id": "AUTH-COVERAGE-002-AUTHORIZATION-SPEC@1"
+}

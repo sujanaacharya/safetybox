@@ -1,0 +1,20 @@
+{
+  "audit_id": "AUTH-COVERAGE-002-FRESH-PROCESS-ISOLATION@1",
+  "blocked_imports": [
+    "oracle_a",
+    "oracle_b",
+    "build_corpus"
+  ],
+  "blocked_reads": [
+    "corpus/analysis/labels.json",
+    "corpus/analysis/pairs.json",
+    "corpus/analysis/difficulty.json",
+    "corpus/analysis/analysis.json",
+    "oracle_a.py",
+    "oracle_b.py",
+    "build_corpus.py"
+  ],
+  "file_count": 4,
+  "production_calls": 0,
+  "result": "PASS"
+}

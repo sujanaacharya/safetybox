@@ -1,0 +1,31 @@
+{
+  "claim_contract_id": "AUTH-COVERAGE-002-CLAIMS@1",
+  "candidate_result": "On a blinded, synthetic, same-team-authored, structurally hard, counterfactual, task-scoped, deterministic held-out authorization corpus of {N} scenarios, frozen SafetyBox production authorization had {false_allows} false allows and {false_denies} false denies under the preregistered logical specification.",
+  "blinded_definition": "label-separated execution; not blinded authorship and not external validation",
+  "perfect_result_strongest_claim": "Within the frozen synthetic corpus and written task/action/resource/capability/compound semantics, the frozen deterministic production authorizer conformed on every one-shot held-out case observed.",
+  "still_unproven_after_perfect_result": [
+    "external validity or independent authorship",
+    "zero population risk",
+    "real effect prevention or correctness",
+    "mediation completeness",
+    "authenticated identity",
+    "network or MCP authorization",
+    "delegation and attenuation safety",
+    "production readiness",
+    "rogue-agent containment",
+    "AI safety"
+  ],
+  "non_claims": [
+    "NOT_EXTERNAL_VALIDATION",
+    "NOT_ZERO_POPULATION_RISK",
+    "NOT_REAL_EFFECT_PREVENTION",
+    "NOT_MEDIATION_COMPLETENESS",
+    "NOT_AUTHENTICATED_IDENTITY",
+    "NOT_NETWORK_EVIDENCE",
+    "NOT_MCP_EVIDENCE",
+    "NOT_DELEGATION_EVIDENCE",
+    "NOT_PRODUCTION_READINESS",
+    "NOT_ROGUE_AGENT_CONTAINMENT",
+    "NOT_AI_SAFETY_PROOF"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "policy_id": "AUTH-COVERAGE-002-FINAL-CANDIDATE-MATERIALIZATION@1",
+  "source_checksum_file": "FINAL_CANDIDATE_SOURCE_SHA256SUMS",
+  "prior_candidates": "INVALIDATED_DEV_GENERATOR_FIXTURES",
+  "materialization": "ONE_SHOT_AFTER_SOURCE_FREEZE",
+  "post_materialization_generator_tuning": "PROHIBITED",
+  "failure_policy": "BLOCK_FREEZE_INSTEAD_OF_REDESIGNING_FROM_FINAL_CANDIDATE",
+  "held_out_production_calls": 0
+}

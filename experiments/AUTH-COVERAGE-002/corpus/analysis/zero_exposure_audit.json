@@ -1,0 +1,13 @@
+{
+  "audit_id": "AUTH-COVERAGE-002-ZERO-EXPOSURE@1",
+  "completed": 0,
+  "exposed": 0,
+  "failed_after_call": 0,
+  "ledger_exists": false,
+  "ledger_path": "experiments/AUTH-COVERAGE-002/governance/exposure_ledger.jsonl",
+  "raw_records": 0,
+  "reconciliation": "PASS",
+  "reserved": 0,
+  "result_package_exists": false,
+  "started": 0
+}

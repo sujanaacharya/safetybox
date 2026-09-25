@@ -1,0 +1,23 @@
+{
+  "contract_id": "AUTH-COVERAGE-002-MUTATION-METAMORPHIC@1",
+  "mutations": {
+    "M_ACTION": "change only requested action authority dimension",
+    "M_ADD_IRRELEVANT_CAP": "append a capability covering no requested component",
+    "M_REMOVE_RELEVANT_CAP": "remove the sole capability covering a target component",
+    "M_REORDER_CAPS": "permute the complete capability sequence",
+    "M_RESOURCE": "change only requested resource authority dimension",
+    "M_SUSPICIOUS_DATA": "change only non-authoritative arguments/context",
+    "M_TASK": "change only request task binding across all compound components",
+    "M_TOOL_ANALOGUE": "instantiate one declared abstract property independently in both tools"
+  },
+  "properties": [
+    "ADDING_IRRELEVANT_CAPABILITY_PRESERVES_DECISION",
+    "REORDERING_CAPABILITIES_PRESERVES_DECISION",
+    "OPAQUE_ID_CHANGE_PRESERVES_DECISION",
+    "SUSPICIOUS_ARGV_CHANGE_PRESERVES_PROCESS_AUTHORIZATION",
+    "UNRELATED_METADATA_CHANGE_PRESERVES_DECISION",
+    "TASK_MISMATCH_FLIPS_TASK_BOUND_ALLOW_TO_DENY",
+    "REMOVING_SOLE_RELEVANT_CAPABILITY_FLIPS_ALLOW_TO_DENY"
+  ],
+  "auxiliary_change_policy": "pair auditor derives differences; undeclared authority-bearing change is WEAK/BLOCKING"
+}

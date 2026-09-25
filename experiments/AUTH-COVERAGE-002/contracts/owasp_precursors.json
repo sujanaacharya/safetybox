@@ -1,0 +1,13 @@
+{
+  "annotation_id": "AUTH-COVERAGE-002-OWASP-PRECURSORS@1",
+  "required_wording": "RELEVANT_CONTROL_EVIDENCE",
+  "forbidden_wording": "CATEGORY_SOLVED",
+  "mappings": {
+    "ASI01": "changed goal/context cannot create authority",
+    "ASI02": "tool/resource/action misuse boundary evidence",
+    "ASI03": "task binding only; identity remains unresolved",
+    "ASI05": "process authority only; real execution belongs to EXP-016",
+    "ASI06": "context cannot grant authority",
+    "ASI10": "deliberate authority-boundary probing"
+  }
+}

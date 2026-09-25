@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AUTH-COVERAGE-002-EXTERNAL-PACK-SCHEMA@1",
+  "title": "Independent AUTH-COVERAGE-002 scenario pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pack_id", "spec_id", "runtime", "analysis", "labels", "oracle_attestations"],
+  "properties": {
+    "pack_id": {"type": "string", "minLength": 1},
+    "spec_id": {"const": "AUTH-COVERAGE-002-AUTHORIZATION-SPEC@1"},
+    "runtime": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/runtime"}},
+    "analysis": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/analysis"}},
+    "labels": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/label"}},
+    "oracle_attestations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["oracle_a", "oracle_b", "agreement"],
+      "properties": {
+        "oracle_a": {"const": "AUTH-COVERAGE-002-ORACLE-A@1"},
+        "oracle_b": {"const": "AUTH-COVERAGE-002-ORACLE-B@1"},
+        "agreement": {"const": 1.0}
+      }
+    }
+  },
+  "$defs": {
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scenario_id", "tool_class", "contract_task_id", "contract_description", "capabilities", "request", "additional_components"],
+      "properties": {
+        "scenario_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "tool_class": {"enum": ["FILESYSTEM", "PROCESS"]},
+        "contract_task_id": {"type": "string", "minLength": 1},
+        "contract_description": {"type": "string"},
+        "capabilities": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["action", "resource"], "properties": {"action": {"type": "string", "minLength": 1}, "resource": {"type": "string", "minLength": 1}}}},
+        "request": {"type": "object"},
+        "additional_components": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "required": ["scenario_id", "split", "pressure_dimension", "difficulty", "generation_template"],
+      "properties": {"scenario_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "split": {"enum": ["DEV", "VALIDATION", "HELD_OUT"]}, "pressure_dimension": {"type": "string"}, "difficulty": {"enum": ["EASY", "MODERATE", "HARD", "ADVERSARIAL"]}, "generation_template": {"type": "string", "minLength": 1}}
+    },
+    "label": {
+      "type": "object",
+      "required": ["scenario_id", "expected_decision", "tool_class", "difficulty", "challenge_class", "pressure_dimension", "tags", "pair_quality"],
+      "properties": {"scenario_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "expected_decision": {"enum": ["ALLOW", "DENY"]}, "tool_class": {"enum": ["FILESYSTEM", "PROCESS"]}, "difficulty": {"enum": ["EASY", "MODERATE", "HARD", "ADVERSARIAL"]}, "challenge_class": {"enum": ["HARD_BENIGN", "HARD_UNAUTHORIZED", "EDGE_BENIGN", "EDGE_UNAUTHORIZED"]}, "pressure_dimension": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}, "pair_quality": {"enum": ["STRICT_STRONG", "MODERATE"]}}
+    }
+  }
+}

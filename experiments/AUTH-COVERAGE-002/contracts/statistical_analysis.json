@@ -1,0 +1,18 @@
+{
+  "analysis_plan_id": "AUTH-COVERAGE-002-STATISTICS@1",
+  "primary_unit": "scenario with dependence-aware pair and template reporting",
+  "metrics": [
+    "accuracy",
+    "false_allow_rate",
+    "false_deny_rate",
+    "pair_accuracy",
+    "compound_quadrant_accuracy",
+    "structured_explanation_completeness"
+  ],
+  "intervals": [
+    "exact binomial intervals for fixed-corpus descriptive proportions",
+    "pair/group/template-cluster bootstrap sensitivity intervals"
+  ],
+  "multiplicity": "all preregistered strata reported; no selective primary-family promotion",
+  "zero_error_reporting": "report numerator, denominator, and exact upper confidence bound; never call population risk zero"
+}

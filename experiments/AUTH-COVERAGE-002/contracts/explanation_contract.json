@@ -1,0 +1,38 @@
+{
+  "contract_id": "AUTH-COVERAGE-002-EXPLANATION-CONTRACT@1",
+  "status": "FROZEN_BEFORE_RUN",
+  "scoring_mode": "STRUCTURED_FIELDS_AND_RULE_MAPPING_NOT_PROSE",
+  "required_component_fields": [
+    "decision",
+    "rule",
+    "reason_code",
+    "task",
+    "action",
+    "resource",
+    "matched_capability",
+    "authority_source"
+  ],
+  "component_name_mapping": {
+    "FILESYSTEM:primary": "primary",
+    "PROCESS:primary": "exec",
+    "PROCESS:cwd": "cwd"
+  },
+  "tool_final_rule_semantics": {
+    "FILESYSTEM": "the final production rule maps to the sole primary component rule",
+    "PROCESS": "the final production rule maps to the normative compound ALL/ANY rule"
+  },
+  "scorer": "experiments/AUTH-COVERAGE-002/explanation_scoring.py:score_raw_explanation",
+  "raw_source": "RawAuthorizationRecord.authorization_output including every component_decision",
+  "production_to_normative_rule_mapping": {
+    "POL-M2-CAPABILITY-ALLOW": "AUTH.EXPLICIT_CAPABILITY",
+    "POL-M2-CAPABILITY-MISSING": "AUTH.NO_ACTION_CAPABILITY",
+    "POL-M2-RESOURCE-OUT-OF-SCOPE": "AUTH.RESOURCE_OUT_OF_SCOPE",
+    "POL-M2-TASK-MISMATCH": "AUTH.TASK_MISMATCH",
+    "POL-COMPOUND-ALL-ALLOW": "AUTH.ALL_COMPONENTS_ALLOWED",
+    "POL-COMPOUND-DENY": "AUTH.ANY_COMPONENT_DENIED"
+  },
+  "allow_requirement": "matched capability equals the normative selected action/resource authority",
+  "deny_requirement": "matched capability is null",
+  "authority_source": "TaskContract",
+  "prose_semantics_scored": false
+}

@@ -1,0 +1,228 @@
+{
+  "audit_id": "AUTH-COVERAGE-002-CORPUS-AUDIT@1",
+  "authority_feature_classifier_peak": 0.59125,
+  "baseline_attacks": {
+    "action_only": {
+      "accuracy": 0.49625,
+      "false_allow_rate": 1.0,
+      "false_deny_rate": 0.0
+    },
+    "always_allow": {
+      "accuracy": 0.49625,
+      "false_allow_rate": 1.0,
+      "false_deny_rate": 0.0
+    },
+    "always_deny": {
+      "accuracy": 0.50375,
+      "false_allow_rate": 0.0,
+      "false_deny_rate": 1.0
+    },
+    "capability_count": {
+      "accuracy": 0.49875,
+      "false_allow_rate": 0.8163771712158809,
+      "false_deny_rate": 0.181360201511335
+    },
+    "difficulty": {
+      "accuracy": 0.49625,
+      "false_allow_rate": 0.9404466501240695,
+      "false_deny_rate": 0.060453400503778336
+    },
+    "digest_prefix": {
+      "accuracy": 0.5025,
+      "false_allow_rate": 0.40198511166253104,
+      "false_deny_rate": 0.5944584382871536
+    },
+    "first_capability": {
+      "accuracy": 0.50375,
+      "false_allow_rate": 0.0,
+      "false_deny_rate": 1.0
+    },
+    "id_prefix": {
+      "accuracy": 0.49625,
+      "false_allow_rate": 0.6153846153846154,
+      "false_deny_rate": 0.3904282115869018
+    },
+    "keyword": {
+      "accuracy": 0.49375,
+      "false_allow_rate": 0.4094292803970223,
+      "false_deny_rate": 0.6045340050377834
+    },
+    "logistic_regression_nonauthority": {
+      "accuracy": 0.51875,
+      "false_allow_rate": 0.6054590570719603,
+      "false_deny_rate": 0.35516372795969775
+    },
+    "logistic_regression_superficial_all": {
+      "accuracy": 0.59125,
+      "false_allow_rate": 0.7692307692307693,
+      "false_deny_rate": 0.042821158690176324
+    },
+    "position": {
+      "accuracy": 0.49625,
+      "false_allow_rate": 0.45905707196029777,
+      "false_deny_rate": 0.5491183879093199
+    },
+    "resource_depth": {
+      "accuracy": 0.525,
+      "false_allow_rate": 0.9429280397022333,
+      "false_deny_rate": 0.0
+    },
+    "resource_length": {
+      "accuracy": 0.5275,
+      "false_allow_rate": 0.9379652605459057,
+      "false_deny_rate": 0.0
+    },
+    "resource_only": {
+      "accuracy": 0.49875,
+      "false_allow_rate": 0.9950372208436724,
+      "false_deny_rate": 0.0
+    },
+    "resource_similarity": {
+      "accuracy": 0.51125,
+      "false_allow_rate": 0.5012406947890818,
+      "false_deny_rate": 0.4760705289672544
+    },
+    "serialization_size": {
+      "accuracy": 0.52125,
+      "false_allow_rate": 0.4665012406947891,
+      "false_deny_rate": 0.491183879093199
+    },
+    "simple_linear_model": {
+      "accuracy": 0.5875,
+      "false_allow_rate": 0.7667493796526055,
+      "false_deny_rate": 0.05289672544080604
+    },
+    "small_decision_tree": {
+      "accuracy": 0.5275,
+      "false_allow_rate": 0.9379652605459057,
+      "false_deny_rate": 0.0,
+      "selected_feature": "resource_length"
+    },
+    "string_length": {
+      "accuracy": 0.52125,
+      "false_allow_rate": 0.4665012406947891,
+      "false_deny_rate": 0.491183879093199
+    },
+    "task_only": {
+      "accuracy": 0.5725,
+      "false_allow_rate": 0.8486352357320099,
+      "false_deny_rate": 0.0
+    },
+    "tool": {
+      "accuracy": 0.51125,
+      "false_allow_rate": 0.5012406947890818,
+      "false_deny_rate": 0.4760705289672544
+    }
+  },
+  "baseline_pair_accuracy": {
+    "action_only": 0.035,
+    "always_allow": 0.035,
+    "always_deny": 0.0425,
+    "capability_count": 0.04,
+    "difficulty": 0.035,
+    "digest_prefix": 0.2375,
+    "first_capability": 0.0425,
+    "id_prefix": 0.2275,
+    "keyword": 0.0275,
+    "logistic_regression_superficial_all": 0.2325,
+    "position": 0.23,
+    "resource_depth": 0.0925,
+    "resource_length": 0.0975,
+    "resource_only": 0.04,
+    "resource_similarity": 0.05,
+    "serialization_size": 0.0775,
+    "simple_linear_model": 0.23,
+    "string_length": 0.0775,
+    "task_only": 0.1875,
+    "tool": 0.05
+  },
+  "compound_quadrants": {
+    "AA": 1000,
+    "AD": 335,
+    "DA": 339,
+    "DD": 326
+  },
+  "cross_split_duplicates": 0,
+  "cross_split_near_templates": 0,
+  "cross_tool_quality_counts": {
+    "STRICTLY_COMPARABLE": 250
+  },
+  "decision": "PASS",
+  "decision_counts": {
+    "ALLOW": 2000,
+    "DENY": 2000
+  },
+  "difficulty_audit": {
+    "algorithm": "pair-root structural score from capability count, resource depth, compound complexity, and subtree pressure",
+    "mismatches": 0
+  },
+  "difficulty_decision_counts": {
+    "HARD:ALLOW": 1874,
+    "HARD:DENY": 1878,
+    "MODERATE:ALLOW": 126,
+    "MODERATE:DENY": 122
+  },
+  "exact_duplicates": 0,
+  "family_counts": {
+    "ACTION_BOUNDARY": 700,
+    "AI_CONTEXT_NON_AUTHORITY": 200,
+    "BENIGN_LOOKING_UNAUTHORIZED": 600,
+    "CAPABILITY_DISTRACTOR": 4000,
+    "CAPABILITY_PRESENCE": 500,
+    "CAPABILITY_SYNTHESIS": 600,
+    "COMPOUND_AUTHORIZATION": 2000,
+    "CROSS_TASK_REUSE": 300,
+    "EDGE_BENIGN": 126,
+    "EDGE_UNAUTHORIZED": 122,
+    "HARD_BENIGN": 1874,
+    "HARD_UNAUTHORIZED": 1878,
+    "RESOURCE_BOUNDARY": 800,
+    "SUSPICIOUS_BENIGN": 600,
+    "TASK_BINDING": 600,
+    "ZERO_RELEVANT": 454
+  },
+  "generator_reconstruction": {
+    "branch_label_rates": {
+      "ACTION_BOUNDARY": 0.5,
+      "AI_CONTEXT_NON_AUTHORITY": 0.5,
+      "CAPABILITY_DISTRACTOR": 0.5,
+      "CAPABILITY_PRESENCE": 0.5,
+      "CAPABILITY_SYNTHESIS": 0.5,
+      "IRRELEVANT_CAPABILITY_INVARIANCE": 0.5,
+      "RESOURCE_BOUNDARY": 0.5,
+      "TASK_BINDING": 0.5
+    },
+    "classifier": "nearest_centroid_runtime_features",
+    "disposition": "PASS_NOT_STRONGLY_LABEL_CORRELATED",
+    "max_label_rate_deviation": 0.0,
+    "validation_accuracy": 0.26125
+  },
+  "held_out_production_calls": 0,
+  "id_leakage": "PASS",
+  "input_digest_prefix_leakage": "PASS",
+  "label_reconstruction_disposition": "PASS",
+  "largest_normalized_cluster": 2,
+  "manifest_order_leakage": "PASS",
+  "normalized_semantic_templates": 3900,
+  "oracle_agreement": {
+    "agreed": 4000,
+    "total": 4000
+  },
+  "pair_quality_counts": {
+    "STRICT_STRONG": 1600,
+    "STRONG_AUXILIARY": 400
+  },
+  "runtime_nonauthority_leakage_peak": 0.5275,
+  "scenario_count": 4000,
+  "serialization_leakage": "PASS",
+  "split_counts": {
+    "DEV": 800,
+    "HELD_OUT": 2400,
+    "VALIDATION": 800
+  },
+  "task_only_composition_baseline": 0.5725,
+  "tool_counts": {
+    "FILESYSTEM": 2000,
+    "PROCESS": 2000
+  }
+}

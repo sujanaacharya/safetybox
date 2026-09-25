@@ -1,0 +1,19 @@
+{
+  "failures": [],
+  "formal_tool_result": "BOUNDED_ENUMERATION_PASS_NO_EXTERNAL_SOLVER",
+  "production_calls": 0,
+  "properties": {
+    "action_binding": 24000,
+    "ai_context_non_authority": 72000,
+    "compound_correctness": 72500,
+    "irrelevant_capability_invariance": 72000,
+    "no_authority_amplification": 72000,
+    "no_capability_synthesis": 24000,
+    "order_invariance": 72000,
+    "resource_binding": 24160,
+    "task_isolation": 36375
+  },
+  "result": "PASS",
+  "state_count": 72660,
+  "verification_id": "AUTH-COVERAGE-002-BOUNDED-EXHAUSTIVE@1"
+}

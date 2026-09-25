@@ -1,0 +1,2752 @@
+[
+  {
+    "group_id": "78c2c104f3daffda20669731d91894ee4440bb9d8a0b87b624f00ae7fa2d99bc",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "70cf982a3a023fafabd536eddfd525c97255b48d185c75feb3ea9409df4bc3d5",
+      "e0bebb098a2b5731233307ee0762526463c821a2052919e3b995a09de4461bad",
+      "5064a134bae50e6958fbc075706af2f4d12ae2d58c2e2420967f4d975caf8b3e",
+      "43fd5d91a92c8a74192627780a1d884522df4c7b250e25558a9db527891410d0"
+    ]
+  },
+  {
+    "group_id": "417124b4b76aabd7c91f22b24649ebd864614d4c0756ab8a9583763fa3fecdf2",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8d56a7b9dba3be2039f79ec64e49024ed1c12b66167eaef1aa4f716f94e828c1",
+      "1b8597f48992367a3894112068c2cb255e25e666cb48c8f41d1aeb493087f6ea",
+      "ab9d1f716370f7caac2326a70a0957c7a8f6716ada8bad676d3bb0a94e7e138f",
+      "644df90809ecb5e92f2ad574e80761068b602896ca422eefde75fdec2c3f1ec8"
+    ]
+  },
+  {
+    "group_id": "ac3e09701044c4ab48b8c6dddc51702fb7b9ccbd4325bff903fc22831323eba9",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "25bf426860c10565af55dfbcfb86d6d917e00f5b4bd4a31ebcbed4d34f629467",
+      "1e9fb639892eb343093d4de52cc3199f174e01763676e786f311575ab0c6326f",
+      "948515d6f9c1bd030c54769eeb5872147d0a1e1b0d2685b08df8c1ab0370f8c1",
+      "f9294fb56037043b22cbe0a9360f06cbf23695b38dc0fdf7b76ed6c5969e78c8"
+    ]
+  },
+  {
+    "group_id": "57cd25f8d5fbe8c1076dc7865fcc52cb93400556c8d590b60cebe4cadcb4e282",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ea6d9512d0b0b53bae4f162052ae2cd7889db9edd7c505d951d5ef17558837a6",
+      "783344fffe7bf174033d13ba96cecb9ccc365de2562b2096254cd3e50a359a3a",
+      "b3416274f679ff73f66b3942afacf64bed96a9d2f3ed6f1b8bd0a61debf3ad7a",
+      "0db7946b85ca3cbf093f0b704049fd90243454d80f91b7081f6150b54c7540e1"
+    ]
+  },
+  {
+    "group_id": "b2463b747a0173789a12911ec95a0a715a3e1e153944fd5a42fe604325599f95",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "dadcc6adf3a561e85c4be52727e5233757b800c6de1fe2f27e479c256cf52fa1",
+      "3de9b6f589e28cdb62c139414ff69f44f24d788b55eb8945bca0f957f5474cbe",
+      "c682ff64d0bf387f5617910f849a5ee478f839b6d513eb4dd26f8bad8ea7a21f",
+      "3ff0680c8800788b542efbff56ff41e4bcd084fe0b5a93ce22aa300e5ca35f4a"
+    ]
+  },
+  {
+    "group_id": "fa14fe50794682bea2c832f1240a45604b387c93de741648d564a9ebc68fb12c",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "36918693afe827ebd4fe248cdd8f75ec258092c96d747277eecc6480ce741322",
+      "e911801a8e0bddbc02398afe2d420a1ad4bb549cd67ae89e194c21e5c40cb21b",
+      "128d8755162c35d5c1112ee63592bead40ed171241157f6a2b8e045950209e8f",
+      "25abd1f86cf6fd725cf5c4b6cfe2dab145cc99681d182b5d357f0bea240018c9"
+    ]
+  },
+  {
+    "group_id": "5dd34b84fcd23cf4c49e79ba7d06ab1a8a1f985c7b44bb107284dbf7f8839796",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "3f4b409a10c49ccb4ddb139a32ea0f3ae8aeeb0afd71031ad1a9d535552ab41a",
+      "22433b184a942687404d9d6941dadde5c03f3596e2dbe0cc22bb26e5b18c09dd",
+      "42d560a2e0db56e4a8911099270428523e7a49227c292e576d9f9cba56e8f4e7",
+      "5805694eef52101c12f45e292084a141cf758daa5d812ca77fd82980e0b65dd1"
+    ]
+  },
+  {
+    "group_id": "6556e085eea131442b0d2bc7469642077afc34f7dc7c9186e37cc49b99946bb1",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f7b65eae839ae556a6a487f810d6d388d43450660f5e33d0bfb642b46dc8b8b6",
+      "f02590d2871ca9ca8f5a4676b48ec2e6947a7b4a0a4ba41227515e5d97e18f2f",
+      "6833c5e5cca1106ddf27f5155c15288bd45472f913ed99ff13a8070d5cd484ae",
+      "eda170a0c59ae1d2b4661b890847c34fbd541adeb8472b5d113fcfb80511c9ba"
+    ]
+  },
+  {
+    "group_id": "b7918b86d5a1198409dcaf9f0506a92ea9974b8d2ae1509ef62c11cc0a8b54b3",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f02ad7997a6dcc178c1a0a03696fe0e04ac24c8777bdb1e9f4a605d0f87486e0",
+      "4f422235f1739d2cea0823af71bc3340ff89434fead64804c6d7e48c099906e3",
+      "a481ade794ecfb1789d31822447eb472141a5002bdfd93ac69327bd1cf3deab2",
+      "9fea469470fb0634927605a726bdeb5e755d6a0e71344033fbb442664ac671dd"
+    ]
+  },
+  {
+    "group_id": "a30503277b003ce3eae7215c6ad59dee9b427d7b9150d2ec1011a5f51afb0c8d",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "212d07bc9cd6cc04c3ef62ddfb466b0d1ffb326ad25621a7042e7821ff05a648",
+      "6da29203dd39aeba2ee56f56feffca6f57cdd53a8f961c63e7436a7d445cf660",
+      "ea9a78146bdd1d8ec0fff3c8c0d7d8f08e4a99e4e437cf95dab3c6e0041f791c",
+      "86855d8d8c085c79beb9ec6aaf23f1652913b5cf526297fe60cf2f221bb4ce57"
+    ]
+  },
+  {
+    "group_id": "4a796805ce71a1c28bf1fee6544118a92a374d71c296d5eb5571a05ee7ffd68c",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1f0dd4937f09908b92490e78fffd6ee35319ffc9393b2996fc94d7a562e3c296",
+      "f07f7e2136fb064e456ec116eb9169b72c6a67f2fd67325edfa92c1ca5169e9a",
+      "a0dc8b3cc5cf72ad5c2d7a20d5fcb5e8c39611abe3ece676b1aed7a834aa67c3",
+      "2c61f63c3f3075996e4ce350871afa9f0908d9558e4cc6e0fc978a1bff0ea49c"
+    ]
+  },
+  {
+    "group_id": "1c3374721f14e409e7471b25e6a6549ad9756e27f5046d521b672ba49b61e4c9",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5722d127c1063806cbe7c75dacf05c764c93fb0e375d39072f54d6d2cfdd80a9",
+      "0058305d5fb49c2e364843f43376c9f2c530272ec641b1c763bf5d398fe861b7",
+      "2586e3a004933a6c21a183707343ea6c919a6e1fb02e1d97de032b4121bc3552",
+      "eafb4e25bcc525e70b1314ecf8523254e784ff91b2687c4d107dd95bfa1653b6"
+    ]
+  },
+  {
+    "group_id": "55abfc88120b8336c899ab798b2b5961b2a3094d8224a30e2aa5a3c887c8c516",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "94cdb8ceb0bf5811238c0bad7c83ff087337e8f6b853dd7c26b077c4e4f7fe55",
+      "321eb533078618a0052d68da84a484aa403f2877c36b361def7c6f2ff9204b8e",
+      "b4ab66cf03224d9d5f3aa57401168e7b8fa7a40a98c972b7885397697c5f49c9",
+      "52360ddaaed24c2661bd05f267ccd4bfc125d191b3b84ad017a47bdeb7171c02"
+    ]
+  },
+  {
+    "group_id": "ab525d59cb6129bb3912b1ae76aa0798b3ea90f58ff05e420581b80eaf553eaa",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2eba235608165a04d5d2ccc15871ce5c5faf06e13b8e8512ff724d31d6a79165",
+      "f59f4768f4a00896b1405ad0ff303de95b0682836f7f972dfb94b8b269363c99",
+      "fce0690e3794735ced70e9500c91d733288c6f63f5623cfcb37339466ec7c5fe",
+      "e318252a48738ef15b393d8da901206689658fe7b445a2f42ac8cedd046c0013"
+    ]
+  },
+  {
+    "group_id": "84d0b901690596937e54ae837643c824c9bbf90e81662833d07a093d86b539fd",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "314772c8f563a9473bd3583ec2cc7f0341df5a6ba0a6857f52ce3eaf387e964a",
+      "09e44a17da85004fc8b556f129527dda8e6c118cb31b4ed9992ab7b16326bd3f",
+      "26d547e1ff6655ffd5c25b94db58c3e5aa975f44a68c9d7a2e3c7f4ab0202822",
+      "e0e286dcd239ab9d2ed17fd04429a422609c244a8c2b4422cfc7900d0faf8944"
+    ]
+  },
+  {
+    "group_id": "6a269b653bbfed6e7412c97e22ddd4bab13c1038f8e5577051557ae0296a3ec6",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c0534dcfb3eeae1fc5aa1ee133ac9fa9ed1f64967d9a19458ff247bfa93ac0f9",
+      "650462077434a702da5376f16d895024cbad64cfb4ea3be4a09d1068e6bfd3df",
+      "5e812ae83aa2192207a283d06f455441d1ae62afa38b9c43a4d1eb3d9ab2bc23",
+      "40e7367a44f8a7c37f76287ec642a7431dfdb61a714de1eae708e16f29c0e663"
+    ]
+  },
+  {
+    "group_id": "21be4665b2e57b545045ad338fdb02f031a24dfa9e61614c215c0cd398a6a52e",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8e2a142280d2762989471d033d3cf22c2212b4a6bd98328ad8d925b48dba6943",
+      "1170f46d7ee53541c1d495c784d4276aef744d458ec00d9053d308be7abe5925",
+      "23feaadd37db26a7eb9263ca86bbbdb0b4526bbc69536c6325a0f68606b60dae",
+      "b533b66c6e93e239b6518521b94c91db8cfbdd7593b3a89a40f0a200b18e0430"
+    ]
+  },
+  {
+    "group_id": "f363b6efd087e1e0e5603e7be941c2b95a50af59d5372419c6431188d4f1632e",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c800f07fce9e7e70560358c5f2d02f44da9511eff7470e5b55486f24833d915e",
+      "5f43a387ee3a68ad34f266fd3e04ee401684fc60f3bb4d4d2798d71f23a39438",
+      "1c087e0dc2eb6644114758a2c1895d4827f4296f0c7d3592d749c7e1a0dd1aa7",
+      "1f85106fda2f8f727f7f0e9e67383e8c2fa455f2e4de8ed5db7694e52030817a"
+    ]
+  },
+  {
+    "group_id": "7bf6e8f925ba636ff649ded249ed73f59e598da73b9cd24aced1230954686e87",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1287382d107ed86fa708f77b5dcd05513eb46821b650bb089005e87b8e53be82",
+      "8b62cea1d767880518e6aba172ad80ea4462697e70874d20ae0b084d73823a57",
+      "f6bf76e79f76e01bd513ca9264db90be88372637e02adb7a3c97fc2dada57f27",
+      "3b26b73de1d15aec959b8d6ed319b4b72c222953b1d2fdeb6541ed93ca316940"
+    ]
+  },
+  {
+    "group_id": "9485cde50c71cea6c7130d8cf2e28ec2b2649153460b7a3b3b42e650ad54c352",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "bd46fb122776eb18a39cb172caa65bf45336c84ae2e9b462af3cf7023426c37d",
+      "552b1090c4d539cfaf2b635abf6d58f71bc8928f2ff50c5aee8e0e499cd0474e",
+      "36ed769193de60455a4dd9592e62a50777de4fafa279f89016815235e18266a2",
+      "f67f4f08ddfa80af66e2ea42d74c29bf10a2c9c8caf58df4fdd2230d275eeb98"
+    ]
+  },
+  {
+    "group_id": "87958f78f65dce983409fbfff41e6bafe7941dc57316ea5849b9568768763b92",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e0d6ce992d02ab1a66dcb04ebb28ac1dcc49fc3c6bab7242e683e76971611b39",
+      "24b81da1ab6890738eaed1ffa0d401d47d76f2de2c1d7dbf313011fbcc585dd7",
+      "91672d9217e8242fe28c1600319dc355ca35d4d629756ac7f1d186b85afd0a75",
+      "077157e5afe06f870fd3381da6a70862a30a88dcae429354f42ec271605d5b19"
+    ]
+  },
+  {
+    "group_id": "da8d0fcbaf6d1e43518b94b6364ce9a2251ecb5f4fa5b48b045e0f3182cb475c",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6435ad1b7dfd26fc363ae32dbf40514b408c703759050b4b338dd14adee816c0",
+      "73bff97e88c8da9859e2ac5474d9d22256a140d9d76fa85593cd83378c62935a",
+      "7609e2d85d29bc218fc280eba66c9cec518e1c5b34af30826bbdb5ecd66ef7ab",
+      "b24301604a298afe90e6f4ca11c22fc10ac7a54a76866923bee29dc143bb2dba"
+    ]
+  },
+  {
+    "group_id": "c9f6b38ca0a9838bec5d31d7a00db2d12aedced6d3e95f528b28ed9c36643d63",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e45fb34791c945d85b31ca449e05906faf11b4d12d01a24adff3c70a8bdfd7cb",
+      "819e333345ce18eecbacba11895f823f3dcf73392df5ee8aad005d58a86ea26b",
+      "4b66fdc6508869fc5fca024eb1dd7fce5ac2622e8986ea399c399ba7a4813e87",
+      "99cc0cf96724f11d10b3ad01f4930af19d9d946d53eb47a6a528d67180355777"
+    ]
+  },
+  {
+    "group_id": "c6975acaa7a0c9d3d6120dcf823e8f27187e81389f7c4f08b4f12c9b94311f7f",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "0d83bc22286c149d78388b477f377e43ae98b30c1ac19c18ad3e207e53e1b99d",
+      "8f772653b6a13450c54c61b3f6c2c8f00d6b6fc3a204913a2334299a043c0d97",
+      "3cb9046d4475a6f4d450b2f852e3d2132db945fc01f68ff313f53fa82481d6c2",
+      "81d85726351b953ff426d3eb21fc7d0a9720d426fda2a88d2eb78a76974288af"
+    ]
+  },
+  {
+    "group_id": "a82fd27ba50d9e7e1b3d4b4513fd93ae2be8a5866766c38176331f773507cc8c",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5e2c8506a36db61f201cd56f88e3247f15b0e2161917593c2e024f1f660674c2",
+      "f8e27af5f2a93e0fef7d4ab68551cded3f7027a6e7a919236c51eb95ac5305ae",
+      "b8142e3c4deee84cf6eaae98135987a1d6272d51ec3a2547208451cd2dfad206",
+      "fee42fd382d0455a8a8e08bb6691a7360898fc72ec1ad349c9f5a1b06cbae6ba"
+    ]
+  },
+  {
+    "group_id": "47239c1f3ee9ef096496ffa1b2c0c60dde29b8f2112774012324851fc55ed31a",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "68db02c146be08f264ae3b84956ff47efd4c157919e8435862b9997132119903",
+      "8d70e63cefb8a83085502fa1e69fd2c4d72d224809263bd0c7124a464e670340",
+      "85ca4b204c67896888e4fa92ae95b36a492f04536ad88953424b5bd03544f76b",
+      "640d0a9bad006967d63736333168f0ff1e20d2c189d8982ac5e007ba1545cc2a"
+    ]
+  },
+  {
+    "group_id": "e155ced615b25d4231ffd88092c62e6fa4d6a15af49934789e0de6f306bf5a00",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "4dbb742aeab6518a757a29ea5fdcd34f9fb0f7852b9de6a8e3237209314c4c1d",
+      "5d008c0fd43c7d3268a3627d5ebe6b66ab613238fc83da94afb36a212ca4a7f9",
+      "1f72deed07bb8837ee68844ca77e982cf0b400c2277ca70729a6049b93ea6166",
+      "d1d48121343ad4aa864ce76d3dd368a9a15f8fdf28bf27a265e347b11c11caae"
+    ]
+  },
+  {
+    "group_id": "734f2b3a9eb35f01898f5d7176c4d652f069560c96c2395b55749321c1583bf4",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2bbff0a6588dd2d670dac5b3a4d20d01f453b5dec14e2b9873064f5f09b2ae3d",
+      "879fb4b05c649c127c96d805a5f031f2f43d27037f9d6585c0feb548a6392b0d",
+      "9dec27e597e4f94a0883e63b314884b7b0f5fda6a9aace5273d7b4b1a07ca3d8",
+      "2fb8d99058265e6ac3b95e190f12062c571d49f1edbe596f37afe03960903a1d"
+    ]
+  },
+  {
+    "group_id": "9e900e98786480492f2b2aabe0980fbd5a7d9567282ce31a716ef098f7494dc3",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "408c6c2502d26b479f1b0e6b7cd62a3492d5db661468a3f12ce1078127d43e5b",
+      "a85e1ec3efc405ca0a870c8574ee2ed8e79b461f7b643c5192c0e4d706826dfd",
+      "586af748a5cd05253e6369d2317ab1fc07e2497f4b6b1462d5996149d6b59578",
+      "f05b7e6356d9ed9381d82b72d5b6db03ef0633647e347da5cbc59b935d86a729"
+    ]
+  },
+  {
+    "group_id": "86da1392eb9021355eedc47c49eea2b9893c9bb54cb758f746dd1385cef3b978",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "0bdddb5a7f673347daa8fdf5e4050cbfce773e7a06ebd95148f3d56f43a56d4f",
+      "bfc190f31fcf3fbef9bc4eec029699797d40a4bf97139e5371c9337548dbfcec",
+      "5405ef55909aa88a7936d6aa0227b59dbee59e1a88334f68a1fbd64340df4247",
+      "d3061a84782de1819f5a79d1d1b981bb09872063a9abd83b832a6dc2ab4b7207"
+    ]
+  },
+  {
+    "group_id": "690ec60bd4bfb0396834e2b80665004d952c861fc1b9b11eb4835f96b8b093eb",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e7afbad026d6ab2ef132098d413a0696d0a8169e9e1980fcdb64b83f5e11fcad",
+      "3fb3be80c8bbccb307d87b4335ed52973a97c303481043a4b71f604b516ad9e6",
+      "1f31a7da6482c43bdf3286f9309881d935a3f2dbc5f34d3c236466912f31df0d",
+      "fcb41bc524423adbf617a6638905ced372985576fde5baa0fd203381bf4ce1c0"
+    ]
+  },
+  {
+    "group_id": "fdf24555bfcdda93d77d809742211446171306e8525f67dafdbf8809e98265c2",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c0fb4ea8c7407df6587b5a539508d95351e60f548cf65b615e25ddafe70ef10c",
+      "ab1ccda878625eac20cc78b0fdb87c77caa0b27547c601564c6e449bd343a32e",
+      "8fb9b1f22b590483dc6de1c6641363c7ff5105c03ddf8472613667b37d96ece2",
+      "c37c7fbf4ae34e89e2563a0d34cc6b53d8a18b085aeead6f5efded1f10a6e41d"
+    ]
+  },
+  {
+    "group_id": "bffca5be6f52205456570297c5343d72b0e42b71058a0cf3e6ee7a9a582fa13d",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a953625cc8293f2cd805fb4fede409c48067abb5162e0b35b85d65072108db17",
+      "5c1348c48d23ca46f15a607ca1b87c0dc704fae614c88e6735871d124264a7e2",
+      "b7bb280e27f92f1377cf117c5d026169f3996a79a7a693822a9d0240b7e9db3d",
+      "84d009c14515014e6db01ed84ca2af6ad3abc4d00d268a1b330a1f5ed94ee1fb"
+    ]
+  },
+  {
+    "group_id": "41f4bbcd0f8087656ca56f6a9c4316ac18d40d9d42f96d2c6342ee1e96aa9513",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "535f3955ed9841b747cfa39044127769c03a5faeeb38747c2d376dd0d5425088",
+      "4a4a71b194bd32368dc2a80f4412918ae85516293799e7b953973cb7940baead",
+      "5ee5d741e1626d2334af43b85b0ec8c1ef5ea96d21142a1335985f350efa9718",
+      "7a99f4784efccea93755876386ece003ebff830331b8aaa978d2f4946dd4726c"
+    ]
+  },
+  {
+    "group_id": "5679dceef9b383f947d95ddc1dc316fe1af1c7c4a4ac8506376ff44bdf8394c4",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d9ced40b83c39f5927af247f08f86b1c13732668b97f700f6a82ecee52e92c21",
+      "fa8291e9655765b3351810dae16ee96b364c0349131b15505ef9069e4d88a90a",
+      "64fa2c2025f5b3b183f96dea560bdb5a17457b296afb03e888b841387bec130a",
+      "4f43c7dcbe05c6359e7d3834e46bcc033247259bc17e3a1ebf96711b34f5427f"
+    ]
+  },
+  {
+    "group_id": "b42052f16467b630300b29b36558277620676cd9a315f42e0f845a623f5ded33",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1423bdf8cc1f6735fc034223e22426fd4ded1ed8917bb212a2ccaa19db7d3537",
+      "fbe89c2b37589c1e8b80e073a562b6a202f26931b9d8c5ff2a33d2e0c0329fc4",
+      "1e5e5037be58f2f1d85ab902ee8da20f93db46aacc73feb5d631cb048fd0ad84",
+      "0587e5b14a44e97dada6ced70c0286a8d299caaecc344684a44a58b00c991901"
+    ]
+  },
+  {
+    "group_id": "b263f42f21a57f681339d5a1af163ebf17a3446e84ce6e8b642297da138e83f2",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2eb746d53c96918a587f300a265aee0c1f37353cd1b1a4881a7a03ac9f3ef21c",
+      "bf491e0fefcf806fb416679fd308303872764b6bf1e6209b064c5d6d69d93673",
+      "54f11abec43caad47407e92feb1d225bca0dcd223475368b0bee8a3f5adf0474",
+      "4142e63856a3e552ff9c50f1e6c972a08f42841bd5a4b85635328bbea156d0e0"
+    ]
+  },
+  {
+    "group_id": "243665c36eb7ace24d554bf17f88ec5a2b69593a701895a9c10d95faa76bce40",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d6c37c855eb7f1136281d4348b991a3c338de20412c52a83c7bea3951f71da40",
+      "60880c8bb6f8c7e2b31994f38142f0b96ebed5db2f5d6ee8674f1326ee04f9ee",
+      "881935cdeca3553a0c7dbdf83303d234601157ca60ae92b4a6db40ceb9bf4178",
+      "336addf2affb1f91761ee90198e8cb8db37dea7578afb6d0ea09fea695c4468f"
+    ]
+  },
+  {
+    "group_id": "23c890b316fd7e16209b4a7b6ef798465ab7397eb750ae1fead6fe920a7693b8",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "017d1a4cab22e130765cc428f615711b2dba46524fd5d41ce00e1a1b823ce52c",
+      "0f8df21ef4ebb090eac838270f60ebbba9cd8034547e045254f00a050f87f9be",
+      "5ffe3a04976a40a64addbc3c39260c2a3c498a4c1f6296dee85f08686deadee4",
+      "039d2157e758531a4a2eff92e3b86df17efeadc91b82a3f84fae2067ef7c14c1"
+    ]
+  },
+  {
+    "group_id": "57be868af62f0c1d70ae2c6ded6656f62f4eacc0f2d23aaa1b595bd174a42156",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8a43fd61a6ddede6fe0760265b7b040cfaec6466f6a3c0ae48fc5ce569c46698",
+      "55c09cf302b43ab828503c767df918a50ab789e59a56cc7d5f1d5bd1cb45fabd",
+      "fedd302d7a89970f817fb5f96acd614b2e36ec44c5a1e022f0d5e50940bd765e",
+      "8ada5d800f45e572c27ee0bf5af4a47158badf445fef8ff93f7779e1a96b403e"
+    ]
+  },
+  {
+    "group_id": "a652867686e61a35c97a524293eddc2b7c108fbeaa799ee2689cbd45fa4cc5e1",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e885c85f107c3be3d9f2b48a2e4c59808044abcdf67010582e19ef6ba2db091e",
+      "fcdc4a069605bfcf8f8020b9cc61a34423c4c2d1146eecd3255e61ff3993627f",
+      "82f2687fa5f31c74eae788f9f80f560dd28160ad10180c5a98b612608229576c",
+      "4a9a21d69f693ac39ff13d379b2df81166186587fe3e56e240d5682ed1013511"
+    ]
+  },
+  {
+    "group_id": "9b39f33b97c83a2b6d85d40f799ad594dbd109a1badba5e2c57d41d1516a225e",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e6d3b343bdee84cf06847873c0c004301b413018c601a8a0515fb9ccb6006881",
+      "dc42cfb81a3fce847745bd532c46e9522d81e06fe8a3a196fa5b0c3b9383dc3a",
+      "80bbc314a42fbcfa8ab7a0bfa55a0fd77cfc2c635c1a4e3b081c8d736530a013",
+      "3d63ff4ff1aa81e79cc2a09cee0c0fc4f4e7dd6c96ac1f5993836345e193e98b"
+    ]
+  },
+  {
+    "group_id": "2cfd57e397b906c3bbea1f7ceabdff2caf31c43064d297d92937703ff3c6a26c",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "88c2b01884fa9c09dbba871153bd934fd827dc31d7ad40ae74073a6a5a62be4a",
+      "efc52d83fd979109ca7103b365a37131ef33e7d8ac3d0894b1812c401cdaf87f",
+      "ef42cccf84864957d859157144973c3b3c7c9c9c34a215f9642cfbf0e35ad266",
+      "2e5955605c41721ccd6ca95f60e0716799c80d58438b64e00a042aee2bd16c20"
+    ]
+  },
+  {
+    "group_id": "c169df07fca6bf9c0a3e40474eed56a2da693d4ada12d46b14eec403a9aa75f6",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7f149af3e1ecca1e665254bffa2c900f7046ffadb653b514ea8d8ff61752b2a7",
+      "1f92d0683986895d7e39f96cc4ac24c9767c99e3c04511bc21a9b9bfff362e47",
+      "361403c27065ddd19764fbf0d4a5cee72a0bb94ce77373dd454ff1ed3ff7d7f9",
+      "eb46d56c8737c365d1bdd136b6aedb3a6cb64158a9366dd6f59ce12270c73ef6"
+    ]
+  },
+  {
+    "group_id": "5c52c0832ea601f6c41e25afb3b24b8788de2edee674eecc420806d70163f7b2",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "24005953b499c01594524512020c555ee0cdea45b12a613a900c471a55c21491",
+      "570def8a319f2b8f3068df6600383129b6355506f4ab38e1b84dab3373e0943a",
+      "c169d8c0b2503871dd6b19de9d3f5cc24f011d93376214b7e948badf964fc385",
+      "f6bd8b6c68bb3ea0aef2709c82729952ce0a36414fc22e5b5e3f6007fa60dda1"
+    ]
+  },
+  {
+    "group_id": "5ef6403d9615a446a8fcc667d5ddf31b5272dddaa27f79095eb6053a31d10063",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "feb1fc4b7c62b955118c4a9cf034873c747eecd0b915cedcaab08f0f49384087",
+      "359b894c4a64ac1590e49b5edf9439ae377d49c480b30718c28b273757ecbaee",
+      "f90e04daaf825c51b9052472af423cbc6658de6bba673a9a914de715a32763bd",
+      "8311992fe8afc66e19beb7ee5d8c74343c8c3a61cc9ee4fc4d7d33311314ec66"
+    ]
+  },
+  {
+    "group_id": "44d0e4ca40d7742070baff97ac6c1a673d47e5116a78d63524b77baefbe3b07b",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "556d8e6afec9e875f9d0015c9b0a957e089ee4eeee6e3e416954e409428b36f6",
+      "2bcecfd37f9b29ff56a0a9f5c3dd523da17e97fa168d378d5a31944db028dba3",
+      "48a9dd74adf573382faa401deb83bbd8f83c6f1f0c835ae300b68973a8648b74",
+      "a3e08fa41fac744d3612bfb88717ee15dbfb0f99dce52b118387d2aeff4a9fab"
+    ]
+  },
+  {
+    "group_id": "7885a5226c5e66d85da28406edff4792a01ecc9ac43f82349c0672258952b6a7",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "410bcf9fb5157b9dcf95b83c5cf8cbed2898895f7cd1a57926102d017c77719d",
+      "c5b3959c76044a27e06995c4ced149d164728965aea14b99d48df90ceae8d900",
+      "8147cd144c33f7d1769ee25071cc79bc690687aa54a06048b5b23b98833016a8",
+      "e44987c678490d14b58d5812bf93770158c230122477862f08bc0eafef63bc1f"
+    ]
+  },
+  {
+    "group_id": "ab891549e904d7936351789e93c0f4a7e94c82ce8a1a982faa0255f1d715f22f",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e815ce4a9b03fea0e1acb800b7808822471bd2eb19bb30ed1746968716cbb072",
+      "ca13439b8ec3a9e775736dceca16a051c3f0b2ebdb874d4ef00658d9e567b720",
+      "f78bfb8e2a26ba7800b92cda7c4ba45df8ee2697cbde55bdd4d5fa3c5e073bcc",
+      "48805dfc87da0771c2ec10e238528a3ddcb6721869f35b260f4c7aab9cc39a6f"
+    ]
+  },
+  {
+    "group_id": "1670bc64c9ab7a872084a1472992d20b445b7dd3d1b3824568d372f379cce5c6",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "43b613f9bd72375f531155ffce28aa4e5857c002563fe2315b71bf401a7e2681",
+      "a6f00fd3b956b2a2e916fdf722161f6ab89204dc1ac3281488e5fde52702b627",
+      "840c52c3d79da428dfef3a2355b6dff1a1fa00ade2a410db5b91cd01f868b95e",
+      "3294a8c204974affa3be15220086072feadb4fb8b8e7ae32118f4e465ef084e5"
+    ]
+  },
+  {
+    "group_id": "6d0d452ef2cd509936ceeaa1f8a91271d9858e8dfdd887b25783d5b1f07bb5ad",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5cb34b21ea73aa4edc148a4541b50fad5e06b793ca7b4c6b8012785f806c63fa",
+      "892e79c78681c589fb461ebb2802e318b09b38b32d89e5c64d962d9620c02fd8",
+      "e54fed7904cb51778a786084ac19544197788fbe1985c12ac1a471fb86173372",
+      "6c17b627be9a79bf262a22d9515dac4de5e0e7799d34156b92fcd2c553a92740"
+    ]
+  },
+  {
+    "group_id": "d3dd650754349c8bb375982c1be9125d4eba8b4d7536acbb917388c2b984cb2d",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "23fe7d319ec666682a24291dd96ed116b42569cb7b553b1e46f27d2a9796b6e1",
+      "6bffdcd65a6970e20c0268a5f7ebc31d09a4a612b960af35828e3d1bf7f4e6fd",
+      "3a2304643334d8f8634adc2495feebfbbd933c2eacef338c4633cbeec1201724",
+      "0a4f11cfae1053acfa62626a35f09842ec19f9acd768755778e22d54b2a0203a"
+    ]
+  },
+  {
+    "group_id": "eccf32f7ae453fa13b1d5caf0b3c9ab1b6ac7a9e3cf4b08f440952e6b8243566",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "bc351799595f3318c8efbb94a805cbc620f32a97d34dba52adf634b09ffe8d29",
+      "92071a776f7dac2cbadaa35e8a0a2bba4eed5930d18a13489f40ae7c33557a06",
+      "3302a89ce2f4a343c13b6f31c63365b33bc7ec3c705ab0591a17227644c2b850",
+      "4340f56932b6e8f2acbe2f00ba1f11baaaca0270ac101530c9134f0ef44258a8"
+    ]
+  },
+  {
+    "group_id": "9ed0feb89ced2f82c74374e62032d371637e22a430024c0d40100976f7628276",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7bbdf59c5c60090477b03469964d22b6b21915b793009f24c5b128caff33b2bc",
+      "6dae145d87b385650cf5eb8e044eaabb53745145d5f19fe127ffd34a5b49ec16",
+      "e93e3a45a4884cf1d5c69befdf58dc872f60725003f489bd3ed1b4db79c1c7fb",
+      "36e4c28ab75b5e197c54e77751df8025856f1af42e6c8f9dc5b32cc219a1add8"
+    ]
+  },
+  {
+    "group_id": "8c8135eb8a56d64ec9d52c855734578411ad1181c8c7a94866596a28799d7087",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a389332829af1ee26cabbd8704a257bf756d152cd3cae58b0767142aaf7a0dc8",
+      "d2d74ab0563e0d3b514052bf3d6f00130bd81f0ffa3ceedfb380a1e1cb7f1787",
+      "05e78f8df29a169c452d14ec401690d615cc4ccd86adafd313ed62a8820ae42c",
+      "fdf320c2312b64fac5aa011c47607c3eb20d2ce70965c9fee3b9bbc757593332"
+    ]
+  },
+  {
+    "group_id": "b979a6deb2731ad171f96ba46b1ccae6e3a9c972b8040f286b5e4c9a74379227",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "48baa8471e8e3d355abc7a1402d745274940877a7cf4d1d5313988c6e72fb5df",
+      "699a61aa0045cbe90ea55dcfd4768d4ff11b445199007f4f6a722480371bed60",
+      "4ef900175028621654b2f9fb07f64a8a1043af6e99823609294b266d75f2f1cf",
+      "88b2f0c9cc69628a35cc3354af2152ea165830dd6ee7adb38a680477811ea1d7"
+    ]
+  },
+  {
+    "group_id": "70103a94f29b66a2c998208b202c0cc2757b1312fad394f8ff1e8034793f86d6",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d4fe0ce9c136d58ad25eb2800e09edd8cd0671476d98731e44935b382388ea6b",
+      "0f705671bdd89f74533219feaf05d825d536cc30d271d3fecdedb4a497a72b31",
+      "94e430e795f89d34fd632903014f384f678bc2c6ca69be8b38ebfcd62914e9ee",
+      "2ebc5ea73ef4541045cc5798c7b99a51059aad397c6b8f3dcc0357c8604b7ad1"
+    ]
+  },
+  {
+    "group_id": "905f474f582ce707082d9c34877aded61efb9bc0191d77930711666bc8128d99",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "48352881785832ec31c633c2c0c70489d2ccb0349f8e82db0d2f55ff71710695",
+      "e151d51c5fce04c812afd66967f376481b3e81798b7ddf65fd970983ea66f350",
+      "1bd4c6d9997d49ba4f72cd7f08e2073728378c2894a33653690192a53ba43df8",
+      "dc7885d5f0ff9a8e081a0f9354cf9ba0af9bd742169328b2d2e53b272bedb941"
+    ]
+  },
+  {
+    "group_id": "0632f30117a472cb48864593e4e3e807be09af324045f2843d25787b624506c5",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "59d60e356784b1c9e47aa52e58b7048f1d1a05660045a2b69c8c4d252238666e",
+      "7fb7fa5318e8cb0917bfd1b490843751cf49f3827ab003f53d5f4f87caae5f11",
+      "1ffd05572f9540091f62091c38216aa4dd281b476b2ef2276291e6458ce263cd",
+      "6a122829181687782b905c22a6b70681ddd2a389f0b6dfd688860321a7459495"
+    ]
+  },
+  {
+    "group_id": "fc308bfb564a5bb0092308ad6bb2ccc24c253f0f9355f2177bd08aa8ca9729c2",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f3973fad232bbd86858d96d365d62d958f43735574a203520c49e9ef66f4a213",
+      "d1a6eec1b3560e92b15a55d91c76e38462cf36587751cdd7ed9ed1536013a0ba",
+      "261d7048716f80fe1ed626fcdc10b45dc71dcce3906138489414e558b6da89c0",
+      "10100479adea7c554bf9865d0a9ff4bcfd5ccf6e3ccdc39c66454db58b8bf57e"
+    ]
+  },
+  {
+    "group_id": "6bcbf7e763661bdc75a9b79f716f7d1de33741fbdfc6087efa2a3bb6a135928d",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "341972600e068a3c9df5b68312b094bfd06f9e14ebe4353512bcb07fa649beb8",
+      "5162049491749f7859e6a8d473ec4d1d95d5c99a9e149a0162f9cfd342af78ba",
+      "61819aee2160ed034834bb981d85518367cf5fb8e7ff459bd7da5ca5cc78b92a",
+      "82de35dc8a809c64d62278c375e332a0b4b73bd91bf8164ed13500c2e9421163"
+    ]
+  },
+  {
+    "group_id": "4d72ab7f81694dc76e64d218b1e6d732fb46229a23bbf3aae28295db709627a5",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7a043a69bf296f2d440af16dcb1dc036515b530587d788fa48c09f6c7e5e98c4",
+      "1edf4a412df149d2ee693ed9719285763c2303d2a1cb6c1dee4c957b1f540886",
+      "43458a22fd36b3dbafcf23fc0745464c12237b146bbe8d24b75562e3f0661622",
+      "bcc679eca7da84463b633160bef36ad8cf854185bb58b5bd581ea09cb90c0014"
+    ]
+  },
+  {
+    "group_id": "276c54f255c3f5d289a9ba669f1ca3b6cb2f5f04258fec8bd862fe2520ba291d",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ae6d36e42c604b6e014d1664dd3393d55b3eba4742cffde9b089a301c9466b57",
+      "7d30d48c94733e294dcc12fa12641ff383cdd2b099b283b69bd30a8526b6407f",
+      "aeb232c57a908e496daae878a8cc4018e4cd6fdd1be65263f4fce6f0f9c11ce6",
+      "9319116aaba0d33e4d6e882a729beb721ad243df801dd44584bcedfa162dc705"
+    ]
+  },
+  {
+    "group_id": "97542846fe6f717a2965fcad82e7e5331bc6a8ab8caaf0a643e642c8a2d1c7bf",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "9f98d221e5e0d8f01d70360f6e167437ea6b9427cfd9ccb7c094508ee2942900",
+      "9196abf1775ee019bb0f6476be1a9645ef7df704f0c2ae9b246d1be6b0af30c3",
+      "d96dc342570969e9e3406f70dec223f2222404ae47f384ba9fe4163a85bca428",
+      "3396ca91bce4357f9b0c8a53cd5f496a312d9ac2daf0eb6a6a5b8873ae9d38e7"
+    ]
+  },
+  {
+    "group_id": "a9fc0048ad4f957b213fd4e167688ffc17321fd43b99e5938dd0ceaf1a27fdda",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "cf3c0f215794e6217d81d2ef87d51a12871829fdeb38cf416d98073d45eeac18",
+      "bb02910992c22dce3d4621af103b0cea1eea235b7ab928c8de031a3d9d0f6bfa",
+      "4008ca714b99e37ba42d9344e090d5f7e86d215892d8a1e9d56497bec4c68f6e",
+      "d14a366cd3339b2211d0fbbb94d31f7f09b58ac157aa2c10d4a6b7a7e996cfac"
+    ]
+  },
+  {
+    "group_id": "265b5171a638f5c3bce008cc9885afc4786ef8ce7986348e6eea216b91bfc1cc",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "bbdb3bb90440fbf03a11d7a55d5e78fdf760fbae4d213cddf312c7a3af0821dc",
+      "125531d394196dc07981a38bfe9ec9f15624183c73e23de9c47596e4df92c184",
+      "e2355b829e5a7de8a4c3a87ad0afefb988d3a6c27f2973ec01e828c318bf9788",
+      "8f66a7fae4f1eb648a26da05143f71bca9496024b40f99db8ac045e55af7189c"
+    ]
+  },
+  {
+    "group_id": "3ee4315f8f2ab3962d568c6ce922b97ec818a735b229787a86c55c2e1cde8684",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5fc1f92a7f7a053ea7fc1604a4530468859dda58cda1f6c114972ffe05062a9e",
+      "6588f0f7b4024d5e6c75b443eaad8a791d2d59842669d7217a9e55aa69cdb148",
+      "873fbf4b4806fc7c8efcb28b0d920678bb5b5e41f2e5e9270bdcc0c5053bb2ae",
+      "65eaba132768d294e1d53f67dfff32a9b34f64ef948d4774f801d511196b72ba"
+    ]
+  },
+  {
+    "group_id": "e64526c4b34da0d886473d6de43ac0392312a1031b97c68b70992fb9e2357e90",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ae46cd4e2294761734e6595e9b68eb5f46595d5d6262255215d8cc05bf322250",
+      "52e44ccaebf1c53d3c2168f2e7dcbff56c9f2166d26dcd8edabcba44b70cd1aa",
+      "5802906639e8ab0aaf8c5c165d6f8e4be74445ab7d97194f681545525fb41c21",
+      "e5e91b70df095511bcbba8d167ae946cf8beec6036385398eb76edcefaa9b46c"
+    ]
+  },
+  {
+    "group_id": "42a54d56a0506172731d3ce91ed8d5f9c026c2660ba23f5f4caef8d932d51c49",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "338f99b647669a996c0353381c315dc30b498886d651db0fa014a7cafdf5f637",
+      "b39324dee157fe2b9e06879c48d926745e7472153f8652dad1422f84332302a6",
+      "11e8111be6601bbd48e6dde7e7206c64c2044df9ee2836d92beccb29205f3f3a",
+      "500fc234c7373fc35cf9061f6e7d53625f2bbd3e479b2a017ed58761b7ed43e3"
+    ]
+  },
+  {
+    "group_id": "2192ad4636672b6e91cb7448066b46abc4b37866fe7156c35238cc48e1dd916a",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "9f6b1bf3b347dc5c20ce434557de0eb635ea06da2a8432ffbb8cf4fd127717f9",
+      "768da24e0119fdb82d6992192d91182b25bd7d26d8356b8ff0ac86da6b81ceef",
+      "64331c02cda446779ac506b95efd0b15ca68384eeecdda541b32553a988e3866",
+      "35215d1bb220a0d321240df59c2c6fdb1ca0a972d3cd95250ca7cf4b1b9ae015"
+    ]
+  },
+  {
+    "group_id": "44aeae48195e33989c41b9447ff50ea6b1efe46b2a971b79aae88d7890f66324",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a56adfc8681e704f6fccf6f59d685dd66a7f39b616ea99776aac37f5f98be7c3",
+      "9c16a6fb11cad4221bbf60e7262a26496723a7780c1db7d2c455c2299ec0603a",
+      "4cb49c39088d82a650eeb99cae42184a3e310226aed6059622e22efa3954ee27",
+      "df5ca821b0e0f7e37c7853d54775b596fb378958bd7ed60d3565e9a0e8f1a49f"
+    ]
+  },
+  {
+    "group_id": "d4d34a18ca84ee1b079f4e18de75534f39a4a52b465e3e41b3b1f01ddab470b4",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "48425833afe22ef267f49b2b9fbcce72615a6021f3f222b07f798f5ef4c5ea46",
+      "d2e07966c3cb9c0730716772fb286243bcb1d5da37810f99896582f67d904961",
+      "47706d78624109fff17b4fe1b6876288a29b1c1497df507bd7aa2ab8830e7e04",
+      "af98636e4a159940e8eea92b072f09b5f2443281983e8816c88ed053b4f2de4e"
+    ]
+  },
+  {
+    "group_id": "d058d16e84c259c142715fac7b1365ea369e1b6fbd7a0403f5121821e98bb273",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "80b0c684e08adc39ab7bf7bc7624bc77f923e8ecfad8eb6f3010446cefe80f15",
+      "1d281e1f9ff65b5e39c9da35eda849fb50e58093b98ab89eed738261f29e9e08",
+      "98148f09357bb93938e043498f423a03b8c49f7784000b635d7e64338aa06c3c",
+      "87f7e2d5cf6f6ad60989916a5fd03677b94df6e52d94e7808349a78fa45f761d"
+    ]
+  },
+  {
+    "group_id": "688497e952db8985372ea5bd60a86e3ec104c93516c5708d87b5aa8c7faa426f",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1e90a5e3575a0167eef21f167c62b31578f6bc6494606a64d55a305bc2021d82",
+      "92937ec269e8b76ab335a607671505e867f54ba175428b16c7cbbf886f1327c5",
+      "36fefc81a41df39b8df111888bf62102c622336844b68fdb2589657fc766d59b",
+      "d2abc2faf3889bfca005916ba0e71498776736b908ef1897a9f89ed7e10df32c"
+    ]
+  },
+  {
+    "group_id": "d7bc398d8e38b2bedbe5dfd8ca90dc495cfc377e66d97dfbffe4638f8ccabced",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "91976fdd010559e09df0f9e007a12e9e222e165ab593fa3288c70e0f1d4d2ee0",
+      "3894be6cec5732f8d5300ea36c1ef696e5316a4ea613e0b96ef9478cbd290fab",
+      "84996184e1d884962ae7bb2a91b8914a6109b226f6e8d17065d90ccbcd6b8fb4",
+      "cb86d82829082b78ec02dfe1f747d4a597272992a4ce47370fb69a9fc3beffc6"
+    ]
+  },
+  {
+    "group_id": "57a3a98a3ff1bd66d04694c3806dfd2bd57d86a2b31fb3fb8bae1b3cd20c93ac",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "27008d8eb84f93031713ed7a7975d432046231c69b125c08e5086438a4946668",
+      "8ef39d799e73c28fca6e63556f55c69a7082c369d270b0003e7625d1ab26140a",
+      "3caa9a9f30081ce64ddaf5847a2fb990a26ddc4156b0c4b043b4a91917b9d85a",
+      "8219f5a345820791ef0f579fb4c8f3899df72eb3e5b0858189c54924e6476622"
+    ]
+  },
+  {
+    "group_id": "ef847568d621d626af18b770aa57d3d4ceb6efbdf808ecf0479005e6b8b14aef",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "03908df5738b6f591e04e1fbc0936b2193a1f699be8b7a4c0296cd4df7fac943",
+      "3e203056769b3f7884e5a3b13573809fb8979b38bd40b4df3587ec40069e2b07",
+      "9384d9e555f341a9bb48938d1e2d41699aaa774610fd81c4359e961411b61ea4",
+      "69b0c53aef2d29de5efc105ef8e2f2f4549c4306c131eba398caa9056c0d0f93"
+    ]
+  },
+  {
+    "group_id": "ce241ec6ba5c1a7d0959305506d8f062c6a44a6f9e8532bfe6bc16120b940c3c",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "aba362420707f5d56d59cd35bb204624c59a2647311b3b60e1017016929eb480",
+      "307ddcd042eaa111c69398b538ae01824bd4b89a21d4d675c397831a71585fa7",
+      "72e20538819aae16677136dbe72554be9957993de2c720479b8476f12a86f80b",
+      "4c9fc0e1cf051917d3c5c5b34fb9ff4025d4be25adc37b5cf8d68ebe63d861b5"
+    ]
+  },
+  {
+    "group_id": "190b8b1dd83ea4bd778735c19bada1aa6d0e298b24bddb0532f1a86190f1f6af",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d9d19c7420cace315de4555c91664879f71d870291b2758f9ddaceb38abcfb23",
+      "02f7f513bb06fa1d367a85851894bda7e3293953ec8a9abe93004ec1ae5eda49",
+      "c6e8de028a1854701d0c4f567ce50a421a320a7fd122c79f5fce5bf5aa8f6b4d",
+      "860ff12e431e387ce148ffb088528ad9a0e541ae3fe55f8b0d294b44f46fab45"
+    ]
+  },
+  {
+    "group_id": "24b9dff12725bc88c3e20536718e80d864346059d23daa628038e4dfde50cbfc",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c4188a7304751173bef5de32355837b521cd4b786a00359ac1cb0cb1afb1d800",
+      "054ebbcf3f556eddb186329c0fe31320d78ef3c27b7f3990808266eeaa1f7dc1",
+      "1b336cf1573735d1c236f4ec24790a9755a0ad7d25315dc6f53456579acf803b",
+      "82d93f1482441b97de915f2549525e2a3fe2af43b5ca4819e6a6be9b027c13c2"
+    ]
+  },
+  {
+    "group_id": "40237d5685ed587e8b07c53f2a83caf1b63ce60e07fa92a8b299cf08f454a1db",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "250e9ca3598cea0732eacba7d5809654a2d94f2cfac00c1423e3b8543daa47b0",
+      "db7e279202f0bc0e500d620f7454c25aa4dc8b39c5341fb6f966a5e2016b4b39",
+      "6b999e6266763a1ad5145754ed39dc3e843d87c5153dff515d37af66f839e2f1",
+      "da002eb3ca39d34a9c7b88c31f0ab45da3d0a832c5dad8f7325901defd938016"
+    ]
+  },
+  {
+    "group_id": "71251148e65d8701687d26889cb462affc0971c9f5ce28a6118ee502e9f36f7b",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "09077875eae73dee876bd96419b25a25ca995dd39e286cebe9ed8dd6ef868606",
+      "c32206571dd31debd7e1096839c6669d610f4815b63df0d52d5d7f6681387d5d",
+      "0882555b5fe774adf1f8ccead2a53096e6f0ee84b8b8989ca5373228399bcfd4",
+      "705447cc99eb36cc08fb496b30d68d1e7889dac422813ac00995b348c10c0744"
+    ]
+  },
+  {
+    "group_id": "4394e7d671b45be7ed8a4d53fc993b8e7b6afd589a592059d890d48ad0bd75d0",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c287f8049121cef15a488e1e6e7c1d586c217e3bd005ce4a9426b0a494127b39",
+      "340503af7d3e217df082f7f249c8362ebe448ca7591c9dc4852376933ee19534",
+      "6dd961d80d4944184f58d66af79821edbe6c3b5d779a66e1b0e7609e21cc2073",
+      "9c711a267a0f3ce24a0013b3d7c66d9ac951449f2e81398bddd7d96596fbdeda"
+    ]
+  },
+  {
+    "group_id": "2295d523adaa7cd8e862ce933d70b9cade2425c58ae031b7708d200fd2ad69f3",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "fad8d7bc00c18a7a778ca5ffd9f7dcffe649f977a9d09196ed7460637bf4eb8b",
+      "bf1ed55575e93bc0d467fb2f150901f076587fb9556465da72ece640ba4fc459",
+      "c25abe221bc8a548ceebc9588b07842b41a8472360022321809a733da52968d2",
+      "2b1928828abd446e0cdb307047ca307cbe3d3a13e7e442146bb0106d744e4ebd"
+    ]
+  },
+  {
+    "group_id": "009bc7e5eaf2a5aa3897deb16456f22d800f8ea7bc29304ac012d7412769125b",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "829e16407b33da4ccbb84d6bf6d44aaecb2a78701b47588057152bd7445029b9",
+      "5e16c20827768d1ea57b5e45aaf61b7c2e90e5aff2c691137ed6dec18a32fe63",
+      "b93359404596c0c36a3c8a12e5e791d6c2057340b746be67001c715f0aa8c9e7",
+      "aeb89f0ea8c5abec620b5750e36718066c87efe78e0c2372bf962b994bdab76f"
+    ]
+  },
+  {
+    "group_id": "5c5163ad085da6b346121f570eafe5e100f8255d08ca893a4405b4f630eb2d63",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "67030f45c1b63e36396188f3012a11e3d29b85e08039ac35dfa8d505180fed6f",
+      "90239cadc6cc819dd82444bbe1428804e7bcb27afddb3369590faae1087df06f",
+      "e503bfbdade0b90b06087827cc4bf2b029610756fd68b1dce656d9c58f8c07fb",
+      "d742ac136620eb036da380fca47b092af02440d155fa9c15f77eaba0d7300d8c"
+    ]
+  },
+  {
+    "group_id": "30e2a3dca969cccaddb137a32ad5a31b1217051724b1b39f29f7b24f1977f54e",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e0da2737388532f362ff898655300f8262d4972ea24a20e30127b432c5d38c79",
+      "ca2032a19f55fb86b8a8bfe1ae58776f2f03405cf70a32b1c9283fc003a5f4df",
+      "1709098abb8c11019d6b35823a36d05335f97ba24b936346f938cd6eef03290f",
+      "9b704264dfd48ace6672e2a15a50811de8a01edfe22f06ce9a5014c7542edc8a"
+    ]
+  },
+  {
+    "group_id": "63611fa4f7c98cfe70a9b2f9e6954a32635f3a90caa66ac3027a3057a1f66370",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "806c1930c83c0332a284482ba2c49f7abdcb310df5b8d95c35aca667621261ca",
+      "68b680f504d14295079bb21a93927bc3b5d7098768a161097e0750fd5167fe94",
+      "dcea5a6b97edb1276796317a5231a943e5907ae62b2cb6e5b04df0bdca3e0e39",
+      "5bca5477a30318471859b81fd882f54d57ec3f345c6af028eccbf620948d7d6a"
+    ]
+  },
+  {
+    "group_id": "99ed668f7d1fc1840616a9b80d0050fe6bc8fd203a6587675a8b48f578493eff",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6737da9b21af20f259d454fb1544a9cb41c86ca1c9e9d17b1a6ea14f5819a582",
+      "e4ca122e030548fc8c339e87535c46445c23d85fb7b739a09ebe3f07f663b1f9",
+      "47474e252870e9f91e48351c8166549d91e786793af8e60735492a7e278b6c54",
+      "421221a22028214ece9448ed8185dbf9cc0a883d0d22ef66c990a8923ad8611c"
+    ]
+  },
+  {
+    "group_id": "990f6ea2bb4929b43af3ff3b497b6946dc53a8d641a3b44e11028bf67d18763c",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "31c4fce8367136b0fcebd7d893430a209ee331d4bb1476c1bb993d497e9c6554",
+      "f6459e648647de43421b6066203dba781142ad094abfc995c3ec2c97dedcfc08",
+      "f8cbd097b319d7d0819e2a762dce8f1f5cdd1e1718ffad5db92570ef653cd6bd",
+      "27f7279ee5e8b5d001845e7a335ad4c8dda918c25033632fb75f5df1cd875d21"
+    ]
+  },
+  {
+    "group_id": "d810415ae6210895c8c311cb99b4d4d485702b3ffa718c01849791df3d92b4ec",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "14321393c34878b36c3cfeea17c0e1f05b08fd2a4b6ee208bee7b5e7a844c2f0",
+      "10a226a0e95f99b62ae78e53917688b2ee305e1204f87fd07501ea0d31a9db9a",
+      "a4fa9da16015c2a87d58ca8277461e6712f670f68cd56e322436a3f687130117",
+      "340ea610239837d8ae0f76f73bc17314c7c3cbdb7f1a4b04ec918eaef467c96f"
+    ]
+  },
+  {
+    "group_id": "24079a2f6e75d1dd2dc19eb91d3221de1152b56e62a67b3ade9cf98b3eb8ebf9",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "4617bcb0a24fcc266c6419cd735a777ed3abaed12ae7e2fa686b25ba53c225ed",
+      "3c5f8d2c9c3da54db9491b6ec6652affbc6c842a2eebf4f87dfb82f7cbb8b3a6",
+      "fab3e4802477ce271888e12aab8457243a80994112ca8862a01f9328908e6e77",
+      "a659ee806c9e3f5fcc2052ebb35c431057cb7e7e6f0b488b1d19f346805b79f3"
+    ]
+  },
+  {
+    "group_id": "73a8538398218e6cb4507a080880f9ec20c882482263225b00334a65cd41c3ee",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "9328e24b8aa0f4d3ead2feb8fc60b9e552833e3e3739065320ca76d1f34dfb98",
+      "49f400c457adf0356a6dbb529840b8e43f980bc04a5e1f12a827ac93b080a33e",
+      "f2dc420fc4b3a4362d7cb3c13825414d79108f9d106fda7ccd8769434f19f830",
+      "468fa9e3c45f1274a4c868924befff1750b7438146607597226bfc2cf0a8b4f2"
+    ]
+  },
+  {
+    "group_id": "f8f809a4d21ae541a7354c4325b48c61765ec9f88d56baf952cb28a23f5fc433",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "3c9081aaf3636d330fc56d3e16dd687b02b8d8b308f8d2413ff44fd0a85f0cb0",
+      "31afb7422dc21634dd5c3cf07e34f7e1c31a477dee14bac3e51946bc1fd3966b",
+      "0f7d40d1baa398bd1056556a7da006b086a004e294a5f245a7f89ab35d6b2823",
+      "f14aba3a94049dd6354d40f3bbd18b18a5589f31187e0ccbe782e2e61de92663"
+    ]
+  },
+  {
+    "group_id": "b2520c80e163c480982b4b2d7fbe2ff40412b50f4c407d1bfa028ba78596df1d",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b99832980c27b812d9fa2bd73a38098a3a32a4be1dfd72354158a7517efc2c2b",
+      "bdb0d232d531a60cda5bbd0dc0072910368f2a339068db2f2cb4e0cbfb58726c",
+      "86fe8630feaac8da90abe5828c53b04115a30129b6c9653dea039832b1c7d11b",
+      "b98468e1d7e8395776bf7f93bd39f0286e5023f770bb5626940be7769391f893"
+    ]
+  },
+  {
+    "group_id": "5909f0b587588318fb4a4194c1bc1c8da5e4322a2373f5270da9062503183f4f",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "577eaba197290c1294b77ed8dc34d15d7cb19119e880eff42c3dded0d3270ab7",
+      "0c2f96d25d916636f35c364229eeb777b59a1ee9dc3248bbfe41230112e13e25",
+      "0e7d0ae25689a9506486bacca3337ad2b0034101f392a23574112da8a64c20ab",
+      "9b91696b14469220865e081b8a22284ba87537ff7a9dd96d019548ed5fdca084"
+    ]
+  },
+  {
+    "group_id": "b14eda5a8f30d1b5e271fe214add2065d8aeaf3b985b06197478c663e222719e",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "60c398ef882afdf8f12f911b7f70403a15305f0588c01b10795eccae2a593153",
+      "b44849b4a480f7fa4375f246c8adbae129c47c8e29a8d7bf40050e64731110dc",
+      "8ddf55b3af773bde576540da072072c00fad065ff0b29820574f4277105050f3",
+      "1a9859e3445e4aa97f580fb796ca79b7491ea7ace0d6b1c5c2b5974800fca403"
+    ]
+  },
+  {
+    "group_id": "733356635e9ca18779f219f768df76c1dfd31bfbd48864d0f3ee50ef42863711",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d01b695607f9ae2b7a0aac99646b4ef4a0253f95f76cefcb6987d90a4a187c59",
+      "c4ada45b197e95ecfd8e3ef760c5f0a1ef135b23553a86e26095182b3cf6731e",
+      "7e2e58764b768af96638f74c97cf9ccab7e114f1a348bd68ac978c6e8d873c1e",
+      "28b78433588b42646fad7f3158dc2ec17cc0f9c235523dcfd4bad6e8d3bd9f24"
+    ]
+  },
+  {
+    "group_id": "1568ee9d0523cbb6bef1f1636d53da7176a1c1354591e6640fb78e9f24c22a4b",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ce48fe5106d4999d46d2e9dc1c2bf6016358ed6cfe54d6258daffec8bf1bb299",
+      "65242c69df7936e16db19143c180bb97ca0dca2287f9f7a5e22abf71bb50a054",
+      "86b3ec77b4518bfef5190c64193582e258c0382eb3dfb564dee8a0aaed22b781",
+      "9721dfb9e22734307390c27a74f54ba7769c6b251cc8441a3fdb60a010a2c609"
+    ]
+  },
+  {
+    "group_id": "1150f58493147e867ff99650c3f4fecbdcd0a76350d95374471a5d64c344e2be",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6499ef0881501f0ae65e5a6761fc3e84d158d1caf8bfadb8188ac140a91ca437",
+      "4c77430bb9b73a75b6deab7e3d3aa0523ce3cae62c996c164b7ce5b726f290a8",
+      "ecd3c202a6b1f02ec178bdf5cd73eba5250f68ea539bd70119640e15f4c736ba",
+      "ce763e85b5664705d2298fb63fd732d5d613e76912de31343e0c4e6272573f3f"
+    ]
+  },
+  {
+    "group_id": "2c994ac42c0e90842ded5bb11ff03ac1cfebf305687d26ec6908d53c88d94881",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a1e2cb33eaa03f6332a605be8ae3a92245e04e4d9897f1d3e15f4eab1eba99e1",
+      "08572eb90229fbd71b628454b9d9af0b9e3d107460181396e03ef7af9cf262af",
+      "b47a9c5e686f5afc155e95d7e4ccb95bffcd2f2f19074e0f9283a1e3d93493bc",
+      "255ec44d995cdb9cccad3b49a5cae31ef0bc3e5c53f175d7200ce4b1e73a4250"
+    ]
+  },
+  {
+    "group_id": "0962457f9d826de4aaa13ef5eb936881ef22170bd760a1724802eb5280b85b1a",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "237d3994660e3782a62e86582030bbea32aebf96559397eadcaa694629e5cb4f",
+      "3568049ba2dbaf08d31ea50c432e5956199e8a2568ecb3d6dc5fa0c0ae5fef9e",
+      "cf729d3476252318e27619448e74206a3bf130b8ccef520afbf51a4058f67827",
+      "618afbd5180304e6a911bdbb73d544b208e27d070e1b70c49df4fdfa7a288702"
+    ]
+  },
+  {
+    "group_id": "f38c680f5b2f6df3abe6e4df49eab7046fa54a3b84107f8cc62b7d6d7edf0be2",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "336cb6f7fd6da7a02f7323a11e37376909345640af79c2a02894742bcb2bfda9",
+      "14b86a4cd2c8797c2e75368b805991d3177d1384d2a23c064daa2f736e3b96c4",
+      "715cd33b4cac4d349e425d732fd490ebab63926c2f29435a8b54557c4e5f669c",
+      "ca4649abe2b6b920b9668cfbf64cd03f374dfd73121dde87b56acd89f3e42ad3"
+    ]
+  },
+  {
+    "group_id": "15e6e12cdb9acadba28c4514aa0cf6a012b51eeaeabf78508b79baba0f5f3041",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1a3515b7453bf608b5c9b8f8afc64e98e5913a904b1d003f5629ff6687eb883b",
+      "59d4e4c65146502e2048bf26a6bedfe11a5d10593ed0f27dbc7cd66383ad303c",
+      "5df0d4a9b6d80a5640d0f1e4d27b246432a09d1146d9cf82e95c232510f1f3ad",
+      "7d6c43788d01ca778c36f86089e417a7cdf8a4ab7d4a648ae0770de2492e11c8"
+    ]
+  },
+  {
+    "group_id": "419a97dff4cb95616067c83d40b0c27cee5175a4fda9ed211f53e358ed7a4c75",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7c8a848075de73c53ed291f2f19bf9c151df6cbd3cfdb7ae875da911af8a2404",
+      "d7cf389c0013759184ca8abac599545fbd2abd5891aee1aca2d78b9d989b48d4",
+      "1753df814483ac937d906d425f94feb3b7203c7430dae599af3516261bd00003",
+      "77ac0206cbac582d007b7ca73313002b236d65d91cb53d4ab327518fd6bc35aa"
+    ]
+  },
+  {
+    "group_id": "5850e81118719833379eea359f3e6c8f112c9d3219a25abd75d89f65058ebb2c",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "95b90e43180b3e6877746dcd4c0f15364ae2e0ec06764efbb8e89093d9a1a664",
+      "0b2b93943bd9b7a8ec14088c8116a66f8c9dc1f2ac0e3efb2166be4ac180ad89",
+      "10e2d3e48a63fa0ee4ed29aaa0cbd2cb40c971afffc6d7572924bc2ad382f3e5",
+      "3faa4231640e7b13f7668139e80a057e1d5e37857b0cdc69eb7f392545e1b58b"
+    ]
+  },
+  {
+    "group_id": "0b3a60a42a729e99bd70a782641f7b27e4a619c619c4c2fe93769aca2f682e25",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "4ccce7200e13306e46d32fd55c35b6ce8c9edc99479299970310d6e045b1d258",
+      "6832b1b5e0e0e93e4679aa9969f25799c73f3916e287daea4857e4a4779bf267",
+      "b5ba8be37fddd74e49efe74f3028927c2630d74c44ae6013f7c9719fd92b8be3",
+      "f4e58b75927537b9fa430cf88dbe58e0e7019c6fd57962e4cce355bdffd15d85"
+    ]
+  },
+  {
+    "group_id": "696b533b4d7788136c64ab9e27eda7b3862cf3521ce456528b8f88ae4d367c84",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5347ea9b23f2859ead8afcdc277f93fdaf5d6a0f2245210d62ef77d6393ae83d",
+      "94bf6feca9394e73906c0c967c7e583889293e7b60c13ce41240dc957303840e",
+      "aa0cd79c6118684f50ea6ba4afb4a69e649fda4ab82a753348edbd1492c5d51f",
+      "1d1dfa809164e28d019328647815c6c96edccd2ee4bc4eefa947006b882119dc"
+    ]
+  },
+  {
+    "group_id": "39bc40e02c7932ceb477c5aadbeb7ef439938687f6d054d6867f36b4af1e3414",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "27b2283cbc0391a8c9c31ee23cb2f910f47daec63acc85dc32d9a5c1c0017399",
+      "66d4cf325c7bf3ec2947f2d522109272f6fc8e79e7a6a856f33e5a0345ba2666",
+      "9d218706db8b3562eb1d3ca4515bf2b7bc22c8f6fc077bd26db25a003eb9ad11",
+      "11daaf1ede49f4d23a7c961611f28649435fd2721ca21f580edaa39c499bc5ef"
+    ]
+  },
+  {
+    "group_id": "37f6126b38e31082a72f828b48045b306220359b9b37883a12aa81e9c5767443",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "194388bf95c9c2b3311ad1afeea53114fc8b25d6886017763cc8b322bd8de843",
+      "552f05ecc0ff75245cbf5fb033084634355771dbac20b2ced1ff4bd643c56d6d",
+      "32fad884be0a38948569d7d006b0f9e6279fdcfd2c820a2fd690fcbef2ad4a4b",
+      "27d4e14b7bba6762acfd8d4e8cae4055a223a70478f441e40f0f69ee0237ad49"
+    ]
+  },
+  {
+    "group_id": "6dfef1c36128decb51ec700f0f3bcccf5fd52c88b4fc5815c0d607a2253f51c1",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "4dc121d5625dcddabdb917d09801a655a5b74cbe748718ea04efb11137fbd856",
+      "16eb9c68ed89a6436c796c51747942e45bf9f603a0da6493479043ad9037167d",
+      "05b8834d6da5e52eae5f93c06a918f04e54200b58a9fb7fce251220401813f9a",
+      "6525d1e8f49a3a1a77a584120d37a36fb047dcdd4e427264a9635c6b73f27759"
+    ]
+  },
+  {
+    "group_id": "49485ba831be08570cdfe034383a234444b9a78a8df3934423a09b1663368631",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5fe04cb8a16adad5f5c0e7ede375f6386e258e21cffa9d0af57269ac6291f668",
+      "5b1f63db1599b826941baa9457ce7fca9c86c0c2415f23ada60d3d83a1ef011d",
+      "bf954bf7fc71ffd0bab4cbd81a1764f61abeb3ab859722aae6eb5321a59d4c44",
+      "b140c3679e85e02200001252348fdce2e729bbc7f9b9a44b3d20511a92e30070"
+    ]
+  },
+  {
+    "group_id": "6ec8e634cf584f43485f0eb2a35abeb38e269e2a87801eda6d07b9a41559f62c",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2a7cf29fda36154f24c6d128b34779ea036a166a66a8eeb990ffa4174b9fb853",
+      "19d61db4707caeebd78209e09fe55bae0c0c7ab5d7cdbbf38d9aec8eaf9180eb",
+      "e35e737698976205bbe5b5560bb012e239c97336d8f6a8e5f4e508353317d48a",
+      "d6af057176f9ecee6427fc387d6c546d7b692350e36e47eff30f3b7daac9ea41"
+    ]
+  },
+  {
+    "group_id": "75334112b94b3ca921180d36f4cc8ab21dbf2bc0828b62be6c0019fbbdd64a83",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7c0b347bee530d8441be624812c5861535f64584b7fb8a17e7977a90401670f4",
+      "0dcd65eb628134f1654078783efcbd441896447834d9a2d2ef63b51c11b74105",
+      "753d7266d55666e719ebcbee7396a551fb7e3ba19b9aa2e4be5af7d5e49bfbc2",
+      "7160553b85733f7c9e398465cfb485e274462948fe878c0a05cf83101f0170c3"
+    ]
+  },
+  {
+    "group_id": "a86221958ce758e19b19061d48573be1b1cbd9a707ad2a40c371905a24bdcfc8",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ed9714ed4da781b0203813e634db7d1c9f2e78ef82865f13af48a0d78de38f43",
+      "0370fec4c7646007f9916f9bdb627f8f301d2a659b34653247a0d0e440e56770",
+      "76d026a1bee003befc68ab3ca9f08ea6dee0fd19c87d44dfb0f57c8ff1a8fd16",
+      "57a7db4ee299506fa3c69caf74ae75079e5375b5a2c171269c92392909c75756"
+    ]
+  },
+  {
+    "group_id": "3f48cca749fff490f47306dd89dc634c8f9a8c088f993ebf28a051f5de7c1f2d",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f2dd7f056d393729c5bd58e5fee9cb448dbcc0b6e5bd61d853feb6c570a21a7e",
+      "d809343e2388b91bdaec4a55e9f4897e566d6fdfa6e343699da90bb14b09e2bb",
+      "2d7dee52f0e6143bbb8d519b6e9d57facfe51ec2c036d23caebada9aa494a5f2",
+      "c39f4778c446aa9e9501d8605cb4a9393e123d09e089fb547cb7809a8c783870"
+    ]
+  },
+  {
+    "group_id": "68114968ccf3f56f7f1c1a5fd99c917a631f2678ae756c7b3ab0747c2ebfe6d4",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "da143560a374dc554e5655dae2f110ef7b13b2430fad6bdd6a2ec326efeee8bf",
+      "2ab870131f033e33d16fcede0d224482bc00b482483d83bc8085e8cc45348699",
+      "ec7044f7ef9a6d2b821964f3f29114dfce32263acb2718e2a7ea1cc259973ba9",
+      "8f93a7f3198517cd57bc98d1aaf01ff7807c7f5080fc09e00ed711b74534ca6f"
+    ]
+  },
+  {
+    "group_id": "8092356961d3f2ef70aea9677786c62cae3e06fed455213713b5eebc58bcb755",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "48fb4d5c920a7deb17ee67a5c5f4f7f8df7592faf0ad6d84091cffbbb40be6f3",
+      "33086bd81f3aa1d177939782fd92992cbcb5aa184b8457941280b7ee5347efc8",
+      "f3b79c7934f0bf9672842f9f68f6e3eee3901e3979f1045824350ca34c11fe09",
+      "73b7a7a01eb006c52e2313bd0b644289044d9976905b7c77918d1ca6b20070cc"
+    ]
+  },
+  {
+    "group_id": "2dfb33f839768a287a926ca20f7f60a9de8dc6202d7b38a7756a8f96e9c6c9e0",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "84f302a636fc1e899e20843f1aafc396859fedcc7481f0aa8c318e76e8c88cc2",
+      "8c17d200b4a462c54a6d216d6991b8e96047df582a55e6d3e8d85bc5133a31ed",
+      "c2ba3e2a6dc792ae061ec18a3f3e25b136f99e585ca31369c03f1fe8b5d07859",
+      "8edfe50f719a295a7fc0aedb44792353f048d48b4cbb60ee424a3444f9ccc2c9"
+    ]
+  },
+  {
+    "group_id": "13383b7dba186c76ef498e6bfed9de009a8ef2a45fa818adc5ee0219ae579ddc",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2620893b6c9a1b49f413658717e9693bd61a98a4cbe3c9dc6b1b6afdb9a8dea7",
+      "d52aa39a34ee27f1f94c8dfeed498bf8922b6b880064205f78a9cf43e1bf1c11",
+      "6784d4e0678102ccd302698696735406af1510812d21276443c9113def9be357",
+      "f6ce8e9cafe53c62ce6834d1b8c77589558e0e9ca1e876591db34db31a4e49ec"
+    ]
+  },
+  {
+    "group_id": "76ae9ad4489c83fa70f756fe9b55e3c9c78e180ec8cad522d4312328aed5c959",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b634c6b4e69bb939b1455633021fc06af3278959b74e936f08f6d81ed61c8aeb",
+      "256dcf17f298f2b80b4cbfe1085df960d0da9ed060fd95a5c3223b0094d02df5",
+      "f1705d2cb1205ff8245a3d751344fd7b1fdcfa7a44ca964252a5ee467065e970",
+      "f9d14edc58ef856cd105e960dc1270d2425f628d8aa4cfd4f06325b380f22f35"
+    ]
+  },
+  {
+    "group_id": "d4b3970e1cee545391d84315d1067dda6331aedc496f07e62afec1e7659a1005",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f134b25f0f19a585e5a72c2321372d33d23c38963396f5b7872bfa40b97df891",
+      "896b5abaeef7852609d2dbde4016ce1b75920a0ecd9dcb58e0cdcd34a7a03a81",
+      "d3eddfda4a9c29da64e223a9c3d90752bd47ffb63d9bea88bddb2cc8b9d7d5d2",
+      "97b323ee92b14a2a0596a79280c05352bdf86b7f56974eedf69c0b96a3a30b40"
+    ]
+  },
+  {
+    "group_id": "98c28fb0250cf29f40334efc09d7c2716341f3101bb421912a4ea7665f775941",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d32695743b7c95a2e7bc126e43222bc4ad68da6c8fcfe853ef1565828a290f82",
+      "691d5dc2108f0e18ad714707d80619861ba81a61bbcda5cc1bc557092105bd7b",
+      "77f8896545a1a1db2604828d920fb49f6bd5f46e47b620574d1aef5c1ff55963",
+      "a7be0c52e165cb9347f4ab6760e8319c469bf440273c5e2cb9ba6a4e0b772190"
+    ]
+  },
+  {
+    "group_id": "7be44e32db107c1023051cf4e9f41c4bee4833814583093ffd09501d2ecb5d3e",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "49512ccfbeca5c1e690d2075c51a6e339cf0d03685c2de7514c98352cfe90bb7",
+      "a4a90a04e267b59a8638d220bd3fa930db314870bde13bd5250f9d20e5a68d09",
+      "021722a97f49bff07add9b729c139397329fb3a90d133782937d711f69a30b7b",
+      "d3707627ea35d23ee4a876e42e1b3d09062f2bfe0f1c7df1de8f20cc4089d9fb"
+    ]
+  },
+  {
+    "group_id": "15465264870704fa8100b936c511f41d1a84144fd468b3525644c467674ba516",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8b9290fb6d3944bb78c5d5b50ee039ed59ab835335667e58c3d010f3ed9e9ad0",
+      "19c56c400a4e1d40e1cf345dd27daa6d0d1472e78a66c799ab0af919e80f7c28",
+      "4d84e3246c605a9c40913eed46a8b0f052e67cb4ee65871c67c823e835ed2d62",
+      "3e3edda69d0d25c80f700abecfae75df3a1a941b7c8f008efc856b291f603637"
+    ]
+  },
+  {
+    "group_id": "b85fb79c956ab5b44a1a545575f9cb3a356fb7539e5be6e5098c645cff416273",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "5a06dcf32afacac2c88cfdcbf891a59685de8cf8449ba23cf523e567fc64fc39",
+      "d033540deaa6c28edf184f3bad8afa3ee92191c6f3b281e9fd4ef6f321941a71",
+      "d947fc21d0ceb484c5d0b00eb15beee29ab583b1a545ea3450916e9b78e28636",
+      "8e0621bd74535ed29faf82fde95857562233e06d345c1a5e6d930767c8c6051f"
+    ]
+  },
+  {
+    "group_id": "b61e4f484bcca30eaa71509e6343bc22c3a4f64ed249b9615447511abd526858",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "fc69652f38c208e762096bb8a0e441bdeaf9f70a8fd9989d73616f9b6ad8c33d",
+      "3562bde38aa2878d6ca783b671daa30b04230e05c7ce390d5246eb690949960f",
+      "096d47124ff3a74e8797cb3b2cebd9ea0c8d12494064d6f52177551f65228714",
+      "d57328b296bf6e435f2fa9bea26df321f7e30b56dfc709b008f04d9e44dae299"
+    ]
+  },
+  {
+    "group_id": "c512105eb2369a1dd8a4d3d8e10a7c22280d34167e7d60065c66ad6b6def2eb2",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f00591779b2d53abf24e36034c9865c04ed2018c5dab18c77e5944fecf312546",
+      "3f11e221cd57d060bf76dcb932cd9b128865ecd64b7cff184ad885d05be8bc03",
+      "2d0c0febd814fbf9a6311c7dcf1c416d541096452b172e32e4b01afbdaf95197",
+      "2d886ea1ddba07f5da2688601a9a38ea7506a664ae678e5a22dc4d661b0dea03"
+    ]
+  },
+  {
+    "group_id": "3551bb26d538808edc66cf5a3d355d51ba14904f0e0a05e2b4f65af2399394d7",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "196d85e97b52512533b244fbd7484cc56aefba5fa31adcfc2012b302856a3d75",
+      "ec32b99607e631dd98b22ca7f4d0a5a687b87b9a5d2a11e86b5b69eceb124eb5",
+      "a4611a548e56bec5fb02d1c156d7e51d91f55e0c19e4da051be351f478c61c1e",
+      "032192f773413e8896ed1498c456527ba52aedae57316fe000d9c9acccd86fde"
+    ]
+  },
+  {
+    "group_id": "35a1c6ef65bd8f6a644c3f7651ec9a519a2aeb4533f4dfc8f085269adf140369",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ca4314fee5ecaf528ddaa5cb0e101e82b06521cd59d5f78c224dec8493878097",
+      "08b1e514285a2b36687d576d2db0cb48f09311f9792a590727f705f46c2176c7",
+      "21840e8e5eaf94f2880b12db0a00def1f0b9a9aa49a48bf56fc6dbd2afe5e69a",
+      "1d4c183ea54be61fe780cff94bbbda267ffe26faddd4ef258542ecf25ba24376"
+    ]
+  },
+  {
+    "group_id": "466ad48115f9b98bb5a69ed128018e09e1d610a99a1aa32415e39dc9d32ea45a",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "937e2d3d77a476a4216e13fe96e910717554565a4eba4aef7e2962147a5874d6",
+      "a21fd04da8931c6f4a488cf167e23d7ba9c8c1a7e7a01252f2bb9e3164a1bcd6",
+      "c1f83bb31a4141db7fae4ac58da08f72379038506f55a53c3af9684158ead0de",
+      "28932922152d0e5660dd44b055f2891e689afd5c4af677a546a4a0c6d5a2b801"
+    ]
+  },
+  {
+    "group_id": "4123aac03e0be0249ae07df9c9a7855e3b473708bd38dfb3679e18ed59529582",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a0ca609cc18538a9e449699bf13c13e1bb369391a62278ea9033b4491490f86c",
+      "83af746f0ea2e1b1e9ee7c86aa96d4637c031447e1e322f4dba821cf119d107f",
+      "c477e3542422fca2b79f8ce5d314a293c327c672ea7b81dffc0c0af064cf9fce",
+      "d0ad9951cc4af65d06e85fd1b4b09fb9072746e23f398fecc1a02474b73abdad"
+    ]
+  },
+  {
+    "group_id": "c196f7607ddebd3630d6b75fa1e8cf923db94e22de0cada841e970c30e3950cb",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f1fa93afd3e04c8b4e4d8e1265f34268f6ca32490e6bb46216acc4afe1aaf1a9",
+      "7929c5c70d3a3343fb9f88580820899828d08e1388f01d403e29f645f7fca988",
+      "c3ffeea291f35e680f6ddf1584ef694612b0353dd1106d27fc9a74a4b75533e5",
+      "9962336a8c88b2d29db5323c835043b5503f964531cd3786fe7a14658275623c"
+    ]
+  },
+  {
+    "group_id": "982478647f510d1d8bcc5a186e54ca366f6e8fbcb81d8925dbf4eea7d6c1a8f1",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e0f42bcea98627a4b7bec445f0d1e16aef233dd16bc1dad8b2a5139b5b095c58",
+      "25f7e68f11f11c803aba4f74a2dbb241b9536d68112159b3cb8c2735997d7c67",
+      "da5b6f4817d12cc9fcbb5a386f53051469800929adb56e7da5c9fbcae27d0c9d",
+      "926b6c70b159bd85d0610bb85ec70cfb530afa94c50eb9c270d6884f0d0b1f36"
+    ]
+  },
+  {
+    "group_id": "8140f2c5d1f68a44fe77f47c6de0bf09e123592f6baf87b9cb8e7c06df740d85",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "013ab936024d8f0e8ec86a88e984e173092ad6fd0bb8922bca69faaa2271cf3b",
+      "8adffca5b47dbc7c51dfb31a2dce3a5d9df65c9e9c61487a267ae0b55ea05396",
+      "f524c621038479a15874fa55a032a1d7778bace99f5d32a11d95c5494d3f4b9e",
+      "a81a2a96f2e633ae3f583f471991a268cc028ee5f5ea17516278ec9b20c405ed"
+    ]
+  },
+  {
+    "group_id": "f229edb888649360d38961cbddbeff1726f90af909d47353177c4989dc84ade7",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "00cd08b82436c6c2e8c8b5c0357c747f525e5586d5e3c917a26c1e3479398347",
+      "4691d29d1dd3d9669b4391711c018c8fd7c959fca1844d7a5f6eeab32b38620e",
+      "3d1f722b8ea4ba81480fb41e7bf554ec6b13268bfd281555bef53ffe85b92a8f",
+      "9cc85fd1273fe91672b3d731c3b7a5f6e1fe09ea589e64dd6ec14a69f738358e"
+    ]
+  },
+  {
+    "group_id": "fecc48d3b5bed06af7431774bca530dd865961ac45bbcc6a9e3090cc717fe8fa",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d3300b9a73eb58839b74abd693be5dcea45db9b0da5fc55de66c0a4f102d39e7",
+      "cc5857bc728e4ef827863bd72d917b3385e4dfaab287c181ca0c3ea16aceb429",
+      "c44b042636c02046ae3c6af0132b55041caf1c07ccc8a6cfcd7b36853ae25897",
+      "a616ce99b0c3e56dc5727a8926c7db899f516cccd43193b7c90156b54d0bdbc8"
+    ]
+  },
+  {
+    "group_id": "61abbfd53422b7f2c80c89796009829396b1b2528aaf72f5888620f541311957",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1e8c4a8c14cfd75ee1486c3b1dee07b2e1689467a39220189f03ff5ce1bbf8e8",
+      "da137b45bae961d500dbb6b6699c05d97b46a549e75d0b8b9168793a272756aa",
+      "a73fa2e6a84506b317b107e3c827076ef85569d9292a63a4829d33a03efbac02",
+      "40f5b49a1e44e57cbb0f752f1908aeb94bb6fd83d7fd73be61e79b0971fa193a"
+    ]
+  },
+  {
+    "group_id": "a9b83481eedc2d2b9d3dd3ee584e40de444c272b0cffe9d27ee74e37e9a14a7d",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "93f30af115b1ad06761f12df7245b25a9821027ab4331df1bc0913baab330a51",
+      "3ead7e7929889859f00cb567f76e10168c4ceba62ef37214b5370d23590ded0c",
+      "46df2f7d9ff5400dfc437f6ad9efedad1adb37ab3ff7708d1a12838975f23149",
+      "b8e3f1eccf132c82759b89bd2f208a5fc5359bd448c39eee337d59efc514bcdb"
+    ]
+  },
+  {
+    "group_id": "8e7b4cd66319339cc74eeb0470b1d4c54607704d79f7e163a7de6704776c0548",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "090cafffb05f85ced51de6476072412c3c372d33b399292743224609571d2d63",
+      "c2815bfae793c6dc5fe83e3973ac59acd2ba8cddc2dc6ef02bb8112f5daa1483",
+      "6921cafd5d29f00b471f8ce27b5da496796ed5d7db3bcc084304722288637efe",
+      "614421f490e8a290e0234389f2a05811ac272d88e07634f6590777ec84021518"
+    ]
+  },
+  {
+    "group_id": "814577a0c2f63b553273ce472f6350c15c32dc8241eba214c05d8e1bfdf9e4e1",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f3670d61f5e104b0b1d5ab9d361fab388e4058ff5629a003b44477d72124d0de",
+      "d55568b4c437194e04b24c1dc06607df4b7033205607d0e467263be496691fc2",
+      "ec65e3e0d38cf2d7fa067aecb6697758e912d4d670541b243e59a3905cdaf1b0",
+      "f0bdb4f0a4a67cfc257107ca91e886dfb6389ee513a138d8f2252571bd89f1df"
+    ]
+  },
+  {
+    "group_id": "c109d0d782717e675b30294ac455f4224f5072759a0d5f63c5b488881b53ec1f",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "91c35955f5cf4732f9b23a8c8a57c781a0f874b6761c89bfd601c7f0d19f76a8",
+      "2894625f971ec13ede7acdaf177310645b8cd4336e3b8711050057330efe692e",
+      "22a5b67d5e4a4ff052d09003074c8aa21d926345db21a63737cc9b7e219dc53a",
+      "036b123b6346c83482de0059a825401202c7c541ab2bbb5cd973baa7f5e24e43"
+    ]
+  },
+  {
+    "group_id": "68305c2862ebe442e20ebc0ad394e4fa390b441a437b5c299aa05408a23f4523",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "eda4e0e53488d0c3c3785e160d3f104d1ce6c4393effa4b1e5690a90a23161d7",
+      "23f94d3a01b22e674396df85e2dc179ec70325f50c0972b61c16f35a93974179",
+      "fe8d99a29deb3139713bbe465ccf8a8e8dee61da0ad0ac4c6f24f4bcb7734900",
+      "32bce57e95dd8451a2a19236100da1b862d4aecf8272c0d72128da8f8b6d341a"
+    ]
+  },
+  {
+    "group_id": "f1088cf59005207383758685a8b72c8dbe457a15f8dd63af5be72a70308354ec",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "24610726699c0695b48e612d90e082ad16e0c07304f7853e03598360fc3a933e",
+      "5b4e398869711dffdd1d5b7363e843e3c98fb308d6d072db7a0c854a119cd3de",
+      "0d55f5e86a9bd402ae92bce0dbd8d5676f3ef2b4725c236fc9e0909998316990",
+      "5b6773b92fce0e395584a89bd1edfbab70b19c8ba524c6988abdd65be446594f"
+    ]
+  },
+  {
+    "group_id": "248881cd245dafc63af7c34b07ec71e214b831650341321cf7892cf9b4c6c63d",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7aec76f017b7c8b78e13fdb981ec2832d8168871d88cde492f3c16ebe4e08fe2",
+      "2deb9ae5213e069e17f1d8b3beed2df8c680bcb2752f585e82e4157bc3b1aa63",
+      "8fc8e27f191cec9e8db02bc6a438d362e77cdb19be1e22c08fee734a8ad13c51",
+      "fc4b24dc9590be1547812cb7376aa20c1067effb1d434baa66365ec0ae6132c8"
+    ]
+  },
+  {
+    "group_id": "1ed42c704bd4cb7b94fdaefcd08bb86d0e912dd8e8e2537d8c67aa9e13d33838",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "aba3e048a1e636196151190cf47ecd9e4db94874443b2a3cd22a07f698b2b259",
+      "2c3999762be95cd684b7a88efd24128504800edd969a24ac634c54debe043855",
+      "4fadff623f8bff4b788063cfc48c263749fb4cd703b64eefdc3324b98e7f1d14",
+      "5a2b84ac5922e9087da6faa3d1c0c7aac052be5733cb11f428593e318573ff01"
+    ]
+  },
+  {
+    "group_id": "f3b9fd5b9330d1b4b1e9b01503aa6c0dbfa200ba8c80a8e5eb0210f211d98040",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "48caf77c5668426290734e0da68d2995a7adc55eb1ef87ee8311d1dcaa88f30c",
+      "e10639e644dbf0e7dd9065672231b311b401bac7128c219f77ab86a77bc69501",
+      "fd066431672f58cb544b21b7cbf058fb3b7ebb08750a402f9b553dcf70336720",
+      "20d7b6df142554b3b5f2eabcd54e461e4c2ef237dff3275b71ab40a46701c66e"
+    ]
+  },
+  {
+    "group_id": "0dfc4a89d6b1da906faff902014d3fa491a7f2b8d70216e14b45935d13fe8104",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "fe75c6535e2175374106bf3727618373f2b6be33e5af04fc5abd8a41c77768f8",
+      "085dae38c0016370fe6950d0336a2a0f4abeda5f1499dcdaecaad767a989d52f",
+      "0fd78fed67afe6e27438ba2adabc037e401294c2012b6a9a16439f264b72178c",
+      "059a0421fd3004872b0f83226c609962aab5314d0f14593041e4bef074085884"
+    ]
+  },
+  {
+    "group_id": "296a8edd42359cbd0747df8cdd0d11fec07e29963422585171a61feaea2edf47",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "9e829cd355f0b6b84200e2d53949fc593276188241cf5722261060f7a8eb5341",
+      "6a3a8eb9fc562fda16a98658a75b808543b7ccfe800055e40f48b56d5ff56c74",
+      "efd2a562edd949c24ade7705e8df3f84c3ff070c2fdf93df2f2698f3a71e16b9",
+      "3faaba50ca8bddecfe32ee3fbe94e0595206797fa9de44a395ecdc72e99befbf"
+    ]
+  },
+  {
+    "group_id": "76e9ed1372f361a1e2e8f6812453e10dc3c479e007ad4fa539afeac8817d55b5",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "868d6b5a1db740047a96a4958730bf4a1fded8cea622d9f1652f9acf85fd21e8",
+      "986fc2d16f646fab9e2c7c53258d26f59a6b27f7032def8e284aa1f002e575ca",
+      "3263da0f2a0d3335453333d23955042d296e8928b892c226987ae018ea457716",
+      "d1ce5f6e8ee9b8f4ee24674942e41c803ea061d4423733d4ab5cb2cafdd6f4f0"
+    ]
+  },
+  {
+    "group_id": "b9d3183e9d0f9968106fb5bccd27d1eaf6796996ec00777ff37f6d8637bf2e6c",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7a299c8a82eb4904ffd86f4e6bcdfe74313890e2de5170a0876ff2ed10b76b3e",
+      "4f7c974cff0d79db1b3a650a1ecd774f3a42d7d6f5fc4fb9d75b9ff9f493de3c",
+      "cafbe8fb2dfb5b1897e126775b8c87e1c853adeffc05afc988ec6c1d1e727dfb",
+      "6ff24c25b61da044573b393870e4c9a9939c3922b60ea45a305166c61d415df9"
+    ]
+  },
+  {
+    "group_id": "594cfd3da99eebc684769fa6831b6705921c468a813e7cedab15b82524e30d06",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "492a451e77916c07c35085f00cd4d551b251932e5f588d3fa94fc0544899017b",
+      "896ed6cf716d2c34bb562dec2289da2e56269ba4e4026b363ee2c490e54bb44b",
+      "daed656bc093f4b49e33a19edb637909765415bfd52d818cc23afac9e1bed44e",
+      "82d9613807c4fc40d24cf296a65da5d573672a1b5a0a504896e619db82af8c3e"
+    ]
+  },
+  {
+    "group_id": "5a1c7ae7e7d1e0fba3f9e191e52f716099d2c8a71d28b0b56357606d44e5bcce",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "871b6dccb2fddcb5234f2c94bb9d8a5c23367ed368de782f1adbdeaedf5e2d0f",
+      "c697a1be3325a822bba9faca560c3478952ea7b8e4e4864847c36cb8196e4609",
+      "d93638a14118461740dcc0ef85303c904f59a96dfb865f5f633b7d5a99df6a0d",
+      "2e6dc94b1bf0d52ac4e6d69b456bffb207463c1fff5228d07080b9006accbb55"
+    ]
+  },
+  {
+    "group_id": "49cff5b001a621c48873a150f79654d1d6147561edc48fa0dfdb6d292e7560d5",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e2e984d8ff5be90683e403947d1a977e1172af5c756b33437b4fddd50bb9b15c",
+      "034e33cf9ef222b9c1f31edaed4fc6a5ad38f0e21fd5aa39c6683728dc20477c",
+      "9708926d2edc6dbc0c624cee5005aebab684ad4aaa840d76f9736e83fd1541f6",
+      "1ff4ed52b2a9437602e5be0481d2fbecea7d104c5ccdff6b789a56430846fbb6"
+    ]
+  },
+  {
+    "group_id": "7e9f759e2a4bcd5de9c5c4e3edfa222750fe493aa93f1e0d120a8ceb37452836",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c4cbc82d3c86afda4419b52bef4366b875f7bb0d8f9bac956e9f86dcf40662d4",
+      "80803c1f9cebb0b902f9c382950c62a6c44dd248db0639b017ded9479e84616b",
+      "fd4158848490372be6690604b8d0fecd83b4a9e46792497b4ee1d10c52911483",
+      "13cf7a7bf3615c4df6cc346c506e399f91eabfac88631c61d051cb26c4ae64b0"
+    ]
+  },
+  {
+    "group_id": "f5086f1b49050b51b0205877ed736da7d6841d35bf395de9ad7ffa016515c631",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "886d61deabe845934b5e4a8b63466d23a8087361a7bad47b59656caa550c8d23",
+      "e021ba18e2a4bda1377a8b25235fb981ea877ec4a1b00b57573960771f6f7d27",
+      "81d2af042fdfb354ed79d3c7f85490830678f6f23d5ea56a69a4272d1eee9db1",
+      "4a7c3c3f9b1fe3160e9eafa63390ffe1efc224a30c2e5ef661c7e344c1ba36c1"
+    ]
+  },
+  {
+    "group_id": "7945e82fa327631fd3fe40d32c16511940a1fa214c1bcef0b34efc2a977aa01a",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2a136980250a22d885c67d819cf8c162b76ba92466186a93f88f8a2fb4af5b2e",
+      "de119ed008b8224665fb1c608a3cdf1018096c9686511bb0933a98d307b39667",
+      "91b1f814b1d833c68cb37993c2c26a47b128810724976af5fb15689672e34a8d",
+      "20351417d94f99a067159c2c1219f5387702c6a369e3ad02760bb84a9ded7955"
+    ]
+  },
+  {
+    "group_id": "25440575bc499fa1e215a2234b201dfb3de56d2c5057c3549d33f2dd014a60b9",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "39eee0ad5dd4672053026d4ba229397b19f0a049c8124af6f4ed1cfa75d58e8d",
+      "c065e83dfa7adf088dbe0ef8b709a2b551aa48ef8054797d67160ada4ffc32d5",
+      "15c108a8f4e2174960ea49f4de7564e2ea75954cca757acf96d7c01d7173d806",
+      "49163fb9d9df6fbd7fea3eccbc142b56f5ed886be823e8501595031f3b13a885"
+    ]
+  },
+  {
+    "group_id": "36f656481ca9f74731557045759dedc404a9b411cfa13b5c7c6be4eaaa47fb0d",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f17994d983f2139b33a4cac333719b17ebe308b5345f4bb690fc9f565b311e20",
+      "5a4b2745a00bb8bacd2a8220741edefd2c8291ea9fcdac2b1f0c30e687c1c020",
+      "a1c942e1fdd890bac807c0923d3d7bc7a93cd3b1e3902e3bbd7978a1be48f84b",
+      "b38b462ecd51dcc368f1f45a1be57c5fc3442b6c729a298e47dec5f2a7aad603"
+    ]
+  },
+  {
+    "group_id": "cf83f1e017b47a3593a66fc01b4dde784d7320299ac1277be2ae89b9831dc566",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7e7d902e95a8cd1d9c3f6bf18f31d9049f3b8be4cf2a1c72dedc5ccb451a63c6",
+      "f0ae38ae9de699924718580b725d8595bc984d6bf353eb33bf1dd3dafac5c5f6",
+      "e649165949954c0c174d77533d98a9f2d47812f5af43eb309d2a1dd3850dc7ed",
+      "a27a139b541caa581ba0beb724149891bf4f34f83eca0643fdffd726850aa97a"
+    ]
+  },
+  {
+    "group_id": "89190e94f5df3ecf0e97d00c8e866251743e8f2bfb4b0a960ae5f542ad83c939",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "3e036132cdf946d7689ef19799d68b35a399400eb6a7671cdaf03180238fbf1c",
+      "4ec300fad2803f4fbd04e3872371b6d7af095135c464337edc8a15a2ce26aea1",
+      "e30f33f22ea144c1abe4dfd292b1b3df835e90fe9ef86edec93b227e3a00d1dd",
+      "9ca788af0151ea01e6d07f0e42afcbde850511c5a15e435a3a7c27d74353439b"
+    ]
+  },
+  {
+    "group_id": "9fed61c527442a4e3cf2dea3b74be6f73e05d1194e6c2d9138caccc4ff8abc8f",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "76f1b01777ddc1a810d8b795f8e87bb86385725794acb29d8beafc398aaa66ba",
+      "905f74171f35202cf46f97af5fa1faa32956cf2d46f590bda7a65b1ce23ae551",
+      "015a2a54e4655da7dca353050400e555573a4140e43d3bb155b128863387e675",
+      "16c34ec848bee9810708b86565e699dfa4017397d1cc897044d5d7a7abec7519"
+    ]
+  },
+  {
+    "group_id": "3bf4e79cad435b806cb7abb665c616ab7797ea12c5ae7462e3664bc2e2b031be",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e86c6a6ebb9833c764327898d969ea163ed9aecc08eb7b74f506a8ab4e8f1b97",
+      "c75f1c135467648aea9b3fc1697319c160c2878b74fffcf76ce8d8d72910a1f0",
+      "3d48d2e5e0ff4a989c88c8f09174ad56aeabc4ed6ed5c99d16683b12ebac0eec",
+      "3c620b3ef7030d8b09dadec27ddd2b941b814c0a90a2de865063bfefb439454f"
+    ]
+  },
+  {
+    "group_id": "fc1f71ab85deda9b7a9b17690fdb431b4af28aa6ea6d733082329df76f1395dd",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "57ab5894a86544aa2dc57e9ccc35f9a36bcead12c394ad1f28bf1f48a9ca9137",
+      "940c7582e82f4303322916443a99c989778f74dc186838e4b187c620ad74697d",
+      "c9330da6dfcc7abb1a1ef398bb3d78c7659e6d863e7f3650a23e86799446eae6",
+      "6ec14700b0af2c0313a2d402beea83b040f9d887cba6a0ed836525855f473f6f"
+    ]
+  },
+  {
+    "group_id": "ab196d35d11a26f24ca10a1661701c1b0cf3ddbd287c53fb85a58992b2b6544f",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "233de59ede4f3ab0dde9a7b3f196078cb693f79e6729351b6f803d5527c60140",
+      "29b423f824df5a0dcb8467724ca0bea7400e90bc4064e7452cee8da674fbe956",
+      "4e74a095f52d058b9a90625e8cca70d53418ec3ad13b38fe48c2a2ae89a7ed9a",
+      "ab65740edb4b8ea8d4d352cdce8cd950823470c9fef9c5036a0dd5baf574d7e0"
+    ]
+  },
+  {
+    "group_id": "efb358d6ba4b5fb8d463599508138655244c810b469917c33e7faf6b28fbed0a",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d3a8f7fab7cd338fe407be85ca59c989fe09c6a20a9833547724fd8d18f8c422",
+      "4944fc9d77471c7642359ff4b19360f14c063e4aa395556b80f2fe70bd2fee16",
+      "74dbb8c648ba2c9058cbaaa72c010705e00984318aaed8c7eac1df15c1fa5f57",
+      "0f5143769a2ce907c2ea60c3ae1518eadfc3f6d142f109474c9393ddd746fa9b"
+    ]
+  },
+  {
+    "group_id": "f1c651fc9d5d01ca43181777cbdb8a22bf48df2e9ef1619a00a8dcc788f03b0f",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "be34979637f01e4af84bd490818e6515e97b4ba71ca259ff30dbb217049748e6",
+      "a287f18a109e3e2920dbec8d6210e6e75a3db08d0e634d623ff401e06c7afc9e",
+      "c98694134d5070e53b791faa90b63f28b2da00334d309a81f54e00352653cde5",
+      "d0b9584a27e87060e4bbb4e8b5daa1a5e5558c0f5ee69580a40e20233ac6866a"
+    ]
+  },
+  {
+    "group_id": "64071a33979b8db95e103265feaa9086006e8c5a07efff47f7b8710ac18c1966",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d73ceb06bb3b04da3a56bb05c222c1d18291785202a9a6e90c5163d290e27db0",
+      "04394fc50cff145824c6d699677774a85bf578dd60bb2670ce6fb1d855047f7b",
+      "d92d520268fb7925ca74bd986f3adfeac49f14136f568c9e0943011440d222e9",
+      "b6cb5b3e204c75fb6af88e01608038a0d7e32f3e168b7e9fec67c0e8004cd249"
+    ]
+  },
+  {
+    "group_id": "3db396cc5c11915f28aefed0775205b83f245fad3949e6234182b3b47bddbe2c",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b3e49447a9ae9fd537027a8e76e780e774e0c37692df2abb1dc80b49b6276a4c",
+      "d600e276778b6b092431febc16e2612c47855f3bbb8a83f425f3cd0da7495ba3",
+      "6921b82e6314648abee1d94723e898df13d018796530aee9d7bd043c397fd315",
+      "c88959b36704f07d174d6e0683efc83b11c41ca37a31563644d313477ea5b163"
+    ]
+  },
+  {
+    "group_id": "b59961560bebb693fd0016b5e0c9782e976dd677cd93be380bcde32b5176d60e",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "21e2af647ed22b260396f783f7c72c63febaaeb28fc307159c7dce644ab66e18",
+      "5ed4e7dbcef9bf1d8792ea65ad0049048a425e58631a30ea49866179f54be07d",
+      "843e8864c4cf9299126c66ab4891630818201630c61a9027ae0ee074a56ec542",
+      "1e57a62c5877b9e31c53bd8d0819e3f3cfac7a796c004ceca23e479795fb82c0"
+    ]
+  },
+  {
+    "group_id": "2d1592ca373bbc4f6cb38c2ab8d46b3208c5950cd91c9961c9751d8d6f91fbeb",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d4c17c639b21e8c62e73da10c2efe40f72166481717db22a0ed72e3b09634417",
+      "42050bbf54f78cbc636b08fe6a65fda05e05a67ae5204746a0b95e51b4f04064",
+      "c64a12b954a7b7dc8f663835e42ccd435a7cd91d46ed427dca2b02dff464393b",
+      "52b9ade0e89fd7cca30d2409f9588ea7c73901da7e71f7ba38c3123f3acf0718"
+    ]
+  },
+  {
+    "group_id": "66e212f1079cc9144cab93ba66c6c6b26bca5c9463e10a660a64d5cd7d79e3fc",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a1224006086e4546faaea9dc0d27b2bc3e649f0395198240815c827ec6d55da3",
+      "c29e9ee6775d227478dd65b38adfb92d14991bf6c52262393cb51a083acc375d",
+      "842a34742cf5486e74b717d3e9134798679542151ed74030c3d1d2ad306caa5d",
+      "63c67d9c0cfd6bf79433a43b811667ae4cfa1598abb34dfb688843661764f094"
+    ]
+  },
+  {
+    "group_id": "b823b4ebf4bf6f7ccc14ad771343af65c42b276a41d47ceb18974b2ba5192952",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "81b59b5891302f7a1f0b3919c8e542dfd40100da1d72e56cb6e4c758021a886c",
+      "4c2776868db931d17ecdef5b5d33a099221889ae52b6cc52d08d6d907962f68f",
+      "406f77c53af55f821ece271cad826afd9225dc5688149bcbc4a813d82f75ecec",
+      "3948a413b4368e2b55ffbe2abfdd35a199d8f20e839b86d3fd5f7dba79904365"
+    ]
+  },
+  {
+    "group_id": "6b82ded21e02a12365f7f5fe263b27a038ab28aa80ed6496178f1318a2198472",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ef02dcd68439d9f2e64afd6f31bdcf79a8cac13627700eac15aaa4f603bf7b86",
+      "14ec4fb1a51759de0249b18e13916b58fa96c5576392e631b32b283d8866cae6",
+      "9bcd48737a20ae397bbd321e3354f90d0a951eb396762437c75e70bcbcd8b739",
+      "88fa16843c08d37d50dd8bfb9bda584206aade5030f561aebc5da7803648cd38"
+    ]
+  },
+  {
+    "group_id": "7a39aeb142be269c08d2e25dd6508f0bbde3f66dbaee3cf0c8499ffd2eabc1a8",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8848332259f98ab3e78ac2c429fd8dbea19cae46d94e1c2e400652958975020c",
+      "a4a4158c61e4d05a7b31e8f094cca8436d0de4b5c726dc93bc0890eebf5a7344",
+      "b03ad5a7e45c920cb009067810085b64ab2b419d8e2b04370e206b10bda193cd",
+      "8da8d8a8f77c672495028c7c0408ece995c14818b425815a651676019206c9c5"
+    ]
+  },
+  {
+    "group_id": "badd3e42ca6d1cbb93eae04155f2c512762bf7696b7fd97b8cb0ffb1a5829480",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "256e697bbe72e6a8500f7c351b37e5114142de09ca9cb63bdb7a076d6ad11a4e",
+      "b0f91fb750a317c1a95dd078ff6a5dd5f6e0566e22e3edd1b4d7560e3a00e933",
+      "581aaacc0db56ecf9a634cda2908069c36b45ed55eeee709760d23479dc785d9",
+      "13f104e5f3697f41bca914f9ea380e8f78f4de6267663f91fe816c9722f87fc4"
+    ]
+  },
+  {
+    "group_id": "ad1b0a10ccd5502913e90770af908c2c2aec89be48226951be0afdbd5bf1f25b",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d02c2263bb9ea6f9378aa7fed1ec502c11784615188e7cdea6fd055afbadc43d",
+      "4d9ef9df6111bb15795a45ea7380af2460f8c3221efb9de834b857f1e79b9ba0",
+      "3050fe039be5242ee378ffff24d9e543f3a94f2fc3d0aab686aee41a8d8a3fb7",
+      "82a64bb99ad400037f55e5371c0af4aa1c6b685c6442c5ba3ae162b0da736705"
+    ]
+  },
+  {
+    "group_id": "3b4e553a6fb264bafdb16f9fd9f9f9b287a29e2666fbeea41298ddc6681e5167",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "323fdc09e61d7ab123f5927f4805142bc5cb005a2545a56ce8c0d726fddd7d1a",
+      "f2f6619659f1798f569fc432937243f1de44a10b68e88b6bb9fa9f40cfc4adb5",
+      "105c913ecb3bd09cb07c7d6e51f843afc8ea627bdfb7a510e7144a837c30594b",
+      "4f95dc12b05c3fcddc3bf0f45bdc1793e0e4b09d1acdecaddd987a598a462f7d"
+    ]
+  },
+  {
+    "group_id": "13378e76aa20375ec0fe90e07cb9aaf0a8fd4e545405d017651a30e775829901",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a5404d7da3fac3d33c3d81eb1c4eb197bcff2cb02ef29ac51a00ff53c1b11235",
+      "c770404bcac6deec42bd988ff1458dd4555d2a60d34c61121e73c8ddf33ab2ae",
+      "06436e40c9ce6c245859f8880d2546c52b9401415f2ed9b7e0f58e4abfcca5ea",
+      "c9ee340fb3fc0ce9710023dc13fcd0e17f694eb461d06fe63c3c91bef33a33e4"
+    ]
+  },
+  {
+    "group_id": "a99c0bf8fddfe375b6418b81064e0ea4cb96edcac13c0fa0597a279520f4eb61",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "0b98d362c991982f4712f2ecdd95e734d46b8b21cabb10478bb1e381b6fc3c63",
+      "5723397f9010d0b49d4613309e1510790b4bb707da78ed57c9203ea147537bac",
+      "b7c6642fcb38639f08e131cbd4ec6987b788701f678587a2dd71ff91653bbbe5",
+      "38bfb0f5da00235d06946b3ba3f18f1335802c62aba63ec2f975e153ee8747a7"
+    ]
+  },
+  {
+    "group_id": "31a5cd61923f3992b4a5b99ffbfaa703a914d8294638caffdd22ed1a2b9167d2",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "4f929e2f347165c83d2f456664fd2af77d9cdd58f4fffd4d8c4ace01bf3ed752",
+      "4b1ed6841b7b4596b6a46de8ef052773abbd95936150e00b32302d62c0cc646d",
+      "e9ba3483a98c7117ed517b6d079ef3b1e9251acd314fa9575f5bdf7e40a7f2a2",
+      "4b301457e82a07924223c1f642d0917b3af348c9539f56b50fcfcf03370fc640"
+    ]
+  },
+  {
+    "group_id": "f190aa553f51f6cc75dc9429862fd19ba35826806d5839c54baffa20c5200f99",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "11e423c464065b25d3e3afa273844a97374c8cdc770a2d7daa1df8a4cf438b6e",
+      "987b63076d22013b4a40794ddd8b40930ca49a084b9f50c51f273ac74284b4be",
+      "2221f4368cbe2a6c538de54bb1178274310a03459b7a0879aee282dd08b0e400",
+      "922c6e92383e244f598ec762b1fd77c93577bbff2e3f97772fb436f2bc47a8af"
+    ]
+  },
+  {
+    "group_id": "aae82a8e680d5ce5df3394b931044b7134f9e85413ea71ff7f52ed992c79ceb1",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b78fd8ecf862b4deb1be82ec99b5d15f53cae183fcca096882852782c2251bd8",
+      "9bab717fafded498983520652aef03fa473e9dd63608a2baab084aae0d372b4c",
+      "b180b4e74faa26c99419ac3815304666d5cb787caa67fb302a8fbc09e87a9e7b",
+      "d7b79e2fefba26e2ed001845828b30698bb0f01031a5f7795fe2a20500820377"
+    ]
+  },
+  {
+    "group_id": "cde722ad82919fde67d9efa926b7b47cac95907b3d87b9aa3a9d303ffb103763",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "daa012d8e616a13931945fb52f21f037e09ef9d746a5d38672ab00a44fbcc510",
+      "34aa74a68f411008e1f7194895523cbab2230a93d1b836d9fd3696a2c7368a0d",
+      "64f3ab82ca9084f4025d15bae373b9da6395254f8c50f296c27c2a936967e1ec",
+      "7d1c4a455466f317ba25f1f8f0eacf5f0561329059b6749defc16d0fae4025ce"
+    ]
+  },
+  {
+    "group_id": "08adc49113c93244de4f072be58ec6b67e438f877b9818a30d273f3a698c2546",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6f2618b91a557b870f08ccdc84856faf1112309096852a12994ea3d07e1af58c",
+      "83ec2cfeeacd7158d0d77cd6e0545de3046e6cca880e31f37322eabfbd6e8555",
+      "5b69d7bc48d31d569eb1cd84cd2a97aeff09a7c8b5c2738a00d62a45a80282b9",
+      "9d764cac95ede854d83f49ea92085d8eb3ea18c5ce628b2424b6b0042cce8852"
+    ]
+  },
+  {
+    "group_id": "df4c540229debef725f553c04cb4c1b3e5138eb36d1d8f9fbd60f87ec13c727c",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "03a0085ea2bdc636ec7b784eb7065f35f4161ade35668de013f26e259b29ad26",
+      "422e3141c9c227ab356b01490bd84bc2ed508ace9448211dc95456c2522e1432",
+      "abaa3db7f1cddccc92460dd3c19fec2b99c993ea0da3794a2c3647bfce5fe790",
+      "7c239c96e4fcc6237eb01a34fd7b1ac6807fb2dccc6dfdae3036d5123f81eb1d"
+    ]
+  },
+  {
+    "group_id": "c4fecf3f8a84297f6f50ac308934a00d2f7669d33036a40af9945142a0537f3e",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a0d06fa233a03568c1a0fcaf25157ab40fa2ea4386bd9b12ca0549b0fc32a414",
+      "422de34abf9b503b9bbd1c883033cefdf31354b8f537e3810ea9089ad14a7444",
+      "fe94244477483b36e01183881fac677aee1cc6f25d69d92f0ff87ce54f46666e",
+      "607ca76138df4982662c0f618d1d50f8217a9e92144f35ce174531c3d297f36d"
+    ]
+  },
+  {
+    "group_id": "c7fc1e512f27e78aac6817442975873c76e9ab6886f99e064520ba441cf3f9e7",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6e2a39a6fae7bd937eb88ca7c2d8908505a2b7fbfbac677165441a7ce5d09970",
+      "73fe55de03ec4147e20d4d0dc419275773f24b938f31e84189c54965bd90f002",
+      "4879ddc9d4a257a8e533ee0bae989d10673d9877aef0e5b43bc9d64c54e64963",
+      "9cc24da9f1821e07cdb1ea3ff86643dcb43641adeb689f8728677f179d9e397b"
+    ]
+  },
+  {
+    "group_id": "33423c238cf95d5cbe6d5b52ef25508b1623144987142467cf154f5b7331df89",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "16b67f21f7a3a4138020b80189e27d6bb33796c8c163b98909e93e2cfe5483f8",
+      "3aba94c5e633ff2f10839ea4663c1ea17c3060a1ee2aa18f393d327838f9d514",
+      "6991baa37896ab12c376d7c3e6b56a7cea18ce80dbc43e99774ad4537fe50738",
+      "5f3ff6be10b9180639bc793fd9721a63e6aac2ac1331fe86af2c6dad2df461e3"
+    ]
+  },
+  {
+    "group_id": "76c09688dabfa7850084ea5b6523f9ae14c523ced98433aefc879c5986b4e23d",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ea98544e9827ec9950586629ed5699d82cebb4cf3cb138a025ff85240dc7a362",
+      "e0c9c75532eeb5d0d1717be04054d8bbeb2830c9112a60cc6d51ee223bbbf47e",
+      "786639f121a23b654da2e5373ee9805ef15fc750493c757d42576b5e3913d282",
+      "48c3e102d9c5fa67e18b1e7dcf517134df8102107cd78c492ed5255e66e94095"
+    ]
+  },
+  {
+    "group_id": "1c23653d160e9946c12c4148d2b02a0cb8eee4f360cf50a49374bec7d7983820",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f6ec639c0ecd120a20191588eb32480f74627f3203d5a7a8a4c0ac74be60b3f2",
+      "b5adfc451b6df4735bc6c45b493b78e68205390859cc87bf04243c9d53c0f666",
+      "0ff4062c9914ae342b343c816c7ad460a9259b38e173224866054d4b59d5f80c",
+      "1293be968b336fc65c5b85daaa16fca0d24abe8083609eac3aa869d43f05bae3"
+    ]
+  },
+  {
+    "group_id": "0c9fdab9d32b5089a13488cfbacec315dec5b4d4b2fd8877d4199b963bdbbceb",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "bb7c3692419ab72cfff15a7df659293f6122dfa61d206301a394c5b2b49ec554",
+      "97f97676ea92bfb6342282820dbe08779622e9a24e44a5b2b14520782e720df9",
+      "eba4e9628ef133cfbc88e899c48afd229c620fb23f2b6c5329f397fc4d3a0fd7",
+      "686f30aa38ac28368d841f026215dfab851ea7f8669da7488209d24b3336f4ac"
+    ]
+  },
+  {
+    "group_id": "6ba10a09531db16d601ccebd09a920e960edae60f674ff31762078fc490ec557",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b45c48b8bfc8f577fa192a42de226342e8df7cd7967aa4eb549e1a337f407e8e",
+      "6a6ff54917756ede0056752aba2e8a6c23fef65517377c6262981b15d7935fa5",
+      "fd0de1a6834c8ae7442c70d643a73a8ca5ccb64716b2912d08d733d6883406aa",
+      "8f67e6f866d0768c24964d4f3848cd868acb20b6eb3c26402459e17abc471e43"
+    ]
+  },
+  {
+    "group_id": "30728d0cf83059ea8fea33dee9bb83537bd6e0eb570f5e348dca811ca30a23f9",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "72c86e02d299b5bf3745378e3ef569a71348355870bbc46e28ce52103ad483f0",
+      "1ed49e738d8b4d6a704a535241776b2e14a3ecb4078f157182d550cd02d71b16",
+      "5a4cae51887f6f731595384c8c35da7d83d760d47c3417016fe282a487ab0d20",
+      "50f5cb657468d07ff58eb9a943ebe166f3dc9381684cf07586a58c7413e75520"
+    ]
+  },
+  {
+    "group_id": "33d7243150080d942f6ee8a45ddc14ba0576c987ea677eeb9b64b6800be90157",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "32b67d311384f0657ffb8b5d3421e9a9fa01490dfb455410a304f9ccca0e425d",
+      "0708be7a2f68e1fd8e48b6c34f8df86be0dba07dc03d9bbd89e918cfc93276bb",
+      "3de5bd37f1d07152f9602e672bf04ac8d2b1a4f04276ffe80db02431f2830554",
+      "930c79cd5ccc02ac2baeb856cc4b511399697caa195f8e37ea8976438de6dc07"
+    ]
+  },
+  {
+    "group_id": "5a00075681ee78536c0e0aa9856e6288644c43ef2eb8f65e549842bb226b3a6a",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7d5100a07e0a3b30dac81397122cf4efddf2cd60587d940433c1b9984f3a4b40",
+      "289324909aff873b67a2451991eb7e64927c23afdc5f9482d5070f20f6df3660",
+      "c24610ba6012b39fb9e4e7686cf021b2f557853ca1d609f80a178c3dce0a5044",
+      "5f2517ce78424539e65f21fbad737c3026624aad19fe20ca45096744f63c5e99"
+    ]
+  },
+  {
+    "group_id": "14b98759959f6869da1f971d830521c214261143681d6550f7f7095b64268780",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "3c148d2725ffa79b906c811680cc4f375bca467082403dea51dfb7f7a3d3f1d4",
+      "31a9fdd087e372395cc18880127d94fb11f03219cccfe02c657985c4fa059d0f",
+      "c71fec084b780101f61661fb292580b0f8587fd31d245ccba77a5876c9b51a9b",
+      "aed42d77112f2de5d80fd7150ba385c0e8cf469dd7d71cbbf9e3e8ee2d263e4d"
+    ]
+  },
+  {
+    "group_id": "03df317ca11bbf89c3ff8e635df15c8568dc6b21b7fb63859caec0f85537e597",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b6c155eee498fc02cad5e7366c52b350e66bd93c3415cc42391f9fe2aec4bb29",
+      "b1b88edc1fec11286448d7f0bc1cc2b2d7fcf4aa6b68e769292f17fa6aa610dd",
+      "820bade8f4fb9b7974b734770e6d4cdc176ed365ba675656f35733898b52d2f3",
+      "35b6092a2dc9605f12519f4b8bf8aedac3f0874a9c6f4000b45b57c6cae9da47"
+    ]
+  },
+  {
+    "group_id": "c98ba5a1dcf4eb60db2fb6f5928b1a5b15fe78b1d89b6fbd02b8d6462efa1eb7",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ebf1328e94075f76f443cf427eb5e20019ac8cb0b31e6e8de9bb0679a0e84764",
+      "36cca1988e2bd2469edd0fea3d403cce9dba729ff9f1790d0972419b887a0553",
+      "eb2cd80d91460f3c2563de84a9d08a3e144b7027fa6712866f85be506d7504bb",
+      "1c3ca30c2dc749909195e596963cf563e820ba4c7a4b9edb447804fe15ce1706"
+    ]
+  },
+  {
+    "group_id": "90b2cb34a3c53897035cc5d0ae667c1dda8a1272a3ac80987b906e8b802b733a",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "cd694b6b7d770939d67e00cad1d0c13850b6e5f201cea3112ba080b9eeb73aa7",
+      "7be4319d75119b8e4b3483ed6a7a461e1afd4fe274e5b2a08821e1cbc4de6386",
+      "16eda625912c6ab58dcd3c50b6fe6810023145351f3ddea027c6c2889b4cd884",
+      "3fc5a0c8f06159979fecf1cd0fdb5aef0533ee9d85aaccf56485eb8a15d6206a"
+    ]
+  },
+  {
+    "group_id": "ebd29d4ba6799f2bad1c273a55ba9675a0e008b257bbc6c3153ec4674c2a253e",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ed625505bd50ff334d8d7e0cf47ef9edb460d096748dafd57c1cad346b4a3a19",
+      "b0c5400ce9c30fc3d5b9275c9bd0e93f69466074298be7aa25f23b59f29890c3",
+      "77ad5d99c8fd5dc1b163bafd7fe98c556e3235bebf2917556c3db011a08ff032",
+      "34cf0b2334b1e2745caf6cabc534c5dd4e29695c6e1a2f4ce88697c6ee9fb789"
+    ]
+  },
+  {
+    "group_id": "e49f20b32e1bd73458556628e0cf66e9deca56dc07bcd9416ea8a46e2b6b346c",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "720bcdd410c2347f9fd49a6f9decf97504725aaa3af628d340583e35405d622b",
+      "d5a94b2b23d38983b7f943fc6abe16d5fbae725c618a2709a59f96daa826e421",
+      "5a963a56027cc9e269fbcff5b989c9442ee5270be08b7df7f9d7dcfafd5b7289",
+      "e5f1a012fe2c36d06fd587a58b574a5d3f1801187e38a23fb4f61478d99cf4ab"
+    ]
+  },
+  {
+    "group_id": "daccd94c9a269162604091042469eef3b85c69cf5679b4e518426527753cbe53",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "334ad9697d4c43b22cabd66209b8e27ddcbdfdca898412fcf9066523a96fb59c",
+      "e187dc02a29eeb8cb0c6fa1e36f656b48f1043e51d702aaa1df1aaa59f5b51d7",
+      "ff62687228c8da2413932337239e230373c7aa0b204a93113e85acb479e4fe4b",
+      "04309b5d20c73c86e629829f08a6b80a526b01dc6193c05dacc1574af15490cd"
+    ]
+  },
+  {
+    "group_id": "ae5829c38c8c499ca0c59fb6790db4ad1675808ba570438f872e94083e86b2eb",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8b917795af90a4204fb00916c6ba3e50e61bce91223c40ad6570a4bd7c71b296",
+      "990f839820b8bf0821627bcde88b0e614f9dcdbfcd499f4482dd42adee38cc98",
+      "cc512bebd579cba80ba02e8bc13b747614dfad8d454af7c8708c968e59e2f05d",
+      "497a4bd1fa2db24789d2cb4130a3cb93a11a1e1a45932caa4d51501c6bb4a124"
+    ]
+  },
+  {
+    "group_id": "f6fb90aa5db939ef0a5b7048f6a09b0b1d83069441d58c3739c56ebe920f655b",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "22a95a6207f16499795f4a720e3af34c1ed27874272d53ba0193234fb3867a4d",
+      "2dacf807e20ad7f482fe3eba97de855ca649d0d93ff9e964bf40a1587ee31ef4",
+      "3bef0725f6ee9b3acbf1affe987095ed988c3592acda4b1e8b1b98e0b28bc683",
+      "1f9aee00632a183f6a8f44dbfdb9752ff98becc0495d644619d8cb0a4ae5f0a8"
+    ]
+  },
+  {
+    "group_id": "ed5abebc8acd651d59e07ec8ab06dcae0ac047f5e12b57f41be98189c6b7bfc5",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f50b3793c50998dda652a66e86f4eda23ad22f7e934738c52ee4fde3e075d51e",
+      "ab2e0f4725c74577f3990e729a82562742764ca22c306dc7c872ec424ce0d98f",
+      "fe8c4e53b2ab3ba3b7643024dbde0f2ce7338daedc5fec7a2f09d60327b8180c",
+      "1fd868ca76c1cc6945741f78f5f21116a5d6c74ce8e60185122bae090a298ca2"
+    ]
+  },
+  {
+    "group_id": "0b6aa3cd4c72fa27ce95de82b9a71d208e842bf6e2ef3b8e0930b19101af689a",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a77fdf3076bb5c21796e36dd293956f1b68f532ab111637bb56144b493c56cc2",
+      "c6d05b74cc2e2f82e573d7fd0e79c3101b00079df1bb9783315a3a3afaa1ad04",
+      "4361cb4df6660041d801d1824734ed7cd2ff6512bd49de6175e81f050058a0ee",
+      "63a0e228d5c269f956276c124255d361c729a3921f0bee2a866ceecf61b57115"
+    ]
+  },
+  {
+    "group_id": "d03db1ca6674b76a29851b8d26555f8345a09f7893dba6374e16f7a0ba0ea5ef",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "0290565e2ba155ecf2ec9ec7f2a1500c4cf232d586bf9d61f213e03d65b677bc",
+      "c773f7a460e3f6502f8c8fe4c6d0be7ca1f1d96526dd90725d99e74a8439ee98",
+      "64956f8a29152f59c7a5202e1c8997c6115e0b96d5559c0efcc115bd4062e6f4",
+      "7af8723cc4fb0d7528a3c156cba7dac17502dd7fa41bba9aacc777e81db8aa47"
+    ]
+  },
+  {
+    "group_id": "8667bb147f1dc95823b57f8af50678c5b6b336227231671c18bc63e3d051a766",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "3708e1a764819cc5b86a29b5c5db7aecf012fa36677ffe018346cb73b295e6b9",
+      "a618e5acd4d25fa5caebc0cbcf179fa32f4b95a791b05bca1865cb9248ca19c2",
+      "1f7b89a53170b5175ec3283fc5f16fdbd24f4026f17bbb171f7880f9494bc8b1",
+      "76f869b2da860ecf77e113a7ee1bead0223f894a7f3d63f52b7a9b3ab6a35f9c"
+    ]
+  },
+  {
+    "group_id": "68d99323c1f03096e2420fa58b5f2240c27bd20b5d0e76d104569ae4f3a3f7f4",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e859f7dbf6f1fe5ba1920c718e1e7a1ad43b7c3c75d03fc39859e1850d335e8d",
+      "12684a06f9176c5d8b98a8d21c61eaa96cc7649af1caa6556f24f6a6abdd1279",
+      "2deb8802a2d00e5319ce14ee755cf4b57a889631bdc7ebb315c10d940c782c9b",
+      "6d5210f00a732c85ba3be4a43b485d5d14b3118d4ca76aba3ac5a8cf6c0c927e"
+    ]
+  },
+  {
+    "group_id": "b866fac278b9982b4bb35b9a6a7885aef96988e3fd5e8ba77824b473de19f15d",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "50b0e9c5df210af8369d06e2b20f258cb39524d9efca26731c077c53c0106573",
+      "979dd7aab4a46769f3e96738f64947cfd6f034f17d12f1ec13f094dc5c920eed",
+      "005cc70e3ac337bd09fb571ade62881e62c701cea11c20e7c243cf747f17975a",
+      "8f7f427f3cca096af3d0067815f88d89500872bc773513f4f4d09c75c1b7337d"
+    ]
+  },
+  {
+    "group_id": "129aef42a4955caef2f06bb16e0dde0ce3b1395a60838a8fa0d381b9bf0ce1b2",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "054973bb6f73c51ea0a32ed61bb6843b4802d35dab5826b5f051d1cbd24634a4",
+      "3bdca2460464831332022ed0e837846ccf9bbfe10a71215b6956c85884d4d421",
+      "5382fc42714bb93ee0808c359e2b09e516d90389b77789eb9b96c75d69d7cbd6",
+      "25a71071bced93685b413d10259fd8a5b05cbd050cc45863f891dbace3291e4b"
+    ]
+  },
+  {
+    "group_id": "d7cf2962bdf6967eaca06afa834d9edd48eaadea5ee0062dbba1dd933a775333",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "274c0c56d0dcf9ffe29597f35f8364547a2e4f9db93a6ee4cd6a1e6bc4729c35",
+      "2f7ce7d7cc2db769fbaf897fa84874f31453f090e932cb952a19610f29ab75fa",
+      "f539b5f1cc9576bc68157dde6974639921a9719bfd67b1f923b95e23f7026cb2",
+      "dfddff8dfd6281a862e3363b57f74b3b531f86e955534111513081df9e7fc138"
+    ]
+  },
+  {
+    "group_id": "ddcb74876f941996ddd1a655fcf56a9640fe7942fd10736cf338f69c112baffe",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "cae4dbf1de059ec44e8d55f38566ac85f5af26833ee688575632c308940401c8",
+      "d471569e14011e8333284a4e0f33cb404433c0a2df99bbc652d7eda5661feb3a",
+      "2a0803635eb47a75759c6018630f173299bf783d1b9c42d0eec06ff5e9e9fbe5",
+      "c4a420e98659fc83b2b1090310c3771c0d6309d1a4820e25a38492fcd8e6fda6"
+    ]
+  },
+  {
+    "group_id": "6f4c09e9b54b2869f0ace91b01cb6c7cb33a92b72e6c3333f9b67d26596fb5af",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8731c9e15eb881fc46ab66d1d5a448f64291c85fe7ae1110cfbcb40a07b80896",
+      "1084c831e446d379caf8ff00f6ab742f2c4fc0d4fbadc84f0551e2edc8f47922",
+      "ab42e7f3e1b4a30bfe5c3dba23de48350486f20579778f8caa8eb5a3273f3d40",
+      "1cda21d63bafe9b193cad3f810056120116a3a5a0bfa5170e3f6baa82881a7b4"
+    ]
+  },
+  {
+    "group_id": "ddba515bd1e250d0c684630ca9278297107155398540caa7996f40231d115de4",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "d80dbbdb36a54d15426f4f47a4768bbaf7db0c4776d62c86b7045ca00d4706c8",
+      "cdacde3a0315c7adc47483ca7e320e2907ae510c8c62da7af582d2726367c33c",
+      "869fb0ca7ddaad732c2ea3b3be933b39f8a1df29767941781cd94d89b4b4966e",
+      "2da0c85f1430d799ce4f5224b247fb641ab22aa5813f610cc8b0a89b75644a49"
+    ]
+  },
+  {
+    "group_id": "132afcc2c18bc65707d0ebaf98eb0c0045a99d15f2632df6e0bedf59bcc7b1dc",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "619f9a0c8d12b696a70a4e0b4225db844885d3803ef5646b178414b2f005d89e",
+      "a02cd6c2afbc9063d4cdd3fd04e8c655814809e608629a6f679ef515cc168ea0",
+      "5548203eb2888347f6cd3280952128c41a53988709cc1fec5a7991a62bd4ede2",
+      "d05bc34d44cbaf4012721536d6ab4e98d1dcb0fa35d78b48fd7b352f5dc43b2f"
+    ]
+  },
+  {
+    "group_id": "7d0dc2eadb60df99392c774d8ecfff4d20eb62bbd2c814f674f0601d25f1f1f8",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "86df3af2d2bdfdc19973267c853bd320d34dd5ef44cac52024abb991da19c4b9",
+      "ea08f1e824f7115e086e5e9e33a34503c56032df988bc1a8e5764d65f130ef4d",
+      "d65a2b6be9a2167ac86ccf46e1422d24e44771a684d3fd9fb99ae0dc536be845",
+      "0cc327a33efcb37186733bafdde8dd7ac31a8dee14e1878d4b7782b98d6a1b6c"
+    ]
+  },
+  {
+    "group_id": "e306b9af82668c7e2c26a3d6dc9decf4e721dd6325e88b093743695cfb6bfd21",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "183b704442c078775394314ed62f1e97e9b6863fe3c9daa54f7de9f628b8cf75",
+      "d5dc85a1624dedde865ae5aa14ba826b44999b9fde530b3e081a23abf493f75a",
+      "0a6735ba9e2b16771965717ba0c133bb170e0040f02a6666cb0d209b5c6f9da5",
+      "62b7bff268bb91a8905773145d1273589044b8830718b0e636df3cf578e0edf1"
+    ]
+  },
+  {
+    "group_id": "5c718bf14e52becd11efee2c449a43543cbfa0e5ad2f6f26555cdc57c029b3e1",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "844ed850fecd4f4ecb29a3f66aa8314fd2560f7c84d9c51873a08c03b23817c5",
+      "729bc05cbcb719248f26713a2fa3a7c278aaa177bf152a6fca26acf1abe1be85",
+      "ffa8f22d6a661d6bed7b2bfe07d51ad7a9c953a9dd762d2e5ca19bd4d8ebd61e",
+      "c1e13dac7c539902361c3b8a3f19c311cad79713d50fa5f82095c5d2bd7cec4b"
+    ]
+  },
+  {
+    "group_id": "1f54102f2dcd1788d15cfb47a082f7a88b35a5ff0b2ea17a0312c99a4db6940a",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "7a44d1719c37af7d9a41a53742f6d9bfafc71586878dfb02e8b95587f88e654a",
+      "847c9cc793d3021e1c3d7b95e26cf27eb359a294520fce2b573ca5a56736b8b4",
+      "4bfd635986786efc8ce795280bffaa69ac151faa9afd8c3af6f01ac4f8c10a18",
+      "3816c2dcf1b86ddfd0d712de92e629562753995be138e5e0ecb8f3cb462d9efe"
+    ]
+  },
+  {
+    "group_id": "13291f67a1e9d564ac6810274b213e70c559a96b0a0d7f1a7ad3162537c07e16",
+    "property": "IRRELEVANT_CAPABILITY_INVARIANCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e6003e6770acb4973edf02bd687f6830b0e4f6a6b19b6e7010bc725d5b8fcce8",
+      "e78e504cbb1a709d609ddc7fc3c883b6e9a9a5e70ce02a17d1c1241178a0574b",
+      "dfbb4412d73958ca9a21e4d2039cbb5611071af56aca5536be72c54f36c0c645",
+      "8a415d18529e503d59e10115eea4f999934624aa2bf40f6a775bffacaa38d50f"
+    ]
+  },
+  {
+    "group_id": "aad60f36ea454ae0db1de49399daf5c35ff6f45fa5d95385b2564b3876a40b0b",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6a08683bb4a1128cf9b84fc86e661a82ca15ac4a7903353608848c6477b5ffa4",
+      "f6c2a68f6eb5cd382d60dc4fbc6fe558e2100064a15ba2552aa2e51e8bb44ebd",
+      "d9a7699c6b4d05430d6ae42a678ec7ac7541c01f7de2f4af59f99d900aa3b62a",
+      "e2fe1c6d3a0cb7e4cdb5e86d83186b684f0eac13adc36a100455507d6da4edb2"
+    ]
+  },
+  {
+    "group_id": "5e0a3097edefbdc717a402561ea4fdba19bc230a7655d2c0c0cf7a3e8413c0f8",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "dca8f19555b819dc24cdfd140fc8dc6f7a1b72aa0b3ea411552f0a7d041aca1a",
+      "9811175654c73fe1e3572cfe30abd59eeb53b2ff8ce4eb9750871c40e197412f",
+      "d7489ad0e09ba96b58360e6376be1c7182aa47be33750cbebf0b388c8ece38f3",
+      "30660161257701780092fa8d38ad3c8beb65d2485e44944ce584aef5fb2ae227"
+    ]
+  },
+  {
+    "group_id": "fed81419e036ad067ebbe00519d1555bde1677578d11262593eb31ee1707c578",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b608c8e024e58759624402457aaf7a130575fd9dcc99b03af716d4ef56f4352a",
+      "a8251748744ebfab150bcd6787537f10353108895d14753aa37c9f353c637668",
+      "8f9119b1386132c88871db30169f56b03b209bff85e4945749b8d7565e3a9b11",
+      "9da02159e9e7ad147ec36d1621199a1936f5eabe91fa6e6a759f986c3c655fc3"
+    ]
+  },
+  {
+    "group_id": "65b82fccac9f50dde6b7689957d81ee85120aeab7ffa7de151d1b4aaebef24ca",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "8deb776d81abe51d0bb585ca3ab82468864750bf9f638e9bf0df058cb30864e5",
+      "23cf71072207c29811646d32fc02c8e6bd3ce59bbdad2e865e85ae1d3a34f2fe",
+      "4b4d84180b5b44d92aea1533a0bf4e249f145ca22341dd81c40eb4b2eba73782",
+      "7e131461a805c01a5b9d448f6b4c45e979378aa8ade9df28bfc9a018598de9e1"
+    ]
+  },
+  {
+    "group_id": "65fa119c370924951cbe0ce57c1a61ede0f2801dcc2afd32b5e37c228d2cbdb5",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "b56f157a9df4b1b95a96d02605a22c8fff3a1a6193f75d4e4846812999c0ccd9",
+      "3af6f2e20570013202df487d76e7c67cb7635ea26cb1b74169fe4dc5fce74b4b",
+      "599378aeaf701cc3c205308f1e849d7d20e05cb5ca3ae4e19511c177c6fe67db",
+      "6001e14576b5f2099cc2a6922a466798620c2d8d27c7be0e70d257d37a7dbe35"
+    ]
+  },
+  {
+    "group_id": "414b305e2a7fb9a037a191923b88dc10070894e0ba950af40627db92e95eb3cd",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "e8e415000a774883091559cf502029db9b9937f131e91d2e88943e650c54a1e3",
+      "4793b26bf516268bcb4cbeeaa068e5af1c63984fff20fcc67087c7973294c1cd",
+      "fb555f6f2cc7e8872a92f8af7158a8d8dba288fa943f6c100d96cda396cf9b6e",
+      "96f3b861ef4b64bd72752a44b3e2e30aa89e93a1a1332014ff005fede45a1404"
+    ]
+  },
+  {
+    "group_id": "0af8417548945cdff999dfdcfb707ce6040efb7275012dd8c9a160b624006f98",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "74e44276629cea68bd06bb37a77c1fe7d952cf19315feb33b5d8fb24494e9f93",
+      "40ec0ea1d025ea97c2f19f5ae1167aa1b8433566b0ec06076fa417b4b5f9c015",
+      "c79626891470e344361365fb20cf8e4a548ac90dec01379b33194370bbb9cb27",
+      "9804a3f2b7137781ee5f1d42c12b153a724a2369c5fa1e32984e5c373665ba21"
+    ]
+  },
+  {
+    "group_id": "dce044b97dd41f236347cae25ae9e5d284216057dee392a3a4ba3a2b5d38a62a",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "f0ce32968a00687b5254c994e3cda80a845df4b94c5ffceafbdd9277f17058cd",
+      "f74e85121a60d68b8f97d43f6fbfb4853170e6eb8c842caffee0ac79dafb58ad",
+      "3c726dc7cd64d361463bc5716939c9563fb63760c9812c62b2c2761c115db61b",
+      "9716fd2f9808872d8cdc5fa28fda547cf67e904dc607b9f774b0d83faa5510d4"
+    ]
+  },
+  {
+    "group_id": "4e75515f5c925b397c9834eefd96fccbba43ee4908a82324a2f7293a8642d617",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "1d26d5794e55f05df39d49988e71de88bb7553c7569adb4c47c87263b42fc8b3",
+      "86470125590a63d45a39689dca70db69b837ea5234847c906e8fe059b52c99bc",
+      "3d755e043490c618d6c09529ef64e05e5ff4384f77a476f29abdeddbe11510ae",
+      "a85cf91131e6fe65c88efe8df7a597489a5801964689f8b47962526924c0327a"
+    ]
+  },
+  {
+    "group_id": "790455a7b5fc79247f9f4c1be58c7b85d59e2448efd877d3edacee50d2ee9106",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "53699f76186b6afdf3f7f51308223adc9d6c02d450aacf34d7dcb48c671f967f",
+      "af184b897f43405e878adad5ee9ca3b174fec9c8cbf88b7651bbcc5652507d2f",
+      "d8e55f200a2523e452bba1fe10d6ebbadd1e160e130a35f4e6cfeb9ee215208a",
+      "e1e05757309136c1647b9ad5ae282b19058d5fbe22e65fc81ccecfaba7948e31"
+    ]
+  },
+  {
+    "group_id": "f2511f78adc5f91401ff8e0bc73c90ab589bb93e543e4fd14a623d423a694969",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "a12fff73297e03391060ffb891234d2e09766e61733ec71dcc569794fc964473",
+      "733121e31cf5dfdc89e6611534b2ee4376d8628510510c0bb84786934bbe9e4b",
+      "fb1adbf19a4c81158de9213f24d39403df9bbcc0857788d8dde9f24abc048bac",
+      "8e5e483a04d0ece70412f531ab92948c59f4c1ce43d46f4c85e00fd410de8ee3"
+    ]
+  },
+  {
+    "group_id": "9ca169780fddb3e306a0d6a1b53c3d38e87119bff5f554a987e0576932581cfb",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "0cf4d840b31e8212d3bbd8f192390e1ca7a36734d438fae9b5b5dabe16992337",
+      "2c039418580731f563700ed6fa5e24c779fc5d419626e3fbbc80431b237c770f",
+      "db722cb7dd1e2bfff7f40a2b53d6665439babe16034bb3a77dfd67030d55f77f",
+      "15c5b98d1ad77032523442c488d6b6d32addbf0cdeeeba17fd88427317bdd738"
+    ]
+  },
+  {
+    "group_id": "4b344247111feca3bb7a31a5fe53e65434fca5739ca78d2c646cfa1615fbfd1d",
+    "property": "NO_PARTIAL_SYNTHESIS",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "27d50a6f21e0e457b1bf0272d3b7f63f40af6aecfae02085599b6b71d96f03af",
+      "c308c177d1dd002eca27af0005f3745e068d97c9ec7e986edf757593230b1248",
+      "bf44bcd93441744526c52a5b26b0fba1aeb7cf459df2f8c90b8169b599369e70",
+      "2ecde7ac5c5f34224193097de71056505d1911ae6034802f4fe6d31d68416ab3"
+    ]
+  },
+  {
+    "group_id": "b170f14ae37dd4168a3fee2970c32cf65430e1f2938626211f1690e971d9e6ad",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "744597563934b4d32a566db99acbb01c5c443e13c90ee61f3d83388e90a46f46",
+      "a579c3d0869431a66a5d9c23fd08ebcd7dfb17f10b0b001e16b4d3a0f71ff464",
+      "474ff3feeba1edfb918c391e80cf26d14061dfeb1e60f71a6bd6642168ad25e9",
+      "66a8ff9bdcf38de23208583f92c5b14b1b542e8d941f8bdb7db14096d366557f"
+    ]
+  },
+  {
+    "group_id": "9af9247dfb44a327709fcae261c1cc1a37a2163526a85912dee3c971ef36e396",
+    "property": "CAPABILITY_PRESENCE",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "af7309f6502c31ad90dd0698e393646aa91c5b47529beedfbc354305968fb17e",
+      "141a53a6adfb7c64dc9f3faba923b355e5c37584c4de4257bc2933d6f24c54a6",
+      "41171bd245f1600d3152e6ed721dc2afb44fea5a99e4e56da4ef9d6a06eb26cb",
+      "1914eab7d9764efe15ca82872e005169e11908b05d27ed172fc30a8ec12297dd"
+    ]
+  },
+  {
+    "group_id": "146136584710a9dfb703b3f9a5737233f53a8696e9a4ca3aa9d533b0fb545e29",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "3abf34b33a6aba8c36e07ec84080d272ca6381de28949d97a1e0754a7713de54",
+      "5286bf48fa118e1fad493114008b6a117f3aad9946800e58705946168e3c6ce1",
+      "69a92a9cbad4474a360a1ad953df4fc44251c769b3c2b93bd24a8b83fe2ca719",
+      "20e4d08118745c7f268076eeb796df4dfe0fcc8250a5f5a767f7c6bb898c0aa5"
+    ]
+  },
+  {
+    "group_id": "24e2acecd2ea5e30ff46b561e3235c40e3cd87efc8490e8d7570e3b33eeb7dbd",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2f5ca4bafb6fe081fd0692ac88427a66d1da82e7665520a5b224cfce66890a96",
+      "efdf81193e3240f2cb9fc25bf5802ec97919634d40789b3a18ecfd5ad0df10fb",
+      "ac4ccb86f55a403a386cc60f272adbcef6c0021978dbd461a2b0e908c6a2100a",
+      "6eca9db7988a84df0848fe37a5a5ce23122c79673694bb11397303c4311d3ac8"
+    ]
+  },
+  {
+    "group_id": "c96ba31d00eb10298fdbec7e1de38d9da1e448bccf5b3489f54647bc3ca397c2",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "c30262b2bd4b33b289fef66d0291760e1a35202d6c5d29b08e8178917103cf74",
+      "4f8d103d5f90af9bb9fc74c86ecf091152ae5aa94e1de3dd5fb0469e5ae9f8b6",
+      "350f2dc37fb280b4ecb7987f637c66c7c930e477136baa1582bb208c75dd0bdd",
+      "e6745d42bd0ba508eb8908ad955e4c48b79e512805b8f6210c5c226fbca16b9c"
+    ]
+  },
+  {
+    "group_id": "2670388089d4f796dda4c8e9f8697d2391aa13f3debfd2bbac794421dae772f0",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "cba7853031ff0d299332401e9afebc00ac5e48c53b755770454152ed2fc30dc4",
+      "6b74d8ba5c90e9d226ccf4e0df2a5394a85bf9e98bee95f0aa3688a08354374f",
+      "e5f267428c0a655e28bf5784ae4944e705dc981322eeaa724e69ecad006c29a1",
+      "035eeeb165332d9e84710b7ae2c5b587dd6f347658705fc47c57934e6c798748"
+    ]
+  },
+  {
+    "group_id": "aced9c5f35215451137fb4ef20bebd17587f358b69e25c468ff848493c6c5212",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ecfa79d4b1924619c7ecbccb09db811d324767b99de8a938fade88df9d3cbd59",
+      "dbbbc58386a73e12637d6584ff7a1db7f7a2a64228106c49c88b2834e662162f",
+      "3d96e74744bc7db1c3add0a6ca8784ba58b9cd9c2757b4970ff092428b490135",
+      "b632be24e1afb996b7be63e0469cf36865b1dc1dbb637f2e9520e6ad0c37d389"
+    ]
+  },
+  {
+    "group_id": "6fcb44ba977202c38be28081ee32b36eb125a293a17f5dfe9a7c6b98a0ce1c0f",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2c7122af4be5e0b417af9e0f50b0e48a585898d226b2b2432de4e4602da13ab3",
+      "e4c3d52b4a8f1c02ea58a6cbe1510001a15e105e623b53224e34c6c3b84bc1db",
+      "2852d2bceea6b18c29b19ce451cc44537637d7d32612df5bc0fea104eb4dce5f",
+      "097d914acea10ace71ab9930d63c0ae501c6f95a8b747e4c4fac546214df290f"
+    ]
+  },
+  {
+    "group_id": "00c2380bef11399c951789fb08920c5fb1fc5b3b8f0fba2b9dbfd2841762211b",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "6d1aed219236b4b3903465e3464e91dd186c4fbaf1cf5c611031fbdf5927d8d7",
+      "d6e0a83bbeada4d224fd02ff57dc587ecbc03b69b8b4042f3c9c4e1e34231093",
+      "7e7c18f38d36aa9aedcc52048090f57dbbcf77ccd4836c3a5d8c8c0908128551",
+      "16c8cff7d09df728ba827e543e4bc41cc1b1c1afcb56b16e0a6ed229a3586ea3"
+    ]
+  },
+  {
+    "group_id": "ebd16bc17de60b5ea6302e9ad2c722dd26acaceda8d7fa0c77cc020273f6f587",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "2ef26230889ecb77dbe73cbcbec54ec689880e7afbb12ed763f8d6c0843471d9",
+      "b984650e037a0281e773ad7dc175546a53514e5717f1755f57ba7a1c6c59c104",
+      "b43762cee923dfb6ff219eb3831c5788f9f138b744d85f08bc56efa4fa4ceab9",
+      "92e313307dd1a5737c22bd5c325d41d131daff7e271ec7a129720fddb49cdcd7"
+    ]
+  },
+  {
+    "group_id": "ba41da56d99f51fec6b4abc3b07e97031abacc19107a7bd6961268cb86e24264",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "926e3c1a25da5868faa9fe9cc428bfa444ad049cab1e8f73d3c1896f6513864e",
+      "7dccbf7e266351aca26224c1b1cb62f5e7fbc85c894734b538b0ba370060e601",
+      "ff7925324dc97048a5d6ff7b8ef5e824fcdcdd6ff4bf53e2ff31402d138bf04a",
+      "7ba3c1a1a225d96d5792f12aa55bbb51bd11a22f98eb13c65af48aeb2aaeaad8"
+    ]
+  },
+  {
+    "group_id": "0a96793c2aa18dd190a43fb8cd25892ead8cd5c2937c58c8c0fe345aa1bee008",
+    "property": "TASK_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ad469ad2abbb1417af493b171bd2541557a2aa29f3dfee055028e0d85734c440",
+      "14dda7d4db87851cf47ada5b72f5bd3b8635f2ed768c9016f401d9b7f36ca17a",
+      "cecd98b65d8897bc05cfa2c890e6a302875f6992c554f415b2555a2093eacde6",
+      "b22b38e6aac5e2c02a02d8048161e487e8622d4b58c43546b7b850b8ae1b969d"
+    ]
+  },
+  {
+    "group_id": "c33fd14b9f9125b8a790e6ce6b08f2637f8489cf6daa386b23330950638bc69c",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "9a2ae1933bff69da960f66784e34127c910528520ab5b04247867db5cd65b275",
+      "47254f2831c573aa37d50aee52d05cbca57ea9c6137405dbf9f53fb37b0c65d8",
+      "75f4d6766cbfb2eaa957b45e420d07523046d7504f085b55e2f79559aaafef4c",
+      "d96bd8f1bd502dbf5ee06e1b178a06c2f04b1a1426b38f0bc43db3436242ce92"
+    ]
+  },
+  {
+    "group_id": "ffc090ef27815bcd2c0886becc713e2b455bfdb539eb0831e2f0f777d315f491",
+    "property": "ACTION_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "ded9797f8ed87c699368654297fa7a11e69f2bd1890f3f961f6c8605927edc82",
+      "07b12549b1655bfba0aab3a04f94ddde9a8e5c6936e5996ae776ef99e437477e",
+      "a74f4f4ed4a277447c9e75c78ed6f7b4827dc9a1c03114f02b3a9a912931ee75",
+      "2b8f8ef8e61ce04b9ab41f14cd60722a61d28f50de58f434ce100fd9ec1f9385"
+    ]
+  },
+  {
+    "group_id": "b5248bc2c6afd7f59565f960f590d1626bd3dd57e338838c373d3ec20406721d",
+    "property": "EXACT_RESOURCE_BINDING",
+    "quality": "STRICTLY_COMPARABLE",
+    "scenario_ids": [
+      "35ab3a19fc000bf1d6ac7e71c995225bf4c05cbf3c3ef6eb30926b167f2f35de",
+      "c8677c3b9341b06bfebe05a93b60b2226d477e49e4eaa6458cb57d8f942e7ca3",
+      "9268cf76e55c13610d2ed5d93e5081722724fbbfd88bdcae5d2bd2cb03133f6a",
+      "d775ecfe4f41b4e5d653de92bbed81405e0b541f726bedca8e9042779de4b631"
+    ]
+  }
+]

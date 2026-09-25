@@ -1,0 +1,10 @@
+{
+  "contract_id": "AUTH-COVERAGE-002-LEAKAGE-GATE@1",
+  "frozen_before_final_clean_candidate": true,
+  "runtime_nonauthority_accuracy_ceiling": 0.55,
+  "authority_feature_excess_over_task_only_ceiling": 0.03,
+  "rationale": "Task equality is a true normative predicate and the required 300 task-mismatch pairs make its predictive signal irreducible. A model using combined authority-adjacent surface features is blocking if it improves by more than three percentage points over that disclosed task-only composition baseline. Features unrelated to authority are held to 55 percent accuracy.",
+  "training": "DEV only",
+  "evaluation": "VALIDATION only",
+  "held_out_use": "PROHIBITED"
+}

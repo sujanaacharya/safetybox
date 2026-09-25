@@ -1,0 +1,85 @@
+{
+  "audit_id": "AUTH-COVERAGE-002-CATEGORICAL-LEAKAGE@1",
+  "categorical_naive_bayes": {
+    "accuracy": 0.595,
+    "correct": 476,
+    "false_allow_rate": 0.5533498759305211,
+    "false_allows": 223,
+    "false_denies": 101,
+    "false_deny_rate": 0.25440806045340053
+  },
+  "disposition": "PASS",
+  "evaluation_split": "VALIDATION",
+  "excess_over_task_only": 0.022499999999999964,
+  "features": [
+    "tool",
+    "task_eq",
+    "actions",
+    "shapes",
+    "depths",
+    "capcount",
+    "first_action"
+  ],
+  "inference_label_or_oracle_access": false,
+  "production_calls": 0,
+  "single_feature_majority_lookup": {
+    "actions": {
+      "accuracy": 0.50375,
+      "correct": 403,
+      "false_allow_rate": 0.5136476426799007,
+      "false_allows": 207,
+      "false_denies": 190,
+      "false_deny_rate": 0.47858942065491183
+    },
+    "capcount": {
+      "accuracy": 0.4925,
+      "correct": 394,
+      "false_allow_rate": 0.6724565756823822,
+      "false_allows": 271,
+      "false_denies": 135,
+      "false_deny_rate": 0.34005037783375314
+    },
+    "depths": {
+      "accuracy": 0.52375,
+      "correct": 419,
+      "false_allow_rate": 0.7096774193548387,
+      "false_allows": 286,
+      "false_denies": 95,
+      "false_deny_rate": 0.23929471032745592
+    },
+    "first_action": {
+      "accuracy": 0.49625,
+      "correct": 397,
+      "false_allow_rate": 1.0,
+      "false_allows": 403,
+      "false_denies": 0,
+      "false_deny_rate": 0.0
+    },
+    "shapes": {
+      "accuracy": 0.51125,
+      "correct": 409,
+      "false_allow_rate": 0.5012406947890818,
+      "false_allows": 202,
+      "false_denies": 189,
+      "false_deny_rate": 0.4760705289672544
+    },
+    "task_eq": {
+      "accuracy": 0.5725,
+      "correct": 458,
+      "false_allow_rate": 0.8486352357320099,
+      "false_allows": 342,
+      "false_denies": 0,
+      "false_deny_rate": 0.0
+    },
+    "tool": {
+      "accuracy": 0.51125,
+      "correct": 409,
+      "false_allow_rate": 0.5012406947890818,
+      "false_allows": 202,
+      "false_denies": 189,
+      "false_deny_rate": 0.4760705289672544
+    }
+  },
+  "task_only_composition_baseline": 0.5725,
+  "training_split": "DEV"
+}

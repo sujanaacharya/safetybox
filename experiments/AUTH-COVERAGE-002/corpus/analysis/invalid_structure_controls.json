@@ -1,0 +1,1976 @@
+{
+  "case_count": 48,
+  "cases": [
+    {
+      "control_id": "invalid-00",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-0",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-0",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_ACTION"
+    },
+    {
+      "control_id": "invalid-01",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-1",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-1",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_ACTION"
+    },
+    {
+      "control_id": "invalid-02",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-2",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-2",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_ACTION"
+    },
+    {
+      "control_id": "invalid-03",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-3",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-3",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_ACTION"
+    },
+    {
+      "control_id": "invalid-04",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-4",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-4",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_ACTION"
+    },
+    {
+      "control_id": "invalid-05",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-5",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-5",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_ACTION"
+    },
+    {
+      "control_id": "invalid-06",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-6",
+          "resource": "",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-6",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_RESOURCE"
+    },
+    {
+      "control_id": "invalid-07",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-7",
+          "resource": "",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-7",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_RESOURCE"
+    },
+    {
+      "control_id": "invalid-08",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-8",
+          "resource": "",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-8",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_RESOURCE"
+    },
+    {
+      "control_id": "invalid-09",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-9",
+          "resource": "",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-9",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_RESOURCE"
+    },
+    {
+      "control_id": "invalid-10",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-10",
+          "resource": "",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-10",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_RESOURCE"
+    },
+    {
+      "control_id": "invalid-11",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-11",
+          "resource": "",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-11",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "EMPTY_RESOURCE"
+    },
+    {
+      "control_id": "invalid-12",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/../escape/**"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-12",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-12",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "INVALID_SUBTREE_SCOPE"
+    },
+    {
+      "control_id": "invalid-13",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/../escape/**"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-13",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-13",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "INVALID_SUBTREE_SCOPE"
+    },
+    {
+      "control_id": "invalid-14",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/../escape/**"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-14",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-14",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "INVALID_SUBTREE_SCOPE"
+    },
+    {
+      "control_id": "invalid-15",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/../escape/**"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-15",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-15",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "INVALID_SUBTREE_SCOPE"
+    },
+    {
+      "control_id": "invalid-16",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/../escape/**"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-16",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-16",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "INVALID_SUBTREE_SCOPE"
+    },
+    {
+      "control_id": "invalid-17",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/../escape/**"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-17",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-17",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "INVALID_SUBTREE_SCOPE"
+    },
+    {
+      "control_id": "invalid-18",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-18",
+          "resource": "/control//item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-18",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "NONCANONICAL_PATH"
+    },
+    {
+      "control_id": "invalid-19",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-19",
+          "resource": "/control//item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-19",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "NONCANONICAL_PATH"
+    },
+    {
+      "control_id": "invalid-20",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-20",
+          "resource": "/control//item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-20",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "NONCANONICAL_PATH"
+    },
+    {
+      "control_id": "invalid-21",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-21",
+          "resource": "/control//item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-21",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "NONCANONICAL_PATH"
+    },
+    {
+      "control_id": "invalid-22",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-22",
+          "resource": "/control//item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-22",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "NONCANONICAL_PATH"
+    },
+    {
+      "control_id": "invalid-23",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-23",
+          "resource": "/control//item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-23",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "NONCANONICAL_PATH"
+    },
+    {
+      "control_id": "invalid-24",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-24",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-24",
+        "tool_class": "NETWORK"
+      },
+      "schema_rejected": true,
+      "stratum": "UNSUPPORTED_TOOL_SHAPE"
+    },
+    {
+      "control_id": "invalid-25",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-25",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-25",
+        "tool_class": "NETWORK"
+      },
+      "schema_rejected": true,
+      "stratum": "UNSUPPORTED_TOOL_SHAPE"
+    },
+    {
+      "control_id": "invalid-26",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-26",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-26",
+        "tool_class": "NETWORK"
+      },
+      "schema_rejected": true,
+      "stratum": "UNSUPPORTED_TOOL_SHAPE"
+    },
+    {
+      "control_id": "invalid-27",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-27",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-27",
+        "tool_class": "NETWORK"
+      },
+      "schema_rejected": true,
+      "stratum": "UNSUPPORTED_TOOL_SHAPE"
+    },
+    {
+      "control_id": "invalid-28",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-28",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-28",
+        "tool_class": "NETWORK"
+      },
+      "schema_rejected": true,
+      "stratum": "UNSUPPORTED_TOOL_SHAPE"
+    },
+    {
+      "control_id": "invalid-29",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-29",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-29",
+        "tool_class": "NETWORK"
+      },
+      "schema_rejected": true,
+      "stratum": "UNSUPPORTED_TOOL_SHAPE"
+    },
+    {
+      "control_id": "invalid-30",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-30",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          },
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-30",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-30",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-30",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "DUPLICATE_COMPONENT_NAMES"
+    },
+    {
+      "control_id": "invalid-31",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-31",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          },
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-31",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-31",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-31",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "DUPLICATE_COMPONENT_NAMES"
+    },
+    {
+      "control_id": "invalid-32",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-32",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          },
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-32",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-32",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-32",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "DUPLICATE_COMPONENT_NAMES"
+    },
+    {
+      "control_id": "invalid-33",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-33",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          },
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-33",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-33",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-33",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "DUPLICATE_COMPONENT_NAMES"
+    },
+    {
+      "control_id": "invalid-34",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-34",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          },
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-34",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-34",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-34",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "DUPLICATE_COMPONENT_NAMES"
+    },
+    {
+      "control_id": "invalid-35",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-35",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          },
+          {
+            "name": "cwd",
+            "request": {
+              "action": "filesystem.read",
+              "actor": "control",
+              "arguments": {},
+              "request_id": "request-35",
+              "resource": "/control/item",
+              "session_id": "session",
+              "task_id": "task-control"
+            }
+          }
+        ],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-35",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-35",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "DUPLICATE_COMPONENT_NAMES"
+    },
+    {
+      "control_id": "invalid-36",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-36",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-36",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "MALFORMED_CAPABILITY_OBJECT"
+    },
+    {
+      "control_id": "invalid-37",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-37",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-37",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "MALFORMED_CAPABILITY_OBJECT"
+    },
+    {
+      "control_id": "invalid-38",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-38",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-38",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "MALFORMED_CAPABILITY_OBJECT"
+    },
+    {
+      "control_id": "invalid-39",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-39",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-39",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "MALFORMED_CAPABILITY_OBJECT"
+    },
+    {
+      "control_id": "invalid-40",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-40",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-40",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "MALFORMED_CAPABILITY_OBJECT"
+    },
+    {
+      "control_id": "invalid-41",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-41",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-41",
+        "tool_class": "FILESYSTEM"
+      },
+      "schema_rejected": true,
+      "stratum": "MALFORMED_CAPABILITY_OBJECT"
+    },
+    {
+      "control_id": "invalid-42",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-42",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-42",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "MISMATCHED_PROCESS_SHAPE"
+    },
+    {
+      "control_id": "invalid-43",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-43",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-43",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "MISMATCHED_PROCESS_SHAPE"
+    },
+    {
+      "control_id": "invalid-44",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-44",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-44",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "MISMATCHED_PROCESS_SHAPE"
+    },
+    {
+      "control_id": "invalid-45",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-45",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-45",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "MISMATCHED_PROCESS_SHAPE"
+    },
+    {
+      "control_id": "invalid-46",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-46",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-46",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "MISMATCHED_PROCESS_SHAPE"
+    },
+    {
+      "control_id": "invalid-47",
+      "expected_decision": "DENY",
+      "oracle_a": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "oracle_b": {
+        "components": {},
+        "decision": "DENY",
+        "rule": "AUTH.INVALID_STRUCTURE"
+      },
+      "runtime_candidate": {
+        "additional_components": [],
+        "capabilities": [
+          {
+            "action": "filesystem.read",
+            "resource": "/control/item"
+          }
+        ],
+        "contract_description": "invalid control",
+        "contract_task_id": "task-control",
+        "request": {
+          "action": "filesystem.read",
+          "actor": "control",
+          "arguments": {},
+          "request_id": "request-47",
+          "resource": "/control/item",
+          "session_id": "session",
+          "task_id": "task-control"
+        },
+        "scenario_id": "invalid-control-47",
+        "tool_class": "PROCESS"
+      },
+      "schema_rejected": true,
+      "stratum": "MISMATCHED_PROCESS_SHAPE"
+    }
+  ],
+  "control_registry_id": "AUTH-COVERAGE-002-INVALID-STRUCTURE-CONTROLS@1",
+  "primary_accuracy_denominator": false,
+  "production_execution_authorized": false
+}

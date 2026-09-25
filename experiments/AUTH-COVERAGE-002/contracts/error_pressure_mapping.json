@@ -1,0 +1,13 @@
+{
+  "contract_id": "AUTH-COVERAGE-002-ERROR-PRESSURE-MAPPING@1",
+  "mapping": {
+    "ACTION_BINDING": "ACTION",
+    "CAPABILITY_MATCH": "CAPABILITY",
+    "CAPABILITY_SYNTHESIS": "SYNTHESIS",
+    "COMPOUND_AUTH": "COMPOUND",
+    "CROSS_TASK_REUSE": "CROSS_TASK",
+    "RESOURCE_BINDING": "RESOURCE",
+    "TASK_BINDING": "TASK"
+  },
+  "policy": "The scenario field is frozen before execution and maps mechanically to AUTH-COVERAGE-002-ERROR-TAXONOMY@1. It is descriptive analysis metadata and never determines the authority label."
+}

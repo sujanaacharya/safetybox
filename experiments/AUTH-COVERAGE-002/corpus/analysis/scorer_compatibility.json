@@ -1,0 +1,15 @@
+{
+  "audit_id": "AUTH-COVERAGE-002-SCORER-COMPATIBILITY@1",
+  "cross_tool_denominator": 102,
+  "false_allow_denominator": 798,
+  "false_deny_denominator": 802,
+  "moderate_pair_denominator": 145,
+  "production_calls": 0,
+  "result": "PASS",
+  "splits": [
+    "DEV",
+    "VALIDATION"
+  ],
+  "strict_pair_denominator": 655,
+  "synthetic_record_count": 1600
+}
