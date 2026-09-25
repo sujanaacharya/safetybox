@@ -15,6 +15,8 @@ Allowed statuses are `PROPOSED`, `TESTING`, `SUPPORTED`, `PARTIALLY_SUPPORTED`, 
 | CL-009 | Ordered deterministic trajectory evidence provides discriminative information beyond single-observation context evaluation. | Frozen history-free baseline; held-out matched history-required pairs; hard negatives; leakage, coupling, and label-isolation audits. | EXP-013 | PARTIALLY_SUPPORTED |
 | CL-010 | SafetyBox can correctly mediate real filesystem operations at the explicitly bounded FMED-L1 adapter route. | Frozen held-out real-tool outcomes; independent authorization/canonicalization/state checks; bypass, failure, audit, and validity analysis. | EXP-014 | PARTIALLY_SUPPORTED |
 | CL-011 | SafetyBox can mediate adapter-routed subprocess execution with deterministic authorize-before-spawn ordering and prevent denied child-process creation within the tested PMED-L1 boundary. | Frozen process adapter; held-out real-tool outcomes; denied-spawn, argv, executable/cwd, environment, ordering, failure, audit, bypass, and validity analysis. | EXP-015 | PARTIALLY_SUPPORTED |
+| CL-012 | Every protected effect within an enumerated SafetyBox mediator surface is backed by valid task-scoped authority and reconstructable provenance. | Independent authority/effect oracles, versioned route inventory, bypass and failure testing, durable provenance reconstruction, benign completion, and real-system evidence. | UNAUTHORIZED-EFFECT-001 | PROPOSED |
+| CL-013 | A hijacked or deliberately misbehaving agent cannot expand deterministic authority or exceed it through completely mediated protected-effect routes. | Goal/intent/context counterfactuals, AI non-authority tests, authenticated authority source, complete named-route mediation, real effects, bypass audit, and agent utility. | CONTEXT-AUTH-001, OWASP-AGENTIC-BENCH-001 | PROPOSED |
 
 M5 provides implementation readiness for controlled trajectory experiments only. It does not change any claim status.
 
@@ -31,6 +33,10 @@ M5 provides implementation readiness for controlled trajectory experiments only.
 The broad candidate wording is retained, but it must be cited with this scope. A bounded empirical result is: on `EXP-009-CORPUS@1`, deterministic trajectory monitoring identified all 40/40 preregistered trajectory-positive scenarios, including 20 TRJ-001 cases with no action-level policy block, but produced 33 false positives among 40 negatives.
 
 Candidate claims must be narrowed if evidence covers only particular tools, scenarios, models, or deployment assumptions. No claim may be promoted on intuition, demonstrations alone, or non-finalized results.
+
+CL-012 and CL-013 are north-star candidates, not current guarantees. CL-013 in particular
+must always name the mediator surface; “even a rogue agent cannot exceed its authority” is
+prohibited without sufficiently broad and evidenced mediation coverage.
 
 ## CL-009 evidence review — EXP-013 Claim Synthesis v1
 

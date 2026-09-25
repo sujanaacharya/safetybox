@@ -24,4 +24,10 @@
 
 ## Current phase boundary
 
-M0 specifies governance, research design, architecture semantics, threats, and evaluation. It does not implement the runtime. Empty source/test placeholders are not evidence of implemented behavior.
+The repository now contains bounded in-process authorization/audit/trajectory components,
+Level 3 synthetic subproperty evidence, and Level 4 real-filesystem evidence for named
+EXP-014 adapter routes. EXP-015 did not demonstrate successful child execution; EXP-016
+Protocol@2 has no held-out result; AUTH-COVERAGE-001 is blocked as valid held-out evidence.
+The broader unauthorized-effect, Authority V2, network, MCP, real-agent, and external
+evaluation programs remain specifications or future work. Architecture documents are not
+evidence that these controls exist.

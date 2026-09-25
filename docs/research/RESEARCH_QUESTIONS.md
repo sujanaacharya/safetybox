@@ -14,6 +14,16 @@ These questions define the initial study. Candidate experiments are designs, not
 | RQ-08 | Does trajectory-level monitoring detect suspicious multi-step behavior missed by independently authorizing each action? | EXP-009 compares action-only rules with ordered-sequence policies on matched trajectories. |
 | RQ-09 | To what extent do task-scoped capability contracts reduce realized harm and reachable resources under prompt injection or agent compromise? | EXP-010 measures execution and blast-radius outcomes across unscoped, static, and task-scoped authority. |
 | RQ-10 | How robust is SafetyBox against agents that intentionally probe, evade, obfuscate, or disable monitoring? | EXP-011 evaluates adaptive evasion scenarios against documented assumptions and failure modes. |
+| RQ-11 | Can autonomous AI agents remain useful and capable while deterministic, task-scoped authority prevents protected effects beyond explicitly delegated authority? | `AUTH-COVERAGE-002`, EXP-016, `UNAUTHORIZED-EFFECT-001`, and later real-agent evaluation form the dependency-ordered program. |
+| RQ-12 | Does the production authorizer correctly bind subject/session, task, action, resource, constraints, and valid authority without cross-task reuse or amplification? | `AUTH-COVERAGE-002` plus future identity and Authority V2 studies. |
+| RQ-13 | Which protected-effect primitives are compulsorily mediated, and which aliases or alternate routes bypass the reference monitor? | EXP-014/016, `UNAUTHORIZED-EFFECT-001`, and later network/MCP route studies. |
+| RQ-14 | Can every observed protected effect be independently established and reconstructed to the responsible request, authority source, mediator, and causal/delegation lineage? | `UNAUTHORIZED-EFFECT-001` and the effect-provenance program. |
+| RQ-15 | How should principal, agent, session, task, delegation, and authority-source identities be authenticated and bound without treating task-ID equality as identity? | Authority V2 identity architecture followed by replay and cross-principal experiments. |
+| RQ-16 | Can probabilistic task interpretation be converted into deterministic least-authority proposals without model output or context becoming authority? | AI-to-authority compiler/verifier and `CONTEXT-AUTH-001`. |
+| RQ-17 | Can delegation, attenuation, expiry, and revocation preserve a formal subset relation under concurrency, caching, in-flight operations, and child agents? | Authority V2 formal verification and later multi-agent experiments. |
+| RQ-18 | Can trajectory evidence safely flag, request approval, or attenuate authority while never silently expanding it? | Follow-on B4 restriction/approval studies after lifecycle semantics exist. |
+| RQ-19 | Under goal hijack or deliberately rogue behavior, do fixed deterministic authority and named mediated boundaries contain unauthorized effects? | `OWASP-AGENTIC-BENCH-001` after applicable authorization and mediator evidence. |
+| RQ-20 | What completion, false-deny, approval, provenance, and recovery costs arise when the controls are applied to provider-neutral real agents? | Future real-agent harness and external scenario packs. |
 
 ## Interpretation constraints
 
@@ -22,3 +32,8 @@ These questions define the initial study. Candidate experiments are designs, not
 - “Generalize” is bounded to explicitly sampled models, frameworks, tasks, and adapters.
 - RQ-07 requires reporting limitations even if other results are favorable.
 - Experiment IDs are reserved candidate records; final protocols must be registered before execution.
+- RQ-11 is the long-term primary question. No answer to its authorization component alone
+  answers its mediation, effect, attribution, or utility components.
+- Subject/session binding is not established by string equality between task identifiers.
+- “Rogue-agent containment” must always name an evidenced mediator surface and its known
+  bypasses.

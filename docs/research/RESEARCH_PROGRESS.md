@@ -19,12 +19,16 @@ protocols, results, analyses, or the [claims ledger](CLAIMS_LEDGER.md).
 | EXP-014 | Frozen `FS-ADAPTER@1`, held-out `EXP-014-CORPUS@1`, one-shot `EXP-014-RUN-001`, and adversarial post-run analysis for isolated filesystem mediation. | Level 4 evidence for named FMED-L1 sub-properties: 94/94 adapter-routed terminal outcomes, 91/91 independently derived authorization decisions, 19/19 denied mutations without wrapped call or independently observed state change, and tested audit/order evidence; RTM-1 recommended. | Real filesystem tool evidence, not real-agent deployment: direct routes bypass, TOCTOU/concurrency are untested, audit is non-durable, failure evidence is partly injected, and no production/external claim follows. |
 | EXP-015 | Frozen process protocol/adapter, `EXP-015-CORPUS@2`, one-shot `EXP-015-RUN-001`, and `EXP-015-ANALYSIS-001`. | Level 3 same-team held-out synthetic evidence for exact TaskContract authorization: 60/60 allows, 60/60 denies, 0 observed false allows/denies, and 60/60 denied requests not forwarded to spawn. | All 50 expected-regular helpers were non-ELF scripts, while ten other positives intentionally had invalid executable shapes; all 60 stopped at executable validation: zero children, benign completion 0/44, terminal accuracy 0/120, no held-out cwd/argv/environment/output/failure/positive-order evidence, invalid direct controls, low oracle independence, and confounded repeat scoring. |
 | EXP-016 Protocol@2 | Versioned pre-corpus governance for native direct-child execution semantics. | Synthetic development proofs validate route-aware lifecycle, nonvacuous scoring, and definition/population separation before exposure. | No held-out corpus, execution, prediction, result, or promoted claim; infrastructure evidence only. |
+| AUTH-COVERAGE-001 | Frozen large authorization protocol/corpus and adversarial final pre-run gate. | Methodology, bounded formal checks, and failure analysis remain useful negative research evidence. | `BLOCKED_BENCHMARK_LEAKAGE`: labels are reconstructable from runtime IDs, HELD_OUT was previously exercised by production conformance tests, and the canonical raw-first/partial-exposure/scoring path is incomplete. It is never valid held-out performance evidence. |
+| Research Program@1 | North-star effect model, authority lifecycle/trust boundary, mediation/provenance models, OWASP matrices, replacement benchmark design, tracks, DAG, flagship target, and paper program. | Architecture/evaluation design only (Level 0 unless a linked existing artifact supplies a narrower higher level). | Most controls are proposed; no new implementation or empirical result is created by consolidation. |
 
 Filesystem held-out real-tool evaluation is complete at FMED-L1. EXP-015 provided
 strong bounded authorization-conformance evidence but did not establish real process
 execution semantics. Repository maturity remains RTM-1; RTM-2 is not supported. The
 next transition is authorship and independent freeze auditing of the EXP-016 native-helper
-held-out corpus under Protocol@2, followed by a dedicated authorization-coverage
-program. HTTP/network and MCP mediation, shell-specific evaluation, a real agent
+held-out corpus under Protocol@2. In parallel, the highest-leverage program task is to
+freeze and implement the `AUTH-COVERAGE-002` canonical raw-first runner plus reusable
+exposure ledger before authoring its corpus. HTTP/network and MCP mediation,
+shell-specific evaluation, a real agent
 harness, stronger interception, concurrency, durable audit, and external deployment
 evidence remain later stages.

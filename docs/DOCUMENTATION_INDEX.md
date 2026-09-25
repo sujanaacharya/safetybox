@@ -21,6 +21,17 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Claims Ledger](research/CLAIMS_LEDGER.md)
 - [Research Progress](research/RESEARCH_PROGRESS.md)
 - [Evidence Matrix](research/EVIDENCE_MATRIX.md)
+- [SafetyBox Research North Star](research/SAFETYBOX_RESEARCH_NORTH_STAR.md)
+- [Unauthorized-Effect Model](research/SAFETYBOX_UNAUTHORIZED_EFFECT_MODEL.md)
+- [Authority V2 Research Specification](research/SAFETYBOX_AUTHORITY_V2_RESEARCH_SPEC.md)
+- [Effect Provenance Model](research/SAFETYBOX_EFFECT_PROVENANCE_MODEL.md)
+- [Mediation Coverage Model](research/SAFETYBOX_MEDIATION_COVERAGE_MODEL.md)
+- [Research Tracks](research/SAFETYBOX_RESEARCH_TRACKS.md)
+- [Flagship Result Plan](research/SAFETYBOX_FLAGSHIP_RESULT_PLAN.md)
+- [Research Dependency Graph](research/SAFETYBOX_RESEARCH_DEPENDENCY_GRAPH.md)
+- [Research Paper Program](research/SAFETYBOX_RESEARCH_PAPER_PROGRAM.md)
+- [AUTH-COVERAGE-002 Design](research/AUTH-COVERAGE-002_DESIGN.md)
+- [Authorization-Coverage Exposure Ledger Specification](research/AUTH-COVERAGE_EXPOSURE_LEDGER_SPEC.md)
 - [Real Filesystem Mediation Requirements](research/REAL_FILESYSTEM_MEDIATION_REQUIREMENTS.md)
 - [Real Subprocess Mediation Requirements](research/REAL_SUBPROCESS_MEDIATION_REQUIREMENTS.md)
 - [EXP-014 Requirement Traceability](research/EXP-014_REQUIREMENT_TRACEABILITY.md)
@@ -34,6 +45,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [Task Contract](architecture/TASK_CONTRACT.md), [Task Context](architecture/TASK_CONTEXT.md), [Context Evaluation](architecture/CONTEXT_EVALUATION.md), and [Capability Model](architecture/CAPABILITY_MODEL.md)
 - [Event Model](architecture/EVENT_MODEL.md), [Trajectory Monitor](architecture/TRAJECTORY_MONITOR.md), [Single-Observation Context Baseline](architecture/SINGLE_OBSERVATION_BASELINE.md), [Context-Aware Trajectory Monitor](architecture/CONTEXT_AWARE_TRAJECTORY_MONITOR.md), [B4 Bounded Context Trajectory Monitor](architecture/B4_BOUNDED_CONTEXT_TRAJECTORY.md), [B4 History Context](architecture/B4_HISTORY_CONTEXT.md), and [Trust Model](architecture/TRUST_MODEL.md)
 - [Audit and Provenance](architecture/AUDIT_AND_PROVENANCE.md)
+- [AI/Deterministic Trust Boundary](architecture/SAFETYBOX_AI_DETERMINISTIC_TRUST_BOUNDARY.md)
 - [Real Filesystem Mediation](architecture/REAL_FILESYSTEM_MEDIATION.md)
 - [Real Subprocess Mediation](architecture/REAL_SUBPROCESS_MEDIATION.md)
 - [Threat Boundaries](architecture/THREAT_BOUNDARIES.md), [Failure Modes](architecture/FAILURE_MODES.md), and [Safety Invariants](architecture/SAFETY_INVARIANTS.md)
@@ -78,6 +90,8 @@ This index identifies the canonical owner of each concept. Other documents shoul
 ## Strategy
 
 - [OWASP GenAI and Agentic Coverage Plan](strategy/OWASP_GENAI_AGENTIC_COVERAGE_PLAN.md)
+- [OWASP Agentic Applications 2026 Control Matrix](strategy/SAFETYBOX_OWASP_AGENTIC_2026_MATRIX.md)
+- [OWASP LLM Applications 2026 Control Matrix](strategy/SAFETYBOX_OWASP_LLM_2026_MATRIX.md)
 - [Build vs Claim Matrix](strategy/BUILD_VS_CLAIM_MATRIX.md)
 
 ## Architecture decisions

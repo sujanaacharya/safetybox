@@ -25,4 +25,21 @@ Milestones are sequential unless an ADR documents a justified change. Completion
 | M11 — Paper experiments | Execute the frozen primary evaluation. | Finalized experiment manifests, immutable results, analysis, claim updates. | Planned trials complete; deviations are logged; claims trace to evidence. |
 | M12 — Artifact/reproducibility release | Package a reviewable research artifact. | Versioned code, data or retrieval instructions, environment lock, artifact guide. | Independent clean-environment reproduction succeeds and limitations are documented. |
 
+## Research-program dependency milestones
+
+These milestones refine the evidence path without renumbering the implementation roadmap
+above. `RP-1` and `RP-2` are independent prerequisite branches and may proceed in
+parallel; downstream claims require both where shown.
+
+| Order | Program milestone | Dependency-sensitive exit criterion |
+|---|---|---|
+| RP-1 | `AUTH-COVERAGE-002` | New blinded corpus, zero pre-run held-out production executions, canonical crash-safe raw-first run, and complete stratified authorization result. |
+| RP-2 | EXP-016 | Protocol@2 native-child corpus/run reaches positive execution branches and benign completions with truthful lifecycle evidence. |
+| RP-3 | `UNAUTHORIZED-EFFECT-001` | RP-1 + RP-2 + bounded EXP-014 evidence support separate authorization, forwarding, bypass, real-effect, attribution, and utility results. |
+| RP-4 | `AUTHORITY-MODEL-V2` | Formal delegation, attenuation, expiry, revocation, approval, issuer, and provenance semantics are frozen before runtime implementation. |
+| RP-5 | `OWASP-AGENTIC-BENCH-001` | Only mapped subclaims backed by adequately mature authority and mediator controls enter the scenario suite. |
+
+The governing order and parallelism are in
+[`SAFETYBOX_RESEARCH_DEPENDENCY_GRAPH.md`](docs/research/SAFETYBOX_RESEARCH_DEPENDENCY_GRAPH.md).
+
 Dates are intentionally omitted until staffing, implementation scope, and experimental resource constraints are known.

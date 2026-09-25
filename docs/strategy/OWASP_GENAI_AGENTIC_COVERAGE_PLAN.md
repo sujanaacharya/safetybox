@@ -10,10 +10,18 @@ as the current taxonomies at the time of writing. OWASP describes the agentic li
 starting framework for risks in systems that plan, act, and make decisions across complex
 workflows; it is not a product certification.
 
+The canonical current category-by-category mappings are the
+[Agentic Applications 2026 control matrix](SAFETYBOX_OWASP_AGENTIC_2026_MATRIX.md) and
+[LLM Applications 2026 control matrix](SAFETYBOX_OWASP_LLM_2026_MATRIX.md). This document
+retains the shared evidence-engine and sequencing strategy; where category wording or
+status differs, the version-specific matrix governs.
+
 SafetyBox does not claim coverage of an OWASP category. EXP-009, EXP-012, and EXP-013
 are synthetic held-out evaluations of bounded deterministic primitives. EXP-014 adds
 Level 4 held-out real-tool evidence only for named adapter-routed filesystem sub-properties
 at FMED-L1; it is not a whole-category or deployment-wide OWASP evaluation.
+AUTH-COVERAGE-001 is also excluded from held-out evidence: its final pre-run disposition
+is `BLOCKED_BENCHMARK_LEAKAGE`.
 
 Allowed roadmap statuses in this document are:
 

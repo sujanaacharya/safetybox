@@ -5,6 +5,8 @@
 | Agent | The protected autonomous or semi-autonomous system requesting actions. It is not part of the trusted enforcement base. |
 | Agent adapter | Framework-specific translation between agent tool calls and canonical SafetyBox requests/events. |
 | Approval | An explicit decision by an authorized external principal permitting a pending action. |
+| Attributable effect | An observed protected effect with immutable, reconstructable links to the responsible principal, agent, session, task, request, authority disposition (the exact valid authority or verified absence), rule, mediator, primitive, and causal/delegation lineage. |
+| Authority | A valid, externally grounded grant covering a subject, task, action, resource, constraints, and validity state; agent or AI output is not authority. |
 | Capability | Task-scoped authority for an actor to perform an action on a resource under constraints, duration, and conditions. |
 | Containment | Reduction or removal of external effects available to a suspicious session. |
 | Context source | Authority and immutable reference from which a trusted semantic declaration originated. |
@@ -15,6 +17,8 @@
 | Enforcement controller | Component that turns evaluated decisions and state into forwarding, restriction, pause, quarantine, or termination actions. |
 | Event | Canonical, ordered record of an observed request, decision, state transition, or external result. |
 | External action | An operation with effects outside the agent's internal computation, including tool, file, shell, network, API, or database operations. |
+| Mediation coverage | Evidence-qualified mediated protected primitives divided by a versioned declared primitive inventory for a named effect class and environment; `UNKNOWN` when the denominator is not defensible. |
+| Protected effect | A protocol-defined, independently observable transition or disclosure at a protected resource or primitive; it is not synonymous with an action request or allow decision. |
 | Fallback pattern | Bounded trusted declaration of expected repeated-access, compatibility, migration, or diagnostic behavior. |
 | B4 history context | Immutable trusted companion to `TaskContext` declaring bounded role combinations, semantic phases, finalization, and fallback progression without granting authority. |
 | Semantic event binding | Trusted exact-field conjunction mapping one completed observation and its M5.1-B interpretation to an opaque B4 event identifier. |

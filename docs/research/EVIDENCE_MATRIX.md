@@ -26,6 +26,10 @@ sub-property and evidence dimension.
 | Does SafetyBox establish causal data lineage? | Future lineage layer | None | Level 0 | Architecture need identified. | None. | Action order and role association do not prove byte/field flow. |
 | Is SafetyBox production-ready? | Whole system | None | Level 0 | No supporting evaluation. | None. | No deployment, durability, bypass-resistant mediation, operational, or external-replication evidence. |
 | Does SafetyBox validate an entire OWASP category? | Whole system | None | Level 0 | Unsupported; mappings identify relevance and possible named sub-properties only. | None. | No whole-category experimental coverage or claim. |
+| Has the north-star no-unauthorized-effect property been established? | Authorization + mediator + effect oracle + provenance | None | Level 0 | A formal research target and experiment dependency path are specified. | No integrated result. | Authorization, mediation, effect, attribution, and utility have not been jointly evaluated. |
+| Is AUTH-COVERAGE-001 valid held-out authorization evidence? | Frozen benchmark artifacts | AUTH-COVERAGE-001 final gate | Not evidence-eligible | `BLOCKED_BENCHMARK_LEAKAGE`: reconstructable labels, prior HELD_OUT production execution, and incomplete canonical raw-first lifecycle. | Failure analysis only. | It must never be presented as a valid held-out result. |
+| Is AUTH-COVERAGE-002 ready to run? | Proposed runner/ledger/corpus pipeline | None | Level 0 | Design specifies opaque IDs, split sealing, raw-first execution, partial-exposure state, and stratified scoring. | Architecture only. | No runner, ledger, protocol, corpus, or frozen gate exists. |
+| Are Authority V2 delegation, attenuation, expiry, and revocation enforced? | Future authority lifecycle | None | Level 0 | Formal design requirements exist. | Architecture only. | No issuer authentication, runtime delegation, revocation, concurrency, or effect evidence. |
 
 Level 4 now applies only to the named EXP-014 real-filesystem sub-properties above. No
 Level 5 evidence exists, and no entire OWASP category or whole-system claim is Level 4.
