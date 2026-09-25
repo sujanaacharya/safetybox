@@ -62,6 +62,8 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-015 Pre-Corpus Implementation Freeze Audit](engineering/EXP-015_PRE_CORPUS_IMPLEMENTATION_FREEZE_AUDIT.md)
 - [EXP-015 Frozen Corpus Ruff Disposition](engineering/EXP-015_FROZEN_CORPUS_RUFF_DISPOSITION.md)
 - [EXP-015 Corpus@1 Validity Disposition](engineering/EXP-015_CORPUS_1_VALIDITY_DISPOSITION.md)
+- [EXP-015 Pre-Run Test-Process Isolation Disposition](engineering/EXP-015_PRE_RUN_TEST_PROCESS_ISOLATION_DISPOSITION.md)
+- [EXP-015 Pre-Run Gate Redisposition](engineering/EXP-015_PRE_RUN_GATE_REDISPOSITION.md)
 
 ## Strategy
 
