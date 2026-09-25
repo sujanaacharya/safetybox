@@ -1,10 +1,15 @@
 # AUTH-COVERAGE-001 final independent pre-run validity gate
 
-**Gate identity:** `AUTH-COVERAGE-001-FINAL-PRE-RUN-GATE@1`  
-**Reviewed freeze:** `fb894b2b5631632456f84884c64fc14aff40a536`  
-**Protocol:** `AUTH-COVERAGE-001-PROTOCOL@1`  
-**Corpus:** `AUTH-COVERAGE-001-CORPUS@1`  
-**Review date:** 2026-09-25  
+**Gate identity:** `AUTH-COVERAGE-001-FINAL-PRE-RUN-GATE@1`
+
+**Reviewed freeze:** `fb894b2b5631632456f84884c64fc14aff40a536`
+
+**Protocol:** `AUTH-COVERAGE-001-PROTOCOL@1`
+
+**Corpus:** `AUTH-COVERAGE-001-CORPUS@1`
+
+**Review date:** 2026-09-25
+
 **Decision:** `BLOCKED_BENCHMARK_LEAKAGE`
 
 This was an adversarial scientific review. It did not run the canonical benchmark, create
