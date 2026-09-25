@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "EXTERNAL_PACK@1",
+  "title": "AUTH-COVERAGE external scenario pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["pack_id", "schema_id", "authorship", "scenarios"],
+  "properties": {
+    "pack_id": {"type": "string", "minLength": 1},
+    "schema_id": {"const": "EXTERNAL_PACK@1"},
+    "authorship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relationship", "production_outputs_seen"],
+      "properties": {
+        "relationship": {"enum": ["EXTERNAL", "SAME_TEAM", "UNKNOWN"]},
+        "production_outputs_seen": {"const": false},
+        "provenance": {"type": "string"}
+      }
+    },
+    "scenarios": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "proposed_pairs": {"type": "array", "items": {"type": "object"}}
+  },
+  "prohibited_semantics": [
+    "pack-provided labels are never authoritative",
+    "pack cannot override scoring",
+    "pack cannot include observed production decisions"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "freeze_id": "AUTH-COVERAGE-001-FREEZE@1",
+  "protocol_id": "AUTH-COVERAGE-001-PROTOCOL@1",
+  "corpus_id": "AUTH-COVERAGE-001-CORPUS@1",
+  "decision": "FREEZE_READY_NOT_RUN",
+  "freeze_git_sha": "RECORDED_BY_GIT_COMMIT_AND_FINAL_REPORT",
+  "held_out_prediction_exposure": "NONE",
+  "held_out_run_authorized": false,
+  "counts": {
+    "scenarios": 3600,
+    "filesystem": 1800,
+    "process": 1800,
+    "authorized": 1800,
+    "unauthorized": 1800,
+    "hard_benign": 1350,
+    "hard_unauthorized": 1350,
+    "edge_benign": 450,
+    "edge_unauthorized": 450,
+    "strong_pairs": 1420,
+    "moderate_pairs": 380,
+    "weak_pairs": 0,
+    "task_binding_pairs": 180,
+    "cross_task_reuse_attempts": 200,
+    "resource_boundary_scenarios": 1320,
+    "capability_distractor_scenarios": 3600,
+    "zero_relevant_scenarios": 300,
+    "compound_AA": 901,
+    "compound_AD": 225,
+    "compound_DA": 319,
+    "compound_DD": 355,
+    "suspicious_benign": 904,
+    "innocent_unauthorized": 904,
+    "cross_tool_groups": 600,
+    "property_generated_cases": 3600,
+    "metamorphic_checks": 100,
+    "mutation_checks": 1700,
+    "exhaustive_states": 604
+  },
+  "difficulty": {
+    "EASY_CONTROL": 70,
+    "MODERATE": 1003,
+    "HARD": 1746,
+    "ADVERSARIAL": 781
+  },
+  "oracles": {
+    "oracle_a": "AUTH-COVERAGE-001-ORACLE-A@1",
+    "oracle_b": "AUTH-COVERAGE-001-ORACLE-B@1",
+    "agreement": "3600/3600",
+    "conceptual_independence": "IMPROVED_BUT_NOT_FULLY_INDEPENDENT"
+  },
+  "verification": {
+    "construction_audit": "PASS",
+    "exhaustive_verification": "PASS",
+    "formal_tool": "NOT_USED_DETERMINISTIC_ENUMERATION_SELECTED",
+    "exact_duplicates": 0,
+    "semantic_duplicate_disposition": "100 registered contract-identity metamorphic groups",
+    "applicable_pytest": "707 passed, 2 established EXP-015 pre-run gates deselected",
+    "coverage": "94% (5968 statements, 332 missed)",
+    "ruff": "PASS",
+    "mypy": "PASS (69 source files)",
+    "diff_check": "PASS",
+    "exp014": "UNCHANGED",
+    "exp015": "UNCHANGED",
+    "exp016": "UNCHANGED"
+  },
+  "same_team_bias": {
+    "authorship": true,
+    "semantics": true,
+    "oracles": true,
+    "externally_validated": false
+  },
+  "next_task": "Perform an independent final AUTH-COVERAGE-001 pre-run gate, including oracle independence, leakage, heuristic-baseline, counterfactual-quality, difficulty, checksum, label-isolation, and one-shot-run readiness audits; only then authorize the canonical held-out benchmark execution."
+}

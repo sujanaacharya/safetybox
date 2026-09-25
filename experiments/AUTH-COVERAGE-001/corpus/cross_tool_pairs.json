@@ -1,0 +1,4805 @@
+{
+  "cross_tool_registry_id": "AUTH-COVERAGE-001-CROSS-TOOL@1",
+  "pairs": [
+    {
+      "equivalence_id": "x7922a136c851cb7e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s23ae7a810d44f873",
+      "process_scenario": "s5e25c9cfe1b51f6a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x4f4a05fbc247af27",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s88bc2a1448530c6c",
+      "process_scenario": "s0f8d0e7d4b3a36eb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xdf6b86dfdf6a4f85",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd20c7ec1dd81133a",
+      "process_scenario": "s29dac72d67e78b89",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6a0939ab6f756ab2",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se4480edaece26e6b",
+      "process_scenario": "se9a67f9680f0ace2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf7738eee6bc85986",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sde166d28ce2a11ec",
+      "process_scenario": "saee3021c443d456d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xaa279a776cfdcddb",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s94fbfd424cf94918",
+      "process_scenario": "s7e78100c20c76b3d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x335b6d8b1902a55a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s41ac9fdba0dc05fe",
+      "process_scenario": "s7e9d6f7ebb57d2e1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x110d51a66c1616e8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s96bac12761b02c4a",
+      "process_scenario": "s6cf4d2dc779f9d2f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7e83315ee5a99438",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s983e956028613340",
+      "process_scenario": "s380f8a6f287437ef",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf4c99c870f6524cc",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7192cae077d6226d",
+      "process_scenario": "s53d28cc05de38389",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x37bfa01d7c0a3768",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scde6e3f05234dc72",
+      "process_scenario": "s8cc18cb0b623c83e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3ffd310276f4230b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scfeafeffceb994c4",
+      "process_scenario": "s2a45f70470ec376d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xd3afba26099399a2",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se4b69f9820d59b88",
+      "process_scenario": "s3e9d61e0020c8db8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x95d16cf93e594a7a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sc6622afeea1a47ec",
+      "process_scenario": "s12e4e9faff3470ba",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe2f9d9e4763d908b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s417d102035dde4da",
+      "process_scenario": "s4cb2e0070f2405a1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x91b7367fd65fac05",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9dc2205d4d13cca2",
+      "process_scenario": "s0f6e3d3da78aa51a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe35c01c32781967f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s17d1fb0256268e5a",
+      "process_scenario": "s675e9378be352341",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x823d5dab1163372c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s877344f123c83aa8",
+      "process_scenario": "s6ec7dd01a3fd1909",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x092e9e1dfbb82c1a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sf7f4971199efa350",
+      "process_scenario": "sc2e64f96e53263d4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7af395d918efca80",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s12e2b9c6dc5bc942",
+      "process_scenario": "s0501882a28c14b40",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x287430d9139a2b56",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s3646ad483ce5cd1c",
+      "process_scenario": "sff802071186c7d54",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xd3b60938c3bcc363",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s113849f7eec6df77",
+      "process_scenario": "s1e484174b9066d67",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x190bb40cf3d87fcc",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sffba438fb151a3f4",
+      "process_scenario": "se740822561651b84",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x32704bafc1642514",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sc0d0c53eb3025c29",
+      "process_scenario": "sdae0d0c67d608424",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x168190b05e400b89",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scbdad5fe6e5b41f6",
+      "process_scenario": "se58e366246c4c6d7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x62ebe1e406e8267c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "saee36f3b1f59b8be",
+      "process_scenario": "s77b088aeb0800ab5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x48e43f00b8f32ccc",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb5c6aca8529e9343",
+      "process_scenario": "seee3c726ee22671f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x802a722b819cc52d",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s13f2d1f67d8a02be",
+      "process_scenario": "s357c61ad6cef2c90",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x25e705d602437284",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7097aa7f97a48502",
+      "process_scenario": "sf39b52f4e3a2359b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x032e0413bf7674c8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd307d4437fcab3e1",
+      "process_scenario": "s09a0b2672610f131",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3396132a6a727819",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s63269aca5389c643",
+      "process_scenario": "sc2649453217a9ff7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x78df713a80179a68",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sfa5c3064557fa07a",
+      "process_scenario": "s59d740a21722ffa7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x62682b7a18fa2c11",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa83b48f3bcbbe02b",
+      "process_scenario": "s8f001d743c0db066",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xfcdb95dff295e427",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s811da6583161f6bd",
+      "process_scenario": "s3ce839d39d3044a7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x29fa7a3dba60df97",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sce73f5db20a706d5",
+      "process_scenario": "s74fce02dc1e34b32",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x38cd5bf2abbecdf2",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8131d7c75f3c5d65",
+      "process_scenario": "s277ed29cfaff7d18",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3955aa0382fec521",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sfbe6751a5ef79230",
+      "process_scenario": "s0c2d22a91b64df5b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x26648755477c8e52",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sff9989831bc57768",
+      "process_scenario": "s018d7d8b55b225bb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x56a9e32de4645cee",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa4cc58671bcc1b21",
+      "process_scenario": "sdfd18a4439c61623",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1a796cfde76faf17",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa8cf6d07136e4207",
+      "process_scenario": "s66b8e0801fe80a29",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2d0542a785c85b56",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s26d446cee6a5a5a8",
+      "process_scenario": "s1e441cb123953a80",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3a578fc85eca2e61",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sbbf5ee418842a626",
+      "process_scenario": "s0b21ce2ca68118db",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x82d4ca7da98d5767",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa96884a38aa56ef1",
+      "process_scenario": "s7f9b6f44686d979c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x89427a7ee14147fd",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8b46831b848cdca1",
+      "process_scenario": "s36b3480ec2744977",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xfd22d2d42fd936df",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sca9807a5f1af70bc",
+      "process_scenario": "s143948985527ac04",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2dd9d0ff89d1daed",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s593efe61d29a1dd3",
+      "process_scenario": "sd2a944c49f48a717",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1f29301f4ca90ca4",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s92e911e558226177",
+      "process_scenario": "s6d85d3b39d62ec58",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x29aecd8d964ad62e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s5428de58d8fe7c05",
+      "process_scenario": "s418cec2dcb0fa497",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7f1ab79eb8ebaefb",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0b177b5057865f59",
+      "process_scenario": "sf779beece583f089",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x39d74eb809a40478",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s52b5e984b69fe825",
+      "process_scenario": "sf5ca3a32d50e2bd7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xcbe31a613f766f04",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s98468bc96bc4ba3e",
+      "process_scenario": "s05dbce31fe0d7b25",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6981e1e3de41a456",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sef97491f0e6c649a",
+      "process_scenario": "s2619a069c6a06789",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3e490c899ed60707",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd5b5261e1a5787e0",
+      "process_scenario": "s3895d70a1a311bad",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x5659cb9ef06898ed",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s5e104d025fef46e2",
+      "process_scenario": "sfc7c937f81afc790",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x008867e9cb07ee16",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s23310741fcda8aac",
+      "process_scenario": "s4b217c3b6d387eb6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1455cad2b61a6558",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sf893d22a6d132f1f",
+      "process_scenario": "s00917bd11599a316",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb7d81910f7a2d713",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s00b274084706b5c1",
+      "process_scenario": "scd7f27379638db01",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x004979ed3d6c85f7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4dcd5e2cc9afaac3",
+      "process_scenario": "s8343c33fc5cd00a2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf81f0a4a92590f2c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s30491c0e2407c197",
+      "process_scenario": "s632bcef6bd4864cb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2bcc09473a2119ae",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sffe1712c000f11a1",
+      "process_scenario": "s8a29c242a3f47898",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x867a3dd07c42a427",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scee6c8007b0284c8",
+      "process_scenario": "s737e9c9de8223e00",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x205dfdcb3c4f264b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4e35268c4a010fb1",
+      "process_scenario": "s17b74a1ffffbc64b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe7f04559ad2e3e1d",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sdd52115708230fac",
+      "process_scenario": "s60e49e50d78ec2b9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3b61bbc6e5ccf778",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1081cc5e3443f6c3",
+      "process_scenario": "sba84de17386d2f98",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xebcdd1f0a3b30e37",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s923c0336e7cf367b",
+      "process_scenario": "saed9189e06be3cee",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc19eadb7e5e2d5b0",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9d99d09410b2d9c7",
+      "process_scenario": "s128fbc9ceda6d72b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe7aae70d9fe5b863",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd12d34172ab6ade7",
+      "process_scenario": "s91c6b2d90f9a121d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xbefa6ecd01fa6437",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "seef2c8b23668ac9f",
+      "process_scenario": "sffa128d647f42ebd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf6a39b4dab6c6208",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9f0c83929a2493d8",
+      "process_scenario": "s8237f40331c62ff3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x12207a22f40372ca",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s05404e37af148d92",
+      "process_scenario": "s72eb55f2267ffe4d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb1d8886e902b5c0e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s48569cf3036ecc5d",
+      "process_scenario": "s13269f27382312fb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xa48c5af87e894739",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa82ed2826f19677f",
+      "process_scenario": "sae568d08cf33b831",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6e404b3c9fbeb6f9",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0764d132f935b491",
+      "process_scenario": "sc473bfe757456b2a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xde19feef44e6cebe",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s487503c9c918cbf9",
+      "process_scenario": "s92f232c7162891c9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x59cde9df7a004739",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s94041e86b5ffefd0",
+      "process_scenario": "sd70d1eaaf40fd5f7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xd2feda5e8495b726",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s5cd898e112f6cc8d",
+      "process_scenario": "s6905466918a559ea",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x978ce0b68497eff3",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb8d2c476018c3978",
+      "process_scenario": "s7c13189b84307074",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xcda9f1fa05539221",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s41e8779f956f11d8",
+      "process_scenario": "sc64bf3519119969a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7d18d16ab926bf75",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s795a7b16a19a385a",
+      "process_scenario": "s8077daaeb1c0c111",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x09c90a9922061453",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scd98e93243554841",
+      "process_scenario": "s1cb19213f3843a49",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x789fc6dc94263810",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s568c3ccc071afdee",
+      "process_scenario": "s83e7c071a83e8c1b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xefa0a734dfb681c1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7274c1d3b72a4551",
+      "process_scenario": "s270b20eaa07a415d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x9147c57c6dc655a7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s69e72fc18cb365c8",
+      "process_scenario": "s22fab37c1db03e83",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x050f901bf43503e8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4963d9cf71b17b25",
+      "process_scenario": "s9aca142548aab197",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb0dfd682a0206ded",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s5dd01b2cda8d7aa8",
+      "process_scenario": "s3fb0e79cd0200712",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2bfe35115f3e6d6f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s41910fc969c01184",
+      "process_scenario": "s39a46ee112d88eac",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x594b9e7874c50da9",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd419fe250d92e3da",
+      "process_scenario": "s9081205477fb2404",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x77fdc7faa4f1cd90",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb67918533ba3476a",
+      "process_scenario": "se79819494da6e510",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xbed18f6d5dca74ca",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9539dd9d1a7c2727",
+      "process_scenario": "s59732213979c5fe1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x4d59d54cef9ac103",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s389763f1bb9b96da",
+      "process_scenario": "s11ff2efff107a508",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x47d626cc39e1bb10",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s81f6f8219dbf3ed3",
+      "process_scenario": "s0fb84e08dd5de6bc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe780a2d87d1696c4",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s513e04578ee692d8",
+      "process_scenario": "sae69051c55f867fc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe1fe4eb4a823798b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s6501fc42ab7c5588",
+      "process_scenario": "sa43f430c59959d87",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x5935fc396f48dfc9",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd54759e6a5879bba",
+      "process_scenario": "sac7bb4fcd7298a9f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xba4b01572c0a9184",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "seb4646921c62e16b",
+      "process_scenario": "sba9a94112f1a2dfc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x12cde7d347b264c4",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9cde41189c97b35b",
+      "process_scenario": "sff4e89e615de680d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3cc20efe33f5b834",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s66dc03474e126e46",
+      "process_scenario": "s52dacee4e98c0df2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x9205d6431b6a737b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s18d4dd8e34b5db21",
+      "process_scenario": "s6cbe80424fc0105e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc7e4af3d36a24c3a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sacb26b2a9646786f",
+      "process_scenario": "s63272797d185aff9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe01e8a4bc3d3653a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s29aa3b5291d17448",
+      "process_scenario": "s4552a0389462a05c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x0d037236498ee6cc",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf040eae9a81a4eb5",
+      "process_scenario": "s31fa407f3518a216",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x86e84969e058cf41",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s482e7319abeb9b85",
+      "process_scenario": "s07460294a9b166b7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x8daef55374cdff74",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc1a216533255c7b6",
+      "process_scenario": "sc11b2f09db4ce8dc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x14584a74726d36f6",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8e7d37509eb4d1e5",
+      "process_scenario": "s371cb4ba07b16b6b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb15a7bf7392c97e2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sca8f5aa51e20b195",
+      "process_scenario": "sebbf06f5733160ba",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe5cc669efe003094",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc8f190295fadab89",
+      "process_scenario": "s88cdb4d86fb9250b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x961f2693286a90b9",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sebe4817bad1cd3f8",
+      "process_scenario": "s7852e6f05b0c9a7a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc1d1d0d305dd6520",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5963d6d275db345d",
+      "process_scenario": "s4c9d9d7e205e81ec",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc3a90449d3153f30",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd890072e3854e51a",
+      "process_scenario": "saba98bc172185ad5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3aa72f38e136f894",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "scdb54a4558d2e939",
+      "process_scenario": "s8fef4f0a214650aa",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x76ce661b0845bb0a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb6232b8e890a55d9",
+      "process_scenario": "s83dcd996560727de",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x8fb46603acebacf6",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s77e2bc30ded56448",
+      "process_scenario": "seb7f27190f795d0d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2734be588dd5a9b8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9233e8f26c0ff821",
+      "process_scenario": "sb759c9aa65474967",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf86b464bba8a51e9",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s668b33d4d376b857",
+      "process_scenario": "s220f78b2beea9acc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x0910909b60e17a25",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se23845da2cc79fe9",
+      "process_scenario": "s6ca055d106d7cdf7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xddb347d2089632d5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s44ce376abfa0f542",
+      "process_scenario": "s2cda8b4da46552ce",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x28f84258c684f4b5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s97dba6009a9d2030",
+      "process_scenario": "s78258ebc33d546ba",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xeacd3c2acc28cc9c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s225a05e83e6091d1",
+      "process_scenario": "sa8d7eb206af75358",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x83821147a754951b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se0b45aa431083a00",
+      "process_scenario": "s594d4ff3175306ee",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1dfcf2a902aa75d8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s192b80f44c8ebf38",
+      "process_scenario": "sbd63953ebc755af4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x9b7c05d0dc485581",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5ee5d80c4dac2517",
+      "process_scenario": "s394e699090e3acbe",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x246630369161a9ee",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc8f2ee0fc39d888d",
+      "process_scenario": "s5a801cc080cf2b8a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x764fdab09d047492",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2640c76b8db2b0ea",
+      "process_scenario": "sadd57f4d41c45932",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xbd3f1a3534764b24",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s36474dd2e2653e49",
+      "process_scenario": "sc34d32a9575a66b5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xdbb9b72fa8e5a6a1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7ad6803fc58a53c3",
+      "process_scenario": "s4f35f4474e3f1d98",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3356c7dbde980c54",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s68b539c996f933c5",
+      "process_scenario": "s080d7253bb64559c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xec9c1ee4bc457e75",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0c655517825dee45",
+      "process_scenario": "s367e9a80145e37a1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x13746612b5fab0cc",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sdc5c6d03f4baebe7",
+      "process_scenario": "s79d8603f03aa1880",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1af599e92dd89c98",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc2c9e6ad118bd821",
+      "process_scenario": "s2e919dcb88ebdc8f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x29e1024108c38fe3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3a987ee19086c487",
+      "process_scenario": "s92b5384d3f9d93be",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xdb8ad494dccc3d6e",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s36db5d8061cbe25f",
+      "process_scenario": "s49be44fd5895d5a9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6136d54ee8d1ffa2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd77d3a440c304e5f",
+      "process_scenario": "sd0ccf16999d8b6e9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x4dae6fa350d797df",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9f6165e2d231daca",
+      "process_scenario": "s65175cc3b701706b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe629f7ba7dd9dee3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2430f7592f8e76e7",
+      "process_scenario": "sa16e088d7ff36361",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x0480996900f53fdb",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf35cb67da5228389",
+      "process_scenario": "sbaacfb5adf8d2558",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1fa40c1c25a39224",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sef0a6ae836faa3f0",
+      "process_scenario": "scf5519c6cc9c9b0f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb860e911405cc5e4",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4d20c43cdda0a9a1",
+      "process_scenario": "sb67d75513d01d2a2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb70fa2674cfa1126",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6e6dbbbc8a56ca71",
+      "process_scenario": "s0cf1a5d30f8e54e2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7c18560c308ededf",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sebb4a7573a307982",
+      "process_scenario": "s0b418d06a54f5e49",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf1aa0d420d803d7d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se7506f74b97dfe10",
+      "process_scenario": "sfd6066a99c2e3c66",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc8be0f7c124454c4",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6cff322f53c9431a",
+      "process_scenario": "sb2a0034100a80f8e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x86febadd86a7ccf8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2126cdef63e7c2d7",
+      "process_scenario": "s11ab4e8d1609b413",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x859c39aeb920b97c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sde31c6e976d2fc26",
+      "process_scenario": "sb0feb8ca07aa6e67",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3f2a68c3c705ed8d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s29ed6263ee70c786",
+      "process_scenario": "sb04b6e0ae4a3b265",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x263705a04e00f89e",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se5fc4e2ad86c1114",
+      "process_scenario": "sf17afe935e21dcd5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x947bbd397aead644",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sdb2d3055507c1b46",
+      "process_scenario": "sdc3ef857a99fb4d5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc07549ae7cc54fab",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s24c41173fdddf49d",
+      "process_scenario": "s1b895e0f60c04484",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xa8fdca38b6f5a03a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s57bad0e9bd023ac1",
+      "process_scenario": "s899cad0f4875bdd8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2c3855039e8da999",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3855e1daf7c2f0f1",
+      "process_scenario": "sf813229811a2404d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf0f7589978fd2775",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf943bc2fb4ac13a1",
+      "process_scenario": "s541488d968765250",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x49faa01628bf49be",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf384b8b4add531e7",
+      "process_scenario": "s47a9024ee2bb2e4f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xbb43f42e795888a2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9a6444f106944889",
+      "process_scenario": "s621bee8db15b915c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x4b791b911ce4ca91",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7d13c7262ff68e00",
+      "process_scenario": "s40765f0fb8ed5727",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x046ab36567abb395",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s58a9b59b0ba1a80e",
+      "process_scenario": "sf75ccae1099d03db",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xed5d2af1b1f12865",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7be76cb3d1239620",
+      "process_scenario": "s8a335f793b28f565",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x5cffd5c9eabaab3b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s77977f9047fa80ee",
+      "process_scenario": "s72e4f0156f22528b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x8ce2d708c2bcbe3b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3fbe4747ccd49912",
+      "process_scenario": "s40cc6a44134f31d9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xa0de8ac219d2e69c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd4cd582708aa5a43",
+      "process_scenario": "sd06da2cc88028c22",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x299ad16fea5de8ea",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s111336e01f1e1523",
+      "process_scenario": "s01bdace7aad60655",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x0f668d0a0f9d78df",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8f3657c694f844b1",
+      "process_scenario": "sa293c1b16017eed2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe32f6607aa4d1e0c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc676405b0a298a5e",
+      "process_scenario": "sebb0e2be972513fb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7d01aa651656ae8b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sbcaf96fe53029082",
+      "process_scenario": "s86f0af30c362709a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xe2ea00baca5d0512",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4bd9052a2db446be",
+      "process_scenario": "sd94a9abc477e5e8a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xdc33dc866f48390c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "seceac774ff8e7dbb",
+      "process_scenario": "s6f51e1f1b2963034",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x9f5f5d30b1cacf44",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "scb2892c4c9c4016e",
+      "process_scenario": "sb2a79388c6935da7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1917341ed670fd77",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s46df6a996fadf286",
+      "process_scenario": "s10d4525c51a428e1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xecad367e2f611b98",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3c28dfda7659e651",
+      "process_scenario": "s9bf632874321ef4d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x847dce4b3fb9d6c6",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3ddce878b5727e86",
+      "process_scenario": "s8e912b3731f99c92",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x067571402f1013f3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf147bd029f040901",
+      "process_scenario": "s9e9a462af0815ce6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xc496b3ebb5746b0a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7bddddf09b811186",
+      "process_scenario": "s335af5994e1b7789",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x372c89ca6d3deb83",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sea59ebe1dc857b7f",
+      "process_scenario": "s648ceb62cab46c06",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x85b5780c621b9a33",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s41ecff01ca291d70",
+      "process_scenario": "sc216ea45bf2d3015",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xd3de7635e4475f2b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3104b46b82cc2725",
+      "process_scenario": "sdae40a516206e891",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xfe003a8960a36b7c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1f4e21af4a58a932",
+      "process_scenario": "s02a84579cf9090aa",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x3dea3a7db11cc84a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s10736753bf1c7f14",
+      "process_scenario": "s5d8d37e056660c5d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x2920756a43ad72f8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sbd97dff9c8d3ffd7",
+      "process_scenario": "s11f373221584d27b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xcf2cf68b55651dd8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s92c085ba6aef4a4a",
+      "process_scenario": "sf0c4be5e814c3dcb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xa745d73a01685d6b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8c5d68799491a421",
+      "process_scenario": "s75f3b8f01ee019cd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x4f42faa93a97cd07",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sfe9ec829b347a48b",
+      "process_scenario": "s9b1b0ad3ad0bc213",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xbc6b4b9199368311",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2eaa76dfd020e8fb",
+      "process_scenario": "s914462a11341e65b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xa6cd6b4159ee0eb7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s802a8e74efcde513",
+      "process_scenario": "s85f72c9f561f39b5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb06e1c937bffbe9a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7714085749b0e446",
+      "process_scenario": "s6495bbc9ca199a71",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x414d874cbe229a59",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s38b336397829edc8",
+      "process_scenario": "s0c7d88567b884b16",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x5b71a3c910f7cf28",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s19b1c4f5ebb6d070",
+      "process_scenario": "s24510fc51f968a74",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x67dcf1d242f45dd2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa068ac0f2e0ce670",
+      "process_scenario": "sea7d9ad7333e0309",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6495cfeebbf2e8cc",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sefbc9447bdf6e88d",
+      "process_scenario": "s4a234ba8c2d82317",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6f9e37248123b411",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s26d5a30b865a66cb",
+      "process_scenario": "s0fbbdcca50b029a9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb3f1f2ceb18d1950",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s91cc3519df691f05",
+      "process_scenario": "s134255b644a268c0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xdd9f9d36aa88ed92",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se0214db60394b3f9",
+      "process_scenario": "s2668148e231f051d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x171a7c953be7ca24",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s186fd654753795ad",
+      "process_scenario": "sa1dfc3150f25c798",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x7542c8aad4445421",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s30c70da6148e5282",
+      "process_scenario": "sbe5772b444feb7d2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xf58b6f51cc1be9a3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd03f6babcd5c9c61",
+      "process_scenario": "s001394cf81be21c0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x6427c588e4673e33",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7c74b7141078e443",
+      "process_scenario": "s866749f93b0fe9f3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x5d5a247f231f0aab",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s672516bc12e5e90d",
+      "process_scenario": "s76983410fc6f5586",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x53ec23fa5473ab19",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s42f6540b0ae64f03",
+      "process_scenario": "s0adb4cad7dbd660a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xac9073901a42a4b7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s43799e2065da825b",
+      "process_scenario": "sbf4965dcd54e8a13",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x4eb1cb91948e609c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sfd7fc0ff5e9213da",
+      "process_scenario": "s455cd571ae667d48",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xb91d9974afc2cfd2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s89c0a611a1b48fd6",
+      "process_scenario": "sb9f887ca422706df",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "xd173f38248b0f7e2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd4222f94a21d310a",
+      "process_scenario": "s1bcdebacf8eed087",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x62cccc8ef5c44f51",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2eafa6c7a286941c",
+      "process_scenario": "s4e4bb1ed94efa499",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "DEV"
+    },
+    {
+      "equivalence_id": "x1535348e431a9add",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se8c8c3421a2df675",
+      "process_scenario": "s3e78b819964247a7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x829c4d320d0a9711",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7458b77c312e6e4a",
+      "process_scenario": "s020af409b5af8fe0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4036d80f12b7d9bc",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb1f0642aceb2dfb0",
+      "process_scenario": "s9b7be9bcffd1a099",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x3f0b19f1eb1e62f7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s30e2c2811a3065e5",
+      "process_scenario": "se9fa60be8cdc2cae",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x268662a739a13601",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9169e6196987d853",
+      "process_scenario": "s4e0f62137e60502f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x64618373a3e5593f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s078e68580346329b",
+      "process_scenario": "s9aa5e02b026cff1c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x90d7789edc839d3e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0a700bdd35977d19",
+      "process_scenario": "s644f813ae568c9c8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xc07ac24dd7a79b84",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s18aa39048c8041c1",
+      "process_scenario": "s987be67d4f46314f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xbeec180ac9fc4986",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s173d728bbcb4472c",
+      "process_scenario": "s7b146bebc07cbcac",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x680f893fcd68f185",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se8fba8283bb95dfa",
+      "process_scenario": "s5a90b1426a49e4de",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xed55951a08f564f0",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s091726e14e8f6937",
+      "process_scenario": "s779354493d4cfc05",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xef93e3cac8bdd23e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s77008e509352b6fd",
+      "process_scenario": "s18d669f4d6d0b1d5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x2fe70afc63005d04",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4ecba340d65103c8",
+      "process_scenario": "sd5c6f20c7026cd91",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa83996e112f5f4ba",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8dacfa7fbf4ae120",
+      "process_scenario": "sf8144032e9c41c45",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd50d96fa485a4755",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sfdc659831937bc41",
+      "process_scenario": "scadd35809e3737f0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x9579708210ee8128",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s83fba1bbfd470987",
+      "process_scenario": "sd6ec979572426fa8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x6e9d7e6db4902a73",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd9420429622dc209",
+      "process_scenario": "s7a47d74a8e27c9ab",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4c52cbd91b860ac8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sda19fa5ec324d455",
+      "process_scenario": "s73ca280006ae62a6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd6207cd03ba91ab1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s3de7d84d7860398d",
+      "process_scenario": "s352d2800a4f70abf",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcbfe341547b78246",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s14e0ca3859f3e50d",
+      "process_scenario": "s8a765d406d36ed42",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x3118d91ca31ac6b1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1ec34ec31d17cd97",
+      "process_scenario": "sab4428b8b5f7efde",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x6a6e88147ace431c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd34e5800de9c1b39",
+      "process_scenario": "s233266eb4ad885f1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb90ef1d167933976",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s6ec7eb7a00e4fb4f",
+      "process_scenario": "se3908d9462265fae",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb9c4dd0e52d8562b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1bb6a06767d7589c",
+      "process_scenario": "s7468238bde2b0fd9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x6c8a6817fba81a67",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se3bb20ebb0fb2559",
+      "process_scenario": "scb46206d68bd24fc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xaa256ed48dec6528",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "saa934bf6543d8cbd",
+      "process_scenario": "se4cdc5f2c80fdd34",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x19dcefa74c4e0ce9",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0755f5e8dbcb6740",
+      "process_scenario": "sbc2dab9458ce32d5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x174fe099bc2e5b44",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scf0ddbd4d00d7e3d",
+      "process_scenario": "secbc3ef56da8528c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x94a727f4c6546bf0",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2d5c68901a3c06de",
+      "process_scenario": "sf6741872dfab99f8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x21d37aad482ad0e7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa9acde90f4afddcb",
+      "process_scenario": "s577fd90a780c2d61",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x13bdcc6e05a852a3",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb6ea54d9775d40d0",
+      "process_scenario": "s2d2461e47d1cb336",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xdb195e29d6f696ec",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scb6cfdf6c9372cae",
+      "process_scenario": "s88e8c511d9f56459",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xdc1fdfe06c37a1c8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s69ffc30735be0b68",
+      "process_scenario": "s41fe0535f2997c6c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa985b3c8c7ce67b0",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se978fa793ebe50cd",
+      "process_scenario": "s86d48ba267de5aac",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xea6376adc8b55fca",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9e7ca5418e138f71",
+      "process_scenario": "s3cad7e732881f9e0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4f4a03b6a8f15c04",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb5c42496e8ab7b95",
+      "process_scenario": "sa4d8c96d3889d961",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x3db6795c4f212f37",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd2fb133040d33032",
+      "process_scenario": "s27977cf748e39d93",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x7240a73a84dc034b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s5a90e57598a8c7b1",
+      "process_scenario": "sf20769790382ff7f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x1ef25f9490998c6f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4f9ef75e572324ec",
+      "process_scenario": "s3f4a7f004fbc2c4b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xc1bbc4890e68eac4",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8e9ed54267c9401b",
+      "process_scenario": "scc6df331ba00d9f5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd8f2599a9ecb9432",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb52537fce0e2435d",
+      "process_scenario": "s3e1f7d0c97e55e77",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa87954edc6654746",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8ec2610033f255d3",
+      "process_scenario": "s11f02de182f15728",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x775d608acc8090e1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se69f9613c9208ba0",
+      "process_scenario": "sa57455f0cd880ac7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x86895861852b0481",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s6a7ac6cb0ff0ece3",
+      "process_scenario": "s1d91b5f783ddd623",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x24f1216b3682eb2a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s43888b30db741fa9",
+      "process_scenario": "sc0967ee2dba8bc0c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x60fca5b6fef77523",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s055f11dbcd8969a5",
+      "process_scenario": "saface485d6bf91cf",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x78a251d49e1b6e74",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sfd3cb517c7564746",
+      "process_scenario": "s3c419dde4972bde7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x05339f3ea4dd9a48",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s27301cdd45f56279",
+      "process_scenario": "s7552134bff9c4f0b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x121509dead557f6d",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s37dde057e1facc73",
+      "process_scenario": "s0ef307ec80b4ab01",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x96f2dc89fde423d8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se9192cb317e608a9",
+      "process_scenario": "s6d356c864e552540",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xe07253b78c1c2d27",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9b75ba76012911ed",
+      "process_scenario": "s772bdce70c005cb4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4691dfe41256d5bc",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s3360a44d27795096",
+      "process_scenario": "sc905ae8156cf53be",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4360f98c7d3e22f3",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9afd87807d30f80c",
+      "process_scenario": "s95d8c81161e3955b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8cf2cb8f48a98f9b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sad39f52928d85815",
+      "process_scenario": "s1c1031201c9da561",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa8279ccc25b07d2e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8ab47d95e8bfe35d",
+      "process_scenario": "s62ca4bc431dccef0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xc52f8a2f28ae2303",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s644e4f2b93254622",
+      "process_scenario": "sd823083dba6056ca",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xdafb67697526b089",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s83ac59c4d8e68d86",
+      "process_scenario": "sa1c03611abcfa935",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xaf9eeced5afe0953",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s70a9a481a4b1011e",
+      "process_scenario": "s437bd49b0bfc1728",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x47ccd4e90b70447b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s024723bf7449c0a0",
+      "process_scenario": "sf325c54d626a4b47",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd769885938b3e24b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s20cb4ada9c741115",
+      "process_scenario": "s506857b85ab2589a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xefef196db836284f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s192e5354d3a86480",
+      "process_scenario": "s888724a085312f8f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x2ba47ca622668441",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s45ac449bf16a9e2b",
+      "process_scenario": "scdf72370f3cf91c0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x088040cedbaae4e2",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scd6bc7a9ee27a138",
+      "process_scenario": "s6dc646263e42f3eb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x213d99af65644877",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sbc04399374714e00",
+      "process_scenario": "s3fd1437f1070d2c5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x5d282cbf9a72ae27",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s563eaf7635209b3a",
+      "process_scenario": "s10409e1fe33d15c5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x88002252cbba1293",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2f603a98a37977e5",
+      "process_scenario": "scea8b73bb8a9b77f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x790c12ce3a20d2b3",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sfa9804177b3dee3e",
+      "process_scenario": "sf1235c2450ed73f5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xff3de1a6ea31d446",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se20c78f50970cdc4",
+      "process_scenario": "s67ac5ff145c394be",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xdfd012f998572dba",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s257223ac88927071",
+      "process_scenario": "s496b2bf3f4181356",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xbde6feca63273107",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s748a6c7bb7927a05",
+      "process_scenario": "sad89149acfa89435",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x6d7ccda96def6fab",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2409d55e35fbcb29",
+      "process_scenario": "s9a6f2f4f5327eaf0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8c939eb2aa466905",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se8d0e62a4d931dc8",
+      "process_scenario": "s2185a7ec41a42e3c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x17520039dcf6b5ef",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sceb56b1c1b79625b",
+      "process_scenario": "s0093e009dbb65fbf",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x91d7790fbcf7da36",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2c0ffc85c950442d",
+      "process_scenario": "sbad236595857163d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xca282a094172bfa1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1d161c284c5daac7",
+      "process_scenario": "sd44e5259ca853768",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x026c722ff65d3c38",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2a9faa3b762c1e24",
+      "process_scenario": "s75664561d11d9f8b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8f0140a056b2001d",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s03b2661e17b885eb",
+      "process_scenario": "s7342fee393fba4cf",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd6b12abfd0104743",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s808203b1b17849dc",
+      "process_scenario": "sefca1559397204d1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x0b8e8398ff2d6e3e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sffeb67657166a37d",
+      "process_scenario": "sd0c499818dd04740",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xca09b6c851cb617e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s93bb6703ca47ddd6",
+      "process_scenario": "safa5a4104c41cf65",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x83523122aa62e7f7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4ef15cc9b4109afb",
+      "process_scenario": "s39ffcef264136b31",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd60a784aa1762c1e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0d3567b109a1c03e",
+      "process_scenario": "s6c06bf18afa5f151",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcd87642d84fa6315",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb28d11acb5812e69",
+      "process_scenario": "sc32c738f80c2828c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x86dc57623021ef9b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1b4a610f3d49ff0f",
+      "process_scenario": "se77fd6ea4f17fed5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb10990fb3c031581",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s261c3c85834300d8",
+      "process_scenario": "s1950fb6b8dd83461",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4834c7e48768ecfc",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9374b318ffdc6474",
+      "process_scenario": "s852abf50772de4bd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x571e5e2f09247af6",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0a68b57375df7f4b",
+      "process_scenario": "s964f2d913ecc9394",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa6e9781184b66910",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se4a0c43be035a9ef",
+      "process_scenario": "s62f5640cfb6f7c54",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x892c06af9fd9c4d5",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se4da36d3316a9ea1",
+      "process_scenario": "s903fa10452f29bd9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x9f9a9478b7684473",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd71b73f7899ddbb6",
+      "process_scenario": "sff191a88ff2fe9b0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x02584353c9451d95",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb518cb7173132f62",
+      "process_scenario": "s3548accb3fb9f9e1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf7ca30881b8b05e3",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s40c6f03ecb3dd945",
+      "process_scenario": "sdf41f5d1f4706562",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x889d7469984276be",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sbfb5af2578dcd103",
+      "process_scenario": "sc44a5203ea258214",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x141560e6dd1a0752",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s99e364750060b94b",
+      "process_scenario": "s4b5ce8b31e88fb61",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcaabd0b5ba37c403",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sbe69a8dd0e714e4f",
+      "process_scenario": "s6571df61131f61ba",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb2ee840129b8a293",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1a1f23571c5275ca",
+      "process_scenario": "sae8a5cc177fc441d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x254a86347e6e1c53",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s06e0b8234117152a",
+      "process_scenario": "s5d961b8d6baa3ed3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa5b2eb56a6a7ba48",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4ce4d33ce313351a",
+      "process_scenario": "s664ab745aa8b1497",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa19c061b2ccf26cf",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "secd1982b81456075",
+      "process_scenario": "s5af670dc5a9e96cd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x5a368e899c13dd62",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s832921172bb60533",
+      "process_scenario": "s69354d1d2af7a8a6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xc148458dc1a28d56",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s279468ff50f656c3",
+      "process_scenario": "s7e263981818c90ff",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd1aec9ddbdf9d03e",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s271cd07ea10dd7a7",
+      "process_scenario": "s0b269e8b24ad8d7c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcb017eb988aed774",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7ad73b5d21186614",
+      "process_scenario": "s22e1149cb12b8bd4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa1800a071c9d3763",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6ecde3f02046e342",
+      "process_scenario": "s080ae05dfe36ab5d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x2ac6e8b5fafdeec2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8cc2dce8a6dd4e5a",
+      "process_scenario": "s788d2af0bddc95d1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x9a8d196980a76646",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sdf27e3b1f31f06cf",
+      "process_scenario": "s9621bd44e914a19d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x1a0cafb3cb799eed",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s277ba710653dacd2",
+      "process_scenario": "sa9ab2b0dc7ad5b6c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x469ecf06b97d5f3c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s356c474201d9d838",
+      "process_scenario": "s9d078d83ab80a341",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xfff63bab8f2a2586",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9c19cc651a8e6d18",
+      "process_scenario": "s1c5b98435e7f8339",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb6a41c21b632493b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7cd2b2f78e8560d7",
+      "process_scenario": "s520e3c8bc75b791b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xeff47e456d451789",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0da726535e579cf7",
+      "process_scenario": "s2c2c0ea612785042",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x7d9186a41656856c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf64693c6e8e5c3b3",
+      "process_scenario": "s109ded0041ae0e7c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x306db1b853d6539b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1cdf893869d8cb02",
+      "process_scenario": "sd2d7ef89fb7e5e69",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x580b5c154012c260",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5fe05918747d4e94",
+      "process_scenario": "s92ab48382c4ebf1a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xae472eb4b4c3c672",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc5c464f83772e0da",
+      "process_scenario": "safa34b14ccb3eb30",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xafebf0841f66c850",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4a9126fc5ff8522a",
+      "process_scenario": "s335404bcf0d551c5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x3bbdc8dada3c93ef",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9edda3f3cbabe12c",
+      "process_scenario": "saff308ae55ca4750",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb5db77d4b8e47d81",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s101fcb64b6965bbb",
+      "process_scenario": "s32c4836886f8d181",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x95670f94e9b95bcf",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1b56cb33cca107e8",
+      "process_scenario": "sd344d6009597897c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xadbc76d752a9b9c1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s77151261705acf9f",
+      "process_scenario": "sdd52ed3760cd1aa8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8f6a45ced57a7553",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s858af8c27c93407f",
+      "process_scenario": "s40103219a675d9fc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x412af99e2c83c2bf",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sca5bb0c65487a66e",
+      "process_scenario": "s1febf97de3eb5dc0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8d09967ef98dda7c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2650b93daed7026c",
+      "process_scenario": "s61aa934a0b37d62e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x0ac67e595dae9ea5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0c3580679d1f25d3",
+      "process_scenario": "s4afab4ac3d3ae6e3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8ffdda04d0080dda",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se9aa4634f3291817",
+      "process_scenario": "sf965ece4cd85f734",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x41d0c963e3be3efa",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s738530a13eb035b7",
+      "process_scenario": "sf5e5c05ee0251754",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xedeeb4098e284a73",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "saea39e898444f57e",
+      "process_scenario": "sc0479811008b129d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x6deaa3e1f56d1ee3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sef38e3d2229eba7c",
+      "process_scenario": "s727886b1510d36b9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xc745af4280e5a561",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s82905595844094ba",
+      "process_scenario": "s38fba2cdc817d087",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x42f290fb4fd9f0e3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "saf76254d47689db6",
+      "process_scenario": "s09126bd7cd9c633f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x814c37f01ed34f2d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s47cec471e0c246cf",
+      "process_scenario": "sfe75a540936a67eb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x205ce5bed3f42d12",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9ed0b36edef6e332",
+      "process_scenario": "sa3bd9c54d3c82af9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x3e118d616151cc1e",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa86b59b636c2cdf7",
+      "process_scenario": "s85857397f8c609c5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x56da6f9638f68306",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4277e2ded5cf08fc",
+      "process_scenario": "s7d9ca0dc392b37bc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x82a6d5b1e6f599a1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s682aa69e5b643008",
+      "process_scenario": "saa8ce39f6366d851",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x146b2fd14c9134ab",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa57ab837e807e565",
+      "process_scenario": "s806d49d049cf3315",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xec08b6d79ea72f76",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf0ff9e301a724858",
+      "process_scenario": "s1851bf7462794180",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4a6625d8391dfba5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s423858ee98cc3688",
+      "process_scenario": "s22377ac4f7f79bb4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x49dacc099025eeb0",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s536c2935bf3d95c9",
+      "process_scenario": "sa6cdf3b21111170f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x5b56da3fe4fe6e5f",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc9b1eafa77ee4341",
+      "process_scenario": "s4c044bb50bbf2300",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x66318b8ebe7b8d7c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf97c0c4ff87cc490",
+      "process_scenario": "se28c503f8f9e07e8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcaf902cc8ee623d8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb6e38e158972e1a0",
+      "process_scenario": "s818404c2ff5d4bef",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa0ef832828b6b9be",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s95f777381f04df1c",
+      "process_scenario": "sa34ffbd53afbee37",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xff243d62da4bc7c0",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "saf873eafc02cc1e6",
+      "process_scenario": "saf006d5e1e12e827",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x21583170a3a75b75",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0afeb29bbe2bbd77",
+      "process_scenario": "sb6cd085f479972b4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x685b9d355c5d94de",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s56f12287898c4e3e",
+      "process_scenario": "s720dd5804cdbfb3a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8b611fe219a5f811",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s31ba490631c649d7",
+      "process_scenario": "s1f2525dbb671ce05",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf944bdff8eda9597",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s766a6f362d6d5563",
+      "process_scenario": "sa9af9e1864aaa788",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb8c087661fc08222",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb07da0d03e9c9706",
+      "process_scenario": "sae59a7f654433915",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf2585b8791e05733",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s76e6ade9846d0ace",
+      "process_scenario": "s3fb8a10d223be17f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x7bf9a64f5646c15f",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s642ef8d54a8f8fc6",
+      "process_scenario": "s9895ede3720adfc3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xbbdd850062a7a52d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0b59002e15b1fb6f",
+      "process_scenario": "s984b600a238003ba",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xe26c6ce499b23a77",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s670b80dd2ba715d8",
+      "process_scenario": "s2c4db60542fe9b4e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf22e696561ac43e0",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb28998fb34d9c623",
+      "process_scenario": "s2f6e5f5d20a32839",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xbe2315b2034565e6",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se87847cec76c305f",
+      "process_scenario": "sca0a1d3527f2b245",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x2cd51e970dfb3dbe",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sdd4c0d6682fb84d5",
+      "process_scenario": "sb5a7da2275880d73",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x2017df3d99efeedb",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5f12cc6dbd325b4b",
+      "process_scenario": "s7c43b81b742f9ed5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x7ae40713e51c10b8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa95757f31a56e1e4",
+      "process_scenario": "s74487c7c018948ec",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x0b00ff8377a57db3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s388fd6f92d7095c3",
+      "process_scenario": "sdc9320b9af44f52a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x1d6abb0f9d5050cd",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4b0c2621ea2a175e",
+      "process_scenario": "se1260110f1d652fa",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x04978d231753cb94",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sabc02260b7a4e5dc",
+      "process_scenario": "sc2d088a1a34dd44f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd25d8d6d3f585464",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2c108283381a84f3",
+      "process_scenario": "sb8959cfa57753522",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x7ebaa693207e00d7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s14c1176689a1ecd5",
+      "process_scenario": "s8e8723abcf328027",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf14dac3410ff1cd4",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa3e629f936de38b7",
+      "process_scenario": "sda9eef0df19dc2c5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa0b9b0ddbcce1b3d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5fe486dd732343c4",
+      "process_scenario": "s18029548f054aa13",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x7b1bd3b60f656785",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0d1710b66c778e33",
+      "process_scenario": "sa056aeee0110b6ef",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd4c0ba1e641d465f",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5937cc6f08e0af79",
+      "process_scenario": "sa4f864c2d0dfc9a9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x86651e8c24a40402",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s78ef935ae332fbd9",
+      "process_scenario": "s6d3df7d0324c1007",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x3c30b0f07649f94f",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc13724006515b401",
+      "process_scenario": "sd145ed2439511817",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4814135fcccce987",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sded74583aff99c5e",
+      "process_scenario": "sfdedb2f2ad1be7e3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcec084d545ed32c5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se4c238a3c5c31c71",
+      "process_scenario": "sc57b6e1a5158ea0a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x80d7284fde6aed27",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4691c881f5b15406",
+      "process_scenario": "s0744df3a698c5c79",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa8fa39028b7511e4",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s59f2b45be2b39854",
+      "process_scenario": "sb25c7d26731af898",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x9985a11c522d8c6e",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9d8b145f8d767f66",
+      "process_scenario": "s8829c35490f40d94",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x303c7fc59044f90b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s66c3da6bbc6a5ef5",
+      "process_scenario": "s602fc8688eca7415",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xb2c1a4003073a6d8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9f5892427fabc8fb",
+      "process_scenario": "s7c6961dfab76b95f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xfaef96bf2e88c183",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa6bea33eb324678d",
+      "process_scenario": "s71c05d88cfdb23c5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x92dbebc6580a968d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s72036b876002c119",
+      "process_scenario": "sbfd30a36d7f0196c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x9a87305fb62ca7d1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf5fad5c749980c01",
+      "process_scenario": "s75aa1a2937a69d3b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x84fe8cf7f39960d2",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s04ebba57df2b4a5d",
+      "process_scenario": "s02822a223f5f9436",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x74d7d0a7677d370a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9eb744a96ca0f9f6",
+      "process_scenario": "se7dcbeccc7dd60e1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x2ebc562513160d68",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd43993f9166eb19f",
+      "process_scenario": "s186df55b24459440",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd218251d8eecaf01",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6774637516733a0e",
+      "process_scenario": "sf0766b9d4862925d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x5342e5fae11104f8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s530eb4f0d2b61e18",
+      "process_scenario": "sa6491ebc840f5b27",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x1add1be8a5caff59",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s524cbd5811740d09",
+      "process_scenario": "s12394ed56fb4e70a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x488250cbdb514d5a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1d6e7468b284be8e",
+      "process_scenario": "s61f171d81150f2c8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x4d0c00e802eca5b9",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4764529cc54b54f1",
+      "process_scenario": "s72ab2fc473fb42b8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x216de97accd329c7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s05f5207a71f30a2b",
+      "process_scenario": "s618923f4f1b422f7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xbbc3dcaf10421a62",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9f445996b75b7328",
+      "process_scenario": "s7f8cd9cc867078d4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x8804b1453dac7400",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8af540ad7630e664",
+      "process_scenario": "s28b4724875fe7a7c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf56858f8e5960f02",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0a8bbea5cd83bc14",
+      "process_scenario": "s8f8a686f6671e66b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xf96f1d89d255046b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s68db1a4411434c4d",
+      "process_scenario": "s389028dc631a709b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xd727024955114453",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1fef1de7a5cfb42d",
+      "process_scenario": "s0f1cd0c8d9f4397d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x008bddadec76f5b0",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sacfb3992e1f5b4bb",
+      "process_scenario": "s7502b44e3bf12388",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xa19988677f6704e5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3565143d4b85e44f",
+      "process_scenario": "s94b410cbf4299be1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xdbca82d2704668da",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1346cfb8b279bd42",
+      "process_scenario": "s052cc71471452de5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x83cd6726f4c8f8ac",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sef6fb8f878f34866",
+      "process_scenario": "s6040880a1286a9c2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x0b7358add5eb8f02",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s476406494ea11051",
+      "process_scenario": "sefc26938db1b55a1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xfb8d2a670ffc085b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2af9e02e8456b657",
+      "process_scenario": "s95914a60d597c2f5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "x697f20588acc5963",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se9c4b1718f25804b",
+      "process_scenario": "sd5abd7465300c943",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "VALIDATION"
+    },
+    {
+      "equivalence_id": "xcb5c6d674cc4bec6",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd7447a3952f373d5",
+      "process_scenario": "s9c5ba4bca6b7b1ea",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa696fc65faae7682",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s995ede6e475d9d5c",
+      "process_scenario": "s8b451e7f7b969a35",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2f83e1a72b5c1e20",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1958293429b4f545",
+      "process_scenario": "sc83dd165a3616019",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1f8a938f8210a54f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9fcd38099bdcdaea",
+      "process_scenario": "s85ad825948152c22",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2384d36aa21ea77f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sc8c2b7b528f5137f",
+      "process_scenario": "sa8b6e206f1cc7aaa",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe21d7be029e940b1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s536a76dab7dd6c8c",
+      "process_scenario": "s56eb1e90dad26639",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6cc92971116b1d76",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9dee1c2404c56360",
+      "process_scenario": "sfac74dbc7841896e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6be3d61c8ac294de",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s14d4d338205ebff5",
+      "process_scenario": "sfb4be3a59bc0ed38",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x15c51923a693a435",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s51c6f13d60c3407e",
+      "process_scenario": "s34fb5d39e78ada4b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2d0a7000b782de39",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd86cef3e8c5fd866",
+      "process_scenario": "s61c98adc4819cc95",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc7a225a7eb465f30",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s287d4e8299972ce8",
+      "process_scenario": "s41fff0947f0bd5b9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xcdce85fc568f8072",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7292e359582705bd",
+      "process_scenario": "s33de7b19b020b5d4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc0a77fbe700176f7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sdb5ff9d2ab3442bb",
+      "process_scenario": "s8339ba2b94f9fa07",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x889dc6cfbd2ead42",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0bae9e2c06c8eb73",
+      "process_scenario": "s115b01733cae438f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1840807c4cc5cc2e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2bf784b320929a54",
+      "process_scenario": "s3066bf0685edbf35",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x5aed35b3a7763b78",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s3096d6ffa6f87c7f",
+      "process_scenario": "s9b6888c00aab59fc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1bf3a21ec179f0c2",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7b5bbd0ac0a7d4b4",
+      "process_scenario": "s53fbd597132579cd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf083bfcdce013d9b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s762f86f307a401fc",
+      "process_scenario": "sf95926494cd6335e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf2a053421042e50b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa465acaccafa89ac",
+      "process_scenario": "s843453c65e301f7a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x69eccc1dae54459f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9ad4e94d54337a61",
+      "process_scenario": "sbdf10fe23502e2b1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x5fd589a24a1f4e6c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sdabdd8742434c931",
+      "process_scenario": "s03acb3e8db0c626b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x05d69491f923390f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s408875562a6cfead",
+      "process_scenario": "sbce33384b4f3b4b2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1e1e24511f10ea66",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9d6657d548f8385f",
+      "process_scenario": "s4cfd7448f95873bf",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x92b1289c9f02cb2d",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sf2d91f2a3e31e6bb",
+      "process_scenario": "sbe4402ed02ed9623",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x5d247bcb68dee1a4",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sda811929db37a9b2",
+      "process_scenario": "s9e03d6bca03e95f8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xeb30f1b7ebe1a02a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8af7bd371ead59ce",
+      "process_scenario": "s2d07aa209d964bd8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x182009b81ae6c7eb",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s134ebfff30acabea",
+      "process_scenario": "sf6e2b4c150b82667",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x7d5f37db79f5f3ed",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sdfdb1ab868ba5622",
+      "process_scenario": "s6ce34111dcd1eea6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x25d4b39afd03471a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s7595f37fc7dc014d",
+      "process_scenario": "sb6bb6b00bcc6b7d5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x443900e440e70e9a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1f3015f92f433277",
+      "process_scenario": "s33a90c0b37825733",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x8281777ea470b56e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2beed35636e9b0ae",
+      "process_scenario": "sd0b5788024af25d4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4f326c8f432260a7",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s38c8075910d99b2f",
+      "process_scenario": "sfe0d1eac02e470d8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa139e8f40f2d0118",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2686375039f2897f",
+      "process_scenario": "s387685baedb5df94",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xad51df1a2c7605fa",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8bbbcdf353b4534c",
+      "process_scenario": "s740d494fc9661706",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xaf1cd865a75abb5a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se97de73648f3ec29",
+      "process_scenario": "s12efa71c2402490f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc55045f12929666e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s87d89e679bb7c40f",
+      "process_scenario": "sa83285492cdf314a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x424db19934b57d61",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s48fd661a6c254b7e",
+      "process_scenario": "s57b69a6e4317d408",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x60fa896fe366e5c8",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb33820f7ec5a42f1",
+      "process_scenario": "s6bd5af1fe4967eb3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xb026b2851b577ce9",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa28809e50686072f",
+      "process_scenario": "s372af05160f0d503",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xcd2d724104c8b871",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4cc9072f13cab206",
+      "process_scenario": "saf8200e225a39584",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x34dde36baca56623",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s5c700b315170f097",
+      "process_scenario": "sdbf219aa370c6171",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x89f212c74b31fadd",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8a8f28eb382b12c2",
+      "process_scenario": "sd5c9a90cfd1be381",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe467af3b9b965e78",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "safc53248eb686e08",
+      "process_scenario": "s131de4e3bce38f57",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2be54d5769575e3b",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s61994c94bc9bba97",
+      "process_scenario": "s4a9a8625aa485291",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x5befeed5dcb2516e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1156e1c23d4e5c61",
+      "process_scenario": "s321a91d105c0c716",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x19f7a20dbcbbf50e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa7add32bdb67d98c",
+      "process_scenario": "s450790c6685bdf89",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6b190d898f844ac6",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s8e71450d06b2d151",
+      "process_scenario": "s8f9138195494ff9c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9232a7653ce92cfd",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sc088e499d87ec79b",
+      "process_scenario": "s752fa2d855853abe",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xfc9be26692b4dafd",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sbacc812a33dd28dc",
+      "process_scenario": "s7b5f79260dcf54f8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x72659d982984fbda",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s466f1c40533f8057",
+      "process_scenario": "s0a71d7c38bbbdf8e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2ce682124d423c49",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sf48dcafb0e7189da",
+      "process_scenario": "s5fb93603cb43cc47",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xb7cf48898a7ed34f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sfcd1a8cc4e015bf4",
+      "process_scenario": "se697cb239ecf03d7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x64290ea18555a464",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "saeb175b15c6a97e7",
+      "process_scenario": "s728ec82c2c185d51",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x18085b0abce9fb8c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s46dda042cc962eb7",
+      "process_scenario": "se1ebfb3d7d24f04e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc4cc89c28edd2f1e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0704f9ab4af92477",
+      "process_scenario": "sde671c9b98ea40ec",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xcab8f71b1fd7e0df",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9fd92df84e665530",
+      "process_scenario": "s42cc84a804953bc3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1d8b864a91f1c5d9",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sca7ec3bcc6132ec2",
+      "process_scenario": "s7fd284b49fa1a955",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x331fa8d9617a1e7c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd04a260e232c446f",
+      "process_scenario": "sde6e0b2f864f89d5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc0b9d14057f13777",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s03adc2243a043225",
+      "process_scenario": "s448ff15ae6a4c814",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x550f5c7a26e4577c",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s3139f6d5b18dc1e6",
+      "process_scenario": "s27bf3e13969c33cd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x46d98afb13f99d03",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s748d5ea7149e0344",
+      "process_scenario": "sf55644e3ae84b86a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x63547e90f726c057",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1724a0496e1e9992",
+      "process_scenario": "sfd11c99329d3e562",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xad15cd76705cd6eb",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sf06e25a9f9323f8e",
+      "process_scenario": "s7e2b8b16ca32727a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x5d6e3e794e8fd730",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s000e16060eba060f",
+      "process_scenario": "s0c0510d9d80c3a00",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3523d19eed4e4f94",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1e7e4f05e574d475",
+      "process_scenario": "s3af05f6278b8a342",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x27810dcafc4611bb",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1b6f3e724a68813b",
+      "process_scenario": "se3b977b8b6418210",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe44c8e1099daa2ff",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sac8b335aa85934a3",
+      "process_scenario": "sbe6e5f12028405a4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xccacd58f7f219a84",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s43bd66c1ff25fa92",
+      "process_scenario": "s4eb19afa64deb823",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x7ab11cb2e01546d6",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s86cdeeaa961d7620",
+      "process_scenario": "scc17a0767a7ca320",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x90eb79ebb14eb0f5",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s036fd5ac053ce982",
+      "process_scenario": "sc6440da7cfde46a8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x7e35b73a29705977",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s2c7c68962ed6fc8b",
+      "process_scenario": "s3abc9822b048617d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9bf4698bb1062e3a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s458bd45cbb05b6c2",
+      "process_scenario": "sa3c04899db1982ae",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc5fb986ddce39d71",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s254cab06bdffde9f",
+      "process_scenario": "s20bd05228a3216e9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9baf5d60842c87e5",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s6b360f2c7c3c2c8f",
+      "process_scenario": "s13317e0069f813f9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf0454e181819c5ac",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb01347b09003b389",
+      "process_scenario": "s4244282b4ea3e111",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x39b51c26fc3fa442",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s4f1910625bf529a7",
+      "process_scenario": "s173ba3916f63947b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x05b4e9d235e6a684",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s32677f16daf4c881",
+      "process_scenario": "sc5b6302a6da422c7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xb8797403834fa0b1",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s1ad87540de8939a8",
+      "process_scenario": "sf8a143128131b53c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x55f13b9bdeb1d3de",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9473443c31a5e467",
+      "process_scenario": "sb6a955d2f5963414",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc143b809b008deca",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se06fbeccc34e0726",
+      "process_scenario": "se09e7b19d9b78e9c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xca4e0882d45aa14e",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sace4c501c155f04c",
+      "process_scenario": "s23d339be1689ba5b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf4da80f35a7ca595",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s549e61d26fdc850d",
+      "process_scenario": "s2bcc4f30be2fe780",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf83704bf7181f438",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sbb18af864cd750ca",
+      "process_scenario": "s0c97c88b88109042",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x299360094e49e533",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s40ebc0b90a6f6f17",
+      "process_scenario": "s39fa5660615ea46c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x04cc5ff9e78c6754",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s650949cdc44928fa",
+      "process_scenario": "s7de1b2cf06c5caba",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa763097b740b154a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s6ee8a36d9aaf4301",
+      "process_scenario": "s5215fd8eceb5e6a0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x22f32aa58ee2eb5f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa8cdcf78450150ab",
+      "process_scenario": "s684a4db604d1c70f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc7fc5341c1294c5a",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "scdca6a6c4d038184",
+      "process_scenario": "s8d05f76c0d43d71e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6577d837baa8b682",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sd447c36003e7ccd1",
+      "process_scenario": "s8cf5f54bac896d12",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x8941eee217ae3e45",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s6e7302b5a9235bc9",
+      "process_scenario": "sabf548abef585f7c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x507cf8836473b951",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s29893f70c9c8ed58",
+      "process_scenario": "sec0791f7681e4e90",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xbf71bb095b2b50c5",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "saa693110f1ab1b40",
+      "process_scenario": "s709171cfec69548e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x0d1d8920ebe2dc11",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "se2c041a76dd90eed",
+      "process_scenario": "s593051f31a1c6c51",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x444e5ec88714eca2",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sb7f00d7cef60f5b0",
+      "process_scenario": "s631fbe1107f086a9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x21fab5b64c034907",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s83d7f74ecb0189c9",
+      "process_scenario": "sf64fde468d2efbc5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa3674a7b8ec5de2d",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sa3cdab8644d4d6cf",
+      "process_scenario": "s55d974e39292b4fa",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x018f48946427ab4f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s9ff359faf2a5b10d",
+      "process_scenario": "sc617f8aa4f53dc7c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x05d46ecc568b6e06",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s3ca352f8282f3c6f",
+      "process_scenario": "s7d7b62c8125f5814",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4cf25597f956e935",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "sf91fc487130903fb",
+      "process_scenario": "s8b0bb12b21e650a8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe7138761d693a90f",
+      "expected_decision": "ALLOW",
+      "filesystem_scenario": "s0340e196982c39bc",
+      "process_scenario": "s767c3e98871607fe",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x7b48323fe948347c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf486e77788db1ba6",
+      "process_scenario": "sd1420653a41cb240",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xdb3d9623d34277fd",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sfe6777a30f63b798",
+      "process_scenario": "s6fcb6222a0a2e5d9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1ee9a1f5b22661a7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s986c0ccfa2e35a4d",
+      "process_scenario": "s48d4beab59172f10",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc97805ad091f5005",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8aedabaea57a2c6e",
+      "process_scenario": "s3a19676cd2434cdb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xd552345f09616bfc",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf36c238da5fc524d",
+      "process_scenario": "s5696fcc3916e0377",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2ab3317ef1c65fd0",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa4c50a454148dc3c",
+      "process_scenario": "se9082956698a0da1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xeb3c863143e67742",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sbe94f35c3fee2ee1",
+      "process_scenario": "s9d425ffd21071535",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x50f1801f67a521f3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s1c2f1485b94a547e",
+      "process_scenario": "sd4b937c0f54796bd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe3e7b79a2e015376",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s74189d6665240b0a",
+      "process_scenario": "s115f95ed2abfb087",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1d5f08a8ef79d29d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "scd558384fa357d81",
+      "process_scenario": "s9e95c382312668d1",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9adafae283584648",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s51a2944b21eff882",
+      "process_scenario": "s16fae06f3f40fcdb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4869ea7912256a3f",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5c8d07c96c985dde",
+      "process_scenario": "saacfc8c6aeff138b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x141671b4475c2d07",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s159d579b314395b9",
+      "process_scenario": "s31431b74faa39a6a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2aac35bc139f41ce",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa1f92668c91fee5b",
+      "process_scenario": "s0a8301fecf178768",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xef789daf39efa9d7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s13a4c3c232a5ab53",
+      "process_scenario": "s2507ff2ed2ccfcb5",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x31d2a297939ecf98",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc694046edd67c98d",
+      "process_scenario": "s741b335991236871",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xb8353bea1d714478",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8094d0d0be4752e6",
+      "process_scenario": "se7222ffafc0e4aa7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa79bfc138ef80d61",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd7bc0a42497f982b",
+      "process_scenario": "s239229913b4a7908",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe2c44f1c82593b06",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se05b8ea0ee24a171",
+      "process_scenario": "sb962a390e9248b52",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x254648512e9e9d56",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s619c549dae6cc67e",
+      "process_scenario": "s489e23699475775a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x13f2e2bd50067470",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s9111af78f174b8ea",
+      "process_scenario": "sab27847562ea0a51",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x44166736eb149de5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5bc8c0add8034d29",
+      "process_scenario": "see01f5e34af88c86",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xcd30f68e2e34d8bf",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s30f0b14deee05978",
+      "process_scenario": "s043f6c09ee614e38",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x02aaa8c954a1a0d8",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s861cd7560fc85301",
+      "process_scenario": "s86d73c828389e5a8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x0bc5c8240d1a29bb",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s04f00308d8aad235",
+      "process_scenario": "s99bfdd4bc3dd67f6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa3cb6647f823f4b5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se7b980235f92f7cf",
+      "process_scenario": "sc31189db87d7a05d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3f9d41e804da0cb9",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s90c366380557b108",
+      "process_scenario": "s36049dc27c893f2f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x8118613f3d0f717b",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s37753e142abde025",
+      "process_scenario": "s92a56d841b018990",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3f79c842f3fdcc1d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7d10cce124c31780",
+      "process_scenario": "s921684a51d38d0d0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2ec8a5ce9faa3557",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sd1dcbd616b21a754",
+      "process_scenario": "s14bae48d2882c343",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x84ffa2481cb59846",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s819b218112f3aff9",
+      "process_scenario": "s4f33750d54fbec0b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4b8deb25bc9cf227",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sc02c5baad80e0514",
+      "process_scenario": "s06290ca691037b1d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xff9601a86aca4ad3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4123e122c6e14622",
+      "process_scenario": "s20242c6a5b200ddc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x39709860e6a29276",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa63386b23ede4f45",
+      "process_scenario": "s598854fa19e4c8a0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x57f5823648bf6800",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sff44e974e7c52c85",
+      "process_scenario": "sf3bfabf9de9d38b2",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x257d12d488cd3e40",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sfac551d3e7432442",
+      "process_scenario": "sce56947c8639261c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xa3c9ea2e937df2ad",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb957f54ed6b9e735",
+      "process_scenario": "s6ccb95f94dd1c13f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x0523b1f4fcbf3e48",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5a95c04db5a33ce9",
+      "process_scenario": "s1f80d7862114ebff",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe86f6aede6af2cbe",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8333c53e2782d0b3",
+      "process_scenario": "s7511bd6b19a3074b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x72662fa50ef4e05a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa3399d1b5536afda",
+      "process_scenario": "s704e3e69090d3520",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4920e0eb7f4bbac7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s8e2019c5bd3ebae9",
+      "process_scenario": "sbc32665936c7e713",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9eb57f47ff48b7d1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s904ceff8a057d2a1",
+      "process_scenario": "sbf1d17d46dd38980",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x51c4faf81b2900a5",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6ecb7e753624e6e1",
+      "process_scenario": "s9a18863d9c2834e7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xb35ac9046d18da9a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2738703fb298f00c",
+      "process_scenario": "sa690621c247c6352",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9faf7cd89bcebcee",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s2b191cde9dc3937f",
+      "process_scenario": "sc71353ce7f77ee34",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x60175bc7dd74c3af",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sddebc594ac1ff3a2",
+      "process_scenario": "sba2dd9f9c627f988",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x711a9357f2b399f3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s04c2af30989d98f8",
+      "process_scenario": "sb31bf6f0c796f6b6",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x1728f1b53a50731e",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sdfd14fa40fa2543d",
+      "process_scenario": "sf162b62f5fdddbfa",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x42f93b969d48c062",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s752272763e1da5c9",
+      "process_scenario": "s1e84cfc044e5241b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x0da68741763b31bf",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "see91f37e2cb04853",
+      "process_scenario": "sc1d3d2df466a329d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x44716c79da2a91be",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4f5869f9609303aa",
+      "process_scenario": "sa045368a6f385280",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3970134f4a7e4ca4",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s25ec033f607b291f",
+      "process_scenario": "s821673ef7c235a97",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3b537321b5ee0bed",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s53cd1f1224cf7616",
+      "process_scenario": "s7b802c2b99b6ee28",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6377f93d4034f597",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s217895a2838aa59d",
+      "process_scenario": "sa87a903ec74edbb0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x8b6825d0d4fd426c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s63c26cae60d29c0c",
+      "process_scenario": "s9eb1da13db3810ce",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x9880d5b3c4dec5a9",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s387e5d64bd3989c7",
+      "process_scenario": "s8c03813fbfe082ab",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xea05c8e7ecfd2395",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s0e4d5b6cf113f064",
+      "process_scenario": "s5a60e006bc53955d",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf3d2378ead7b66b4",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa1905a2a20d3d805",
+      "process_scenario": "sf26cf4049d2a6755",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x595218c75b768a80",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s224979ed08cdaf83",
+      "process_scenario": "sd08c9b2344161272",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3498622668d40f2c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s601b16e9fb812a9c",
+      "process_scenario": "s01b854dd8a001482",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4effd3cf81720831",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s53a8fc2db34ed806",
+      "process_scenario": "s8ffd21c9c47c98c4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xf09d64e0bfb7b0e3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sf5c6cae9d5b57b24",
+      "process_scenario": "s87255d3b31ae2b1a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x661b7038f4e5c10c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s7930780473bbcb4d",
+      "process_scenario": "s3a13baaa0b1ecc6b",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc16501e83e642883",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5e0161e499786c74",
+      "process_scenario": "s12256ef58a52f56a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xea0dcd302c949be1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s942de3e4e02e60de",
+      "process_scenario": "s44dff20b43c815ff",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3f8dae7e6f24f678",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sde8c78f418149c16",
+      "process_scenario": "s8529415b79b39a12",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3d63ac06ee91caac",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se71d717dbf41f3d5",
+      "process_scenario": "sb052d322990a8ee9",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x8e8e7253078a181d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s37b6df734524306d",
+      "process_scenario": "s12cd406ac04bd2cd",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x8f2dbafd09043844",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sdef7ad9313597863",
+      "process_scenario": "s30cb0934dccbc455",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x49f1c466217c275d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5b253f71347a4521",
+      "process_scenario": "sa175b62912e02dee",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6654630738f481c1",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3bac45d30527206d",
+      "process_scenario": "sef2e7428eac9a5ae",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2c8d6a0e1f01f47c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s57c72a49be9df68e",
+      "process_scenario": "sd14b8d9c2b0226bb",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x951b92d73221402c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s56048de7c7f12787",
+      "process_scenario": "seb37f84d66129f6e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3f0d10e7f4e07d65",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se9a6d068991da462",
+      "process_scenario": "sf619e27ac7eda801",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x2173734a9a986001",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s93d6e2228e706ba7",
+      "process_scenario": "s37db79b1f2ecbb70",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x0aeb7cb973df21c3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6efd488bce35952f",
+      "process_scenario": "s14d1634c7377d47e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x455c28707bf0f2bd",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s081e739799d8fd48",
+      "process_scenario": "s63f9bba2fa6bafa0",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x57a99eaa8950d1c3",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "scd3c71e6d111d907",
+      "process_scenario": "sfe91768a23c1bafc",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xe13db9a6953088f7",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4eb74cc902dd7b72",
+      "process_scenario": "s87280a42b642d1a8",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x5f3e7c2a192e4a2d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s02140e0914549021",
+      "process_scenario": "sdd69db3f7e426c85",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x74424e0295971cdc",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa55b71d9b490d945",
+      "process_scenario": "s71d6b979d3767c39",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6ac3efc30d8f09b9",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sad4df50cd826dcd3",
+      "process_scenario": "sc015e05d2bc47425",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x4c45bb1e46bcf041",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s15df292973c09fdf",
+      "process_scenario": "s48c147f935cbcf09",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x521f8167280e443a",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s4f2b863dfe04d465",
+      "process_scenario": "s64f7caa7cb7cb097",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xdce975432851f09d",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb40ffdd430387882",
+      "process_scenario": "s249c7af4a831ae00",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x06356de99d73c3cf",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "saf3d1614114a0466",
+      "process_scenario": "sa5d05d485d7cca01",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x311c1d9b1ee84521",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb185b989d89f338f",
+      "process_scenario": "s0a0dde79da706955",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x84dbac1d6da9a4df",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s32fe72e99a5bf21e",
+      "process_scenario": "s0b785141a284d65a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xeee74d8e42ee9624",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s6cfa2c1b6f0e2964",
+      "process_scenario": "s7b82ba9f9dc2b6d3",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x95177a34490ef809",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sa8d1b20ec8205847",
+      "process_scenario": "s2e02cf856abebbac",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x6a02355d09c31f60",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sad9a621eb2b99ea3",
+      "process_scenario": "se5d42e517db7d26a",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x677e4eec0355a737",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s371fd743a525eb5d",
+      "process_scenario": "s56a3613df16cedd4",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x3a1506de5ea17a20",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "saf299325756276f3",
+      "process_scenario": "s32a1b5bcb6d08d96",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x994cc9ed94090557",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5be41b68dda3c7aa",
+      "process_scenario": "s8f8aef8a1b39e98c",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x0c34810aaf204073",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s5b15a5586be7a63f",
+      "process_scenario": "s06c7d1bcc57ed64e",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xd7bfad351bbc0670",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se208a9dd79a5c061",
+      "process_scenario": "s45f2dd2eba05155f",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xc19c05844b220883",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "se8bf133b86f6f427",
+      "process_scenario": "s1538b3d9afa87827",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x761f6b7d425bad15",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s25b8b8408013c386",
+      "process_scenario": "s3e726662693c2a36",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "x894a5efbfc5c157c",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "s3fd8ea58bb35e3cd",
+      "process_scenario": "s98f4d0decd7983a7",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    },
+    {
+      "equivalence_id": "xbbb2bbbbe92bc580",
+      "expected_decision": "DENY",
+      "filesystem_scenario": "sb35c0774535f9e3c",
+      "process_scenario": "s67b0e3b55359d464",
+      "property": "TASK_AND_EXACT_AUTHORITY_SEMANTICS",
+      "split": "HELD_OUT"
+    }
+  ]
+}

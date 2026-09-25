@@ -1,0 +1,19 @@
+{
+  "policy_id": "AUTH-COVERAGE-001-ONE-SHOT@1",
+  "current_state": "FROZEN_NOT_AUTHORIZED_TO_RUN",
+  "required_pre_run_gate": "INDEPENDENT_AUTH_COVERAGE_001_FINAL_GATE",
+  "raw_first": true,
+  "runner_may_load": ["runtime scenarios", "production policy configuration"],
+  "runner_must_not_load": [
+    "labels",
+    "expected component decisions",
+    "families",
+    "difficulty",
+    "pair registry",
+    "claim mappings"
+  ],
+  "barrier": "persist and seal all raw decisions before scoring process starts",
+  "rerun_after_prediction_exposure": false,
+  "bad_results_remain_results": true,
+  "policy_change_after_exposure": "requires new protocol, corpus version, and run"
+}

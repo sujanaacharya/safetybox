@@ -1,0 +1,9 @@
+{
+  "baseline_commit": "713aa375e9696b815e69c741dceb814cec9fad4b",
+  "git_tree_objects": {
+    "experiments/EXP-014": "69697ad049e69e7a0710fec5f25d3f6c0318651a",
+    "experiments/EXP-015": "ed6ea158bfab3564e8b1a89e23831f21fca630a3",
+    "experiments/EXP-016": "18db7f1b889838e4ddf4355712ce207ec82ae055"
+  },
+  "rule": "No path below these experiment directories may change in AUTH-COVERAGE-001."
+}

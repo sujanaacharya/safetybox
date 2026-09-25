@@ -1,0 +1,16 @@
+{
+  "contract_id": "AUTH-COVERAGE-001-SPLITS@1",
+  "splits": ["DEV", "VALIDATION", "HELD_OUT"],
+  "primary_claim_split": "HELD_OUT",
+  "grouping": [
+    "all members of a counterfactual pair remain in one split",
+    "all members of a cross-tool group remain in one split",
+    "instances derived from one template root remain in one split"
+  ],
+  "held_out_policy": {
+    "production_tuning_after_exposure": false,
+    "rerun_after_exposure": false,
+    "policy_change_requires_new_version": true,
+    "bad_results_remain_valid_results": true
+  }
+}

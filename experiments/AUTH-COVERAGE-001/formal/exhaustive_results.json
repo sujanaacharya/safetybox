@@ -1,0 +1,49 @@
+{
+  "bounds": {
+    "actions": 2,
+    "atomic_capability_subsets_per_contract_task": 16,
+    "attenuation_capability_sets": 8,
+    "process_capability_subsets_per_contract_task": 16,
+    "resources": 2,
+    "tasks": 2
+  },
+  "claim_boundary": "Proof is complete only for the stated finite abstraction, not for physical execution, identity, time, usage-count, destination, network, MCP, DB, or unbounded state spaces.",
+  "compound_quadrants": {
+    "AA": 32,
+    "AD": 32,
+    "DA": 32,
+    "DD": 160
+  },
+  "invariant_checks": {
+    "AI_CONTEXT_CANNOT_GRANT_AUTHORITY": 256,
+    "ATTENUATION_PRECURSOR": 64,
+    "COMPOUND_SUBDECISION_INDEPENDENCE": 256,
+    "DELEGATION_CHAIN_PRECURSOR": 2,
+    "DETERMINISM": 256,
+    "EXACT_RESOURCE_BINDING": 8,
+    "EXPLANATION_COMPLETENESS": 256,
+    "FAIL_CLOSED": 4,
+    "NORMATIVE_SEMANTICS": 256,
+    "NO_AUTHORITY_AMPLIFICATION": 72,
+    "NO_CAPABILITY_ORDER_EFFECT": 256,
+    "NO_CROSS_TASK_REUSE": 128,
+    "NO_INNOCENCE_AUTHORITY_EFFECT": 256,
+    "NO_IRRELEVANT_CAPABILITY_EFFECT": 256,
+    "NO_OPAQUE_ID_EFFECT": 512,
+    "NO_SUSPICIOUSNESS_AUTHORITY_EFFECT": 256,
+    "UNKNOWN_CONTEXT_CANNOT_EXPAND_AUTHORITY": 256
+  },
+  "method": "deterministic exhaustive enumeration; no production imports; no solver",
+  "result": "PASS",
+  "specification_id": "AUTH-COVERAGE-001-AUTHORIZATION-SPEC@1",
+  "state_counts": {
+    "atomic": 256,
+    "attenuation_pairs": 64,
+    "compound": 256,
+    "exact_boundary": 16,
+    "invalid": 4,
+    "no_synthesis": 8,
+    "total": 604
+  },
+  "verifier_id": "AUTH-COVERAGE-001-EXHAUSTIVE-VERIFIER@1"
+}

@@ -1,0 +1,103 @@
+{
+  "compound_quadrants": {
+    "AA": 901,
+    "AD": 225,
+    "DA": 319,
+    "DD": 355
+  },
+  "corpus_id": "AUTH-COVERAGE-001-CORPUS@1",
+  "cross_tool_equivalence_count": 600,
+  "decision_counts": {
+    "ALLOW": 1800,
+    "DENY": 1800
+  },
+  "difficulty_counts": {
+    "ADVERSARIAL": 781,
+    "EASY_CONTROL": 70,
+    "HARD": 1746,
+    "MODERATE": 1003
+  },
+  "difficulty_model_id": "AUTH-COVERAGE-001-DIFFICULTY@1",
+  "family_counts": {
+    "AI_CONTEXT_TEST": 1808,
+    "AMBIGUOUS_LOOKING_BUT_AUTHORIZED": 904,
+    "AUTHORITY_AMPLIFICATION": 80,
+    "CAPABILITY_DISTRACTORS": 3600,
+    "CAPABILITY_SPLITTING_ATTACK": 80,
+    "COMPOUND_AUTHORIZATION": 1800,
+    "CROSS_TASK_REUSE": 200,
+    "CROSS_TOOL_EQUIVALENCE": 1200,
+    "EDGE_BENIGN": 450,
+    "EDGE_UNAUTHORIZED": 450,
+    "HARD_BENIGN": 1350,
+    "HARD_UNAUTHORIZED": 1350,
+    "INNOCENT_LOOKING_BUT_UNAUTHORIZED": 904,
+    "MULTIPLE_IRRELEVANT_CAPABILITIES": 3600,
+    "RESOURCE_BOUNDARIES": 1320,
+    "SUSPICIOUS_BENIGN": 904,
+    "TASK_BINDING": 360,
+    "TASK_CONFUSION": 760,
+    "ZERO_RELEVANT_CAPABILITIES": 300
+  },
+  "generated_by": "build_corpus.py",
+  "held_out_predictions_exposed": false,
+  "metamorphic_check_count": 100,
+  "mutation_check_count": 1700,
+  "oracle_a": "AUTH-COVERAGE-001-ORACLE-A@1",
+  "oracle_agreement": {
+    "agreed": 3600,
+    "total": 3600
+  },
+  "oracle_b": "AUTH-COVERAGE-001-ORACLE-B@1",
+  "pair_counts": {
+    "MODERATE": 380,
+    "STRONG": 1420
+  },
+  "pair_dimension_counts": {
+    "ACTION_BINDING": 140,
+    "CAPABILITY_PRESENCE": 300,
+    "CAPABILITY_SCOPE": 180,
+    "COMPOUND_SUBDECISION": 140,
+    "CONTRACT_IDENTITY": 100,
+    "CROSS_TASK_REUSE": 200,
+    "CWD_RESOURCE": 150,
+    "EXEC_RESOURCE": 150,
+    "FILESYSTEM_RESOURCE": 180,
+    "MULTI_CAPABILITY_SPLIT": 80,
+    "TASK_BINDING": 180
+  },
+  "pair_registry_id": "AUTH-COVERAGE-001-PAIRS@1",
+  "property_generated_case_count": 3600,
+  "protocol_id": "AUTH-COVERAGE-001-PROTOCOL@1",
+  "resource_boundary_kind_counts": {
+    "CWD_RESOURCE:CHILD": 34,
+    "CWD_RESOURCE:PARENT": 41,
+    "CWD_RESOURCE:SAME_BASENAME_DIFFERENT_PATH": 36,
+    "CWD_RESOURCE:SIBLING": 39,
+    "EXEC_RESOURCE:CHILD": 34,
+    "EXEC_RESOURCE:PARENT": 40,
+    "EXEC_RESOURCE:SAME_BASENAME_DIFFERENT_PATH": 39,
+    "EXEC_RESOURCE:SIBLING": 37,
+    "FILESYSTEM_RESOURCE:CANONICAL_EQUIVALENT": 16,
+    "FILESYSTEM_RESOURCE:CHILD": 22,
+    "FILESYSTEM_RESOURCE:DIFFERENT_ROOT": 21,
+    "FILESYSTEM_RESOURCE:DOT_SEGMENT": 14,
+    "FILESYSTEM_RESOURCE:EXACT_SIBLING": 13,
+    "FILESYSTEM_RESOURCE:NEAR_UNICODE": 17,
+    "FILESYSTEM_RESOURCE:PARENT": 18,
+    "FILESYSTEM_RESOURCE:PREFIX_LOOKING": 20,
+    "FILESYSTEM_RESOURCE:RELATIVE_LOOKING": 20,
+    "FILESYSTEM_RESOURCE:SUFFIX_LOOKING": 19
+  },
+  "scenario_count": 3600,
+  "schema_id": "AUTH-COVERAGE-001-SCENARIO@1",
+  "split_counts": {
+    "DEV": 720,
+    "HELD_OUT": 2160,
+    "VALIDATION": 720
+  },
+  "tool_counts": {
+    "FILESYSTEM": 1800,
+    "PROCESS": 1800
+  }
+}

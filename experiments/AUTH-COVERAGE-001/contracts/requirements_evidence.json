@@ -1,0 +1,13 @@
+{
+  "mapping_id": "AUTH-COVERAGE-001-RTM@1",
+  "entries": [
+    {"requirement": "task binding", "evidence": ["TASK_BINDING", "CROSS_TASK_REUSE"], "maturity": "FROZEN_BENCHMARK"},
+    {"requirement": "exact logical resource binding", "evidence": ["RESOURCE_BOUNDARY"], "maturity": "FROZEN_BENCHMARK"},
+    {"requirement": "compound authorization", "evidence": ["COMPOUND_AUTHORIZATION"], "maturity": "FROZEN_BENCHMARK"},
+    {"requirement": "no partial capability synthesis", "evidence": ["CAPABILITY_SPLITTING", "NO_AUTHORITY_AMPLIFICATION"], "maturity": "FROZEN_BENCHMARK"},
+    {"requirement": "behavior-authority separation", "evidence": ["SUSPICIOUS_BENIGN", "INNOCENT_UNAUTHORIZED", "AI_CONTEXT"], "maturity": "FROZEN_BENCHMARK"},
+    {"requirement": "delegation attenuation", "evidence": ["SYNTHETIC_MODEL_INVARIANT"], "maturity": "DEVELOPMENT_ONLY"},
+    {"requirement": "physical mediation", "evidence": [], "maturity": "OUT_OF_SCOPE"},
+    {"requirement": "network and MCP authorization", "evidence": [], "maturity": "FUTURE_SCHEMA_ONLY"}
+  ]
+}

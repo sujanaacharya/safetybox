@@ -1,0 +1,47 @@
+{
+  "contract_id": "AUTH-COVERAGE-001-TRANSFORMATIONS@1",
+  "property_generation": [
+    {
+      "id": "PROP-TASK-CHANGE-DENIES",
+      "precondition": "request is allowed and contract is task-bound",
+      "transform": "change only request.task_id to a different opaque task",
+      "relation": "ALLOW_TO_DENY"
+    },
+    {
+      "id": "PROP-EXACT-FINAL-COMPONENT",
+      "precondition": "component is allowed by exact resource authority only",
+      "transform": "change only the final logical path component",
+      "relation": "ALLOW_TO_DENY_UNLESS_ANOTHER_SCOPE_COVERS"
+    },
+    {
+      "id": "PROP-ZERO-RELEVANT-MONOTONIC",
+      "precondition": "no capability completely covers a component",
+      "transform": "add capabilities that remain irrelevant",
+      "relation": "DECISION_UNCHANGED"
+    },
+    {
+      "id": "PROP-CHILD-SUBSET",
+      "precondition": "synthetic parent and child authority model",
+      "transform": "broaden one child attenuation dimension beyond parent",
+      "relation": "SUBSET_INVARIANT_FAILS"
+    }
+  ],
+  "metamorphic_relations": [
+    {"id": "META-IRRELEVANT-ADD", "field": "capabilities", "expected": "DECISION_UNCHANGED"},
+    {"id": "META-CAPABILITY-ORDER", "field": "capability_order", "expected": "DECISION_UNCHANGED"},
+    {"id": "META-OPAQUE-ID", "field": "scenario_id", "expected": "DECISION_UNCHANGED"},
+    {"id": "META-SUSPICIOUS-ARGV", "field": "operation_data.argv", "expected": "DECISION_UNCHANGED"},
+    {"id": "META-UNRELATED-METADATA", "field": "operation_data.context", "expected": "DECISION_UNCHANGED"},
+    {"id": "META-TASK-BINDING", "field": "request.task_id", "expected": "ALLOW_TO_DENY_WHEN_CHANGED_AWAY_FROM_CONTRACT"}
+  ],
+  "mutation_rules": [
+    {"id": "MUT-TASK", "field": "request.task_id", "authority_relevant": true},
+    {"id": "MUT-ACTION", "field": "request.components[].action", "authority_relevant": true},
+    {"id": "MUT-RESOURCE", "field": "request.components[].resource", "authority_relevant": true},
+    {"id": "MUT-CAPABILITY", "field": "contract.capabilities[]", "authority_relevant": true},
+    {"id": "MUT-TOOL", "field": "request.tool", "authority_relevant": "through required component shape"},
+    {"id": "MUT-SCOPE", "field": "contract.capabilities[].scope_type", "authority_relevant": true},
+    {"id": "MUT-CONTRACT-ID", "field": "contract.contract_id", "authority_relevant": false, "expected": "decision unchanged; provenance changes"}
+  ],
+  "rule": "Each registered case mutation changes one declared semantic dimension; the two frozen oracles determine the expected relation without production outputs."
+}

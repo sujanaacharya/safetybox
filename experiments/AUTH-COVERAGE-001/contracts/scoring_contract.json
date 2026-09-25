@@ -1,0 +1,36 @@
+{
+  "contract_id": "AUTH-COVERAGE-001-SCORING@1",
+  "empty_denominator": "NOT_EXERCISED",
+  "aggregate_score": null,
+  "confidence": {
+    "rate_interval": "WILSON_TWO_SIDED_95",
+    "zero_error_upper_bound": "CLOPPER_PEARSON_ONE_SIDED_95",
+    "zero_error_formula": "1 - 0.05 ** (1 / denominator)"
+  },
+  "metrics": {
+    "FALSE_ALLOW_RATE": ["unauthorized predicted ALLOW", "unauthorized"],
+    "FALSE_DENY_RATE": ["authorized predicted DENY", "authorized"],
+    "BENIGN_AUTHORIZATION_PRESERVATION": ["legitimate authorized predicted ALLOW", "legitimate authorized"],
+    "PAIR_ACCURACY": ["pairs with both members correct", "registered pairs"],
+    "TASK_BINDING_ACCURACY": ["correct task-binding cases", "task-binding cases"],
+    "COMPOUND_AUTHORIZATION_ACCURACY": ["correct process compound cases", "process compound cases"],
+    "RESOURCE_BOUNDARY_ACCURACY": ["correct resource-boundary cases", "resource-boundary cases"],
+    "CAPABILITY_DISTRACTOR_ACCURACY": ["correct distractor cases", "distractor cases"],
+    "ZERO_RELEVANT_CAPABILITY_ACCURACY": ["zero-relevant cases denied", "zero-relevant cases"],
+    "CROSS_TASK_REUSE_REJECTION": ["cross-task reuse cases denied", "cross-task reuse cases"],
+    "CROSS_TOOL_CONSISTENCY": ["groups with every member correct", "registered cross-tool groups"],
+    "AUTHORITY_EXPLANATION_COMPLETENESS": ["decisions with every applicable field", "decisions"]
+  },
+  "explanation_fields": [
+    "subject_or_session",
+    "task",
+    "action",
+    "resource",
+    "capability",
+    "rule",
+    "authority_source",
+    "component",
+    "decision",
+    "reason"
+  ]
+}
