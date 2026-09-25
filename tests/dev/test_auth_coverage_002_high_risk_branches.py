@@ -12,8 +12,10 @@ import pytest
 
 from safetybox.capabilities import Capability
 from safetybox.research.auth_coverage_isolation import (
+    PROHIBITED_MODULE_PREFIXES,
     IsolationViolation,
     RuntimeOnlyPackage,
+    install_import_gate,
     isolation_attestation,
 )
 from safetybox.research.auth_coverage_raw import (
@@ -135,12 +137,35 @@ def test_runtime_package_symlink_jsonl_and_attestation_branches(
 
     journal = root / "events.jsonl"
     journal.write_text('{"safe":1}\n', encoding="utf-8")
-    monkeypatch.delitem(sys.modules, "safetybox.research.auth_coverage_metrics", raising=False)
-    monkeypatch.delitem(sys.modules, "safetybox.research.auth_coverage_scoring", raising=False)
+    for name in tuple(sys.modules):
+        if any(
+            name == prefix or name.startswith(f"{prefix}.") for prefix in PROHIBITED_MODULE_PREFIXES
+        ):
+            monkeypatch.delitem(sys.modules, name, raising=False)
     assert isolation_attestation(root)["analysis_artifacts_present"] is False
     journal.write_text("not-json\n", encoding="utf-8")
     with pytest.raises(IsolationViolation, match="not valid"):
         RuntimeOnlyPackage(root).validate()
+
+
+def test_import_gate_blocks_every_prohibited_namespace_without_duplicate_install(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    for name in tuple(sys.modules):
+        if any(
+            name == prefix or name.startswith(f"{prefix}.") for prefix in PROHIBITED_MODULE_PREFIXES
+        ):
+            monkeypatch.delitem(sys.modules, name, raising=False)
+    monkeypatch.setattr(sys, "meta_path", [])
+    install_import_gate()
+    assert len(sys.meta_path) == 1
+    finder = sys.meta_path[0]
+    assert finder.find_spec("safe_runtime_module") is None
+    for prefix in PROHIBITED_MODULE_PREFIXES:
+        with pytest.raises(IsolationViolation, match="prohibited execution-process import"):
+            finder.find_spec(f"{prefix}.nested")
+    install_import_gate()
+    assert len(sys.meta_path) == 1
 
 
 def test_exact_inventory_rejects_outside_path_and_prohibited_open(tmp_path: Path) -> None:

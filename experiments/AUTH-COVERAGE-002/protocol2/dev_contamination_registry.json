@@ -1,0 +1,20 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR2-DEV-CONTAMINATION@1",
+  "scope": "all entries are disposable synthetic DEV semantics and may never enter VALIDATION or HELD_OUT",
+  "dev_seed_digests": {
+    "2002101": "6d1b085774c735cfe128623cba89505f22b1878adf0bc74930e0974f2fec9a34",
+    "2002102": "41199e26c2ac17f2939963eeab2ccf8b4540821b473300f9474c09028be9e2df",
+    "2002103": "d2bc51bf76320391d2de862b81c66eae8aa31daa554529838f8816336bc0bed0",
+    "2002104": "5192a080bc532b0a4c8a10ed65360498c9ddc8c15d7b126351f3b54c6b2d16d6",
+    "2002105": "32a6821786350c7eedc5408d74f4e2dc48616b935e35405c3770465f16532df9"
+  },
+  "capacity_lane_digests": [
+    {"seed": 3002101, "count": 800, "template_root_offset": 0, "digest": "5e25f1926d24edc69d73482928cda78b40388d5f0f62aeecb5252fb9ef2ee5be"},
+    {"seed": 3002102, "count": 800, "template_root_offset": 400, "digest": "6d7973ade41aae74958f3320d00acf65e5bbee048b8347d763e6d96a1fc757bc"},
+    {"seed": 3002103, "count": 2400, "template_root_offset": 800, "digest": "a2014bdd9a8f474768e3ec1073f78be7ed3a756bf560786d504ce3d73889cfdc"}
+  ],
+  "validation_seed_registered": false,
+  "held_out_seed_registered": false,
+  "held_out_scenarios": 0,
+  "held_out_exposures": 0
+}
