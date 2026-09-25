@@ -52,6 +52,7 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-014 Results](experiments/EXP-014-RESULTS.md), [Synthesis](experiments/EXP-014-SYNTHESIS.md), [Validity Audit](experiments/EXP-014-VALIDITY-AUDIT.md), and [Post-Run Gate Disposition](experiments/EXP-014-POST-RUN-GATE-DISPOSITION.md)
 - [EXP-015 Real Subprocess Mediation Protocol](experiments/EXP-015-real-subprocess-mediation.md)
 - [EXP-015 Adapter Development Validation](experiments/EXP-015-ADAPTER-DEVELOPMENT-VALIDATION.md)
+- [EXP-015 Adversarial Post-Run Analysis and Bounded Claim Synthesis](experiments/EXP-015-ANALYSIS.md)
 
 ## Engineering
 
@@ -64,6 +65,8 @@ This index identifies the canonical owner of each concept. Other documents shoul
 - [EXP-015 Corpus@1 Validity Disposition](engineering/EXP-015_CORPUS_1_VALIDITY_DISPOSITION.md)
 - [EXP-015 Pre-Run Test-Process Isolation Disposition](engineering/EXP-015_PRE_RUN_TEST_PROCESS_ISOLATION_DISPOSITION.md)
 - [EXP-015 Pre-Run Gate Redisposition](engineering/EXP-015_PRE_RUN_GATE_REDISPOSITION.md)
+- [EXP-015 Raw Result](engineering/EXP-015_RUN_001_RAW_RESULT.md)
+- [EXP-015 Adversarial Validity Audit](engineering/EXP-015_ADVERSARIAL_VALIDITY_ANALYSIS.md)
 
 ## Strategy
 

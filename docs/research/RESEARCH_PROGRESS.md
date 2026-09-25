@@ -17,11 +17,13 @@ protocols, results, analyses, or the [claims ledger](CLAIMS_LEDGER.md).
 | B2/B4 | Frozen history-free B2 comparator and bounded historical B4 candidate. | Unit/development evidence plus a frozen capability audit before EXP-013 authorship. | Structured synthetic semantics; B4 remains observational. |
 | EXP-013 | No new production runtime; frozen 40-pair history-required corpus/evaluation. | B4 discriminated 38/40 pairs B2 could not and had 0/40 matched-negative false positives. | Level 3 handcrafted, declaration-dependent synthetic evidence; two misses and no real effects, bypass, or agent integration. |
 | EXP-014 | Frozen `FS-ADAPTER@1`, held-out `EXP-014-CORPUS@1`, one-shot `EXP-014-RUN-001`, and adversarial post-run analysis for isolated filesystem mediation. | Level 4 evidence for named FMED-L1 sub-properties: 94/94 adapter-routed terminal outcomes, 91/91 independently derived authorization decisions, 19/19 denied mutations without wrapped call or independently observed state change, and tested audit/order evidence; RTM-1 recommended. | Real filesystem tool evidence, not real-agent deployment: direct routes bypass, TOCTOU/concurrency are untested, audit is non-durable, failure evidence is partly injected, and no production/external claim follows. |
-| EXP-015 preregistration | Process mediation requirements, architecture, ADR, threat model, human protocol, machine-readable protocol, and frozen implementation; `EXP-015-CORPUS@1` is preserved but retired pre-exposure for invalid runtime materialization. | Level 0 design/development evidence only; `EXP-015-RUN-001` is not started/unspent, with zero adapter or prediction exposure and no result. | PMED-L1 is only a proposed adapter route; a self-sufficient Corpus@2 schema/materializer contract must freeze before corrected held-out authorship. Shell grammar, descendants, allowed-child effects, direct routes, races, concurrency, real agents, and production remain uncontrolled. |
+| EXP-015 | Frozen process protocol/adapter, `EXP-015-CORPUS@2`, one-shot `EXP-015-RUN-001`, and `EXP-015-ANALYSIS-001`. | Level 3 same-team held-out synthetic evidence for exact TaskContract authorization: 60/60 allows, 60/60 denies, 0 observed false allows/denies, and 60/60 denied requests not forwarded to spawn. | All 50 expected-regular helpers were non-ELF scripts, while ten other positives intentionally had invalid executable shapes; all 60 stopped at executable validation: zero children, benign completion 0/44, terminal accuracy 0/120, no held-out cwd/argv/environment/output/failure/positive-order evidence, invalid direct controls, low oracle independence, and confounded repeat scoring. |
 
-Filesystem held-out real-tool evaluation is complete at FMED-L1. EXP-015 now
-preregisters direct subprocess mediation separately from shell-language mediation. The
-next transition is review and protocol/design freeze before any process adapter work.
-HTTP/network and MCP mediation, a shell-specific experiment, a real agent harness,
-stronger interception, concurrency, durable audit, and external deployment evidence
-remain later stages.
+Filesystem held-out real-tool evaluation is complete at FMED-L1. EXP-015 provided
+strong bounded authorization-conformance evidence but did not establish real process
+execution semantics. Repository maturity remains RTM-1; RTM-2 is not supported. The
+next transition is an independently gated native-helper reachability design for a new
+EXP-016 execution-semantic study, followed by a dedicated authorization-coverage
+program. HTTP/network and MCP mediation, shell-specific evaluation, a real agent
+harness, stronger interception, concurrency, durable audit, and external deployment
+evidence remain later stages.

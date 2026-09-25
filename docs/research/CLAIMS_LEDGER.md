@@ -14,7 +14,7 @@ Allowed statuses are `PROPOSED`, `TESTING`, `SUPPORTED`, `PARTIALLY_SUPPORTED`, 
 | CL-008 | Stateful policies improve resistance to registered monitoring-evasion trajectories over static allow/deny lists. | Adaptive scenario trials and ablations with false-positive reporting. | EXP-009, EXP-011 | PROPOSED |
 | CL-009 | Ordered deterministic trajectory evidence provides discriminative information beyond single-observation context evaluation. | Frozen history-free baseline; held-out matched history-required pairs; hard negatives; leakage, coupling, and label-isolation audits. | EXP-013 | PARTIALLY_SUPPORTED |
 | CL-010 | SafetyBox can correctly mediate real filesystem operations at the explicitly bounded FMED-L1 adapter route. | Frozen held-out real-tool outcomes; independent authorization/canonicalization/state checks; bypass, failure, audit, and validity analysis. | EXP-014 | PARTIALLY_SUPPORTED |
-| CL-011 | SafetyBox can mediate adapter-routed subprocess execution with deterministic authorize-before-spawn ordering and prevent denied child-process creation within the tested PMED-L1 boundary. | Frozen process adapter; held-out real-tool outcomes; denied-spawn, argv, executable/cwd, environment, ordering, failure, audit, bypass, and validity analysis. | EXP-015 | PROPOSED |
+| CL-011 | SafetyBox can mediate adapter-routed subprocess execution with deterministic authorize-before-spawn ordering and prevent denied child-process creation within the tested PMED-L1 boundary. | Frozen process adapter; held-out real-tool outcomes; denied-spawn, argv, executable/cwd, environment, ordering, failure, audit, bypass, and validity analysis. | EXP-015 | PARTIALLY_SUPPORTED |
 
 M5 provides implementation readiness for controlled trajectory experiments only. It does not change any claim status.
 
@@ -88,3 +88,42 @@ tests; the corpus is same-team authored; audit is in-process and non-durable; an
 agent, customer deployment, external replication, cross-platform, or production evidence
 exists. The result must not be restated as complete filesystem security or whole-category
 OWASP coverage.
+
+## CL-011 evidence review — EXP-015 Claim Synthesis v1
+
+**Status:** `PARTIALLY_SUPPORTED`. `EXP-015-ANALYSIS-001` supports only the
+task-scoped authorization and denied pre-spawn forwarding portions. It does not support
+the bundled real-subprocess-execution or positive authorize-before-spawn portions.
+
+**Evidence:** On same-team-authored, post-implementation-frozen
+`EXP-015-CORPUS@2`, frozen TaskContract-based process authorization matched the exact
+task/action/resource oracle in 120/120 cases: 60 true allows, 60 true denies, observed
+false-allow 0/60, and observed false-deny 0/60. All 60 denied cases recorded zero spawn
+primitive invocations. Twelve task-binding pairs remain strict strong counterfactuals.
+
+**Negative evidence:** All 50 authorization-positive `REGULAR_EXECUTABLE` fixtures were
+Python shebang scripts while the frozen protocol and validator require native ELF; the
+other ten positives intentionally used invalid executable shapes. All 60 stopped at
+executable validation, canonical child count was zero, intended benign completion was
+0/44, and terminal accuracy was 0/120. Cwd validation, child `argv`, environment, output,
+timeout/signal, cleanup, failure injection, positive spawn ordering, and direct PMED
+controls were not demonstrated. The official repeat score is 0/6 with a known temp-root
+normalization confounder.
+
+**Scope and independence:** This is Level 3 held-out synthetic conformance evidence for
+the registered exact authorization semantics, with low oracle independence: the same
+team designed the semantics, protocol, corpus, and local oracle, and the oracle restates
+the production rule. It is not external validation. Zero observed errors do not imply
+zero underlying error probability; with 0/60, the exact one-sided 95% binomial upper
+bound is about 4.87% under an IID model.
+
+**Claim split:** The current candidate bundles two materially different evidence
+domains. A future claims-ledger revision should allocate separate monotonic `CL-NNN`
+records for task-scoped process authorization discrimination and real subprocess
+mediation semantics. Letter-suffixed IDs are not created because repository naming
+governance does not define them. CL-011 is retained to preserve provenance.
+
+**Bounded empirical statement:** on `EXP-015-CORPUS@2`, frozen process authorization
+matched the registered exact task/action/resource oracle in all 120 cases, and the 60
+registered denials were not forwarded to spawn. EXP-015 did not demonstrate successful
+real subprocess execution.
