@@ -1,0 +1,9 @@
+{
+  "schema": "AUTH-COVERAGE-002-PROTOCOL4-MATERIALIZATION-STATUS@1",
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "DEV": 0,
+  "VALIDATION": 0,
+  "HELD_OUT": 0,
+  "authority_artifacts": 0,
+  "production_exposure": {"reserved": 0, "started": 0, "exposed": 0, "completed": 0, "raw": 0}
+}

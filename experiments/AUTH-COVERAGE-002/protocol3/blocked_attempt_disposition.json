@@ -1,0 +1,14 @@
+{
+  "schema": "AUTH-COVERAGE-002-BLOCKED-ATTEMPT-DISPOSITION@1",
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "disposition": "PERMANENTLY_BLOCKED_GATE_A_FROZEN_SUBSTRATE_BUG",
+  "permanent": true,
+  "reopen_permitted": false,
+  "canonical_materializations": {"DEV": 1, "VALIDATION": 1, "HELD_OUT": 0},
+  "split_states": {"DEV": "SEALED", "VALIDATION": "SEALED", "HELD_OUT": "NOT_AUTHORIZED"},
+  "production_exposure": {"reserved": 0, "started": 0, "exposed": 0, "completed": 0, "raw": 0},
+  "gate_a_evidence_digest": "42f046e8aa5cfd9334998dcf1956f09108cb8bd934755fe95f385f2f99308bc0",
+  "scientific_gate_status": "SUBSTANTIVE_PREREGISTERED_CHECKS_PASS_UP_TO_INFRASTRUCTURE_BLOCK",
+  "gate_a_completion": "BLOCKED_BY_FROZEN_SUBSTRATE_BUG",
+  "authorization_created": false
+}

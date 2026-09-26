@@ -1,0 +1,15 @@
+{
+  "schema": "AUTH-COVERAGE-002-COUNTERFACTUAL-SUBSTRATE-ANALYSIS@1",
+  "classification": "COUNTERFACTUAL_ANALYSIS_ONLY",
+  "source_attempt": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "source_evidence_digest": "42f046e8aa5cfd9334998dcf1956f09108cb8bd934755fe95f385f2f99308bc0",
+  "successor_substrate": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "changed_metric_fields": ["realized_split"],
+  "repaired_realized_split": {"DEV": 800, "VALIDATION": 800, "HELD_OUT": 0},
+  "hypothetical_machine_gate_decision": "PASS",
+  "authorized": false,
+  "gate_a_artifact_created": false,
+  "held_out_authority_created": false,
+  "statement": "The successor audit would not reproduce the substrate defect on the preserved evidence.",
+  "attempt_disposition": "PERMANENTLY_BLOCKED_GATE_A_FROZEN_SUBSTRATE_BUG"
+}

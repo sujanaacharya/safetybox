@@ -1,0 +1,14 @@
+{
+  "identity": "AUTH-COVERAGE-002-PROTOCOL3-TO-PROTOCOL4@1",
+  "predecessor": "AUTH-COVERAGE-002-PROTOCOL@3",
+  "successor": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "changes": [
+    {"category": "FROZEN_SUBSTRATE_DEFECT_REMEDIATION", "value": "bind AUTH-COVERAGE-002-SUBSTRATE@2 exact-zero-key repair"},
+    {"category": "CORPUS_ATTEMPT_VERSIONING", "value": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1"},
+    {"category": "SUBSTRATE_BINDING_UPDATE", "value": "successor manifest replaces defective binding without replacing predecessor bytes"},
+    {"category": "CLARIFICATION", "value": "missing split key and explicit zero are not equivalent"},
+    {"category": "GENERATOR_VERSIONING", "value": "Generator@4 required because Generator@3 hard-binds Protocol@3, its checksum, Attempt-1, authority digests, and state roots"}
+  ],
+  "benchmark_semantic_change": 0,
+  "scientific_threshold_change": 0
+}

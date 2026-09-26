@@ -1,0 +1,24 @@
+{
+  "claim_contract_id": "AUTH-COVERAGE-002-CLAIMS@2",
+  "predecessor": "AUTH-COVERAGE-002-CLAIMS@1",
+  "scientific_claim_wording_change": 0,
+  "history": [
+    {
+      "attempt": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+      "disposition": "PERMANENTLY_BLOCKED_GATE_A_FROZEN_SUBSTRATE_BUG",
+      "substantive_checks": "PASS_UP_TO_INFRASTRUCTURE_BLOCK",
+      "infrastructure_gate_a_completion": "BLOCKED",
+      "held_out_materialized": 0,
+      "production_exposure": 0
+    },
+    {
+      "remediation": "AUTH-COVERAGE-002-SUBSTRATE@2_AND_PROTOCOL@4",
+      "classification": "INFRASTRUCTURE_CONTRACT_CONFORMANCE_ONLY",
+      "benchmark_semantic_diff": 0,
+      "scientific_threshold_diff": 0,
+      "new_canonical_materializations": 0
+    }
+  ],
+  "prohibited_interpretation": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1 passed Gate A",
+  "allowed_counterfactual_statement": "The successor audit would not reproduce the substrate defect on the preserved evidence."
+}

@@ -1,0 +1,10 @@
+{
+  "identity": "AUTH-COVERAGE-002-PROTOCOL4-AUTHORITY-POLICY@1",
+  "artifact_class": "NON_CONSUMABLE_PREREGISTERED_DEFINITION",
+  "real_authority_artifacts_created": 0,
+  "old_authority_artifacts": "PERMANENTLY_BOUND_TO_PROTOCOL3_GENERATOR3_CORPUS3_ATTEMPT1_AND_NEVER_REUSABLE",
+  "future_required_bindings": ["AUTH-COVERAGE-002-PROTOCOL@4 exact committed checksum", "AUTH-COVERAGE-002-GENERATOR@4 exact committed checksum", "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1", "split", "semantic source checksum", "seed or entropy commitment", "single allowed use", "record count", "artifact digest"],
+  "gate_a_required_for_held_out": true,
+  "gate_b_required_for_production": true,
+  "provisioning_deferred": true
+}

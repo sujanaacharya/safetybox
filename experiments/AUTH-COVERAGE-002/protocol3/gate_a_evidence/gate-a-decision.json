@@ -1,0 +1,13 @@
+{
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "decision": "BLOCKED_GATE_A_FROZEN_SUBSTRATE_BUG",
+  "dev_manifest_digest": "7ae07b30e2a3e9a1950fdf86d2a89633ad6f33b4be1639f1f3d89b4407b64be6",
+  "evidence_digest": "42f046e8aa5cfd9334998dcf1956f09108cb8bd934755fe95f385f2f99308bc0",
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@3",
+  "held_out_authorized": false,
+  "permanent": true,
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@3",
+  "reason": "The frozen PRE_HELDOUT audit constructor omits the required zero-count HELD_OUT key from realized_split, so the frozen machine gate blocks an otherwise passing corpus. Post-observation patching is prohibited.",
+  "schema": "AUTH-COVERAGE-002-GATE-A-BLOCKED-DECISION@1",
+  "validation_manifest_digest": "f2c3a878ebbb6dc0dfadc63c607f0d268a110f44c544f343b9ad19b8574e2f2c"
+}

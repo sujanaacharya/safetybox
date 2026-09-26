@@ -1,0 +1,12 @@
+{
+  "identity": "AUTH-COVERAGE-002-PROTOCOL4-HISTORICAL-CONTAMINATION@1",
+  "status": "FROZEN_BEFORE_NEW_CORPUS_MATERIALIZATION",
+  "observed_attempt": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "observed_sources": {
+    "DEV": {"path": "experiments/AUTH-COVERAGE-002/protocol3/materialization_state/AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1/DEV/semantic-records.jsonl", "sha256": "be891983ea5aaf4c8b6c56361c08068b07d7785b9f56759ff091ac9beace1e5f", "count": 800},
+    "VALIDATION": {"path": "experiments/AUTH-COVERAGE-002/protocol3/materialization_state/AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1/VALIDATION/semantic-records.jsonl", "sha256": "6cf76a37acd57a657d3c27bfc7324aa8d67e2ce9217fc69a8909c6f6e8e2081c", "count": 800}
+  },
+  "rule": "new canonical DEV, VALIDATION, and HELD_OUT must have zero exact semantic-instance and canonical-input overlap with every observed record",
+  "silent_reuse_permitted": false,
+  "enforcement_required_before_each_future_materialization": true
+}

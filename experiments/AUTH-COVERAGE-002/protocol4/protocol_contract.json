@@ -1,0 +1,41 @@
+{
+  "identity": "AUTH-COVERAGE-002-PROTOCOL4-CONTRACT@1",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "predecessor_protocol": "AUTH-COVERAGE-002-PROTOCOL@3",
+  "purpose": "bind corrected successor substrate without changing benchmark science",
+  "substrate": {
+    "identity": "AUTH-COVERAGE-002-SUBSTRATE@2",
+    "freeze_manifest": "experiments/AUTH-COVERAGE-002/substrate2/SUBSTRATE2_SHA256SUMS"
+  },
+  "quantitative_gates": {
+    "source": "experiments/AUTH-COVERAGE-002/protocol3/quantitative_gates.json",
+    "sha256": "a311763dbe8dfa656daf3cc25d1c6d4cc850755d1a4af4691c74b756ddbc0204",
+    "scientific_threshold_change": 0
+  },
+  "benchmark_semantics": "NO_CHANGE_FROM_PROTOCOL3_OR_PROTOCOL2",
+  "benchmark_semantic_change": 0,
+  "inherited_gate_and_adaptivity_contract": {
+    "source": "experiments/AUTH-COVERAGE-002/protocol3/protocol_contract.json",
+    "sha256": "00ec06d4d276d9eb0e8d05918a70908ab6ee90cf99fc1076a30efcf73fda9178",
+    "state_model_source": "experiments/AUTH-COVERAGE-002/protocol3/state_machine.json",
+    "state_model_sha256": "f36fcb3419612635086dcc92fd0ad657e18f0a364e5126e44a6bfa94f8a98e30",
+    "allowed_override": "identity and corrected substrate binding only"
+  },
+  "attempt": {
+    "identity": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+    "predecessor_attempt_reuse": "PROHIBITED",
+    "initial_materializations": {"DEV": 0, "VALIDATION": 0, "HELD_OUT": 0}
+  },
+  "generator": {
+    "required_identity": "AUTH-COVERAGE-002-GENERATOR@4",
+    "generator3_reuse": "PROHIBITED_DUE_TO_INTERNAL_PROTOCOL_ATTEMPT_SUBSTRATE_AUTHORITY_BINDINGS",
+    "generator3_semantics_source_must_remain_unchanged": true
+  },
+  "gate_a": "preserved; sole authority for one HELD_OUT materialization after sealed DEV and VALIDATION audits",
+  "gate_b": "preserved; sole authority for one production execution after HELD_OUT seal and final pre-run review",
+  "authority_policy": "new artifacts must bind Protocol@4 checksum, Generator@4 checksum, CORPUS@4-ATTEMPT-1, split, source, commitment, and single use; Protocol@3 artifacts are permanently ineligible",
+  "authorizing_audit_route": "AUTH-COVERAGE-002-SUBSTRATE@2 candidate_audit.audit_candidate only",
+  "counterfactual_analysis_replay_authority": "NONE",
+  "canonical_materialization_authorized_by_this_artifact_alone": false,
+  "production_authorization": false
+}

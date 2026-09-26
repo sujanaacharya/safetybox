@@ -1,0 +1,26 @@
+{
+  "identity": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "predecessor": {
+    "symbolic_identity": null,
+    "authoritative_binding": "Protocol@2 PROTOCOL2_SHA256SUMS plus frozen Git history",
+    "protocol2_freeze_commit": "5fc3e2673235286cc393878523581fcf7e8d6d2d",
+    "candidate_audit_sha256": "47c71678babc77070723fef0c7ddb1a3be952111aa2e7e70d2d93cf2f83f0ea6",
+    "governance_sha256": "2c3735f8cdc342a7dcb1dcb9d58b3563a9abebfedd5e2567ace626e733f346b0"
+  },
+  "predecessor_status": "FROZEN_WITH_KNOWN_PRE_HELDOUT_ZERO_COUNT_DEFECT",
+  "change_category": "FROZEN_SUBSTRATE_DEFECT_REMEDIATION",
+  "changed_behavior": "realized_split always contains DEV, VALIDATION, and HELD_OUT with explicit integer counts including zero",
+  "delegated_frozen_implementation": "protocol2/candidate_audit.py and protocol2/governance.py",
+  "benchmark_semantic_diff": 0,
+  "scientific_threshold_diff": 0,
+  "gate_decision_change_domain": "only evidence whose realized_split omitted a required zero-valued split key",
+  "authorizing_entrypoint": "candidate_audit.audit_candidate via candidate_audit.derive_metrics",
+  "analysis_replay_authority": "NONE",
+  "exact_key_contract": {
+    "required_keys": ["DEV", "VALIDATION", "HELD_OUT"],
+    "missing_key_equals_zero": false,
+    "extra_keys_allowed": false,
+    "count_type": "integer_not_boolean",
+    "minimum": 0
+  }
+}

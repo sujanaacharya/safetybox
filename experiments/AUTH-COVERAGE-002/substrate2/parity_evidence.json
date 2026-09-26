@@ -1,0 +1,25 @@
+{
+  "schema": "AUTH-COVERAGE-002-SUBSTRATE2-PARITY@1",
+  "successor_substrate": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "constructor_nondefect_parity": {"compared": 1, "identical": 1, "rate": 1.0},
+  "historical_metric_fixture_source": "protocol3/gate_a_evidence/machine-audit.json",
+  "decision_and_error_classification_matrix": {
+    "fixtures": 8,
+    "identical": 8,
+    "rate": 1.0,
+    "lanes": [
+      "preserved historical metrics after exact defect-only representation correction",
+      "oracle agreement rejection",
+      "held-out exposure rejection",
+      "negative branch support rejection",
+      "duplicate rejection",
+      "missing leakage attack rejection",
+      "fractional cardinality rejection",
+      "secondary-prediction threshold rejection"
+    ]
+  },
+  "known_defect_domain_excluded_from_parity_denominator": true,
+  "unexpected_split_error_classification_preserved": true,
+  "benchmark_semantic_diff": 0,
+  "scientific_threshold_diff": 0
+}

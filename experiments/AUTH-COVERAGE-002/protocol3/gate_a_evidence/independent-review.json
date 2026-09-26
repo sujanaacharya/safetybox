@@ -1,0 +1,41 @@
+{
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "decision": "BLOCKED_GATE_A_FROZEN_SUBSTRATE_BUG",
+  "discrepancies": [],
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@3",
+  "held_out": {
+    "materialization_state": "NOT_STARTED",
+    "production_completed": 0,
+    "production_exposed": 0,
+    "production_raw": 0,
+    "production_reserved": 0,
+    "production_started": 0
+  },
+  "independence": "separate read-only reviewer lane; no files, thresholds, artifacts, or state modified",
+  "integrity": {
+    "dev_manifest_digest": "7ae07b30e2a3e9a1950fdf86d2a89633ad6f33b4be1639f1f3d89b4407b64be6",
+    "dev_reconciliation": "SEALED",
+    "dev_record_count": 800,
+    "dev_semantic_digest": "be891983ea5aaf4c8b6c56361c08068b07d7785b9f56759ff091ac9beace1e5f",
+    "generator_checksum_manifest": "PASS",
+    "head_main_origin_main": "173ef95ec43ed2e28ac009e6f3714e79ae29f90a",
+    "protocol_checksum_manifest": "PASS",
+    "substrate_checksum_manifest": "PASS",
+    "validation_manifest_digest": "f2c3a878ebbb6dc0dfadc63c607f0d268a110f44c544f343b9ad19b8574e2f2c",
+    "validation_reconciliation": "SEALED",
+    "validation_record_count": 800,
+    "validation_semantic_digest": "6cf76a37acd57a657d3c27bfc7324aa8d67e2ce9217fc69a8909c6f6e8e2081c"
+  },
+  "machine_gate_reproduction": {
+    "decision": "BLOCK",
+    "otherwise_passing_scientific_metrics": true,
+    "reason_1": "PRE_HELDOUT realized_split omitted the required zero-count HELD_OUT key",
+    "reason_2": "counts.split therefore did not equal realized_split",
+    "root_cause": "frozen candidate_audit.py snapshots dict(splits) before later zero-key Counter access",
+    "substrate_bug_confirmed": true
+  },
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@3",
+  "recommendation": "Permanently block this corpus attempt; do not patch and continue post-observation.",
+  "reviewer_identity": "AUTH-COVERAGE-002-GATE-A-INDEPENDENT-REVIEWER-LANE@1",
+  "schema": "AUTH-COVERAGE-002-GATE-A-INDEPENDENT-REVIEW@1"
+}

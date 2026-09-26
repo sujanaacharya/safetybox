@@ -1,0 +1,23 @@
+{
+  "schema": "AUTH-COVERAGE-002-SUBSTRATE-DEFECT@1",
+  "defect_id": "AUTH-COVERAGE-002-PRE_HELDOUT_ZERO_COUNT_EXACT_KEY@1",
+  "affected_substrate": "PROTOCOL2_FROZEN_SUBSTRATE_BOUND_BY_PROTOCOL2_SHA256SUMS",
+  "affected_substrate_status": "FROZEN_WITH_KNOWN_PRE_HELDOUT_ZERO_COUNT_DEFECT",
+  "affected_corpus_attempt": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "code_locations": {
+    "construction": "experiments/AUTH-COVERAGE-002/protocol2/candidate_audit.py:386",
+    "contract_enforcement": "experiments/AUTH-COVERAGE-002/protocol2/governance.py:643-656"
+  },
+  "root_cause_category": "A_OMITTED_ZERO_VALUED_KEY",
+  "root_cause": "dict(Counter) snapshots only observed keys; HELD_OUT is never observed in PRE_HELDOUT, and later Counter indexing does not mutate the already-created mapping",
+  "observed_mapping": {"DEV": 800, "VALIDATION": 800},
+  "expected_mapping": {"DEV": 800, "VALIDATION": 800, "HELD_OUT": 0},
+  "missing_key": "HELD_OUT",
+  "additional_keys": [],
+  "scientific_impact": "none to metrics or acceptance criteria; infrastructure prevented Gate-A completion",
+  "repair_version": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "benchmark_semantic_diff": 0,
+  "scientific_threshold_diff": 0,
+  "blocked_attempt_status": "PERMANENTLY_BLOCKED_GATE_A_FROZEN_SUBSTRATE_BUG",
+  "regression_test": "tests/dev/test_auth_coverage_002_substrate2.py::test_pre_heldout_zero_count_exact_key_regression"
+}
