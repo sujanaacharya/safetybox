@@ -1,0 +1,40 @@
+{
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@3",
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@3",
+  "assessment": "SCIENTIFICALLY_VALIDATED",
+  "benchmark_semantic_diff": 0,
+  "requirements": {
+    "benchmark_semantics": "SUPPORTED: both lanes delegate semantic generation directly to frozen Generator@2",
+    "canonical_seed_registration": "SUPPORTED: each Git-provisioned artifact binds one immutable commitment and the API accepts no seed",
+    "authorization": "SUPPORTED: real root/digests are immutable, Git-provisioned, and independently verified",
+    "attempt_binding": "SUPPORTED: real attempt, fixed state root, authority, ledger, state, and manifest are mutually bound",
+    "state_machine": "SUPPORTED: fresh-process 17-point crash matrix exercises every preregistered boundary",
+    "observation_boundary": "SUPPORTED: complete semantic-record fsync precedes FIRST_RECORD_DURABLE",
+    "partial_block": "SUPPORTED: fresh reconciliation durably blocks every observed incomplete realization",
+    "pre_observation_retry": "SUPPORTED: same authority/commitment is reused and STARTED is recorded exactly once",
+    "ledger": "SUPPORTED: fsynced chained JSONL plus independent anchor/state detect deletion, corruption, truncation, and older-copy rollback",
+    "manifest": "SUPPORTED: construction plus independent verification; all 17 fields and deletion tested",
+    "gate_a": "SUPPORTED: exact decision/bindings, Git-provisioned approval/evidence, omission and seven forgery lanes",
+    "gate_b_separation": "SUPPORTED: Gate B cannot materialize and Gate A cannot execute production",
+    "one_shot_validation": "SUPPORTED: successful materialization and replay rejection use separate interpreters",
+    "one_shot_heldout": "SUPPORTED: synthetic Gate-A materialization and replay rejection use a fresh second interpreter",
+    "direct_python_guard": "SUPPORTED: alternate roots, duck types, subclasses, method shadows, domain flips, seed/split/attempt changes, and manual objects reject",
+    "cli_guard": "SUPPORTED: CLI has only verification and disposable DEV; no canonical write or bypass option",
+    "import_safety": "SUPPORTED: fresh import changes no canonical state",
+    "capacity_oracle_raw_scorer": "SUPPORTED: 43 frozen compatibility tests plus Generator@3-specific 800/800 Oracle agreement",
+    "root_adversary_security": "NOT_SUPPORTED: cooperative scientific governance does not resist joint rewrite of Git, verifier, state, and artifacts"
+  },
+  "validation": {
+    "focused_pytest_passed": 100,
+    "compatibility_pytest_passed": 43,
+    "applicable_full_pytest_passed": 1056,
+    "applicable_full_pytest_deselected": 2,
+    "applicable_full_pytest_failed": 0,
+    "coverage_combined_percent": 92,
+    "ruff": "PASS",
+    "mypy": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "canonical_materializations": {"DEV": 0, "VALIDATION": 0, "HELD_OUT": 0},
+  "production_exposure": {"reserved": 0, "started": 0, "exposed": 0, "completed": 0, "raw": 0}
+}

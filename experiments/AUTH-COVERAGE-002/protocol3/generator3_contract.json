@@ -1,0 +1,12 @@
+{
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@3",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@3",
+  "corpus_attempt": "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1",
+  "semantic_source": "protocol2/generator2.py",
+  "semantic_diff": 0,
+  "canonical_materializations_initial": {"DEV": 0, "VALIDATION": 0, "HELD_OUT": 0},
+  "seed_policy": "deterministic DEV domain-separated; validation and heldout one-shot commitments",
+  "runtime_ids": "secrets.token_hex(32), independent of semantic seed",
+  "gate_a_decision": "AUTHORIZED_TO_MATERIALIZE_HELDOUT_ONCE",
+  "gate_b_is_materialization_authority": false
+}
