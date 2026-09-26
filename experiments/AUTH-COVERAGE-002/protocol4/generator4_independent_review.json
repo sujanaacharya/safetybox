@@ -1,0 +1,88 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-INDEPENDENT-REVIEW@1",
+  "reviewed_generator": "AUTH-COVERAGE-002-GENERATOR@4",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "protocol_freeze_sha": "31f2ee9e504de74f6b93e5a860fd6d92ae5f7fa2",
+  "substrate_id": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "review_scope": "read-only adversarial inspection and disposable synthetic execution; no canonical authority, state, split, or production execution",
+  "decision": "RESOLVED",
+  "blocking_findings": 0,
+  "attacks": {
+    "protocol3_downgrade": {
+      "status": "RESOLVED",
+      "evidence": "exact Protocol@4 identity/checksum authority validation and protocol_id mutation rejection"
+    },
+    "generator3_authority_reuse": {
+      "status": "RESOLVED",
+      "evidence": "all three committed Protocol@3 authority paths reject outside the fixed Protocol@4 authority root and registry"
+    },
+    "old_attempt_reuse": {
+      "status": "RESOLVED",
+      "evidence": "canonical verifier and MaterializationStore reject AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1"
+    },
+    "old_state_root_injection": {
+      "status": "RESOLVED",
+      "evidence": "real attempt requires the fixed protocol4/materialization_state root; ledger events enforce Protocol@4, Generator@4, Substrate@2, attempt, split, authority digest, and checksums"
+    },
+    "old_manifest_injection": {
+      "status": "RESOLVED",
+      "evidence": "Protocol@3 manifest rejects; Generator@4 manifest verification requires schema @4 plus exact ledger, authority, protocol, generator, substrate, attempt, commitment, source, package, count, and terminal bindings"
+    },
+    "substrate1_substitution": {
+      "status": "RESOLVED",
+      "evidence": "authority mutation tests reject wrong substrate identity and checksum; ledger and manifest verification independently require Substrate@2"
+    },
+    "canonical_false_bypass": {
+      "status": "RESOLVED",
+      "evidence": "canonical entry point has no canonical parameter and an injected canonical=False raises TypeError"
+    },
+    "seed_substitution": {
+      "status": "RESOLVED",
+      "evidence": "commitment mutation rejects and canonical seed is derived internally from the verified binding with no caller seed parameter"
+    },
+    "authority_forgery": {
+      "status": "RESOLVED",
+      "evidence": "manual object, altered load proof, duck type, verifier subclass, method shadow, arbitrary real digest registry, and real-target synthetic issuance reject"
+    },
+    "state_redirect": {
+      "status": "RESOLVED",
+      "evidence": "store identity is captured and rechecked; post-construction root mutation rejects"
+    },
+    "contamination_reuse": {
+      "status": "RESOLVED",
+      "evidence": "checksum-bound inventory rejects observed Attempt-1 DEV/VALIDATION, Protocol@1 DEV/VALIDATION/HELD_OUT candidate inputs, substrate DEV digests, Generator@2 DEV seeds, and all three capacity lanes"
+    },
+    "benchmark_semantic_drift": {
+      "status": "RESOLVED",
+      "evidence": "executable same-seed/same-offset comparisons against frozen Generator@3 are exact; BENCHMARK_SEMANTIC_DIFF=0"
+    },
+    "threshold_drift": {
+      "status": "RESOLVED",
+      "evidence": "frozen quantitative-gate bytes/checksum and machine-readable threshold evidence are unchanged; SCIENTIFIC_THRESHOLD_DIFF=0"
+    },
+    "gate_a_evidence_substitution": {
+      "status": "RESOLVED",
+      "evidence": "HELD_OUT verification retains Generator@3 exact SHA-256 binding of gate-a-evidence.json and rejects stale evidence"
+    }
+  },
+  "resolved_review_findings": [
+    "registered Generator@2 capacity lanes were initially missing from contamination enforcement",
+    "Protocol@1 candidate and substrate DEV contamination inventories were initially missing from enforcement",
+    "the initial empty in-source real authority registry could not be provisioned after Generator@4 freeze without editing frozen source",
+    "real HELD_OUT authority count was initially treated as 800 instead of 2400",
+    "Generator@4 initially omitted Generator@3's Gate-A evidence-content digest binding",
+    "critical Generator@4 modules were initially outside successful targeted strict mypy validation"
+  ],
+  "validation": {
+    "focused_pytest": "33 passed",
+    "ruff": "PASS",
+    "targeted_mypy": "PASS",
+    "canonical_materializations": 0,
+    "production_executions": 0
+  },
+  "limitations": [
+    "real authority provisioning and real canonical materialization are deliberately not exercised in this freeze task",
+    "the governance boundary is cooperative and does not claim resistance to a privileged actor jointly rewriting committed verifier and governance artifacts"
+  ]
+}

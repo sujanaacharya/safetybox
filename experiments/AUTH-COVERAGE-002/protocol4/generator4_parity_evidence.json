@@ -1,0 +1,38 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-PARITY-EVIDENCE@1",
+  "generator3": "AUTH-COVERAGE-002-GENERATOR@3",
+  "generator4": "AUTH-COVERAGE-002-GENERATOR@4",
+  "semantic_source_sha256": "36b6ef0b0887b10627053087fdf156b62bdf4ff8caddd7798d1d2d8b1012b0a5",
+  "executable_proof_cases": [
+    {
+      "seed": 7,
+      "count": 8,
+      "template_root_offset": 0,
+      "generator3_digest": "23fe0f024e2628c4a219f3a3f6eb41e7ccf0586400f912078dbe19c5947d4c9b",
+      "generator4_digest": "23fe0f024e2628c4a219f3a3f6eb41e7ccf0586400f912078dbe19c5947d4c9b",
+      "equal": true
+    },
+    {
+      "seed": 2002101,
+      "count": 800,
+      "template_root_offset": 0,
+      "generator3_digest": "46ca89498eb3517d73d9d28f2191a19ea0bd00816ceceec1b23c953c4e6aac49",
+      "generator4_digest": "46ca89498eb3517d73d9d28f2191a19ea0bd00816ceceec1b23c953c4e6aac49",
+      "equal": true
+    },
+    {
+      "seed": 3002102,
+      "count": 800,
+      "template_root_offset": 400,
+      "generator3_digest": "331c58ee635d586d8c82ab55acbfa53606c710e7aeb22100f45205eaf93471e6",
+      "generator4_digest": "331c58ee635d586d8c82ab55acbfa53606c710e7aeb22100f45205eaf93471e6",
+      "equal": true
+    }
+  ],
+  "oracle_a_b_and_label_agreement": {
+    "checked": 800,
+    "agreed": 800,
+    "rate": 1.0
+  },
+  "benchmark_semantic_diff": 0
+}

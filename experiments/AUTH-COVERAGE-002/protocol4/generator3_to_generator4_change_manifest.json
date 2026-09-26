@@ -1,0 +1,20 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR3-TO-GENERATOR4-CHANGE-MANIFEST@1",
+  "predecessor": "AUTH-COVERAGE-002-GENERATOR@3",
+  "successor": "AUTH-COVERAGE-002-GENERATOR@4",
+  "allowed_categories": ["PROTOCOL4_BINDING", "SUBSTRATE2_BINDING", "ATTEMPT4_BINDING", "AUTHORITY_VERSIONING", "STATE_ROOT_VERSIONING", "CONTAMINATION_BINDING", "MANIFEST_VERSIONING", "TEST_GOVERNANCE", "DOCUMENTATION"],
+  "changes": [
+    {"category": "PROTOCOL4_BINDING", "artifacts": ["generator4.py", "authority.py", "generator4_contract.json"]},
+    {"category": "SUBSTRATE2_BINDING", "artifacts": ["generator4.py", "authority.py", "generator4_contract.json"]},
+    {"category": "ATTEMPT4_BINDING", "artifacts": ["generator4.py", "authority.py", "generator4_contract.json"]},
+    {"category": "AUTHORITY_VERSIONING", "artifacts": ["authority.py"]},
+    {"category": "STATE_ROOT_VERSIONING", "artifacts": ["generator4.py"]},
+    {"category": "CONTAMINATION_BINDING", "artifacts": ["generator4.py", "generator4_contamination_registry.json", "generator4_capacity_evidence.json"]},
+    {"category": "MANIFEST_VERSIONING", "artifacts": ["generator4.py"]},
+    {"category": "TEST_GOVERNANCE", "artifacts": ["tests/dev/test_auth_coverage_002_generator4.py", "generator4_parity_evidence.json", "generator4_threshold_evidence.json"]},
+    {"category": "DOCUMENTATION", "artifacts": ["compatibility_matrix_generator4.json", "docs/engineering/AUTH-COVERAGE-002_GENERATOR4_FREEZE_AUDIT.md"]}
+  ],
+  "uncategorized_differences": 0,
+  "benchmark_semantic_diff": 0,
+  "scientific_threshold_diff": 0
+}

@@ -1,0 +1,41 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-PROTOCOL4-COMPATIBILITY@1",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@4",
+  "substrate_id": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "assessment": "VALIDATED_PENDING_HOST_COMMIT",
+  "requirements": {
+    "benchmark_semantics": {"status": "SUPPORTED", "evidence": "generator4_parity_evidence.json and executable 800-record Generator@3 comparison"},
+    "scientific_thresholds": {"status": "SUPPORTED", "evidence": "generator4_threshold_evidence.json and byte equality"},
+    "protocol4_binding": {"status": "SUPPORTED", "evidence": "authority mutation tests and protocol freeze SHA binding"},
+    "substrate2_binding": {"status": "SUPPORTED", "evidence": "authority mutation tests and exact-key integration test"},
+    "attempt4_binding": {"status": "SUPPORTED", "evidence": "old-attempt authority/store rejection tests"},
+    "authority_verification": {"status": "SUPPORTED", "evidence": "synthetic verification mutation matrix; no real artifacts provisioned"},
+    "real_authority_provisioning": {"status": "NOT_EXERCISED", "evidence": "deferred by Protocol@4 authority policy; registry intentionally empty"},
+    "state_and_ledger": {"status": "SUPPORTED", "evidence": "synthetic single-use, restart, four-boundary crash and version-field tests"},
+    "manifest": {"status": "SUPPORTED", "evidence": "synthetic manifest construction/verification and old-manifest rejection"},
+    "contamination": {"status": "SUPPORTED", "evidence": "old canonical and all registered Generator@2 proof/capacity lanes reject"},
+    "capacity": {"status": "SUPPORTED", "evidence": "generator4_capacity_evidence.json fixed-seed 4000-record proof"},
+    "oracle_pair_presentation": {"status": "SUPPORTED", "evidence": "800-record Oracle A/B/label agreement and pair/category tests"},
+    "raw_and_scorer": {"status": "SUPPORTED", "evidence": "applicable Generator@2/raw/scoring compatibility suite"},
+    "preheldout_exact_zero": {"status": "SUPPORTED", "evidence": "Generator@4 plus Substrate@2 integration and permanent regression suite"},
+    "heldout_materialization": {"status": "BOUNDED", "evidence": "synthetic-only; no Gate-A real authority exists"},
+    "production_execution": {"status": "NOT_SUPPORTED", "evidence": "Generator@4 exposes no production path; exposure remains zero"},
+    "root_adversary_security": {"status": "NOT_SUPPORTED", "evidence": "cooperative governance cannot resist joint repository/verifier rewrite"}
+  },
+  "validation": {
+    "focused_passed": 62,
+    "compatibility_passed": 135,
+    "full_pytest_passed": 1118,
+    "full_pytest_failed": 0,
+    "full_pytest_skipped": 0,
+    "full_pytest_deselected": 2,
+    "coverage_critical_combined_percent": 85,
+    "ruff": "PASS",
+    "configured_mypy": "PASS",
+    "targeted_strict_mypy": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "blocking_items": 0
+}

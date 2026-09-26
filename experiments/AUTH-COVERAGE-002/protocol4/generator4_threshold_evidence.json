@@ -1,0 +1,15 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-THRESHOLD-EVIDENCE@1",
+  "table": "experiments/AUTH-COVERAGE-002/protocol3/quantitative_gates.json",
+  "table_sha256": "a311763dbe8dfa656daf3cc25d1c6d4cc850755d1a4af4691c74b756ddbc0204",
+  "protocol2_protocol3_bytes_equal": true,
+  "leakage_attack_suite_sha256": "87203998a5fc5ca92312bdb6c03a787d7eb78014fa5c3e24dd1f99ad39152dc5",
+  "leakage_implementation_sha256": "4c70ea09b1e200ed5b14ae41d54b33b1781c36c4f90dcbe4b4c1e1d39cfaf48c",
+  "normalizer_and_gate_governance_sha256": "2c3735f8cdc342a7dcb1dcb9d58b3563a9abebfedd5e2567ace626e733f346b0",
+  "metric_definitions_sha256": "fac09b1a91886712e57bb32e1f7ab104883748320fd865b93b825b102a981f41",
+  "presentation_rules_sha256": "f2ca364f12c04dc9d575ce2e3f25d387c36606b84b6cc586491e664b479efb52",
+  "oracle_a_sha256": "1cf1c20445617f3fa14dfa69fde90b88430adb9cc453640ae547f535fe6c156a",
+  "oracle_b_sha256": "7b1ec019288db4528f14914c027bae488f5d1be75c695456cde3d136306285c2",
+  "classifier_config_diff": 0,
+  "scientific_threshold_diff": 0
+}

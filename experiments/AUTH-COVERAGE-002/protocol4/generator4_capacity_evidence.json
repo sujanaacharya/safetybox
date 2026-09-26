@@ -1,0 +1,23 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-CAPACITY-EVIDENCE@1",
+  "method": "single preregistered fixed proof lane; no seed search",
+  "proof_lanes": {
+    "DEV": {"seed": 4100001, "count": 800, "allow": 400, "deny": 400, "pairs": 400, "semantic_unique": 800, "canonical_input_unique": 800, "structural_unique": 800},
+    "VALIDATION": {"seed": 4100002, "count": 800, "allow": 400, "deny": 400, "pairs": 400, "semantic_unique": 800, "canonical_input_unique": 800, "structural_unique": 800},
+    "HELD_OUT": {"seed": 4100003, "count": 2400, "allow": 1200, "deny": 1200, "pairs": 1200, "semantic_unique": 2400, "canonical_input_unique": 2400, "structural_unique": 2400}
+  },
+  "aggregate": {
+    "count": 4000,
+    "semantic_unique": 4000,
+    "canonical_input_unique": 4000,
+    "cross_split_canonical_input_overlap": 0,
+    "families": {"TASK_BINDING": 600, "RESOURCE_BOUNDARY": 800, "ACTION_BOUNDARY": 600, "CAPABILITY_SYNTHESIS": 600, "CAPABILITY_PRESENCE": 700, "CAPABILITY_DISTRACTOR": 700},
+    "presentation": {"BENIGN_LOOKING_UNAUTHORIZED": 1333, "SUSPICIOUS_AUTHORIZED": 667, "OTHER": 2000}
+  },
+  "historical_exact_semantic_overlap": 0,
+  "historical_canonical_input_overlap": 0,
+  "registered_generator2_capacity_lanes_reject": true,
+  "old_canonical_dev_validation_reject": true,
+  "quota_capacity_sufficient": true,
+  "feasible_without_seed_search": true
+}

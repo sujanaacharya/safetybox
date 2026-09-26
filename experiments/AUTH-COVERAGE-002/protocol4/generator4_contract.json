@@ -1,0 +1,26 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-CONTRACT@1",
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@4",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "protocol_freeze_sha": "31f2ee9e504de74f6b93e5a860fd6d92ae5f7fa2",
+  "substrate_id": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "substrate_manifest_sha256": "d9d827c9544cc4f27bb0d925adf1091a9dd4f6081d8f984b07c8df154739cc60",
+  "corpus_attempt": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "semantic_source": "protocol2/generator2.py",
+  "semantic_source_sha256": "36b6ef0b0887b10627053087fdf156b62bdf4ff8caddd7798d1d2d8b1012b0a5",
+  "semantic_diff": 0,
+  "scientific_threshold_diff": 0,
+  "authority_policy": "VERIFY_ONLY_FIXED_GIT_PROVISIONED_REGISTRY_NO_REAL_ARTIFACTS_PROVISIONED",
+  "future_authority_registry": {
+    "path": "protocol4/materialization_authority/authority-registry.json",
+    "schema": "AUTH-COVERAGE-002-AUTHORITY-REGISTRY@4",
+    "required_status": "PROVISIONED_NOT_CONSUMED"
+  },
+  "state_root": "protocol4/materialization_state",
+  "historical_contamination_registry": "protocol4/historical_contamination_registry.json",
+  "canonical_materializations_initial": {
+    "DEV": 0,
+    "VALIDATION": 0,
+    "HELD_OUT": 0
+  }
+}

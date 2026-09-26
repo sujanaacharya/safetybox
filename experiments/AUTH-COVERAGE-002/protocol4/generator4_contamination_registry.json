@@ -1,0 +1,17 @@
+{
+  "identity": "AUTH-COVERAGE-002-GENERATOR4-CONTAMINATION-REGISTRY@1",
+  "protocol4_registry": {
+    "path": "experiments/AUTH-COVERAGE-002/protocol4/historical_contamination_registry.json",
+    "sha256": "1ebab9fefcff6958107aae16c5c0644059a411ef05a8ca6b10b6fc62691e22df"
+  },
+  "protocol1_runtime_candidates": [
+    {"split": "DEV", "path": "experiments/AUTH-COVERAGE-002/corpus/runtime/DEV/scenarios.json", "sha256": "6eb7d43805bc99259fcd2ebb81d0318202ef1f0295ba22a159cffc8a6129dfe2", "count": 800},
+    {"split": "VALIDATION", "path": "experiments/AUTH-COVERAGE-002/corpus/runtime/VALIDATION/scenarios.json", "sha256": "6731db54202900dbc03c0e7515c13171a94246cfccc7e44c86c99e4a1bc74870", "count": 800},
+    {"split": "HELD_OUT", "path": "experiments/AUTH-COVERAGE-002/corpus/runtime/HELD_OUT-runtime/scenarios.json", "sha256": "86034b4c67c69727f7eb99379a9cdbe2ee58530ab0b5404efa8cea5c2268a85e", "count": 2400}
+  ],
+  "substrate_dev_registry": {"path": "experiments/AUTH-COVERAGE-002/dev/contamination_registry.json", "sha256": "c2942d7a4222e2fec0e8c392a8a5d49a51141cfbbe4f905508bfb467b346741a"},
+  "generator2_disposable_registry": {"path": "experiments/AUTH-COVERAGE-002/protocol2/dev_contamination_registry.json", "sha256": "0cad1d170e5245d9a005e8da8540f7a3e7691c401fce45db0e6fe2484a7c7b2f"},
+  "generator3_disposable_semantics": "identical frozen Generator@2 generation entry point",
+  "rule": "reject exact complete semantic-record or canonical runtime-input reuse",
+  "status": "FROZEN_WITH_GENERATOR4"
+}
