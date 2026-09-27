@@ -2,7 +2,9 @@
 
 SafetyBox is a research project investigating an external, deterministic runtime safety and control architecture for autonomous AI agents. The protected agent is not trusted to enforce its own constraints: proposed controls sit between the agent and privileged tools or resources.
 
-> **Status:** pre-implementation research stage. The architecture, requirements, hypotheses, and experiment design are being specified. No research claim has been experimentally validated, and the repository is not production ready.
+> **Status:** SafetyBox Gateway v0.1 is the first deployable product surface.
+> It is a scoped mediation library/CLI, not an OS sandbox. Research artifacts
+> remain separately governed; see `SAFETYBOX_SECURITY_BOUNDARY.md` before use.
 
 ## Problem statement
 

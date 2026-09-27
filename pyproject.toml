@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "safetybox"
-version = "0.0.0"
-description = "Research foundation for an external deterministic runtime safety system for AI agents"
+version = "0.1.0"
+description = "Deterministic, task-bound authority gateway for AI agent effects"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
@@ -16,7 +16,10 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
 ]
-dependencies = []
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+safetybox = "safetybox.gateway.cli:main"
 
 [project.optional-dependencies]
 dev = [

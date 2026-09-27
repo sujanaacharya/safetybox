@@ -1,0 +1,58 @@
+version: gateway-v0.1
+principal: local-developer
+agent: coding-agent
+task: fix-login-bug
+issuer: local-operator
+repository: .
+
+allow:
+  - id: read-repository
+    action: filesystem.read
+    resource: repo/**
+  - id: write-gateway
+    action: filesystem.write
+    resource: repo/src/safetybox/gateway/**
+  - id: create-gateway
+    action: filesystem.create
+    resource: repo/src/safetybox/gateway/**
+  - id: run-pytest
+    action: process.execute
+    resource: pytest
+    constraints:
+      executable: repo/.venv/bin/pytest
+      allowed_argv:
+        - ["-q", "tests/gateway"]
+      cwd: repo
+      env: {}
+  - id: run-ruff
+    action: process.execute
+    resource: ruff
+    constraints:
+      executable: repo/.venv/bin/ruff
+      allowed_argv:
+        - ["check", "src/safetybox/gateway", "tests/gateway"]
+      cwd: repo
+      env: {}
+  - id: demo-mcp-echo
+    action: mcp.call
+    resource: demo/echo
+    constraints:
+      tool_arguments:
+        text: hello
+      upstream_command: ["/usr/bin/python3", "examples/mcp_echo_server.py"]
+
+deny:
+  - resource: ~/.ssh/**
+  - resource: ~/.aws/**
+  - resource: repo/.env
+  - action: git.push
+  - action: production.deploy
+
+approval_required:
+  - action: network.request
+  - action: package.install
+
+flag: []
+
+mcp_servers:
+  demo: ["/usr/bin/python3", "examples/mcp_echo_server.py"]
