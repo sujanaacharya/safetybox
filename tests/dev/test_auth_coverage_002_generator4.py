@@ -236,13 +236,20 @@ def test_real_authority_cannot_be_minted_redirected_or_consumed(
     assert not generator4.REAL_STATE_ROOT.exists()
 
 
-def test_future_real_registry_contract_is_fixed_and_currently_fail_closed(
+def test_real_registry_contract_is_fixed_and_git_provisioned(
     generator4: ModuleType,
 ) -> None:
     assert generator4.authority.REAL_REGISTRY_PATH == (
         EXPERIMENT / "protocol4/materialization_authority/authority-registry.json"
     )
-    with pytest.raises(generator4.authority.AuthorityError):
+    registry = json.loads(generator4.authority.REAL_REGISTRY_PATH.read_text())
+    assert registry["artifacts"] == {
+        "DEV": "ad9b0260772f538b87bdf9e164a67c83141642b3ded45518c5afdf5c5c6e9751",
+        "VALIDATION": "ae37e7cfe72c6948dd4a455239354459d22d8f83235b0a61b381f78e1a4cbd03",
+        "HELD_OUT": "40f4733d763dd9b922119edecec7a7b4a91ab4b5f708013cc40c2480af139818",
+    }
+    # The verifier deliberately rejects the uncommitted working-tree package.
+    with pytest.raises(generator4.authority.AuthorityError, match="repository provisioned"):
         generator4.authority.real_artifact_digests()
     assert generator4.authority.REAL_RECORD_COUNTS == {
         "DEV": 800,
@@ -463,4 +470,10 @@ def test_new_attempt_remains_unused_and_production_zero() -> None:
     }
     assert set(status["production_exposure"].values()) == {0}
     assert not (EXPERIMENT / "protocol4/materialization_state").exists()
-    assert not (EXPERIMENT / "protocol4/materialization_authority").exists()
+    authority_root = EXPERIMENT / "protocol4/materialization_authority"
+    registry = json.loads((authority_root / "authority-registry.json").read_text())
+    assert registry["use_status"] == {
+        "DEV": "PROVISIONED_NOT_CONSUMED",
+        "VALIDATION": "PROVISIONED_NOT_CONSUMED",
+        "HELD_OUT": "NOT_AUTHORIZED_FOR_USE",
+    }

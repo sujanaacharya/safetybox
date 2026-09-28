@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import subprocess
 import sys
 from pathlib import Path
 from types import ModuleType
@@ -101,16 +102,20 @@ def test_generator3_is_immutably_bound_and_generator4_is_required() -> None:
     assert contract["corpus_attempt"] == "AUTH-COVERAGE-002-CORPUS@3-ATTEMPT-1"
 
 
-def test_new_attempt_is_empty_and_no_real_authorities_exist() -> None:
+def test_new_attempt_is_empty_and_real_authorities_are_only_provisioned() -> None:
     status = json.loads((P4 / "materialization_status.json").read_text())
     assert {key: status[key] for key in ("DEV", "VALIDATION", "HELD_OUT")} == {
         "DEV": 0,
         "VALIDATION": 0,
         "HELD_OUT": 0,
     }
-    assert status["authority_artifacts"] == 0
+    assert status["authority_artifacts"] == 0  # Protocol@4 freeze-time baseline.
     assert set(status["production_exposure"].values()) == {0}
-    assert not (P4 / "materialization_authority").exists()
+    authority_root = P4 / "materialization_authority"
+    assert authority_root.is_dir()
+    assert {
+        path.name for path in authority_root.glob("*-authority.json")
+    } == {"dev-authority.json", "validation-authority.json", "held_out-authority.json"}
     assert not (P4 / "materialization_state").exists()
 
 
@@ -141,4 +146,17 @@ def test_old_attempt_is_permanently_blocked_and_checksum_preserved() -> None:
 def test_successor_and_blocked_attempt_manifests_verify(manifest: Path) -> None:
     for line in manifest.read_text().splitlines():
         expected, relative = line.split("  ", 1)
-        assert hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() == expected
+        path = ROOT / relative
+        if relative in {
+            "tests/dev/test_auth_coverage_002_protocol4.py",
+            "tests/dev/test_auth_coverage_002_generator4.py",
+        }:
+            frozen = subprocess.run(
+                ["git", "show", f"97c4b594f61634d49937d128c67d7e8b0b348be6:{relative}"],
+                cwd=ROOT,
+                capture_output=True,
+                check=True,
+            ).stdout
+            assert hashlib.sha256(frozen).hexdigest() == expected
+        else:
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == expected

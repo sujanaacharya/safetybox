@@ -1,0 +1,36 @@
+{
+  "aggregate_canonical_input_unique": 4000,
+  "aggregate_semantic_unique": 4000,
+  "capacity": "PASS",
+  "canonical_generation": false,
+  "method": "exact preregistered commitment, disposable-only, no seed search",
+  "splits": {
+    "DEV": {
+      "allow": 400,
+      "canonical_input_unique": 800,
+      "count": 800,
+      "deny": 400,
+      "derived_seed": 4643260528208712496,
+      "pairs": 400,
+      "semantic_unique": 800
+    },
+    "HELD_OUT": {
+      "allow": 1200,
+      "canonical_input_unique": 2400,
+      "count": 2400,
+      "deny": 1200,
+      "derived_seed": 17227240183000809318,
+      "pairs": 1200,
+      "semantic_unique": 2400
+    },
+    "VALIDATION": {
+      "allow": 400,
+      "canonical_input_unique": 800,
+      "count": 800,
+      "deny": 400,
+      "derived_seed": 14524226827412536530,
+      "pairs": 400,
+      "semantic_unique": 800
+    }
+  }
+}

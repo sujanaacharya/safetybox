@@ -1,0 +1,28 @@
+{
+  "activation_condition": "THIS_DECISION_AND_ALL_BOUND_AUTHORITY_ARTIFACTS_MUST_BE_BYTE_IDENTICAL_IN_ONE_TRUSTED_GIT_HEAD",
+  "allowed_use_count_per_split": 1,
+  "artifact_digest": "c8251d42a42ea62f04f279d7e3371a7fd32abf9aa5b1c40f7ef684800995a870",
+  "authority_registry_digest": "247562bbdefc8030b2fcde0f56fe4f81f00ee6a8662f01af35c613f61eb4a50d",
+  "authority_registry_file_sha256": "ca67e1ea847470fa0064d84fffdbf328593f3e9f25e1457e7f51500f379f430c",
+  "authorized_splits": [
+    "DEV",
+    "VALIDATION"
+  ],
+  "contamination_registry_digest": "1ebab9fefcff6958107aae16c5c0644059a411ef05a8ca6b10b6fc62691e22df",
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "decision": "AUTHORIZED_TO_MATERIALIZE_CORPUS4_DEV_AND_VALIDATION_ONCE",
+  "decision_schema": "AUTH-COVERAGE-002-PRE-MATERIALIZATION-DECISION@1",
+  "dev_authority_digest": "ad9b0260772f538b87bdf9e164a67c83141642b3ded45518c5afdf5c5c6e9751",
+  "generator_freeze_sha": "97c4b594f61634d49937d128c67d7e8b0b348be6",
+  "generator_id": "AUTH-COVERAGE-002-GENERATOR@4",
+  "generator_manifest_sha256": "fc109c3f1a0ee712de0d7fe0b7a04c0ea853d02bf14392829f8bbd7e68be7d88",
+  "held_out_authorized": false,
+  "pre_gate_evidence_digest": "51989499d3bff350d97734adc1a7dc57c4d9b496b83a3ab8ce98bdeb554748da",
+  "production_authorized": false,
+  "protocol_freeze_sha": "31f2ee9e504de74f6b93e5a860fd6d92ae5f7fa2",
+  "protocol_id": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "status": "VALIDATED_PENDING_HOST_COMMIT",
+  "substrate_id": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "substrate_manifest_sha256": "d9d827c9544cc4f27bb0d925adf1091a9dd4f6081d8f984b07c8df154739cc60",
+  "validation_authority_digest": "ae37e7cfe72c6948dd4a455239354459d22d8f83235b0a61b381f78e1a4cbd03"
+}

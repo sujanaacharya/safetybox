@@ -1,0 +1,21 @@
+{
+  "canonical_counts": {
+    "DEV": 0,
+    "HELD_OUT": 0,
+    "VALIDATION": 0
+  },
+  "corpus_attempt_id": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "production_exposure": {
+    "completed": 0,
+    "exposed": 0,
+    "raw": 0,
+    "reserved": 0,
+    "started": 0
+  },
+  "schema": "AUTH-COVERAGE-002-AUTHORITY-PACKAGE-STATUS@1",
+  "use_status": {
+    "DEV": "PROVISIONED_NOT_CONSUMED",
+    "HELD_OUT": "NOT_AUTHORIZED_FOR_USE",
+    "VALIDATION": "PROVISIONED_NOT_CONSUMED"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "attempt": "AUTH-COVERAGE-002-CORPUS@4-ATTEMPT-1",
+  "authority_registry_artifact_digest": "247562bbdefc8030b2fcde0f56fe4f81f00ee6a8662f01af35c613f61eb4a50d",
+  "benchmark_semantic_diff": 0,
+  "canonical_counts": {
+    "DEV": 0,
+    "HELD_OUT": 0,
+    "VALIDATION": 0
+  },
+  "capacity_evidence_sha256": "d48e47b5d58b94f3ecdcbc4968c805fbee6cc59d4942c2af5d14d24c7b66d5ec",
+  "contamination_registry_sha256": "1ebab9fefcff6958107aae16c5c0644059a411ef05a8ca6b10b6fc62691e22df",
+  "decision_prerequisites": {
+    "capacity": "PASS",
+    "contamination_exclusion": "PASS",
+    "focused_pytest": "84 passed",
+    "full_applicable_pytest": "1140 passed, 2 established EXP-015 lifecycle deselections",
+    "git_diff_check": "PASS",
+    "independent_review": "PASS_NO_BLOCKING",
+    "mypy": "PASS",
+    "old_authority_rejection": "PASS_ALL_THREE_SPLITS",
+    "ruff": "PASS",
+    "substrate2_preheldout": "EXPLICIT_ZERO_PASS_MISSING_FAIL_EXTRA_FAIL"
+  },
+  "dev_authority_digest": "ad9b0260772f538b87bdf9e164a67c83141642b3ded45518c5afdf5c5c6e9751",
+  "generator": "AUTH-COVERAGE-002-GENERATOR@4",
+  "generator_freeze_sha": "97c4b594f61634d49937d128c67d7e8b0b348be6",
+  "generator_manifest_sha256": "fc109c3f1a0ee712de0d7fe0b7a04c0ea853d02bf14392829f8bbd7e68be7d88",
+  "held_out_status": "NOT_AUTHORIZED_FOR_USE",
+  "historical_freeze_integrity": "PASS_AT_STARTING_HEAD_97c4b594f61634d49937d128c67d7e8b0b348be6",
+  "independent_review_path": "experiments/AUTH-COVERAGE-002/protocol4/materialization_authority/independent-review.json",
+  "pre_gate_evidence_schema": "AUTH-COVERAGE-002-PRE-MATERIALIZATION-EVIDENCE@1",
+  "production_exposure": {
+    "completed": 0,
+    "exposed": 0,
+    "raw": 0,
+    "reserved": 0,
+    "started": 0
+  },
+  "protocol": "AUTH-COVERAGE-002-PROTOCOL@4",
+  "protocol_freeze_sha": "31f2ee9e504de74f6b93e5a860fd6d92ae5f7fa2",
+  "scientific_threshold_diff": 0,
+  "substrate": "AUTH-COVERAGE-002-SUBSTRATE@2",
+  "substrate_manifest_sha256": "d9d827c9544cc4f27bb0d925adf1091a9dd4f6081d8f984b07c8df154739cc60",
+  "validation_authority_digest": "ae37e7cfe72c6948dd4a455239354459d22d8f83235b0a61b381f78e1a4cbd03"
+}
